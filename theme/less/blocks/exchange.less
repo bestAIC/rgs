@@ -1,0 +1,192 @@
+.exchange{
+	border-bottom: 1px solid #ebebeb;
+	line-height: 30/@rem;
+	padding-top: 25/@rem;
+	padding-bottom: 25/@rem;
+	&__inner{
+		.clearfix;
+	}
+	&__title{
+		float: left;
+		font-size: 14/@rem;
+		font-weight: 600;
+	}
+	&__currencies{
+		float: left;
+		font-size: 20/@rem;
+		font-weight: 300;
+		margin-left: 60/@rem;
+	}
+	&__currency{
+		float: left;
+		.clearfix;
+		&+&{
+			margin-left: 54/@rem;
+		}
+		&-ico{
+			float: left;
+			width: 30/@rem;
+			height: 30/@rem;
+			border: 2/@rem solid @cRed;
+			border-radius: 50%;
+			line-height: 26/@rem;
+			text-align: center;
+			color: @cRed;
+			font-size: 16/@rem;
+			font-weight: 400;
+			margin-right: 19/@rem;
+		}
+		&-price{
+			float: left;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				right: -15/@rem;
+				top: 8/@rem;
+				border: 3/@rem solid transparent;
+			}
+			&+&{
+				margin-left: 33/@rem;
+			}
+			&._up{
+				&:after{
+					border-top: 0;
+					border-bottom: 4/@rem solid #83c550;
+				}
+
+			}
+			&._down{
+				&:after{
+					border-bottom: 0;
+					border-top: 4/@rem solid #f5495c;
+				}
+			}
+		}
+	}
+	&__contacts{
+		float: right;
+		&-block{
+			float: left;
+			&._offices{
+				border-left:1px solid #ebebeb;
+				padding-left: 22/@rem;
+				margin-left: 22/@rem;
+			}
+			&-title{
+				font-size: 14/@rem;
+				font-weight: 600;
+				color: @cRed;
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.exchange{
+		line-height: 26/@rem;
+		padding-top: 1.9rem;
+		padding-bottom: 1rem;
+		&__inner{
+			padding: 0;
+		}
+		&__title{
+			margin-left: 2.7rem;
+		}
+		&__currencies{
+			float: right;
+			margin-right: 4rem;
+			font-size: 16/@rem;
+			margin-left: 0;
+		}
+		&__currency{
+			&+.exchange__currency{
+				margin-left: 7.2rem;
+			}
+			&-ico{
+				width: 26/@rem;
+				height: 26/@rem;
+				line-height: 22/@rem;
+				font-size: 14/@rem;
+			}
+			&-price{
+				&:after{
+					top: 5/@rem;
+				}
+			}
+		}
+		&__contacts{
+			float: left;
+			width: 100%;
+			padding-left: 2.7rem;
+			padding-right: 2.7rem;
+			border-top: 1px solid @cBorder;
+			padding-top: 0.8rem;
+			margin-top: 21/@rem;
+			&-block{
+				&._offices{
+					border-left:0;
+					float: right;
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.exchange{
+		line-height: 26/@rem;
+		padding-top: 1.2rem;
+		padding-bottom: 1rem;
+		&__inner{
+			padding: 0;
+		}
+		&__title{
+			float: none;
+			text-align: center;
+		}
+		&__currencies{
+			float: none;
+			font-size: 14/@rem;
+			margin-left: 0;
+			.clearfix;
+			padding-left: 2.5rem;
+			padding-right: 4rem;
+			margin-top: 1rem;
+		}
+		&__currency{
+			margin-left: 0!important;
+			height: 2.6rem;
+			&:nth-child(2n){
+				float: right;
+			}
+			&-ico{
+				width: 26/@rem;
+				height: 26/@rem;
+				line-height: 22/@rem;
+				font-size: 14/@rem;
+				margin-right: 1.7rem;
+			}
+			&-price{
+				&:after{
+					right: -1rem;
+				}
+				&+.exchange__currency-price{
+					margin-left: 25/@rem;
+				}
+			}
+		}
+		&__contacts{
+			float: none;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+			border-top: 1px solid @cBorder;
+			padding-top: 0.8rem;
+			margin-top: 1.5rem;
+			&-block{
+				&._offices{
+					border-left:0;
+					float: right;
+				}
+			}
+		}
+	}
+}

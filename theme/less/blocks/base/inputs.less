@@ -1,0 +1,74 @@
+
+.input-base-skin() {
+	box-sizing: border-box;
+	vertical-align: top;
+	border: 1px solid #d0d6d9;
+	background: transparent;
+	box-shadow: none;
+	width: 100%;
+	font-weight: 300;
+	font-family: @font-family-base;
+}
+
+input[type='text'], input[type='password'], input[type='tel'], input[type='date'], input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea {
+	.input-base-skin();
+	font-size: 14/@rem;
+	line-height: 20/@rem;
+	padding: 14/@rem  20/@rem;
+	box-sizing: border-box;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	color: @text-color;
+	border-radius: 2/@rem;
+}
+textarea{
+	resize: none;
+}
+
+/*.ideal-radio{
+	width: 20/@rem;
+	height:20/@rem;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		left: 4/@rem;
+		top: 4/@rem;
+		width: 12/@rem;
+		height:12/@rem;
+		border-radius: 50%;
+		background-color: transparent;
+		transition: background-color @animTime;
+	}
+	&.checked{
+		&:after{
+			background-color: @cGreen;
+		}
+
+	}
+}
+.ideal-check{
+	width: 20/@rem;
+	height: 20/@rem;
+	background:  none no-repeat center #fff;
+	background-size: 11/@rem 9/@rem;
+	border: 1px solid @cBrown;
+	border-radius: 3/@rem;
+	display: inline-block;
+	vertical-align: top;
+	&.checked{
+		background-image: url('@{pathToImg}icons/ok_small.png');
+	}
+}*/
+.mobile{
+	select{
+		width: 100%;
+		height: 100%;
+		padding: 10/@rem;
+	}
+}
