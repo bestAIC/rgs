@@ -1,5 +1,6 @@
 app = {};
 
+
 $(function () {
 	app.init();
 });
@@ -13,6 +14,7 @@ app.dom = {
 	$footer:$('.footer')
 };
 
+
 app.utils = {};
 app.utils.isTableLand = (device.tablet() && ($(window).width() > $(window).height())) ? true : false;
 app.utils.isTablePort = (device.tablet() && ($(window).width() < $(window).height())) ? true : false;
@@ -25,6 +27,7 @@ app.init = function () {
 	app.newsGall();
 	app.masks();
 	app.bannerGall();
+	app.initAnimations();
 };
 app.masks = function () {
 	$('[data-card-mask]').mask("9999 9999 9999 9999");
@@ -85,6 +88,29 @@ app.bannerGall = function () {
 		paginationClickable:true,
 		autoplay:7000,
 		autoplayDisableOnInteraction:false,
-		effect:'fade'
+		effect:'fade',
+		loop:true
 	});
+};
+
+app.initAnimations = function() {
+	var $animation = $('[data-animation]'),
+			top = null,
+			scroll = null,
+			winHeigh = null;
+
+	var throttled = _.throttle(updatePosition, 100);
+	app.dom.$window.scroll(throttled);
+	function updatePosition(){
+		scroll = $(document).scrollTop();
+		winHeigh = app.dom.$window.height();
+		$animation.each(function(){
+			var $self = $(this);
+			top = $self.offset().top + winHeigh*0.35;
+			if((top-scroll) <= winHeigh)
+			{
+				$self.addClass('_active');
+			}
+		});
+	}
 };

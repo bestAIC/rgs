@@ -60,6 +60,11 @@
 	}
 	&__banner{
 		height: 640/@rem;
+		.no-touch &:hover{
+			.home__banner-btns{
+				opacity: 1;
+			}
+		}
 		&-pag{
 			left: 50%;
 			width: 20rem;
@@ -90,6 +95,8 @@
 			position: absolute;
 			right: 0;
 			top: 0;
+			opacity: 0;
+			transition: opacity 2*@animTime;
 		}
 		&-slide{
 			height: 640/@rem;
@@ -139,11 +146,34 @@
 	&__products{
 		.clearfix;
 		padding: 30/@rem 0;
+		&._active{
+			.product{
+				opacity: 1!important;
+			}
+		}
 		.product{
 			float: left;
 			margin-right: 30/@rem;
+			opacity: 0;
+			.touch &{
+				opacity: 1;
+			}
 			&:nth-child(3n){
 				margin-right: 0;
+			}
+			.no-touch &{
+				transition: box-shadow @animTime,transform @animTime, opacity 1.5*@animTime;
+				transform: translate(0,0);
+				&:nth-child(2){
+					transition:box-shadow @animTime,transform @animTime, opacity 1.5*@animTime 0.1s;
+				}
+				&:nth-child(3){
+					transition:box-shadow @animTime,transform @animTime, opacity 1.5*@animTime 0.2s;
+				}
+				&:hover{
+					transform: translate(0,-0.3rem);
+					box-shadow: 0 16px 64px -12px rgba(9,9,10,0.16), 0 8px 20px -4px rgba(9,9,10,0.08);
+				}
 			}
 		}
 	}
@@ -158,15 +188,41 @@
 			.clearfix;
 			margin: 61/@rem auto;
 			width: 1000/@rem;
+			&._active{
+				.home__services-item{
+					opacity: 1;
+				}
+			}
 		}
 		&-item{
 			float: left;
 			width: 200/@rem;
-			&:hover{
-				.home__services-item-top-bg{
-					background-color: #fff;
-					transform: scale(1.2);
-					border-width: 3/@rem;
+			opacity: 0;
+			&:nth-child(1){
+				transition: opacity 1.5*@animTime;
+			}
+			&:nth-child(2){
+				transition: opacity 1.5*@animTime 0.15s;
+			}
+			&:nth-child(3){
+				transition: opacity 1.5*@animTime 0.3s;
+			}
+			&:nth-child(4){
+				transition: opacity 1.5*@animTime 0.45s;
+			}
+			&:nth-child(5){
+				transition: opacity 1.5*@animTime 0.6s;
+			}
+			.touch &{
+				opacity: 1;
+			}
+			.no-touch &{
+				&:hover{
+					.home__services-item-top-bg{
+						background-color: #fff;
+						transform: scale(1.2);
+						border-width: 3/@rem;
+					}
 				}
 			}
 			&-top{
@@ -222,15 +278,34 @@
 			z-index: 2;
 			background: url('@{pathToImg}icons/arrow_right.svg') no-repeat center;
 			background-size: 7/@rem 11/@rem;
+			&._active{
+				.home__transfer-card{
+					opacity: 1;
+					transform: translate(0,0);
+				}
+			}
 		}
 		&-card{
 			float: left;
+			opacity: 0;
+			transition: opacity @animTime,transform @animTime;
+			.touch &{
+				opacity: 1;
+			}
 			&._1{
 				background-image: linear-gradient(to top, #18191e 0%, #37383f 100%);
+				transform: translate(-20rem,0);
+				.touch &{
+					transform: translate(0,0);
+				}
 			}
 			&._2{
 				background-image: linear-gradient(to top, #8d9399 0%, #a9b0b8 100%);
 				margin-left: 30/@rem;
+				transform: translate(20rem,0);
+				.touch &{
+					transform: translate(0,0);
+				}
 			}
 
 		}
@@ -294,6 +369,11 @@
 		&-sections{
 			.clearfix;
 			margin-top: 40/@rem;
+			&._active{
+				.home__info-section{
+					opacity: 1;
+				}
+			}
 		}
 		&-section{
 			display: block;
@@ -309,6 +389,33 @@
 			text-align: center;
 			color: @text-color;
 			padding: 44/@rem 30/@rem 0;
+			.no-touch &{
+				opacity: 0;
+				transition: box-shadow @animTime,transform @animTime, opacity 2*@animTime;
+				transform: translate(0,0);
+				&:nth-child(2){
+					transition:box-shadow @animTime,transform @animTime, opacity 2*@animTime 0.7s;
+				}
+				&:nth-child(3){
+					transition:box-shadow @animTime,transform @animTime, opacity 2*@animTime 0.4s;
+				}
+				&:nth-child(4){
+					transition:box-shadow @animTime,transform @animTime, opacity 2*@animTime 0.6s;
+				}
+				&:nth-child(5){
+					transition:box-shadow @animTime,transform @animTime, opacity 2*@animTime 0.2s;
+				}
+				&:nth-child(6){
+					transition:box-shadow @animTime,transform @animTime, opacity 2*@animTime 0.8s;
+				}
+				&:hover{
+					transform: translate(0,-0.3rem);
+					box-shadow: 0 16px 64px -12px rgba(9,9,10,0.16), 0 8px 20px -4px rgba(9,9,10,0.08);
+					.home__info-section-counter{
+						opacity: 1;
+					}
+				}
+			}
 			&:nth-child(3n){
 				margin-right: 0;
 			}
@@ -332,6 +439,8 @@
 				font-size: 14/@rem;
 				font-style: italic;
 				line-height: 24/@rem;
+				opacity: 0;
+				transition: opacity @animTime;
 			}
 		}
 	}

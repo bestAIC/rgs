@@ -74,7 +74,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="home__products">
+		<div class="home__products" data-animation>
 			<div class="grid__inner">
 				<a href="#" class="product" style="background-image: url('theme/images/home/product/1.jpg')">
 					<div class="product__inner">
@@ -132,7 +132,7 @@
 						<button type="submit" class="search-form__btn"></button>
 					</form>
 				</div>
-				<div class="home__services-items">
+				<div class="home__services-items" data-animation>
 					<a href="#" class="home__services-item">
 						<div class="home__services-item-top">
 							<div class="home__services-item-top-bg"></div>
@@ -177,7 +177,7 @@
 					<h2>Переводите с карты на карту</h2>
 					<div class="subtitle">Переводы на карту любого российского банка, надежный сервис с выгодными тарифами</div>
 					<form action="">
-						<div class="home__transfer-cards">
+						<div class="home__transfer-cards" data-animation>
 							<div class="home__transfer-card _1 card">
 								<div class="card__inner">
 									<div class="card__title">1. Отправитель</div>
@@ -262,7 +262,7 @@
 							<button type="submit" class="search-form__btn"></button>
 						</form>
 					</div>
-					<div class="home__info-sections">
+					<div class="home__info-sections"  data-animation>
 						<a href="#" class="home__info-section">
 							<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/1.svg');"></div>
 							<div class="home__info-section-title">Вклады и сбережения</div>
@@ -271,22 +271,27 @@
 						<a href="#" class="home__info-section">
 							<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/2.svg');"></div>
 							<div class="home__info-section-title">Банковские карты</div>
+							<div class="home__info-section-counter">12 статей</div>
 						</a>
 						<a href="#" class="home__info-section">
 							<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/3.svg');"></div>
 							<div class="home__info-section-title">Кредиты</div>
+							<div class="home__info-section-counter">12 статей</div>
 						</a>
 						<a href="#" class="home__info-section">
 							<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/4.svg');"></div>
 							<div class="home__info-section-title">Оплата услуг</div>
+							<div class="home__info-section-counter">12 статей</div>
 						</a>
 						<a href="#" class="home__info-section">
 							<div class="home__info-section-ico _big" style="background-image: url('theme/images/home/info/5.svg');"></div>
 							<div class="home__info-section-title">Денежные переводы</div>
+							<div class="home__info-section-counter">12 статей</div>
 						</a>
 						<a href="#" class="home__info-section">
 							<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/6.svg');"></div>
 							<div class="home__info-section-title">Интернет-банк</div>
+							<div class="home__info-section-counter">12 статей</div>
 						</a>
 					</div>
 				</div>
