@@ -172,7 +172,7 @@
 			</div>
 		</div>
 		<div class="home__gray">
-			<div class="home__transfer hide">
+			<div class="home__transfer">
 				<div class="grid__inner">
 					<h2>Переводите с карты на карту</h2>
 					<div class="subtitle">Переводы на карту любого российского банка, надежный сервис с выгодными тарифами</div>
