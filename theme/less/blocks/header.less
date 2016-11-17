@@ -1,4 +1,5 @@
 .header{
+	position: relative;
 	&__phones{
 		float: right;
 		margin-right: 30/@rem;
@@ -46,55 +47,183 @@
 			.background('@{pathToImg}logo.png');
 		}
 	}
+	&__bottom{
+		position: absolute;
+		z-index: 10;
+		top: 100%;
+		left: 0;
+		right: 0;
+		border-bottom: 1px solid fade(white,20%);
+		padding-top: 21px;
+		padding-bottom: 20px;
+	}
+	&__search{
+		&-btn{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: 0;
+			top: -1/@rem;
+			.background('@{pathToImg}icons/search.svg');
+		}
+	}
+	&__menu{
+		text-align: justify;
+		line-height: 0;
+		padding-left: 70px;
+		padding-right: 70px;
+		height: 20px;
+		&-btn{
+			width: 20px;
+			height: 16px;
+			position: absolute;
+			left: 0;
+			top: 2/@rem;
+			.background('@{pathToImg}icons/burger.svg');
+		}
+		&:after{
+			content: '';
+			width: 100%;
+			line-height: 0;
+			display: inline-block;
+		}
+		&-item{
+			display: inline-block;
+			vertical-align: top;
+		}
+		&-link{
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 20px;
+			text-transform: uppercase;
+			color: #fff;
+			letter-spacing: 0.4px;
+		}
+	}
 }
-.mobile{
+.tablet.portrait{
 	.header{
 		&__phones{
-			float: right;
-			margin-right: 30/@rem;
-			margin-top: -1px;
+			margin-right: 28/@rem;
+			margin-top:11px;
 		}
 		&__phone{
+			float: left;
 			&-link{
-				color: #3e3e3e;
-				font-size: 16/@rem;
-				font-weight: 600;
-				line-height: 20/@rem;
-				text-decoration: none;
+				font-size: 18px;
+				margin-left: 28px;
 			}
 		}
 		&__top{
 			padding-top: 35/@rem;
 			padding-bottom: 30/@rem;
+			&-right{
+				float: left;
+				width: 100%;
+				margin-top: 30px;
+				padding-right: 60px;
+				position: relative;
+			}
+			&-btn{
+				font-size: 12/@rem;
+			}
+		}
+		&__logo{
+			&-ico{
+				float: right;
+			}
+		}
+		&__bottom{
+			padding-top: 20px;
+			padding-bottom: 19px;
+		}
+		&__search{
+			&-btn{
+				background-image: url('@{pathToImg}icons/search_red.svg');
+				top: 1rem;
+			}
+		}
+		&__menu{
+			padding-left: 0;
+			padding-right: 0;
+			height: 20px;
+			&-btn{
+				background-image: url('@{pathToImg}icons/burger_red.svg');
+				top: 1.3rem;
+			}
+			&-link{
+				font-size: 12px;
+			}
+		}
+	}
+}
+.mobile{
+	.header{
+		&__phones{
+			float: none;
+			margin-right: 0;
+			margin-top: 17px;
+			padding-left: 68px;
+			position: relative;
+			.clearfix;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 15px;
+				top: 0;
+				width: 2.8rem;
+				height:2.8rem;
+				.background('@{pathToImg}icons/handset.svg');
+			}
+		}
+		&__phone{
+			float: left;
+			&+.header__phone{
+				margin-left: 2.6rem;
+			}
+			&-link{
+				font-size: 18px;
+				line-height: 28px;
+			}
+		}
+		&__top{
+			padding-top: 2.7rem;
+			padding-bottom: 2rem;
 			&-inner{
 
 			}
 			&-right{
-				float: right;
-				.clearfix;
+				float: left;
+				width: 100%;
+				margin-top: 20px;
 			}
 			&-btn{
-				height: 40/@rem;
-				padding: 1rem 2.5rem;
-				box-shadow: none;
-				float: right;
-				font-size: 14/@rem;
-				letter-spacing: 0.5/@rem;
+				height: 5rem;
+				padding: 1.5rem 2.5rem;
+				float: none;
+				width: 100%;
 			}
 		}
 		&__logo{
 			width: 282px;
-			height: 22px;
+			height: 23px;
 			float: left;
-			.background('@{pathToImg}logo.svg');
+			margin-left: -5px;
+			.background('@{pathToImg}logo_mob.svg');
 			&-ico{
-				width: 114/@rem;
-				height: 50/@rem;
-				float: left;
-				margin-left: 30/@rem;
-				margin-top: -5/@rem;
-				.background('@{pathToImg}logo.png');
+				width: 69px;
+				height: 30px;
+				float: right;
+				margin-left: 0;
+				margin-top: -7px;
+				margin-right: -5px;
 			}
+		}
+		&__bottom{
+			padding: 17px 20px 18px;
+		}
+		&__menu{
+			text-align: center;
 		}
 	}
 }

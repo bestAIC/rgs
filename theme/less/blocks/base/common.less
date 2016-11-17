@@ -74,13 +74,29 @@ a {
 	display:inline-block;
 	vertical-align:middle!important;
 }
-.desktop,.tablet{
-	.is-mob-block{
+
+.desktop{
+	.no-desltop-block .is-mob-block,.is-tablet-block{
 		display: none!important;
 	}
 }
+.tablet{
+	.no-tablet-block, .is-mob-block{
+		display: none!important;
+	}
+	&.portrait{
+		.is-desktop-block{
+			display: none!important;
+		}
+	}
+	&.landscape{
+		.is-tablet-block{
+			display: none!important;
+		}
+	}
+}
 .mobile{
-	.no-mob-block{
+	.no-mob-block, .is-desktop-block, .is-tablet-block{
 		display: none!important;
 	}
 }
