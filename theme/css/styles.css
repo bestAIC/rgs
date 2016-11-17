@@ -374,7 +374,8 @@ a {
   display: inline-block;
   vertical-align: middle!important;
 }
-.desktop .no-desltop-block .is-mob-block,
+.desktop .no-desktop-block,
+.desktop .is-mob-block,
 .desktop .is-tablet-block {
   display: none!important;
 }
