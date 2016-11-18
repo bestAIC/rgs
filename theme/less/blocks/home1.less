@@ -447,6 +447,15 @@
 	&__news{
 		overflow: hidden;
 		padding-bottom: 101/@rem;
+		.no-touch &:hover{
+			.gall__nav{
+				opacity: 1;
+			}
+		}
+		.gall__nav{
+			opacity: 0;
+			transition: opacity @animTime;
+		}
 	}
 }
 .nav{
@@ -455,11 +464,16 @@
 		width: 48/@rem;
 		height: 48/@rem;
 		box-shadow: 0 1px 3/@rem rgba(212, 212, 212, 0.8);
+		//box-shadow: 0 1px 1rem rgba(211, 211, 211, 0.6);
 		border-radius: 50%;
 		float: left;
 		background: url('@{pathToImg}icons/arr_left_black.svg') no-repeat center #fff;
 		background-size: 6/@rem 10/@rem;
 		cursor: pointer;
+		transition:box-shadow @animTime;
+		.no-touch &:hover{
+			box-shadow: 0 2/@rem 10/@rem rgba(23, 24, 26, 0.2);
+		}
 		&.swiper-button-disabled{
 			opacity: 0.5;
 			cursor: default;

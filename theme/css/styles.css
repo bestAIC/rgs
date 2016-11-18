@@ -1156,6 +1156,13 @@ h2,
   overflow: hidden;
   padding-bottom: 10.1rem;
 }
+.no-touch .home__news:hover .gall__nav {
+  opacity: 1;
+}
+.home__news .gall__nav {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 .nav {
   *zoom: 1;
 }
@@ -1177,6 +1184,10 @@ h2,
   background: url('../images/icons/arr_left_black.svg') no-repeat center #fff;
   background-size: 0.6rem 1rem;
   cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+.no-touch .nav__btn:hover {
+  box-shadow: 0 0.2rem 1rem rgba(23, 24, 26, 0.2);
 }
 .nav__btn.swiper-button-disabled {
   opacity: 0.5;

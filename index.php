@@ -200,7 +200,7 @@
 											<div class="card__block">
 												<div class="card__block-title">cvc2 / cvv2<a href="#" class="help-ico">?</a></div>
 												<div class="card__block-field">
-													<input type="password" placeholder="***" data-cvv-mask>
+													<input type="password" placeholder="&#8226;&#8226;&#8226;" data-cvv-mask>
 												</div>
 											</div>
 											<div class="card__block">

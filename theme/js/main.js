@@ -30,9 +30,9 @@ app.init = function () {
 	app.initAnimations();
 };
 app.masks = function () {
-	$('[data-card-mask]').mask("9999 9999 9999 9999");
-	$('[data-cvv-mask]').mask("999");
-	$('[data-date-mask]').mask("99/99");
+	$('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
+	$('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
+	$('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
 };
 
 app.initFluid = function () {
@@ -101,6 +101,7 @@ app.initAnimations = function() {
 
 	var throttled = _.throttle(updatePosition, 100);
 	app.dom.$window.scroll(throttled);
+	updatePosition();
 	function updatePosition(){
 		scroll = $(document).scrollTop();
 		winHeigh = app.dom.$window.height();
