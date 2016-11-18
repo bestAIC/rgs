@@ -102,48 +102,58 @@ app.newsGall = function () {
 	var $gall = $('[data-news-gall]'),
 			$prev = $gall.find('[data-news-gall-prev]'),
 			$next = $gall.find('[data-news-gall-next]'),
+			$slides = $gall.find('[data-news-gall-slides]'),
+			$content = $('[data-news-content]'),
 			$gallItems = $gall.find('[data-news-gall-item]'),
 			$tab = $('[data-news-tab]'),
-			$activeItems
+			swiper = null
 
 		;
-	var swiper = new Swiper($gall[0], {
-		slidesPerView: 'auto',
-		simulateTouch: true,
-		nextButton:$next,
-		prevButton:$prev,
-		breakpoints: {
-			640: {
-				spaceBetween: 10
-			}
+	function initSwiper(data) {
+		if(swiper){
+			$gallItems.removeClass('_show _1 _2 _3 _4 _5 _6').addClass('_hidden');
+			setTimeout(function () {
+				swiper.destroy();
+				init(data);
+			},500);
+		}else{
+			init(data);
 		}
-	});
+	}
+	function init(data) {
+		$gallItems =  $content.find('[data-news-gall-item="'+data+'"]').clone();
+		$slides.html($gallItems);
+		$gallItems.slice(0,6).each(function (i,el) {
+			$(el).addClass('_'+(i+1));
+		});
+		swiper = new Swiper($gall[0], {
+			slidesPerView: 'auto',
+			simulateTouch: true,
+			nextButton:$next,
+			prevButton:$prev,
+			loop:true,
+			breakpoints: {
+				640: {
+					spaceBetween: 10
+				}
+			}
+		});
+		$gallItems = $slides.find('[data-news-gall-item]');
+		swiper.update(true);
+		swiper.slideTo(0,0);
+		setTimeout(function () {
+			$gallItems.addClass('_show');
+		},100);
+	}
 
 	$tab.on('click',function () {
 		var $self = $(this);
 		if(!$self.hasClass('_active')){
 			$tab.toggleClass('_active');
-			changeItems($self.data('newsTab'));
+			initSwiper($self.data('newsTab'));
 		}
 	});
-
-	changeItems('promo');
-	function changeItems(name) {
-		$gallItems.removeClass('_show _1 _2 _3 _4 _5 _6').addClass('_hidden');
-		setTimeout(function () {
-			$activeItems = $gallItems .filter('[data-news-gall-item="'+name+'"]');
-			$gallItems.hide().removeClass('_hidden');
-			$activeItems.show();
-			$activeItems.slice(0,6).each(function (i,el) {
-				$(el).addClass('_'+(i+1));
-			});
-			swiper.update(true);
-			swiper.slideTo(0,0);
-			setTimeout(function () {
-				$gallItems.addClass('_show');
-			},100);
-		},500);
-	}
+	initSwiper('promo');
 };
 
 app.bannerGall = function () {

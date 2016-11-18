@@ -385,9 +385,9 @@
 						<a href="javascript:void(0);" class="home__news-tab _active" data-news-tab="promo">Акции</a> и
 						<a href="javascript:void(0);" class="home__news-tab" data-news-tab="news">новости</a>
 					</h2>
-					<div class="swiper-container gall" data-news-gall data-animation>
-						<div class="swiper-wrapper">
-							<?for ($i=1;$i<=2;$i++){?>
+					<div data-news-content="promo" class="hide">
+						<?/*акции*/?>
+						<?for ($i=1;$i<=2;$i++){?>
 							<a href="#" class="swiper-slide gall__item gall__promo" style="background-image: url('theme/images/home/gall/1.jpg');" data-news-gall-item="promo">
 								<div class="gall__promo-inner">
 									<div class="gall__promo-logo">
@@ -425,8 +425,9 @@
 									</div>
 								</div>
 							</a>
-							<?}?>
-							<?for ($i=1;$i<=2;$i++){?>
+						<?}?>
+						<?/*новости*/?>
+						<?for ($i=1;$i<=2;$i++){?>
 							<div class="swiper-slide gall__item gall__news _flag"  data-news-gall-item="news">
 								<div class="gall__news-inner">
 									<div class="gall__news-date">24 октября 2016</div>
@@ -457,7 +458,11 @@
 									</a>
 								</div>
 							</div>
-							<?}?>
+						<?}?>
+					</div>
+					<div class="swiper-container gall" data-news-gall data-animation>
+						<div class="swiper-wrapper"  data-news-gall-slides>
+							
 						</div>
 						<div class="nav gall__nav">
 							<div class="nav__btn _prev" data-news-gall-prev></div>
