@@ -60,7 +60,11 @@ app.initFluid = function () {
 app.newsGall = function () {
 	var $gall = $('[data-news-gall]'),
 			$prev = $gall.find('[data-news-gall-prev]'),
-			$next = $gall.find('[data-news-gall-next]')
+			$next = $gall.find('[data-news-gall-next]'),
+			$gallItems = $gall.find('[data-news-gall-item]'),
+			$tab = $('[data-news-tab]'),
+			$activeItems
+
 		;
 	var swiper = new Swiper($gall[0], {
 		slidesPerView: 'auto',
@@ -73,6 +77,32 @@ app.newsGall = function () {
 			}
 		}
 	});
+
+	$tab.on('click',function () {
+		var $self = $(this);
+		if(!$self.hasClass('_active')){
+			$tab.toggleClass('_active');
+			changeItems($self.data('newsTab'));
+		}
+	});
+
+	changeItems('promo');
+	function changeItems(name) {
+		$gallItems.removeClass('_show _1 _2 _3 _4 _5 _6').addClass('_hidden');
+		setTimeout(function () {
+			$activeItems = $gallItems .filter('[data-news-gall-item="'+name+'"]');
+			$gallItems.hide().removeClass('_hidden');
+			$activeItems.show();
+			$activeItems.slice(0,6).each(function (i,el) {
+				$(el).addClass('_'+(i+1));
+			});
+			swiper.update(true);
+			swiper.slideTo(0,0);
+			setTimeout(function () {
+				$gallItems.addClass('_show');
+			},100);
+		},500);
+	}
 };
 
 app.bannerGall = function () {

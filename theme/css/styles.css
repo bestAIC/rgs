@@ -857,7 +857,7 @@ h2,
 }
 .no-touch .home__products .product:hover {
   transform: translate(0, -0.3rem);
-  box-shadow: 0 16px 64px -12px rgba(9, 9, 10, 0.16), 0 8px 20px -4px rgba(9, 9, 10, 0.08);
+  box-shadow: 0 1.6rem 6.4rem -1.2rem rgba(9, 9, 10, 0.16), 0 0.8rem 2rem -0.4rem rgba(9, 9, 10, 0.08);
 }
 .home__services {
   padding-top: 3.2rem;
@@ -1156,6 +1156,17 @@ h2,
   overflow: hidden;
   padding-bottom: 10.1rem;
 }
+.home__news-tab {
+  color: #acb6bf;
+  border-bottom: 1px dashed;
+  display: inline-block;
+  line-height: 3.2rem;
+}
+.home__news-tab._active {
+  color: #222226;
+  border-bottom: 0;
+  cursor: default;
+}
 .no-touch .home__news:hover .gall__nav {
   opacity: 1;
 }
@@ -1203,6 +1214,10 @@ h2,
   overflow: visible;
   margin-top: 2.8rem;
 }
+.gall._active .gall__item._show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 .gall__nav {
   position: absolute;
   left: 50%;
@@ -1219,6 +1234,33 @@ h2,
   display: block;
   color: #222226;
   margin-right: 3rem;
+  opacity: 0;
+  transform: translate(130rem, 0);
+  transition: opacity 1s;
+}
+.gall__item._hidden {
+  transform: translate(0, 0);
+}
+.gall__item._show {
+  transition: opacity 2s, transform 2s;
+}
+.gall__item._show._2 {
+  transition: opacity 1.8s 0.2s, transform 1.8s 0.2s;
+}
+.gall__item._show._3 {
+  transition: opacity 1.6s 0.4s, transform 1.6s 0.4s;
+}
+.gall__item._show._4 {
+  transition: opacity 1.4s 0.6s, transform 1.4s 0.6s;
+}
+.gall__item._show._5 {
+  transition: opacity 1.2s 0.8s, transform 1.2s 0.8s;
+}
+.gall__item._show._6 {
+  transition: opacity 1s 1s, transform 1s 1s;
+}
+.gall__item._show._7 {
+  transition: opacity 0.8s 1.2s, transform 0.8s 1.2s ;
 }
 .gall__item:last-child {
   margin-right: 0;
@@ -1380,9 +1422,6 @@ h2,
 }
 .tablet.portrait .home__news {
   padding-bottom: 10.4rem;
-}
-.tablet.portrait .home__news .nav {
-  opacity: 1;
 }
 .mobile .gall {
   margin-top: 2rem;
@@ -2103,6 +2142,7 @@ h2,
   background-color: #ff9b05;
   background-image: url('../images/icons/social/rss.svg');
   background-size: 1.4rem 1.4rem;
+  background-position: 55% 48%;
 }
 .footer__logo {
   width: 25.2rem;
