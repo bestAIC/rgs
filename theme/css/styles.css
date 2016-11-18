@@ -430,6 +430,17 @@ h2,
   line-height: 2.5rem;
   text-align: center;
 }
+/*.filler-loader {
+	height: 32px;
+	width: 32px;
+	transform: rotate(-90deg);
+	.fill-path {
+		fill: none;
+		stroke: white;
+		stroke-linecap: butt;
+		stroke-width: 8px;
+	}
+}*/
 .more-btn {
   width: 12rem;
   height: 4rem;
@@ -1362,25 +1373,14 @@ h2,
   font-size: 1.8rem;
 }
 .tablet.portrait .home__products {
-  *zoom: 1;
-  white-space: nowrap;
-  overflow: auto;
-}
-.tablet.portrait .home__products:before,
-.tablet.portrait .home__products:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.tablet.portrait .home__products:after {
-  clear: both;
+  padding-left: 2.7rem;
 }
 .tablet.portrait .home__products .product {
   white-space: normal;
   display: inline-block;
   float: none;
   vertical-align: top;
-  margin-right: 2.6rem;
+  margin-right: 3rem;
 }
 .tablet.portrait .home__services {
   padding-bottom: 3.4rem;
@@ -1484,19 +1484,14 @@ h2,
   margin-top: 3.6rem;
 }
 .mobile .home__products {
-  padding: 1.5rem 0;
-  white-space: nowrap;
-  padding-right: 2rem;
-  overflow-x: auto;
+  padding: 1.5rem 2rem;
 }
 .mobile .home__products .product {
   display: inline-block;
   vertical-align: top;
   margin-right: 0;
   float: none;
-}
-.mobile .home__products .product + .product {
-  margin-left: 0.5rem;
+  width: 36.4rem;
 }
 .mobile .home__services {
   padding-top: 2.8rem;
@@ -1550,10 +1545,8 @@ h2,
 }
 .mobile .home__info-sections {
   margin-top: 2rem;
-  white-space: nowrap;
-  overflow-x: auto;
   padding-left: 2.5rem;
-  padding-right: 1.7rem;
+  padding-right: 2.5rem;
   margin-left: -2.5rem;
   margin-right: -2.5rem;
   padding-bottom: 2rem;

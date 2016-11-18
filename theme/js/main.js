@@ -28,6 +28,13 @@ app.init = function () {
 	app.masks();
 	app.bannerGall();
 	app.initAnimations();
+	if(app.utils.isMobile || app.utils.isTablePort ){
+		app.tabletSliders();
+	}
+	if(app.utils.isMobile){
+		app.mobSliders();
+	}
+
 };
 app.masks = function () {
 	$('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
@@ -57,6 +64,40 @@ app.initFluid = function () {
 	}
 };
 
+app.mobSliders = function () {
+	var $galls = $('[data-mob-slider]');
+
+	$galls.each(function () {
+		var swiper = new Swiper($(this)[0], {
+			slidesPerView: 1,
+			simulateTouch: true,
+			breakpoints: {
+				640: {
+					spaceBetween: 10
+				}
+			}
+		});
+	});
+};
+app.tabletSliders = function () {
+	var $galls = $('[data-tablet-slider]');
+
+	var options = {
+
+	};
+	$galls.each(function () {
+		var swiper = new Swiper($(this)[0], {
+			slidesPerView: 'auto',
+			simulateTouch: true,
+			breakpoints: {
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 10
+				}
+			}
+		});
+	});
+};
 app.newsGall = function () {
 	var $gall = $('[data-news-gall]'),
 			$prev = $gall.find('[data-news-gall-prev]'),

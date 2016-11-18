@@ -74,7 +74,53 @@
 				</div>
 			</div>
 		</div>
-		<div class="home__products" data-animation>
+		<div class="home__products swiper-container no-desktop-block"  data-tablet-slider>
+			<div class="swiper-wrapper">
+				<a href="#" class="product _green swiper-slide" style="background-image: url('theme/images/home/product/1.jpg')">
+					<div class="product__inner">
+						<div class="product__title">Вклады</div>
+						<div class="product__val">до 8,1%</div>
+						<div class="product__bottom">
+							<div class="product__text">
+								Надежный способ<br />
+								сбережения и накопления<br />
+								денежных средств
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="product _red swiper-slide" style="background-image: url('theme/images/home/product/2.jpg')">
+					<div class="product__inner">
+						<div class="product__title">Денежные переводы</div>
+						<div class="product__val">до 75 000 Руб.</div>
+						<div class="product__bottom">
+							<div class="product__text">
+								Переводите деньги<br />
+								с карту на карту легко<br />
+								и максимально удобно
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="product _gray swiper-slide" style="background-image: url('theme/images/home/product/3.jpg')">
+					<div class="product__inner">
+						<div class="product__title">
+							Индивидуальный<br />
+							инвестиционный<br />
+							счет
+						</div>
+						<div class="product__bottom">
+							<div class="product__val">20%</div>
+							<div class="product__text">
+								Целевая доходность<br />
+								за первый год
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="home__products is-desktop-block" data-animation>
 			<div class="grid__inner">
 				<a href="#" class="product _green" style="background-image: url('theme/images/home/product/1.jpg')">
 					<div class="product__inner">
@@ -263,7 +309,43 @@
 							<button type="submit" class="search-form__btn"></button>
 						</form>
 					</div>
-					<div class="home__info-sections"  data-animation>
+					<?/*отдельно мобильная версия*/?>
+					<div class="swiper-container home__info-sections is-mob-block" data-mob-slider>
+						<div class="swiper-wrapper">
+							<a href="#" class="swiper-slide home__info-section">
+								<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/1.svg');"></div>
+								<div class="home__info-section-title">Вклады и сбережения</div>
+								<div class="home__info-section-counter">12 статей</div>
+							</a>
+							<a href="#" class="swiper-slide home__info-section">
+								<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/2.svg');"></div>
+								<div class="home__info-section-title">Банковские карты</div>
+								<div class="home__info-section-counter">12 статей</div>
+							</a>
+							<a href="#" class="swiper-slide home__info-section">
+								<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/3.svg');"></div>
+								<div class="home__info-section-title">Кредиты</div>
+								<div class="home__info-section-counter">12 статей</div>
+							</a>
+							<a href="#" class="swiper-slide home__info-section">
+								<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/4.svg');"></div>
+								<div class="home__info-section-title">Оплата услуг</div>
+								<div class="home__info-section-counter">12 статей</div>
+							</a>
+							<a href="#" class="swiper-slide home__info-section">
+								<div class="home__info-section-ico _big" style="background-image: url('theme/images/home/info/5.svg');"></div>
+								<div class="home__info-section-title">Денежные переводы</div>
+								<div class="home__info-section-counter">12 статей</div>
+							</a>
+							<a href="#" class="swiper-slide home__info-section">
+								<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/6.svg');"></div>
+								<div class="home__info-section-title">Интернет-банк</div>
+								<div class="home__info-section-counter">12 статей</div>
+							</a>
+						</div>
+					</div>
+					<?/*конец мобильной*/?>
+					<div class="home__info-sections no-mob-block"  data-animation>
 						<a href="#" class="home__info-section">
 							<div class="home__info-section-ico" style="background-image: url('theme/images/home/info/1.svg');"></div>
 							<div class="home__info-section-title">Вклады и сбережения</div>
