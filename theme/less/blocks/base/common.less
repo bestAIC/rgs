@@ -127,6 +127,22 @@ h2,.title{
 	line-height: 25/@rem;
 	text-align: center;
 }
+.more-btn{
+	width: 120/@rem;
+	height: 40/@rem;
+	border-radius: 2/@rem;
+	box-shadow: 0 2/@rem 10/@rem rgba(23, 24, 26, 0.3);
+	background: url('@{pathToImg}icons/arr_down.svg') no-repeat center #fff;
+	background-size: 1.1rem 0.7rem;
+	&._bottom{
+		position: absolute;
+		z-index: 10;
+		left: 50%;
+		margin-left: -60/@rem;
+		bottom: -2rem;
+	}
+}
+
 .tablet.portrait{
 	.grid{
 		&__inner{
@@ -143,6 +159,7 @@ h2,.title{
 		font-size: 16/@rem;
 	}
 }
+
 .mobile{
 	.grid{
 		&__inner{

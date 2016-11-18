@@ -76,7 +76,7 @@
 		</div>
 		<div class="home__products" data-animation>
 			<div class="grid__inner">
-				<a href="#" class="product" style="background-image: url('theme/images/home/product/1.jpg')">
+				<a href="#" class="product _green" style="background-image: url('theme/images/home/product/1.jpg')">
 					<div class="product__inner">
 						<div class="product__title">Вклады</div>
 						<div class="product__val">до 8,1%</div>
@@ -89,7 +89,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="product" style="background-image: url('theme/images/home/product/2.jpg')">
+				<a href="#" class="product _red" style="background-image: url('theme/images/home/product/2.jpg')">
 					<div class="product__inner">
 						<div class="product__title">Денежные переводы</div>
 						<div class="product__val">до 75 000 Руб.</div>
@@ -102,7 +102,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="product" style="background-image: url('theme/images/home/product/3.jpg')">
+				<a href="#" class="product _gray" style="background-image: url('theme/images/home/product/3.jpg')">
 					<div class="product__inner">
 						<div class="product__title">
 							Индивидуальный<br />
@@ -121,6 +121,7 @@
 			</div>
 		</div>
 		<div class="home__services">
+			<a href="#" class="more-btn _bottom is-desktop-block"></a>
 			<div class="grid__inner">
 				<h2>Оплачивайте услуги</h2>
 				<div class="subtitle">Более 600 услуг от 250 провайдеров</div>

@@ -429,6 +429,21 @@ h2,
   line-height: 2.5rem;
   text-align: center;
 }
+.more-btn {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 1rem rgba(23, 24, 26, 0.3);
+  background: url('../images/icons/arr_down.svg') no-repeat center #fff;
+  background-size: 1.1rem 0.7rem;
+}
+.more-btn._bottom {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  margin-left: -6rem;
+  bottom: -2rem;
+}
 .tablet.portrait .grid__inner {
   padding-left: 2.7rem;
   padding-right: 2.7rem;
@@ -862,6 +877,7 @@ h2,
 .home__services {
   padding-top: 3.2rem;
   padding-bottom: 4.8rem;
+  position: relative;
 }
 .home__services-search {
   width: 57rem;
@@ -1791,6 +1807,15 @@ h2,
   background-size: cover;
   padding: 3.2rem 2.9rem 3.5rem;
 }
+.product._green .product__text {
+  color: #4d664c;
+}
+.product._red .product__text {
+  color: #705569;
+}
+.product._gray .product__text {
+  color: #616572;
+}
 .product__inner {
   height: 100%;
   position: relative;
@@ -1849,6 +1874,24 @@ h2,
   height: 29rem;
   border-radius: 1.6rem;
   box-shadow: 0 0.2rem 1.2rem rgba(23, 24, 26, 0.4), 0 1px 0.4rem rgba(23, 24, 26, 0.3);
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.card ::-webkit-input-placeholder {
+  color: #7a7d7d;
+  opacity: 0.2;
+}
+.card ::-moz-placeholder {
+  color: #7a7d7d;
+  opacity: 0.2;
+}
+.card :-moz-placeholder {
+  color: #7a7d7d;
+  opacity: 0.2;
+}
+.card :-ms-input-placeholder {
+  color: #7a7d7d;
+  opacity: 0.2;
 }
 .card._light {
   /* Firefox 19+ */
@@ -1879,6 +1922,7 @@ h2,
 .card._light .card__fields input[type='text'],
 .card._light .card__fields input[type='password'] {
   border-bottom: 0.2rem solid #7e858c;
+  color: rgba(255, 255, 255, 0.7);
 }
 .card._light .card__block-title {
   color: #fff;
@@ -1915,7 +1959,7 @@ h2,
   border-radius: 0;
   border: 0;
   border-bottom: 0.2rem solid #56565b;
-  color: #fff;
+  color: rgba(227, 227, 229, 0.5);
   font-size: 2rem;
   font-weight: 400;
   padding: 0;

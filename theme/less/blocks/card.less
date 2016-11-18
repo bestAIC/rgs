@@ -3,6 +3,10 @@
 	height: 290/@rem;
 	border-radius: 16/@rem;
 	box-shadow: 0 2/@rem 12/@rem rgba(23, 24, 26, 0.4), 0 1px 4/@rem rgba(23, 24, 26, 0.3);
+	::-webkit-input-placeholder {color:#7a7d7d;opacity: 0.2;}
+	::-moz-placeholder          {color:#7a7d7d;opacity: 0.2;}/* Firefox 19+ */
+	:-moz-placeholder           {color:#7a7d7d;opacity: 0.2;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:#7a7d7d;opacity: 0.2;}
 	&._light{
 		.help-ico{
 			background-color: #7e858c;
@@ -18,6 +22,7 @@
 			&__fields{
 				input[type='text'], input[type='password']{
 					border-bottom: 2/@rem solid #7e858c;
+					color:  fade(white, 70%);
 				}
 			}
 			&__block{
@@ -56,7 +61,7 @@
 			border-radius: 0;
 			border: 0;
 			border-bottom: 2/@rem solid #56565b;
-			color: #fff;
+			color: fade(#e3e3e5,50%);
 			font-size: 20/@rem;
 			font-weight: 400;
 			padding: 0;
