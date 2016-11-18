@@ -263,16 +263,16 @@ textarea {
   background: transparent;
   box-shadow: none;
   width: 100%;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2rem;
   padding: 1.4rem 2rem;
   box-sizing: border-box;
   height: 100%;
   position: relative;
   z-index: 1;
-  color: #222226;
+  color: #191919;
   border-radius: 0.2rem;
 }
 textarea {
@@ -343,7 +343,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
   line-height: 1.42857143;
-  color: #222226;
+  color: #191919;
   background-color: #fff;
   font-weight: 400;
 }
@@ -418,7 +418,7 @@ h2,
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 4.8rem;
-  color: #222226;
+  color: #3e3e3e;
   margin-top: 0;
   letter-spacing: -0.05rem;
   margin-bottom: 1rem;
@@ -1124,7 +1124,7 @@ h2,
   margin-bottom: 3rem;
   border-top: 0.6rem solid #cca266;
   text-align: center;
-  color: #222226;
+  color: #191919;
   padding: 4.4rem 3rem 0;
 }
 .no-touch .home__info-section {
@@ -1191,7 +1191,7 @@ h2,
   line-height: 3.2rem;
 }
 .home__news-tab._active {
-  color: #222226;
+  color: #191919;
   border-bottom: 0;
   cursor: default;
 }
@@ -1260,7 +1260,7 @@ h2,
   border-radius: 0.2rem;
   box-shadow: 0 1px 0.3rem rgba(212, 212, 212, 0.8);
   display: block;
-  color: #222226;
+  color: #191919;
   margin-right: 3rem;
   opacity: 0;
   transform: translate(130rem, 0);
@@ -1800,7 +1800,7 @@ h2,
   height: 27rem;
   border-radius: 0.2rem;
   box-shadow: 0 1px 0.4rem rgba(179, 179, 179, 0.3);
-  color: #222226;
+  color: #191919;
   background: none no-repeat center;
   background-size: cover;
   padding: 3.2rem 2.9rem 3.5rem;
