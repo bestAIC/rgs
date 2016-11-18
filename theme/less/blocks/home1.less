@@ -497,7 +497,7 @@
 
 		}
 		&._next{
-			transform: rotate(180deg);
+			background-image: url('@{pathToImg}icons/arr_right_black.svg');
 		}
 	}
 }
@@ -803,6 +803,9 @@
 				display: inline-block;
 				vertical-align: top;
 				margin-right: 16/@rem;
+				&:last-child{
+					margin-right: 2rem;
+				}
 				&-title{
 					font-size: 14/@rem;
 					line-height: 2rem;

@@ -1236,7 +1236,7 @@ h2,
   margin-left: 1.5rem;
 }
 .nav__btn._next {
-  transform: rotate(180deg);
+  background-image: url('../images/icons/arr_right_black.svg');
 }
 .gall {
   overflow: visible;
@@ -1531,6 +1531,9 @@ h2,
   display: inline-block;
   vertical-align: top;
   margin-right: 1.6rem;
+}
+.mobile .home__services-item:last-child {
+  margin-right: 2rem;
 }
 .mobile .home__services-item-title {
   font-size: 1.4rem;
