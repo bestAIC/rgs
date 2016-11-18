@@ -1448,6 +1448,7 @@ h2,
 }
 .mobile .gall__item {
   margin-right: 0;
+  width: 36.4rem;
 }
 .mobile .home__transfer {
   display: none;

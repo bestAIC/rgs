@@ -178,7 +178,7 @@ app.initAnimations = function() {
 		winHeigh = app.dom.$window.height();
 		$animation.each(function(){
 			var $self = $(this);
-			top = $self.offset().top + winHeigh*0.35;
+			top = $self.offset().top + winHeigh*0.15;
 			if((top-scroll) <= winHeigh)
 			{
 				$self.addClass('_active');
