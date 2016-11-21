@@ -1242,8 +1242,8 @@ h2,
 }
 .home__info-answer-more {
   float: right;
-  margin-top: 4.4rem;
-  margin-right: 3.7rem;
+  margin-right: 1rem;
+  margin-top: 4rem;
 }
 .mobile .home__info-answer-more {
   margin-right: 0;
@@ -1253,6 +1253,9 @@ h2,
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.5rem;
+  background: url('../images/icons/arr_right_long_gold.svg') no-repeat right center;
+  background-size: 1.2rem 1rem;
+  padding-right: 2.7rem;
 }
 .home__info-answer-form-title {
   color: #acb6bf;
