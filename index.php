@@ -297,19 +297,27 @@
 					</form>
 				</div>
 			</div>
-			<div class="home__info">
+			<div class="home__info" data-info>
 				<div class="grid__inner">
 					<h2>Справочный центр</h2>
 					<div class="subtitle">Мы поможем разобраться с любыми вопросами </div>
 					<div class="home__info-search search-form">
-						<form action="">
-							<div class="search-form__field">
-								<input type="text" placeholder="Например: как поменять пароль в Интернет-банке?">
-							</div>
-							<button type="submit" class="search-form__btn"></button>
-						</form>
+						<div class="search-form__block">
+							<form action="ajax/info/requests.php" data-info-form>
+								<div class="search-form__field">
+									<input type="text" data-info-field  placeholder="Например: как поменять пароль в Интернет-банке?">
+								</div>
+								<button type="submit" class="search-form__btn"></button>
+							</form>
+						</div>
+						<div data-info-requests  class="search-form__requests-wrap">
+
+						</div>
 					</div>
 					<?/*отдельно мобильная версия*/?>
+					<div data-info-answer-mob data-ajax-url="ajax/info/answer.php" class="home__info-answer-wrap">
+
+					</div>
 					<div class="swiper-container home__info-sections is-mob-block" data-mob-slider>
 						<div class="swiper-wrapper">
 							<a href="#" class="swiper-slide home__info-section">
@@ -376,6 +384,9 @@
 							<div class="home__info-section-title">Интернет-банк</div>
 							<div class="home__info-section-counter">12 статей</div>
 						</a>
+						<div data-info-answer data-ajax-url="ajax/info/answer.php" class="home__info-answer-wrap">
+
+						</div>
 					</div>
 				</div>
 			</div>

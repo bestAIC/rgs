@@ -11,6 +11,11 @@
 			letter-spacing: -0.5/@rem;
 		}
 	}
+	&__block{
+		position: relative;
+		z-index: 20;
+		background-color: #fff;
+	}
 	&__btn{
 		position: absolute;
 		top: 0;
@@ -20,6 +25,48 @@
 		.background('@{pathToImg}icons/arr_right_long_red.svg',1.2rem 1rem);
 		border: 0;
 		width: 53/@rem;
+	}
+	&__requests{
+		font-size: 14/@rem;
+		font-weight: 400;
+		line-height: 16/@rem;
+		padding-top: 27/@rem;
+		padding-bottom: 27/@rem;
+		box-shadow: 0 10/@rem 40/@rem rgba(13, 17, 26, 0.16), 0 2/@rem 8/@rem rgba(19, 25, 38, 0.08);
+		border: 1px solid #e8e8e8;
+		border-top: 0;
+		&-wrap{
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			background-color: #fff;
+			z-index: 10;
+		}
+		&-title{
+			color: @cGold;
+			padding: 0 50/@rem 12/@rem;
+		}
+		&-item{
+			background-color: white;
+			transition:background-color @animTime;
+			color: #666;
+			font-weight: 400;
+			display: block;
+			text-decoration: none;
+			padding: 12/@rem 10/@rem 12/@rem 75/@rem;
+			.mobile &{
+				padding-left: 5rem;
+			}
+			strong{
+				color: #171717;
+				font-weight: 600;
+			}
+			.no-touch &:hover{
+				background-color: whitesmoke;
+			}
+		}
 	}
 }
 .mobile{
