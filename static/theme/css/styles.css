@@ -1519,13 +1519,6 @@ h2,
   background-size: cover;
   padding: 4rem 4rem 3.1rem;
 }
-.gall__promo._show {
-  transition-delay: 0s!important;
-}
-.no-touch .gall__promo._show:hover {
-  transform: translate(0, -3px);
-  transition: transform 0.5s 0s;
-}
 .gall__promo-inner {
   height: 100%;
   position: relative;
@@ -2007,7 +2000,6 @@ h2,
   background: url('../images/icons/search_gold.svg') no-repeat 1.3rem center;
   background-size: 2rem;
   padding: 1.4rem 5rem;
-  letter-spacing: -0.05rem;
 }
 .search-form__block {
   position: relative;
