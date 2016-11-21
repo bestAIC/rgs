@@ -523,7 +523,7 @@
 			margin-bottom: 30/@rem;
 			border-top: 6/@rem solid @cGold;
 			text-align: center;
-			color: @text-color;
+			.color(@text-color);
 			padding: 44/@rem 30/@rem 0;
 			.no-touch &{
 				opacity: 0;
@@ -584,12 +584,12 @@
 		overflow: hidden;
 		padding-bottom: 101/@rem;
 		&-tab{
-			color: #acb6bf;
+			.color(#acb6bf);
 			border-bottom: 1px dashed;
 			display: inline-block;
 			line-height: 3.2rem;
 			&._active{
-				color: @text-color;
+				.color(@text-color);
 				border-bottom: 0;
 				cursor: default;
 			}
@@ -698,6 +698,13 @@
 		background: none no-repeat center;
 		background-size: cover;
 		padding: 40/@rem 40/@rem 31/@rem;
+		&._show{
+			transition-delay: 0s!important;
+			.no-touch &:hover{
+				transform: translate(0,-3px);
+				transition: transform @animTime 0s;
+			}
+		}
 		&-inner{
 			height:100%;
 			position: relative;

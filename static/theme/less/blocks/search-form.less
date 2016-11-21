@@ -51,7 +51,7 @@
 		&-item{
 			background-color: white;
 			transition:background-color @animTime;
-			color: #666;
+			.color(@title-color);
 			font-weight: 400;
 			display: block;
 			text-decoration: none;
@@ -60,7 +60,7 @@
 				padding-left: 5rem;
 			}
 			strong{
-				color: #171717;
+				color: @text-color;
 				font-weight: 600;
 			}
 			.no-touch &:hover{

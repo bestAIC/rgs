@@ -223,9 +223,19 @@ th {
   user-select: none;
   box-shadow: 0 1px 0.3rem rgba(158, 9, 24, 0.3);
   text-transform: uppercase;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+.no-touch .btn:hover {
+  background-color: #cc1f33;
+  box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
+  color: #fff;
 }
 .btn._gold {
   background-color: #cca266;
+}
+.no-touch .btn._gold:hover {
+  background-color: #dbae6e;
+  box-shadow: 0 1px 3px rgba(204, 162, 102, 0.3);
 }
 .btn:focus,
 .btn:active:focus,
@@ -274,6 +284,52 @@ textarea {
   z-index: 1;
   color: #191919;
   border-radius: 0.2rem;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+input[type='text'] ::-webkit-input-placeholder,
+input[type='password'] ::-webkit-input-placeholder,
+input[type='tel'] ::-webkit-input-placeholder,
+input[type='date'] ::-webkit-input-placeholder,
+input[type='number'] ::-webkit-input-placeholder,
+input[type='email'] ::-webkit-input-placeholder,
+input[type='url'] ::-webkit-input-placeholder,
+input[type='search'] ::-webkit-input-placeholder,
+textarea ::-webkit-input-placeholder {
+  color: #acb6bf;
+}
+input[type='text'] ::-moz-placeholder,
+input[type='password'] ::-moz-placeholder,
+input[type='tel'] ::-moz-placeholder,
+input[type='date'] ::-moz-placeholder,
+input[type='number'] ::-moz-placeholder,
+input[type='email'] ::-moz-placeholder,
+input[type='url'] ::-moz-placeholder,
+input[type='search'] ::-moz-placeholder,
+textarea ::-moz-placeholder {
+  color: #acb6bf;
+}
+input[type='text'] :-moz-placeholder,
+input[type='password'] :-moz-placeholder,
+input[type='tel'] :-moz-placeholder,
+input[type='date'] :-moz-placeholder,
+input[type='number'] :-moz-placeholder,
+input[type='email'] :-moz-placeholder,
+input[type='url'] :-moz-placeholder,
+input[type='search'] :-moz-placeholder,
+textarea :-moz-placeholder {
+  color: #acb6bf;
+}
+input[type='text'] :-ms-input-placeholder,
+input[type='password'] :-ms-input-placeholder,
+input[type='tel'] :-ms-input-placeholder,
+input[type='date'] :-ms-input-placeholder,
+input[type='number'] :-ms-input-placeholder,
+input[type='email'] :-ms-input-placeholder,
+input[type='url'] :-ms-input-placeholder,
+input[type='search'] :-ms-input-placeholder,
+textarea :-ms-input-placeholder {
+  color: #acb6bf;
 }
 textarea {
   resize: none;
@@ -357,7 +413,12 @@ textarea {
   line-height: inherit;
 }
 a {
+  color: #b31b2c;
   text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #cc1f33;
 }
 .middle {
   white-space: nowrap;
@@ -1278,6 +1339,9 @@ h2,
   color: #191919;
   padding: 4.4rem 3rem 0;
 }
+.no-touch .home__info-section:hover {
+  color: #191919;
+}
 .no-touch .home__info-section {
   opacity: 0;
   transition: box-shadow 0.5s, transform 0.5s, opacity 1s;
@@ -1341,10 +1405,16 @@ h2,
   display: inline-block;
   line-height: 3.2rem;
 }
+.no-touch .home__news-tab:hover {
+  color: #acb6bf;
+}
 .home__news-tab._active {
   color: #191919;
   border-bottom: 0;
   cursor: default;
+}
+.no-touch .home__news-tab._active:hover {
+  color: #191919;
 }
 .no-touch .home__news:hover .gall__nav {
   opacity: 1;
@@ -1448,6 +1518,13 @@ h2,
   background: none no-repeat center;
   background-size: cover;
   padding: 4rem 4rem 3.1rem;
+}
+.gall__promo._show {
+  transition-delay: 0s!important;
+}
+.no-touch .gall__promo._show:hover {
+  transform: translate(0, -3px);
+  transition: transform 0.5s 0s;
 }
 .gall__promo-inner {
   height: 100%;
@@ -1848,7 +1925,7 @@ h2,
   width: 100%;
   padding-left: 2.7rem;
   padding-right: 2.7rem;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid #DEDFE0;
   padding-top: 0.8rem;
   margin-top: 2.1rem;
 }
@@ -1910,7 +1987,7 @@ h2,
   float: none;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid #DEDFE0;
   padding-top: 0.8rem;
   margin-top: 1.5rem;
 }
@@ -1974,17 +2051,20 @@ h2,
 .search-form__requests-item {
   background-color: white;
   transition: background-color 0.5s;
-  color: #666;
+  color: #3e3e3e;
   font-weight: 400;
   display: block;
   text-decoration: none;
   padding: 1.2rem 1rem 1.2rem 7.5rem;
 }
+.no-touch .search-form__requests-item:hover {
+  color: #3e3e3e;
+}
 .mobile .search-form__requests-item {
   padding-left: 5rem;
 }
 .search-form__requests-item strong {
-  color: #171717;
+  color: #191919;
   font-weight: 600;
 }
 .no-touch .search-form__requests-item:hover {
@@ -2003,6 +2083,9 @@ h2,
   background: none no-repeat center;
   background-size: cover;
   padding: 3.2rem 2.9rem 3.5rem;
+}
+.no-touch .product:hover {
+  color: #191919;
 }
 .product._green .product__text {
   color: #4d664c;
@@ -2484,6 +2567,10 @@ h2,
   background: url('../images/icons/mail.svg') no-repeat center #b31b2c;
   background-size: 2.4rem 1.8rem;
   border: 0;
+  transition: background-color 0.5s;
+}
+.no-touch .footer__ask-btn:hover {
+  background-color: #cc1f33;
 }
 .footer__mob-title {
   color: #8d9399;

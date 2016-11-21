@@ -211,6 +211,11 @@
 			background: url('@{pathToImg}icons/mail.svg') no-repeat center @cRed;
 			background-size: 2.4rem 1.8rem;
 			border: 0;
+			transition: background-color @animTime;
+			.no-touch &:hover{
+				background-color: @cRedHover;
+				//box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
+			}
 		}
 	}
 	&__mob{

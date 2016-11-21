@@ -2,110 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2b748a9-628f-42d7-8c59-c9d8730c68b7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/info/answer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ajax/info/requests.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/css/styles.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/css/styles.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/banner/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/banner/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/banner/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/gall/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/gall/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/gall/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/gall/ico1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/gall/ico2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/gall/ico3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/info/1.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/info/2.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/info/3.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/info/4.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/info/5.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/info/6.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/product/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/product/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/product/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/services/1.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/services/2.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/services/3.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/services/4.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/home/services/5.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/app-store.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/arr_down.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/arr_left_black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/arr_right_black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/arr_right_long_red.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/arrow_right.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/burger.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/burger_red.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/close.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/google-play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/handset.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/mail.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/news-flag.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/phone_gold.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/rub.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/search.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/search_gold.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/search_red.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/social/fb.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/social/hh.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/social/rss.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/social/tw.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/icons/social/vk.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/logo_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/logo_footer.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/logo_mob.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/images/pixel.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/device.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/jquery-2.2.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/jquery.mask.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/jquery.mousewheel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/jquery.touchSwipe.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/jquery.ui.touch-punch.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/libs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/libs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/main.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/maps/swiper.jquery.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/maps/swiper.jquery.umd.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/maps/swiper.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/masked-input.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/modernizr-latest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/radiocheck.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/css/swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/css/swiper.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/js/swiper.jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/js/swiper.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/js/swiper.jquery.umd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/js/swiper.jquery.umd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/js/swiper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/swiper/dist/js/swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/js/underscore-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/base/btn.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/base/common.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/base/inputs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/card.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/exchange.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/footer.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/header.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/home1.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/product.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/blocks/search-form.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/reset.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/styles.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/theme/package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/css/styles.css" afterPath="$PROJECT_DIR$/static/theme/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/css/styles.css.map" afterPath="$PROJECT_DIR$/static/theme/css/styles.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/blocks/base/btn.less" afterPath="$PROJECT_DIR$/static/theme/less/blocks/base/btn.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/blocks/base/common.less" afterPath="$PROJECT_DIR$/static/theme/less/blocks/base/common.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/blocks/base/inputs.less" afterPath="$PROJECT_DIR$/static/theme/less/blocks/base/inputs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/blocks/footer.less" afterPath="$PROJECT_DIR$/static/theme/less/blocks/footer.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/blocks/home1.less" afterPath="$PROJECT_DIR$/static/theme/less/blocks/home1.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/blocks/product.less" afterPath="$PROJECT_DIR$/static/theme/less/blocks/product.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/blocks/search-form.less" afterPath="$PROJECT_DIR$/static/theme/less/blocks/search-form.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/mixins.less" afterPath="$PROJECT_DIR$/static/theme/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/theme/less/variables.less" afterPath="$PROJECT_DIR$/static/theme/less/variables.less" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -127,16 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/theme/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="styles.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/theme/less/styles.less">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,21 +45,95 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/base/common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="437">
+              <caret line="140" column="3" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/theme/package.json">
+      <file leaf-file-name="mixins.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/theme/less/mixins.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="219">
+              <caret line="157" column="6" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputs.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/base/inputs.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search-form.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/search-form.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variables.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/theme/less/variables.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/product.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-221">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home1.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/home1.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="701" column="37" selection-start-line="701" selection-start-column="37" selection-end-line="701" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="402" column="47" selection-start-line="402" selection-start-column="47" selection-end-line="402" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#5;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#2;n#div#5;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#2;n#div#5;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="btn.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/base/btn.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -192,7 +164,17 @@
         <option value="$PROJECT_DIR$/theme/js/main.js" />
         <option value="$PROJECT_DIR$/theme/less/blocks/home1.less" />
         <option value="$PROJECT_DIR$/static/theme/gulpfile.js" />
+        <option value="$PROJECT_DIR$/static/theme/less/blocks/footer.less" />
+        <option value="$PROJECT_DIR$/static/theme/less/variables.less" />
+        <option value="$PROJECT_DIR$/static/theme/less/blocks/card.less" />
+        <option value="$PROJECT_DIR$/static/theme/less/blocks/base/inputs.less" />
         <option value="$PROJECT_DIR$/static/theme/less/blocks/base/common.less" />
+        <option value="$PROJECT_DIR$/static/theme/less/blocks/base/btn.less" />
+        <option value="$PROJECT_DIR$/static/theme/less/mixins.less" />
+        <option value="$PROJECT_DIR$/static/theme/less/blocks/search-form.less" />
+        <option value="$PROJECT_DIR$/static/theme/less/blocks/product.less" />
+        <option value="$PROJECT_DIR$/static/index.php" />
+        <option value="$PROJECT_DIR$/static/theme/less/blocks/home1.less" />
       </list>
     </option>
   </component>
@@ -254,10 +236,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="106" />
+    <option name="x" value="83" />
+    <option name="y" value="154" />
     <option name="width" value="1932" />
-    <option name="height" value="922" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -325,84 +307,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -467,24 +371,24 @@
       <workItem from="1479452507347" duration="28179000" />
       <workItem from="1479712505469" duration="11648000" />
       <workItem from="1479724997301" duration="4000" />
-      <workItem from="1479725030964" duration="666000" />
+      <workItem from="1479725030964" duration="4073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56748000" />
+    <option name="totallyTimeSpent" value="60155000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="106" width="1932" height="922" extended-state="0" />
+    <frame x="83" y="154" width="1932" height="1099" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596154" sideWeight="0.45951036" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596154" sideWeight="0.5404896" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596154" sideWeight="0.45762712" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596154" sideWeight="0.5423729" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32869786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26859504" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16434893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -514,16 +418,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ajax/info/requests.php" />
-    <entry file="file://$PROJECT_DIR$/theme/less/blocks/home1.less" />
-    <entry file="file://$PROJECT_DIR$/theme/less/blocks/search-form.less" />
-    <entry file="file://$PROJECT_DIR$/theme/less/blocks/footer.less" />
-    <entry file="file://$PROJECT_DIR$/theme/less/variables.less" />
-    <entry file="file://$PROJECT_DIR$/theme/less/blocks/base/inputs.less" />
-    <entry file="file://$PROJECT_DIR$/theme/less/blocks/card.less" />
-    <entry file="file://$PROJECT_DIR$/theme/js/main.js" />
-    <entry file="file://$PROJECT_DIR$/index.php" />
-    <entry file="file://$PROJECT_DIR$/includes/header.php" />
     <entry file="file://$PROJECT_DIR$/includes/footer.php" />
     <entry file="file://$PROJECT_DIR$/theme/less/blocks/footer.less" />
     <entry file="file://$PROJECT_DIR$/theme/less/variables.less" />
@@ -584,6 +478,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/footer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="213" column="44" selection-start-line="213" selection-start-column="44" selection-end-line="213" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/card.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/theme/less/styles.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -592,10 +502,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/base/btn.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/base/inputs.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="157" column="6" selection-start-line="157" selection-start-column="1" selection-end-line="157" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/base/common.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="437">
+          <caret line="140" column="3" selection-start-line="140" selection-start-column="3" selection-end-line="140" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/search-form.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/product.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="402" column="47" selection-start-line="402" selection-start-column="47" selection-end-line="402" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#5;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#2;n#div#5;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#2;n#div#5;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/theme/less/blocks/home1.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="701" column="37" selection-start-line="701" selection-start-column="37" selection-end-line="701" selection-end-column="37" />
           <folding />
         </state>
       </provider>
