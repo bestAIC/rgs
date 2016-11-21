@@ -65,7 +65,8 @@ gulp.task('jsLibs:concat', function() {
 		options.sourcePathScripts + '/device.js',
 		options.sourcePathScripts + '/jquery.mask.min.js',
 		options.sourcePathScripts + '/jquery.touchSwipe.min.js',
-		options.sourcePathScripts + '/radiocheck.js'
+		options.sourcePathScripts + '/radiocheck.js',
+		options.sourcePathScripts + '/circle-progress.min.js'
 	])
 		.pipe(concat('libs.js'))
 		.pipe(gulp.dest(options.sourcePathScripts))

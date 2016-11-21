@@ -162,7 +162,9 @@ app.bannerGall = function () {
 	var $gall = $('[ data-banner-gall]'),
 			$prev = $gall.find('[data-banner-gall-prev]'),
 			$next = $gall.find('[data-banner-gall-next]'),
-			$pag = $gall.find('[data-banner-gall-pag]')
+			$pag = $gall.find('[data-banner-gall-pag]'),
+			canvas = null,
+			$canvas = null
 		;
 	var swiper = new Swiper($gall[0], {
 		nextButton:$next,
@@ -172,7 +174,37 @@ app.bannerGall = function () {
 		autoplay:7000,
 		autoplayDisableOnInteraction:false,
 		effect:'fade',
-		loop:true
+		loop:true,
+		onInit:function () {
+			setTimeout(function () {
+				$canvas = $gall.find('.swiper-pagination-bullet-active').circleProgress({
+					value: 1,
+					size:20,
+					thickness:4,
+					startAngle:-Math.PI/2,
+					animation:{
+						duration:7000,
+						easing:'linear'
+					},
+					emptyFill: '#ffffff',
+					fill: {color: '#b31b2c'}
+				});
+				canvas  = $gall.find('.swiper-pagination-bullet-active').circleProgress('widget');
+			},200);
+
+		},
+		onSlideChangeStart:function () {
+			if(canvas){
+				$gall.find('.swiper-pagination-bullet-active').append(canvas);
+				$canvas.circleProgress('redraw');
+			}
+		},
+		onTouchEnd:function () {
+			if(canvas){
+				$gall.find('.swiper-pagination-bullet-active').append(canvas);
+				$canvas.circleProgress('redraw');
+			}
+		}
 	});
 };
 app.info = function () {
