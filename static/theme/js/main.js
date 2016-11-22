@@ -210,6 +210,7 @@ app.bannerGall = function () {
 app.info = function () {
 	var $info = $('[data-info]'),
 			$form = $info.find('[data-info-form]'),
+			$search = $info.find('[data-info-search]'),
 			$field = $info.find('[data-info-field]'),
 			$requests = $info.find('[data-info-requests]'),
 			$answer = $info.find('[data-info-answer]')
@@ -236,7 +237,12 @@ app.info = function () {
 		});
 		return false;
 	});
-	
+
+	app.dom.$window.on('click.CloseRequests',function (e) {
+		if(!$(e.target).closest($search).length){
+			$requests.fadeOut();
+		}
+	});
 	$requests.on('click','[data-requests-item]',function () {
 		var $self = $(this);
 		$field.val($self.text());

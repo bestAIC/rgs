@@ -51,7 +51,7 @@
 		</div>
 		<div class="exchange">
 			<div class="grid__inner exchange__inner">
-				<div class="exchange__title"><span class="red">Курс валют</span> на 08.11.2016 </div>
+				<div class="exchange__title"><a href="#">Курс валют</a> на 08.11.2016 </div>
 				<div class="exchange__currencies">
 					<div class="exchange__currency">
 						<div class="exchange__currency-ico">€</div>
@@ -330,7 +330,7 @@
 				<div class="grid__inner">
 					<h2>Справочный центр</h2>
 					<div class="subtitle">Мы поможем разобраться с любыми вопросами </div>
-					<div class="home__info-search search-form">
+					<div class="home__info-search search-form" data-info-search>
 						<div class="search-form__block">
 							<form action="ajax/info/requests.php" data-info-form>
 								<div class="search-form__field">
