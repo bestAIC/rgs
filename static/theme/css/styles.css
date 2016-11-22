@@ -1799,6 +1799,48 @@ h2,
   margin-bottom: 2.3rem;
   padding-top: 5rem;
 }
+.mobile .home__info-answer-close {
+  right: 1.3rem;
+  top: 0.4rem;
+}
+.mobile .home__info-answer-wrap {
+  margin-top: 2rem;
+}
+.mobile .home__info-answer-inner {
+  padding: 3.3rem 2.5rem 3rem;
+}
+.mobile .home__info-answer-block {
+  min-height: 0;
+  padding-bottom: 1rem;
+}
+.mobile .home__info-answer-block ul {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+.mobile .home__info-answer-block ul li {
+  padding-left: 2.5rem;
+}
+.mobile .home__info-answer-block ul li + li {
+  margin-top: 0.9rem;
+}
+.mobile .home__info-answer-block ul li:before {
+  left: 0;
+}
+.mobile .home__info-answer-title {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding-right: 3rem;
+}
+.mobile .home__info-answer-more {
+  float: none;
+  margin-right: 0;
+  margin-top: 0;
+}
+.mobile .home__info-answer-form {
+  margin-top: 2.6rem;
+}
 .mobile .home__info-search {
   width: 100%;
   margin: 1.9rem auto 0;
