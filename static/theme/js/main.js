@@ -254,6 +254,7 @@ app.info = function () {
 
 	$answer.on('click','[data-answer-close]',function () {
 		$answer.fadeOut(300);
+		$field.val('');
 		setTimeout(function () {
 			$answer.removeClass('_active');
 		},500);
