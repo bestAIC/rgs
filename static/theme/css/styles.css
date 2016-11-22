@@ -539,6 +539,21 @@ h2,
   margin-left: -6rem;
   bottom: -2rem;
 }
+.metro {
+  position: relative;
+  line-height: 2rem;
+  padding-left: 3rem;
+}
+.metro__ico {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../images/icons/metro.svg') no-repeat center;
+  background-size: 1rem 0.8rem;
+}
 .tablet.portrait .grid__inner {
   padding-left: 2.7rem;
   padding-right: 2.7rem;
@@ -3036,6 +3051,121 @@ h2,
   margin-top: 0.7rem;
   letter-spacing: -0.02rem;
   margin-left: 5.2rem;
+}
+.offices__map {
+  height: 485px;
+}
+.offices__block {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 1rem 4rem;
+}
+.offices__item {
+  padding: 30px 0 20px;
+  border-top: 1px solid #eff1f3;
+  position: relative;
+}
+.offices__item:first-child {
+  border-top: 0;
+}
+.offices__item-mark {
+  color: #cca266;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.19px;
+  position: absolute;
+  bottom: 2.3rem;
+  left: 0;
+}
+.no-touch .offices__item-mark:hover {
+  color: #cca266;
+}
+.offices__item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #3e3e3e;
+  margin-bottom: 22px;
+}
+.offices__item-phone {
+  margin-bottom: 6px;
+}
+.offices__item-phone a {
+  color: #191919;
+}
+.no-touch .offices__item-phone a:hover {
+  color: #191919;
+}
+.offices__item-notice {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.offices__item-schedule {
+  *zoom: 1;
+  width: 366px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.offices__item-schedule:before,
+.offices__item-schedule:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices__item-schedule:after {
+  clear: both;
+}
+.offices__item-schedule-block {
+  float: left;
+  width: 45%;
+}
+.offices__item-schedule-block + .offices__item-schedule-block {
+  margin-left: 10%;
+}
+.offices__item-schedule-block-title {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #AAAEB2;
+}
+.offices__item-info {
+  *zoom: 1;
+  font-size: 14px;
+  line-height: 24px;
+}
+.offices__item-info:before,
+.offices__item-info:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices__item-info:after {
+  clear: both;
+}
+.offices__item-info-col {
+  float: left;
+}
+.offices__item-info-col + .offices__item-info-col {
+  margin-left: 2rem;
+}
+.offices__item-info-col._address {
+  font-weight: 600;
+  width: 287px;
+  padding-bottom: 45px;
+}
+.offices__item-info-col._phones {
+  font-weight: 600;
+  width: 152px;
+}
+.offices__item-info-col._metro {
+  width: 225px;
+}
+.offices__item-info-col._metro .metro {
+  margin-top: 2px;
 }
 .pull-right {
   float: right;

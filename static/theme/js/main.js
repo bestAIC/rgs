@@ -30,6 +30,7 @@ app.init = function () {
 	app.bannerGall();
 	app.initAnimations();
 	app.info();
+	app.initMaps();
 	if(app.utils.isMobile || app.utils.isTablePort ){
 		app.tabletSliders();
 	}
@@ -287,5 +288,113 @@ app.initAnimations = function() {
 				$self.addClass('_active');
 			}
 		});
+	}
+};
+app.initMaps = function () {
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAjgwJYKE3QnRDq8snccgJY499WUZrwTn0&v=3.exp' +
+		'&callback=initialize';
+	document.body.appendChild(script);
+	window.initialize=function(){
+		app.officesMap();
+	};
+};
+app.officesMap = function() {
+	var self = this,
+			$offices = $('[data-offices]'),
+			mapBlock = $offices.find('[data-offices-map]')[0],
+			$points = $offices.find('[data-office-point]'),
+			$plusBtn   = $offices.find('[data-zoom-plus]'),
+			$minusBtn  = $offices.find('[data-zoom-minus]'),
+			markers = []
+		;
+
+	if(!$offices.length){
+		return false;
+	}
+
+	var
+		mapOptions = {
+			zoom:               11,
+			center:             new google.maps.LatLng(55.74822645, 37.69954205),
+			mapTypeControl:     false,
+			streetViewControl:  false,
+			zoomControl:        false,
+			overviewMapControl: false,
+			scrollwheel:        false
+		},
+		map  = new google.maps.Map(mapBlock, mapOptions),
+		styleArray = [
+			{
+				"stylers": [
+					{ "gamma": 1 },
+					{ "saturation": -100 },
+					{ "lightness": 0 }
+				]
+			},{
+			}
+		];
+	map.setOptions({styles: styleArray});
+
+	addMarkers($points);
+
+	/*$plusBtn.click(function(e) {
+		e.preventDefault();
+		map.setZoom(map.getZoom() + 1);
+	});
+
+	$minusBtn.click(function(e) {
+		e.preventDefault();
+		map.setZoom(map.getZoom() - 1);
+	});*/
+	function addMarkers($items) {
+		var latlngbounds = new google.maps.LatLngBounds(),
+				activeMarker = null
+			;
+
+		$items.each(function(){
+			var $self = $(this),
+					data1 = $self.data('officePoint')
+				;
+			var myLatLng = new google.maps.LatLng(data1.lat, data1.lan);
+			latlngbounds.extend(myLatLng);
+			var marker = new google.maps.Marker({
+				position: {lat: data1.lat, lng: data1.lan},
+				map: map,
+				icon: '/static/theme/images/icons/marker.svg',
+				$dom:$self
+			});
+
+			marker.addListener('click', function() {
+				if(activeMarker){
+					activeMarker.setIcon('/static/theme/images/icons/marker.svg');
+				}
+				activeMarker = this;
+				marker.setIcon('/static/theme/images/icons/marker-active.svg');
+				alert(marker.$dom.text());
+			});
+			markers.push(marker);
+
+		});
+		if($items.length ==1){
+			map.setCenter( latlngbounds.getCenter());
+			map.setZoom(12);
+		}else{
+			map.setCenter( latlngbounds.getCenter(),map.fitBounds(latlngbounds));
+		}
+	}
+
+	function setMapOnAll(map) {
+		for (var i = 0; i < markers.length; i++) {
+			markers[i].setMap(map);
+		}
+	}
+	function clearMarkers() {
+		setMapOnAll(null);
+	}
+	function deleteMarkers() {
+		clearMarkers();
+		markers = [];
 	}
 };

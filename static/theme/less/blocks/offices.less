@@ -82,4 +82,98 @@
 		letter-spacing: -0.2/@rem;
 		margin-left: 52/@rem;
 	}
+	&__map{
+		height: 485px;
+	}
+	&__block{
+		background-color: #fff;
+		margin-top: 20px;
+		padding: 1rem 4rem;
+	}
+	&__item{
+		padding: 30px 0 20px;
+		border-top: 1px solid #eff1f3;
+		position: relative;
+		&:first-child{
+			border-top: 0;
+		}
+		&-mark{
+			.color(@cGold);
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: -0.19px;
+			position: absolute;
+			bottom: 2.3rem;
+			left: 0;
+		}
+		&-title{
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 26px;
+			color: @title-color;
+			margin-bottom: 22px;
+		}
+		&-phone{
+			margin-bottom: 6px;
+			a{
+				.color(@text-color);
+			}
+		}
+		&-notice{
+			margin-top: 8px;
+			font-size: 12px;
+			line-height: 20px;
+		}
+		&-schedule{
+			.clearfix;
+			width: 366px;
+			font-size: 12px;
+			line-height: 20px;
+			&-block{
+				float: left;
+				width: 45%;
+				&+&{
+					margin-left: 10%;
+				}
+				&-title{
+					font-size: 10px;
+					font-weight: 600;
+					letter-spacing: 0.5px;
+					line-height: 26px;
+					margin-bottom: 10px;
+					text-transform: uppercase;
+					color: @cGray;
+				}
+			}
+		}
+		&-info{
+			.clearfix;
+			font-size: 14px;
+			line-height: 24px;
+			&-col{
+				float: left;
+				&+&{
+					margin-left: 2rem;
+				}
+				&._address{
+					font-weight: 600;
+					width: 287px;
+					padding-bottom: 45px;
+				}
+				&._phones{
+					font-weight: 600;
+					width: 152px;
+				}
+				&._metro{
+					width: 225px;
+					.metro{
+						margin-top: 2px;
+					}
+				}
+				&._schedule{
+
+				}
+			}
+		}
+	}
 }
