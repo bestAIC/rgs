@@ -1224,6 +1224,9 @@ h2,
   min-height: 27.4rem;
   padding-bottom: 1rem;
 }
+.tablet.portrait .home__info-answer-block {
+  min-height: 16.5rem;
+}
 .home__info-answer-block ul {
   font-size: 1.6rem;
   font-weight: 400;
@@ -2084,7 +2087,8 @@ h2,
   color: #3e3e3e;
 }
 .mobile .search-form__requests-item {
-  padding-left: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .search-form__requests-item strong {
   color: #191919;
