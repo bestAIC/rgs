@@ -376,7 +376,7 @@ input[type='checkbox'][disabled] + .ideal-check {
   border-radius: 0.2rem;
   display: inline-block;
   vertical-align: top;
-  margin-right: 16px;
+  margin-right: 1.6rem;
 }
 .ideal-check.checked {
   border-color: transparent;
@@ -1191,6 +1191,8 @@ h2,
   top: 0;
   left: 0;
   right: 0;
+  border-top: 6px solid #cca266;
+  border-radius: 0.2rem;
 }
 .home__info-answer-close {
   width: 3.3rem;
@@ -1213,13 +1215,13 @@ h2,
   transform: translate(0, 0);
 }
 .home__info-answer-inner {
-  padding: 3.7rem 4rem;
+  padding: 3.4rem 4rem 4rem;
 }
 .mobile .home__info-answer-inner {
   padding: 3.7rem 2rem;
 }
 .home__info-answer-block {
-  min-height: 27.6rem;
+  min-height: 27.4rem;
   padding-bottom: 1rem;
 }
 .home__info-answer-block ul {
@@ -2324,6 +2326,9 @@ h2,
 .tablet.portrait .card__fields-col._2 {
   width: 11.1rem;
   margin-left: 1rem;
+}
+.footer select {
+  background-color: #fff;
 }
 .footer a {
   color: #3e3e3e;

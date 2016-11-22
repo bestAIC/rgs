@@ -373,6 +373,14 @@
 			margin: 34/@rem auto 0;
 		}
 		&-answer{
+			position: absolute;
+			z-index: 20;
+			background-color: #fff;
+			top: 0;
+			left: 0;
+			right: 0;
+			border-top: 6px solid @cGold;
+			border-radius: 2/@rem;
 			&-close{
 				width: 33/@rem;
 				height: 33/@rem;
@@ -394,20 +402,14 @@
 					transform: translate(0, 0);
 				}
 			}
-			position: absolute;
-			z-index: 20;
-			background-color: #fff;
-			top: 0;
-			left: 0;
-			right: 0;
 			&-inner{
-				padding: 37/@rem 40/@rem;
+				padding: 3.4rem 4rem 4rem;
 				.mobile &{
 					padding: 3.7rem 2rem;
 				}
 			}
 			&-block{
-				min-height: 276/@rem;
+				min-height: 27.4rem;
 				padding-bottom: 10/@rem;
 				ul{
 					font-size: 16/@rem;

@@ -229,6 +229,7 @@ app.info = function () {
 		if(!$field.val()){
 			return false;
 		}
+		$answer.hide().removeClass('_active');
 		var $self = $(this);
 		$.post($self.attr('action'), $self.serialize(), function(data){
 			$requests.html(data).slideDown(500);
@@ -249,7 +250,10 @@ app.info = function () {
 	});
 
 	$answer.on('click','[data-answer-close]',function () {
-		$answer.fadeOut(500).removeClass('_active');
+		$answer.fadeOut(300);
+		setTimeout(function () {
+			$answer.removeClass('_active');
+		},500);
 	});
 };
 
