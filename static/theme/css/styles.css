@@ -359,20 +359,30 @@ textarea {
 		}
 
 	}
-}
-.ideal-check{
-	width: 20/@rem;
-	height: 20/@rem;
-	background:  none no-repeat center #fff;
-	background-size: 11/@rem 9/@rem;
-	border: 1px solid @cBrown;
-	border-radius: 3/@rem;
-	display: inline-block;
-	vertical-align: top;
-	&.checked{
-		background-image: url('@{pathToImg}icons/ok_small.png');
-	}
 }*/
+label {
+  cursor: pointer;
+}
+input[type='checkbox'][disabled] + .ideal-check {
+  background-color: #DEDFE0;
+  border-color: #DEDFE0;
+}
+.ideal-check {
+  width: 2rem;
+  height: 2rem;
+  background: none no-repeat center #fff;
+  background-size: 0.8rem 0.7rem;
+  border: 1px solid #DEDFE0;
+  border-radius: 0.2rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+}
+.ideal-check.checked {
+  border-color: transparent;
+  background-color: #b31b2c;
+  background-image: url('../images/icons/ok_small.svg');
+}
 .mobile select,
 .tablet select {
   width: 100%;
@@ -505,6 +515,15 @@ h2,
 		stroke-width: 8px;
 	}
 }*/
+.more-link {
+  color: #9e0918;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  background: url('../images/icons/arr_right_long_gold.svg') no-repeat right center;
+  background-size: 1.2rem 1rem;
+  padding-right: 2.7rem;
+}
 .more-btn {
   width: 12rem;
   height: 4rem;
@@ -2822,6 +2841,137 @@ h2,
 }
 .mobile .footer__mob-item._google {
   float: right;
+}
+.offices {
+  padding-top: 5rem;
+}
+.offices__filter {
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
+  margin-top: 3.2rem;
+}
+.offices__filter-inner {
+  *zoom: 1;
+  padding: 1.8rem 3.5rem 0;
+}
+.offices__filter-inner:before,
+.offices__filter-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices__filter-inner:after {
+  clear: both;
+}
+.offices__filter-types {
+  float: left;
+  *zoom: 1;
+  margin-top: 1rem;
+}
+.offices__filter-types:before,
+.offices__filter-types:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices__filter-types:after {
+  clear: both;
+}
+.offices__filter-type {
+  float: left;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.022rem;
+  line-height: 1.8rem;
+  display: block;
+  margin-right: 3rem;
+}
+.offices__filter-right {
+  float: right;
+  *zoom: 1;
+}
+.offices__filter-right:before,
+.offices__filter-right:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices__filter-right:after {
+  clear: both;
+}
+.offices__filter-city {
+  width: 26rem;
+  height: 3.8rem;
+  float: left;
+  margin-left: 4rem;
+  position: relative;
+}
+.offices__filter-city::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -0.6rem;
+  right: 1.7rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url('../images/icons/loupe.svg') no-repeat center;
+  background-size: contain;
+  z-index: 2;
+}
+.offices__filter-city input[type='text'] {
+  background-color: #fafafa;
+  border-radius: 1px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.005rem;
+  padding: 0.8rem 3rem 0.8rem 1.7rem;
+}
+.offices__tabs {
+  float: left;
+  *zoom: 1;
+}
+.offices__tabs:before,
+.offices__tabs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices__tabs:after {
+  clear: both;
+}
+.offices__tab {
+  color: #AAAEB2;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  padding: 0.7rem 1.4rem 2.1rem;
+  border-bottom: 0.4rem solid transparent;
+  float: left;
+}
+.no-touch .offices__tab:hover {
+  color: #AAAEB2;
+}
+.offices__tab._active {
+  color: #3e3e3e;
+  border-color: #b31b2c;
+}
+.no-touch .offices__tab._active:hover {
+  color: #3e3e3e;
+}
+.offices__advanced-search {
+  color: #9e0918;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  background: url('../images/icons/arr_right_long_gold.svg') no-repeat right center;
+  background-size: 1.2rem 1rem;
+  padding-right: 2.7rem;
+  float: left;
+  margin-right: 0.5rem;
+  margin-top: 0.7rem;
+  letter-spacing: -0.02rem;
+  margin-left: 5.2rem;
 }
 .pull-right {
   float: right;

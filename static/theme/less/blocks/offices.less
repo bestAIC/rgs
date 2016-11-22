@@ -1,0 +1,85 @@
+.offices{
+	padding-top: 5rem;
+	&__filter{
+		background-color: white;
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
+		margin-top: 32/@rem;
+		&-inner{
+			.clearfix;
+			padding: 18/@rem 35/@rem 0;
+		}
+		&-types{
+			float: left;
+			.clearfix;
+			margin-top: 10/@rem;
+		}
+		&-type{
+			float: left;
+			font-size: 16/@rem;
+			font-weight: 600;
+			letter-spacing: -0.22/@rem;
+			line-height: 18/@rem;
+			display: block;
+			margin-right: 30/@rem;
+		}
+		&-right{
+			float: right;
+			.clearfix;
+		}
+		&-city{
+			width: 260/@rem;
+			height: 38/@rem;
+			float: left;
+			margin-left: 40/@rem;
+			position: relative;
+			&::after{
+				content: '';
+				position: absolute;
+				top: 50%;
+				margin-top: -0.6rem;
+				right: 1.7rem;
+				width: 1.1rem;
+				height: 1.1rem;
+				.background('@{pathToImg}icons/loupe.svg');
+				z-index: 2;
+			}
+			input[type='text']{
+				background-color: #fafafa;
+				border-radius: 1px;
+				font-size: 14/@rem;
+				font-weight: 400;
+				letter-spacing: 0.05/@rem;
+				padding: 0.8rem 3rem 0.8rem 1.7rem;
+			}
+			&-field{
+
+			}
+		}
+	}
+	&__tabs{
+		float: left;
+		.clearfix;
+	}
+	&__tab{
+		.color(@cGray);
+		font-size: 16/@rem;
+		font-weight: 600;
+		line-height: 24/@rem;
+		padding: 7/@rem 14/@rem 21/@rem;
+		border-bottom: 4/@rem solid transparent;
+		float: left;
+		&._active{
+			.color(@title-color);
+			border-color: @cRed;
+		}
+	}
+	&__advanced-search{
+		.more-link;
+		float: left;
+		margin-right: 5/@rem;
+		margin-top: 7/@rem;
+		letter-spacing: -0.2/@rem;
+		margin-left: 52/@rem;
+	}
+}

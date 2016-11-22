@@ -219,6 +219,35 @@
 			</div>
 		</div>
 		<div class="home__gray">
+			<div class="offices">
+				<div class="grid__inner">
+					<h2>Отделения и банкоматы</h2>
+					<div class="subtitle">
+						Обратитесь в любое отделение РОСГОССТРАХ БАНКА,<br />
+						чтобы присоединиться к пенсионной программе
+					</div>
+					<div class="offices__filter">
+						<form action="">
+							<div class="offices__filter-inner">
+								<div class="offices__filter-types">
+									<label class="offices__filter-type"><input type="checkbox">Отделения</label>
+									<label class="offices__filter-type"><input type="checkbox">Банкоматы</label>
+								</div>
+								<div class="offices__filter-right">
+									<div class="offices__tabs">
+										<a href="javascript:void(0);" class="offices__tab">На карте</a>
+										<a href="javascript:void(0);" class="offices__tab _active">Списком</a>
+									</div>
+									<div class="offices__filter-city">
+										<input type="text" class="offices__filter-city-field" value="Москва">
+									</div>
+									<a href="#" class="offices__advanced-search">Расширенный поиск</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 			<div class="home__transfer">
 				<div class="grid__inner">
 					<h2>Переводите с карты на карту</h2>

@@ -55,20 +55,32 @@ textarea{
 		}
 
 	}
+}*/
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	&[disabled] + .ideal-check{
+		background-color: @cBorder;
+		border-color:@cBorder;
+	}
 }
 .ideal-check{
 	width: 20/@rem;
 	height: 20/@rem;
 	background:  none no-repeat center #fff;
-	background-size: 11/@rem 9/@rem;
-	border: 1px solid @cBrown;
-	border-radius: 3/@rem;
+	background-size: 8/@rem 7/@rem;
+	border: 1px solid @cBorder;
+	border-radius: 2/@rem;
 	display: inline-block;
 	vertical-align: top;
+	margin-right: 16px;
 	&.checked{
-		background-image: url('@{pathToImg}icons/ok_small.png');
+		border-color: transparent;
+		background-color: @cRed;
+		background-image: url('@{pathToImg}icons/ok_small.svg');
 	}
-}*/
+}
 .mobile,.tablet{
 	select{
 		width: 100%;
