@@ -1,11 +1,18 @@
 .footer{
 	select{
 		-webkit-appearance: none;
-		background-color: white;
-		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==);
-		background-position : right center;
-		background-repeat: no-repeat;
-		padding-right: 1.5em;
+		background: url('@{pathToImg}icons/select.svg') no-repeat calc(~"100% - 1.9rem") center #fff;
+		background-size: 7/@rem 4/@rem;
+		/* for FF */
+		-moz-appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
+		/* for IE */
+		-ms-appearance: none;
+		appearance: none!important;
+		&::-ms-expand {
+			display: none;
+		}
 	}
 	a{
 		color: #3e3e3e;
@@ -210,6 +217,7 @@
 				color: #3e3e3e;
 				line-height: 24/@rem;
 				padding-left: 16/@rem;
+				padding-right: 3rem;
 			}
 		}
 		&-btn{
