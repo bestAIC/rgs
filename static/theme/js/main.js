@@ -245,7 +245,10 @@ app.info = function () {
 			var $content = $(data);
 			$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
 			$requests.hide();
-			$answer.html($content).show(500).addClass('_active');
+			$answer.html($content).show();
+			setTimeout(function () {
+				$answer.addClass('_active');
+			},50);
 		});
 	});
 
