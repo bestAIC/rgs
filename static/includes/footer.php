@@ -39,9 +39,9 @@
 			<div class="footer__center-col _1 no-mob-block">
 				<a href="/" class="footer__logo"></a>
 				<div class="footer__license">© 2012-2016, Публичное акционерное общество «Росгосстрах Банк». Лицензия ЦБ РФ 3073.</div>
-				<div class="footer__eng">
+				<?/*div class="footer__eng">
 					<a href="#" class="footer__eng-link">In English</a>
-				</div>
+				</div*/?>
 			</div>
 			<div class="footer__center-col _2">
 				<div class="footer__menu">
@@ -87,9 +87,9 @@
 			<div class="footer__center-col _1 is-mob-block">
 				<a href="/" class="footer__logo"></a>
 				<div class="footer__license">© 2012-2016, Публичное акционерное общество «Росгосстрах Банк». Лицензия ЦБ РФ 3073.</div>
-				<div class="footer__eng">
+				<?/*div class="footer__eng">
 					<a href="#" class="footer__eng-link">In English</a>
-				</div>
+				</div*/?>
 			</div>
 		</div>
 	</div>
