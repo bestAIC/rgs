@@ -1,0 +1,35 @@
+.news-gall{
+	overflow: hidden;
+	padding-bottom: 101/@rem;
+	&__tab{
+		.color(#acb6bf);
+		border-bottom: 1px dashed;
+		display: inline-block;
+		line-height: 3.2rem;
+		&._active{
+			.color(@text-color);
+			border-bottom: 0;
+			cursor: default;
+		}
+	}
+	.no-touch &:hover{
+		.gall__nav{
+			opacity: 1;
+		}
+	}
+	.gall__nav{
+		opacity: 0;
+		transition: opacity @animTime;
+	}
+}
+.tablet.portrait{
+	.news-gall{
+		padding-bottom: 10.4rem;
+	}
+
+}
+.mobile{
+	.news-gall{
+		padding-bottom: 61/@rem;
+	}
+}

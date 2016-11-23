@@ -81,16 +81,16 @@ a {
 	}
 }
 .tablet{
-	.no-tablet-block, .is-mob-block{
+	.is-mob-block{
 		display: none!important;
 	}
 	&.portrait{
-		.is-desktop-block{
+		.is-desktop-block,.no-tablet-block{
 			display: none!important;
 		}
 	}
 	&.landscape{
-		.is-tablet-block{
+		.is-tablet-block,.no-desktop-block{
 			display: none!important;
 		}
 	}

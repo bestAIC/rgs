@@ -1,0 +1,146 @@
+.services{
+	padding-top: 32/@rem;
+	padding-bottom: 48/@rem;
+	position: relative;
+	&__search{
+		width: 570/@rem;
+		margin: 34/@rem auto 0;
+	}
+	&__items{
+		.clearfix;
+		margin: 61/@rem auto;
+		width: 1000/@rem;
+		&._active{
+			.services__item{
+				opacity: 1;
+			}
+		}
+	}
+	&__item{
+		float: left;
+		width: 200/@rem;
+		opacity: 0;
+		&:nth-child(1){
+			transition: opacity 1.5*@animTime;
+		}
+		&:nth-child(2){
+			transition: opacity 1.5*@animTime 0.15s;
+		}
+		&:nth-child(3){
+			transition: opacity 1.5*@animTime 0.3s;
+		}
+		&:nth-child(4){
+			transition: opacity 1.5*@animTime 0.45s;
+		}
+		&:nth-child(5){
+			transition: opacity 1.5*@animTime 0.6s;
+		}
+		.touch &{
+			opacity: 1;
+		}
+		.no-touch &{
+			&:hover{
+				.services__item-top-bg{
+					background-color: #fff;
+					transform: scale(1.2);
+					border-width: 3/@rem;
+				}
+			}
+		}
+		&-top{
+			width: 100/@rem;
+			height: 100/@rem;
+			box-sizing: border-box;
+			position: relative;
+			margin: 0 auto;
+			&-bg{
+				width: 100%;
+				height:100%;
+				border-radius: 50%;
+				background-color: whitesmoke;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				transform: scale(1);
+				border: 0 solid @cGold;
+				transition: background-color @animTime,transform @animTime,border-width 0.2s;
+			}
+		}
+		&-ico{
+			position: absolute;
+			z-index: 2;
+			background: none no-repeat center;
+			background-size: contain;
+			left: 50%;
+			top:50%;
+			margin-top: -25/@rem;
+			margin-left: -25/@rem;
+			width: 50/@rem;
+			height: 50/@rem;
+		}
+		&-title{
+			font-size: 16/@rem;
+			font-weight: 400;
+			line-height: 22/@rem;
+			text-align: center;
+			color: #191919;
+			margin-top: 23/@rem;
+		}
+	}
+}
+.tablet.portrait{
+	.services{
+		padding-bottom: 3.4rem;
+		&__items{
+			width: 700/@rem;
+		}
+		&__item{
+			width: 140/@rem;
+			&-title{
+				font-size: 14/@rem;
+				line-height: 20/@rem;
+				margin-top: 25/@rem;
+			}
+		}
+	}
+}
+.mobile{
+	.services{
+		padding-top: 28/@rem;
+		padding-bottom: 2.5rem;
+		.grid__inner{
+			padding: 0 2rem;
+		}
+		&__search{
+			width: 100%;
+			margin: 1.8rem auto 0;
+		}
+		&__items{
+			.clearfix;
+			margin: 31/@rem auto 0;
+			padding-bottom: 2rem;
+			width: auto;
+			overflow-x: auto;
+			white-space: nowrap;
+			margin-left: -2rem;
+			padding-left: 2rem;
+			margin-right: -2rem;
+		}
+		&__item{
+			float:none;
+			width: 10rem;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 16/@rem;
+			&:last-child{
+				margin-right: 2rem;
+			}
+			&-title{
+				font-size: 14/@rem;
+				line-height: 2rem;
+				margin-top: 1.7rem;
+			}
+		}
+	}
+}

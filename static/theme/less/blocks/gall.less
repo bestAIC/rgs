@@ -1,0 +1,130 @@
+.gall{
+	overflow: visible;
+	margin-top: 28/@rem;
+	&._active{
+		.gall__item{
+			&._show{
+				opacity: 1;
+				transform: translate(0,0);
+			}
+		}
+	}
+	&__nav{
+		position: absolute;
+		left: 50%;
+		z-index: 100;
+		bottom: -23/@rem;
+		margin-left: -54/@rem;
+	}
+	&__item{
+		width: 370/@rem;
+		height: 280/@rem;
+		background-color: white;
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 3/@rem rgba(212, 212, 212, 0.8);
+		display: block;
+		color: @text-color;
+		margin-right: 30/@rem;
+		opacity: 0;
+		transform: translate(130rem, 0);
+		transition: opacity 1s;
+		&._hidden{
+			transform: translate(0, 0);
+		}
+		&._show{
+			transition: opacity 2s, transform 2s;
+			&._2{
+				transition: opacity 1.8s 0.2s, transform 1.8s 0.2s;
+			}
+			&._3{
+				transition: opacity 1.6s 0.4s, transform 1.6s 0.4s;
+			}
+			&._4{
+				transition: opacity 1.4s 0.6s, transform 1.4s 0.6s;
+			}
+			&._5{
+				transition: opacity 1.2s 0.8s, transform 1.2s 0.8s;
+			}
+			&._6{
+				transition: opacity 1s 1s, transform 1s 1s;
+			}
+			&._7{
+				transition: opacity 0.8s 1.2s, transform 0.8s 1.2s ;
+			}
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__promo{
+		background: none no-repeat center;
+		background-size: cover;
+		padding: 40/@rem 40/@rem 31/@rem;
+		&-inner{
+			height:100%;
+			position: relative;
+		}
+		&-logo{
+			height:30/@rem;
+			img{
+				max-height: 30/@rem;
+				width: auto;
+				max-width: 100%;
+			}
+		}
+		&-title{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			font-size: 18/@rem;
+			line-height: 30/@rem;
+			color: #fff;
+		}
+	}
+
+	&__news{
+		padding: 33/@rem 40/@rem 31/@rem;
+		&._flag{
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				right: 3rem;
+				top: 0;
+				width: 12/@rem;
+				height: 16/@rem;
+				.background('@{pathToImg}icons/news-flag.svg');
+			}
+		}
+		&-inner{
+			height:100%;
+			position: relative;
+		}
+		&-date{
+			line-height: 25/@rem;
+			color: @cGold;
+		}
+		&-title{
+			color: #191919;
+			font-size: 18/@rem;
+			line-height: 30/@rem;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+}
+.mobile{
+	.gall{
+		margin-top: 2rem;
+		&__nav{
+			display: none;
+		}
+		&__item{
+			margin-right: 0;
+			width: 36.4rem;
+		}
+	}
+}
