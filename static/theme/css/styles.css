@@ -1373,7 +1373,7 @@ h2,
 }
 .products {
   *zoom: 1;
-  padding: 3rem 0;
+  padding: 3rem 0 4rem;
 }
 .products:before,
 .products:after {
@@ -1433,6 +1433,7 @@ h2,
   width: 36.4rem;
 }
 .info-center {
+  padding-top: 6rem;
   margin-bottom: 3.3rem;
 }
 .info-center__search {
