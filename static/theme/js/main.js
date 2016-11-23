@@ -323,6 +323,11 @@ app.initMaps = function () {
 app.officesMap = function() {
 	var self = this,
 			$offices = $('[data-offices]'),
+			$tab = $offices.find('[data-offices-tab]'),
+			$content = $offices.find('[data-offices-content]'),
+			$mapPopup = $offices.find('[data-offices-map-popup]'),
+			$mapPopupContent = $mapPopup.find('[data-offices-map-popup-content]'),
+			$mapPopupClose = $mapPopup.find('[data-offices-map-popup-close]'),
 			mapBlock = $offices.find('[data-offices-map]')[0],
 			$points = $offices.find('[data-office-point]'),
 			$plusBtn   = $offices.find('[data-zoom-plus]'),
@@ -368,6 +373,13 @@ app.officesMap = function() {
 		e.preventDefault();
 		map.setZoom(map.getZoom() - 1);
 	});*/
+	$mapPopupClose.on('click',function () {
+		$mapPopup.removeClass('_show');
+		$mapPopup.data('marker').setIcon('/static/theme/images/icons/marker.svg');
+		setTimeout(function () {
+			$mapPopupContent.empty();
+		},300);
+	});
 	function addMarkers($items) {
 		var latlngbounds = new google.maps.LatLngBounds(),
 				activeMarker = null
@@ -392,7 +404,9 @@ app.officesMap = function() {
 				}
 				activeMarker = this;
 				marker.setIcon('/static/theme/images/icons/marker-active.svg');
-				alert(marker.$dom.text());
+				$mapPopupContent.html(marker.$dom.clone());
+				$mapPopup.addClass('_show');
+				$mapPopup.data('marker',marker);
 			});
 			markers.push(marker);
 
@@ -417,4 +431,14 @@ app.officesMap = function() {
 		clearMarkers();
 		markers = [];
 	}
+
+	$tab.on('click',function () {
+		var $self = $(this);
+		if($self.hasClass('_active')){
+			return false;
+		}
+		$tab.removeClass('_active');
+		$self.addClass('_active');
+		$content.hide().filter('[data-offices-content="'+$self.data('officesTab')+'"]').fadeIn(300);
+	});
 };

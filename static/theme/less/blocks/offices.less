@@ -5,6 +5,8 @@
 		border-radius: 2/@rem;
 		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 		margin-top: 32/@rem;
+		position: relative;
+		z-index: 10;
 		&-inner{
 			.clearfix;
 			padding: 18/@rem 35/@rem 0;
@@ -84,6 +86,119 @@
 	}
 	&__map{
 		height: 485px;
+		position: relative;
+		z-index: 3;
+		&-wrap{
+			position: relative;
+			margin-top: -36px;
+		}
+		&-block{
+			height: 485px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			.grid__inner{
+				height: 100%;
+			}
+		}
+		&-popup{
+			width: 440px;
+			border-top: 4px solid @cRed;
+			background-color: white;
+			border-radius: 2px;
+			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+			position: absolute;
+			z-index: 1000;
+			left: 0;
+			bottom: -20px;
+			opacity: 0;
+			transition: opacity @animTime,transform @animTime;
+			padding-top: 2px;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 14px;
+			transform: translate(0,10rem);
+			&-close{
+				width: 2rem;
+				height: 2rem;
+				background: url('@{pathToImg}icons/close_small.svg') no-repeat center;
+				background-size: 1.1rem;
+				right: 1.5rem;
+				top: 1.1rem;
+				position: absolute;
+			}
+			&._show{
+				opacity: 1;
+				transform: translate(0,0);
+			}
+			&-content{
+				.offices{
+					&__item{
+						&-mark{
+							display: none;
+						}
+						&-title{
+							color: @cGold;
+						}
+						&-phone{
+							margin-bottom: 5px;
+						}
+						&-notice{
+							margin-top: 8px;
+							font-size: 12px;
+							line-height: 20px;
+						}
+						&-schedule{
+							width: 100%;
+							float: none;
+							&-block{
+								float: left;
+								width: 44%;
+								&+.offices__item-schedule-block{
+									margin-left: 12%;
+								}
+							}
+						}
+						&-info{
+							&-block{
+								float: none;
+								.clearfix;
+								padding-bottom: 18px;
+								border-bottom: 1px solid #eff1f3;
+								margin-bottom: 19px;
+							}
+							&-address{
+								padding-bottom: 0;
+								margin-right:0;
+								float: left;
+								width: 44%;
+							}
+							&-phones{
+								width: 44%;
+								margin-right: 0;
+								margin-left: 12%;
+							}
+							&-metro{
+								width: 100%;
+								float: none;
+								margin-top: 7px;
+								&.no-mob-block{
+									display:none!important;
+								}
+								&.is-mob-block{
+									display:block!important;
+								}
+								.metro{
+									margin-top: 2px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	&__block{
 		background-color: #fff;
@@ -129,6 +244,7 @@
 			width: 366px;
 			font-size: 12px;
 			line-height: 20px;
+			float: right;
 			&-block{
 				float: left;
 				width: 45%;
@@ -150,28 +266,144 @@
 			.clearfix;
 			font-size: 14px;
 			line-height: 24px;
-			&-col{
+			&-block{
 				float: left;
-				&+&{
-					margin-left: 2rem;
+			}
+			&-address{
+				font-weight: 600;
+				width: 287px;
+				padding-bottom: 45px;
+				float: left;
+				margin-right: 2rem;
+			}
+			&-phones{
+				font-weight: 600;
+				width: 152px;
+				float: left;
+				margin-right: 2rem;
+			}
+			&-metro{
+				width: 225px;
+				float: left;
+				.metro{
+					margin-top: 2px;
 				}
-				&._address{
-					font-weight: 600;
-					width: 287px;
-					padding-bottom: 45px;
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.offices{
+		&__block{
+			padding: 1.5rem 4rem;
+		}
+		&__item{
+			&-notice{
+				margin-top: 20px;
+				margin-bottom: 4px;
+			}
+			&-schedule{
+				&-block{
+					width: 49%;
+					&+.offices__item-schedule-block{
+						margin-left: 2%;
+					}
 				}
-				&._phones{
-					font-weight: 600;
-					width: 152px;
+			}
+			&-info{
+				&-block{
+					width: 25rem;
+					padding-bottom: 46px;
 				}
-				&._metro{
-					width: 225px;
+				&-address{
+					padding-bottom: 5px;
+					width: 100%;
+					float: none;
+					margin-right:0;
+				}
+				&-phones{
+					width: 100%;
+					float: none;
+					margin-right:0;
+				}
+				&-metro{
+					width: 100%;
+					float: none;
+					margin-top: 18px;
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.offices{
+		.grid__inner{
+			margin-left: -2.5rem;
+			margin-right: -2.5rem;
+		}
+		&__block{
+			margin-top:0;
+			padding: 0 2rem;
+			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		}
+		&__item{
+			&-mark{
+				position: static;
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 17px;
+				font-size: 12px;
+			}
+			&-title{
+				font-size: 18px;
+				line-height: 24px;
+				margin-bottom: 25px;
+			}
+			&-phone{
+				margin-bottom: 18px;
+			}
+			&-notice{
+				margin-top: 8px;
+				font-size: 12px;
+				line-height: 20px;
+			}
+			&-schedule{
+				width: 100%;
+				float: none;
+				&-block{
+					float: left;
+					width: 44%;
+					&+.offices__item-schedule-block{
+						margin-left: 12%;
+					}
+				}
+			}
+			&-info{
+				font-size: 12px;
+				line-height: 12px;
+				&-block{
+					float: none;
+					.clearfix;
+					padding-bottom: 3px;
+				}
+				&-address{
+					padding-bottom: 0;
+					margin-right:0;
+					float: left;
+					width: 44%;
+				}
+				&-phones{
+					width: 44%;
+					margin-right: 0;
+					margin-left: 12%;
+				}
+				&-metro{
+					width: 100%;
+					float: none;
+					margin-top: 13px;
 					.metro{
 						margin-top: 2px;
 					}
-				}
-				&._schedule{
-
 				}
 			}
 		}
