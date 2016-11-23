@@ -2990,6 +2990,7 @@ h2,
 }
 .offices {
   padding-top: 5rem;
+  opacity: 1;
 }
 .offices__filter {
   background-color: white;
