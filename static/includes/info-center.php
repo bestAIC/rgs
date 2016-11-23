@@ -1,4 +1,4 @@
-<div class="info-center" data-info>
+<div class="info-center b-block" data-info>
 	<div class="grid__inner">
 		<h2>Справочный центр</h2>
 		<div class="subtitle">Мы поможем разобраться с любыми вопросами </div>

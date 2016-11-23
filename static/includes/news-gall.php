@@ -1,4 +1,4 @@
-<div class="news-gall">
+<div class="news-gall b-block">
 	<div class="grid__inner">
 		<h2>
 			<a href="javascript:void(0);" class="news-gall__tab _active" data-news-tab="promo">Акции</a> и

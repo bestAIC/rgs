@@ -31,6 +31,7 @@ app.init = function () {
 	app.initAnimations();
 	app.info();
 	app.initMaps();
+	app.questions();
 	if(app.utils.isMobile || app.utils.isTablePort ){
 		app.tabletSliders();
 	}
@@ -265,6 +266,25 @@ app.info = function () {
 		setTimeout(function () {
 			$answer.removeClass('_active');
 		},500);
+	});
+};
+app.questions = function () {
+	var $questions = $('[data-questions]'),
+			$question = $questions.find('[data-questions-item]'),
+			$questionTitle = $question.find('[data-questions-item-title]'),
+			$questionAnswer = $question.find('[data-questions-item-answer]')
+		;
+	$questionTitle.on('click',function () {
+		var $self = $(this);
+
+		if($self.hasClass('_active')){
+			$self.closest($question).find($questionAnswer).slideUp(300);
+		}else{
+			$questionAnswer.slideUp(300);
+			$questionTitle.removeClass('_active');
+			$self.closest($question).find($questionAnswer).slideDown(300);
+		}
+		$self.toggleClass('_active');
 	});
 };
 

@@ -1,0 +1,51 @@
+.questions{
+	&__items{
+		background-color: #fff;
+		padding: 6rem 5rem;
+		margin-top: 30/@rem;
+	}
+	&__item{
+		font-size: 16/@rem;
+		font-weight: 400;
+		letter-spacing: -0.22/@rem;
+		line-height: 25/@rem;
+		position: relative;
+		padding-left: 52/@rem;
+		&+&{
+			margin-top: 20/@rem;
+		}
+		&-inner{
+
+		}
+		&-title{
+			display: block;
+			color:@title-color!important;
+			font-weight: 600;
+			&._active{
+				&:before{
+					background-color: #fff;
+					border-width: 2/@rem;
+				}
+
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 8/@rem;
+				left: 0;
+				width: 8/@rem;
+				height: 8/@rem;
+				border-radius: 50%;
+				background-color: @cGold;
+				transition: border-width @animTime;
+				border: 4/@rem solid @cGold;
+			}
+		}
+		&-answer{
+			color: #797c80;
+			display: none;
+			padding-top: 15/@rem;
+			padding-bottom: 15/@rem;
+		}
+	}
+}
