@@ -317,10 +317,10 @@ app.initMaps = function () {
 		'&callback=initialize';
 	document.body.appendChild(script);
 	window.initialize=function(){
-		app.officesMap();
+		app.offices();
 	};
 };
-app.officesMap = function() {
+app.offices = function() {
 	var self = this,
 			$offices = $('[data-offices]'),
 			$tab = $offices.find('[data-offices-tab]'),
@@ -332,6 +332,7 @@ app.officesMap = function() {
 			$points = $offices.find('[data-office-point]'),
 			$plusBtn   = $offices.find('[data-zoom-plus]'),
 			$minusBtn  = $offices.find('[data-zoom-minus]'),
+			$filterCheck  = $offices.find('[data-filter-check]'),
 			markers = []
 		;
 

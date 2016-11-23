@@ -9,24 +9,29 @@
 			<form action="">
 				<div class="offices__filter-inner">
 					<div class="offices__filter-types">
-						<label class="offices__filter-type"><input type="checkbox">Отделения</label>
-						<label class="offices__filter-type"><input type="checkbox">Банкоматы</label>
+						<label class="offices__filter-type"><input type="checkbox" data-filter-check="office">Отделения</label>
+						<label class="offices__filter-type"><input type="checkbox" data-filter-check="atm">Банкоматы</label>
 					</div>
 					<div class="offices__filter-right">
-						<div class="offices__tabs">
+						<div class="offices__tabs is-desktop-block">
 							<a href="javascript:void(0);" class="offices__tab _active" data-offices-tab="map">На карте</a>
 							<a href="javascript:void(0);" class="offices__tab" data-offices-tab="list">Списком</a>
 						</div>
 						<div class="offices__filter-city">
 							<input type="text" class="offices__filter-city-field" value="Москва">
 						</div>
-						<a href="#" class="offices__advanced-search">Расширенный поиск</a>
+						<a href="#" class="offices__advanced-search is-desktop-block">Расширенный поиск</a>
+						<div class="offices__filter-icons no-desktop-block">
+							<a href="javascript:void(0);"  data-offices-tab="map" class="offices__filter-icon _map _active"></a>
+							<a href="javascript:void(0);" data-offices-tab="list" class="offices__filter-icon _list"></a>
+							<a href="javascript:void(0);" class="offices__filter-icon _settings"></a>
+						</div>
 					</div>
 				</div>
 			</form>
 		</div>
 		<div class="offices__block hide" data-offices-content="list">
-			<div class="offices__item" data-office-point='{"lat":55.7420428,"lan":37.559213,"type":"ofice"}'>
+			<div class="offices__item" data-office-point='{"lat":55.7420428,"lan":37.559213,"type":"office"}'>
 				<div class="offices__item-title">ДО «Отделение «Киевское»</div>
 				<div class="offices__item-info">
 					<div class="offices__item-info-block">
@@ -75,7 +80,7 @@
 				</div>
 				<a href="#" class="more-link offices__item-mark">Оценить отделение</a>
 			</div>
-			<div class="offices__item" data-office-point='{"lat":55.860553,"lan":37.567281}'>
+			<div class="offices__item" data-office-point='{"lat":55.860553,"lan":37.567281,"type":"office"}'>
 				<div class="offices__item-title">ДО «Отделение «Дубнинское»</div>
 				<div class="offices__item-info">
 					<div class="offices__item-info-block">
@@ -126,7 +131,7 @@
 				</div>
 				<a href="#" class="more-link offices__item-mark">Оценить отделение</a>
 			</div>
-			<div class="offices__item" data-office-point='{"lat":55.699676,"lan":37.845726}'>
+			<div class="offices__item" data-office-point='{"lat":55.699676,"lan":37.845726,"type":"atm"}'>
 				<div class="offices__item-title">ДО «Отделение «Жулебинский бульвар»</div>
 				<div class="offices__item-info">
 					<div class="offices__item-info-block">
