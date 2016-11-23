@@ -85,15 +85,15 @@
 		margin-left: 52/@rem;
 	}
 	&__map{
-		height: 485px;
+		height: 485/@rem;
 		position: relative;
 		z-index: 3;
 		&-wrap{
 			position: relative;
-			margin-top: -36px;
+			margin-top: -36/@rem;
 		}
 		&-block{
-			height: 485px;
+			height: 485/@rem;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -104,21 +104,21 @@
 			}
 		}
 		&-popup{
-			width: 440px;
-			border-top: 4px solid @cRed;
+			width: 440/@rem;
+			border-top: 4/@rem solid @cRed;
 			background-color: white;
-			border-radius: 2px;
-			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+			border-radius: 2/@rem;
+			box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 			position: absolute;
 			z-index: 1000;
 			left: 0;
-			bottom: -20px;
+			bottom: -20/@rem;
 			opacity: 0;
 			transition: opacity @animTime,transform @animTime;
-			padding-top: 2px;
-			padding-left: 40px;
-			padding-right: 40px;
-			padding-bottom: 14px;
+			padding-top: 2/@rem;
+			padding-left: 40/@rem;
+			padding-right: 40/@rem;
+			padding-bottom: 14/@rem;
 			transform: translate(0,10rem);
 			&-close{
 				width: 2rem;
@@ -143,12 +143,12 @@
 							color: @cGold;
 						}
 						&-phone{
-							margin-bottom: 5px;
+							margin-bottom: 5/@rem;
 						}
 						&-notice{
-							margin-top: 8px;
-							font-size: 12px;
-							line-height: 20px;
+							margin-top: 8/@rem;
+							font-size: 12/@rem;
+							line-height: 20/@rem;
 						}
 						&-schedule{
 							width: 100%;
@@ -165,9 +165,9 @@
 							&-block{
 								float: none;
 								.clearfix;
-								padding-bottom: 18px;
+								padding-bottom: 18/@rem;
 								border-bottom: 1px solid #eff1f3;
-								margin-bottom: 19px;
+								margin-bottom: 19/@rem;
 							}
 							&-address{
 								padding-bottom: 0;
@@ -183,7 +183,7 @@
 							&-metro{
 								width: 100%;
 								float: none;
-								margin-top: 7px;
+								margin-top: 7/@rem;
 								&.no-mob-block{
 									display:none!important;
 								}
@@ -191,7 +191,7 @@
 									display:block!important;
 								}
 								.metro{
-									margin-top: 2px;
+									margin-top: 2/@rem;
 								}
 							}
 						}
@@ -202,11 +202,11 @@
 	}
 	&__block{
 		background-color: #fff;
-		margin-top: 20px;
+		margin-top: 20/@rem;
 		padding: 1rem 4rem;
 	}
 	&__item{
-		padding: 30px 0 20px;
+		padding: 30/@rem 0 20/@rem;
 		border-top: 1px solid #eff1f3;
 		position: relative;
 		&:first-child{
@@ -214,36 +214,36 @@
 		}
 		&-mark{
 			.color(@cGold);
-			font-size: 14px;
+			font-size: 14/@rem;
 			font-weight: 600;
-			letter-spacing: -0.19px;
+			letter-spacing: -0.19/@rem;
 			position: absolute;
 			bottom: 2.3rem;
 			left: 0;
 		}
 		&-title{
-			font-size: 20px;
+			font-size: 20/@rem;
 			font-weight: 700;
-			line-height: 26px;
+			line-height: 26/@rem;
 			color: @title-color;
-			margin-bottom: 22px;
+			margin-bottom: 22/@rem;
 		}
 		&-phone{
-			margin-bottom: 6px;
+			margin-bottom: 6/@rem;
 			a{
 				.color(@text-color);
 			}
 		}
 		&-notice{
-			margin-top: 8px;
-			font-size: 12px;
-			line-height: 20px;
+			margin-top: 8/@rem;
+			font-size: 12/@rem;
+			line-height: 20/@rem;
 		}
 		&-schedule{
 			.clearfix;
-			width: 366px;
-			font-size: 12px;
-			line-height: 20px;
+			width: 366/@rem;
+			font-size: 12/@rem;
+			line-height: 20/@rem;
 			float: right;
 			&-block{
 				float: left;
@@ -252,11 +252,11 @@
 					margin-left: 10%;
 				}
 				&-title{
-					font-size: 10px;
+					font-size: 10/@rem;
 					font-weight: 600;
-					letter-spacing: 0.5px;
-					line-height: 26px;
-					margin-bottom: 10px;
+					letter-spacing: 0.5/@rem;
+					line-height: 26/@rem;
+					margin-bottom: 10/@rem;
 					text-transform: uppercase;
 					color: @cGray;
 				}
@@ -264,29 +264,29 @@
 		}
 		&-info{
 			.clearfix;
-			font-size: 14px;
-			line-height: 24px;
+			font-size: 14/@rem;
+			line-height: 24/@rem;
 			&-block{
 				float: left;
 			}
 			&-address{
 				font-weight: 600;
-				width: 287px;
-				padding-bottom: 45px;
+				width: 287/@rem;
+				padding-bottom: 45/@rem;
 				float: left;
 				margin-right: 2rem;
 			}
 			&-phones{
 				font-weight: 600;
-				width: 152px;
+				width: 152/@rem;
 				float: left;
 				margin-right: 2rem;
 			}
 			&-metro{
-				width: 225px;
+				width: 225/@rem;
 				float: left;
 				.metro{
-					margin-top: 2px;
+					margin-top: 2/@rem;
 				}
 			}
 		}
@@ -299,8 +299,8 @@
 		}
 		&__item{
 			&-notice{
-				margin-top: 20px;
-				margin-bottom: 4px;
+				margin-top: 20/@rem;
+				margin-bottom: 4/@rem;
 			}
 			&-schedule{
 				&-block{
@@ -313,10 +313,10 @@
 			&-info{
 				&-block{
 					width: 25rem;
-					padding-bottom: 46px;
+					padding-bottom: 46/@rem;
 				}
 				&-address{
-					padding-bottom: 5px;
+					padding-bottom: 5/@rem;
 					width: 100%;
 					float: none;
 					margin-right:0;
@@ -329,7 +329,7 @@
 				&-metro{
 					width: 100%;
 					float: none;
-					margin-top: 18px;
+					margin-top: 18/@rem;
 				}
 			}
 		}
@@ -344,28 +344,28 @@
 		&__block{
 			margin-top:0;
 			padding: 0 2rem;
-			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+			box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 		}
 		&__item{
 			&-mark{
 				position: static;
 				display: inline-block;
 				vertical-align: top;
-				margin-top: 17px;
-				font-size: 12px;
+				margin-top: 17/@rem;
+				font-size: 12/@rem;
 			}
 			&-title{
-				font-size: 18px;
-				line-height: 24px;
-				margin-bottom: 25px;
+				font-size: 18/@rem;
+				line-height: 24/@rem;
+				margin-bottom: 25/@rem;
 			}
 			&-phone{
-				margin-bottom: 18px;
+				margin-bottom: 18/@rem;
 			}
 			&-notice{
-				margin-top: 8px;
-				font-size: 12px;
-				line-height: 20px;
+				margin-top: 8/@rem;
+				font-size: 12/@rem;
+				line-height: 20/@rem;
 			}
 			&-schedule{
 				width: 100%;
@@ -379,12 +379,12 @@
 				}
 			}
 			&-info{
-				font-size: 12px;
-				line-height: 12px;
+				font-size: 12/@rem;
+				line-height: 12/@rem;
 				&-block{
 					float: none;
 					.clearfix;
-					padding-bottom: 3px;
+					padding-bottom: 3/@rem;
 				}
 				&-address{
 					padding-bottom: 0;
@@ -400,9 +400,9 @@
 				&-metro{
 					width: 100%;
 					float: none;
-					margin-top: 13px;
+					margin-top: 13/@rem;
 					.metro{
-						margin-top: 2px;
+						margin-top: 2/@rem;
 					}
 				}
 			}

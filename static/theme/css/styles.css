@@ -3122,16 +3122,16 @@ h2,
   margin-left: 5.2rem;
 }
 .offices__map {
-  height: 485px;
+  height: 48.5rem;
   position: relative;
   z-index: 3;
 }
 .offices__map-wrap {
   position: relative;
-  margin-top: -36px;
+  margin-top: -3.6rem;
 }
 .offices__map-block {
-  height: 485px;
+  height: 48.5rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -3142,21 +3142,21 @@ h2,
   height: 100%;
 }
 .offices__map-popup {
-  width: 440px;
-  border-top: 4px solid #b31b2c;
+  width: 44rem;
+  border-top: 0.4rem solid #b31b2c;
   background-color: white;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
   position: absolute;
   z-index: 1000;
   left: 0;
-  bottom: -20px;
+  bottom: -2rem;
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s;
-  padding-top: 2px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 14px;
+  padding-top: 0.2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 1.4rem;
   transform: translate(0, 10rem);
 }
 .offices__map-popup-close {
@@ -3179,12 +3179,12 @@ h2,
   color: #cca266;
 }
 .offices__map-popup-content .offices__item-phone {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 .offices__map-popup-content .offices__item-notice {
-  margin-top: 8px;
-  font-size: 12px;
-  line-height: 20px;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 .offices__map-popup-content .offices__item-schedule {
   width: 100%;
@@ -3200,9 +3200,9 @@ h2,
 .offices__map-popup-content .offices__item-info-block {
   float: none;
   *zoom: 1;
-  padding-bottom: 18px;
+  padding-bottom: 1.8rem;
   border-bottom: 1px solid #eff1f3;
-  margin-bottom: 19px;
+  margin-bottom: 1.9rem;
 }
 .offices__map-popup-content .offices__item-info-block:before,
 .offices__map-popup-content .offices__item-info-block:after {
@@ -3227,7 +3227,7 @@ h2,
 .offices__map-popup-content .offices__item-info-metro {
   width: 100%;
   float: none;
-  margin-top: 7px;
+  margin-top: 0.7rem;
 }
 .offices__map-popup-content .offices__item-info-metro.no-mob-block {
   display: none!important;
@@ -3236,15 +3236,15 @@ h2,
   display: block!important;
 }
 .offices__map-popup-content .offices__item-info-metro .metro {
-  margin-top: 2px;
+  margin-top: 0.2rem;
 }
 .offices__block {
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 2rem;
   padding: 1rem 4rem;
 }
 .offices__item {
-  padding: 30px 0 20px;
+  padding: 3rem 0 2rem;
   border-top: 1px solid #eff1f3;
   position: relative;
 }
@@ -3253,9 +3253,9 @@ h2,
 }
 .offices__item-mark {
   color: #cca266;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
-  letter-spacing: -0.19px;
+  letter-spacing: -0.019rem;
   position: absolute;
   bottom: 2.3rem;
   left: 0;
@@ -3264,14 +3264,14 @@ h2,
   color: #cca266;
 }
 .offices__item-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 2.6rem;
   color: #3e3e3e;
-  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
 }
 .offices__item-phone {
-  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
 }
 .offices__item-phone a {
   color: #191919;
@@ -3280,15 +3280,15 @@ h2,
   color: #191919;
 }
 .offices__item-notice {
-  margin-top: 8px;
-  font-size: 12px;
-  line-height: 20px;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 .offices__item-schedule {
   *zoom: 1;
-  width: 366px;
-  font-size: 12px;
-  line-height: 20px;
+  width: 36.6rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   float: right;
 }
 .offices__item-schedule:before,
@@ -3308,18 +3308,18 @@ h2,
   margin-left: 10%;
 }
 .offices__item-schedule-block-title {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 26px;
-  margin-bottom: 10px;
+  letter-spacing: 0.05rem;
+  line-height: 2.6rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   color: #AAAEB2;
 }
 .offices__item-info {
   *zoom: 1;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 .offices__item-info:before,
 .offices__item-info:after {
@@ -3335,30 +3335,30 @@ h2,
 }
 .offices__item-info-address {
   font-weight: 600;
-  width: 287px;
-  padding-bottom: 45px;
+  width: 28.7rem;
+  padding-bottom: 4.5rem;
   float: left;
   margin-right: 2rem;
 }
 .offices__item-info-phones {
   font-weight: 600;
-  width: 152px;
+  width: 15.2rem;
   float: left;
   margin-right: 2rem;
 }
 .offices__item-info-metro {
-  width: 225px;
+  width: 22.5rem;
   float: left;
 }
 .offices__item-info-metro .metro {
-  margin-top: 2px;
+  margin-top: 0.2rem;
 }
 .tablet.portrait .offices__block {
   padding: 1.5rem 4rem;
 }
 .tablet.portrait .offices__item-notice {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
 }
 .tablet.portrait .offices__item-schedule-block {
   width: 49%;
@@ -3368,10 +3368,10 @@ h2,
 }
 .tablet.portrait .offices__item-info-block {
   width: 25rem;
-  padding-bottom: 46px;
+  padding-bottom: 4.6rem;
 }
 .tablet.portrait .offices__item-info-address {
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
   width: 100%;
   float: none;
   margin-right: 0;
@@ -3384,7 +3384,7 @@ h2,
 .tablet.portrait .offices__item-info-metro {
   width: 100%;
   float: none;
-  margin-top: 18px;
+  margin-top: 1.8rem;
 }
 .mobile .offices .grid__inner {
   margin-left: -2.5rem;
@@ -3393,27 +3393,27 @@ h2,
 .mobile .offices__block {
   margin-top: 0;
   padding: 0 2rem;
-  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
 }
 .mobile .offices__item-mark {
   position: static;
   display: inline-block;
   vertical-align: top;
-  margin-top: 17px;
-  font-size: 12px;
+  margin-top: 1.7rem;
+  font-size: 1.2rem;
 }
 .mobile .offices__item-title {
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 25px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.5rem;
 }
 .mobile .offices__item-phone {
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 .mobile .offices__item-notice {
-  margin-top: 8px;
-  font-size: 12px;
-  line-height: 20px;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 .mobile .offices__item-schedule {
   width: 100%;
@@ -3427,13 +3427,13 @@ h2,
   margin-left: 12%;
 }
 .mobile .offices__item-info {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 .mobile .offices__item-info-block {
   float: none;
   *zoom: 1;
-  padding-bottom: 3px;
+  padding-bottom: 0.3rem;
 }
 .mobile .offices__item-info-block:before,
 .mobile .offices__item-info-block:after {
@@ -3458,10 +3458,10 @@ h2,
 .mobile .offices__item-info-metro {
   width: 100%;
   float: none;
-  margin-top: 13px;
+  margin-top: 1.3rem;
 }
 .mobile .offices__item-info-metro .metro {
-  margin-top: 2px;
+  margin-top: 0.2rem;
 }
 .pull-right {
   float: right;
