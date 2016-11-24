@@ -2099,7 +2099,7 @@ h2,
   letter-spacing: -0.022rem;
   line-height: 2.5rem;
   position: relative;
-  padding-left: 5.2rem;
+  padding-left: 5rem;
 }
 .questions__item + .questions__item {
   margin-top: 2rem;
@@ -2130,6 +2130,26 @@ h2,
   display: none;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.mobile .questions .grid__inner {
+  padding: 0 2rem;
+}
+.mobile .questions__items {
+  padding: 4rem 2.6rem;
+  margin-top: 2rem;
+}
+.mobile .questions__item {
+  font-size: 1.4rem;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  padding-left: 3.8rem;
+}
+.mobile .questions__item-title:before {
+  top: 0.6rem;
+}
+.mobile .questions__item-answer {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
 }
 .inner h2 {
   text-align: center;
@@ -3501,8 +3521,8 @@ h2,
   margin-top: 1.8rem;
 }
 .mobile .offices .grid__inner {
-  margin-left: -2.5rem;
-  margin-right: -2.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 .mobile .offices__map {
   height: 41rem;
