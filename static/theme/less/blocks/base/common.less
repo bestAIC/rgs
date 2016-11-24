@@ -127,7 +127,40 @@ h2,.title{
 	line-height: 25/@rem;
 	text-align: center;
 }
-
+.b-list{
+	font-size: 16/@rem;
+	font-weight: 400;
+	line-height: 25/@rem;
+	padding-left: 0;
+	list-style: none;
+	.mobile &{
+		font-size: 14/@rem;
+		line-height: 2rem;
+	}
+	li{
+		position: relative;
+		padding-left: 38/@rem;
+		&+li{
+			margin-top: 25/@rem;
+			.mobile &{
+				margin-top: 1rem;
+			}
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 8/@rem;
+			left: 0;
+			width: 8/@rem;
+			height: 8/@rem;
+			border-radius: 50%;
+			background-color: @cGold;
+			.mobile &{
+				top: 6/@rem;
+			}
+		}
+	}
+}
 .breadcrumbs{
 	color: #fff;
 	font-size: 14/@rem;
