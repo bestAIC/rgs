@@ -3,7 +3,7 @@
 		text-align: center;
 	}
 	&__banner{
-		height: 420px;
+		height: 420/@rem;
 		background: none no-repeat center;
 		background-size: cover;
 		&-in{
@@ -11,15 +11,43 @@
 		}
 		&-block{
 			position: absolute;
-			bottom: 70px;
+			bottom: 70/@rem;
+			left: 0;
+			right: 0;
 		}
 		&-title{
 			color: white;
-			font-size: 44px;
+			font-size: 44/@rem;
 			font-weight: 700;
-			letter-spacing: -0.4px;
-			line-height: 50px;
-			margin-bottom: 40px;
+			letter-spacing: -0.4/@rem;
+			line-height: 50/@rem;
+			margin-bottom: 21/@rem;
+		}
+	}
+}
+.tablet.portrait{
+	.inner{
+		&__banner{
+			&-block{
+				padding: 0 2.7rem;
+			}
+		}
+	}
+}
+.mobile{
+	.inner{
+		&__banner{
+			&-block{
+				bottom: 41/@rem;
+				padding: 0 2rem;
+			}
+			&-title{
+				font-size: 40/@rem;
+				font-weight: 700;
+				letter-spacing: -0.36/@rem;
+				line-height: 46/@rem;
+				margin-bottom: 14/@rem;
+			}
 		}
 	}
 }

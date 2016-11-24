@@ -4,7 +4,17 @@
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
 					<div class="inner__banner-title">Пенсионная программа</div>
-					<div class="breadcrumbs">Частным клиентам</div>
+					<div class="breadcrumbs">
+						<div class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Частным клиентам</a>
+						</div>
+						<div class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Вложить и сохранить</a>
+						</div>
+						<div class="breadcrumbs__item">
+							<span>Пенсионная программа</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

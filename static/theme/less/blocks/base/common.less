@@ -143,6 +143,31 @@ h2,.title{
 	color: #fff;
 	font-size: 14px;
 	line-height: 14px;
+	.clearfix;
+	.mobile &{
+		font-size: 12px;
+		line-height: 12px;
+	}
+	&__item{
+		float: left;
+		margin-right: 20px;
+		margin-top: 18px;
+		span{
+			opacity: 0.5;
+		}
+	}
+	&__link{
+		.color(#fff);
+		display: inline-block;
+		vertical-align: top;
+		&:after{
+			content: '/';
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 21px;
+
+		}
+	}
 }
 .more-link{
 	color: #9e0918;
