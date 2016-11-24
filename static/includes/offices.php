@@ -1,4 +1,4 @@
-<div class="offices" data-offices>
+<div class="offices b-block" data-offices>
 	<div class="grid__inner">
 		<h2>Отделения и банкоматы</h2>
 		<div class="subtitle">

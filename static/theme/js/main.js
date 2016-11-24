@@ -44,6 +44,7 @@ app.masks = function () {
 	$('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
 	$('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
 	$('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
+	$('[data-phone-mask]').mask("(000) 000-00-00",{clearIfNotMatch: true});
 };
 
 app.initFluid = function () {

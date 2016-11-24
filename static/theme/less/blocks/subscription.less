@@ -1,0 +1,104 @@
+.subscription{
+	&__form{
+		position: relative;
+		max-width: 970/@rem;
+		background-color: white;
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
+		margin: 3.5rem auto 0;
+		.clearfix;
+		&-col{
+			float: left;
+			width: 50%;
+			padding: 42/@rem 40/@rem 72/@rem;
+			&:first-child{
+				border-right: 1px solid #f2f4f5;
+			}
+		}
+		&-row{
+			&+&{
+				margin-top: 3rem;
+			}
+		}
+		&-check{
+			margin-top: 43/@rem;
+		}
+		&-block{
+			&-title{
+				font-size: 10/@rem;
+				font-weight: 600;
+				letter-spacing: 0.5/@rem;
+				line-height: 14/@rem;
+				text-transform: uppercase;
+			}
+			&-field{
+				height: 46/@rem;
+				border-bottom: 2/@rem solid #d0d4d9;
+				padding-bottom: 4/@rem;
+				&.phone-inp{
+					position: relative;
+					&:before{
+						content: '+7';
+						position: absolute;
+						left: 0;
+						top: 0;
+						bottom: 0;
+						font-size: 20/@rem;
+						font-weight: 400;
+						letter-spacing: -0.28/@rem;
+						line-height: 42/@rem;
+						z-index: 3;
+					}
+					input[type="text"]{
+						padding-left: 2.7rem;
+					}
+				}
+				input[type='text'], input[type='password'], input[type='tel'], input[type='date'], input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+					border: 0;
+					padding-left: 0;
+					font-size: 20/@rem;
+					font-weight: 400;
+					letter-spacing: -0.28/@rem;
+				}
+			}
+		}
+		&-btn{
+			position: absolute;
+			bottom: -2.5rem;
+			left: 50%;
+			letter-spacing: 0;
+			padding: 1.5rem 2.3rem;
+			transform: translate(-50%,0);
+		}
+	}
+}
+.mobile{
+	.subscription{
+		.grid__inner{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		.subtitle{
+			white-space: nowrap;
+			letter-spacing: -0.2/@rem;
+		}
+		&__form{
+			margin: 2rem auto 0;
+			padding: 42/@rem 40/@rem 61/@rem;
+			&-col{
+				float: none;
+				width: 100%;
+				padding: 0;
+				&+.subscription__form-col{
+					margin-top: 3rem;
+				}
+				&:first-child{
+					border-right: 0;
+				}
+			}
+			&-check{
+				margin-top: 0;
+			}
+		}
+	}
+}

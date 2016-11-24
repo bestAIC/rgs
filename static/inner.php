@@ -9,6 +9,7 @@
 			</div>
 		</div>
 		<div class="b-blocks _gray">
+			<?include "includes/subscription.php"?>
 			<?include "includes/offices.php"?>
 			<?include "includes/questions.php"?>
 			<?include "includes/news-gall.php"?>

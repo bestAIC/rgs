@@ -367,6 +367,15 @@ input[type='checkbox'][disabled] + .ideal-check {
   background-color: #DEDFE0;
   border-color: #DEDFE0;
 }
+.b-check {
+  position: relative;
+  padding-left: 4rem;
+}
+.b-check .ideal-check {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .ideal-check {
   width: 2rem;
   height: 2rem;
@@ -2150,6 +2159,116 @@ h2,
 .mobile .questions__item-answer {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
+}
+.subscription__form {
+  position: relative;
+  max-width: 97rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
+  margin: 3.5rem auto 0;
+  *zoom: 1;
+}
+.subscription__form:before,
+.subscription__form:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.subscription__form:after {
+  clear: both;
+}
+.subscription__form-col {
+  float: left;
+  width: 50%;
+  padding: 4.2rem 4rem 7.2rem;
+}
+.subscription__form-col:first-child {
+  border-right: 1px solid #f2f4f5;
+}
+.subscription__form-row + .subscription__form-row {
+  margin-top: 3rem;
+}
+.subscription__form-check {
+  margin-top: 4.3rem;
+}
+.subscription__form-block-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+.subscription__form-block-field {
+  height: 4.6rem;
+  border-bottom: 0.2rem solid #d0d4d9;
+  padding-bottom: 0.4rem;
+}
+.subscription__form-block-field.phone-inp {
+  position: relative;
+}
+.subscription__form-block-field.phone-inp:before {
+  content: '+7';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.028rem;
+  line-height: 4.2rem;
+  z-index: 3;
+}
+.subscription__form-block-field.phone-inp input[type="text"] {
+  padding-left: 2.7rem;
+}
+.subscription__form-block-field input[type='text'],
+.subscription__form-block-field input[type='password'],
+.subscription__form-block-field input[type='tel'],
+.subscription__form-block-field input[type='date'],
+.subscription__form-block-field input[type='number'],
+.subscription__form-block-field input[type='email'],
+.subscription__form-block-field input[type='url'],
+.subscription__form-block-field input[type='search'] {
+  border: 0;
+  padding-left: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.028rem;
+}
+.subscription__form-btn {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  letter-spacing: 0;
+  padding: 1.5rem 2.3rem;
+  transform: translate(-50%, 0);
+}
+.mobile .subscription .grid__inner {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.mobile .subscription .subtitle {
+  white-space: nowrap;
+  letter-spacing: -0.02rem;
+}
+.mobile .subscription__form {
+  margin: 2rem auto 0;
+  padding: 4.2rem 4rem 6.1rem;
+}
+.mobile .subscription__form-col {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+.mobile .subscription__form-col + .subscription__form-col {
+  margin-top: 3rem;
+}
+.mobile .subscription__form-col:first-child {
+  border-right: 0;
+}
+.mobile .subscription__form-check {
+  margin-top: 0;
 }
 .inner h2 {
   text-align: center;
