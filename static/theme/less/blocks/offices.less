@@ -123,6 +123,12 @@
 			position: relative;
 			margin-top: -36/@rem;
 		}
+		&-nav{
+			position: absolute;
+			bottom: 45/@rem;
+			z-index: 100;
+			right: -85/@rem;
+		}
 		&-block{
 			height: 485/@rem;
 			position: absolute;
@@ -168,49 +174,6 @@
 				transform: translate(0,0);
 			}
 			&-content{
-				.tablet.portrait &{
-					.offices{
-						&__item{
-							&-phone{
-								float: left;
-							}
-							&-notice{
-								float: left;
-								width: 100%;
-							}
-							&-schedule{
-								&-block{
-									width: 44%;
-									&+.offices__item-schedule-block{
-										margin-left: 12%;
-									}
-								}
-							}
-							&-info{
-								&-metro{
-									margin-top: 7/@rem;
-								}
-								&-block{
-									width: 100%;
-									padding-bottom: 1.8rem;
-									.clearfix;
-								}
-								&-address{
-									padding-bottom: 0;
-									margin-right:0;
-									float: left;
-									width: 44%;
-								}
-								&-phones{
-									width: 44%;
-									margin-right: 0;
-									margin-left: 12%;
-									float: left;
-								}
-							}
-						}
-					}
-				}
 				.offices{
 					&__item{
 						&-mark{
@@ -269,6 +232,49 @@
 								}
 								.metro{
 									margin-top: 2/@rem;
+								}
+							}
+						}
+					}
+				}
+				.tablet.portrait &{
+					.offices{
+						&__item{
+							&-phone{
+								float: left;
+							}
+							&-notice{
+								float: left;
+								width: 100%;
+							}
+							&-schedule{
+								&-block{
+									width: 44%;
+									&+.offices__item-schedule-block{
+										margin-left: 12%;
+									}
+								}
+							}
+							&-info{
+								&-metro{
+									margin-top: 7/@rem;
+								}
+								&-block{
+									width: 100%;
+									padding-bottom: 1.8rem;
+									.clearfix;
+								}
+								&-address{
+									padding-bottom: 0;
+									margin-right:0;
+									float: left;
+									width: 44%;
+								}
+								&-phones{
+									width: 44%;
+									margin-right: 0;
+									margin-left: 12%;
+									float: left;
 								}
 							}
 						}
@@ -371,6 +377,11 @@
 }
 .tablet.portrait{
 	.offices{
+		&__map{
+			&-nav{
+				right: 2.7rem;
+			}
+		}
 		&__filter{
 			&-inner{
 				padding: 1.8rem 3rem;
@@ -432,71 +443,137 @@
 			margin-left: -2.5rem;
 			margin-right: -2.5rem;
 		}
+
+		&__map{
+			height: 410/@rem;
+			&-wrap{
+				margin-top: -10/@rem;
+			}
+			&-nav{
+				right: 2rem;
+				bottom: 2rem;
+			}
+			&-block{
+				height: 410/@rem;
+				.grid__inner{
+					margin: 0;
+				}
+			}
+			&-popup{
+				width: 100%;
+				padding-right: 1rem;
+				&-content{
+					max-height: 18rem;
+					padding-right: 3rem;
+					overflow-y: auto;
+				}
+			}
+		}
+		&__filter{
+			margin-top: 20/@rem;
+			&-inner{
+				padding: 2.6rem 2rem 2rem;
+			}
+			&-icons{
+				float: right;
+			}
+			&-icon{
+				margin-left: 2.5rem;
+				&:first-child{
+					margin-left: 0;
+				}
+			}
+			&-types{
+				float: none;
+				margin-top: 0;
+			}
+			&-type{
+				font-size: 1.4rem;
+				line-height: 2rem;
+				margin-right: 0;
+				&:nth-child(2n){
+					margin-left: 9.5rem;
+				}
+			}
+			&-right{
+				float: none;
+				margin-top: 2rem;
+			}
+			&-city{
+				width: 253/@rem;
+				margin-left: 0;
+			}
+		}
 		&__block{
 			margin-top:0;
 			padding: 0 2rem;
 			box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 		}
-		&__item{
-			&-mark{
-				position: static;
-				display: inline-block;
-				vertical-align: top;
-				margin-top: 17/@rem;
-				font-size: 12/@rem;
-			}
-			&-title{
-				font-size: 18/@rem;
-				line-height: 24/@rem;
-				margin-bottom: 25/@rem;
-			}
-			&-phone{
-				margin-bottom: 18/@rem;
-			}
-			&-notice{
-				margin-top: 8/@rem;
-				font-size: 12/@rem;
-				line-height: 20/@rem;
-			}
-			&-schedule{
-				width: 100%;
-				float: none;
-				&-block{
-					float: left;
-					width: 44%;
-					&+.offices__item-schedule-block{
-						margin-left: 12%;
+		.offices__block{
+			.offices{
+				&__item{
+					&-mark{
+						position: static;
+						display: inline-block;
+						vertical-align: top;
+						margin-top: 17/@rem;
+						font-size: 12/@rem;
 					}
-				}
-			}
-			&-info{
-				font-size: 12/@rem;
-				line-height: 12/@rem;
-				&-block{
-					float: none;
-					.clearfix;
-					padding-bottom: 3/@rem;
-				}
-				&-address{
-					padding-bottom: 0;
-					margin-right:0;
-					float: left;
-					width: 44%;
-				}
-				&-phones{
-					width: 44%;
-					margin-right: 0;
-					margin-left: 12%;
-				}
-				&-metro{
-					width: 100%;
-					float: none;
-					margin-top: 13/@rem;
-					.metro{
-						margin-top: 2/@rem;
+					&-title{
+						font-size: 18/@rem;
+						line-height: 24/@rem;
+						margin-bottom: 25/@rem;
+					}
+					&-phone{
+						margin-bottom: 18/@rem;
+					}
+					&-notice{
+						margin-top: 8/@rem;
+						font-size: 12/@rem;
+						line-height: 20/@rem;
+					}
+					&-schedule{
+						width: 100%;
+						float: none;
+						&-block{
+							float: left;
+							width: 44%;
+							&+.offices__item-schedule-block{
+								margin-left: 12%;
+							}
+						}
+					}
+					&-info{
+						font-size: 12/@rem;
+						line-height: 12/@rem;
+						&-block{
+							float: none;
+							.clearfix;
+							padding-bottom: 3/@rem;
+						}
+						&-address{
+							padding-bottom: 0;
+							margin-right:0;
+							float: left;
+							width: 44%;
+						}
+						&-phones{
+							width: 44%;
+							margin-right: 0;
+							margin-left: 12%;
+						}
+						&-metro{
+							width: 100%;
+							float: none;
+							margin-top: 13/@rem;
+							.metro{
+								margin-top: 2/@rem;
+							}
+						}
 					}
 				}
 			}
 		}
+
 	}
 }

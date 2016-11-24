@@ -313,7 +313,7 @@ app.initAnimations = function() {
 app.initMaps = function () {
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
-	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAjgwJYKE3QnRDq8snccgJY499WUZrwTn0&v=3.exp' +
+	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAjgwJYKE3QnRDq8snccgJY499WUZrwTn0&v=3.exp&sensor=true' +
 		'&callback=initialize';
 	document.body.appendChild(script);
 	window.initialize=function(){
@@ -348,7 +348,8 @@ app.offices = function() {
 			streetViewControl:  false,
 			zoomControl:        false,
 			overviewMapControl: false,
-			scrollwheel:        false
+			scrollwheel:        false,
+			cancelable:true
 		},
 		map  = new google.maps.Map(mapBlock, mapOptions),
 		styleArray = [
@@ -362,10 +363,10 @@ app.offices = function() {
 			}
 		];
 	map.setOptions({styles: styleArray});
-
+	
 	addMarkers($points);
 
-	/*$plusBtn.click(function(e) {
+	$plusBtn.click(function(e) {
 		e.preventDefault();
 		map.setZoom(map.getZoom() + 1);
 	});
@@ -373,7 +374,7 @@ app.offices = function() {
 	$minusBtn.click(function(e) {
 		e.preventDefault();
 		map.setZoom(map.getZoom() - 1);
-	});*/
+	});
 	$mapPopupClose.on('click',function () {
 		$mapPopup.removeClass('_show');
 		$mapPopup.data('marker').setIcon('/static/theme/images/icons/marker.svg');

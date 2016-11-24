@@ -183,6 +183,10 @@
 		</div>
 		<div class="offices__map-block">
 			<div class="grid__inner">
+				<div class="nav offices__map-nav">
+					<div class="nav__btn _plus" data-zoom-plus></div>
+					<div class="nav__btn _minus" data-zoom-minus></div>
+				</div>
 				<div class="offices__map-popup" data-offices-map-popup>
 					<a href="javascript:void(0);" data-offices-map-popup-close class="offices__map-popup-close"></a>
 					<div class="offices__map-popup-content" data-offices-map-popup-content></div>
