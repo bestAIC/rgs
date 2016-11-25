@@ -833,6 +833,9 @@ h2,
   background-image: url('../images/icons/burger_red.svg');
   top: 1.3rem;
 }
+.tablet.portrait .header__menu-btn._active {
+  background-image: url('../images/icons/burger-close.svg');
+}
 .tablet.portrait .header__menu-link {
   font-size: 1.2rem;
 }
@@ -2380,8 +2383,8 @@ h2,
   opacity: 0;
 }
 .b-menu {
-  padding-top: 115px;
-  padding-bottom: 50px;
+  padding-top: 11.5rem;
+  padding-bottom: 5rem;
   transition: opacity .7s, visivility .7s;
   background-color: #fff;
   position: absolute;
@@ -2392,47 +2395,83 @@ h2,
 }
 .b-menu__col {
   float: left;
-  width: 250px;
+  width: 25rem;
 }
 .b-menu__col._2 {
-  width: 241px;
+  width: 24.1rem;
 }
 .b-menu__col._3 {
-  width: 279px;
+  width: 27.9rem;
 }
 .b-menu__col + .b-menu__col {
-  margin-left: 50px;
+  margin-left: 5rem;
 }
 .b-menu__item {
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 .b-menu__item._section + .b-menu__item._section {
-  margin-top: 47px;
+  margin-top: 4.7rem;
 }
 .b-menu__item._section .b-menu__item-link {
   text-transform: uppercase;
 }
 .b-menu__item-link {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
   color: #191919;
 }
 .no-touch .b-menu__item-link:hover {
   color: #191919;
 }
 .b-menu__submenu {
-  margin-top: -3px;
-  margin-bottom: 47px;
+  margin-top: -0.3rem;
+  margin-bottom: 4.7rem;
 }
 .b-menu__submenu-item {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .b-menu__submenu-link {
   color: #191919;
 }
 .no-touch .b-menu__submenu-link:hover {
   color: #191919;
+}
+.b-menu__tablet {
+  *zoom: 1;
+}
+.b-menu__tablet:before,
+.b-menu__tablet:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-menu__tablet:after {
+  clear: both;
+}
+.b-menu__tablet-col {
+  width: 48%;
+  float: left;
+}
+.tablet.portrait .b-menu-visible .header {
+  border-bottom: 1px solid whitesmoke;
+}
+.tablet.portrait .b-menu-visible .header__bottom {
+  display: none;
+}
+.tablet.portrait .b-menu {
+  padding-top: 3.4rem;
+  padding-bottom: 3.5rem;
+}
+.tablet.portrait .b-menu__col {
+  width: 100%!important;
+  padding-right: 2rem;
+}
+.tablet.portrait .b-menu__col._3 {
+  margin-top: 2rem;
+}
+.tablet.portrait .b-menu__col + .b-menu__col {
+  margin-left: 0;
 }
 .inner h2 {
   text-align: center;

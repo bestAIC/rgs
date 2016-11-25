@@ -11,15 +11,15 @@
 
 
 </head>
-<body class="is-b-menu-visible">
+<body >
 <header class="header">
 	<div class="header__top">
 		<div class="grid__inner header__top-inner">
 			<a href="/" class="header__logo"></a>
 			<a href="/" class="header__logo-ico"></a>
 			<div class="header__top-right">
-				<a href="#" class="header__menu-btn is-tablet-block"></a>
-				<a href="#" class="header__search-btn is-tablet-block"></a>
+				<a href="javascript:void(0);" data-b-menu-btn class="header__menu-btn is-tablet-block"></a>
+				<a href="javascript:void(0);" class="header__search-btn is-tablet-block"></a>
 				<a href="#" class="btn _gold header__top-btn">ИНТЕРНЕТ-БАНК</a>
 				<div class="header__phones">
 					<div class="header__phone">
@@ -34,7 +34,7 @@
 	</div>
 	<div class="header__bottom">
 		<div class="grid__inner">
-			<a href="#" class="header__menu-btn no-tablet-block" data-b-menu-btn></a>
+			<a href="javascript:void(0);"  data-b-menu-btn class="header__menu-btn no-tablet-block"></a>
 			<a href="#" class="header__search-btn no-tablet-block"></a>
 			<div class="header__menu">
 				<div class="header__menu-item no-mob-block">
@@ -60,5 +60,5 @@
 		</div>
 	</div>
 </header>
-<?include "b-menu.php"?>
+<?include "menu/burger/b-menu.php"?>
 <div class="grid">
