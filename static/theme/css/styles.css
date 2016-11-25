@@ -424,7 +424,12 @@ body {
   color: #191919;
   background-color: #fff;
   font-weight: 400;
-  transition: background-color 0.5s;
+  overflow-y: scroll;
+}
+body:after {
+  content: '';
+  background-color: transparent;
+  transition: background-color 0.5s 0.05s;
 }
 input,
 button,
@@ -766,7 +771,7 @@ h2,
   left: 0;
   right: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  transition: background-color 0.5s;
+  transition: background-color 0.2s;
   background-color: transparent;
 }
 .header__bottom-block {

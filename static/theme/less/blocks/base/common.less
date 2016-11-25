@@ -28,7 +28,12 @@ body {
 	color: @text-color;
 	background-color: #fff;
 	font-weight: 400;
-	transition: background-color @animTime;
+	overflow-y: scroll;
+	&:after{
+		content: '';
+		background-color: transparent;
+		transition: background-color @animTime 0.05s;
+	}
 }
 
 // Reset fonts for relevant elements
