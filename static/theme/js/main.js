@@ -49,11 +49,42 @@ app.masks = function () {
 };
 
 app.menu = function () {
-	var $menuBtn = $('[data-b-menu-btn]');
+	var $menu        = $('[data-menu]'),
+			$menuWrap    = $('[data-menu-wrap]'),
+			$menuLink    = $menu.find('[data-menu-link]'),
+			$menuContent = $('[data-menu-content]'),
+			$menuBtn     = $('[data-b-menu-btn]'),
+			menuNum = null
+		;
+	$menuLink.hover(function () {
+		var $self =  $(this);
+		app.dom.$body.addClass('menu-visible');
+		$menuLink.removeClass('_active');
+		$self.addClass('_active');
+		$menuContent.hide().filter('[data-menu-content="'+ $self.data('menuLink') +'"]').show();
+	});
+	$menuLink.on('click',function () {
+		var $self =  $(this);
+		app.dom.$body.addClass('menu-visible');
+		$menuLink.removeClass('_active');
+		$self.addClass('_active');
+		$menuContent.hide().filter('[data-menu-content="'+ $self.data('menuLink') +'"]').show();
+	});
 
+	$menuWrap.hover(
+		function(){
+
+	},
+		function () {
+		app.dom.$body.removeClass('menu-visible');
+		$menuContent.hide();
+		$menuLink.removeClass('_active');
+	});
 	$menuBtn.on('click',function () {
 		$(this).toggleClass('_active');
-		app.dom.$body.toggleClass('b-menu-visible')
+		$menuContent.hide();
+		$menuLink.removeClass('_active');
+		app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
 	});
 };
 app.initFluid = function () {

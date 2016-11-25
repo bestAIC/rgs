@@ -424,6 +424,7 @@ body {
   color: #191919;
   background-color: #fff;
   font-weight: 400;
+  transition: background-color 0.5s;
 }
 input,
 button,
@@ -765,8 +766,11 @@ h2,
   left: 0;
   right: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.5s;
+  background-color: transparent;
+}
+.header__bottom-block {
   padding-top: 2.1rem;
-  padding-bottom: 2rem;
 }
 .header__search-btn {
   width: 2rem;
@@ -782,7 +786,7 @@ h2,
   line-height: 0;
   padding-left: 7rem;
   padding-right: 7rem;
-  height: 2rem;
+  height: 4rem;
 }
 .header__menu-btn {
   width: 2rem;
@@ -794,7 +798,7 @@ h2,
   background-size: contain;
 }
 .header__menu-btn._active {
-  background-image: url('../images/icons/burger-close.svg');
+  background-image: url('../images/icons/burger-close.svg') !important;
 }
 .header__menu:after {
   content: '';
@@ -813,6 +817,13 @@ h2,
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.04rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  vertical-align: top;
+}
+.header__menu-link._active {
+  border-color: #b31b2c;
 }
 .tablet.portrait .header__phones {
   margin-right: 2.8rem;
@@ -842,10 +853,6 @@ h2,
 .tablet.portrait .header__logo-ico {
   float: right;
 }
-.tablet.portrait .header__bottom {
-  padding-top: 2rem;
-  padding-bottom: 1.9rem;
-}
 .tablet.portrait .header__search-btn {
   background-image: url('../images/icons/search_red.svg');
   top: 1rem;
@@ -853,7 +860,6 @@ h2,
 .tablet.portrait .header__menu {
   padding-left: 0;
   padding-right: 0;
-  height: 2rem;
 }
 .tablet.portrait .header__menu-btn {
   background-image: url('../images/icons/burger_red.svg');
@@ -2371,6 +2377,39 @@ h2,
 .mobile .subscription__form-check {
   margin-top: 0;
 }
+.menu-visible:after {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(56, 56, 56, 0.6);
+  z-index: 999;
+}
+.menu-visible .header {
+  z-index: 1000;
+  background-color: #fff;
+}
+.menu-visible .header__bottom {
+  background-color: #fff;
+}
+.menu-visible .header__bottom-block {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+.menu-visible .header__search-btn {
+  background-image: url('../images/icons/search_black.svg');
+}
+.menu-visible .header__menu-link {
+  color: #191919;
+}
+.no-touch .menu-visible .header__menu-link:hover {
+  color: #191919;
+}
+.menu-visible .header__menu-btn {
+  background-image: url('../images/icons/burger_black.svg');
+}
 .b-menu-visible .b-menu {
   position: relative;
   left: 0;
@@ -2378,7 +2417,7 @@ h2,
   visibility: visible;
   opacity: 1;
 }
-.b-menu-visible .header__bottom {
+.b-menu-visible .header__bottom-block {
   border-top: 1px solid whitesmoke;
   border-bottom: 1px solid whitesmoke;
 }

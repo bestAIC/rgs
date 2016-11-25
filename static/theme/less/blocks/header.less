@@ -1,5 +1,6 @@
 .header{
 	position: relative;
+	//transition: background-color @animTime;
 	&__phones{
 		float: right;
 		margin-right: 30/@rem;
@@ -54,8 +55,12 @@
 		left: 0;
 		right: 0;
 		border-bottom: 1px solid fade(white,20%);
-		padding-top: 21/@rem;
-		padding-bottom: 20/@rem;
+		transition: background-color @animTime;
+		background-color: transparent;
+		&-block{
+			padding-top: 21/@rem;
+			//padding-bottom: 20/@rem;
+		}
 	}
 	&__search{
 		&-btn{
@@ -72,7 +77,7 @@
 		line-height: 0;
 		padding-left: 70/@rem;
 		padding-right: 70/@rem;
-		height: 20/@rem;
+		height: 4rem;
 		&-btn{
 			width: 20/@rem;
 			height: 16/@rem;
@@ -81,7 +86,7 @@
 			top: 2/@rem;
 			.background('@{pathToImg}icons/burger.svg');
 			&._active{
-				background-image:url('@{pathToImg}icons/burger-close.svg');
+				background-image:url('@{pathToImg}icons/burger-close.svg')!important;
 			}
 		}
 		&:after{
@@ -101,6 +106,13 @@
 			text-transform: uppercase;
 			color: #fff;
 			letter-spacing: 0.4/@rem;
+			padding-bottom: 2rem;
+			border-bottom: 1px solid transparent;
+			display: inline-block;
+			vertical-align: top;
+			&._active{
+				border-color:  @cRed;
+			}
 		}
 	}
 }
@@ -137,8 +149,8 @@
 			}
 		}
 		&__bottom{
-			padding-top: 20/@rem;
-			padding-bottom: 19/@rem;
+			//padding-top: 20/@rem;
+			//padding-bottom: 19/@rem;
 		}
 		&__search{
 			&-btn{
@@ -149,7 +161,7 @@
 		&__menu{
 			padding-left: 0;
 			padding-right: 0;
-			height: 20/@rem;
+			//height: 20/@rem;
 			&-btn{
 				background-image: url('@{pathToImg}icons/burger_red.svg');
 				&._active{

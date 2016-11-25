@@ -32,29 +32,62 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__bottom">
-		<div class="grid__inner">
-			<a href="javascript:void(0);"  data-b-menu-btn class="header__menu-btn no-tablet-block"></a>
-			<a href="#" class="header__search-btn no-tablet-block"></a>
-			<div class="header__menu">
-				<div class="header__menu-item no-mob-block">
-					<a href="#" class="header__menu-link">Вложить и сохранить</a>
-				</div>
-				<div class="header__menu-item no-mob-block">
-					<a href="#" class="header__menu-link">Оплатить и перевести</a>
-				</div>
-				<div class="header__menu-item no-mob-block">
-					<a href="#" class="header__menu-link">Выбрать карту</a>
-				</div>
-				<div class="header__menu-item no-mob-block">
-					<a href="#" class="header__menu-link">Взять кредит</a>
-				</div>
-				<div class="header__menu-item no-mob-block">
-					<a href="#" class="header__menu-link">Инвестировать</a>
-				</div>
+	<div class="header__bottom" data-menu-wrap>
+		<div class="header__bottom-block">
+			<div class="grid__inner">
+				<a href="javascript:void(0);"  data-b-menu-btn class="header__menu-btn no-tablet-block"></a>
+				<a href="#" class="header__search-btn no-tablet-block"></a>
+				<div class="header__menu" data-menu>
+					<div class="header__menu-item no-mob-block">
+						<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
+					</div>
+					<div class="header__menu-item no-mob-block">
+						<a href="javascript:void(0);" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
+					</div>
+					<div class="header__menu-item no-mob-block">
+						<a href="javascript:void(0);" data-menu-link="3" class="header__menu-link">Выбрать карту</a>
+					</div>
+					<div class="header__menu-item no-mob-block">
+						<a href="javascript:void(0);" data-menu-link="4" class="header__menu-link">Взять кредит</a>
+					</div>
+					<div class="header__menu-item no-mob-block">
+						<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
+					</div>
 
-				<div class="header__menu-item is-mob-block">
-					<a href="#" class="header__menu-link">Меню</a>
+					<div class="header__menu-item is-mob-block">
+						<a href="#" class="header__menu-link">Меню</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__menu-blocks">
+			<div class="grid__inner">
+				<div class="menu__block _1 hide" data-menu-content="1">
+					меню1<br/>
+					меню1<br/>
+					меню1<br/>
+					меню1<br/>
+					меню1<br/>
+				</div>
+				<div class="menu__block _1 hide" data-menu-content="2">
+					меню2<br/>
+					меню2<br/>
+					меню2<br/>
+					меню2<br/>
+					меню2<br/>
+				</div>
+				<div class="menu__block _1 hide" data-menu-content="3">
+					меню3
+				</div>
+				<div class="menu__block _1 hide" data-menu-content="4">
+					меню4<br/>
+				</div>
+				<div class="menu__block _1 hide" data-menu-content="5">
+					меню5<br/>
+					меню5<br/>
+					меню5<br/>
+					меню5<br/>
+					меню5<br/>
 				</div>
 			</div>
 		</div>
