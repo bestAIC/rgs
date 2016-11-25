@@ -1,0 +1,66 @@
+.files{
+	margin-bottom: -2rem;
+	margin-top: 3rem;
+}
+.file{
+	.color(@title-color);
+	border: 1px solid @cBorder;
+	border-radius: 2/@rem;
+	position: relative;
+	font-size: 12/@rem;
+	letter-spacing: 0.04/@rem;
+	line-height: 20/@rem;
+	padding: 1.4rem 3rem 1.4rem 6.9rem;
+	background-color: #fff;
+	width: 370/@rem;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3rem;
+	margin-bottom: 2rem;
+	&:nth-child(3n){
+		margin-right: 0;
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		left: 19/@rem;
+		top:19/@rem;
+		width: 25/@rem;
+		height: 29/@rem;
+		.background('@{pathToImg}icons/file.svg');
+	}
+	&__inner{
+
+	}
+	&__name{
+
+	}
+	&__props{
+		font-weight: 600;
+		color: @cGold;
+	}
+}
+.tablet.portrait{
+	.files{
+		margin-top: 2rem;
+	}
+	.file{
+		width: 342/@rem;
+		min-height: 11rem;
+		&:nth-child(3n){
+			margin-right: 3rem;
+		}
+		&:nth-child(2n){
+			margin-right: 0;
+		}
+	}
+}
+.mobile{
+	.files{
+		margin-top: 2rem;
+	}
+	.file{
+		width: 100%;
+		margin-right: 0;
+	}
+}

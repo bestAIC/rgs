@@ -2535,6 +2535,66 @@ h2,
 .tablet.portrait .b-menu__col + .b-menu__col {
   margin-left: 0;
 }
+.files {
+  margin-bottom: -2rem;
+  margin-top: 3rem;
+}
+.file {
+  color: #3e3e3e;
+  border: 1px solid #DEDFE0;
+  border-radius: 0.2rem;
+  position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 0.004rem;
+  line-height: 2rem;
+  padding: 1.4rem 3rem 1.4rem 6.9rem;
+  background-color: #fff;
+  width: 37rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+.no-touch .file:hover {
+  color: #3e3e3e;
+}
+.file:nth-child(3n) {
+  margin-right: 0;
+}
+.file:before {
+  content: '';
+  position: absolute;
+  left: 1.9rem;
+  top: 1.9rem;
+  width: 2.5rem;
+  height: 2.9rem;
+  background: url('../images/icons/file.svg') no-repeat center;
+  background-size: contain;
+}
+.file__props {
+  font-weight: 600;
+  color: #cca266;
+}
+.tablet.portrait .files {
+  margin-top: 2rem;
+}
+.tablet.portrait .file {
+  width: 34.2rem;
+  min-height: 11rem;
+}
+.tablet.portrait .file:nth-child(3n) {
+  margin-right: 3rem;
+}
+.tablet.portrait .file:nth-child(2n) {
+  margin-right: 0;
+}
+.mobile .files {
+  margin-top: 2rem;
+}
+.mobile .file {
+  width: 100%;
+  margin-right: 0;
+}
 .inner h2 {
   text-align: center;
 }
@@ -2567,9 +2627,9 @@ h2,
 .inner__info-block {
   float: right;
   width: 47rem;
-}
-.inner__info-block .files {
-  margin-top: 9rem;
+  /*.files{
+				margin-top: 90/@rem;
+			}*/
 }
 .inner__info-benefits {
   float: left;
@@ -2594,37 +2654,6 @@ h2,
 }
 .inner__info-benefits-btn .btn {
   letter-spacing: 0;
-}
-.files .file + .file {
-  margin-top: 2rem;
-}
-.file {
-  display: block;
-  color: #3e3e3e;
-  border: 1px solid #DEDFE0;
-  border-radius: 0.2rem;
-  position: relative;
-  font-size: 1.2rem;
-  letter-spacing: 0.004rem;
-  line-height: 2rem;
-  padding: 1.5rem 3rem 1.3rem 6.9rem;
-}
-.no-touch .file:hover {
-  color: #3e3e3e;
-}
-.file:before {
-  content: '';
-  position: absolute;
-  left: 1.9rem;
-  top: 1.9rem;
-  width: 2.5rem;
-  height: 2.9rem;
-  background: url('../images/icons/file.svg') no-repeat center;
-  background-size: contain;
-}
-.file__props {
-  font-weight: 600;
-  color: #cca266;
 }
 .numerals {
   *zoom: 1;
@@ -2700,10 +2729,10 @@ h2,
 .tablet.portrait .inner__info-block {
   float: none;
   width: 100%;
-}
-.tablet.portrait .inner__info-block .files {
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  /*.files{
+					margin-top: 40/@rem;
+					margin-bottom: 30/@rem;
+				}*/
 }
 .tablet.portrait .inner__info-benefits {
   float: none;
@@ -2761,9 +2790,9 @@ h2,
 .mobile .inner__info-block {
   float: none;
   width: 100%;
-}
-.mobile .inner__info-block .files {
-  margin: 3rem 0;
+  /*.files{
+					margin: 3rem 0;
+				}*/
 }
 .mobile .inner__info-benefits {
   float: none;
