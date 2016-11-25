@@ -3694,7 +3694,7 @@ h2,
   clear: both;
 }
 .offices__filter-city {
-  width: 26rem;
+  width: 29rem;
   height: 3.8rem;
   float: left;
   margin-left: 4rem;
@@ -3760,11 +3760,12 @@ h2,
   background: url('../images/icons/arr_right_long_gold.svg') no-repeat right center;
   background-size: 1.2rem 1rem;
   padding-right: 2.7rem;
+  background: none;
+  padding-right: 0;
   float: left;
-  margin-right: 0.5rem;
   margin-top: 0.7rem;
   letter-spacing: -0.02rem;
-  margin-left: 5.2rem;
+  margin-left: 5.4rem;
 }
 .offices__map {
   height: 48.5rem;
@@ -4057,6 +4058,7 @@ h2,
 }
 .tablet.portrait .offices__filter-city {
   margin-left: 0;
+  width: 26rem;
 }
 .tablet.portrait .offices__filter-type {
   font-size: 1.4rem;

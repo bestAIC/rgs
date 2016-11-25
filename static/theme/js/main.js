@@ -363,15 +363,20 @@ app.offices = function() {
 		},
 		map  = new google.maps.Map(mapBlock, mapOptions),
 		styleArray = [
-			{
-				"stylers": [
-					{ "gamma": 1 },
-					{ "saturation": -100 },
-					{ "lightness": 0 }
-				]
-			},{
-			}
-		];
+			{"featureType":"administrative","stylers":
+				[{"visibility":"off"}]},
+				{"featureType":"poi","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"road","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"water","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"transit","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"landscape","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"road.highway","stylers":[{"visibility":"off"}]},
+				{"featureType":"road.local","stylers":[{"visibility":"on"}]},
+				{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]
+			},
+			{"featureType":"water","stylers":
+				[{"color":"#84afa3"},{"lightness":52}]},
+			{"stylers":[{"saturation":-77}]},{"featureType":"road"}];
 	map.setOptions({styles: styleArray});
 	
 	addMarkers($points);
@@ -415,7 +420,7 @@ app.offices = function() {
 					activeMarker.setIcon('/static/theme/images/icons/marker.svg');
 				}
 				activeMarker = this;
-				marker.setIcon('/static/theme/images/icons/marker-active.svg');
+				marker.setIcon('/static/theme/images/icons/marker-active.png');
 				$mapPopupContent.html(marker.$dom.clone());
 				$mapPopup.addClass('_show');
 				$mapPopup.data('marker',marker);
