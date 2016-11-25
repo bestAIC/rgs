@@ -184,7 +184,7 @@ app.newsGall = function () {
 			simulateTouch: true,
 			nextButton:$next,
 			prevButton:$prev,
-			loop:true,
+			//loop:true,
 			breakpoints: {
 				640: {
 					spaceBetween: 10
