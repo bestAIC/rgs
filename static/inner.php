@@ -54,7 +54,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="files">
+					<?/*файлы десктоп*/?>
+					<div class="files is-desktop-block">
 						<a href="#" class="file">
 							<div class="file__inner">
 								<div class="file__name">Сборник Тарифов по выпуску и обслуживанию банковских карт с 01.08.2016</div>
@@ -96,6 +97,27 @@
 						<li>Бесплатный <a href="#">Интернет-Банк</a> и SMS-информирование</li>
 						<li><a href="#">Скидки и привилегии в компаниях-партнерах</a> Банка</li>
 					</ul>
+					<?/*файлы планшет и мобильная*/?>
+					<div class="files no-desktop-block">
+						<a href="#" class="file">
+							<div class="file__inner">
+								<div class="file__name">Сборник Тарифов по выпуску и обслуживанию банковских карт с 01.08.2016</div>
+								<div class="file__props">PDF, 1.16MB</div>
+							</div>
+						</a>
+						<a href="#" class="file">
+							<div class="file__inner">
+								<div class="file__name">Правила выпуска и обслуживания банковских карт</div>
+								<div class="file__props">PDF, 768.81KB</div>
+							</div>
+						</a>
+						<a href="#" class="file">
+							<div class="file__inner">
+								<div class="file__name">Анкета заявление на получение банковской карты для тарифа «Карта Пенсионная»</div>
+								<div class="file__props">DOC, 89KB</div>
+							</div>
+						</a>
+					</div>
 					<div class="inner__info-benefits-btn">
 						<a href="#" class="btn _red">ПРИСОЕДИНИТЬСЯ К ПЕНСИОННОЙ ПРОГРАММЕ</a>
 					</div>
