@@ -662,6 +662,12 @@ h2,
 .tablet.portrait .subtitle {
   font-size: 1.6rem;
 }
+.tablet.portrait .b-blocks {
+  padding-top: 3.2rem;
+}
+.tablet.portrait .b-blocks .b-block {
+  padding-top: 1.2rem;
+}
 .mobile .grid__inner {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2630,7 +2636,7 @@ h2,
 }
 .tablet.portrait .inner__info {
   padding-top: 5.2rem;
-  padding-bottom: 9.3rem;
+  padding-bottom: 7rem;
 }
 .tablet.portrait .inner__info-block {
   float: none;
