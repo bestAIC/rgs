@@ -2421,6 +2421,7 @@ h2,
   top: 0;
   visibility: visible;
   opacity: 1;
+  display: block;
 }
 .b-menu-visible .header__bottom-block {
   border-top: 1px solid whitesmoke;
@@ -2444,7 +2445,7 @@ h2,
   opacity: 0;
 }
 .b-menu {
-  padding-top: 11.5rem;
+  padding-top: 5.3rem;
   padding-bottom: 5rem;
   transition: opacity .7s, visivility .7s;
   background-color: #fff;
@@ -2514,10 +2515,10 @@ h2,
   width: 48%;
   float: left;
 }
-.tablet.portrait .b-menu-visible .header {
+.tablet.portrait .b-menu-visible .header__top {
   border-bottom: 1px solid whitesmoke;
 }
-.tablet.portrait .b-menu-visible .header__bottom {
+.tablet.portrait .b-menu-visible .header__bottom-block {
   display: none;
 }
 .tablet.portrait .b-menu {

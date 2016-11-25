@@ -35,7 +35,7 @@
 	<div class="header__bottom" data-menu-wrap>
 		<div class="header__bottom-block">
 			<div class="grid__inner">
-				<a href="javascript:void(0);"  data-b-menu-btn class="header__menu-btn no-tablet-block"></a>
+				<a href="javascript:void(0);" data-b-menu-btn class="header__menu-btn no-tablet-block"></a>
 				<a href="#" class="header__search-btn no-tablet-block"></a>
 				<div class="header__menu" data-menu>
 					<div class="header__menu-item no-mob-block">
@@ -62,6 +62,7 @@
 		</div>
 		<div class="header__menu-blocks">
 			<div class="grid__inner">
+				<?include "menu/burger/b-menu.php"?>
 				<div class="menu__block _1 hide" data-menu-content="1">
 					меню1<br/>
 					меню1<br/>
@@ -93,5 +94,4 @@
 		</div>
 	</div>
 </header>
-<?include "menu/burger/b-menu.php"?>
 <div class="grid">

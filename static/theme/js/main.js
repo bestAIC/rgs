@@ -51,24 +51,32 @@ app.masks = function () {
 app.menu = function () {
 	var $menu        = $('[data-menu]'),
 			$menuWrap    = $('[data-menu-wrap]'),
-			$menuLink    = $menu.find('[data-menu-link]'),
+			$menuLink    = $('[data-menu-link]'),
 			$menuContent = $('[data-menu-content]'),
 			$menuBtn     = $('[data-b-menu-btn]'),
 			menuNum = null
 		;
 	$menuLink.hover(function () {
-		var $self =  $(this);
-		app.dom.$body.addClass('menu-visible');
+		var $self =  $(this),
+				data  =  $self.data('menuLink')
+			;
+		$menuBtn.removeClass('_active');
 		$menuLink.removeClass('_active');
 		$self.addClass('_active');
-		$menuContent.hide().filter('[data-menu-content="'+ $self.data('menuLink') +'"]').show();
+		$menuContent.hide();
+		$menuContent.filter('[data-menu-content="'+ data +'"]').show();
+		app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
 	});
 	$menuLink.on('click',function () {
-		var $self =  $(this);
-		app.dom.$body.addClass('menu-visible');
+		var $self =  $(this),
+				data  =  $self.data('menuLink')
+			;
+		$menuBtn.removeClass('_active');
+		$menuContent.hide();
+		app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
 		$menuLink.removeClass('_active');
+		$menuContent.filter('[data-menu-content="'+ data +'"]').show();
 		$self.addClass('_active');
-		$menuContent.hide().filter('[data-menu-content="'+ $self.data('menuLink') +'"]').show();
 	});
 
 	$menuWrap.hover(

@@ -5,6 +5,7 @@
 		top: 0;
 		visibility: visible;
 		opacity: 1;
+		display: block;
 	}
 	.header__bottom-block{
 		 border-top: 1px solid whitesmoke;
@@ -22,7 +23,7 @@
 }
 
 .b-menu{
-	padding-top: 115/@rem;
+	padding-top: 5.3rem;
 	padding-bottom: 50/@rem;
 	transition: opacity .7s, visivility .7s;
 	background-color: #fff;
@@ -82,8 +83,10 @@
 .tablet.portrait{
 	.b-menu-visible{
 		.header{
-			border-bottom: 1px solid whitesmoke;
-			&__bottom{
+			&__top{
+				border-bottom: 1px solid whitesmoke;
+			}
+			&__bottom-block{
 				display: none;
 			}
 		}
