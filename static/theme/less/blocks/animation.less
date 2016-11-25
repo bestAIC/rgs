@@ -1,0 +1,13 @@
+.animation{
+	&__top{
+		opacity: 0;
+		transform: translate(0,10rem);
+		transition: opacity 0.3s,transform @animTime;
+		position: relative;
+		&._active{
+			opacity: 1;
+			transform: translate(0,0);
+		}
+
+	}
+}

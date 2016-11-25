@@ -1,4 +1,4 @@
-<div class="b-block questions">
+<div class="b-block questions animation__top" data-animation>
 	<div class="grid__inner">
 		<h2>Остались вопросы?</h2>
 		<div class="questions__items" data-questions>

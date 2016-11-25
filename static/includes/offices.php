@@ -1,4 +1,4 @@
-<div class="offices b-block" data-offices>
+<div class="offices b-block animation__top" data-offices data-animation>
 	<div class="grid__inner">
 		<h2>Отделения и банкоматы</h2>
 		<div class="subtitle">

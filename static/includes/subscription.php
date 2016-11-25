@@ -1,4 +1,4 @@
-<div class="subscription b-block" data-animation>
+<div class="subscription b-block animation__top" data-animation>
 	<div class="grid__inner">
 		<h2>
 			Присоединяйтесь <br/>

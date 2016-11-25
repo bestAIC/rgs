@@ -692,6 +692,16 @@ h2,
   font-size: 1.4rem;
   line-height: 2rem;
 }
+.animation__top {
+  opacity: 0;
+  transform: translate(0, 10rem);
+  transition: opacity 0.3s, transform 0.5s;
+  position: relative;
+}
+.animation__top._active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 .header {
   position: relative;
 }
@@ -2250,15 +2260,6 @@ h2,
 .mobile .questions__item-answer {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
-}
-.subscription {
-  opacity: 0;
-  transform: translate(0, 10rem);
-  transition: opacity 0.3s, transform 0.5s;
-}
-.subscription._active {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 .subscription__form {
   position: relative;

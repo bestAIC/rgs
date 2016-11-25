@@ -18,7 +18,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="inner__info">
+		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
 					<div class="numerals">
