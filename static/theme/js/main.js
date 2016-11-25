@@ -26,6 +26,7 @@ app.init = function () {
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
 	app.initFluid();
 	app.newsGall();
+	app.menu();
 	app.masks();
 	app.bannerGall();
 	app.initAnimations();
@@ -47,6 +48,14 @@ app.masks = function () {
 	$('[data-phone-mask]').mask("(000) 000-00-00",{clearIfNotMatch: true});
 };
 
+app.menu = function () {
+	var $menuBtn = $('[data-b-menu-btn]');
+
+	$menuBtn.on('click',function () {
+		$(this).toggleClass('_active');
+		app.dom.$body.toggleClass('b-menu-visible')
+	});
+};
 app.initFluid = function () {
 	var baseWidth = 1440,
 			baseSize = 10

@@ -482,6 +482,16 @@ a:focus {
 .red {
   color: #b31b2c;
 }
+.hide-block {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
+  opacity: 0;
+}
+.grid {
+  transition: opacity .7s, visivility .7s;
+}
 .grid__inner {
   max-width: 117rem;
   position: relative;
@@ -756,6 +766,9 @@ h2,
   top: 0.2rem;
   background: url('../images/icons/burger.svg') no-repeat center;
   background-size: contain;
+}
+.header__menu-btn._active {
+  background-image: url('../images/icons/burger-close.svg');
 }
 .header__menu:after {
   content: '';
@@ -2337,6 +2350,89 @@ h2,
 }
 .mobile .subscription__form-check {
   margin-top: 0;
+}
+.b-menu-visible .b-menu {
+  position: relative;
+  left: 0;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.b-menu-visible .header__bottom {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+.b-menu-visible .header__search-btn {
+  background-image: url('../images/icons/search_black.svg');
+}
+.b-menu-visible .header__menu-link {
+  color: #191919;
+}
+.no-touch .b-menu-visible .header__menu-link:hover {
+  color: #191919;
+}
+.b-menu-visible .grid,
+.b-menu-visible .footer {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
+  opacity: 0;
+}
+.b-menu {
+  padding-top: 115px;
+  padding-bottom: 50px;
+  transition: opacity .7s, visivility .7s;
+  background-color: #fff;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
+  opacity: 0;
+}
+.b-menu__col {
+  float: left;
+  width: 250px;
+}
+.b-menu__col._2 {
+  width: 241px;
+}
+.b-menu__col._3 {
+  width: 279px;
+}
+.b-menu__col + .b-menu__col {
+  margin-left: 50px;
+}
+.b-menu__item {
+  margin-bottom: 25px;
+}
+.b-menu__item._section + .b-menu__item._section {
+  margin-top: 47px;
+}
+.b-menu__item._section .b-menu__item-link {
+  text-transform: uppercase;
+}
+.b-menu__item-link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #191919;
+}
+.no-touch .b-menu__item-link:hover {
+  color: #191919;
+}
+.b-menu__submenu {
+  margin-top: -3px;
+  margin-bottom: 47px;
+}
+.b-menu__submenu-item {
+  margin-bottom: 20px;
+}
+.b-menu__submenu-link {
+  color: #191919;
+}
+.no-touch .b-menu__submenu-link:hover {
+  color: #191919;
 }
 .inner h2 {
   text-align: center;

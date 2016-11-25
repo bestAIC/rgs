@@ -80,6 +80,9 @@
 			left: 0;
 			top: 2/@rem;
 			.background('@{pathToImg}icons/burger.svg');
+			&._active{
+				background-image:url('@{pathToImg}icons/burger-close.svg');
+			}
 		}
 		&:after{
 			content: '';

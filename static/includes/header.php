@@ -11,7 +11,7 @@
 
 
 </head>
-<body>
+<body class="is-b-menu-visible">
 <header class="header">
 	<div class="header__top">
 		<div class="grid__inner header__top-inner">
@@ -34,7 +34,7 @@
 	</div>
 	<div class="header__bottom">
 		<div class="grid__inner">
-			<a href="#" class="header__menu-btn no-tablet-block"></a>
+			<a href="#" class="header__menu-btn no-tablet-block" data-b-menu-btn></a>
 			<a href="#" class="header__search-btn no-tablet-block"></a>
 			<div class="header__menu">
 				<div class="header__menu-item no-mob-block">
@@ -60,5 +60,5 @@
 		</div>
 	</div>
 </header>
-
+<?include "b-menu.php"?>
 <div class="grid">

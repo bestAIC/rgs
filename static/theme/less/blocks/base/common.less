@@ -103,7 +103,15 @@ a {
 .red{
 	color: @cRed;
 }
+.hide-block{
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	visibility: hidden;
+	opacity: 0;
+}
 .grid{
+	transition: opacity .7s, visivility .7s;
 	&__inner{
 		max-width: 1170/@rem;
 		position: relative;
