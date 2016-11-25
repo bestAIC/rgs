@@ -668,6 +668,16 @@ h2,
 .tablet.portrait .b-blocks .b-block {
   padding-top: 1.2rem;
 }
+.mobile .b-blocks {
+  padding-top: 4rem;
+}
+.mobile .b-blocks .b-block {
+  padding-top: 2rem;
+}
+.mobile .b-block {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
 .mobile .grid__inner {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2696,8 +2706,8 @@ h2,
   margin-bottom: 1.4rem;
 }
 .mobile .inner__info {
-  padding-top: 7.8rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 .mobile .inner__info-block {
   float: none;
