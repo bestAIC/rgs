@@ -2574,6 +2574,9 @@ h2,
   float: left;
   width: 57rem;
 }
+.inner__info-benefits .files {
+  margin-top: 3rem;
+}
 .inner__info-benefits-title {
   font-size: 2rem;
   font-weight: 600;

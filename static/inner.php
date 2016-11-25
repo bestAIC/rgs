@@ -97,6 +97,9 @@
 						<li>Бесплатный <a href="#">Интернет-Банк</a> и SMS-информирование</li>
 						<li><a href="#">Скидки и привилегии в компаниях-партнерах</a> Банка</li>
 					</ul>
+					<div class="inner__info-benefits-btn">
+						<a href="#" class="btn _red">ПРИСОЕДИНИТЬСЯ К ПЕНСИОННОЙ ПРОГРАММЕ</a>
+					</div>
 					<?/*файлы планшет и мобильная*/?>
 					<div class="files no-desktop-block">
 						<a href="#" class="file">
@@ -117,9 +120,6 @@
 								<div class="file__props">DOC, 89KB</div>
 							</div>
 						</a>
-					</div>
-					<div class="inner__info-benefits-btn">
-						<a href="#" class="btn _red">ПРИСОЕДИНИТЬСЯ К ПЕНСИОННОЙ ПРОГРАММЕ</a>
 					</div>
 				</div>
 			</div>
