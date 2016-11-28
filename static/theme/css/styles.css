@@ -944,8 +944,8 @@ h2,
   margin-top: -0.7rem;
   margin-right: -0.5rem;
 }
-.mobile .header__bottom {
-  padding: 1.7rem 2rem 1.8rem;
+.mobile .header__bottom-block {
+  padding: 1.7rem 2rem 0;
 }
 .mobile .header__menu {
   text-align: center;
@@ -2511,6 +2511,12 @@ h2,
 .menu__block-col._col-5-2 {
   width: 20rem;
 }
+.mob-menu {
+  padding: 1.7rem 2rem 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  border-bottom: 1px solid #DEDFE0;
+}
 .tablet.portrait .menu-banner {
   display: none;
 }
@@ -2545,6 +2551,19 @@ h2,
 }
 .tablet.portrait .menu__block-col._col-5-1 {
   width: 43rem;
+}
+.mobile .menu-banner {
+  display: none;
+}
+.mobile .menu__block .b-menu__submenu {
+  margin-bottom: 0;
+}
+.mobile .menu__block__inner {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.mobile .menu__block-col {
+  width: 100%!important;
 }
 .b-menu-visible .b-menu {
   position: relative;
@@ -2667,8 +2686,19 @@ h2,
   margin-left: 0;
 }
 .files {
-  margin-bottom: -2rem;
-  margin-top: 3rem;
+  /*margin-bottom: -2rem;
+	margin-top: 3rem;*/
+  padding-top: 1rem;
+  *zoom: 1;
+}
+.files:before,
+.files:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.files:after {
+  clear: both;
 }
 .file {
   color: #3e3e3e;
@@ -2681,10 +2711,9 @@ h2,
   padding: 1.4rem 3rem 1.4rem 6.9rem;
   background-color: #fff;
   width: 37rem;
-  display: inline-block;
-  vertical-align: top;
+  float: left;
   margin-right: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .no-touch .file:hover {
   color: #3e3e3e;
@@ -2702,16 +2731,20 @@ h2,
   background: url('../images/icons/file.svg') no-repeat center;
   background-size: contain;
 }
+.file__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .file__props {
   font-weight: 600;
   color: #cca266;
 }
 .tablet.portrait .files {
-  margin-top: 2rem;
+  padding-top: 0;
 }
 .tablet.portrait .file {
   width: 34.2rem;
-  min-height: 11rem;
 }
 .tablet.portrait .file:nth-child(3n) {
   margin-right: 3rem;
@@ -2720,11 +2753,15 @@ h2,
   margin-right: 0;
 }
 .mobile .files {
-  margin-top: 2rem;
+  padding-top: 0;
 }
 .mobile .file {
   width: 100%;
   margin-right: 0;
+}
+.mobile .file__name {
+  white-space: normal;
+  overflow: visible;
 }
 .inner h2 {
   text-align: center;

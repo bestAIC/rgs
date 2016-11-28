@@ -121,6 +121,12 @@
 		}
 	}
 }
+.mob-menu{
+	padding: 17/@rem 20/@rem 0;
+	white-space: nowrap;
+	overflow-x: auto;
+	border-bottom: 1px solid @cBorder;
+}
 .tablet.portrait{
 	.menu-banner{
 		display: none;
@@ -160,6 +166,25 @@
 				&._col-5-1{
 					width: 430/@rem;
 				}
+			}
+		}
+	}
+}
+.mobile{
+	.menu-banner{
+		display: none;
+	}
+	.menu{
+		&__block{
+			.b-menu__submenu{
+				margin-bottom: 0;
+			}
+			&__inner{
+				padding-top: 35/@rem;
+				padding-bottom: 35/@rem;
+			}
+			&-col{
+				width: 100%!important;
 			}
 		}
 	}

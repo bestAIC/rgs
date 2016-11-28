@@ -1,6 +1,8 @@
 .files{
-	margin-bottom: -2rem;
-	margin-top: 3rem;
+	/*margin-bottom: -2rem;
+	margin-top: 3rem;*/
+	padding-top: 1rem;
+	.clearfix;
 }
 .file{
 	.color(@title-color);
@@ -13,10 +15,9 @@
 	padding: 1.4rem 3rem 1.4rem 6.9rem;
 	background-color: #fff;
 	width: 370/@rem;
-	display: inline-block;
-	vertical-align: top;
+	float: left;
 	margin-right: 3rem;
-	margin-bottom: 2rem;
+	margin-top: 2rem;
 	&:nth-child(3n){
 		margin-right: 0;
 	}
@@ -33,7 +34,9 @@
 
 	}
 	&__name{
-
+		white-space: nowrap;
+		overflow:hidden;
+		text-overflow: ellipsis;
 	}
 	&__props{
 		font-weight: 600;
@@ -42,11 +45,11 @@
 }
 .tablet.portrait{
 	.files{
-		margin-top: 2rem;
+		//margin-top: 2rem;
+		padding-top: 0;
 	}
 	.file{
 		width: 342/@rem;
-		min-height: 11rem;
 		&:nth-child(3n){
 			margin-right: 3rem;
 		}
@@ -57,10 +60,15 @@
 }
 .mobile{
 	.files{
-		margin-top: 2rem;
+		padding-top: 0;
+		//margin-top: 2rem;
 	}
 	.file{
 		width: 100%;
 		margin-right: 0;
+		&__name{
+			white-space: normal;
+			overflow: visible;
+		}
 	}
 }
