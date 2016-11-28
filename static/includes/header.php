@@ -118,7 +118,10 @@
 								<div class="b-menu__submenu-item">
 									<a href="#" class="b-menu__submenu-link">«Пенсионный доход»</a>
 								</div>
-								<a href="#" class="btn menu__block-btn _red">подобрать вклад</a>
+								<div class="b-menu__submenu-item is-mob-block">
+									<a href="#" class="b-menu__submenu-link _red">Подобрать вклад</a>
+								</div>
+								<a href="#" class="btn menu__block-btn no-mob-block _red">подобрать вклад</a>
 							</div>
 						</div>
 						<div class="menu__block-col _col-1-2">
@@ -180,7 +183,7 @@
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">Мгновенные переводы РОСГОССТРАХ БАНКА</a>
+									<a href="#" class="b-menu__submenu-link">Мгновенные переводы РОСГОССТРАХ&nbsp;БАНКА</a>
 								</div>
 								<div class="b-menu__submenu-item">
 									<a href="#" class="b-menu__submenu-link">Western Union</a>
@@ -195,7 +198,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__block _1 hide" data-menu-content="3">
+				<div class="menu__block hide" data-menu-content="3">
 					<div class="menu__block-inner">
 						<div class="menu-banner">
 							<div class="menu-banner__img" style="background-image: url('theme/images/menu-banner.jpg');"></div>
@@ -250,7 +253,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__block _1 hide" data-menu-content="4">
+				<div class="menu__block hide" data-menu-content="4">
 					<div class="menu__block-inner">
 						<div class="menu__block-col _col-4-1">
 							<div class="b-menu__item">
@@ -267,7 +270,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="menu__block _1 hide" data-menu-content="5">
+				<div class="menu__block hide" data-menu-content="5">
 					<div class="menu__block-inner">
 						<div class="menu__block-col _col-5-1">
 							<div class="b-menu__item">
@@ -283,6 +286,186 @@
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Депозитарий</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu__block hide" data-menu-content="6">
+					<div class="menu__block-inner">
+						<div class="menu__block-col">
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Отделения и банкоматы</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Контакты</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Миссия и ценности</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">История</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Рейтинги</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Лицензии</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Органы управления</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">
+									Учредительные<br />
+									и внутренние документы
+								</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">
+									О налогообложении<br />
+									иностранных счетов (FATCA)
+								</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">
+									Акционеры<br />
+									и аффилированные лица
+								</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Реквизиты</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Защита от мошенничества</a>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Раскрытие информации</a>
+							</div>
+							<div class="b-menu__submenu">
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Годовые отчеты</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Ежеквартальные отчеты</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Сообщения о раскрытии информации</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Эмиссионные документы</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">
+										Информация о максимальных
+										процентных ставках<br />
+										по вкладам физических лиц
+									</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">
+										Информация для акционеров
+										и иных заинтересованных лиц
+									</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">
+										Раскрытие информации
+										для регулятивных целей
+									</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">
+										Раскрытие информации
+										в соответствии с указанием
+										ЦБ РФ от 28.12.2015 № 3921-У
+									</a>
+								</div>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Дистанционные сервисы</a>
+							</div>
+							<div class="b-menu__submenu">
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Интернет-банк</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Мобильный банк</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">SMS-информирование</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Обслуживание через банкоматы</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Контакт-Центр</a>
+								</div>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Пресс-центр</a>
+							</div>
+							<div class="b-menu__submenu">
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Новости и пресс-релизы</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Публикации о банке</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Экспертный профиль</a>
+								</div>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Вакансии</a>
+							</div>
+							<div class="b-menu__submenu">
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Горячие вакансии</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Список вакансий</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Студентам и выпускникам</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu__block hide" data-menu-content="7">
+					<div class="menu__block-inner">
+						<div class="menu__block-col">
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Справочный центр</a>
+							</div>
+							<div class="b-menu__submenu">
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Вклады</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Карты</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Кредиты</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Инвестиции</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Платежи и переводы</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Сейфовые ячейки</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">МультиМаркер</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="#" class="b-menu__submenu-link">Юрист 24</a>
+								</div>
+							</div>
+							<div class="b-menu__item">
+								<a href="#" class="b-menu__item-link">Акции и спецпредложения</a>
 							</div>
 						</div>
 					</div>

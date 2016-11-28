@@ -56,22 +56,27 @@ app.menu = function () {
 			$menuBtn     = $('[data-b-menu-btn]'),
 			menuNum = null
 		;
-	$menuLink.hover(function () {
-		var $self =  $(this),
-				data  =  $self.data('menuLink')
-			;
-		$menuBtn.removeClass('_active');
-		$menuLink.removeClass('_active');
-		$self.addClass('_active');
-		$menuContent.hide();
-		$menuContent.filter('[data-menu-content="'+ data +'"]').show();
-		app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
-	});
+	if(!app.utils.isMobile){
+		$menuLink.hover(function () {
+			var $self =  $(this),
+					data  =  $self.data('menuLink')
+				;
+			$menuBtn.removeClass('_active');
+			$menuLink.removeClass('_active');
+			$self.addClass('_active');
+			$menuContent.hide();
+			$menuContent.filter('[data-menu-content="'+ data +'"]').show();
+			app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
+		});
+	}
+
 	$menuLink.on('click',function () {
 		var $self =  $(this),
 				data  =  $self.data('menuLink')
 			;
-		$menuBtn.removeClass('_active');
+		if(!app.utils.isMobile){
+			$menuBtn.removeClass('_active');
+		}
 		$menuContent.hide();
 		app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
 		$menuLink.removeClass('_active');
@@ -87,12 +92,20 @@ app.menu = function () {
 		app.dom.$body.removeClass('menu-visible');
 		$menuContent.hide();
 		$menuLink.removeClass('_active');
+		if(app.utils.isMobile){
+			$menuBtn.removeClass('_active');
+		}
 	});
 	$menuBtn.on('click',function () {
 		$(this).toggleClass('_active');
 		$menuContent.hide();
 		$menuLink.removeClass('_active');
-		app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
+		if(app.utils.isMobile){
+			app.dom.$body.toggleClass('menu-visible');
+		}else{
+			app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
+		}
+
 	});
 };
 app.initFluid = function () {
