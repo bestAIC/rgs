@@ -599,6 +599,9 @@ h2,
 .no-touch .breadcrumbs__link:hover {
   color: #fff;
 }
+.no-touch .breadcrumbs__link:focus {
+  color: #fff;
+}
 .breadcrumbs__link:after {
   content: '/';
   display: inline-block;
@@ -735,6 +738,9 @@ h2,
 .no-touch .header._fixed .header__menu-link:hover {
   color: #191919;
 }
+.no-touch .header._fixed .header__menu-link:focus {
+  color: #191919;
+}
 .header._fixed .header__menu-btn {
   background-image: url('../images/icons/burger_black.svg');
 }
@@ -855,6 +861,12 @@ h2,
   border-bottom: 1px solid transparent;
   display: inline-block;
   vertical-align: top;
+}
+.no-touch .header__menu-link:hover {
+  color: #fff;
+}
+.no-touch .header__menu-link:focus {
+  color: #fff;
 }
 .header__menu-link._active {
   border-color: #b31b2c;
@@ -978,9 +990,6 @@ h2,
 }
 .mobile .header__menu {
   text-align: center;
-}
-.mobile .header__menu-item + .header__menu-item {
-  margin-left: 2.5rem;
 }
 .home h2 {
   text-align: center;
@@ -1793,6 +1802,9 @@ h2,
 .no-touch .info-center__section:hover {
   color: #191919;
 }
+.no-touch .info-center__section:focus {
+  color: #191919;
+}
 .no-touch .info-center__section {
   opacity: 0;
   transition: box-shadow 0.5s, transform 0.5s, opacity 1s;
@@ -1942,12 +1954,18 @@ h2,
 .no-touch .news-gall__tab:hover {
   color: #acb6bf;
 }
+.no-touch .news-gall__tab:focus {
+  color: #acb6bf;
+}
 .news-gall__tab._active {
   color: #191919;
   border-bottom: 0;
   cursor: default;
 }
 .no-touch .news-gall__tab._active:hover {
+  color: #191919;
+}
+.no-touch .news-gall__tab._active:focus {
   color: #191919;
 }
 .no-touch .news-gall:hover .gall__nav {
@@ -2234,6 +2252,9 @@ h2,
 .no-touch .gall__news-title:hover {
   color: #3e3e3e;
 }
+.no-touch .gall__news-title:focus {
+  color: #3e3e3e;
+}
 .mobile .gall {
   margin-top: 2rem;
 }
@@ -2447,6 +2468,9 @@ h2,
 .no-touch .menu-visible .header__menu-link:hover {
   color: #191919;
 }
+.no-touch .menu-visible .header__menu-link:focus {
+  color: #191919;
+}
 .menu-visible .header__menu-btn {
   background-image: url('../images/icons/burger_black.svg');
 }
@@ -2471,6 +2495,9 @@ h2,
   display: block;
 }
 .no-touch .menu-banner__title:hover {
+  color: #191919;
+}
+.no-touch .menu-banner__title:focus {
   color: #191919;
 }
 .menu-banner__text {
@@ -2552,6 +2579,9 @@ h2,
   overflow-x: auto;
   border-bottom: 1px solid #DEDFE0;
   display: none;
+}
+.mob-menu .header__menu-item + .header__menu-item {
+  margin-left: 2.5rem;
 }
 .tablet.portrait .menu-banner {
   display: none;
@@ -2649,6 +2679,9 @@ h2,
 .no-touch .b-menu-visible .header__menu-link:hover {
   color: #191919;
 }
+.no-touch .b-menu-visible .header__menu-link:focus {
+  color: #191919;
+}
 .b-menu-visible .grid,
 .b-menu-visible .footer {
   position: absolute;
@@ -2699,6 +2732,9 @@ h2,
 .no-touch .b-menu__item-link:hover {
   color: #191919;
 }
+.no-touch .b-menu__item-link:focus {
+  color: #191919;
+}
 .b-menu__submenu {
   margin-top: -0.3rem;
   margin-bottom: 4.7rem;
@@ -2710,6 +2746,9 @@ h2,
   color: #191919;
 }
 .no-touch .b-menu__submenu-link:hover {
+  color: #191919;
+}
+.no-touch .b-menu__submenu-link:focus {
   color: #191919;
 }
 .b-menu__tablet {
@@ -2788,6 +2827,9 @@ h2,
   margin-top: 2rem;
 }
 .no-touch .file:hover {
+  color: #3e3e3e;
+}
+.no-touch .file:focus {
   color: #3e3e3e;
 }
 .file:nth-child(3n) {
@@ -3152,6 +3194,9 @@ h2,
 .no-touch .search-form__requests-item:hover {
   color: #3e3e3e;
 }
+.no-touch .search-form__requests-item:focus {
+  color: #3e3e3e;
+}
 .mobile .search-form__requests-item {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -3178,6 +3223,9 @@ h2,
   padding: 3.2rem 2.9rem 3.5rem;
 }
 .no-touch .product:hover {
+  color: #191919;
+}
+.no-touch .product:focus {
   color: #191919;
 }
 .product._green .product__text {
@@ -4082,11 +4130,17 @@ h2,
 .no-touch .offices__tab:hover {
   color: #AAAEB2;
 }
+.no-touch .offices__tab:focus {
+  color: #AAAEB2;
+}
 .offices__tab._active {
   color: #3e3e3e;
   border-color: #b31b2c;
 }
 .no-touch .offices__tab._active:hover {
+  color: #3e3e3e;
+}
+.no-touch .offices__tab._active:focus {
   color: #3e3e3e;
 }
 .offices__advanced-search {
@@ -4297,6 +4351,9 @@ h2,
 .no-touch .offices__item-mark:hover {
   color: #cca266;
 }
+.no-touch .offices__item-mark:focus {
+  color: #cca266;
+}
 .offices__item-title {
   font-size: 2rem;
   font-weight: 700;
@@ -4311,6 +4368,9 @@ h2,
   color: #191919;
 }
 .no-touch .offices__item-phone a:hover {
+  color: #191919;
+}
+.no-touch .offices__item-phone a:focus {
   color: #191919;
 }
 .offices__item-notice {
