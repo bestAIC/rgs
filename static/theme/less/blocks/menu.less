@@ -33,10 +33,10 @@
 }
 .menu-banner{
 	float: right;
-	margin-top: 3px;
-	width: 320px;
+	margin-top: 3/@rem;
+	width: 320/@rem;
 	&__img{
-		height: 150px;
+		height: 150/@rem;
 		background: none no-repeat center;
 		background-size: cover;
 	}
@@ -44,9 +44,9 @@
 		padding: 3rem 0.3rem 0 1rem;
 	}
 	&__title{
-		font-size: 16px;
+		font-size: 16/@rem;
 		font-weight: 600;
-		line-height: 20px;
+		line-height: 20/@rem;
 		.color(@text-color);
 		display: block;
 	}
@@ -55,7 +55,7 @@
 		margin-top: 2rem;
 	}
 	&__btn{
-		margin-top: 26px;
+		margin-top: 26/@rem;
 	}
 }
 .menu{
@@ -76,49 +76,91 @@
 		}
 		&-inner{
 			.clearfix;
-			padding-top: 46px;
-			padding-bottom: 47px;
+			padding-top: 46/@rem;
+			padding-bottom: 47/@rem;
 		}
 		&-btn{
-			margin-top: 5px;
+			margin-top: 5/@rem;
 		}
 		&-col{
 			float: left;
 			padding-right: 2rem;
 			&._col-1-1{
-				width: 235px;
+				width: 235/@rem;
 			}
 			&._col-1-2{
-				width: 282px;
+				width: 282/@rem;
 			}
 			&._col-1-3{
-				width: 272px;
+				width: 272/@rem;
 			}
 			&._col-2-1{
-				width: 300px;
+				width: 300/@rem;
 			}
 			&._col-2-2{
-				width: 270px;
+				width: 270/@rem;
 			}
 			&._col-3-1{
-				width: 300px;
+				width: 300/@rem;
 			}
 			&._col-3-2{
-				width: 320px;
+				width: 320/@rem;
 			}
 			&._col-4-1{
-				width: 300px;
+				width: 300/@rem;
 			}
 			&._col-4-2{
-				width: 300px;
+				width: 300/@rem;
 			}
 			&._col-5-1{
-				width: 500px;
+				width: 500/@rem;
 			}
 			&._col-5-2{
-				width: 200px;
+				width: 200/@rem;
 			}
 		}
 	}
-
+}
+.tablet.portrait{
+	.menu-banner{
+		display: none;
+	}
+	.menu{
+		&__block{
+			.b-menu__submenu{
+				margin-bottom: 0;
+			}
+			&__inner{
+				padding-top: 35/@rem;
+				padding-bottom: 35/@rem;
+			}
+			&-col{
+				&._col-1-1{
+					width: 225/@rem;
+				}
+				&._col-1-2{
+					width: 233/@rem;
+				}
+				&._col-1-3{
+					width: 256/@rem;
+					padding-right: 0;
+				}
+				&._col-2-1{
+					width: 358/@rem;
+				}
+				&._col-2-2{
+					width: 355/@rem;
+				}
+				&._col-3-1{
+					width: 310/@rem;
+				}
+				&._col-4-1{
+					width: 357/@rem;
+				}
+				&._col-5-1{
+					width: 430/@rem;
+				}
+			}
+		}
+	}
 }
