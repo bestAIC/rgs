@@ -826,7 +826,6 @@ h2,
   line-height: 0;
   padding-left: 7rem;
   padding-right: 7rem;
-  height: 4rem;
 }
 .header__menu-btn {
   width: 2rem;
@@ -845,6 +844,7 @@ h2,
   width: 100%;
   line-height: 0;
   display: inline-block;
+  vertical-align: top;
 }
 .header__menu-item {
   display: inline-block;
@@ -857,8 +857,8 @@ h2,
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.04rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid transparent;
+  padding-bottom: 1.8rem;
+  border-bottom: 0.2rem solid transparent;
   display: inline-block;
   vertical-align: top;
 }
@@ -916,6 +916,7 @@ h2,
 }
 .tablet.portrait .header__menu-link {
   font-size: 1.2rem;
+  padding-bottom: 1.6rem;
 }
 .mobile .header__phones {
   float: none;
@@ -990,6 +991,9 @@ h2,
 }
 .mobile .header__menu {
   text-align: center;
+}
+.mobile .header__menu-link {
+  padding-bottom: 1.6rem;
 }
 .home h2 {
   text-align: center;
