@@ -3,6 +3,17 @@
 	margin-top: 3rem;*/
 	padding-top: 1rem;
 	.clearfix;
+	&._two-cols{
+		.file{
+			width: 57rem;
+			&:nth-child(3n){
+				margin-right: 3rem;
+			}
+			&:nth-child(2n){
+				margin-right: 0;
+			}
+		}
+	}
 }
 .file{
 	.color(@title-color);
@@ -21,6 +32,7 @@
 	&:nth-child(3n){
 		margin-right: 0;
 	}
+
 	&:before{
 		content: '';
 		position: absolute;
@@ -62,6 +74,11 @@
 	.files{
 		padding-top: 0;
 		//margin-top: 2rem;
+		&._two-cols{
+			.file{
+				width: 100%;
+			}
+		}
 	}
 	.file{
 		width: 100%;
