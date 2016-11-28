@@ -49,13 +49,22 @@ app.masks = function () {
 };
 
 app.menu = function () {
-	var $menu        = $('[data-menu]'),
+	var $header       = $('.header'),
+			$menu        = $('[data-menu]'),
 			$menuWrap    = $('[data-menu-wrap]'),
 			$menuLink    = $('[data-menu-link]'),
 			$menuContent = $('[data-menu-content]'),
 			$menuBtn     = $('[data-b-menu-btn]'),
 			menuNum = null
 		;
+	app.dom.$window.on('scroll.Menu',function () {
+		if(app.dom.$document.scrollTop()>=$header.height()){
+			$header.addClass('_fixed');
+		}else{
+			$header.removeClass('_fixed');
+		}
+	});
+
 	if(!app.utils.isMobile){
 		$menuLink.hover(function () {
 			var $self =  $(this),

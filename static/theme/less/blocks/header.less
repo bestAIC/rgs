@@ -1,5 +1,32 @@
 .header{
 	position: relative;
+	&._fixed{
+		z-index: 1000;
+		.header{
+			&__bottom{
+				background-color: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				&-block{
+					border-top: 1px solid whitesmoke;
+					border-bottom: 1px solid whitesmoke;
+					background-color: #fff;
+				}
+			}
+			&__search-btn{
+				background-image: url('@{pathToImg}icons/search_black.svg');
+			}
+			&__menu-link{
+				.color(@text-color);
+			}
+			&__menu-btn{
+				background-image: url('@{pathToImg}icons/burger_black.svg');
+			}
+		}
+
+	}
 	//transition: background-color @animTime;
 	&__phones{
 		float: right;
@@ -59,6 +86,8 @@
 		background-color: transparent;
 		&-block{
 			padding-top: 21/@rem;
+			transition: background-color 0.2s;
+			background-color: transparent;
 			//padding-bottom: 20/@rem;
 		}
 	}
