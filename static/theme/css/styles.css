@@ -2415,6 +2415,102 @@ h2,
 .menu-visible .header__menu-btn {
   background-image: url('../images/icons/burger_black.svg');
 }
+.menu-banner {
+  float: right;
+  margin-top: 3px;
+  width: 320px;
+}
+.menu-banner__img {
+  height: 150px;
+  background: none no-repeat center;
+  background-size: cover;
+}
+.menu-banner__inner {
+  padding: 3rem 0.3rem 0 1rem;
+}
+.menu-banner__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #191919;
+  display: block;
+}
+.no-touch .menu-banner__title:hover {
+  color: #191919;
+}
+.menu-banner__text {
+  color: #AAAEB2;
+  margin-top: 2rem;
+}
+.menu-banner__btn {
+  margin-top: 26px;
+}
+.menu__block .b-menu__item {
+  margin-bottom: 0;
+}
+.menu__block .b-menu__item + .b-menu__item {
+  margin-top: 3rem;
+}
+.menu__block .b-menu__item-link {
+  line-height: 1.5rem;
+}
+.menu__block .b-menu__submenu {
+  margin-top: 3rem;
+}
+.menu__block-inner {
+  *zoom: 1;
+  padding-top: 46px;
+  padding-bottom: 47px;
+}
+.menu__block-inner:before,
+.menu__block-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.menu__block-inner:after {
+  clear: both;
+}
+.menu__block-btn {
+  margin-top: 5px;
+}
+.menu__block-col {
+  float: left;
+  padding-right: 2rem;
+}
+.menu__block-col._col-1-1 {
+  width: 235px;
+}
+.menu__block-col._col-1-2 {
+  width: 282px;
+}
+.menu__block-col._col-1-3 {
+  width: 272px;
+}
+.menu__block-col._col-2-1 {
+  width: 300px;
+}
+.menu__block-col._col-2-2 {
+  width: 270px;
+}
+.menu__block-col._col-3-1 {
+  width: 300px;
+}
+.menu__block-col._col-3-2 {
+  width: 320px;
+}
+.menu__block-col._col-4-1 {
+  width: 300px;
+}
+.menu__block-col._col-4-2 {
+  width: 300px;
+}
+.menu__block-col._col-5-1 {
+  width: 500px;
+}
+.menu__block-col._col-5-2 {
+  width: 200px;
+}
 .b-menu-visible .b-menu {
   position: relative;
   left: 0;
