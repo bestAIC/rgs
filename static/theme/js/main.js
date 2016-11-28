@@ -48,16 +48,24 @@ app.masks = function () {
 	$('[data-phone-mask]').mask("(000) 000-00-00",{clearIfNotMatch: true});
 };
 
+app.mobMenu = function () {
+	var $mobMenu     = $('[data-mob-menu]');
+};
 app.menu = function () {
 	var $header       = $('.header'),
 			$menu        = $('[data-menu]'),
+			$mobMenu        = $('[data-mob-menu]'),
 			$menuWrap    = $('[data-menu-wrap]'),
 			$menuIn   = $('[data-menu-in]'),
-			$menuLink    = $('[data-menu-link]'),
+			$menuLink    = $menu.find('[data-menu-link]'),
 			$menuContent = $('[data-menu-content]'),
 			$menuBtn     = $('[data-b-menu-btn]'),
-			menuNum = null
+			menuNum = null,
+			mobMenuswiper = false
 		;
+	if(app.utils.isMobile){
+		$menuLink    = $mobMenu.find('[data-menu-link]');
+	}
 	app.dom.$window.on('scroll.Menu',function () {
 		if(app.dom.$document.scrollTop()>=$header.height()){
 			$header.addClass('_fixed');
@@ -117,9 +125,12 @@ app.menu = function () {
 		if(app.utils.isMobile){
 			app.dom.$body.toggleClass('menu-visible');
 			_helper();
-
+			if(!mobMenuswiper){
+				initMobMenu();
+			}
 			if($self.hasClass('_active')){
 				$menuLink.filter('[data-menu-link="1"]').first().click();
+				mobMenuswiper.slideTo(0,0);
 			}
 		}else{
 			app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
@@ -129,6 +140,13 @@ app.menu = function () {
 	function _helper() {
 		var h1 = Math.max(($header.height() - app.dom.$document.scrollTop()),0);
 		$menuContent.height(app.dom.$window.height() - h1- $menuIn.height());
+	}
+	function initMobMenu() {
+		mobMenuswiper = new Swiper($mobMenu[0], {
+			slidesPerView: 'auto',
+			simulateTouch: true,
+			spaceBetween:25
+		});
 	}
 };
 app.initFluid = function () {

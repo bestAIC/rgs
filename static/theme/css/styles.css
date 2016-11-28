@@ -992,6 +992,10 @@ h2,
 .mobile .header__menu {
   text-align: center;
 }
+.mobile .header__menu-item {
+  width: auto!important;
+  display: block;
+}
 .mobile .header__menu-link {
   padding-bottom: 1.6rem;
 }
@@ -2579,13 +2583,8 @@ h2,
 }
 .mob-menu {
   padding: 1.7rem 2rem 0;
-  white-space: nowrap;
-  overflow-x: auto;
   border-bottom: 1px solid #DEDFE0;
   display: none;
-}
-.mob-menu .header__menu-item + .header__menu-item {
-  margin-left: 2.5rem;
 }
 .tablet.portrait .menu-banner {
   display: none;

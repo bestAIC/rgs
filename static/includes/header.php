@@ -60,27 +60,29 @@
 					</div>
 				</div>
 			</div>
-			<div class="mob-menu is-mob-block">
-				<div class="header__menu-item">
-					<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
-				</div>
-				<div class="header__menu-item">
-					<a href="javascript:void(0);" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
-				</div>
-				<div class="header__menu-item">
-					<a href="javascript:void(0);" data-menu-link="3" class="header__menu-link">Выбрать карту</a>
-				</div>
-				<div class="header__menu-item">
-					<a href="javascript:void(0);" data-menu-link="4" class="header__menu-link">Взять кредит</a>
-				</div>
-				<div class="header__menu-item">
-					<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
-				</div>
-				<div class="header__menu-item">
-					<a href="javascript:void(0);" data-menu-link="6" class="header__menu-link">О банке</a>
-				</div>
-				<div class="header__menu-item">
-					<a href="javascript:void(0);" data-menu-link="7" class="header__menu-link">Справочный центр</a>
+			<div class="mob-menu is-mob-block swiper-container" data-mob-menu>
+				<div class="swiper-wrapper">
+					<div class="header__menu-item swiper-slide">
+						<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
+					</div>
+					<div class="header__menu-item swiper-slide">
+						<a href="javascript:void(0);" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
+					</div>
+					<div class="header__menu-item swiper-slide">
+						<a href="javascript:void(0);" data-menu-link="3" class="header__menu-link">Выбрать карту</a>
+					</div>
+					<div class="header__menu-item swiper-slide">
+						<a href="javascript:void(0);" data-menu-link="4" class="header__menu-link">Взять кредит</a>
+					</div>
+					<div class="header__menu-item swiper-slide">
+						<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
+					</div>
+					<div class="header__menu-item swiper-slide">
+						<a href="javascript:void(0);" data-menu-link="6" class="header__menu-link">О банке</a>
+					</div>
+					<div class="header__menu-item swiper-slide">
+						<a href="javascript:void(0);" data-menu-link="7" class="header__menu-link">Справочный центр</a>
+					</div>
 				</div>
 			</div>
 		</div>
