@@ -52,6 +52,7 @@ app.menu = function () {
 	var $header       = $('.header'),
 			$menu        = $('[data-menu]'),
 			$menuWrap    = $('[data-menu-wrap]'),
+			$menuIn   = $('[data-menu-in]'),
 			$menuLink    = $('[data-menu-link]'),
 			$menuContent = $('[data-menu-content]'),
 			$menuBtn     = $('[data-b-menu-btn]'),
@@ -62,6 +63,9 @@ app.menu = function () {
 			$header.addClass('_fixed');
 		}else{
 			$header.removeClass('_fixed');
+		}
+		if(app.utils.isMobile){
+			_helper();
 		}
 	});
 
@@ -106,16 +110,26 @@ app.menu = function () {
 		}
 	});
 	$menuBtn.on('click',function () {
-		$(this).toggleClass('_active');
+		var $self = $(this);
+		$self.toggleClass('_active');
 		$menuContent.hide();
 		$menuLink.removeClass('_active');
 		if(app.utils.isMobile){
 			app.dom.$body.toggleClass('menu-visible');
+			_helper();
+
+			if($self.hasClass('_active')){
+				$menuLink.filter('[data-menu-link="1"]').first().click();
+			}
 		}else{
 			app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
 		}
 
 	});
+	function _helper() {
+		var h1 = Math.max(($header.height() - app.dom.$document.scrollTop()),0);
+		$menuContent.height(app.dom.$window.height() - h1- $menuIn.height());
+	}
 };
 app.initFluid = function () {
 	var baseWidth = 1440,
