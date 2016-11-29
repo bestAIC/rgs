@@ -23,9 +23,9 @@
 				<div class="footer__ask">
 					<form action="">
 						<div class="footer__ask-field">
-							<select>
+							<select data-chosen>
 								<option value="">Задать вопрос</option>
-								<option value="">Задать вопрос</option>
+								<option value="">Оставить отзыв</option>
 							</select>
 						</div>
 						<button type="submit" class="footer__ask-btn"></button>

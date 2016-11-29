@@ -16,11 +16,12 @@ app.dom = {
 
 
 app.utils = {};
-app.utils.isTableLand = (device.tablet() && ($(window).width() > $(window).height())) ? true : false;
-app.utils.isTablePort = (device.tablet() && ($(window).width() < $(window).height())) ? true : false;
+app.utils.isTabletLand = (device.tablet() && ($(window).width() > $(window).height())) ? true : false;
+app.utils.isTabletPort = (device.tablet() && ($(window).width() < $(window).height())) ? true : false;
 app.utils.isMobileLand = (device.mobile() && ($(window).width() > $(window).height())) ? true : false;
 app.utils.isMobilePort = (device.mobile() && ($(window).width() < $(window).height())) ? true : false;
 app.utils.isMobile = device.mobile();
+app.utils.isTablet = device.tablet();
 
 app.init = function () {
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
@@ -33,7 +34,11 @@ app.init = function () {
 	app.info();
 	app.initMaps();
 	app.questions();
-	if(app.utils.isMobile || app.utils.isTablePort ){
+
+	if(!(app.utils.isMobile || app.utils.isTablet)){
+		app.initChosen();
+	}
+	if(app.utils.isMobile || app.utils.isTabletPort ){
 		app.tabletSliders();
 	}
 	if(app.utils.isMobile){
@@ -47,7 +52,12 @@ app.masks = function () {
 	$('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
 	$('[data-phone-mask]').mask("(000) 000-00-00",{clearIfNotMatch: true});
 };
-
+app.initChosen = function () {
+	$('[data-chosen]').chosen({
+		disable_search_threshold: 1000,
+		width: "100%"
+	});
+};
 app.mobMenu = function () {
 	var $mobMenu     = $('[data-mob-menu]');
 };
@@ -171,7 +181,7 @@ app.initFluid = function () {
 	var baseWidth = 1440,
 			baseSize = 10
 		;
-	if(app.utils.isTablePort){
+	if(app.utils.isTabletPort){
 		baseWidth = 768;
 	}
 	if(app.utils.isMobile){

@@ -7,6 +7,7 @@
 	<title>Сайт</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="theme/js/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="theme/js/chosen/chosen.css">
 	<link rel="stylesheet" href="theme/css/styles.css">
 
 
