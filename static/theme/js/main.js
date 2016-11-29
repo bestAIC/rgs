@@ -82,7 +82,10 @@ app.menu = function () {
 			var $self =  $(this),
 					data  =  $self.data('menuLink')
 				;
-			$menuBtn.removeClass('_active');
+			$menuBtn.addClass('_hide-burger');
+			setTimeout(function () {
+				$menuBtn.removeClass('_hide-burger _active');
+			},500);
 			$menuLink.removeClass('_active');
 			$self.addClass('_active');
 			$menuContent.hide();
@@ -96,12 +99,15 @@ app.menu = function () {
 				data  =  $self.data('menuLink')
 			;
 		if(!app.utils.isMobile){
-			$menuBtn.removeClass('_active');
+			$menuBtn.addClass('_hide-burger');
+			setTimeout(function () {
+				$menuBtn.removeClass('_hide-burger _active');
+			},500);
 		}
 		$menuContent.hide();
 		app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
 		$menuLink.removeClass('_active');
-		$menuContent.filter('[data-menu-content="'+ data +'"]').show();
+		$menuContent.filter('[data-menu-content="'+ data +'"]').addClass('fgh').show();
 		$self.addClass('_active');
 	});
 
@@ -117,24 +123,36 @@ app.menu = function () {
 			$menuBtn.removeClass('_active');
 		}
 	});
+
+
 	$menuBtn.on('click',function () {
 		var $self = $(this);
-		$self.toggleClass('_active');
-		$menuContent.hide();
-		$menuLink.removeClass('_active');
 		if(app.utils.isMobile){
 			app.dom.$body.toggleClass('menu-visible');
 			_helper();
 			if(!mobMenuswiper){
 				initMobMenu();
 			}
-			if($self.hasClass('_active')){
+			if(!$self.hasClass('_active')){
 				$menuLink.filter('[data-menu-link="1"]').first().click();
 				mobMenuswiper.slideTo(0,0);
+			}else{
+				$menuContent.hide();
 			}
 		}else{
+			$menuContent.hide();
 			app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
 		}
+
+		if($self.hasClass('_active')){
+			$self.addClass('_hide-burger');
+			setTimeout(function () {
+				$self.removeClass('_hide-burger _active');
+			},500);
+		}else{
+			$self.addClass('_active');
+		}
+		$menuLink.removeClass('_active');
 
 	});
 	function _helper() {

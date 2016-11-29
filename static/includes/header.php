@@ -18,7 +18,13 @@
 			<a href="/" class="header__logo"></a>
 			<a href="/" class="header__logo-ico"></a>
 			<div class="header__top-right">
-				<a href="javascript:void(0);" data-b-menu-btn class="header__menu-btn is-tablet-block"></a>
+				<a href="javascript:void(0);" data-b-menu-btn class="header__menu-btn is-tablet-block middle">
+					<div class="header__menu-btn-in">
+						<div class="header__menu-btn-bar"></div>
+						<div class="header__menu-btn-bar"></div>
+						<div class="header__menu-btn-bar"></div>
+					</div>
+				</a>
 				<a href="javascript:void(0);" class="header__search-btn is-tablet-block"></a>
 				<a href="#" class="btn _gold header__top-btn">ИНТЕРНЕТ-БАНК</a>
 				<div class="header__phones">
@@ -36,7 +42,13 @@
 		<div data-menu-in>
 			<div class="header__bottom-block">
 				<div class="grid__inner">
-					<a href="javascript:void(0);" data-b-menu-btn class="header__menu-btn no-tablet-block"></a>
+					<a href="javascript:void(0);" data-b-menu-btn class="header__menu-btn no-tablet-block middle">
+						<div class="header__menu-btn-in">
+							<div class="header__menu-btn-bar"></div>
+							<div class="header__menu-btn-bar"></div>
+							<div class="header__menu-btn-bar"></div>
+						</div>
+					</a>
 					<a href="#" class="header__search-btn no-tablet-block"></a>
 					<div class="header__menu" data-menu>
 						<div class="header__menu-item no-mob-block">
