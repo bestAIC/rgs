@@ -1160,6 +1160,9 @@ h2,
 .header__menu-link._active {
   border-color: #b31b2c;
 }
+.tablet.portrait .b-menu-visible .header__bottom {
+  position: absolute!important;
+}
 .tablet.portrait .header__phones {
   margin-right: 2.8rem;
   margin-top: 1.1rem;
@@ -2943,6 +2946,10 @@ h2,
 }
 .tablet.portrait .menu__block-col._col-5-1 {
   width: 43rem;
+}
+.mobile .menu-visible {
+  overflow: hidden;
+  height: 100%;
 }
 .mobile .menu-visible .mob-menu {
   display: block;

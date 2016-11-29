@@ -76,9 +76,11 @@ app.menu = function () {
 			
 			$menuBtn     = $('[data-b-menu-btn]'),
 			menuNum = null,
+			offset = null,
 			mobMenuswiper = false
 		;
 
+	/*поиск*/
 	$searchBtn.on('click',function () {
 		var $self = $(this);
 		if(!$self.hasClass('_active')){
@@ -103,10 +105,12 @@ app.menu = function () {
 	$searchForm.on('submit',function () {
 		return false;
 	});
+	/*конец поиска*/
 
 	if(app.utils.isMobile){
 		$menuLink    = $mobMenu.find('[data-menu-link]');
 	}
+	/*прилипание меню*/
 	app.dom.$window.on('scroll.Menu',function () {
 		if(app.dom.$document.scrollTop()>=$header.height()){
 			$header.addClass('_fixed');
@@ -117,8 +121,9 @@ app.menu = function () {
 			_helper();
 		}
 	});
+	/*конец прилипания меню*/
 
-	if(!app.utils.isMobile){
+	if(!(app.utils.isMobile || app.utils.isTablet)){
 		$menuLink.hover(function () {
 			var $self =  $(this),
 					data  =  $self.data('menuLink')
@@ -165,36 +170,42 @@ app.menu = function () {
 		}
 	});
 
-
-	$menuBtn.on('click',function () {
-		var $self = $(this);
+	function openMenu() {
+		$menuBtn.addClass('_active');
+		offset = app.dom.$window.scrollTop();
 		if(app.utils.isMobile){
-			app.dom.$body.toggleClass('menu-visible');
+			$menuLink.filter('[data-menu-link="1"]').first().click();
 			_helper();
 			if(!mobMenuswiper){
 				initMobMenu();
 			}
-			if(!$self.hasClass('_active')){
-				$menuLink.filter('[data-menu-link="1"]').first().click();
-				mobMenuswiper.slideTo(0,0);
-			}else{
-				$menuContent.hide();
-			}
+			mobMenuswiper.slideTo(0,0);
 		}else{
 			$menuLink.removeClass('_active');
 			$menuContent.hide();
-			app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
+			app.dom.$body.addClass('b-menu-visible').removeClass('menu-visible');
 		}
-
-		if($self.hasClass('_active')){
-			$menuBtn.addClass('_hide-burger');
-			setTimeout(function () {
-				$menuBtn.removeClass('_hide-burger _active');
-			},500);
+	}
+	function closeMenu() {
+		$menuBtn.addClass('_hide-burger');
+		setTimeout(function () {
+			$menuBtn.removeClass('_hide-burger _active');
+		},500);
+		app.dom.$body.removeClass('menu-visible');
+		if(app.utils.isMobile){
+			$menuContent.hide();
 		}else{
-			$menuBtn.addClass('_active');
+			app.dom.$body.removeClass('b-menu-visible')
 		}
-
+		app.dom.$window.scrollTop(offset);
+	}
+	$menuBtn.on('click',function () {
+		var $self = $(this);
+		if($self.hasClass('_active')){
+			closeMenu();
+		}else{
+			openMenu();
+		}
 	});
 	function _helper() {
 		var h1 = Math.max(($header.height() - app.dom.$document.scrollTop()),0);
