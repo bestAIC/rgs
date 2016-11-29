@@ -7,10 +7,10 @@
 		<div data-news-content="promo" class="hide">
 			<?/*акции*/?>
 			<?for ($i=1;$i<=2;$i++){?>
-				<a href="#" class="swiper-slide gall__item gall__promo" style="background-image: url('theme/images/home/gall/1.jpg');" data-news-gall-item="promo">
+				<a href="#" class="swiper-slide gall__item gall__promo" style="background-image: url('/static/theme/images/home/gall/1.jpg');" data-news-gall-item="promo">
 					<div class="gall__promo-inner">
 						<div class="gall__promo-logo">
-							<img src="theme/images/home/gall/ico1.png" alt="">
+							<img src="/static/theme/images/home/gall/ico1.png" alt="">
 						</div>
 						<div class="gall__promo-title">
 							Выиграйте незабываемые<br />
@@ -19,10 +19,10 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="swiper-slide gall__item gall__promo" style="background-image: url('theme/images/home/gall/2.jpg');"  data-news-gall-item="promo">
+				<a href="#" class="swiper-slide gall__item gall__promo" style="background-image: url('/static/theme/images/home/gall/2.jpg');"  data-news-gall-item="promo">
 					<div class="gall__promo-inner">
 						<div class="gall__promo-logo">
-							<img src="theme/images/home/gall/ico2.png" alt="">
+							<img src="/static/theme/images/home/gall/ico2.png" alt="">
 						</div>
 						<div class="gall__promo-title">
 							Выиграйте приглашение<br />
@@ -31,10 +31,10 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="swiper-slide gall__item gall__promo" style="background-image: url('theme/images/home/gall/3.jpg');"  data-news-gall-item="promo">
+				<a href="#" class="swiper-slide gall__item gall__promo" style="background-image: url('/static/theme/images/home/gall/3.jpg');"  data-news-gall-item="promo">
 					<div class="gall__promo-inner">
 						<div class="gall__promo-logo">
-							<img src="theme/images/home/gall/ico3.png" alt="">
+							<img src="/static/theme/images/home/gall/ico3.png" alt="">
 						</div>
 						<div class="gall__promo-title">
 							Скидка 5% на покупки<br />

@@ -148,7 +148,7 @@ app.menu = function () {
 		$menuContent.hide();
 		app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
 		$menuLink.removeClass('_active');
-		$menuContent.filter('[data-menu-content="'+ data +'"]').addClass('fgh').show();
+		$menuContent.filter('[data-menu-content="'+ data +'"]').show();
 		$self.addClass('_active');
 	});
 
@@ -181,19 +181,19 @@ app.menu = function () {
 				$menuContent.hide();
 			}
 		}else{
+			$menuLink.removeClass('_active');
 			$menuContent.hide();
 			app.dom.$body.toggleClass('b-menu-visible').removeClass('menu-visible');
 		}
 
 		if($self.hasClass('_active')){
-			$self.addClass('_hide-burger');
+			$menuBtn.addClass('_hide-burger');
 			setTimeout(function () {
-				$self.removeClass('_hide-burger _active');
+				$menuBtn.removeClass('_hide-burger _active');
 			},500);
 		}else{
-			$self.addClass('_active');
+			$menuBtn.addClass('_active');
 		}
-		$menuLink.removeClass('_active');
 
 	});
 	function _helper() {

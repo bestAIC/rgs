@@ -117,8 +117,8 @@
 		</div>
 	</div>
 </footer>
-<script src="theme/js/libs.js"></script>
-<script src="theme/js/main.js"></script>
+<script src="/static/theme/js/libs.js"></script>
+<script src="/static/theme/js/main.js"></script>
 
 </body>
 </html>

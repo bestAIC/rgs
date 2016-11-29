@@ -652,10 +652,10 @@ h2,
   display: inline-block;
   vertical-align: top;
 }
-.no-touch .breadcrumbs__link:hover {
+.breadcrumbs__link:hover {
   color: #fff;
 }
-.no-touch .breadcrumbs__link:focus {
+.breadcrumbs__link:focus {
   color: #fff;
 }
 .breadcrumbs__link:after {
@@ -915,10 +915,10 @@ h2,
 .header._fixed .header__menu-link {
   color: #191919;
 }
-.no-touch .header._fixed .header__menu-link:hover {
+.header._fixed .header__menu-link:hover {
   color: #191919;
 }
-.no-touch .header._fixed .header__menu-link:focus {
+.header._fixed .header__menu-link:focus {
   color: #191919;
 }
 .header._fixed .header__menu-btn-bar {
@@ -935,6 +935,12 @@ h2,
   font-weight: 600;
   line-height: 2rem;
   text-decoration: none;
+}
+.header__phone-link:hover {
+  color: #3e3e3e;
+}
+.header__phone-link:focus {
+  color: #3e3e3e;
 }
 .header__top {
   padding-top: 3.5rem;
@@ -990,6 +996,7 @@ h2,
 .header__bottom-block {
   transition: background-color 0.2s;
   background-color: transparent;
+  border-top: 1px solid transparent;
 }
 .header__search-btn {
   width: 2rem;
@@ -1037,7 +1044,7 @@ h2,
   line-height: 0;
   padding-left: 7rem;
   padding-right: 7rem;
-  padding-top: 2.1rem;
+  padding-top: 2rem;
 }
 .header__menu-btn {
   width: 20px;
@@ -1137,15 +1144,18 @@ h2,
   color: #fff;
   letter-spacing: 0.04rem;
   padding-bottom: 1.8rem;
-  border-bottom: 0.2rem solid transparent;
+  border-bottom: 2px solid transparent;
   display: inline-block;
   vertical-align: top;
 }
-.no-touch .header__menu-link:hover {
+.header__menu-link:hover {
   color: #fff;
 }
-.no-touch .header__menu-link:focus {
+.header__menu-link:focus {
   color: #fff;
+}
+.header__menu-link._menu {
+  border-color: transparent!important;
 }
 .header__menu-link._active {
   border-color: #b31b2c;
@@ -2120,10 +2130,10 @@ h2,
   color: #191919;
   padding: 4.4rem 3rem 0;
 }
-.no-touch .info-center__section:hover {
+.info-center__section:hover {
   color: #191919;
 }
-.no-touch .info-center__section:focus {
+.info-center__section:focus {
   color: #191919;
 }
 .no-touch .info-center__section {
@@ -2272,10 +2282,10 @@ h2,
   display: inline-block;
   line-height: 3.2rem;
 }
-.no-touch .news-gall__tab:hover {
+.news-gall__tab:hover {
   color: #acb6bf;
 }
-.no-touch .news-gall__tab:focus {
+.news-gall__tab:focus {
   color: #acb6bf;
 }
 .news-gall__tab._active {
@@ -2283,10 +2293,10 @@ h2,
   border-bottom: 0;
   cursor: default;
 }
-.no-touch .news-gall__tab._active:hover {
+.news-gall__tab._active:hover {
   color: #191919;
 }
-.no-touch .news-gall__tab._active:focus {
+.news-gall__tab._active:focus {
   color: #191919;
 }
 .no-touch .news-gall:hover .gall__nav {
@@ -2570,10 +2580,10 @@ h2,
   bottom: 0;
   width: 100%;
 }
-.no-touch .gall__news-title:hover {
+.gall__news-title:hover {
   color: #3e3e3e;
 }
-.no-touch .gall__news-title:focus {
+.gall__news-title:focus {
   color: #3e3e3e;
 }
 .mobile .gall {
@@ -2786,10 +2796,10 @@ h2,
 .menu-visible .header__menu-link {
   color: #191919;
 }
-.no-touch .menu-visible .header__menu-link:hover {
+.menu-visible .header__menu-link:hover {
   color: #191919;
 }
-.no-touch .menu-visible .header__menu-link:focus {
+.menu-visible .header__menu-link:focus {
   color: #191919;
 }
 .menu-visible .header__menu-btn-bar {
@@ -2815,10 +2825,10 @@ h2,
   color: #191919;
   display: block;
 }
-.no-touch .menu-banner__title:hover {
+.menu-banner__title:hover {
   color: #191919;
 }
-.no-touch .menu-banner__title:focus {
+.menu-banner__title:focus {
   color: #191919;
 }
 .menu-banner__text {
@@ -2994,10 +3004,10 @@ h2,
 .b-menu-visible .header__menu-link {
   color: #191919;
 }
-.no-touch .b-menu-visible .header__menu-link:hover {
+.b-menu-visible .header__menu-link:hover {
   color: #191919;
 }
-.no-touch .b-menu-visible .header__menu-link:focus {
+.b-menu-visible .header__menu-link:focus {
   color: #191919;
 }
 .b-menu-visible .grid,
@@ -3047,10 +3057,10 @@ h2,
   line-height: 2.5rem;
   color: #191919;
 }
-.no-touch .b-menu__item-link:hover {
+.b-menu__item-link:hover {
   color: #191919;
 }
-.no-touch .b-menu__item-link:focus {
+.b-menu__item-link:focus {
   color: #191919;
 }
 .b-menu__submenu {
@@ -3063,10 +3073,10 @@ h2,
 .b-menu__submenu-link {
   color: #191919;
 }
-.no-touch .b-menu__submenu-link:hover {
+.b-menu__submenu-link:hover {
   color: #191919;
 }
-.no-touch .b-menu__submenu-link:focus {
+.b-menu__submenu-link:focus {
   color: #191919;
 }
 .b-menu__tablet {
@@ -3144,10 +3154,10 @@ h2,
   margin-right: 3rem;
   margin-top: 2rem;
 }
-.no-touch .file:hover {
+.file:hover {
   color: #3e3e3e;
 }
-.no-touch .file:focus {
+.file:focus {
   color: #3e3e3e;
 }
 .file:nth-child(3n) {
@@ -3509,10 +3519,10 @@ h2,
   text-decoration: none;
   padding: 1.2rem 1rem 1.2rem 7.5rem;
 }
-.no-touch .search-form__requests-item:hover {
+.search-form__requests-item:hover {
   color: #3e3e3e;
 }
-.no-touch .search-form__requests-item:focus {
+.search-form__requests-item:focus {
   color: #3e3e3e;
 }
 .mobile .search-form__requests-item {
@@ -3540,10 +3550,10 @@ h2,
   background-size: cover;
   padding: 3.2rem 2.9rem 3.5rem;
 }
-.no-touch .product:hover {
+.product:hover {
   color: #191919;
 }
-.no-touch .product:focus {
+.product:focus {
   color: #191919;
 }
 .product._green .product__text {
@@ -4445,20 +4455,20 @@ h2,
   border-bottom: 0.4rem solid transparent;
   float: left;
 }
-.no-touch .offices__tab:hover {
+.offices__tab:hover {
   color: #AAAEB2;
 }
-.no-touch .offices__tab:focus {
+.offices__tab:focus {
   color: #AAAEB2;
 }
 .offices__tab._active {
   color: #3e3e3e;
   border-color: #b31b2c;
 }
-.no-touch .offices__tab._active:hover {
+.offices__tab._active:hover {
   color: #3e3e3e;
 }
-.no-touch .offices__tab._active:focus {
+.offices__tab._active:focus {
   color: #3e3e3e;
 }
 .offices__advanced-search {
@@ -4666,10 +4676,10 @@ h2,
   bottom: 2.3rem;
   left: 0;
 }
-.no-touch .offices__item-mark:hover {
+.offices__item-mark:hover {
   color: #cca266;
 }
-.no-touch .offices__item-mark:focus {
+.offices__item-mark:focus {
   color: #cca266;
 }
 .offices__item-title {
@@ -4685,10 +4695,10 @@ h2,
 .offices__item-phone a {
   color: #191919;
 }
-.no-touch .offices__item-phone a:hover {
+.offices__item-phone a:hover {
   color: #191919;
 }
-.no-touch .offices__item-phone a:focus {
+.offices__item-phone a:focus {
   color: #191919;
 }
 .offices__item-notice {

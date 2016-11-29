@@ -163,7 +163,7 @@
 	}
 	&__phone{
 		&-link{
-			color: #3e3e3e;
+			.color(#3e3e3e);
 			font-size: 16/@rem;
 			font-weight: 600;
 			line-height: 20/@rem;
@@ -216,6 +216,7 @@
 			//padding-top: 21/@rem;
 			transition: background-color 0.2s;
 			background-color: transparent;
+			border-top: 1px solid transparent;
 			//padding-bottom: 20/@rem;
 		}
 	}
@@ -265,7 +266,7 @@
 		line-height: 0;
 		padding-left: 70/@rem;
 		padding-right: 70/@rem;
-		padding-top: 21/@rem;
+		padding-top: 20/@rem;
 		&-btn{
 			width: 20px;
 			//height: 16/@rem;
@@ -374,9 +375,12 @@
 			.color(#fff);
 			letter-spacing: 0.4/@rem;
 			padding-bottom: 1.8rem;
-			border-bottom: 2/@rem solid transparent;
+			border-bottom: 2px solid transparent;
 			display: inline-block;
 			vertical-align: top;
+			&._menu{
+				border-color:  transparent!important;
+			}
 			&._active{
 				border-color:  @cRed;
 			}

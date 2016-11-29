@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Сайт</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="theme/js/swiper/dist/css/swiper.min.css">
-	<link rel="stylesheet" href="theme/js/chosen/chosen.css">
-	<link rel="stylesheet" href="theme/css/styles.css">
+	<link rel="stylesheet" href="/static/theme/js/swiper/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/theme/js/chosen/chosen.css">
+	<link rel="stylesheet" href="/static/theme/css/styles.css">
 
 
 </head>
@@ -76,7 +76,7 @@
 							<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
 						</div>
 						<div class="header__menu-item is-mob-block">
-							<a href="#" class="header__menu-link">Меню</a>
+							<a href="javascript:void(0);" data-b-menu-btn class="header__menu-link _menu">Меню</a>
 						</div>
 					</div>
 				</div>
@@ -113,7 +113,7 @@
 				<div class="menu__block hide" data-menu-content="1">
 					<div class="menu__block-inner">
 						<div class="menu-banner">
-							<div class="menu-banner__img" style="background-image: url('theme/images/menu-banner.jpg');"></div>
+							<div class="menu-banner__img" style="background-image: url('/static/theme/images/menu-banner.jpg');"></div>
 							<div class="menu-banner__inner">
 								<div class="menu-banner__title">Пенсионная программа</div>
 								<div class="menu-banner__text">
@@ -178,7 +178,7 @@
 				<div class="menu__block hide" data-menu-content="2">
 					<div class="menu__block-inner">
 						<div class="menu-banner">
-							<div class="menu-banner__img" style="background-image: url('theme/images/menu-banner.jpg');"></div>
+							<div class="menu-banner__img" style="background-image: url('/static/theme/images/menu-banner.jpg');"></div>
 							<div class="menu-banner__inner">
 								<div class="menu-banner__title">Переводы по номеру карты</div>
 								<div class="menu-banner__text">
@@ -226,7 +226,7 @@
 				<div class="menu__block hide" data-menu-content="3">
 					<div class="menu__block-inner">
 						<div class="menu-banner">
-							<div class="menu-banner__img" style="background-image: url('theme/images/menu-banner.jpg');"></div>
+							<div class="menu-banner__img" style="background-image: url('/static/theme/images/menu-banner.jpg');"></div>
 							<div class="menu-banner__inner">
 								<div class="menu-banner__title">Пенсионная карта</div>
 								<div class="menu-banner__text">
