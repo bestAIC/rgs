@@ -26,7 +26,7 @@
 						<div class="header__menu-btn-bar"></div>
 					</div>
 				</a>
-				<a href="javascript:void(0);" class="header__search-btn is-tablet-block"></a>
+				<a href="javascript:void(0);" class="header__search-btn is-tablet-block" data-header-search-btn></a>
 				<a href="#" class="btn _gold header__top-btn">ИНТЕРНЕТ-БАНК</a>
 				<div class="header__phones">
 					<div class="header__phone">
@@ -50,7 +50,15 @@
 							<div class="header__menu-btn-bar"></div>
 						</div>
 					</a>
-					<a href="#" class="header__search-btn no-tablet-block"></a>
+					<a href="javascript:void(0);" data-header-search-btn class="header__search-btn no-tablet-block"></a>
+					<div class="header__search-form">
+						<a href="javascript:void(0);" class="header__search-form-close"  data-header-search-close></a>
+						<form action="" data-header-search-form>
+							<div class="header__search-form-field">
+								<input type="text" placeholder="Например: Вклады">
+							</div>
+						</form>
+					</div>
 					<div class="header__menu" data-menu>
 						<div class="header__menu-item no-mob-block">
 							<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>

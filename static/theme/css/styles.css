@@ -883,6 +883,16 @@ h2,
 .header {
   position: relative;
 }
+.header.search-open .header__bottom-block {
+  background-color: #fff;
+  border-top: 1px solid #DEDFE0;
+}
+.header.search-open .header__search-form {
+  visibility: visible;
+}
+.header.search-open .header__search-btn {
+  background-image: url('../images/icons/search_gold.svg') !important;
+}
 .header._fixed {
   z-index: 1000;
 }
@@ -978,7 +988,6 @@ h2,
   background-color: transparent;
 }
 .header__bottom-block {
-  padding-top: 2.1rem;
   transition: background-color 0.2s;
   background-color: transparent;
 }
@@ -987,8 +996,40 @@ h2,
   height: 2rem;
   position: absolute;
   right: 0;
-  top: -0.1rem;
+  top: 50%;
+  margin-top: -1rem;
   background: url('../images/icons/search.svg') no-repeat center;
+  background-size: contain;
+  z-index: 5;
+}
+.header__search-form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 4;
+  visibility: hidden;
+}
+.header__search-form-field {
+  margin-left: 7rem;
+  margin-right: 2rem;
+  height: 3rem;
+  margin-top: 1.6rem;
+}
+.header__search-form-field input[type="text"] {
+  border: 0;
+  padding: 0.5rem 0;
+}
+.header__search-form-close {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.8rem;
+  background: url('../images/icons/close-burger.svg') no-repeat center;
   background-size: contain;
 }
 .header__menu {
@@ -996,13 +1037,15 @@ h2,
   line-height: 0;
   padding-left: 7rem;
   padding-right: 7rem;
+  padding-top: 2.1rem;
 }
 .header__menu-btn {
   width: 20px;
   height: 4rem;
   position: absolute;
   left: 0;
-  top: -1rem;
+  top: 50%;
+  margin-top: -2rem;
 }
 .no-touch .header__menu-btn:hover .header__menu-btn-bar {
   background-color: #000;
@@ -1135,16 +1178,22 @@ h2,
 .tablet.portrait .header__logo-ico {
   float: right;
 }
+.tablet.portrait .header__search-form {
+  left: 3rem;
+}
+.tablet.portrait .header__search-form-field {
+  margin-left: 3rem;
+}
 .tablet.portrait .header__search-btn {
   background-image: url('../images/icons/search_red.svg');
-  top: 1rem;
 }
 .tablet.portrait .header__menu {
   padding-left: 0;
   padding-right: 0;
 }
 .tablet.portrait .header__menu-btn {
-  top: 0.6rem;
+  top: 0;
+  margin-top: 0;
 }
 .tablet.portrait .header__menu-btn-bar {
   background-color: #b31b2c;
@@ -1222,10 +1271,15 @@ h2,
   margin-right: -0.5rem;
 }
 .mobile .header__bottom-block {
-  padding: 1.7rem 2rem 0;
+  padding: 0 2rem 0;
+}
+.mobile .header__search-form-field {
+  margin-top: 1.3rem;
+  margin-left: 4rem;
 }
 .mobile .header__menu {
   text-align: center;
+  padding-top: 1.7rem;
 }
 .mobile .header__menu-item {
   width: auto!important;

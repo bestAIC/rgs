@@ -113,6 +113,20 @@
 }
 .header{
 	position: relative;
+	&.search-open{
+		.header__bottom-block{
+			background-color: #fff;
+			border-top: 1px solid @cBorder;
+		}
+		.header__search{
+			&-form{
+				visibility: visible;
+			}
+			&-btn{
+				background-image: url('@{pathToImg}icons/search_gold.svg')!important;
+			}
+		}
+	}
 	&._fixed{
 		z-index: 1000;
 		.header{
@@ -140,7 +154,6 @@
 				//background-image: url('@{pathToImg}icons/burger_black.svg');
 			}
 		}
-
 	}
 	//transition: background-color @animTime;
 	&__phones{
@@ -200,7 +213,7 @@
 		transition: background-color 0.2s;
 		background-color: transparent;
 		&-block{
-			padding-top: 21/@rem;
+			//padding-top: 21/@rem;
 			transition: background-color 0.2s;
 			background-color: transparent;
 			//padding-bottom: 20/@rem;
@@ -212,8 +225,39 @@
 			height: 20/@rem;
 			position: absolute;
 			right: 0;
-			top: -1/@rem;
+			top: 50%;
+			margin-top: -10/@rem;
 			.background('@{pathToImg}icons/search.svg');
+			z-index: 5;
+		}
+		&-form{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #fff;
+			z-index: 4;
+			visibility: hidden;
+			&-field{
+				margin-left: 7rem;
+				margin-right: 2rem;
+				height: 3rem;
+				margin-top: 1.6rem;
+				input[type="text"]{
+					border: 0;
+					padding: 0.5rem 0;
+				}
+			}
+			&-close{
+				width: 1.6rem;
+				height: 1.6rem;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -0.8rem;
+				.background('@{pathToImg}icons/close-burger.svg');
+			}
 		}
 	}
 	&__menu{
@@ -221,13 +265,15 @@
 		line-height: 0;
 		padding-left: 70/@rem;
 		padding-right: 70/@rem;
+		padding-top: 21/@rem;
 		&-btn{
 			width: 20px;
 			//height: 16/@rem;
 			height: 40/@rem;
 			position: absolute;
 			left: 0;
-			top: -10/@rem;
+			top: 50%;
+			margin-top: -2rem;
 			.no-touch &:hover{
 				.header__menu-btn-bar {
 					background-color: #000;
@@ -374,9 +420,15 @@
 			//padding-bottom: 19/@rem;
 		}
 		&__search{
+			&-form {
+				left: 3rem;
+				&-field {
+					margin-left: 3rem;
+				}
+			}
 			&-btn{
 				background-image: url('@{pathToImg}icons/search_red.svg');
-				top: 1rem;
+				//top: 1rem;
 			}
 		}
 		&__menu{
@@ -391,7 +443,8 @@
 				&._active{
 					//background-image:url('@{pathToImg}icons/burger-close.svg');
 				}
-				top: 0.6rem;
+				top: 0;
+				margin-top: 0;
 			}
 			&-link{
 				font-size: 12/@rem;
@@ -465,11 +518,20 @@
 		&__bottom{
 
 			&-block{
-				padding: 17/@rem 20/@rem 0;
+				padding: 0 20/@rem 0;
+			}
+		}
+		&__search{
+			&-form {
+				&-field {
+					margin-top: 1.3rem;
+					margin-left: 4rem;
+				}
 			}
 		}
 		&__menu{
 			text-align: center;
+			padding-top: 1.7rem;
 			&-item{
 				width: auto!important;
 				display: block;

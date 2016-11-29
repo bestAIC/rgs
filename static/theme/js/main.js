@@ -69,10 +69,41 @@ app.menu = function () {
 			$menuIn   = $('[data-menu-in]'),
 			$menuLink    = $menu.find('[data-menu-link]'),
 			$menuContent = $('[data-menu-content]'),
+			
+			$searchBtn     = $('[data-header-search-btn]'),
+			$searchClose     = $('[data-header-search-close]'),
+			$searchForm     = $('[data-header-search-form]'),
+			
 			$menuBtn     = $('[data-b-menu-btn]'),
 			menuNum = null,
 			mobMenuswiper = false
 		;
+
+	$searchBtn.on('click',function () {
+		var $self = $(this);
+		if(!$self.hasClass('_active')){
+			$header.addClass('search-open');
+			$searchBtn.addClass('_active');
+
+			app.dom.$body.removeClass('menu-visible');
+			$menuContent.hide();
+			$menuLink.removeClass('_active');
+			if(app.utils.isMobile){
+				$menuBtn.removeClass('_active');
+			}
+		}else{
+			$searchForm.trigger('submit');
+		}
+	});
+
+	$searchClose.on('click',function () {
+		$header.removeClass('search-open');
+		$searchBtn.removeClass('_active');
+	});
+	$searchForm.on('submit',function () {
+		return false;
+	});
+
 	if(app.utils.isMobile){
 		$menuLink    = $mobMenu.find('[data-menu-link]');
 	}
