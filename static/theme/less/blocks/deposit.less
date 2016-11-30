@@ -1,0 +1,75 @@
+.deposit-info{
+	.clearfix;
+	&__conditions{
+		float: left;
+		width: 570px;
+	}
+}
+.deposit-table{
+	width: 100%;
+	border-top: 1px solid #f2f4f5;
+	&__titles{
+		td{
+			border-top: 1px solid #f2f4f5;
+			border-bottom: 1px solid #f2f4f5;
+			color: @cGray;
+			font-size: 10px;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			line-height: 14px;
+			text-transform: uppercase;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+	}
+	&__row{
+		td{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 30px;
+			color: @title-color;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			&.bold{
+				font-weight: 600;
+			}
+		}
+		&:nth-child(2n+1){
+			background-color: fade(#d8d8d8,17%);
+		}
+	}
+	th{
+		color: @cRed;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.center{
+		text-align: center;
+	}
+}
+.deposit-conditions{
+	border-bottom: 1px solid #f2f4f5;
+	&__item{
+		.clearfix;
+		padding: 23px 0;
+		border-top: 1px solid #f2f4f5;
+		&-block{
+			float: left;
+			width: 50%;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 25px;
+			padding-right: 2rem;
+			&:first-child{
+				font-weight: 600;
+				color: @title-color;
+			}
+			&+&{
+				padding-left: 1.5rem;
+			}
+		}
+	}
+}
