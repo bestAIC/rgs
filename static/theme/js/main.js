@@ -661,6 +661,7 @@ app.calc = function(){
 				startValue = null
 			;
 		$slider.slider({
+			range: "min",
 			min: data.min,
 			max: data.max,
 			step: data.step,

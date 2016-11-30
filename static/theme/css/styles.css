@@ -584,6 +584,13 @@ h2._left,
 .title._left {
   text-align: left;
 }
+h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.039rem;
+  line-height: 3.5rem;
+  color: #3e3e3e;
+}
 .subtitle {
   color: #aaaeb3;
   font-size: 1.8rem;
@@ -3223,6 +3230,115 @@ h2._left,
 .mobile .file__name {
   white-space: normal;
   overflow: visible;
+}
+.deposit-calc__block {
+  *zoom: 1;
+}
+.deposit-calc__block:before,
+.deposit-calc__block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-calc__block:after {
+  clear: both;
+}
+.deposit-calc__options {
+  float: left;
+  width: 87rem;
+  height: 32rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
+  padding: 4rem 4rem 4.8rem;
+  min-height: 32rem;
+}
+.deposit-calc__option + .deposit-calc__option {
+  margin-top: 5rem;
+}
+.deposit-calc__option-text {
+  *zoom: 1;
+  line-height: 2.4rem;
+  color: #3e3e3e;
+  margin-bottom: 1.6rem;
+}
+.deposit-calc__option-text:before,
+.deposit-calc__option-text:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-calc__option-text:after {
+  clear: both;
+}
+.deposit-calc__option-val {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.028rem;
+  float: right;
+}
+.deposit-calc__option-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: -0.022rem;
+}
+.deposit-calc__info {
+  float: right;
+  width: 27rem;
+  min-height: 32rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
+  padding: 3rem 5rem 3rem 4rem;
+}
+.deposit-calc__info-blocks {
+  padding-left: 1rem;
+}
+.deposit-calc__info-block {
+  font-weight: 600;
+}
+.deposit-calc__info-block + .deposit-calc__info-block {
+  margin-top: 2.4rem;
+}
+.deposit-calc__info-block-title {
+  color: #AAAEB2;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+}
+.deposit-calc__info-block-text {
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+  color: #3e3e3e;
+  margin-top: 0.2rem;
+  white-space: nowrap;
+}
+.deposit-calc__info-btn {
+  width: 100%;
+  margin-top: 2.4rem;
+}
+.ui-slider {
+  border: 0;
+  height: 0.4rem;
+  background-color: #f2f4f5;
+  border-radius: 0.2rem;
+}
+.ui-widget-header {
+  background: #3e3e3e;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: #3e3e3e;
+  border: 0.6rem solid #fff;
+  border-radius: 50%;
+  margin-left: -1.2rem;
+  top: -1rem;
+  box-shadow: 0 0 1.5rem rgba(211, 211, 211, 0.5);
+  cursor: pointer;
 }
 .inner__banner {
   height: 42rem;
