@@ -85,7 +85,7 @@
 		<div class="b-blocks _gray">
 			<?include "includes/subscription.php"?>
 			<?include "includes/offices.php"?>
-			<div class="b-block questions animation__top" data-animation>
+			<div class="b-block animation__top" data-animation>
 				<div class="grid__inner">
 					<h2>Полезные документы</h2>
 					<div class="files">
@@ -110,7 +110,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="b-block questions animation__top" data-animation>
+			<div class="b-block animation__top" data-animation>
 				<div class="grid__inner">
 					<h2>Полезные документы в 2 столбца</h2>
 					<div class="files _two-cols">

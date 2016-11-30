@@ -59,6 +59,7 @@ gulp.task('jsMain:min', function() {
 gulp.task('jsLibs:concat', function() {
 	return gulp.src([
 		options.sourcePathScripts + '/jquery-2.2.0.min.js',
+		options.sourcePathScripts + '/jquery-ui/jquery-ui.min.js',
 		options.sourcePathScripts + '/swiper/dist/js/swiper.min.js',
 		options.sourcePathScripts + '/chosen/chosen.jquery.js',
 		options.sourcePathScripts + '/underscore-min.js',

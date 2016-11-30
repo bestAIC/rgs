@@ -23,6 +23,27 @@ app.utils.isMobilePort = (device.mobile() && ($(window).width() < $(window).heig
 app.utils.isMobile = device.mobile();
 app.utils.isTablet = device.tablet();
 
+app.utils.okonchanie = function( number, one, two, five ) {
+
+	var poslezpt = parseInt( number ) !== parseFloat( number );
+
+	number += '';
+	// 10 - 19 || 5 - 10
+	if ( (number.length > 1 && +number.substr( number.length - 2, 1) == '1') || +number.substr( number.length - 1, 1 ) > 4  && +number.substr( number.length - 1, 1 ) < 10 && !poslezpt ){
+		return five;
+	}
+	// 1
+	else if ( number.substr( number.length - 1, 1) == '1' && !poslezpt )
+	{
+		return one;
+	}
+	// 2 - 4, 1.5
+	else
+	{
+		return two;
+	}
+};
+
 app.init = function () {
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
 	app.initFluid();
@@ -34,6 +55,7 @@ app.init = function () {
 	app.info();
 	app.initMaps();
 	app.questions();
+	app.calc();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -621,4 +643,59 @@ app.offices = function() {
 		$self.addClass('_active');
 		$content.hide().filter('[data-offices-content="'+$self.data('officesTab')+'"]').fadeIn(300);
 	});
+};
+app.formatNumber = function (value) {
+	return String(value).replace(/(?=\B(?:\d{3})+\b)/g, ' ');
+};
+app.calc = function(){
+	var self = this,
+			$sliderWrap = $('[data-calc-slider-wrap]')
+		;
+
+	$sliderWrap.each(function(){
+		var $self = $(this),
+				$slider = $self.find('[data-calc-slider]'),
+				$valBlock = $self.find('[data-calc-slider-val]'),
+				data = $slider.data('calcSlider'),
+				val = null,
+				startValue = null
+			;
+		$slider.slider({
+			min: data.min,
+			max: data.max,
+			step: data.step,
+			value: data.value || data.min,
+			slide: function( event, ui ){
+				$valBlock.text(showSliderVal($valBlock.data('calcSliderVal'),ui.value));
+			},
+			start: function( event, ui ){
+				startValue = ui.value;
+			},
+			stop: function( event, ui ){
+				if(ui.value != startValue){
+					$valBlock.text(showSliderVal($valBlock.data('calcSliderVal'),ui.value));
+				}
+			}
+		});
+		$valBlock.text(showSliderVal($valBlock.data('calcSliderVal'),$slider.slider("value")));
+	});
+	function showSliderVal(type,val) {
+		var res = '',
+				years = 0,
+				months = 0
+			;
+		if(type == "date"){
+			years = Math.floor(val / 12);
+			months = val % 12;
+			if(years){
+				res = res + years+ ' ' +app.utils.okonchanie(years,"год","года","лет")+' '
+			}
+			if(months){
+				res = res + months+ ' ' +app.utils.okonchanie(months,"месяц","месяца","месяцев");
+			}
+		}else{
+			res = app.formatNumber(val);
+		}
+		return res;
+	}
 };

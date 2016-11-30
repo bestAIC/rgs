@@ -578,6 +578,11 @@ h2,
   margin-top: 0;
   letter-spacing: -0.05rem;
   margin-bottom: 1rem;
+  text-align: center;
+}
+h2._left,
+.title._left {
+  text-align: left;
 }
 .subtitle {
   color: #aaaeb3;
@@ -702,6 +707,9 @@ h2,
   top: 0;
   background: url('../images/icons/metro.svg') no-repeat center;
   background-size: 1rem 0.8rem;
+}
+.b-block._gray {
+  background-color: whitesmoke;
 }
 .b-blocks {
   padding-top: 1rem;
@@ -1294,6 +1302,9 @@ h2,
   text-align: center;
   padding-top: 1.7rem;
 }
+.mobile .header__menu-blocks .grid__inner {
+  padding-right: 0;
+}
 .mobile .header__menu-item {
   width: auto!important;
   display: block;
@@ -1324,9 +1335,6 @@ h2,
     animation: hideMenuButtonBarSmall3 .5s forwards;
     animation-direction: alternate;
   }
-}
-.home h2 {
-  text-align: center;
 }
 .home__gray {
   background-color: whitesmoke;
@@ -2986,6 +2994,7 @@ h2,
   padding-left: 2.4rem;
   overflow-y: auto;
   height: 100%;
+  padding-right: 2.5rem;
 }
 .mobile .menu__block-col {
   width: 100%!important;
@@ -3214,9 +3223,6 @@ h2,
 .mobile .file__name {
   white-space: normal;
   overflow: visible;
-}
-.inner h2 {
-  text-align: center;
 }
 .inner__banner {
   height: 42rem;
