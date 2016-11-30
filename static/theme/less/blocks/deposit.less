@@ -1,8 +1,12 @@
 .deposit-info{
 	.clearfix;
-	&__conditions{
+	&__left{
 		float: left;
 		width: 570px;
+	}
+	&__right{
+		float: right;
+		width: 470px;
 	}
 }
 .deposit-table{
@@ -70,6 +74,54 @@
 			&+&{
 				padding-left: 1.5rem;
 			}
+		}
+	}
+}
+.deposit-open{
+	&__methods{
+
+	}
+	&__method{
+		border: 1px solid @cBorder;
+		border-radius: 2px;
+		padding: 22px 35px 35px 39px;
+		&+&{
+			margin-top: 2rem;
+		}
+		&-title{
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 25px;
+		}
+		&-content{
+			margin-top: 20px;
+			letter-spacing: -0.19px;
+		}
+	}
+	&__steps{
+		padding-top: 23px;
+		margin-bottom: -26px;
+	}
+	&__step{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding-left: 3rem;
+		margin-bottom: 40px;
+		&:nth-child(2n){
+			width: 44%;
+			margin-left: 6%;
+		}
+		&-num{
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 20px;
+			font-weight: 700;
+			letter-spacing: -0.67px;
+			line-height: 20px;
+			color: @cRed;
 		}
 	}
 }

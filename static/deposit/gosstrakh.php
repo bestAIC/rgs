@@ -71,7 +71,7 @@
 			</div>
 			<div class="b-block animation__top deposit-info" data-animation>
 				<div class="grid__inner">
-					<div class="deposit-info__conditions">
+					<div class="deposit-info__left">
 						<h3>Условия доходности по вкладу</h3>
 						<table class="deposit-table">
 							<tr>
@@ -207,6 +207,58 @@
 								</div>
 								<div class="deposit-conditions__item-block">
 									0,1%
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="deposit-info__right">
+						<div class="deposit-open">
+							<h3>Как оформить вклад?</h3>
+							<div class="deposit-open__methods">
+								<div class="deposit-open__method">
+									<div class="deposit-open__method-title">В отделении</div>
+									<div class="deposit-open__method-content">
+										<div class="deposit-open__steps">
+											<div class="deposit-open__step">
+												<div class="deposit-open__step-num">01</div>
+												Обратитесь в любое удобное для Вас отделение РОСГОССТРАХ БАНКА
+												в вашем регионе
+											</div><!--
+											--><div class="deposit-open__step">
+												<div class="deposit-open__step-num">02</div>
+												Предъявите паспорт или
+												<a href="#">иной документ, удостоверяющий личность</a>
+											</div><!--
+											--><div class="deposit-open__step">
+												<div class="deposit-open__step-num">03</div>
+												Заполните
+												<a href="#">Вопросник для физических лиц</a>
+											</div><!--
+											--><div class="deposit-open__step">
+												<div class="deposit-open__step-num">04</div>
+												Подпишите договор
+												о вкладе с Банком
+											</div><!--
+											--><div class="deposit-open__step">
+												<div class="deposit-open__step-num">05</div>
+												Внесите на свой счет сумму вклада
+											</div><!--
+											--><div class="deposit-open__step">
+												<div class="deposit-open__step-num">06</div>
+												Оформите при необходимости
+												<a href="#">доверенность
+												и завещательное распоряжение
+												по вкладу</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="deposit-open__method">
+									<div class="deposit-open__method-title"><a href="#">В Интернет-банке</a></div>
+									<div class="deposit-open__method-content">
+										Вы можете открыть вклад в системе<a href="#">"Интернет-банк"</a>,<br />
+										если у Вас оформлен доступ в систему
+									</div>
 								</div>
 							</div>
 						</div>
