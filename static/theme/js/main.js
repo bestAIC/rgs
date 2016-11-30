@@ -55,6 +55,7 @@ app.init = function () {
 	app.info();
 	app.initMaps();
 	app.questions();
+	app.initNav();
 	app.calc();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
@@ -78,6 +79,15 @@ app.initChosen = function () {
 	$('[data-chosen]').chosen({
 		disable_search_threshold: 1000,
 		width: "100%"
+	});
+};
+app.initNav = function () {
+	var self = this;
+
+	//$('html').off('click.nav');
+	$('html').on('click.nav','[data-nav-btn]',function(){
+		var $self = $(this);
+		$self.toggleClass('_active').closest('[data-nav-block]').find('[data-nav-content]').slideToggle(500);
 	});
 };
 app.mobMenu = function () {
@@ -133,7 +143,7 @@ app.menu = function () {
 		$menuLink    = $mobMenu.find('[data-menu-link]');
 	}
 	/*прилипание меню*/
-	app.dom.$window.on('scroll.Menu',function () {
+	function _fixedMenu() {
 		if(app.dom.$document.scrollTop()>=$header.height()){
 			$header.addClass('_fixed');
 		}else{
@@ -142,7 +152,9 @@ app.menu = function () {
 		if(app.utils.isMobile){
 			_helper();
 		}
-	});
+	}
+	_fixedMenu();
+	app.dom.$window.on('scroll.Menu',_fixedMenu);
 	/*конец прилипания меню*/
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){

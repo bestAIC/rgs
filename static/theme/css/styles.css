@@ -3354,11 +3354,11 @@ h3 {
 }
 .deposit-info__left {
   float: left;
-  width: 570px;
+  width: 57rem;
 }
 .deposit-info__right {
   float: right;
-  width: 470px;
+  width: 47rem;
 }
 .deposit-table {
   width: 100%;
@@ -3368,18 +3368,18 @@ h3 {
   border-top: 1px solid #f2f4f5;
   border-bottom: 1px solid #f2f4f5;
   color: #AAAEB2;
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 .deposit-table__row td {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 3rem;
   color: #3e3e3e;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -3392,11 +3392,11 @@ h3 {
 }
 .deposit-table th {
   color: #b31b2c;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
-  line-height: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .deposit-table .center {
   text-align: center;
@@ -3406,7 +3406,7 @@ h3 {
 }
 .deposit-conditions__item {
   *zoom: 1;
-  padding: 23px 0;
+  padding: 2.3rem 0;
   border-top: 1px solid #f2f4f5;
 }
 .deposit-conditions__item:before,
@@ -3421,9 +3421,9 @@ h3 {
 .deposit-conditions__item-block {
   float: left;
   width: 50%;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 2.5rem;
   padding-right: 2rem;
 }
 .deposit-conditions__item-block:first-child {
@@ -3435,24 +3435,24 @@ h3 {
 }
 .deposit-open__method {
   border: 1px solid #DEDFE0;
-  border-radius: 2px;
-  padding: 22px 35px 35px 39px;
+  border-radius: 0.2rem;
+  padding: 2.2rem 3.5rem 3.5rem 3.9rem;
 }
 .deposit-open__method + .deposit-open__method {
   margin-top: 2rem;
 }
 .deposit-open__method-title {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
 }
 .deposit-open__method-content {
-  margin-top: 20px;
-  letter-spacing: -0.19px;
+  margin-top: 2rem;
+  letter-spacing: -0.019rem;
 }
 .deposit-open__steps {
-  padding-top: 23px;
-  margin-bottom: -26px;
+  padding-top: 2.3rem;
+  margin-bottom: -2.6rem;
 }
 .deposit-open__step {
   position: relative;
@@ -3460,7 +3460,7 @@ h3 {
   vertical-align: top;
   width: 50%;
   padding-left: 3rem;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 .deposit-open__step:nth-child(2n) {
   width: 44%;
@@ -3470,11 +3470,98 @@ h3 {
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.67px;
-  line-height: 20px;
+  letter-spacing: -0.067rem;
+  line-height: 2rem;
   color: #b31b2c;
+}
+.deposit-doc {
+  background-color: #fff;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
+}
+.deposit-doc__title {
+  border-radius: 0.2rem;
+  border-top: 0.6rem solid #cca266;
+  display: block;
+  padding: 2.4rem 6rem 2.6rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.006rem;
+  line-height: 2.4rem;
+  color: #191919;
+  position: relative;
+}
+.deposit-doc__title:hover {
+  color: #191919;
+}
+.deposit-doc__title:focus {
+  color: #191919;
+}
+.deposit-doc__title._active:after {
+  background-image: url('../images/icons/close_small.svg');
+}
+.deposit-doc__title:after {
+  content: '';
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  width: 1.2rem;
+  height: 1rem;
+  margin-top: -0.5rem;
+  background: url('../images/icons/arr_right_long_gold.svg') no-repeat center;
+  background-size: contain;
+}
+.deposit-doc__content {
+  padding: 5.3rem 7rem 6.4rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  border-top: 1px solid #f2f4f5;
+}
+.deposit-doc__content .questions__items {
+  padding: 0.5rem 3.5rem;
+}
+.deposit-doc__content .questions__items ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.deposit-doc__content h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0;
+  margin-bottom: 2.6rem;
+  margin-top: 6.4rem;
+}
+.deposit-doc__content h3:first-child {
+  margin-top: 0;
+}
+.deposit-doc__content p {
+  margin: 2.5rem 0;
+}
+.deposit-doc__content ul {
+  list-style: none;
+  margin-left: 4.3rem;
+}
+.deposit-doc__content ul + .questions__items {
+  margin-top: 2.1rem;
+}
+.deposit-doc__content ul li {
+  position: relative;
+  padding-left: 5rem;
+}
+.deposit-doc__content ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.3rem;
+  height: 0.2rem;
+  width: 2rem;
+  background-color: #cca266;
+}
+.deposit-doc__content ul li + li {
+  margin-top: 1.5rem;
 }
 .inner__banner {
   height: 42rem;

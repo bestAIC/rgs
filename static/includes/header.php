@@ -130,7 +130,7 @@
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">«Госстраховский»</a>
+									<a href="/static/deposit/gosstrakh.php" class="b-menu__submenu-link">«Госстраховский»</a>
 								</div>
 								<div class="b-menu__submenu-item">
 									<a href="#" class="b-menu__submenu-link">«Накопительный»</a>
@@ -152,7 +152,7 @@
 						</div>
 						<div class="menu__block-col _col-1-2">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Пенсионная программа</a>
+								<a href="/static/inner.php" class="b-menu__item-link">Пенсионная программа</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Текущие счета</a>
