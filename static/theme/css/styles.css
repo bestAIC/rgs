@@ -590,6 +590,8 @@ h3 {
   letter-spacing: -0.039rem;
   line-height: 3.5rem;
   color: #3e3e3e;
+  margin-bottom: 2.3rem;
+  margin-top: 1.8rem;
 }
 .subtitle {
   color: #aaaeb3;
@@ -3233,6 +3235,7 @@ h3 {
 }
 .deposit-calc__block {
   *zoom: 1;
+  margin-top: 3.3rem;
 }
 .deposit-calc__block:before,
 .deposit-calc__block:after {
@@ -3360,6 +3363,9 @@ h3 {
   float: right;
   width: 47rem;
 }
+.deposit-info__block + .deposit-info__block {
+  margin-top: 7.1rem;
+}
 .deposit-table {
   width: 100%;
   border-top: 1px solid #f2f4f5;
@@ -3432,6 +3438,9 @@ h3 {
 }
 .deposit-conditions__item-block + .deposit-conditions__item-block {
   padding-left: 1.5rem;
+}
+.deposit-open__methods {
+  margin-top: 3.3rem;
 }
 .deposit-open__method {
   border: 1px solid #DEDFE0;
