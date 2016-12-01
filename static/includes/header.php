@@ -133,16 +133,16 @@
 									<a href="/static/deposit/gosstrakh.php" class="b-menu__submenu-link">«Госстраховский»</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">«Накопительный»</a>
+									<a href="/static/deposit/save.php" class="b-menu__submenu-link">«Накопительный»</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">«Универсальный»</a>
+									<a href="/static/deposit/universal.php" class="b-menu__submenu-link">«Универсальный»</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">«Инвестиционный»</a>
+									<a href="/static/deposit/invest.php" class="b-menu__submenu-link">«Инвестиционный»</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">«Пенсионный доход»</a>
+									<a href="/static/deposit/pensoin.php" class="b-menu__submenu-link">«Пенсионный доход»</a>
 								</div>
 								<div class="b-menu__submenu-item is-mob-block">
 									<a href="#" class="b-menu__submenu-link _red">Подобрать вклад</a>

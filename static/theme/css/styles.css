@@ -3352,14 +3352,14 @@ h3 {
   border-radius: 0.2rem;
 }
 .ui-widget-header {
-  background: #3e3e3e;
+  background: #cca266;
 }
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
   width: 2.4rem;
   height: 2.4rem;
-  background: #3e3e3e;
+  background: #cca266;
   border: 0.6rem solid #fff;
   border-radius: 50%;
   margin-left: -1.2rem;
@@ -3854,7 +3854,6 @@ h3 {
 }
 .inner__info-benefits-btn {
   margin-top: 5.5rem;
-  text-align: center;
 }
 .inner__info-benefits-btn .btn {
   letter-spacing: 0;

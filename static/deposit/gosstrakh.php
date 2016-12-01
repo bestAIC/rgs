@@ -18,57 +18,57 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-blocks">
-			<div class="b-block animation__top" data-animation>
-				<div class="grid__inner">Классический вклад для получения высокого дохода при фиксированных сумме и сроке вклада</div>
-			</div>
-			<div class="b-block _gray animation__top deposit-calc" data-calc data-animation>
-				<div class="grid__inner">
-					<h3>Калькулятор доходности</h3>
-					<div class="deposit-calc__block">
-						<div class="deposit-calc__options">
-							<div class="deposit-calc__option" data-calc-slider-wrap>
-								<div class="deposit-calc__option-text">
-									<div class="deposit-calc__option-val" data-calc-slider-val>50 000</div>
-									<div class="deposit-calc__option-title">Сумма вклада</div>
+		<div class="inner__info animation__top"  data-animation>
+			<div class="grid__inner">
+				<div class="inner__info-block">
+					<div class="numerals">
+						<div class="numerals__block">
+							<div class="numerals__item _big">
+								<div class="numerals__item-val">8,00%</div>
+								<div class="numerals__item-dash"></div>
+								<div class="numerals__item-text">
+									годовая процентная ставка на вклад в рублях
 								</div>
-								<div class="deposit-calc__option-slider" data-calc-slider='{"min":1000,"max":200000,"step":1000,"value":50000}' data-dollar='{"min":1000,"max":100000,"step":1000,"value":5000}'></div>
-							</div>
-							<div class="deposit-calc__option" data-calc-slider-wrap>
-								<div class="deposit-calc__option-text">
-									<div class="deposit-calc__option-val"  data-calc-slider-val="date">1 год</div>
-									<div class="deposit-calc__option-title">Срок вклада</div>
-								</div>
-								<div class="deposit-calc__option-slider" data-calc-slider='{"min":3,"max":36,"step":1,"value":12}' ></div>
-							</div>
-							<div class="deposit-calc__option" data-calc-slider-wrap>
-								<div class="deposit-calc__option-text">
-									<div class="deposit-calc__option-val"  data-calc-slider-val>10 000</div>
-									<div class="deposit-calc__option-title">Ежемесячное пополнение</div>
-								</div>
-								<div class="deposit-calc__option-slider" data-calc-slider='{"min":1000,"max":100000,"step":1000,"value":10000}'></div>
 							</div>
 						</div>
-						<div class="deposit-calc__info">
-							<div class="deposit-calc__info-blocks">
-								<div class="deposit-calc__info-block">
-									<div class="deposit-calc__info-block-title">ГОДОВАЯ СТАВКА</div>
-									<div class="deposit-calc__info-block-text">7,30%</div>
-								</div>
-								<div class="deposit-calc__info-block">
-									<div class="deposit-calc__info-block-title">СУММА В КОНЦЕ ВКЛАДА</div>
-									<div class="deposit-calc__info-block-text">54 524 ₽ </div>
-								</div>
-								<div class="deposit-calc__info-block">
-									<div class="deposit-calc__info-block-title">ДОХОД ПО ВКЛАДУ</div>
-									<div class="deposit-calc__info-block-text">4 524 ₽ </div>
+						<div class="numerals__block">
+							<div class="numerals__item _small">
+								<div class="numerals__item-val">2,00%</div>
+								<div class="numerals__item-dash"></div>
+								<div class="numerals__item-text">
+									ставка на вклад<br/>
+									в долларах
 								</div>
 							</div>
-							<a href="#" class="btn _red deposit-calc__info-btn">ОТКРЫТЬ ВКЛАД</a>
+							<div class="numerals__item _small">
+								<div class="numerals__item-val">0,90%</div>
+								<div class="numerals__item-dash"></div>
+								<div class="numerals__item-text">
+									ставка на вклад<br/>
+									в евро
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div class="inner__info-benefits">
+					<div class="inner__info-benefits-title">
+						Классический вклад для получения высокого дохода при фиксированных сумме и сроке вклада
+					</div>
+					<ul class="b-list">
+						<li>Повышенный доход</li>
+						<li>
+							Возможность выбора оптимального срока - от 3 месяцев до 2 лет
+						</li>
+					</ul>
+					<div class="inner__info-benefits-btn">
+						<a href="#" class="btn _red">Открыть вклад</a>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="b-blocks">
+			<?include "../includes/calc.php"?>
 			<div class="b-block animation__top deposit-info" data-animation>
 				<div class="grid__inner">
 					<div class="deposit-info__left">
