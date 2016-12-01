@@ -17,6 +17,13 @@
 .deposit-table{
 	width: 100%;
 	border-top: 1px solid #f2f4f5;
+	td,th{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		&:first-child{
+			padding-left: 2rem;
+		}
+	}
 	&__titles{
 		td{
 			border-top: 1px solid #f2f4f5;
@@ -259,6 +266,96 @@
 		margin-bottom: 1rem;
 		&__title {
 			padding: 2.8rem 6rem 2.7rem 4rem;
+		}
+		&__content{
+			padding: 4rem 6rem 2.7rem 4rem;
+		}
+	}
+}
+.mobile{
+	.deposit{
+		.grid__inner{
+			padding-right: 2rem;
+			padding-left: 2rem;
+		}
+	}
+	.deposit-info{
+		&__left{
+			float: none;
+			width: 100%;
+		}
+		&__right{
+			float: none;
+			width: 100%;
+			margin-top:6rem;
+		}
+		&__block{
+			&+.deposit-info__block{
+				margin-top: 6rem;
+			}
+		}
+	}
+	.deposit-table{
+		&__wrap{
+			margin: 0 -2rem;
+		}
+		th{
+			font-size: 12px;
+			line-height: 15px;
+			padding-top: 1.8rem;
+			padding-bottom: 2.2rem;
+		}
+	}
+	.deposit-conditions{
+		&__item{
+			padding: 2rem 0;
+			&-block{
+				width: 45%;
+				font-size: 12px;
+				line-height: 20px;
+				padding-right: 2rem;
+				&+.deposit-conditions__item-block{
+					width: 55%;
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	.deposit-open{
+		&__methods{
+			margin-top: 0;
+		}
+		&__method{
+			padding: 2.2rem 2rem 3.9rem 2rem;
+			&+&{
+				margin-top: 2rem;
+			}
+			&-content{
+				margin-top: 2.8rem;
+			}
+		}
+		&__steps{
+			padding-top: 0;
+			margin-bottom: -2rem;
+		}
+		&__step{
+			display: block;
+			width: 100%;
+			padding-left: 4rem;
+			margin-bottom: 2rem;
+			&:nth-child(2n){
+				width: 100%;
+				margin-left:0;
+			}
+		}
+	}
+	.deposit-doc{
+		&__title{
+			padding: 2.7rem 6rem 2.6rem 4rem;
+		}
+		&__content{
+			padding: 2rem 2rem 4rem 4rem;
 		}
 	}
 }

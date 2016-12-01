@@ -1,5 +1,5 @@
 <?include "../includes/header.php"?>
-	<div class="inner">
+	<div class="inner deposit">
 		<div class="inner__banner" style="background-image: url('/static/theme/images/inner/banner.jpg');">
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
@@ -74,76 +74,87 @@
 					<div class="deposit-info__left">
 						<div class="deposit-info__block">
 							<h3>Условия доходности по вкладу</h3>
-							<table class="deposit-table">
-								<tr>
-									<th>
-										Срок вклада<br/>
-										(дней)
-									</th>
-									<th></th>
-									<th>91-180</th>
-									<th>181-366</th>
-									<th>367-732</th>
-								</tr>
-								<tr class="deposit-table__titles">
-									<td class="center">ВАЛЮТА ВКЛАДА</td>
-									<td>СУММА ВКЛАДА</td>
-									<td colspan="3" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td class="center">₽</td>
-									<td>от 5 000</td>
-									<td class="center bold">7,70</td>
-									<td class="center bold">8,00</td>
-									<td class="center bold">7,00</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td class="center">$</td>
-									<td>от 100</td>
-									<td class="center bold">0,75</td>
-									<td class="center bold">1,80</td>
-									<td class="center bold">2,00</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td class="center">€</td>
-									<td>от 100</td>
-									<td class="center bold">0,30</td>
-									<td class="center bold">0,60</td>
-									<td class="center bold">0,90</td>
-								</tr>
-							</table>
+							<div class="deposit-table__wrap">
+								<table class="deposit-table">
+									<tr>
+										<th class="is-mob-block" colspan="2">
+											Срок вклада<br/>
+											(дней)
+										</th>
+										<th class="no-mob-block">
+											Срок вклада<br/>
+											(дней)
+										</th>
+										<th  class="no-mob-block"></th>
+										<th>91-180</th>
+										<th>181-366</th>
+										<th>367-732</th>
+									</tr>
+									<tr class="deposit-table__titles">
+										<td class="is-mob-block" colspan="2">ВАЛЮТА ВКЛАДА</td>
+										<td class="no-mob-block center">ВАЛЮТА ВКЛАДА</td>
+										<td class="no-mob-block">СУММА ВКЛАДА</td>
+										<td colspan="3" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td class="center">₽</td>
+										<td >от 5 000</td>
+										<td class="center bold">7,70</td>
+										<td class="center bold">8,00</td>
+										<td class="center bold">7,00</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td class="center">$</td>
+										<td>от 100</td>
+										<td class="center bold">0,75</td>
+										<td class="center bold">1,80</td>
+										<td class="center bold">2,00</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td class="center">€</td>
+										<td>от 100</td>
+										<td class="center bold">0,30</td>
+										<td class="center bold">0,60</td>
+										<td class="center bold">0,90</td>
+									</tr>
+								</table>
+							</div>
+
 						</div>
 						<div class="deposit-info__block">
 							<h3>Условия доходности по вкладу</h3>
-							<table class="deposit-table">
-								<tr>
-									<th>
-										Срок вклада<br/>
-										(дней)
-									</th>
-									<th>181-366</th>
-									<th>367-732</th>
-								</tr>
-								<tr class="deposit-table__titles">
-									<td class="center">ВАЛЮТА ВКЛАДА</td>
-									<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td class="center">₽</td>
-									<td class="center bold">7,70</td>
-									<td class="center bold">8,00</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td class="center">$</td>
-									<td class="center bold">0,75</td>
-									<td class="center bold">1,80</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td class="center">€</td>
-									<td class="center bold">0,30</td>
-									<td class="center bold">0,90</td>
-								</tr>
-							</table>
+							<div class="deposit-table__wrap">
+								<table class="deposit-table">
+									<tr>
+										<th>
+											Срок вклада<br/>
+											(дней)
+										</th>
+										<th>181-366</th>
+										<th>367-732</th>
+									</tr>
+									<tr class="deposit-table__titles">
+										<td class="center">ВАЛЮТА ВКЛАДА</td>
+										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td class="center">₽</td>
+										<td class="center bold">7,70</td>
+										<td class="center bold">8,00</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td class="center">$</td>
+										<td class="center bold">0,75</td>
+										<td class="center bold">1,80</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td class="center">€</td>
+										<td class="center bold">0,30</td>
+										<td class="center bold">0,90</td>
+									</tr>
+								</table>
+							</div>
+
 						</div>
 						<div class="deposit-info__block">
 							<h3>Условия вклада</h3>
