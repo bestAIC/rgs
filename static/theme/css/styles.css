@@ -3301,6 +3301,13 @@ h3 {
   bottom: 0;
   width: 63px;
 }
+.deposit-calc__option-select select {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  border-color: #e8e8e8;
+  padding-right: 0;
+}
 .deposit-calc__option-select .chosen-container {
   z-index: 10;
   background-color: #fff;
@@ -3328,27 +3335,6 @@ h3 {
 }
 .deposit-calc__option-block {
   margin-right: 200px;
-}
-.deposit-calc__option-text {
-  *zoom: 1;
-  line-height: 2.4rem;
-  color: #3e3e3e;
-  margin-bottom: 1.6rem;
-}
-.deposit-calc__option-text:before,
-.deposit-calc__option-text:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.deposit-calc__option-text:after {
-  clear: both;
-}
-.deposit-calc__option-val {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: -0.028rem;
-  float: right;
 }
 .deposit-calc__option-title {
   font-size: 1.6rem;
@@ -3415,12 +3401,54 @@ h3 {
   cursor: pointer;
 }
 .tablet.portrait .deposit-calc__options {
-  width: 46.6rem;
-  padding: 4rem 3rem 3rem;
+  float: none;
+  width: 100%;
 }
 .tablet.portrait .deposit-calc__info {
-  width: 21.8rem;
-  padding: 3rem;
+  float: none;
+  width: 100%;
+  padding: 3rem 4rem;
+  min-height: 0;
+  margin-top: 2rem;
+  *zoom: 1;
+}
+.tablet.portrait .deposit-calc__info:before,
+.tablet.portrait .deposit-calc__info:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .deposit-calc__info:after {
+  clear: both;
+}
+.tablet.portrait .deposit-calc__info-blocks {
+  padding-left: 0;
+  float: left;
+  *zoom: 1;
+}
+.tablet.portrait .deposit-calc__info-blocks:before,
+.tablet.portrait .deposit-calc__info-blocks:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .deposit-calc__info-blocks:after {
+  clear: both;
+}
+.tablet.portrait .deposit-calc__info-block {
+  float: left;
+}
+.tablet.portrait .deposit-calc__info-block + .deposit-calc__info-block {
+  margin-top: 0;
+  margin-left: 43px;
+}
+.tablet.portrait .deposit-calc__info-block-text {
+  margin-top: 0.4rem;
+}
+.tablet.portrait .deposit-calc__info-btn {
+  width: auto;
+  margin-top: 0;
+  float: right;
 }
 .mobile .deposit-calc__block {
   margin-top: 3.3rem;
@@ -4014,7 +4042,6 @@ h3 {
 }
 .tablet.portrait .numerals {
   margin-bottom: 3.2rem;
-  padding-left: 3.3rem;
 }
 .tablet.portrait .numerals__block {
   float: left;
@@ -4022,6 +4049,8 @@ h3 {
 }
 .tablet.portrait .numerals__block + .numerals__block {
   margin-top: 0;
+  padding-left: 5rem;
+  padding-right: 2rem;
 }
 .tablet.portrait .numerals__item._small {
   width: 43%;

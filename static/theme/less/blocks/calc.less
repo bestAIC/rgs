@@ -33,6 +33,13 @@
 			right: 0;
 			bottom: 0;
 			width: 63px;
+			select{
+				font-size: 20px;
+				font-weight: 600;
+				letter-spacing: -0.28px;
+				border-color: #e8e8e8;
+				padding-right: 0;
+			}
 			.chosen-container{
 				z-index: 10;
 				background-color: #fff;
@@ -64,18 +71,6 @@
 		}
 		&-block{
 			margin-right: 200px;
-		}
-		&-text{
-			.clearfix;
-			line-height: 24/@rem;
-			color: @title-color;
-			margin-bottom: 16/@rem;
-		}
-		&-val{
-			font-size: 20/@rem;
-			font-weight: 600;
-			letter-spacing: -0.28/@rem;
-			float: right;
 		}
 		&-title{
 			font-size: 16/@rem;
@@ -152,15 +147,40 @@
 
 .tablet.portrait{
 	.deposit-calc{
+		&__block{
+		}
 		&__options{
-			width: 466/@rem;
-			padding: 4rem 3rem 3rem;
+			float: none;
+			width: 100%;
 		}
 		&__info{
-			width: 218/@rem;
-			padding: 30/@rem;
+			float: none;
+			width: 100%;
+			padding: 30/@rem 40/@rem;
+			min-height: 0;
+			margin-top: 2rem;
+			.clearfix;
+			&-blocks{
+				padding-left:0;
+				float: left;
+				.clearfix;
+			}
+			&-block{
+				float: left;
+				&+.deposit-calc__info-block {
+					margin-top: 0;
+					margin-left: 43px;
+				}
+				&-text{
+					margin-top: 0.4rem;
+				}
+			}
+			&-btn{
+				width: auto;
+				margin-top: 0;
+				float: right;
+			}
 		}
-
 	}
 }
 .mobile{
