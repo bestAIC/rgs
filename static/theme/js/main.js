@@ -667,9 +667,11 @@ app.calc = function(){
 	$sliderWrap.each(function(){
 		var $self = $(this),
 				$slider = $self.find('[data-calc-slider]'),
-				$valBlock = $self.find('[data-calc-slider-val]'),
+				$inp = $self.find('[data-calc-slider-inp]'),
+				$select = $self.find('[data-calc-slider-select]'),
 				data = $slider.data('calcSlider'),
 				val = null,
+				val1 = null,
 				startValue = null
 			;
 		$slider.slider({
@@ -679,18 +681,38 @@ app.calc = function(){
 			step: data.step,
 			value: data.value || data.min,
 			slide: function( event, ui ){
-				$valBlock.text(showSliderVal($valBlock.data('calcSliderVal'),ui.value));
+				$inp.val(showSliderVal($inp.data('calcSliderInp'),ui.value));
 			},
 			start: function( event, ui ){
 				startValue = ui.value;
 			},
 			stop: function( event, ui ){
 				if(ui.value != startValue){
-					$valBlock.text(showSliderVal($valBlock.data('calcSliderVal'),ui.value));
+					$inp.val(showSliderVal($inp.data('calcSliderInp'),ui.value));
 				}
 			}
 		});
-		$valBlock.text(showSliderVal($valBlock.data('calcSliderVal'),$slider.slider("value")));
+		$select.on('change',function () {
+			data = $slider.data($select.val());
+			$slider.slider( "option", "max", data.max);
+			$slider.slider( "option", "min", data.min);
+			$slider.slider( "option", "step", data.step);
+			$inp.change();
+		});
+		
+		$inp.val(showSliderVal($inp.data('calcSliderInp'),$slider.slider("value")));
+		$inp.focus(function () {
+			val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10);
+			$inp.val(val1);
+		}).keyup(function () {
+
+		});
+		$inp.on('change',function(){
+			val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10) || data.min;
+			val = Math.min(Math.max(data.min, val1),data.max);
+			$slider.slider("value",val);
+			$inp.val(showSliderVal($inp.data('calcSliderInp'),val));
+		});
 	});
 	function showSliderVal(type,val) {
 		var res = '',
@@ -698,14 +720,7 @@ app.calc = function(){
 				months = 0
 			;
 		if(type == "date"){
-			years = Math.floor(val / 12);
-			months = val % 12;
-			if(years){
-				res = res + years+ ' ' +app.utils.okonchanie(years,"год","года","лет")+' '
-			}
-			if(months){
-				res = res + months+ ' ' +app.utils.okonchanie(months,"месяц","месяца","месяцев");
-			}
+			res = res + app.formatNumber(val) + ' ' +app.utils.okonchanie(val,"день","дня","дней");
 		}else{
 			res = app.formatNumber(val);
 		}

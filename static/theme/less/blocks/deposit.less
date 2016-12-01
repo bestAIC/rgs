@@ -104,6 +104,21 @@
 			font-size: 16/@rem;
 			font-weight: 600;
 			line-height: 25/@rem;
+			a{
+				display: block;
+				position: relative;
+				padding-right: 4rem;
+				&:after{
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -5/@rem;
+					width: 1.2rem;
+					height: 1rem;
+					.background('@{pathToImg}icons/arr_right_long_gold.svg');
+				}
+			}
 		}
 		&-content{
 			margin-top: 20/@rem;
