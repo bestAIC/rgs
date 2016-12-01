@@ -2524,25 +2524,44 @@ h3 {
   transform: translate(0, 0);
 }
 .gall__item._show {
-  transition: opacity 1.5s, transform 1.5s;
+  /*transition: opacity 1.5s, transform 1.5s;
+			&._2{
+				transition: opacity 1.35s 0.15s, transform 1.35s 0.15s;
+			}
+			&._3{
+				transition: opacity 1.2s 0.3s, transform 1.2s 0.3s;
+			}
+			&._4{
+				transition: opacity 1.05s 0.45s, transform 1.05s 0.45s;
+			}
+			&._5{
+				transition: opacity 0.9s 0.6s, transform 0.9s 0.6s;
+			}
+			&._6{
+				transition: opacity 1s 1s, transform 1s 1s;
+			}
+			&._7{
+				transition: opacity 0.8s 1.2s, transform 0.8s 1.2s ;
+			}*/
+  transition: opacity 1s, transform 1s;
 }
 .gall__item._show._2 {
-  transition: opacity 1.35s 0.15s, transform 1.35s 0.15s;
+  transition: opacity 0.9s 0.1s, transform 0.9s 0.1s;
 }
 .gall__item._show._3 {
-  transition: opacity 1.2s 0.3s, transform 1.2s 0.3s;
+  transition: opacity 0.8s 0.2s, transform 0.8s 0.2s;
 }
 .gall__item._show._4 {
-  transition: opacity 1.05s 0.45s, transform 1.05s 0.45s;
+  transition: opacity 0.7s 0.3s, transform 0.7s 0.3s;
 }
 .gall__item._show._5 {
-  transition: opacity 0.9s 0.6s, transform 0.9s 0.6s;
+  transition: opacity 0.6s 0.4s, transform 0.6s 0.4s;
 }
 .gall__item._show._6 {
-  transition: opacity 1s 1s, transform 1s 1s;
+  transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
 }
 .gall__item._show._7 {
-  transition: opacity 0.8s 1.2s, transform 0.8s 1.2s ;
+  transition: opacity 0.4s 0.6s, transform 0.4s 0.6s;
 }
 .gall__item:last-child {
   margin-right: 0;
@@ -3732,8 +3751,8 @@ h3 {
   margin: 0 -2rem;
 }
 .mobile .deposit-table th {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   padding-top: 1.8rem;
   padding-bottom: 2.2rem;
 }
@@ -3742,8 +3761,8 @@ h3 {
 }
 .mobile .deposit-conditions__item-block {
   width: 45%;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 1.2rem;
+  line-height: 2rem;
   padding-right: 2rem;
 }
 .mobile .deposit-conditions__item-block + .deposit-conditions__item-block {
