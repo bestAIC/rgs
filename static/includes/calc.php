@@ -57,11 +57,11 @@
 					</div>
 					<div class="deposit-calc__info-block">
 						<div class="deposit-calc__info-block-title">СУММА В КОНЦЕ ВКЛАДА</div>
-						<div class="deposit-calc__info-block-text">54 524 ₽ </div>
+						<div class="deposit-calc__info-block-text">54 524 P</div>
 					</div>
 					<div class="deposit-calc__info-block">
 						<div class="deposit-calc__info-block-title">ДОХОД ПО ВКЛАДУ</div>
-						<div class="deposit-calc__info-block-text">4 524 ₽ </div>
+						<div class="deposit-calc__info-block-text">4 524 P</div>
 					</div>
 				</div>
 				<a href="#" class="btn _red deposit-calc__info-btn">ОТКРЫТЬ ВКЛАД</a>

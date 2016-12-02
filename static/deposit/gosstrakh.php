@@ -97,7 +97,7 @@
 										<td colspan="3" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">₽</td>
+										<td class="center">P</td>
 										<td >от 5 000</td>
 										<td class="center bold">7,70</td>
 										<td class="center bold">8,00</td>
@@ -138,7 +138,7 @@
 										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">₽</td>
+										<td class="center">P</td>
 										<td class="center bold">7,70</td>
 										<td class="center bold">8,00</td>
 									</tr>

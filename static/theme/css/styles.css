@@ -3287,8 +3287,8 @@ h3 {
   margin-top: 5rem;
 }
 .deposit-calc__option-fields {
-  width: 173px;
-  height: 48px;
+  width: 17.3rem;
+  height: 4.8rem;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -3299,14 +3299,27 @@ h3 {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 63px;
+  width: 6.3rem;
 }
 .deposit-calc__option-select select {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.028rem;
   border-color: #e8e8e8;
-  padding-right: 0;
+  padding-right: 1rem;
+  -webkit-appearance: none;
+  background: url('../images/icons/select.svg') no-repeat calc(100% - 1.5rem) center #fff;
+  background-size: 0.7rem 0.4rem;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+.deposit-calc__option-select select::-ms-expand {
+  display: none;
 }
 .deposit-calc__option-select .chosen-container {
   z-index: 10;
@@ -3325,16 +3338,16 @@ h3 {
   width: 2.2rem;
 }
 .deposit-calc__option-field {
-  height: 48px;
+  height: 4.8rem;
 }
 .deposit-calc__option-field input[type="text"] {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.028rem;
   border-color: #e8e8e8;
 }
 .deposit-calc__option-block {
-  margin-right: 200px;
+  margin-right: 20rem;
 }
 .deposit-calc__option-title {
   font-size: 1.6rem;
@@ -3440,7 +3453,7 @@ h3 {
 }
 .tablet.portrait .deposit-calc__info-block + .deposit-calc__info-block {
   margin-top: 0;
-  margin-left: 43px;
+  margin-left: 4.3rem;
 }
 .tablet.portrait .deposit-calc__info-block-text {
   margin-top: 0.4rem;
@@ -3451,81 +3464,80 @@ h3 {
   float: right;
 }
 .mobile .deposit-calc__block {
-  margin-top: 3.3rem;
+  margin-top: 2.5rem;
 }
 .mobile .deposit-calc__options {
   float: none;
   width: 100%;
-  background-color: white;
-  border-radius: 0.2rem;
-  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
-  padding: 4rem 4rem 4.8rem;
-  min-height: 0;
+  padding: 3.2rem 3rem 3rem;
 }
-.mobile .deposit-calc__option + .mobile .deposit-calc__option {
-  margin-top: 5rem;
+.mobile .deposit-calc__option {
+  position: relative;
 }
-.mobile .deposit-calc__option-text {
-  *zoom: 1;
-  line-height: 2.4rem;
-  color: #3e3e3e;
-  margin-bottom: 1.6rem;
+.mobile .deposit-calc__option + .deposit-calc__option {
+  margin-top: 2.1rem;
 }
-.mobile .deposit-calc__option-text:before,
-.mobile .deposit-calc__option-text:after {
-  display: table;
-  content: "";
-  line-height: 0;
+.mobile .deposit-calc__option-fields {
+  width: 100%;
+  position: relative;
+  margin-top: 2.2rem;
 }
-.mobile .deposit-calc__option-text:after {
-  clear: both;
-}
-.mobile .deposit-calc__option-val {
+.mobile .deposit-calc__option-select select {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: -0.028rem;
-  float: right;
+  border-color: #e8e8e8;
+  padding-right: 1rem;
 }
-.mobile .deposit-calc__option-title {
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: -0.022rem;
+.mobile .deposit-calc__option-block {
+  margin-right: 0;
 }
 .mobile .deposit-calc__info {
   float: none;
   width: 100%;
+  margin-top: 2rem;
+  padding: 1.9rem 3rem 2rem 3rem;
   min-height: 0;
-  background-color: white;
-  border-radius: 0.2rem;
-  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
-  padding: 3rem 5rem 3rem 4rem;
 }
 .mobile .deposit-calc__info-blocks {
-  padding-left: 1rem;
+  padding-left: 0;
+  *zoom: 1;
+}
+.mobile .deposit-calc__info-blocks:before,
+.mobile .deposit-calc__info-blocks:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .deposit-calc__info-blocks:after {
+  clear: both;
 }
 .mobile .deposit-calc__info-block {
-  font-weight: 600;
+  width: 33%;
+  float: left;
+  padding-right: 1rem;
 }
-.mobile .deposit-calc__info-block + .mobile .deposit-calc__info-block {
-  margin-top: 2.4rem;
+.mobile .deposit-calc__info-block:first-child {
+  width: 32%;
 }
-.mobile .deposit-calc__info-block-title {
-  color: #AAAEB2;
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-  line-height: 1.4rem;
+.mobile .deposit-calc__info-block:nth-child(2) {
+  width: 41%;
+}
+.mobile .deposit-calc__info-block:nth-child(3) {
+  width: 27%;
+}
+.mobile .deposit-calc__info-block + .deposit-calc__info-block {
+  margin-top: 0;
 }
 .mobile .deposit-calc__info-block-text {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 3rem;
-  letter-spacing: -0.05rem;
-  color: #3e3e3e;
-  margin-top: 0.2rem;
-  white-space: nowrap;
+  letter-spacing: -0.04rem;
+  margin-top: 0.4rem;
 }
 .mobile .deposit-calc__info-btn {
   width: 100%;
-  margin-top: 2.4rem;
+  margin-top: 2rem;
 }
 .deposit-info {
   *zoom: 1;
@@ -4106,7 +4118,6 @@ h3 {
 }
 .mobile .numerals {
   margin-bottom: 3.3rem;
-  padding-left: 1.5rem;
 }
 .mobile .numerals__block {
   *zoom: 1;

@@ -19,8 +19,8 @@
 			margin-top: 50/@rem;
 		}
 		&-fields{
-			width: 173px;
-			height: 48px;
+			width: 173/@rem;
+			height: 48/@rem;
 			position: absolute;
 			right: 0;
 			bottom: 0;
@@ -32,13 +32,27 @@
 			top: 0;
 			right: 0;
 			bottom: 0;
-			width: 63px;
+			width: 63/@rem;
 			select{
-				font-size: 20px;
+				font-size: 20/@rem;
 				font-weight: 600;
-				letter-spacing: -0.28px;
+				letter-spacing: -0.28/@rem;
 				border-color: #e8e8e8;
-				padding-right: 0;
+				padding-right: 1rem;
+
+				-webkit-appearance: none;
+				background: url('@{pathToImg}icons/select.svg') no-repeat calc(~"100% - 1.5rem") center #fff;
+				background-size: 7/@rem 4/@rem;
+				/* for FF */
+				-moz-appearance: none;
+				text-indent: 0.01px;
+				text-overflow: '';
+				/* for IE */
+				-ms-appearance: none;
+				appearance: none!important;
+				&::-ms-expand {
+					display: none;
+				}
 			}
 			.chosen-container{
 				z-index: 10;
@@ -61,16 +75,16 @@
 			}
 		}
 		&-field{
-			height: 48px;
+			height: 48/@rem;
 			input[type="text"]{
-				font-size: 20px;
+				font-size: 20/@rem;
 				font-weight: 600;
-				letter-spacing: -0.28px;
+				letter-spacing: -0.28/@rem;
 				border-color: #e8e8e8;
 			}
 		}
 		&-block{
-			margin-right: 200px;
+			margin-right: 200/@rem;
 		}
 		&-title{
 			font-size: 16/@rem;
@@ -169,7 +183,7 @@
 				float: left;
 				&+.deposit-calc__info-block {
 					margin-top: 0;
-					margin-left: 43px;
+					margin-left: 43/@rem;
 				}
 				&-text{
 					margin-top: 0.4rem;
@@ -186,73 +200,72 @@
 .mobile{
 	.deposit-calc{
 		&__block{
-			margin-top: 33/@rem;
+			margin-top: 2.5rem;
 		}
 		&__options{
 			float: none;
 			width: 100%;
-			background-color: white;
-			border-radius: 2/@rem;
-			box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
-			padding: 40/@rem 40/@rem 48/@rem;
-			min-height: 0;
+			padding: 3.2rem 3rem 3rem;
 		}
 		&__option{
-			&+&{
-				margin-top: 50/@rem;
+			position: relative;
+			&+.deposit-calc__option{
+				margin-top: 2.1rem;
 			}
-			&-text{
-				.clearfix;
-				line-height: 24/@rem;
-				color: @title-color;
-				margin-bottom: 16/@rem;
+			&-fields{
+				width: 100%;
+				position: relative;
+				margin-top: 22/@rem;
 			}
-			&-val{
-				font-size: 20/@rem;
-				font-weight: 600;
-				letter-spacing: -0.28/@rem;
-				float: right;
+			&-select{
+				select{
+					font-size: 20/@rem;
+					font-weight: 600;
+					letter-spacing: -0.28/@rem;
+					border-color: #e8e8e8;
+					padding-right: 1rem;
+				}
 			}
-			&-title{
-				font-size: 16/@rem;
-				font-weight: 400;
-				letter-spacing: -0.22/@rem;
+			&-block{
+				margin-right:0;
 			}
 		}
 		&__info{
 			float: none;
 			width: 100%;
+			margin-top: 2rem;
+			padding: 1.9rem 3rem 2rem 3rem;
 			min-height: 0;
-			background-color: white;
-			border-radius: 2/@rem;
-			box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
-			padding: 30/@rem 50/@rem 30/@rem 40/@rem;
 			&-blocks{
-				padding-left: 10/@rem;
+				padding-left:0;
+				.clearfix;
 			}
 			&-block{
-				&+&{
-					margin-top: 24/@rem;
+				width: 33%;
+				float: left;
+				padding-right: 1rem;
+				&:first-child{
+					width: 32%;
 				}
-				font-weight: 600;
-				&-title{
-					color: @cGray;
-					font-size: 10/@rem;
-					letter-spacing: 0.5/@rem;
-					line-height: 14/@rem;
+				&:nth-child(2){
+					width: 41%;
+				}
+				&:nth-child(3){
+					width: 27%;
+				}
+				&+.deposit-calc__info-block{
+					margin-top: 0;
 				}
 				&-text{
-					font-size: 30/@rem;
+					font-size: 24/@rem;
 					line-height: 30/@rem;
-					letter-spacing: -0.5/@rem;
-					color: @title-color;
-					margin-top: 2/@rem;
-					white-space: nowrap;
+					letter-spacing: -0.4/@rem;
+					margin-top: 0.4rem;
 				}
 			}
 			&-btn{
 				width: 100%;
-				margin-top: 24/@rem;
+				margin-top: 2rem;
 			}
 		}
 
