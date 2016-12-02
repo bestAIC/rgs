@@ -3580,6 +3580,16 @@ h3 {
   width: 100%;
   border-top: 1px solid #f2f4f5;
 }
+.deposit-table._rowspan-table .deposit-table__row:nth-child(2n+1) {
+  background-color: #fff;
+}
+.deposit-table._rowspan-table .deposit-table__row._grey {
+  background-color: rgba(216, 216, 216, 0.17);
+}
+.deposit-table._rowspan-table .deposit-table__row._cut td:first-child,
+.deposit-table._rowspan-table .deposit-table__row._cut th:first-child {
+  padding-left: 1rem;
+}
 .deposit-table td,
 .deposit-table th {
   padding-left: 1rem;
