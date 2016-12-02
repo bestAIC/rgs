@@ -85,69 +85,30 @@
 											(дней)
 										</th>
 										<th  class="no-mob-block"></th>
-										<th>91-180</th>
-										<th>181-366</th>
-										<th>367-732</th>
+										<th>271</th>
+										<th>367</th>
 									</tr>
 									<tr class="deposit-table__titles">
 										<td class="is-mob-block" colspan="2">ВАЛЮТА ВКЛАДА</td>
 										<td class="no-mob-block center">ВАЛЮТА ВКЛАДА</td>
 										<td class="no-mob-block">СУММА ВКЛАДА</td>
-										<td colspan="3" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
+										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">₽</td>
+										<td class="center">P</td>
 										<td >от 5 000</td>
 										<td class="center bold">7,70</td>
-										<td class="center bold">8,00</td>
 										<td class="center bold">7,00</td>
 									</tr>
 									<tr class="deposit-table__row">
 										<td class="center">$</td>
 										<td>от 100</td>
 										<td class="center bold">0,75</td>
-										<td class="center bold">1,80</td>
 										<td class="center bold">2,00</td>
 									</tr>
 									<tr class="deposit-table__row">
 										<td class="center">€</td>
 										<td>от 100</td>
-										<td class="center bold">0,30</td>
-										<td class="center bold">0,60</td>
-										<td class="center bold">0,90</td>
-									</tr>
-								</table>
-							</div>
-
-						</div>
-						<div class="deposit-info__block">
-							<h3>Условия доходности по вкладу</h3>
-							<div class="deposit-table__wrap">
-								<table class="deposit-table">
-									<tr>
-										<th>
-											Срок вклада<br/>
-											(дней)
-										</th>
-										<th>181-366</th>
-										<th>367-732</th>
-									</tr>
-									<tr class="deposit-table__titles">
-										<td class="center">ВАЛЮТА ВКЛАДА</td>
-										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
-									</tr>
-									<tr class="deposit-table__row">
-										<td class="center">₽</td>
-										<td class="center bold">7,70</td>
-										<td class="center bold">8,00</td>
-									</tr>
-									<tr class="deposit-table__row">
-										<td class="center">$</td>
-										<td class="center bold">0,75</td>
-										<td class="center bold">1,80</td>
-									</tr>
-									<tr class="deposit-table__row">
-										<td class="center">€</td>
 										<td class="center bold">0,30</td>
 										<td class="center bold">0,90</td>
 									</tr>
@@ -277,6 +238,102 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="grid__inner">
+					<div class="deposit-scale">
+						<h3>Шкала процентных ставок</h3>
+						<div class="deposit-table__wrap">
+							<table class="deposit-table _rowspan-table">
+								<tr class="deposit-table__titles">
+									<td >ВАЛЮТА</td>
+									<td>СУММА ВКЛАДА*</td>
+									<td colspan="4" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА ПРИ ДОСРОЧНОМ РАСТОРЖЕНИИ<br/>
+										В ЗАВИСИМОСТИ ОТ ФАКТИЧЕСКОГО СРОКА НАХОЖДЕНИЯ СРЕДСТВ ВО ВКЛАДЕ</td>
+								</tr>
+								<tr>
+									<th></th>
+									<th></th>
+									<th>до 90</th>
+									<th>91-180</th>
+									<th>181-270</th>
+									<th>271-366</th>
+								</tr>
+								<tr class="deposit-table__row _grey">
+									<td class="bold">Российский рубль, P</td>
+									<td >от 5 000 до 100 000</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row _grey">
+									<td></td>
+									<td >от 100 001 до 450 000</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row _grey">
+									<td></td>
+									<td >свыше 450 001</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row">
+									<td class="bold">Доллар США, $</td>
+									<td >от 100 до 3 500</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row">
+									<td></td>
+									<td >от 3 501 до 15 000</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row">
+									<td></td>
+									<td >свыше 15 001</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row _grey">
+									<td class="bold">Евро, €</td>
+									<td >от 100 до 3 500</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row _grey">
+									<td></td>
+									<td >от 3 501 до 15 000</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+								<tr class="deposit-table__row _grey">
+									<td></td>
+									<td >свыше 15 001</td>
+									<td class="center bold">0,10%</td>
+									<td class="center bold">5,00%</td>
+									<td class="center bold">5,50%</td>
+									<td class="center bold">6,00%</td>
+								</tr>
+							</table>
+						</div>
+						<div class="deposit__text">* сумма, размещаемая клиентом на счет в день открытия вклада/сумма, находящаяся на счете в день пролонгации вклада</div>
 					</div>
 				</div>
 			</div>

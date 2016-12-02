@@ -3576,6 +3576,17 @@ h3 {
 .deposit-info__block + .deposit-info__block {
   margin-top: 7.1rem;
 }
+.deposit-scale {
+  margin-top: 7.3rem;
+}
+.deposit-scale .deposit-table__titles td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.deposit-scale .deposit-table th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .deposit-documents__content {
   border: 1px solid #DEDFE0;
   letter-spacing: -0.019rem;
