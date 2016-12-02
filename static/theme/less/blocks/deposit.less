@@ -32,6 +32,105 @@
 }
 .deposit-scale{
 	margin-top: 73/@rem;
+	&__top-text{
+		font-size: 10px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 14px;
+		color: @cGray;
+		text-transform: uppercase;
+		padding-right: 2rem;
+	}
+	&__bottom{
+		color: #919599;
+		letter-spacing: 0.04/@rem;
+		margin-top: 21px;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	&__block{
+		.clearfix;
+		margin-left: -2rem;
+		margin-right: -2rem;
+		margin-top: 2rem;
+	}
+	&__tabs{
+		border-top: 1px solid @cBorder;
+		border-bottom: 1px solid @cBorder;
+		.clearfix;
+	}
+	&__tab{
+		display: block;
+		float: left;
+		width: 33.33%;
+		border-bottom: 4px solid transparent;
+		padding-top: 12px;
+		padding-bottom: 8px;
+		.color(@text-color);
+		&._active{
+			border-color: @cRed;
+		}
+		&+&{
+			.deposit-scale__tab-in{
+				border-left: 1px solid @cBorder;
+			}
+		}
+		&-in{
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: 0.05px;
+			line-height: 18px;
+			text-align: center;
+		}
+	}
+	&__content{
+		//margin-top: 10px;
+	}
+	&__table{
+		border-top: 1px solid @cBorder;
+		border-bottom: 1px solid @cBorder;
+		td{
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+			&:first-child{
+				text-align: left;
+				padding-left: 2rem;
+			}
+			&:last-child{
+				padding-right: 2rem;
+			}
+		}
+		&-titles{
+			color: @title-color;
+			td{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				&:first-child{
+					font-size: 10px;
+					font-weight: 600;
+					letter-spacing: 0.5px;
+					line-height: 14px;
+					color: @cGray;
+				}
+			}
+		}
+		&-row{
+			background-color: whitesmoke;
+			td{
+				font-size: 16/@rem;
+				line-height: 30/@rem;
+				color: @title-color;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				font-weight: 600;
+			}
+		}
+		table{
+			width: 100%;
+		}
+	}
+
 	.deposit-table__titles{
 		td{
 			padding-top: 20px;

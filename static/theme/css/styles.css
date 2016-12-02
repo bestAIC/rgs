@@ -3579,6 +3579,123 @@ h3 {
 .deposit-scale {
   margin-top: 7.3rem;
 }
+.deposit-scale__top-text {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  color: #AAAEB2;
+  text-transform: uppercase;
+  padding-right: 2rem;
+}
+.deposit-scale__bottom {
+  color: #919599;
+  letter-spacing: 0.004rem;
+  margin-top: 21px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.deposit-scale__block {
+  *zoom: 1;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-top: 2rem;
+}
+.deposit-scale__block:before,
+.deposit-scale__block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-scale__block:after {
+  clear: both;
+}
+.deposit-scale__tabs {
+  border-top: 1px solid #DEDFE0;
+  border-bottom: 1px solid #DEDFE0;
+  *zoom: 1;
+}
+.deposit-scale__tabs:before,
+.deposit-scale__tabs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-scale__tabs:after {
+  clear: both;
+}
+.deposit-scale__tab {
+  display: block;
+  float: left;
+  width: 33.33%;
+  border-bottom: 4px solid transparent;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  color: #191919;
+}
+.deposit-scale__tab:hover {
+  color: #191919;
+}
+.deposit-scale__tab:focus {
+  color: #191919;
+}
+.deposit-scale__tab._active {
+  border-color: #b31b2c;
+}
+.deposit-scale__tab + .deposit-scale__tab .deposit-scale__tab-in {
+  border-left: 1px solid #DEDFE0;
+}
+.deposit-scale__tab-in {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05px;
+  line-height: 18px;
+  text-align: center;
+}
+.deposit-scale__table {
+  border-top: 1px solid #DEDFE0;
+  border-bottom: 1px solid #DEDFE0;
+}
+.deposit-scale__table td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+.deposit-scale__table td:first-child {
+  text-align: left;
+  padding-left: 2rem;
+}
+.deposit-scale__table td:last-child {
+  padding-right: 2rem;
+}
+.deposit-scale__table-titles {
+  color: #3e3e3e;
+}
+.deposit-scale__table-titles td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.deposit-scale__table-titles td:first-child {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  color: #AAAEB2;
+}
+.deposit-scale__table-row {
+  background-color: whitesmoke;
+}
+.deposit-scale__table-row td {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: #3e3e3e;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.deposit-scale__table table {
+  width: 100%;
+}
 .deposit-scale .deposit-table__titles td {
   padding-top: 20px;
   padding-bottom: 20px;

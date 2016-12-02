@@ -187,6 +187,134 @@
 								</div>
 							</div>
 						</div>
+						<div class="deposit-info__block is-mob-block">
+							<div class="deposit-scale">
+								<h3>Шкала процентных ставок</h3>
+								<div class="deposit-scale__top-text">
+									ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА ПРИ ДОСРОЧНОМ
+									РАСТОРЖЕНИИ В ЗАВИСИМОСТИ ОТ ФАКТИЧЕСКОГО СРОКА НАХОЖДЕНИЯ СРЕДСТВ ВО ВКЛАДЕ
+								</div>
+								<div class="deposit-scale__block" data-tabs>
+									<div class="deposit-scale__tabs">
+										<a href="javascript:void(0);" data-tabs-tab="1"  class="deposit-scale__tab _active">
+											<div class="deposit-scale__tab-in">P</div>
+										</a>
+										<a href="javascript:void(0);" data-tabs-tab="2" class="deposit-scale__tab">
+											<div class="deposit-scale__tab-in">$</div>
+										</a>
+										<a href="javascript:void(0);" data-tabs-tab="3" class="deposit-scale__tab">
+											<div class="deposit-scale__tab-in">€</div>
+										</a>
+									</div>
+									<div class="deposit-scale__content">
+										<div class="deposit-scale__table" data-tabs-content="1">
+											<table>
+												<tr class="deposit-scale__table-titles">
+													<td>СУММА<br/>ВКЛАДА*</td>
+													<td>от 5 000<br/>до 100 000</td>
+													<td>от 100 001<br/>до 450 000</td>
+													<td>свыше<br/>450 001</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td class="red">до 90</td>
+													<td>0,10%</td>
+													<td>0,10%</td>
+													<td>0,10%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">91-180</td>
+													<td>5,00%</td>
+													<td>5,25%</td>
+													<td>5,50%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">181-270</td>
+													<td>5,50%</td>
+													<td>5,75%</td>
+													<td>6,00%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">271-366</td>
+													<td>6,00%</td>
+													<td>6,25%</td>
+													<td>6,50%</td>
+												</tr>
+											</table>
+										</div>
+										<div class="deposit-scale__table hide" data-tabs-content="2">
+											<table>
+												<tr class="deposit-scale__table-titles">
+													<td>СУММА<br/>ВКЛАДА*</td>
+													<td>от 500<br/>до 10000</td>
+													<td>от 10000<br/>до 20000</td>
+													<td>свыше<br/>20000</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td class="red">до 90</td>
+													<td>0,40%</td>
+													<td>0,40%</td>
+													<td>0,40%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">91-180</td>
+													<td>5,00%</td>
+													<td>5,25%</td>
+													<td>5,50%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">181-270</td>
+													<td>5,50%</td>
+													<td>5,75%</td>
+													<td>6,00%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">271-366</td>
+													<td>6,00%</td>
+													<td>6,25%</td>
+													<td>6,50%</td>
+												</tr>
+											</table>
+										</div>
+										<div class="deposit-scale__table hide" data-tabs-content="3">
+											<table>
+												<tr class="deposit-scale__table-titles">
+													<td>СУММА<br/>ВКЛАДА*</td>
+													<td>от 50<br/>до 1000</td>
+													<td>от 1000<br/>до 10000</td>
+													<td>свыше<br/>10000</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td class="red">до 90</td>
+													<td>0,20%</td>
+													<td>0,20%</td>
+													<td>0,20%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">91-180</td>
+													<td>5,00%</td>
+													<td>5,25%</td>
+													<td>5,50%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">181-270</td>
+													<td>5,50%</td>
+													<td>5,75%</td>
+													<td>6,00%</td>
+												</tr>
+												<tr class="deposit-scale__table-row">
+													<td  class="red">271-366</td>
+													<td>6,00%</td>
+													<td>6,25%</td>
+													<td>6,50%</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="deposit-scale__bottom">* сумма, размещаемая клиентом на счет в день открытия вклада/сумма, находящаяся на счете в день пролонгации вклада</div>
+							</div>
+						</div>
+
 					</div>
 					<div class="deposit-info__right">
 						<div class="deposit-open deposit-info__block">
@@ -240,7 +368,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="grid__inner">
+				<div class="grid__inner no-mob-block">
 					<div class="deposit-scale">
 						<h3>Шкала процентных ставок</h3>
 						<div class="deposit-table__wrap">

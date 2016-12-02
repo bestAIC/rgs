@@ -57,6 +57,7 @@ app.init = function () {
 	app.questions();
 	app.initNav();
 	app.calc();
+	app.initTabs();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -88,6 +89,26 @@ app.initNav = function () {
 	$('html').on('click.nav','[data-nav-btn]',function(){
 		var $self = $(this);
 		$self.toggleClass('_active').closest('[data-nav-block]').find('[data-nav-content]').slideToggle(500);
+	});
+};
+app.initTabs = function () {
+	var self = this,
+			$closest = null,
+			$tabs = null,
+			$content = null
+
+		;
+	$('html').on('click.tabs','[data-tabs-tab]',function(){
+		var $self = $(this);
+		if(!$self.hasClass('_active')){
+			$closest = $self.closest('[data-tabs]');
+			$tabs = $closest.find('[data-tabs-tab]');
+			$content = $closest.find('[data-tabs-content]');
+
+			$tabs.removeClass('_active');
+			$self.addClass('_active');
+			$content.hide().filter('[data-tabs-content="'+$self.data('tabsTab')+'"]').show();
+		}
 	});
 };
 app.mobMenu = function () {
