@@ -71,58 +71,25 @@
 		</div>
 		<div class="b-blocks">
 			<?include "../includes/calc.php"?>
+			<div class="promo-banner no-desktop-block" style="background-image: url('/static/theme/images/inner/promo-banner.jpg')">
+				<div class="promo-banner__inner">
+					<div class="promo-banner__subtitle">АКЦИЯ</div>
+					<div class="promo-banner__title">Переведите пенсию в РОСГОССТРАХ БАНК
+						и&nbsp;получите +0,3% годовых к ставке вклада «Пенсионный доход».</div>
+					<div class="promo-banner__text">Предложение действует в период с 17.09.2016г. по 17.12.2016г.</div>
+				</div>
+			</div>
 			<div class="b-block animation__top deposit-info" data-animation>
 				<div class="grid__inner">
-					<div class="deposit-info__left">
-						<div class="deposit-info__block">
-							<h3>Условия доходности по вкладу</h3>
-							<div class="deposit-table__wrap">
-								<table class="deposit-table">
-									<tr>
-										<th class="is-mob-block" colspan="2">
-											Срок вклада<br/>
-											(дней)
-										</th>
-										<th class="no-mob-block">
-											Срок вклада<br/>
-											(дней)
-										</th>
-										<th  class="no-mob-block"></th>
-										<th>91-180</th>
-										<th>181-366</th>
-										<th>367-732</th>
-									</tr>
-									<tr class="deposit-table__titles">
-										<td class="is-mob-block" colspan="2">ВАЛЮТА ВКЛАДА</td>
-										<td class="no-mob-block center">ВАЛЮТА ВКЛАДА</td>
-										<td class="no-mob-block">СУММА ВКЛАДА</td>
-										<td colspan="3" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
-									</tr>
-									<tr class="deposit-table__row">
-										<td class="center">₽</td>
-										<td >от 5 000</td>
-										<td class="center bold">7,70</td>
-										<td class="center bold">8,00</td>
-										<td class="center bold">7,00</td>
-									</tr>
-									<tr class="deposit-table__row">
-										<td class="center">$</td>
-										<td>от 100</td>
-										<td class="center bold">0,75</td>
-										<td class="center bold">1,80</td>
-										<td class="center bold">2,00</td>
-									</tr>
-									<tr class="deposit-table__row">
-										<td class="center">€</td>
-										<td>от 100</td>
-										<td class="center bold">0,30</td>
-										<td class="center bold">0,60</td>
-										<td class="center bold">0,90</td>
-									</tr>
-								</table>
-							</div>
-
+					<div class="promo-banner is-desktop-block" style="background-image: url('/static/theme/images/inner/promo-banner.jpg')">
+						<div class="promo-banner__inner">
+							<div class="promo-banner__subtitle">АКЦИЯ</div>
+							<div class="promo-banner__title">Переведите пенсию в РОСГОССТРАХ БАНК
+								и&nbsp;получите +0,3% годовых к ставке вклада «Пенсионный доход».</div>
+							<div class="promo-banner__text">Предложение действует в период с 17.09.2016г. по 17.12.2016г.</div>
 						</div>
+					</div>
+					<div class="deposit-info__left">
 						<div class="deposit-info__block">
 							<h3>Условия доходности по вкладу</h3>
 							<div class="deposit-table__wrap">
@@ -140,7 +107,7 @@
 										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">₽</td>
+										<td class="center">P</td>
 										<td class="center bold">7,70</td>
 										<td class="center bold">8,00</td>
 									</tr>
@@ -272,12 +239,38 @@
 										</div>
 									</div>
 								</div>
-								<div class="deposit-open__method">
-									<div class="deposit-open__method-title"><a href="#">В Интернет-банке</a></div>
-									<div class="deposit-open__method-content">
-										Вы можете открыть вклад в системе <a href="#">"Интернет-банк"</a>, если&nbsp;у Вас оформлен доступ в систему
+							</div>
+						</div>
+						<div class="deposit-documents deposit-info__block">
+							<h3>Документы для оформления</h3>
+							<div class="deposit-documents__content">
+								<div class="deposit-documents__title">
+									Могут предъявляться следующие<br />
+									виды документов:
+								</div>
+								<div class="deposit-documents__blocks">
+									<div class="deposit-documents__block">
+										<div>Удостоверения о назначении пенсии</div>
+										<ul>
+											<li>по возрасту;</li>
+											<li>по инвалидности;</li>
+											<li>по случаю потери кормильца;</li>
+											<li>по выслуге лет;</li>
+											<li>социальной пенсии.</li>
+										</ul>
+									</div>
+									<div class="deposit-documents__block">
+										<div>Удостоверение ветерана</div>
+										<ul>
+											<li>Великой Отечественной войны;</li>
+											<li>труда;</li>
+											<li>боевых действий на территории СССР, на территории РФ и территориях других государств;</li>
+											<li>военной службы;</li>
+											<li>государственной службы.</li>
+										</ul>
 									</div>
 								</div>
+								<div>Справка о получении пенсии с реквизитами ПФ РФ, заверенная печатью ПФ РФ</div>
 							</div>
 						</div>
 					</div>

@@ -1,11 +1,11 @@
 .deposit{
 	&__text{
 		color: #919599;
-		font-size: 12px;
+		font-size: 12/@rem;
 		font-weight: 400;
-		letter-spacing: 0.04px;
-		line-height: 20px;
-		padding-top: 36px;
+		letter-spacing: 0.04/@rem;
+		line-height: 20/@rem;
+		padding-top: 36/@rem;
 		p{
 			margin: 0;
 			&+p{
@@ -28,6 +28,52 @@
 		&+&{
 			margin-top: 71/@rem;
 		}
+	}
+}
+.deposit-documents{
+	&__content{
+		border: 1px solid @cBorder;
+		letter-spacing: -0.19/@rem;
+		margin-top: 33/@rem;
+		padding: 22/@rem 30/@rem 49/@rem 39/@rem;
+	}
+	&__inner{
+
+	}
+	&__blocks{
+
+	}
+	&__block{
+		ul{
+			list-style: none;
+			padding-left: 0;
+			margin-top: 20/@rem;
+			margin-bottom: 30/@rem;
+			li{
+				position: relative;
+				padding-left: 3rem;
+				&:before{
+					content: '';
+					position: absolute;
+					left: 4/@rem;
+					top: 1.1rem;
+					width: 1rem;
+					height: 1px;
+					background-color: @cGold;
+
+				}
+			}
+		}
+	}
+	&__title{
+		font-size: 16/@rem;
+		font-weight: 600;
+		line-height: 25/@rem;
+		letter-spacing: 0;
+		margin-bottom: 28/@rem;
+	}
+	&__text{
+
 	}
 }
 .deposit-table{
@@ -267,13 +313,42 @@
 		}
 	}
 }
+
 .tablet.portrait{
 	.deposit__text{
-		padding-top: 26px;
+		padding-top: 26/@rem;
 		p{
 			&+p{
 				margin-top: 2rem;
 			}
+		}
+	}
+	.deposit-documents{
+		&__content{
+			padding: 21/@rem 30/@rem 49/@rem 30/@rem;
+		}
+		&__inner{
+
+		}
+		&__blocks{
+			.clearfix;
+		}
+		&__block{
+			float: left;
+			width: 48%;
+			&:nth-child(2n){
+				margin-left: 4%;
+			}
+		}
+		&__title{
+			font-size: 16/@rem;
+			font-weight: 600;
+			line-height: 25/@rem;
+			letter-spacing: 0;
+			margin-bottom: 28/@rem;
+		}
+		&__text{
+
 		}
 	}
 	.deposit-info{
@@ -331,7 +406,7 @@
 .mobile{
 	.deposit{
 		&__text{
-			padding-top: 18px;
+			padding-top: 18/@rem;
 			p{
 				&+p{
 					margin-top: 1.6rem;
@@ -344,6 +419,11 @@
 		.grid__inner{
 			padding-right: 2rem;
 			padding-left: 2rem;
+		}
+	}
+	.deposit-documents{
+		&__content{
+			padding: 22/@rem 30/@rem 40/@rem 30/@rem;
 		}
 	}
 	.deposit-info{

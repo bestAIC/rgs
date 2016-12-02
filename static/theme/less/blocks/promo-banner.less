@@ -1,0 +1,51 @@
+.promo-banner{
+	.color(#fff);
+	display: block;
+	margin-top: 16/@rem;
+	margin-bottom: 34/@rem;
+	background: none no-repeat center;
+	background-size: cover;
+	&__inner{
+		padding: 30/@rem 50% 32/@rem 40/@rem;
+	}
+	&__subtitle{
+		text-transform: uppercase;
+		font-size: 20/@rem;
+		letter-spacing: 0.71/@rem;
+		line-height: 25/@rem;
+	}
+	&__title{
+		font-size: 22/@rem;
+		font-weight: 600;
+		line-height: 30/@rem;
+		margin-top: 11/@rem;
+	}
+	&__text{
+		font-size: 14/@rem;
+		font-weight: 400;
+		line-height: 19/@rem;
+		margin-top: 33/@rem;
+	}
+}
+.tablet.portrait{
+	.promo-banner{
+		margin: 0;
+		&__inner{
+			padding-right: 20%;
+		}
+	}
+}
+.mobile{
+	.promo-banner{
+		min-height: 44rem;
+		margin: 0;
+		&__inner{
+			padding: 30/@rem 3rem 32/@rem 18/@rem;
+		}
+		&__title{
+			font-size: 20/@rem;
+			line-height: 28/@rem;
+			margin-top: 14/@rem;
+		}
+	}
+}
