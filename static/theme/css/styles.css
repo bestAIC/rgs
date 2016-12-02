@@ -3539,6 +3539,20 @@ h3 {
   width: 100%;
   margin-top: 2rem;
 }
+.deposit__text {
+  color: #919599;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.04px;
+  line-height: 20px;
+  padding-top: 36px;
+}
+.deposit__text p {
+  margin: 0;
+}
+.deposit__text p + p {
+  margin-top: 3rem;
+}
 .deposit-info {
   *zoom: 1;
 }
@@ -3793,6 +3807,12 @@ h3 {
 .deposit-doc__content ul li + li {
   margin-top: 1.5rem;
 }
+.tablet.portrait .deposit__text {
+  padding-top: 26px;
+}
+.tablet.portrait .deposit__text p + p {
+  margin-top: 2rem;
+}
 .tablet.portrait .deposit-info__left {
   float: none;
   width: 100%;
@@ -3833,6 +3853,15 @@ h3 {
 }
 .tablet.portrait .deposit-doc__content {
   padding: 4rem 6rem 2.7rem 4rem;
+}
+.mobile .deposit__text {
+  padding-top: 18px;
+}
+.mobile .deposit__text p + p {
+  margin-top: 1.6rem;
+}
+.mobile .deposit .inner__info {
+  padding-bottom: 0;
 }
 .mobile .deposit .grid__inner {
   padding-right: 2rem;
@@ -3945,15 +3974,21 @@ h3 {
 .inner__info-benefits .files {
   margin-top: 3rem;
 }
+.inner__info-benefits-text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.19px;
+  line-height: 25px;
+}
 .inner__info-benefits-title {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3rem;
   color: #3e3e3e;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .inner__info-benefits .b-list {
-  margin: 3rem 0;
+  margin: 4rem 0 3rem;
 }
 .inner__info-benefits-btn {
   margin-top: 5.5rem;
@@ -4043,17 +4078,53 @@ h3 {
   float: none;
   width: 100%;
 }
-.tablet.portrait .inner__info-benefits-title {
-  margin-bottom: 2.4rem;
-}
 .tablet.portrait .inner__info-benefits .b-list {
-  margin: 2rem 0;
+  margin: 2.4rem 0 2rem;
 }
 .tablet.portrait .inner__info-benefits-btn {
   margin-top: 4.3rem;
 }
 .tablet.portrait .numerals {
   margin-bottom: 3.2rem;
+}
+.tablet.portrait .numerals._only-big {
+  margin-bottom: 5.4rem;
+}
+.tablet.portrait .numerals._only-big .numerals__block {
+  width: 100%;
+  *zoom: 1;
+}
+.tablet.portrait .numerals._only-big .numerals__block:before,
+.tablet.portrait .numerals._only-big .numerals__block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .numerals._only-big .numerals__block:after {
+  clear: both;
+}
+.tablet.portrait .numerals._only-big .numerals__item-val {
+  float: left;
+  width: 50%;
+}
+.tablet.portrait .numerals._only-big .numerals__item-dash {
+  display: none;
+}
+.tablet.portrait .numerals._only-big .numerals__item-text {
+  float: right;
+  width: 48%;
+  padding-top: 2.8rem;
+  position: relative;
+  margin-top: 1.4rem;
+}
+.tablet.portrait .numerals._only-big .numerals__item-text:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 7rem;
+  background-color: #cca266;
 }
 .tablet.portrait .numerals__block {
   float: left;
@@ -4083,11 +4154,11 @@ h3 {
   padding: 0 2rem;
 }
 .mobile .inner__banner-title {
-  font-size: 4rem;
-  font-weight: 700;
-  letter-spacing: -0.036rem;
-  line-height: 4.6rem;
   margin-bottom: 1.4rem;
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -0.031rem;
+  line-height: 4rem;
 }
 .mobile .inner__info {
   padding-top: 6rem;
@@ -4108,10 +4179,9 @@ h3 {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 2.6rem;
-  margin-bottom: 1.9rem;
 }
 .mobile .inner__info-benefits .b-list {
-  margin: 1.5rem 0;
+  margin: 1.9rem 0 1.5rem;
 }
 .mobile .inner__info-benefits-btn {
   margin-top: 4.5rem;

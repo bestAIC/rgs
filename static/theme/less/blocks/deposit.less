@@ -1,3 +1,19 @@
+.deposit{
+	&__text{
+		color: #919599;
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 0.04px;
+		line-height: 20px;
+		padding-top: 36px;
+		p{
+			margin: 0;
+			&+p{
+				margin-top: 3rem;
+			}
+		}
+	}
+}
 .deposit-info{
 	.clearfix;
 	&__left{
@@ -235,6 +251,14 @@
 	}
 }
 .tablet.portrait{
+	.deposit__text{
+		padding-top: 26px;
+		p{
+			&+p{
+				margin-top: 2rem;
+			}
+		}
+	}
 	.deposit-info{
 		&__left{
 			float: none;
@@ -289,6 +313,17 @@
 }
 .mobile{
 	.deposit{
+		&__text{
+			padding-top: 18px;
+			p{
+				&+p{
+					margin-top: 1.6rem;
+				}
+			}
+		}
+		.inner__info{
+			padding-bottom: 0;
+		}
 		.grid__inner{
 			padding-right: 2rem;
 			padding-left: 2rem;
