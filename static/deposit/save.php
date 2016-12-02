@@ -260,7 +260,7 @@
 									<th>271-366</th>
 								</tr>
 								<tr class="deposit-table__row _grey">
-									<td class="bold">Российский рубль, P</td>
+									<td class="bold"><span class="is-desktop-block">Российский рубль, </span>P</td>
 									<td >от 5 000 до 100 000</td>
 									<td class="center bold">0,10%</td>
 									<td class="center bold">5,00%</td>
@@ -284,7 +284,7 @@
 									<td class="center bold">6,00%</td>
 								</tr>
 								<tr class="deposit-table__row">
-									<td class="bold">Доллар США, $</td>
+									<td class="bold"><span class="is-desktop-block">Доллар США, </span>$</td>
 									<td >от 100 до 3 500</td>
 									<td class="center bold">0,10%</td>
 									<td class="center bold">5,00%</td>
@@ -308,7 +308,7 @@
 									<td class="center bold">6,00%</td>
 								</tr>
 								<tr class="deposit-table__row _grey">
-									<td class="bold">Евро, €</td>
+									<td class="bold"><span class="is-desktop-block">Евро, </span>€</td>
 									<td >от 100 до 3 500</td>
 									<td class="center bold">0,10%</td>
 									<td class="center bold">5,00%</td>
