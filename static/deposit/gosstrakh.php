@@ -78,8 +78,7 @@
 								<table class="deposit-table">
 									<tr>
 										<th class="is-mob-block" colspan="2">
-											Срок вклада<br/>
-											(дней)
+											Срок вклада (дней)
 										</th>
 										<th class="no-mob-block">
 											Срок вклада<br/>
