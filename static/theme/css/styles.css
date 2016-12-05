@@ -3362,7 +3362,7 @@ h3 {
   background-color: white;
   border-radius: 0.2rem;
   box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
-  padding: 3rem 5rem 3rem 4rem;
+  padding: 3rem 4rem 3rem 4rem;
 }
 .deposit-calc__info-blocks {
   padding-left: 1rem;
@@ -3393,9 +3393,9 @@ h3 {
 }
 .ui-slider {
   border: 0;
-  height: 0.4rem;
+  height: 4px;
   background-color: #f2f4f5;
-  border-radius: 0.2rem;
+  border-radius: 2px;
 }
 .ui-widget-header {
   background: #cca266;
@@ -3403,13 +3403,13 @@ h3 {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 24px;
+  height: 24px;
   background: #cca266;
-  border: 0.6rem solid #fff;
+  border: 6px  solid #fff;
   border-radius: 50%;
-  margin-left: -1.2rem;
-  top: -1rem;
+  margin-left: -12px;
+  top: -10px;
   box-shadow: 0 0 1.5rem rgba(211, 211, 211, 0.5);
   cursor: pointer;
 }
