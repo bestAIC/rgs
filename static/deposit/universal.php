@@ -80,8 +80,7 @@
 								<table class="deposit-table _rowspan-table">
 									<tr>
 										<th class="is-mob-block" colspan="2">
-											Срок вклада<br/>
-											(дней)
+											Срок вклада (дней)
 										</th>
 										<th class="no-mob-block">
 											Срок вклада<br/>
@@ -94,10 +93,10 @@
 										<td class="is-mob-block" colspan="2">ВАЛЮТА ВКЛАДА</td>
 										<td class="no-mob-block center">ВАЛЮТА ВКЛАДА</td>
 										<td class="no-mob-block">СУММА ВКЛАДА</td>
-										<td class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
+										<td class="center">ГОДОВАЯ <span class="no-mob-block">ПРОЦЕНТНАЯ</span> СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row _grey">
-										<td class="center" rowspan="2">P</td>
+										<td class="center bold" rowspan="2"><span class="rub"></span></td>
 										<td >от 30 000 до 299 999</td>
 										<td class="center bold">7,00</td>
 									</tr>
@@ -106,7 +105,7 @@
 										<td class="center bold">7,20</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center" rowspan="2">$</td>
+										<td class="center bold" rowspan="2">$</td>
 										<td>от 500 до 4 999</td>
 										<td class="center bold">1,20</td>
 									</tr>
@@ -115,7 +114,7 @@
 										<td class="center bold">1,30</td>
 									</tr>
 									<tr class="deposit-table__row _grey">
-										<td class="center" rowspan="2">€</td>
+										<td class="center bold" rowspan="2">€</td>
 										<td>от 500 до 4 999</td>
 										<td class="center bold">0,40</td>
 									</tr>
@@ -266,6 +265,7 @@
 					<div class="deposit-doc" data-nav-block>
 						<a href="javascript:void(0);" data-nav-btn class="deposit-doc__title">Памятка вкладчика</a>
 						<div class="deposit-doc__content hide" data-nav-content>
+							<img align="right" class="top-img" src="/static/theme/images/inner/insured.jpg" alt="">
 							<h3>Государственное страхование вкладов</h3>
 							<p>
 								РОСГОССТРАХ БАНК входит в государственную систему страхования вкладов (№279 в реестре банков

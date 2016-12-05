@@ -107,7 +107,7 @@
 										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">P</td>
+										<td class="center"><span class="rub"></span></td>
 										<td class="center bold">7,70</td>
 										<td class="center bold">8,00</td>
 									</tr>
@@ -285,6 +285,7 @@
 					<div class="deposit-doc" data-nav-block>
 						<a href="javascript:void(0);" data-nav-btn class="deposit-doc__title">Памятка вкладчика</a>
 						<div class="deposit-doc__content hide" data-nav-content>
+							<img align="right" class="top-img" src="/static/theme/images/inner/insured.jpg" alt="">
 							<h3>Государственное страхование вкладов</h3>
 							<p>
 								РОСГОССТРАХ БАНК входит в государственную систему страхования вкладов (№279 в реестре банков

@@ -109,6 +109,16 @@ a {
 .red{
 	color: @cRed;
 }
+.rub{
+	font-family:@fRoboto!important;
+
+	&:before {
+		content: "₽";
+	}
+	&._medium{
+		font-weight: 500;
+	}
+}
 .hide-block{
 	position: absolute;
 	left: -9999px;

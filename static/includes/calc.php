@@ -16,7 +16,7 @@
 					<div class="deposit-calc__option-fields">
 						<div class="deposit-calc__option-select">
 							<select data-calc-slider-select data-chosen>
-								<option value="rub">P</option>
+								<option value="rub">₽</option>
 								<option value="dollar">$</option>
 								<option value="euro">€</option>
 							</select>
@@ -57,11 +57,11 @@
 					</div>
 					<div class="deposit-calc__info-block">
 						<div class="deposit-calc__info-block-title">СУММА В КОНЦЕ ВКЛАДА</div>
-						<div class="deposit-calc__info-block-text">54 524 P</div>
+						<div class="deposit-calc__info-block-text">54 524 <span class="rub _medium"></span></div>
 					</div>
 					<div class="deposit-calc__info-block">
 						<div class="deposit-calc__info-block-title">ДОХОД ПО ВКЛАДУ</div>
-						<div class="deposit-calc__info-block-text">4 524 P</div>
+						<div class="deposit-calc__info-block-text">4 524 <span class="rub _medium"></span></div>
 					</div>
 				</div>
 				<a href="#" class="btn _red deposit-calc__info-btn">ОТКРЫТЬ ВКЛАД</a>

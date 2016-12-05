@@ -89,6 +89,9 @@
 	&__table{
 		border-top: 1px solid @cBorder;
 		border-bottom: 1px solid @cBorder;
+		table{
+			table-layout: fixed;
+		}
 		td{
 			padding-left: 1rem;
 			padding-right: 1rem;
@@ -124,6 +127,9 @@
 				padding-top: 1rem;
 				padding-bottom: 1rem;
 				font-weight: 600;
+				&:first-child{
+					color: @cRed;
+				}
 			}
 		}
 		table{
@@ -361,6 +367,7 @@
 		&._active{
 			&:after{
 				background-image: url('@{pathToImg}icons/close_small.svg');
+				background-size: contain;
 			}
 		}
 		&:after{
@@ -371,7 +378,8 @@
 			width: 1.2rem;
 			height: 1rem;
 			margin-top: -0.5rem;
-			.background('@{pathToImg}icons/arr_right_long_gold.svg');
+			.background('@{pathToImg}icons/select.svg');
+			background-size: 7/@rem 4/@rem;
 		}
 	}
 	&__content{
@@ -379,6 +387,14 @@
 		font-size: 16/@rem;
 		line-height: 25/@rem;
 		border-top: 1px solid #f2f4f5;
+		.top-img{
+			margin: 1rem 0 1rem 1rem;
+			max-width: 300/@rem;
+			height: auto;
+			&+h3{
+				margin-top: 0;
+			}
+		}
 		.questions__items{
 			padding: 0.5rem 3.5rem;
 			ul{

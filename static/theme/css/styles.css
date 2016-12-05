@@ -544,6 +544,15 @@ a:focus {
 .red {
   color: #b31b2c;
 }
+.rub {
+  font-family: 'Roboto', sans-serif !important;
+}
+.rub:before {
+  content: "₽";
+}
+.rub._medium {
+  font-weight: 500;
+}
 .hide-block {
   position: absolute;
   left: -9999px;
@@ -3301,6 +3310,11 @@ h3 {
   right: 0;
   bottom: 0;
   width: 6.3rem;
+  font-family: 'Roboto', sans-serif !important;
+}
+.deposit-calc__option-select .chosen-container-single .chosen-single {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 500;
 }
 .deposit-calc__option-select select {
   font-size: 2rem;
@@ -3657,6 +3671,9 @@ h3 {
   border-top: 1px solid #DEDFE0;
   border-bottom: 1px solid #DEDFE0;
 }
+.deposit-scale__table table {
+  table-layout: fixed;
+}
 .deposit-scale__table td {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3693,6 +3710,9 @@ h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 600;
+}
+.deposit-scale__table-row td:first-child {
+  color: #b31b2c;
 }
 .deposit-scale__table table {
   width: 100%;
@@ -3915,6 +3935,7 @@ h3 {
 }
 .deposit-doc__title._active:after {
   background-image: url('../images/icons/close_small.svg');
+  background-size: contain;
 }
 .deposit-doc__title:after {
   content: '';
@@ -3924,14 +3945,23 @@ h3 {
   width: 1.2rem;
   height: 1rem;
   margin-top: -0.5rem;
-  background: url('../images/icons/arr_right_long_gold.svg') no-repeat center;
+  background: url('../images/icons/select.svg') no-repeat center;
   background-size: contain;
+  background-size: 0.7rem 0.4rem;
 }
 .deposit-doc__content {
   padding: 5.3rem 7rem 6.4rem;
   font-size: 1.6rem;
   line-height: 2.5rem;
   border-top: 1px solid #f2f4f5;
+}
+.deposit-doc__content .top-img {
+  margin: 1rem 0 1rem 1rem;
+  max-width: 30rem;
+  height: auto;
+}
+.deposit-doc__content .top-img + h3 {
+  margin-top: 0;
 }
 .deposit-doc__content .questions__items {
   padding: 0.5rem 3.5rem;
