@@ -746,6 +746,7 @@ h3 {
 }
 .tablet.portrait .b-blocks {
   padding-top: 3.2rem;
+  padding-bottom: 1.2rem;
 }
 .tablet.portrait .b-blocks .b-block {
   padding-top: 1.2rem;
@@ -4035,11 +4036,11 @@ h3 {
   width: 43.5%;
 }
 .tablet.portrait .deposit-open__method {
-  padding: 2.2rem 3.3rem 3.5rem 3.9rem;
+  padding: 3.2rem 3rem 3.5rem;
 }
 .tablet.portrait .deposit-open__step {
-  width: 20rem;
-  margin-right: 2rem;
+  width: 20.5rem;
+  margin-right: 1.8rem;
 }
 .tablet.portrait .deposit-open__step:nth-child(2n) {
   margin-left: 0;
