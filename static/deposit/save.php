@@ -78,6 +78,7 @@
 									<tr>
 										<th class="is-mob-block" colspan="2">
 											Срок вклада (дней)
+											Срок вклада (дней)
 										</th>
 										<th class="no-mob-block">
 											Срок вклада<br/>
