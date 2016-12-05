@@ -3739,7 +3739,8 @@ h3 {
 }
 .deposit-table {
   width: 100%;
-  border-top: 1px solid #f2f4f5;
+  border-top: 1px solid #DEDFE0;
+  border-bottom: 1px solid #DEDFE0;
 }
 .deposit-table._rowspan-table .deposit-table__row:nth-child(2n+1) {
   background-color: #fff;
@@ -3761,8 +3762,8 @@ h3 {
   padding-left: 2rem;
 }
 .deposit-table__titles td {
-  border-top: 1px solid #f2f4f5;
-  border-bottom: 1px solid #f2f4f5;
+  border-top: 1px solid #DEDFE0;
+  border-bottom: 1px solid #DEDFE0;
   color: #AAAEB2;
   font-size: 1rem;
   font-weight: 600;
@@ -4112,22 +4113,19 @@ h3 {
   margin-top: 0;
 }
 .mobile .deposit-open__method {
-  padding: 2.2rem 2rem 3.9rem 2rem;
+  padding: 2.4rem 3rem 2.6rem;
 }
 .mobile .deposit-open__method + .mobile .deposit-open__method {
   margin-top: 2rem;
 }
-.mobile .deposit-open__method-content {
-  margin-top: 2.8rem;
-}
 .mobile .deposit-open__steps {
   padding-top: 0;
+  margin-top: 2.3rem;
   margin-bottom: -2rem;
 }
 .mobile .deposit-open__step {
   display: block;
   width: 100%;
-  padding-left: 4rem;
   margin-bottom: 2rem;
 }
 .mobile .deposit-open__step:nth-child(2n) {
@@ -4444,6 +4442,7 @@ h3 {
 }
 .mobile .inner__info-benefits-btn {
   margin-top: 4.5rem;
+  text-align: center;
 }
 .mobile .numerals {
   margin-bottom: 3.3rem;

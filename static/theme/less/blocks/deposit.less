@@ -190,7 +190,9 @@
 }
 .deposit-table{
 	width: 100%;
-	border-top: 1px solid #f2f4f5;
+	//border-top: 1px solid #f2f4f5;
+	border-top: 1px solid @cBorder;
+	border-bottom: 1px solid @cBorder;
 	&._rowspan-table{
 		.deposit-table__row{
 			&:nth-child(2n+1){
@@ -217,8 +219,8 @@
 	}
 	&__titles{
 		td{
-			border-top: 1px solid #f2f4f5;
-			border-bottom: 1px solid #f2f4f5;
+			border-top: 1px solid @cBorder;
+			border-bottom: 1px solid @cBorder;
 			color: @cGray;
 			font-size: 10/@rem;
 			font-weight: 600;
@@ -591,22 +593,23 @@
 			margin-top: 0;
 		}
 		&__method{
-			padding: 2.2rem 2rem 3.9rem 2rem;
+			padding: 2.4rem 3rem 2.6rem;
 			&+&{
 				margin-top: 2rem;
 			}
 			&-content{
-				margin-top: 2.8rem;
+				//margin-top: 2.8rem;
 			}
 		}
 		&__steps{
 			padding-top: 0;
+			margin-top: 2.3rem;
 			margin-bottom: -2rem;
 		}
 		&__step{
 			display: block;
 			width: 100%;
-			padding-left: 4rem;
+			//padding-left: 4rem;
 			margin-bottom: 2rem;
 			&:nth-child(2n){
 				width: 100%;
