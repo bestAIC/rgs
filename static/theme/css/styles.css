@@ -3834,7 +3834,7 @@ h3 {
 .deposit-open__method {
   border: 1px solid #DEDFE0;
   border-radius: 0.2rem;
-  padding: 2.2rem 3.5rem 3.5rem 3.9rem;
+  padding: 2.5rem 3rem 3rem;
 }
 .deposit-open__method + .deposit-open__method {
   margin-top: 2rem;
@@ -3861,11 +3861,10 @@ h3 {
   background-size: contain;
 }
 .deposit-open__method-content {
-  margin-top: 2rem;
+  margin-top: 1.9rem;
   letter-spacing: -0.019rem;
 }
 .deposit-open__steps {
-  padding-top: 2.3rem;
   margin-bottom: -2.6rem;
 }
 .deposit-open__step {
@@ -3873,12 +3872,12 @@ h3 {
   display: inline-block;
   vertical-align: top;
   width: 50%;
-  padding-left: 3rem;
+  padding-left: 3.6rem;
   margin-bottom: 4rem;
 }
 .deposit-open__step:nth-child(2n) {
-  width: 44%;
-  margin-left: 6%;
+  width: 45%;
+  margin-left: 5%;
 }
 .deposit-open__step-num {
   position: absolute;

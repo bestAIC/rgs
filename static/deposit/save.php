@@ -361,7 +361,7 @@
 								<div class="deposit-open__method">
 									<div class="deposit-open__method-title"><a href="#">В Интернет-банке</a></div>
 									<div class="deposit-open__method-content">
-										Вы можете открыть вклад в системе <a href="#">"Интернет-банк"</a>, если&nbsp;у Вас оформлен доступ в систему
+										Вы можете открыть вклад в системе «Интернет-банк», если&nbsp;у Вас оформлен доступ в систему
 									</div>
 								</div>
 							</div>
