@@ -823,6 +823,28 @@ h4 {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+.b-table table {
+  width: 100%;
+  color: #3e3e3e;
+}
+.b-table td {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  border-bottom: 1px solid #DEDFE0;
+  padding: 2.3rem 2rem;
+}
+.b-table__titles td {
+  border-top: 1px solid #DEDFE0;
+  color: #AAAEB2;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
 .animation__top {
   opacity: 0;
   transform: translate(0, 10rem);
@@ -3603,6 +3625,17 @@ h4 {
   background-size: cover;
   margin-bottom: 4rem;
 }
+.deposit__payments-active-title {
+  color: #3e3e3e;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  margin-top: 2.9rem;
+  margin-bottom: 1.4rem;
+}
+.deposit__payments-blocks {
+  padding-bottom: 7rem;
+}
 .deposit-info {
   *zoom: 1;
 }
@@ -3622,6 +3655,9 @@ h4 {
 .deposit-info__right {
   float: right;
   width: 47rem;
+}
+.deposit-info__block._blocks h3 {
+  margin-top: 0;
 }
 .deposit-info__block + .deposit-info__block {
   margin-top: 7.1rem;
@@ -3765,6 +3801,13 @@ h4 {
   letter-spacing: -0.019rem;
   margin-top: 3.3rem;
   padding: 2.2rem 3rem 4.9rem 3.9rem;
+}
+.deposit-documents__block._contacts ul {
+  margin-bottom: 0;
+  margin-top: 4.3rem;
+}
+.deposit-documents__block._contacts ul li + li {
+  margin-top: 3rem;
 }
 .deposit-documents__block ul {
   list-style: none;

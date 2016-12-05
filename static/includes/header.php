@@ -168,7 +168,7 @@
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">Выплаты вкладчикам других банков</a>
+									<a href="/static/deposit/payments.php" class="b-menu__submenu-link">Выплаты вкладчикам других банков</a>
 								</div>
 								<div class="b-menu__submenu-item">
 									<a href="#" class="b-menu__submenu-link">Компенсационные выплаты</a>

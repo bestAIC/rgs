@@ -19,6 +19,22 @@
 		background-size: cover;
 		margin-bottom: 4rem;
 	}
+	&__payments{
+		&-active{
+			&-title{
+				color: #3e3e3e;
+				font-size: 20/@rem;
+				font-weight: 600;
+				line-height: 27/@rem;
+				margin-top: 29/@rem;
+				margin-bottom: 14/@rem;
+			}
+		}
+		&-blocks{
+			padding-bottom: 7rem;
+		}
+	}
+
 }
 .deposit-info{
 	.clearfix;
@@ -31,6 +47,11 @@
 		width: 470/@rem;
 	}
 	&__block{
+		&._blocks{
+			h3{
+				margin-top: 0;
+			}
+		}
 		&+&{
 			margin-top: 71/@rem;
 		}
@@ -168,6 +189,17 @@
 
 	}
 	&__block{
+		&._contacts{
+			ul{
+				margin-bottom: 0;
+				margin-top: 4.3rem;
+				li{
+					&+li{
+						margin-top: 3rem;
+					}
+				}
+			}
+		}
 		ul{
 			list-style: none;
 			padding-left: 0;
