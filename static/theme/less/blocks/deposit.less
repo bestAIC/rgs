@@ -488,6 +488,25 @@
 			height: 17rem;
 			margin-top: -2.4rem;
 		}
+		&__payments{
+			&-blocks{
+				padding-bottom: 7rem;
+			}
+			&-finished{
+				td{
+					padding-left: 0;
+					padding-right: 1rem;
+				}
+				&-col{
+					&-2{
+						width: 43.5%;
+						td{
+							padding-right: 0;
+						}
+					}
+				}
+			}
+		}
 	}
 	.deposit__text{
 		padding-top: 26/@rem;
@@ -516,6 +535,18 @@
 		&__block{
 			float: left;
 			width: 48%;
+			&._contacts{
+				float: none;
+				width: 100%;
+				ul{
+					margin-top: 0;
+					li{
+						&+li{
+							margin-top: 2rem;
+						}
+					}
+				}
+			}
 			&:nth-child(2n){
 				margin-left: 4%;
 			}

@@ -123,8 +123,8 @@
 						<div class="b-table">
 							<table>
 								<tr class="b-table__titles">
-									<td>НАИМЕНОВАНИЕ БАНКА</td>
-									<td>ПЕРИОД ВЫПЛАТ</td>
+									<td class="deposit__payments-finished-col-1">НАИМЕНОВАНИЕ БАНКА</td>
+									<td class="deposit__payments-finished-col-2">ПЕРИОД ВЫПЛАТ</td>
 								</tr>
 								<tr>
 									<td>Европейский Индустриальный Банк (АКБ «ЕИБ» ЗАО)</td>
