@@ -156,7 +156,7 @@
 								<a href="/static/inner.php" class="b-menu__item-link">Пенсионная программа</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Текущие счета</a>
+								<a href="/static/deposit/accounts.php" class="b-menu__item-link">Текущие счета</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Сейфовые ячейки</a>
