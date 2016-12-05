@@ -401,6 +401,23 @@ input[type='checkbox'][disabled] + .ideal-check {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
+.mobile select,
+.tablet select {
+  -webkit-appearance: none;
+  background: url('../images/icons/select.svg') no-repeat calc(100% - 1.9rem) center #fff;
+  background-size: 0.7rem 0.4rem;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+.mobile select::-ms-expand,
+.tablet select::-ms-expand {
+  display: none;
+}
 .chosen-container {
   font-size: 1.6rem;
 }
@@ -3497,12 +3514,8 @@ h3 {
   position: relative;
   margin-top: 2.2rem;
 }
-.mobile .deposit-calc__option-select select {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: -0.028rem;
-  border-color: #e8e8e8;
-  padding-right: 1rem;
+.mobile .deposit-calc__option-select {
+  border-radius: 0;
 }
 .mobile .deposit-calc__option-block {
   margin-right: 0;
@@ -4826,21 +4839,6 @@ h3 {
 .tablet.portrait .card__fields-col._2 {
   width: 11.1rem;
   margin-left: 1rem;
-}
-.footer select {
-  -webkit-appearance: none;
-  background: url('../images/icons/select.svg') no-repeat calc(100% - 1.9rem) center #fff;
-  background-size: 0.7rem 0.4rem;
-  /* for FF */
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  /* for IE */
-  -ms-appearance: none;
-  appearance: none!important;
-}
-.footer select::-ms-expand {
-  display: none;
 }
 .footer a {
   color: #3e3e3e;
