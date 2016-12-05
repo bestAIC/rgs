@@ -4168,6 +4168,9 @@ h3 {
 .mobile .deposit-doc__content {
   padding: 2rem 2rem 4rem 4rem;
 }
+.mobile .deposit-doc__content .top-img {
+  max-width: 10rem;
+}
 .promo-banner {
   color: #fff;
   display: block;
@@ -4351,7 +4354,7 @@ h3 {
 }
 .tablet.portrait .inner__info {
   padding-top: 5.2rem;
-  padding-bottom: 7rem;
+  padding-bottom: 3.8rem;
 }
 .tablet.portrait .inner__info-block {
   float: none;
@@ -4370,6 +4373,7 @@ h3 {
 }
 .tablet.portrait .inner__info-benefits-btn {
   margin-top: 4.3rem;
+  text-align: center;
 }
 .tablet.portrait .numerals {
   margin-bottom: 3.2rem;
