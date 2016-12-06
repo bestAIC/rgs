@@ -347,6 +347,13 @@
 	&__methods{
 		margin-top: 33/@rem;
 	}
+	&__file{
+		float: none;
+		width: 100%!important;
+		display: block;
+		margin-top: 4rem;
+		margin-bottom: -5rem;
+	}
 	&__method{
 		border: 1px solid @cBorder;
 		border-radius: 2/@rem;
@@ -376,7 +383,7 @@
 			}
 		}
 		&-content{
-			margin-top: 1.4rem;
+			//margin-top: 1.4rem;
 			letter-spacing: -0.19/@rem;
 		}
 	}
@@ -680,6 +687,32 @@
 	}
 }
 .mobile{
+	.boxes-rent{
+		&__sizes{
+
+		}
+		&__size{
+			float: none;
+			.deposit-table__title{
+				margin-top: 0;
+			}
+			&._small{
+				width: 100%;
+				.deposit-table{
+					width: 835/@rem;
+					&__wrap{
+						overflow: auto;
+						-webkit-overflow-scrolling: touch;
+					}
+				}
+			}
+			&._big{
+				width: 100%;
+				margin-top: 6rem;
+				margin-left: 0;
+			}
+		}
+	}
 	.deposit{
 		&__payments{
 			&-blocks{
@@ -725,6 +758,9 @@
 		&__content{
 			padding: 22/@rem 30/@rem 40/@rem 30/@rem;
 		}
+		&__passport{
+			padding-right: 0;
+		}
 		&__block._contacts{
 			ul{
 				margin-top: 0;
@@ -754,7 +790,7 @@
 	}
 	.deposit-table{
 		&__title{
-			font-size: 1.8rem;
+			font-size: 1.8rem;/*активные выплаты*/
 			line-height: 2.6rem;
 			margin-top: 1.9rem;
 		}
@@ -788,10 +824,21 @@
 		&__methods{
 			margin-top: 0;
 		}
+		&__file{
+			margin-top: 3rem;
+			margin-bottom: -3rem;
+		}
 		&__method{
 			padding: 2.4rem 3rem 2.6rem;
 			&+&{
 				margin-top: 2rem;
+			}
+			&-title{
+				&+.deposit-open__method-content{
+					.deposit-open__steps{
+						margin-top: 2.3rem;
+					}
+				}
 			}
 			&-content{
 				//margin-top: 2.8rem;
@@ -799,7 +846,7 @@
 		}
 		&__steps{
 			padding-top: 0;
-			margin-top: 2.3rem;
+			//margin-top: 2.3rem;
 			margin-bottom: -2rem;
 		}
 		&__step{

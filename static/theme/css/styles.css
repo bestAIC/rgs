@@ -3965,6 +3965,13 @@ h4 {
 .deposit-open__methods {
   margin-top: 3.3rem;
 }
+.deposit-open__file {
+  float: none;
+  width: 100%!important;
+  display: block;
+  margin-top: 4rem;
+  margin-bottom: -5rem;
+}
 .deposit-open__method {
   border: 1px solid #DEDFE0;
   border-radius: 0.2rem;
@@ -3996,7 +4003,6 @@ h4 {
   background-size: contain;
 }
 .deposit-open__method-content {
-  margin-top: 1.4rem;
   letter-spacing: -0.019rem;
 }
 .deposit-open__steps {
@@ -4287,6 +4293,27 @@ h4 {
 .tablet.portrait .deposit-doc__content {
   padding: 4rem 6rem 2.7rem 4rem;
 }
+.mobile .boxes-rent__size {
+  float: none;
+}
+.mobile .boxes-rent__size .deposit-table__title {
+  margin-top: 0;
+}
+.mobile .boxes-rent__size._small {
+  width: 100%;
+}
+.mobile .boxes-rent__size._small .deposit-table {
+  width: 83.5rem;
+}
+.mobile .boxes-rent__size._small .deposit-table__wrap {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.mobile .boxes-rent__size._big {
+  width: 100%;
+  margin-top: 6rem;
+  margin-left: 0;
+}
 .mobile .deposit__payments-blocks {
   padding-bottom: 4rem;
 }
@@ -4318,6 +4345,9 @@ h4 {
 .mobile .deposit-documents__content {
   padding: 2.2rem 3rem 4rem 3rem;
 }
+.mobile .deposit-documents__passport {
+  padding-right: 0;
+}
 .mobile .deposit-documents__block._contacts ul {
   margin-top: 0;
 }
@@ -4338,6 +4368,7 @@ h4 {
 }
 .mobile .deposit-table__title {
   font-size: 1.8rem;
+  /*активные выплаты*/
   line-height: 2.6rem;
   margin-top: 1.9rem;
 }
@@ -4367,15 +4398,21 @@ h4 {
 .mobile .deposit-open__methods {
   margin-top: 0;
 }
+.mobile .deposit-open__file {
+  margin-top: 3rem;
+  margin-bottom: -3rem;
+}
 .mobile .deposit-open__method {
   padding: 2.4rem 3rem 2.6rem;
 }
 .mobile .deposit-open__method + .mobile .deposit-open__method {
   margin-top: 2rem;
 }
+.mobile .deposit-open__method-title + .deposit-open__method-content .deposit-open__steps {
+  margin-top: 2.3rem;
+}
 .mobile .deposit-open__steps {
   padding-top: 0;
-  margin-top: 2.3rem;
   margin-bottom: -2rem;
 }
 .mobile .deposit-open__step {
@@ -4685,6 +4722,9 @@ h4 {
 .mobile .inner__info {
   padding-top: 6rem;
   padding-bottom: 4rem;
+}
+.mobile .inner__info._small-indent + .b-blocks {
+  padding-top: 0;
 }
 .mobile .inner__info-block {
   float: none;

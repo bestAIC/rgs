@@ -63,7 +63,7 @@
 											<th>601 и выше</th>
 										</tr>
 										<tr class="deposit-table__titles">
-											<td>СРОК АРЕНДЫ (ДНЕЙ)</td>
+											<td class="center">СРОК АРЕНДЫ (ДНЕЙ)</td>
 											<td class="center" colspan="7">АРЕНДНАЯ ПЛАТА ЗА КАЖДЫЙ ДЕНЬ, <span class="rub _medium"></span></td>
 										</tr>
 										<tr class="deposit-table__row">
@@ -211,7 +211,12 @@
 										</div>
 									</div>
 								</div>
-
+								<a href="#" class="file deposit-open__file no-desktop-block">
+									<div class="file__inner">
+										<div class="file__name">Тарифы по оплате услуг, предоставляемых физическим лицам</div>
+										<div class="file__props">PDF, 450.96KB</div>
+									</div>
+								</a>
 							</div>
 							<div class="deposit-info__block deposit-documents">
 								<h3>Необходимые документы</h3>
