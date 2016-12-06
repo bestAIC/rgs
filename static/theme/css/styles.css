@@ -3641,14 +3641,6 @@ h4 {
   margin-bottom: 4rem;
   margin-top: -2rem;
 }
-.deposit__payments-active-title {
-  color: #3e3e3e;
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 2.7rem;
-  margin-top: 2.9rem;
-  margin-bottom: 1.4rem;
-}
 .deposit__payments-blocks {
   padding-bottom: 7rem;
 }
@@ -3865,6 +3857,14 @@ h4 {
 .deposit-table._rowspan-table .deposit-table__row._cut td:first-child,
 .deposit-table._rowspan-table .deposit-table__row._cut th:first-child {
   padding-left: 1rem;
+}
+.deposit-table__title {
+  color: #3e3e3e;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  margin-top: 2.9rem;
+  margin-bottom: 1.4rem;
 }
 .deposit-table td,
 .deposit-table th {
@@ -4103,6 +4103,31 @@ h4 {
 .deposit-doc__content ul li + li {
   margin-top: 1.5rem;
 }
+.boxes-rent__sizes {
+  *zoom: 1;
+}
+.boxes-rent__sizes:before,
+.boxes-rent__sizes:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.boxes-rent__sizes:after {
+  clear: both;
+}
+.boxes-rent__size {
+  float: left;
+}
+.boxes-rent__size .deposit-table__title {
+  margin-top: 0.7rem;
+}
+.boxes-rent__size._small {
+  width: 83.5rem;
+}
+.boxes-rent__size._big {
+  width: 30rem;
+  margin-left: 3.5rem;
+}
 .tablet.portrait .deposit__info-img {
   height: 17rem;
   margin-top: -2.4rem;
@@ -4213,11 +4238,6 @@ h4 {
 .mobile .deposit__payments-blocks {
   padding-bottom: 4rem;
 }
-.mobile .deposit__payments-active-title {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  margin-top: 1.9rem;
-}
 .mobile .deposit__payments-active .deposit-table__row td {
   font-size: 1.2rem;
   line-height: 2rem;
@@ -4263,6 +4283,11 @@ h4 {
 }
 .mobile .deposit-info__block + .deposit-info__block {
   margin-top: 6rem;
+}
+.mobile .deposit-table__title {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-top: 1.9rem;
 }
 .mobile .deposit-table__wrap {
   margin: 0 -2rem;

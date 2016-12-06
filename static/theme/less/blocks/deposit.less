@@ -21,16 +21,6 @@
 		margin-top: -2rem;
 	}
 	&__payments{
-		&-active{
-			&-title{
-				color: #3e3e3e;
-				font-size: 20/@rem;
-				font-weight: 600;
-				line-height: 27/@rem;
-				margin-top: 29/@rem;
-				margin-bottom: 14/@rem;
-			}
-		}
 		&-blocks{
 			padding-bottom: 7rem;
 		}
@@ -254,6 +244,14 @@
 				}
 			}
 		}
+	}
+	&__title{
+		color: #3e3e3e;
+		font-size: 20/@rem;
+		font-weight: 600;
+		line-height: 27/@rem;
+		margin-top: 29/@rem;
+		margin-bottom: 14/@rem;
 	}
 	td,th{
 		padding-left: 1rem;
@@ -482,7 +480,24 @@
 		}
 	}
 }
-
+.boxes-rent{
+	&__sizes{
+		.clearfix;
+	}
+	&__size{
+		float: left;
+		.deposit-table__title{
+			margin-top: 0.7rem;
+		}
+		&._small{
+			width: 835/@rem;
+		}
+		&._big{
+			width: 30rem;
+			margin-left: 3.5rem;
+		}
+	}
+}
 .tablet.portrait{
 	.deposit{
 		&__info-img{
@@ -622,11 +637,6 @@
 				padding-bottom: 4rem;
 			}
 			&-active{
-				&-title{
-					font-size: 1.8rem;
-					line-height: 2.6rem;
-					margin-top: 1.9rem;
-				}
 				.deposit-table{
 					&__row{
 						td{
@@ -694,6 +704,11 @@
 		}
 	}
 	.deposit-table{
+		&__title{
+			font-size: 1.8rem;
+			line-height: 2.6rem;
+			margin-top: 1.9rem;
+		}
 		&__wrap{
 			margin: 0 -2rem;
 		}

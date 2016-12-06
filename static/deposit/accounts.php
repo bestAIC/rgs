@@ -45,7 +45,7 @@
 			</div>
 		</div>
 		<div class="b-blocks">
-			<div class="b-block animation__top deposit-info" data-animation>
+			<div class="b-block animation__top" data-animation>
 				<div class="grid__inner">
 					<div class="deposit-info__left">
 						<div class="deposit-info__block">

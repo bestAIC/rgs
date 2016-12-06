@@ -159,7 +159,7 @@
 								<a href="/static/deposit/accounts.php" class="b-menu__item-link">Текущие счета</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Сейфовые ячейки</a>
+								<a href="/static/deposit/boxes.php" class="b-menu__item-link">Сейфовые ячейки</a>
 							</div>
 						</div>
 						<div class="menu__block-col _col-1-3">

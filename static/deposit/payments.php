@@ -34,12 +34,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-blocks deposit__payments-blocks">
-			<div class="animation__top deposit-info" data-animation>
+		<div class="b-blocks">
+			<div class="animation__top deposit-info b-block" data-animation>
 				<div class="grid__inner">
 					<div class="deposit-info__block deposit__payments-active" >
 						<h3>Активные выплаты</h3>
-						<div class="deposit__payments-active-title">В настоящее время активны выплаты вкладчикам следующих банков:</div>
+						<div class="deposit-table__title">В настоящее время активны выплаты вкладчикам следующих банков:</div>
 						<div class="deposit-table__wrap">
 							<table class="deposit-table">
 								<tr class="deposit-table__titles">
