@@ -4163,6 +4163,32 @@ h4 {
 .tablet.portrait .deposit__payments-finished-col-2 td {
   padding-right: 0;
 }
+.tablet.portrait .boxes-rent__sizes {
+  *zoom: 1;
+}
+.tablet.portrait .boxes-rent__sizes:before,
+.tablet.portrait .boxes-rent__sizes:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .boxes-rent__sizes:after {
+  clear: both;
+}
+.tablet.portrait .boxes-rent__size {
+  float: none;
+}
+.tablet.portrait .boxes-rent__size .deposit-table__title {
+  margin-top: 0.7rem;
+}
+.tablet.portrait .boxes-rent__size._small {
+  width: 100%;
+}
+.tablet.portrait .boxes-rent__size._big {
+  width: 100%;
+  margin-top: 7rem;
+  margin-left: 0;
+}
 .tablet.portrait .deposit__text {
   padding-top: 2.6rem;
 }
@@ -4233,6 +4259,14 @@ h4 {
 }
 .tablet.portrait .deposit-open__method {
   padding: 3.2rem 3rem 3.5rem;
+}
+.tablet.portrait .deposit-open__steps._two-cols .deposit-open__step {
+  margin-right: 0;
+  width: 50%;
+}
+.tablet.portrait .deposit-open__steps._two-cols .deposit-open__step:nth-child(2n) {
+  margin-left: 2%;
+  width: 48%;
 }
 .tablet.portrait .deposit-open__step {
   width: 20.5rem;

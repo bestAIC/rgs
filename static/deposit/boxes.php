@@ -118,29 +118,35 @@
 								<div class="deposit-table__wrap">
 									<table class="deposit-table">
 										<tr>
+											<th class="no-desktop-block">Высота ячейки (мм)</th>
 											<th>170-200</th>
 											<th>201-400</th>
 											<th>401 и выше</th>
 										</tr>
 										<tr class="deposit-table__titles">
+											<td class="no-desktop-block center">СРОК АРЕНДЫ (ДНЕЙ)</td>
 											<td class="center" colspan="3">АРЕНДНАЯ ПЛАТА ЗА КАЖДЫЙ ДЕНЬ, <span class="rub _medium"></span></td>
 										</tr>
 										<tr class="deposit-table__row">
+											<td class="bold center no-desktop-block">1-30</td>
 											<td class="bold center">11</td>
 											<td class="bold center">13</td>
 											<td class="bold center">11</td>
 										</tr>
 										<tr class="deposit-table__row">
+											<td class="bold center no-desktop-block">31-90</td>
 											<td class="bold center">14</td>
 											<td class="bold center">16</td>
 											<td class="bold center">14</td>
 										</tr>
 										<tr class="deposit-table__row">
+											<td class="bold center no-desktop-block">91-180</td>
 											<td class="bold center">17</td>
 											<td class="bold center">19</td>
 											<td class="bold center">17</td>
 										</tr>
 										<tr class="deposit-table__row">
+											<td class="bold center no-desktop-block">181-365</td>
 											<td class="bold center">17</td>
 											<td class="bold center">19</td>
 											<td class="bold center">17</td>
@@ -181,7 +187,7 @@
 								<div class="deposit-open__methods">
 									<div class="deposit-open__method">
 										<div class="deposit-open__method-content">
-											<div class="deposit-open__steps">
+											<div class="deposit-open__steps _two-cols">
 												<div class="deposit-open__step">
 													<div class="deposit-open__step-num">01</div>
 													позвоните в Банк и уточните наличие свободной депозитной ячейки нужного размера
