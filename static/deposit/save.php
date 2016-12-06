@@ -95,19 +95,19 @@
 										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center"><span class="rub"></span></td>
+										<td class="valuta center"><span class="rub"></span></td>
 										<td >от 5 000</td>
 										<td class="center bold">7,70</td>
 										<td class="center bold">7,00</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">$</td>
+										<td class="valuta center">$</td>
 										<td>от 100</td>
 										<td class="center bold">0,75</td>
 										<td class="center bold">2,00</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">€</td>
+										<td class="valuta center">€</td>
 										<td>от 100</td>
 										<td class="center bold">0,30</td>
 										<td class="center bold">0,90</td>
@@ -197,13 +197,13 @@
 								<div class="deposit-scale__block" data-tabs>
 									<div class="deposit-scale__tabs">
 										<a href="javascript:void(0);" data-tabs-tab="1"  class="deposit-scale__tab _active">
-											<div class="deposit-scale__tab-in"><span class="rub _medium"></span></div>
+											<div class="deposit-scale__tab-in valuta"><span class="rub _medium"></span></div>
 										</a>
 										<a href="javascript:void(0);" data-tabs-tab="2" class="deposit-scale__tab">
-											<div class="deposit-scale__tab-in">$</div>
+											<div class="deposit-scale__tab-in valuta">$</div>
 										</a>
 										<a href="javascript:void(0);" data-tabs-tab="3" class="deposit-scale__tab">
-											<div class="deposit-scale__tab-in">€</div>
+											<div class="deposit-scale__tab-in valuta">€</div>
 										</a>
 									</div>
 									<div class="deposit-scale__content">
@@ -388,7 +388,7 @@
 									<th>271-366</th>
 								</tr>
 								<tr class="deposit-table__row _grey">
-									<td class="bold"><span class="is-desktop-block">Российский рубль, </span><span class="rub"></span></td>
+									<td class="bold valuta"><span class="is-desktop-block">Российский рубль, </span><span class="rub"></span></td>
 									<td >от 5 000 до 100 000</td>
 									<td class="center bold">0,10%</td>
 									<td class="center bold">5,00%</td>
@@ -412,7 +412,7 @@
 									<td class="center bold">6,00%</td>
 								</tr>
 								<tr class="deposit-table__row">
-									<td class="bold"><span class="is-desktop-block">Доллар США, </span>$</td>
+									<td class="bold valuta"><span class="is-desktop-block">Доллар США, </span>$</td>
 									<td >от 100 до 3 500</td>
 									<td class="center bold">0,10%</td>
 									<td class="center bold">5,00%</td>
@@ -436,7 +436,7 @@
 									<td class="center bold">6,00%</td>
 								</tr>
 								<tr class="deposit-table__row _grey">
-									<td class="bold"><span class="is-desktop-block">Евро, </span>€</td>
+									<td class="bold valuta"><span class="is-desktop-block">Евро, </span>€</td>
 									<td >от 100 до 3 500</td>
 									<td class="center bold">0,10%</td>
 									<td class="center bold">5,00%</td>

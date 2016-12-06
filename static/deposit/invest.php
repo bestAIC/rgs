@@ -77,7 +77,7 @@
 										<td colspan="3" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center"><span class="rub"></span></td>
+										<td class="center valuta"><span class="rub"></span></td>
 										<td >от 25 000</td>
 										<td class="center bold">9,50</td>
 										<td class="center bold">9,50</td>

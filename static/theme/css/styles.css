@@ -570,6 +570,9 @@ a:focus {
 .rub._medium {
   font-weight: 500;
 }
+.valuta {
+  font-family: 'Roboto', sans-serif !important;
+}
 .hide-block {
   position: absolute;
   left: -9999px;

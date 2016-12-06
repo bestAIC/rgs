@@ -96,7 +96,7 @@
 										<td class="center">ГОДОВАЯ <span class="no-mob-block">ПРОЦЕНТНАЯ</span> СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row _grey">
-										<td class="center bold" rowspan="2"><span class="rub"></span></td>
+										<td class="center bold valuta" rowspan="2"><span class="rub"></span></td>
 										<td >от 30 000 до 299 999</td>
 										<td class="center bold">7,00</td>
 									</tr>
@@ -105,7 +105,7 @@
 										<td class="center bold">7,20</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center bold" rowspan="2">$</td>
+										<td class="center bold valuta" rowspan="2">$</td>
 										<td>от 500 до 4 999</td>
 										<td class="center bold">1,20</td>
 									</tr>
@@ -114,7 +114,7 @@
 										<td class="center bold">1,30</td>
 									</tr>
 									<tr class="deposit-table__row _grey">
-										<td class="center bold" rowspan="2">€</td>
+										<td class="center bold valuta" rowspan="2">€</td>
 										<td>от 500 до 4 999</td>
 										<td class="center bold">0,40</td>
 									</tr>

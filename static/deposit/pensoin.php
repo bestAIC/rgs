@@ -106,17 +106,17 @@
 										<td colspan="2" class="center">ГОДОВАЯ ПРОЦЕНТНАЯ СТАВКА, %</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center"><span class="rub"></span></td>
+										<td class="center valuta"><span class="rub"></span></td>
 										<td class="center bold">7,70</td>
 										<td class="center bold">8,00</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">$</td>
+										<td class="center valuta">$</td>
 										<td class="center bold">0,75</td>
 										<td class="center bold">1,80</td>
 									</tr>
 									<tr class="deposit-table__row">
-										<td class="center">€</td>
+										<td class="center valuta">€</td>
 										<td class="center bold">0,30</td>
 										<td class="center bold">0,90</td>
 									</tr>
