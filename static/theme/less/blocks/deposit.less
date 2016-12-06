@@ -50,11 +50,14 @@
 }
 .deposit-scale{
 	margin-top: 73/@rem;
+	th{
+		border-bottom: 1px solid @cBorder;
+	}
 	&__top-text{
-		font-size: 10px;
+		font-size: 10/@rem;
 		font-weight: 600;
-		letter-spacing: 0.5px;
-		line-height: 14px;
+		letter-spacing: 0.5/@rem;
+		line-height: 14/@rem;
 		color: @cGray;
 		text-transform: uppercase;
 		padding-right: 2rem;
@@ -62,9 +65,9 @@
 	&__bottom{
 		color: #919599;
 		letter-spacing: 0.04/@rem;
-		margin-top: 21px;
-		font-size: 12px;
-		line-height: 20px;
+		margin-top: 21/@rem;
+		font-size: 12/@rem;
+		line-height: 20/@rem;
 	}
 	&__block{
 		.clearfix;
@@ -74,16 +77,16 @@
 	}
 	&__tabs{
 		border-top: 1px solid @cBorder;
-		border-bottom: 1px solid @cBorder;
+		//border-bottom: 1px solid @cBorder;
 		.clearfix;
 	}
 	&__tab{
 		display: block;
 		float: left;
 		width: 33.33%;
-		border-bottom: 4px solid transparent;
-		padding-top: 12px;
-		padding-bottom: 8px;
+		border-bottom: 4/@rem solid transparent;
+		padding-top: 12/@rem;
+		padding-bottom: 8/@rem;
 		.color(@text-color);
 		&._active{
 			border-color: @cRed;
@@ -94,10 +97,10 @@
 			}
 		}
 		&-in{
-			font-size: 16px;
+			font-size: 16/@rem;
 			font-weight: 600;
-			letter-spacing: 0.05px;
-			line-height: 18px;
+			letter-spacing: 0.05/@rem;
+			line-height: 18/@rem;
 			text-align: center;
 		}
 	}
@@ -125,13 +128,14 @@
 		&-titles{
 			color: @title-color;
 			td{
-				padding-top: 10px;
-				padding-bottom: 10px;
+				padding-top: 10/@rem;
+				padding-bottom: 10/@rem;
+				border-bottom: 1px solid @cBorder;
 				&:first-child{
-					font-size: 10px;
+					font-size: 10/@rem;
 					font-weight: 600;
-					letter-spacing: 0.5px;
-					line-height: 14px;
+					letter-spacing: 0.5/@rem;
+					line-height: 14/@rem;
 					color: @cGray;
 				}
 			}
@@ -157,8 +161,8 @@
 
 	.deposit-table__titles{
 		td{
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: 20/@rem;
+			padding-bottom: 20/@rem;
 		}
 	}
 	.deposit-table th{
@@ -176,15 +180,15 @@
 	&__passport{
 		position: relative;
 		min-height: 7rem;
-		letter-spacing: -0.19px;
+		letter-spacing: -0.19/@rem;
 		color: @title-color;
 		padding-left: 7.8rem;
-		padding-top: 11px;
+		padding-top: 11/@rem;
 		padding-right: 4rem;
 
 		&-ico{
-			width: 56px;
-			height: 70px;
+			width: 56/@rem;
+			height: 70/@rem;
 			position: absolute;
 			left: 0;
 			top: 0;

@@ -3673,11 +3673,14 @@ h4 {
 .deposit-scale {
   margin-top: 7.3rem;
 }
+.deposit-scale th {
+  border-bottom: 1px solid #DEDFE0;
+}
 .deposit-scale__top-text {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   color: #AAAEB2;
   text-transform: uppercase;
   padding-right: 2rem;
@@ -3685,9 +3688,9 @@ h4 {
 .deposit-scale__bottom {
   color: #919599;
   letter-spacing: 0.004rem;
-  margin-top: 21px;
-  font-size: 12px;
-  line-height: 20px;
+  margin-top: 2.1rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 .deposit-scale__block {
   *zoom: 1;
@@ -3706,7 +3709,6 @@ h4 {
 }
 .deposit-scale__tabs {
   border-top: 1px solid #DEDFE0;
-  border-bottom: 1px solid #DEDFE0;
   *zoom: 1;
 }
 .deposit-scale__tabs:before,
@@ -3722,9 +3724,9 @@ h4 {
   display: block;
   float: left;
   width: 33.33%;
-  border-bottom: 4px solid transparent;
-  padding-top: 12px;
-  padding-bottom: 8px;
+  border-bottom: 0.4rem solid transparent;
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
   color: #191919;
 }
 .deposit-scale__tab:hover {
@@ -3740,10 +3742,10 @@ h4 {
   border-left: 1px solid #DEDFE0;
 }
 .deposit-scale__tab-in {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  letter-spacing: 0.05px;
-  line-height: 18px;
+  letter-spacing: 0.005rem;
+  line-height: 1.8rem;
   text-align: center;
 }
 .deposit-scale__table {
@@ -3769,14 +3771,15 @@ h4 {
   color: #3e3e3e;
 }
 .deposit-scale__table-titles td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #DEDFE0;
 }
 .deposit-scale__table-titles td:first-child {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   color: #AAAEB2;
 }
 .deposit-scale__table-row {
@@ -3797,8 +3800,8 @@ h4 {
   width: 100%;
 }
 .deposit-scale .deposit-table__titles td {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .deposit-scale .deposit-table th {
   padding-top: 1rem;
@@ -3813,15 +3816,15 @@ h4 {
 .deposit-documents__passport {
   position: relative;
   min-height: 7rem;
-  letter-spacing: -0.19px;
+  letter-spacing: -0.019rem;
   color: #3e3e3e;
   padding-left: 7.8rem;
-  padding-top: 11px;
+  padding-top: 1.1rem;
   padding-right: 4rem;
 }
 .deposit-documents__passport-ico {
-  width: 56px;
-  height: 70px;
+  width: 5.6rem;
+  height: 7rem;
   position: absolute;
   left: 0;
   top: 0;
