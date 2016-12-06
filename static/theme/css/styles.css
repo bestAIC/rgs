@@ -3639,6 +3639,7 @@ h4 {
   background: none no-repeat center;
   background-size: cover;
   margin-bottom: 4rem;
+  margin-top: -2rem;
 }
 .deposit__payments-active-title {
   color: #3e3e3e;
