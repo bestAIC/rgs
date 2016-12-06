@@ -455,7 +455,7 @@
 		line-height: 25/@rem;
 		border-top: 1px solid #f2f4f5;
 		.top-img{
-			margin: 1rem 0 1rem 1rem;
+			margin: 0 0 1rem 1rem;
 			max-width: 300/@rem;
 			height: auto;
 			&+h3{
@@ -682,11 +682,27 @@
 	}
 	.deposit-doc{
 		margin-bottom: 1rem;
+		.top-img{
+			margin: 0.6rem 0.6rem 1rem 1rem;
+		}
+		strong{
+			letter-spacing: -0.6/@rem;
+		}
 		&__title {
 			padding: 2.8rem 6rem 2.7rem 4rem;
 		}
 		&__content{
-			padding: 4rem 6rem 2.7rem 4rem;
+			padding: 5rem 6rem 6.4rem 4rem;
+			ul{
+				margin-left: 5rem;
+				padding-left: 0;
+			}
+		}
+		.questions__items {
+			padding: 0.5rem 0;
+			ul{
+				margin-left: 0;
+			}
 		}
 	}
 }
