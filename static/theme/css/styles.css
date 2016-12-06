@@ -3810,6 +3810,24 @@ h4 {
   margin-top: 3.3rem;
   padding: 2.2rem 3rem 4.9rem 3.9rem;
 }
+.deposit-documents__passport {
+  position: relative;
+  min-height: 7rem;
+  letter-spacing: -0.19px;
+  color: #3e3e3e;
+  padding-left: 7.8rem;
+  padding-top: 11px;
+  padding-right: 4rem;
+}
+.deposit-documents__passport-ico {
+  width: 56px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../images/icons/doc.png') no-repeat center;
+  background-size: contain;
+}
 .deposit-documents__block._contacts ul {
   margin-bottom: 0;
   margin-top: 4.3rem;

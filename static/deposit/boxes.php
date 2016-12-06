@@ -207,8 +207,12 @@
 								</div>
 
 							</div>
-							<div class="deposit-info__block">
+							<div class="deposit-info__block deposit-documents">
 								<h3>Необходимые документы</h3>
+								<div class="deposit-documents__passport">
+									<div class="deposit-documents__passport-ico"></div>
+									Для открытия ячейки необходим только паспорт гражданина РФ или иной документ, удостоверяющий личность.
+								</div>
 							</div>
 						</div>
 					</div>
