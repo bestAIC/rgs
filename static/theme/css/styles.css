@@ -3931,12 +3931,12 @@ h4 {
   text-align: center;
 }
 .deposit-conditions {
-  border-bottom: 1px solid #f2f4f5;
+  border-bottom: 1px solid #DEDFE0;
 }
 .deposit-conditions__item {
   *zoom: 1;
   padding: 2.3rem 0;
-  border-top: 1px solid #f2f4f5;
+  border-top: 1px solid #DEDFE0;
 }
 .deposit-conditions__item:before,
 .deposit-conditions__item:after {
@@ -4407,9 +4407,6 @@ h4 {
 }
 .mobile .deposit-open__method + .mobile .deposit-open__method {
   margin-top: 2rem;
-}
-.mobile .deposit-open__method-title + .deposit-open__method-content .deposit-open__steps {
-  margin-top: 2.3rem;
 }
 .mobile .deposit-open__steps {
   padding-top: 0;
