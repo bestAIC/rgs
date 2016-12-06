@@ -616,6 +616,30 @@
 }
 .mobile{
 	.deposit{
+		&__payments{
+			&-blocks{
+				padding-bottom: 4rem;
+			}
+			&-active{
+				&-title{
+					font-size: 1.8rem;
+					line-height: 2.6rem;
+					margin-top: 1.9rem;
+				}
+				.deposit-table{
+					&__row{
+						td{
+							font-size: 1.2rem;
+							line-height: 2rem;
+							padding-top: 0.8rem;
+							padding-bottom: 0.8rem;
+							vertical-align: top;
+						}
+					}
+
+				}
+			}
+		}
 		&__text{
 			padding-top: 18/@rem;
 			p{
@@ -640,6 +664,16 @@
 	.deposit-documents{
 		&__content{
 			padding: 22/@rem 30/@rem 40/@rem 30/@rem;
+		}
+		&__block._contacts{
+			ul{
+				margin-top: 0;
+				li{
+					&+li{
+						margin-top: 2rem;
+					}
+				}
+			}
 		}
 	}
 	.deposit-info{

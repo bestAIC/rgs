@@ -828,9 +828,9 @@ h4 {
   color: #3e3e3e;
 }
 .b-table td {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 2.5rem;
   border-bottom: 1px solid #DEDFE0;
   padding: 2.3rem 2rem;
 }
@@ -842,6 +842,21 @@ h4 {
   letter-spacing: 0.05rem;
   line-height: 1.4rem;
   text-transform: uppercase;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.mobile .b-table td {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-left: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  vertical-align: top;
+}
+.mobile .b-table__titles td {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
@@ -4194,6 +4209,21 @@ h4 {
 .tablet.portrait .deposit-doc__content {
   padding: 4rem 6rem 2.7rem 4rem;
 }
+.mobile .deposit__payments-blocks {
+  padding-bottom: 4rem;
+}
+.mobile .deposit__payments-active-title {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-top: 1.9rem;
+}
+.mobile .deposit__payments-active .deposit-table__row td {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  vertical-align: top;
+}
 .mobile .deposit__text {
   padding-top: 1.8rem;
 }
@@ -4214,6 +4244,12 @@ h4 {
 }
 .mobile .deposit-documents__content {
   padding: 2.2rem 3rem 4rem 3rem;
+}
+.mobile .deposit-documents__block._contacts ul {
+  margin-top: 0;
+}
+.mobile .deposit-documents__block._contacts ul li + li {
+  margin-top: 2rem;
 }
 .mobile .deposit-info__left {
   float: none;
