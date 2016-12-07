@@ -146,9 +146,9 @@
 									<a href="/static/deposit/pensoin.php" class="b-menu__submenu-link">«Пенсионный доход»</a>
 								</div>
 								<div class="b-menu__submenu-item is-mob-block">
-									<a href="#" class="b-menu__submenu-link _red">Подобрать вклад</a>
+									<a href="/static/deposit/filter.php" class="b-menu__submenu-link _red">Подобрать вклад</a>
 								</div>
-								<a href="#" class="btn menu__block-btn no-mob-block _red">подобрать вклад</a>
+								<a href="/static/deposit/filter.php" class="btn menu__block-btn no-mob-block _red">подобрать вклад</a>
 							</div>
 						</div>
 						<div class="menu__block-col _col-1-2">

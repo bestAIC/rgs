@@ -1,0 +1,92 @@
+.deposit-compare{
+	padding-top: 1.8rem;
+	&__bottom{
+		.clearfix;
+		.inner__info-benefits{
+			&-title{
+				p{
+					margin-top: 0;
+				}
+			}
+			.b-list{
+				margin-bottom: 1rem;
+			}
+		}
+		.file{
+			margin-top: 0;
+		}
+	}
+	&__table{
+		margin-top: 33px;
+		.status-ico{
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			border-radius: 50%;
+			background: red;
+			vertical-align: middle;
+			&._plus{
+				background: url('@{pathToImg}icons/plus_white.svg') no-repeat center @cRed;
+				background-size: 7/@rem;
+			}
+			&._minus{
+				background: url('@{pathToImg}icons/minus_white.svg') no-repeat center @cGray;
+				background-size: 7/@rem 1px;
+			}
+		}
+		table{
+			width: 100%;
+		}
+		td{
+			text-align: center;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			&:first-child,&.left{
+				text-align: left;
+			}
+			&:first-child{
+				padding-left: 0;
+			}
+		}
+		&-titles{
+			td{
+				color: @cGray;
+				font-size: 10px;
+				font-weight: 600;
+				letter-spacing: 0.5px;
+				line-height: 14px;
+				border-top: 1px solid @cBorder;
+				border-bottom: 1px solid @cBorder;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		}
+		&-percent{
+			width: 250px;
+		}
+		&-valuta{
+			font-weight: 500;
+			td{
+				border-bottom: 1px solid @cBorder;
+				padding-top: 20px;
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 0.05px;
+				line-height: 19px;
+				padding-bottom: 19px;
+			}
+		}
+		&-row{
+			td{
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 25px;
+				height: 97px;
+				border-bottom: 1px solid @cBorder;
+				&:first-child{
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

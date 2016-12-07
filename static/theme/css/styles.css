@@ -758,6 +758,9 @@ h4 {
 .b-block._gray {
   background-color: whitesmoke;
 }
+.b-block._white {
+  background-color: white!important;
+}
 .b-blocks {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
@@ -3293,6 +3296,11 @@ h4 {
 .file:focus {
   color: #3e3e3e;
 }
+.file.w100 {
+  float: none;
+  display: block;
+  width: 100%;
+}
 .file:nth-child(3n) {
   margin-right: 0;
 }
@@ -4159,6 +4167,105 @@ h4 {
   width: 30rem;
   margin-left: 3.5rem;
 }
+.deposit-filter__block {
+  background-color: #fff;
+}
+.deposit-filter__block-top-inner {
+  padding: 45px 40px 39px;
+  *zoom: 1;
+}
+.deposit-filter__block-top-inner:before,
+.deposit-filter__block-top-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-filter__block-top-inner:after {
+  clear: both;
+}
+.deposit-filter__block-bottom {
+  border-top: 1px solid #DEDFE0;
+}
+.deposit-filter__block-bottom-inner {
+  padding: 25px 40px;
+  *zoom: 1;
+  font-size: 18px;
+  letter-spacing: -0.25px;
+  line-height: 25px;
+}
+.deposit-filter__block-bottom-inner:before,
+.deposit-filter__block-bottom-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-filter__block-bottom-inner:after {
+  clear: both;
+}
+.deposit-filter__counter {
+  color: #3e3e3e;
+  float: left;
+}
+.deposit-filter__items {
+  margin-top: 6rem;
+}
+.deposit-filter__reset {
+  color: #AAAEB2;
+  float: right;
+}
+.deposit-filter__reset:hover {
+  color: #AAAEB2;
+}
+.deposit-filter__reset:focus {
+  color: #AAAEB2;
+}
+.deposit-filter__reset:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url('../images/icons/return.svg') no-repeat center;
+  background-size: contain;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+.deposit-filter__options {
+  width: 73rem;
+  float: left;
+}
+.deposit-filter__options .deposit-calc__option + .deposit-calc__option {
+  margin-top: 3rem;
+}
+.deposit-filter__checks {
+  float: left;
+  width: 33rem;
+  margin-left: 3rem;
+  margin-top: -5px;
+}
+.deposit-filter__check {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.22px;
+  line-height: 24px;
+  color: #3e3e3e;
+  position: relative;
+}
+.deposit-filter__check + .deposit-filter__check {
+  margin-top: 24px;
+}
+.deposit-filter__check .ideal-check {
+  position: absolute;
+  top: 0.2rem;
+  right: 0;
+  margin-right: 0;
+}
+.deposit-filter__check .ideal-check.checked {
+  background-color: #cca266;
+}
+.deposit-filter__check._active {
+  font-weight: 600;
+}
 .tablet.portrait .deposit__info-img {
   height: 17rem;
   margin-top: -2.4rem;
@@ -4475,6 +4582,248 @@ h4 {
 .mobile .deposit-doc__content .top-img {
   max-width: 6rem;
   margin: 0 0 0.5rem 1rem;
+}
+.deposit-card {
+  height: 252px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  color: #3e3e3e;
+  padding: 27px 40px;
+  transition: background 0.5s, color 0.5s;
+}
+.no-touch .deposit-card:hover {
+  color: #fff;
+}
+.no-touch .deposit-card:hover._gosstrakh {
+  background: linear-gradient(-46deg, #ad2b3a 0%, #be3343 100%);
+}
+.no-touch .deposit-card:hover._save {
+  background: linear-gradient(-45deg, #c8a779 0%, #bd9762 100%);
+}
+.no-touch .deposit-card:hover._save .deposit-card__btn {
+  color: #5c5028;
+}
+.no-touch .deposit-card:hover._universal {
+  background: linear-gradient(-46deg, #406dc2 0%, #385fa8 100%);
+}
+.no-touch .deposit-card:hover._universal .deposit-card__btn {
+  color: #2e49a0;
+}
+.no-touch .deposit-card:hover._invest {
+  background: linear-gradient(-46deg, #86c240 0%, #5ba82a 100%);
+}
+.no-touch .deposit-card:hover._invest .deposit-card__btn {
+  color: #61ad2b;
+}
+.no-touch .deposit-card:hover._pensoin {
+  background: linear-gradient(-46deg, #a06f4a 0%, #966845 98%);
+}
+.no-touch .deposit-card:hover._pensoin .deposit-card__btn {
+  color: #945325;
+}
+.no-touch .deposit-card:hover .deposit-card__btn {
+  background-color: #fff;
+  color: #b31b2c;
+}
+.no-touch .deposit-card:hover .deposit-card__btn:hover {
+  box-shadow: none!important;
+}
+.no-touch .deposit-card:hover .deposit-card__btn._transparent {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+}
+.no-touch .deposit-card:hover .deposit-card__info-block-title {
+  opacity: 0.8;
+  color: white;
+}
+.deposit-card + .deposit-card {
+  margin-top: 3rem;
+}
+.deposit-card__top {
+  *zoom: 1;
+}
+.deposit-card__top:before,
+.deposit-card__top:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-card__top:after {
+  clear: both;
+}
+.deposit-card__main {
+  float: left;
+  width: 36rem;
+}
+.deposit-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.deposit-card__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-top: 11px;
+  min-height: 100px;
+}
+.deposit-card__btns {
+  margin-top: 0.9rem;
+  *zoom: 1;
+}
+.deposit-card__btns:before,
+.deposit-card__btns:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-card__btns:after {
+  clear: both;
+}
+.deposit-card__btn {
+  float: left;
+  margin-right: 2rem;
+  transition: box-shadow 0.1s;
+  letter-spacing: 0;
+}
+.deposit-card__btn._transparent {
+  background-color: transparent;
+  color: #b31b2c;
+  padding: 1.3rem 2rem;
+  border: 0.2rem solid #b31b2c;
+  font-weight: 700;
+  transition: color 0.5s, border-color 0.5s;
+}
+.deposit-card__info {
+  float: left;
+  margin-left: 75px;
+  margin-top: 20px;
+  *zoom: 1;
+}
+.deposit-card__info:before,
+.deposit-card__info:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-card__info:after {
+  clear: both;
+}
+.deposit-card__info-block {
+  float: left;
+  width: 17.7rem;
+}
+.deposit-card__info-block-title {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #AAAEB2;
+  transition: color 0.5s;
+}
+.deposit-card__info-block-text {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.33px;
+  line-height: 30px;
+  margin-top: 18px;
+}
+.deposit-compare {
+  padding-top: 1.8rem;
+}
+.deposit-compare__bottom {
+  *zoom: 1;
+}
+.deposit-compare__bottom:before,
+.deposit-compare__bottom:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-compare__bottom:after {
+  clear: both;
+}
+.deposit-compare__bottom .inner__info-benefits-title p {
+  margin-top: 0;
+}
+.deposit-compare__bottom .inner__info-benefits .b-list {
+  margin-bottom: 1rem;
+}
+.deposit-compare__bottom .file {
+  margin-top: 0;
+}
+.deposit-compare__table {
+  margin-top: 33px;
+}
+.deposit-compare__table .status-ico {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: red;
+  vertical-align: middle;
+}
+.deposit-compare__table .status-ico._plus {
+  background: url('../images/icons/plus_white.svg') no-repeat center #b31b2c;
+  background-size: 0.7rem;
+}
+.deposit-compare__table .status-ico._minus {
+  background: url('../images/icons/minus_white.svg') no-repeat center #AAAEB2;
+  background-size: 0.7rem 1px;
+}
+.deposit-compare__table table {
+  width: 100%;
+}
+.deposit-compare__table td {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.deposit-compare__table td:first-child,
+.deposit-compare__table td.left {
+  text-align: left;
+}
+.deposit-compare__table td:first-child {
+  padding-left: 0;
+}
+.deposit-compare__table-titles td {
+  color: #AAAEB2;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  border-top: 1px solid #DEDFE0;
+  border-bottom: 1px solid #DEDFE0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.deposit-compare__table-percent {
+  width: 250px;
+}
+.deposit-compare__table-valuta {
+  font-weight: 500;
+}
+.deposit-compare__table-valuta td {
+  border-bottom: 1px solid #DEDFE0;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05px;
+  line-height: 19px;
+  padding-bottom: 19px;
+}
+.deposit-compare__table-row td {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  height: 97px;
+  border-bottom: 1px solid #DEDFE0;
+}
+.deposit-compare__table-row td:first-child {
+  font-weight: 600;
 }
 .promo-banner {
   color: #fff;

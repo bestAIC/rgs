@@ -1,0 +1,131 @@
+.deposit-card{
+	height: 252px;
+	background: white;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+	color: @title-color;
+	padding: 27px 40px;
+	transition: background @animTime,color @animTime;
+	.no-touch &:hover{
+		color: #fff;
+		&._gosstrakh{
+			background: linear-gradient(-46deg, #ad2b3a 0%, #be3343 100%);
+		}
+		&._save{
+			background: linear-gradient(-45deg, #c8a779 0%, #bd9762 100%);
+			.deposit-card__btn{
+				color: #5c5028;
+			}
+		}
+		&._universal{
+			background: linear-gradient(-46deg, #406dc2 0%, #385fa8 100%);
+			.deposit-card__btn{
+				color: #2e49a0;
+			}
+		}
+		&._invest{
+			background: linear-gradient(-46deg, #86c240 0%, #5ba82a 100%);
+			.deposit-card__btn{
+				color: #61ad2b;
+			}
+		}
+		&._pensoin{
+			background: linear-gradient(-46deg, #a06f4a 0%, #966845 98%);
+			.deposit-card__btn{
+				color: #945325;
+			}
+		}
+		.deposit-card{
+			&__btn{
+				background-color: #fff;
+				color: @cRed;
+				&:hover{
+					box-shadow:none!important;
+				}
+				&._transparent{
+					color: #fff;
+					border-color: #fff;
+					background-color: transparent;
+				}
+			}
+			&__info{
+				&-block-title{
+					opacity: 0.8;
+					color: white;
+				}
+			}
+		}
+	}
+	&+&{
+		margin-top: 3rem;
+	}
+	&__ico{
+
+	}
+	&__inner{
+
+	}
+	&__top{
+		.clearfix;
+	}
+	&__main{
+		float: left;
+		width: 36rem;
+	}
+	&__title{
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 27px;
+	}
+	&__text{
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 25px;
+		margin-top: 11px;
+		min-height: 100px;
+	}
+	&__btns{
+		margin-top: 9/@rem;
+		.clearfix;
+	}
+	&__btn{
+		float: left;
+		margin-right: 2rem;
+		transition: box-shadow 0.1s;
+		letter-spacing: 0;
+		&._transparent{
+			background-color: transparent;
+			color: @cRed;
+			padding: 1.3rem 2rem;
+			border: 2/@rem solid @cRed;
+			font-weight: 700;
+			transition: color @animTime,border-color @animTime;
+		}
+	}
+	&__info{
+		float: left;
+		margin-left: 75px;
+		margin-top: 20px;
+		.clearfix;
+		&-block{
+			float: left;
+			width: 17.7rem;
+			&-title {
+				font-size: 10px;
+				font-weight: 600;
+				letter-spacing: 0.5px;
+				line-height: 14px;
+				text-transform: uppercase;
+				color: @cGray;
+				transition: color @animTime;
+			}
+			&-text{
+				font-size: 24px;
+				font-weight: 400;
+				letter-spacing: -0.33px;
+				line-height: 30px;
+				margin-top: 18px;
+			}
+		}
+	}
+}
