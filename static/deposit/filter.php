@@ -18,7 +18,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="inner__info _small-indent animation__top"  data-animation>
+		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
 					<div class="deposit__info-img" style="background-image: url(/static/theme/images/home/banner/1.jpg);"></div>
@@ -270,7 +270,7 @@
 						<div class="deposit-compare__table">
 								<table>
 									<tr class="deposit-compare__table-titles">
-										<td>ВКЛАД</td>
+										<td><div class="asd">ВКЛАД</div></td>
 										<td>СРОК (ДНЕЙ)</td>
 										<td class="left deposit-compare__table-percent">ВЫПЛАТА ПРОЦЕНТОВ</td>
 										<td>ПОПОЛНЕНИЕ</td>
@@ -299,7 +299,7 @@
 										<td></td>
 									</tr>
 									<tr class="deposit-compare__table-row">
-										<td><a href="#">1.<span>Госстраховский</span></a></td>
+										<td><div class="asd"><a href="#">1.<span>Госстраховский</span></a></div></td>
 										<td>91 - 732</td>
 										<td class="left">В конце срока</td>
 										<td><div class="status-ico _plus"></div></td>
