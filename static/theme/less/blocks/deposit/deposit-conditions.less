@@ -1,0 +1,54 @@
+.deposit-conditions{
+	border-bottom: 1px solid @cBorder;
+	&__item{
+		.clearfix;
+		padding: 23/@rem 0;
+		border-top: 1px solid @cBorder;
+		&-block{
+			float: left;
+			width: 50%;
+			font-size: 14/@rem;
+			font-weight: 400;
+			line-height: 25/@rem;
+			padding-right: 2rem;
+			&:first-child{
+				font-weight: 600;
+				color: @title-color;
+			}
+			&+&{
+				padding-left: 1.5rem;
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.deposit-conditions{
+		&__item{
+			&-block{
+				width: 56.5%;
+				padding-left: 0!important;
+				&:first-child{
+					width: 43.5%;
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.deposit-conditions{
+		&__item{
+			padding: 2rem 0;
+			&-block{
+				width: 45%;
+				font-size: 12/@rem;
+				line-height: 20/@rem;
+				padding-right: 2rem;
+				&+.deposit-conditions__item-block{
+					width: 55%;
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}

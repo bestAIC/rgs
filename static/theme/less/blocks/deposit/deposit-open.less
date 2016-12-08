@@ -1,0 +1,134 @@
+.deposit-open{
+	&__methods{
+		margin-top: 33/@rem;
+	}
+	&__file{
+		float: none;
+		width: 100%!important;
+		display: block;
+		margin-top: 4rem;
+		margin-bottom: -5rem;
+	}
+	&__method{
+		border: 1px solid @cBorder;
+		border-radius: 2/@rem;
+		padding: 2.5rem 3rem 3rem;
+		&+&{
+			margin-top: 2rem;
+		}
+		&-title{
+			font-size: 16/@rem;
+			font-weight: 600;
+			line-height: 25/@rem;
+			margin-bottom: 19/@rem;
+			a{
+				display: block;
+				position: relative;
+				padding-right: 4rem;
+				&:after{
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -5/@rem;
+					width: 1.2rem;
+					height: 1rem;
+					.background('@{pathToImg}icons/arr_right_long_gold.svg');
+				}
+			}
+		}
+		&-content{
+			//margin-top: 1.4rem;
+			letter-spacing: -0.19/@rem;
+		}
+	}
+	&__steps{
+		margin-bottom: -26/@rem;
+	}
+	&__step{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding-left: 3.6rem;
+		margin-bottom: 40/@rem;
+		&:nth-child(2n){
+			width: 45%;
+			margin-left: 5%;
+		}
+		&-num{
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 20/@rem;
+			font-weight: 700;
+			letter-spacing: -0.67/@rem;
+			line-height: 20/@rem;
+			color: @cRed;
+		}
+	}
+}
+.tablet.portrait{
+	.deposit-open{
+		&__method{
+			padding: 3.2rem 3rem 3.5rem;
+		}
+		&__steps{
+			&._two-cols{
+				.deposit-open__step{
+					margin-right: 0;
+					width: 50%;
+					&:nth-child(2n){
+						margin-left: 2%;
+						width: 48%;
+					}
+				}
+			}
+		}
+		&__step{
+			width: 20.5rem;
+			margin-right: 1.8rem;
+			&:nth-child(2n){
+				margin-left:0;
+			}
+			&:nth-child(3n){
+				margin-right: 0;
+			}
+		}
+	}
+}
+.mobile{
+	.deposit-open{
+		&__methods{
+			margin-top: 0;
+		}
+		&__file{
+			margin-top: 3rem;
+			margin-bottom: -3rem;
+		}
+		&__method{
+			padding: 2.4rem 3rem 2.6rem;
+			&+&{
+				margin-top: 2rem;
+			}
+			&-content{
+				//margin-top: 2.8rem;
+			}
+		}
+		&__steps{
+			padding-top: 0;
+			//margin-top: 2.3rem;
+			margin-bottom: -2rem;
+		}
+		&__step{
+			display: block;
+			width: 100%;
+			//padding-left: 4rem;
+			margin-bottom: 2rem;
+			&:nth-child(2n){
+				width: 100%;
+				margin-left:0;
+			}
+		}
+	}
+}
