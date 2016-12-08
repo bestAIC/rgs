@@ -58,6 +58,7 @@ app.init = function () {
 	app.initNav();
 	app.calc();
 	app.initTabs();
+	app.initBaseCheck();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -75,6 +76,17 @@ app.masks = function () {
 	$('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
 	$('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
 	$('[data-phone-mask]').mask("(000) 000-00-00",{clearIfNotMatch: true});
+};
+app.initBaseCheck = function () {
+	var $check =  $('[data-base-check]'),
+			$checkWrap =  $('[data-base-check-wrap]')
+		;
+	$check.filter(':checked').each(function () {
+		$(this).closest($checkWrap).addClass('_active');
+	});
+	$check.on('change',function () {
+		$(this).closest($checkWrap).toggleClass('_active');
+	});
 };
 app.initChosen = function () {
 	$('[data-chosen]').chosen({

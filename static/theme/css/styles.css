@@ -426,8 +426,8 @@ input[type='checkbox'][disabled] + .ideal-check {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
-  padding-top: 18px;
-  padding-bottom: 15px;
+  padding-top: 1.8rem;
+  padding-bottom: 1.5rem;
 }
 .chosen-container .chosen-results li {
   padding: 0.5rem 1.2rem;
@@ -438,11 +438,11 @@ input[type='checkbox'][disabled] + .ideal-check {
   opacity: 0.8;
 }
 .chosen-container .chosen-results li + li {
-  margin-top: 16px;
+  margin-top: 1.6rem;
 }
 .chosen-container-single .chosen-single {
   border: 1px solid #e8e8e8;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   height: 4.8rem;
   line-height: 4.6rem;
   padding-left: 1.9rem;
@@ -451,6 +451,9 @@ input[type='checkbox'][disabled] + .ideal-check {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
+}
+.chosen-container-single .chosen-single span {
+  margin-right: 2.6rem;
 }
 .chosen-container.chosen-with-drop .chosen-single {
   border-bottom-left-radius: 0;
@@ -461,11 +464,11 @@ input[type='checkbox'][disabled] + .ideal-check {
 }
 .chosen-container .chosen-drop {
   border-color: #e8e8e8;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   margin-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  box-shadow: 0 2px 8px rgba(19, 25, 38, 0.04), 0 10px 40px rgba(13, 16, 26, 0.06);
+  box-shadow: 0 0.2rem 0.8rem rgba(19, 25, 38, 0.04), 0 1rem 4rem rgba(13, 16, 26, 0.06);
 }
 .chosen-container-single .chosen-single div {
   width: 2.6rem;
@@ -4479,12 +4482,12 @@ h4 {
   margin: 0 0 0.5rem 1rem;
 }
 .deposit-card {
-  height: 252px;
+  height: 25.2rem;
   background: white;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
   color: #3e3e3e;
-  padding: 27px 40px;
+  padding: 2.7rem 4rem;
   transition: background 0.5s, color 0.5s;
   position: relative;
 }
@@ -4564,16 +4567,16 @@ h4 {
   width: 36rem;
 }
 .deposit-card__title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 2.7rem;
 }
 .deposit-card__text {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
-  line-height: 25px;
-  margin-top: 11px;
-  min-height: 100px;
+  line-height: 2.5rem;
+  margin-top: 1.1rem;
+  min-height: 10rem;
 }
 .deposit-card__btns {
   margin-top: 0.9rem;
@@ -4604,8 +4607,8 @@ h4 {
 }
 .deposit-card__info {
   float: left;
-  margin-left: 75px;
-  margin-top: 20px;
+  margin-left: 7.5rem;
+  margin-top: 2rem;
   *zoom: 1;
 }
 .deposit-card__info:before,
@@ -4622,20 +4625,20 @@ h4 {
   width: 17.7rem;
 }
 .deposit-card__info-block-title {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   text-transform: uppercase;
   color: #AAAEB2;
   transition: color 0.5s;
 }
 .deposit-card__info-block-text {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
-  letter-spacing: -0.33px;
-  line-height: 30px;
-  margin-top: 18px;
+  letter-spacing: -0.033rem;
+  line-height: 3rem;
+  margin-top: 1.8rem;
 }
 .tablet.portrait .deposit-card__ico {
   bottom: 0;
@@ -4645,14 +4648,14 @@ h4 {
   height: 15rem;
 }
 .tablet.portrait .deposit-card__text {
-  margin-top: 11px;
-  min-height: 100px;
+  margin-top: 1.1rem;
+  min-height: 10rem;
 }
 .tablet.portrait .deposit-card__info {
-  margin-left: 45px;
+  margin-left: 4.5rem;
 }
 .tablet.portrait .deposit-card__info-block {
-  width: 122px;
+  width: 12.2rem;
 }
 .tablet.portrait .deposit-card__info-block + .deposit-card__info-block {
   width: 7.7rem;
@@ -4660,11 +4663,11 @@ h4 {
   white-space: nowrap;
 }
 .tablet.portrait .deposit-card__info-block-text {
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 .mobile .deposit-card {
   height: auto;
-  padding: 33px 25px 25px 25px;
+  padding: 3.3rem 2.5rem 2.5rem 2.5rem;
   position: relative;
 }
 .mobile .deposit-card + .deposit-card {
@@ -4694,7 +4697,7 @@ h4 {
   width: 100%;
 }
 .mobile .deposit-card__text {
-  min-height: 80px;
+  min-height: 8rem;
 }
 .mobile .deposit-card__btns {
   margin-top: 2rem;
@@ -4710,7 +4713,7 @@ h4 {
 .mobile .deposit-card__info {
   float: none;
   margin-left: 0;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 .mobile .deposit-card__info-block {
   float: none;
@@ -4720,13 +4723,13 @@ h4 {
   margin-top: 2rem;
 }
 .mobile .deposit-card__info-block-text {
-  margin-top: 4px;
+  margin-top: 0.4rem;
 }
 .deposit-filter__block {
   background-color: #fff;
 }
 .deposit-filter__block-top-inner {
-  padding: 45px 40px 39px;
+  padding: 4.5rem 4rem 3.9rem;
   *zoom: 1;
 }
 .deposit-filter__block-top-inner:before,
@@ -4742,11 +4745,11 @@ h4 {
   border-top: 1px solid #DEDFE0;
 }
 .deposit-filter__block-bottom-inner {
-  padding: 25px 40px;
+  padding: 2.5rem 4rem;
   *zoom: 1;
-  font-size: 18px;
-  letter-spacing: -0.25px;
-  line-height: 25px;
+  font-size: 1.8rem;
+  letter-spacing: -0.025rem;
+  line-height: 2.5rem;
 }
 .deposit-filter__block-bottom-inner:before,
 .deposit-filter__block-bottom-inner:after {
@@ -4782,8 +4785,8 @@ h4 {
   height: 1.6rem;
   background: url('../images/icons/return.svg') no-repeat center;
   background-size: contain;
-  margin-top: 5px;
-  margin-right: 15px;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
 }
 .deposit-filter__options {
   width: 73rem;
@@ -4796,18 +4799,18 @@ h4 {
   float: left;
   width: 33rem;
   margin-left: 3rem;
-  margin-top: -5px;
+  margin-top: -0.5rem;
 }
 .deposit-filter__check {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  letter-spacing: -0.22px;
-  line-height: 24px;
+  letter-spacing: -0.022rem;
+  line-height: 2.4rem;
   color: #3e3e3e;
   position: relative;
 }
 .deposit-filter__check + .deposit-filter__check {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 .deposit-filter__check .ideal-check {
   position: absolute;
@@ -4822,7 +4825,7 @@ h4 {
   font-weight: 600;
 }
 .tablet.portrait .deposit-filter__block-top-inner {
-  padding: 45px 40px 30px;
+  padding: 4.5rem 4rem 3rem;
 }
 .tablet.portrait .deposit-filter__items {
   margin-top: 4rem;
@@ -4848,9 +4851,9 @@ h4 {
   clear: both;
 }
 .tablet.portrait .deposit-filter__check {
-  font-size: 14px;
-  letter-spacing: -0.19px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
   float: left;
 }
 .tablet.portrait .deposit-filter__check:last-child {
@@ -4866,10 +4869,10 @@ h4 {
   margin-right: 1.6rem;
 }
 .mobile .deposit-filter__block-top-inner {
-  padding: 33px 30px 11px;
+  padding: 3.3rem 3rem 1.1rem;
 }
 .mobile .deposit-filter__block-bottom-inner {
-  padding: 20px 30px 30px;
+  padding: 2rem 3rem 3rem;
 }
 .mobile .deposit-filter__counter {
   float: none;
@@ -4879,7 +4882,7 @@ h4 {
 }
 .mobile .deposit-filter__reset {
   float: none;
-  margin-top: 20px;
+  margin-top: 2rem;
   display: inline-block;
   vertical-align: top;
 }
@@ -4897,8 +4900,8 @@ h4 {
   margin-top: 2rem;
 }
 .mobile .deposit-filter__check {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
   float: left;
   width: 50%;
   margin-bottom: 2rem;
@@ -4938,12 +4941,12 @@ h4 {
   margin-top: 0;
 }
 .deposit-compare__table {
-  margin-top: 33px;
+  margin-top: 3.3rem;
 }
 .deposit-compare__table .status-ico {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 1.7rem;
+  height: 1.7rem;
   border-radius: 50%;
   background: red;
   vertical-align: middle;
@@ -4973,35 +4976,35 @@ h4 {
 }
 .deposit-compare__table-titles td {
   color: #AAAEB2;
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   border-top: 1px solid #DEDFE0;
   border-bottom: 1px solid #DEDFE0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .deposit-compare__table-percent {
-  width: 250px;
+  width: 25rem;
 }
 .deposit-compare__table-valuta {
   font-weight: 500;
 }
 .deposit-compare__table-valuta td {
   border-bottom: 1px solid #DEDFE0;
-  padding-top: 20px;
-  font-size: 16px;
+  padding-top: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  letter-spacing: 0.05px;
-  line-height: 19px;
-  padding-bottom: 19px;
+  letter-spacing: 0.005rem;
+  line-height: 1.9rem;
+  padding-bottom: 1.9rem;
 }
 .deposit-compare__table-row td {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 25px;
-  height: 97px;
+  line-height: 2.5rem;
+  height: 9.7rem;
   border-bottom: 1px solid #DEDFE0;
 }
 .deposit-compare__table-row td:first-child {
@@ -5037,7 +5040,7 @@ h4 {
   margin-top: 0;
 }
 .mobile .deposit-compare__table {
-  margin-top: 20px;
+  margin-top: 2rem;
   overflow: auto;
   margin-left: -2rem;
   margin-right: -2rem;

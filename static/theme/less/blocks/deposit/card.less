@@ -1,10 +1,10 @@
 .deposit-card{
-	height: 252px;
+	height: 252/@rem;
 	background: white;
-	border-radius: 2px;
-	box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+	border-radius: 2/@rem;
+	box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 	color: @title-color;
-	padding: 27px 40px;
+	padding: 27/@rem 40/@rem;
 	transition: background @animTime,color @animTime;
 	position: relative;
 	.no-touch &:hover{
@@ -81,16 +81,16 @@
 		width: 36rem;
 	}
 	&__title{
-		font-size: 20px;
+		font-size: 20/@rem;
 		font-weight: 700;
-		line-height: 27px;
+		line-height: 27/@rem;
 	}
 	&__text{
-		font-size: 14px;
+		font-size: 14/@rem;
 		font-weight: 300;
-		line-height: 25px;
-		margin-top: 11px;
-		min-height: 100px;
+		line-height: 25/@rem;
+		margin-top: 11/@rem;
+		min-height: 100/@rem;
 	}
 	&__btns{
 		margin-top: 9/@rem;
@@ -112,27 +112,27 @@
 	}
 	&__info{
 		float: left;
-		margin-left: 75px;
-		margin-top: 20px;
+		margin-left: 75/@rem;
+		margin-top: 20/@rem;
 		.clearfix;
 		&-block{
 			float: left;
 			width: 17.7rem;
 			&-title {
-				font-size: 10px;
+				font-size: 10/@rem;
 				font-weight: 600;
-				letter-spacing: 0.5px;
-				line-height: 14px;
+				letter-spacing: 0.5/@rem;
+				line-height: 14/@rem;
 				text-transform: uppercase;
 				color: @cGray;
 				transition: color @animTime;
 			}
 			&-text{
-				font-size: 24px;
+				font-size: 24/@rem;
 				font-weight: 400;
-				letter-spacing: -0.33px;
-				line-height: 30px;
-				margin-top: 18px;
+				letter-spacing: -0.33/@rem;
+				line-height: 30/@rem;
+				margin-top: 18/@rem;
 			}
 		}
 	}
@@ -147,20 +147,20 @@
 			height: 15rem;
 		}
 		&__text{
-			margin-top: 11px;
-			min-height: 100px;
+			margin-top: 11/@rem;
+			min-height: 100/@rem;
 		}
 		&__info{
-			margin-left: 45px;
+			margin-left: 45/@rem;
 			&-block{
-				width: 122px;
+				width: 122/@rem;
 				&+.deposit-card__info-block{
 					width: 7.7rem;
 					margin-left: 2rem;
 					white-space: nowrap;
 				}
 				&-text{
-					margin-top: 8px;
+					margin-top: 8/@rem;
 				}
 			}
 		}
@@ -169,7 +169,7 @@
 .mobile{
 	.deposit-card{
 		height: auto;
-		padding: 33px 25px 25px 25px;
+		padding: 33/@rem 25/@rem 25/@rem 25/@rem;
 		position: relative;
 		&+.deposit-card{
 			margin-top: 2rem;
@@ -189,7 +189,7 @@
 			width: 100%;
 		}
 		&__text{
-			min-height: 80px;
+			min-height: 80/@rem;
 		}
 		&__btns{
 			margin-top: 20/@rem;
@@ -205,7 +205,7 @@
 		&__info{
 			float: none;
 			margin-left: 0;
-			margin-top: 15px;
+			margin-top: 15/@rem;
 			&-block{
 				float: none;
 				width: 15rem;
@@ -213,7 +213,7 @@
 					margin-top: 2rem;
 				}
 				&-text{
-					margin-top: 4px;
+					margin-top: 4/@rem;
 				}
 			}
 		}

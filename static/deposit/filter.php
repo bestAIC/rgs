@@ -81,14 +81,14 @@
 										</div>
 									</div>
 									<div class="deposit-filter__checks">
-										<div class="deposit-filter__check">
-											<label><input type="checkbox" >Пополнение</label>
+										<div class="deposit-filter__check" data-base-check-wrap>
+											<label><input type="checkbox" data-base-check checked>Пополнение</label>
 										</div>
-										<div class="deposit-filter__check">
-											<label><input type="checkbox" >Частичное снятие</label>
+										<div class="deposit-filter__check" data-base-check-wrap>
+											<label><input type="checkbox" data-base-check  >Частичное снятие</label>
 										</div>
-										<div class="deposit-filter__check">
-											<label><input type="checkbox" >Начисление процентов ежемесячно</label>
+										<div class="deposit-filter__check" data-base-check-wrap>
+											<label><input type="checkbox" data-base-check  >Начисление процентов ежемесячно</label>
 										</div>
 									</div>
 								</div>
