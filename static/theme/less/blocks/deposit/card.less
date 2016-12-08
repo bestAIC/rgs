@@ -154,3 +154,51 @@
 		}
 	}
 }
+.mobile{
+	.deposit-card{
+		height: auto;
+		padding: 33px 25px 25px 25px;
+		&+.deposit-card{
+			margin-top: 2rem;
+		}
+		&__ico{
+
+		}
+		&__top{
+			.clearfix;
+		}
+		&__main{
+			float: none;
+			width: 100%;
+		}
+		&__text{
+			min-height: 80px;
+		}
+		&__btns{
+			margin-top: 20/@rem;
+		}
+		&__btn{
+			margin-right: 1.5rem;
+			padding: 1.5rem 2.5rem;
+			&._transparent{
+				padding: 1.3rem 1.4rem;
+				margin-right: 0;
+			}
+		}
+		&__info{
+			float: none;
+			margin-left: 0;
+			margin-top: 15px;
+			&-block{
+				float: none;
+				width: 15rem;
+				&+.deposit-card__info-block{
+					margin-top: 2rem;
+				}
+				&-text{
+					margin-top: 4px;
+				}
+			}
+		}
+	}
+}

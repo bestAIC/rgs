@@ -792,9 +792,6 @@ h4 {
 .tablet.portrait .b-blocks .b-block {
   padding-top: 1.2rem;
 }
-.mobile .b-blocks {
-  padding-top: 4rem;
-}
 .mobile .b-blocks .b-block {
   padding-top: 2rem;
 }
@@ -4365,9 +4362,6 @@ h4 {
   margin-top: -3rem;
   height: 17rem;
 }
-.mobile .deposit .inner__info {
-  padding-bottom: 0;
-}
 .mobile .deposit .grid__inner {
   padding-right: 2rem;
   padding-left: 2rem;
@@ -4649,6 +4643,58 @@ h4 {
 .tablet.portrait .deposit-card__info-block-text {
   margin-top: 8px;
 }
+.mobile .deposit-card {
+  height: auto;
+  padding: 33px 25px 25px 25px;
+}
+.mobile .deposit-card + .deposit-card {
+  margin-top: 2rem;
+}
+.mobile .deposit-card__top {
+  *zoom: 1;
+}
+.mobile .deposit-card__top:before,
+.mobile .deposit-card__top:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .deposit-card__top:after {
+  clear: both;
+}
+.mobile .deposit-card__main {
+  float: none;
+  width: 100%;
+}
+.mobile .deposit-card__text {
+  min-height: 80px;
+}
+.mobile .deposit-card__btns {
+  margin-top: 2rem;
+}
+.mobile .deposit-card__btn {
+  margin-right: 1.5rem;
+  padding: 1.5rem 2.5rem;
+}
+.mobile .deposit-card__btn._transparent {
+  padding: 1.3rem 1.4rem;
+  margin-right: 0;
+}
+.mobile .deposit-card__info {
+  float: none;
+  margin-left: 0;
+  margin-top: 15px;
+}
+.mobile .deposit-card__info-block {
+  float: none;
+  width: 15rem;
+}
+.mobile .deposit-card__info-block + .deposit-card__info-block {
+  margin-top: 2rem;
+}
+.mobile .deposit-card__info-block-text {
+  margin-top: 4px;
+}
 .deposit-filter__block {
   background-color: #fff;
 }
@@ -4792,6 +4838,54 @@ h4 {
   position: static;
   margin-right: 1.6rem;
 }
+.mobile .deposit-filter__block-top-inner {
+  padding: 33px 30px 11px;
+}
+.mobile .deposit-filter__block-bottom-inner {
+  padding: 20px 30px 30px;
+}
+.mobile .deposit-filter__counter {
+  float: none;
+}
+.mobile .deposit-filter__items {
+  margin-top: 4rem;
+}
+.mobile .deposit-filter__reset {
+  float: none;
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.mobile .deposit-filter__options {
+  width: 100%;
+  float: none;
+}
+.mobile .deposit-filter__options .deposit-calc__option + .deposit-calc__option {
+  margin-top: 2rem;
+}
+.mobile .deposit-filter__checks {
+  float: none;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 2rem;
+}
+.mobile .deposit-filter__check {
+  font-size: 14px;
+  line-height: 20px;
+  float: left;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+.mobile .deposit-filter__check:last-child {
+  width: 100%;
+}
+.mobile .deposit-filter__check + .deposit-filter__check {
+  margin-top: 0;
+}
+.mobile .deposit-filter__check .ideal-check {
+  position: static;
+  margin-right: 1.6rem;
+}
 .deposit-compare {
   padding-top: 1.8rem;
 }
@@ -4895,7 +4989,7 @@ h4 {
 .tablet.portrait .deposit-compare__table {
   overflow: auto;
   margin-left: -2.7rem;
-  margin-right: -2.5rem;
+  margin-right: -2.7rem;
 }
 .tablet.portrait .deposit-compare__table table {
   width: 117rem;
@@ -4904,6 +4998,27 @@ h4 {
   position: relative;
 }
 .tablet.portrait .deposit-compare__table td:first-child {
+  padding-left: 1rem;
+}
+.mobile .deposit-compare {
+  padding-top: 0;
+}
+.mobile .deposit-compare__bottom .inner__info-block {
+  margin-top: 4rem;
+}
+.mobile .deposit-compare__bottom .file {
+  margin-top: 0;
+}
+.mobile .deposit-compare__table {
+  margin-top: 20px;
+  overflow: auto;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.mobile .deposit-compare__table table {
+  width: 117rem;
+}
+.mobile .deposit-compare__table td:first-child {
   padding-left: 1rem;
 }
 .promo-banner {

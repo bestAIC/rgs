@@ -120,3 +120,61 @@
 		}
 	}
 }
+.mobile{
+	.deposit-filter{
+		&__block{
+			&-top{
+				&-inner{
+					padding: 33px 30px 11px;
+				}
+			}
+			&-bottom{
+				&-inner{
+					padding: 20px 30px 30px;
+				}
+			}
+		}
+		&__counter{
+			float: none;
+		}
+		&__items{
+			margin-top: 4rem;
+		}
+		&__reset{
+			float: none;
+			margin-top: 20px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		&__options{
+			width: 100%;
+			float: none;
+			.deposit-calc__option + .deposit-calc__option{
+				margin-top: 2rem;
+			}
+		}
+		&__checks{
+			float: none;
+			width: 100%;
+			margin-left: 0;
+			margin-top: 2rem;
+		}
+		&__check{
+			font-size: 14px;
+			line-height: 20px;
+			float: left;
+			width: 50%;
+			margin-bottom: 2rem;
+			&:last-child{
+				width: 100%;
+			}
+			&+.deposit-filter__check{
+				margin-top: 0;
+			}
+			.ideal-check{
+				position: static;
+				margin-right: 1.6rem;
+			}
+		}
+	}
+}
