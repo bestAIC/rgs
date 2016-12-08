@@ -62,6 +62,8 @@ app.init = function () {
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
+	}else{
+		app.initForms();
 	}
 	if(app.utils.isMobile || app.utils.isTabletPort ){
 		app.tabletSliders();
@@ -76,6 +78,24 @@ app.masks = function () {
 	$('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
 	$('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
 	$('[data-phone-mask]').mask("(000) 000-00-00",{clearIfNotMatch: true});
+};
+app.initForms = function () {
+	$('html').on('click.formError','[data-form-error]',function(){
+		var $self = $(this);
+		if($self.hasClass('_active')){
+			$self.removeClass('_active');
+		}else{
+			$('[data-form-error]').removeClass('_active');
+			$self.addClass('_active')
+		}
+		return false;
+	});
+	$('html').on('click.closeErrors',function(e){
+		if(!($(e.targer).closest('[data-form-error]').length)){
+			$('[data-form-error]').removeClass('_active');
+		}
+	});
+
 };
 app.initBaseCheck = function () {
 	var $check =  $('[data-base-check]'),

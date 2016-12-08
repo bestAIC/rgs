@@ -866,6 +866,105 @@ h4 {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
+.field-status {
+  position: absolute;
+  right: 0;
+  top: 0.8rem;
+  z-index: 10;
+  display: none;
+}
+.no-touch .field-status:hover .field-status__text,
+.field-status._active .field-status__text {
+  display: block;
+}
+.field-status__ico {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #cca266;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.field-status__text {
+  width: 23rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(211, 211, 211, 0.5);
+  min-height: 5.6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.004rem;
+  line-height: 2rem;
+  color: #3e3e3e;
+  position: absolute;
+  left: 100%;
+  z-index: 10;
+  margin-left: 1rem;
+  top: -2rem;
+  padding: 0.8rem 1rem 0.8rem 1.9rem;
+  display: none;
+}
+.field-status__text:before {
+  content: '';
+  position: absolute;
+  left: -0.6rem;
+  top: 2.2rem;
+  border: 0.6rem solid transparent;
+  border-left: 0;
+  border-right-color: #fff;
+}
+._ok .field-status {
+  display: block;
+}
+._ok .field-status__ico {
+  background: url('../images/icons/ok_small.svg') no-repeat center #cca266;
+  background-size: 0.8rem 0.7rem;
+  cursor: default;
+}
+._error .field-status {
+  display: block;
+}
+._error .field-status__ico {
+  background: url('../images/icons/attention.svg') no-repeat center #b31b2c;
+  background-size: 0.3rem 0.9rem;
+}
+.tablet.portrait .field-status {
+  top: 50%;
+  z-index: 10;
+  margin-top: -1rem;
+}
+.tablet.portrait .field-status__text {
+  left: auto;
+  right: 0;
+  top: 100%;
+  margin-top: 1.2rem;
+}
+.tablet.portrait .field-status__text:before {
+  left: auto;
+  top: -0.6rem;
+  right: 1rem;
+  border: 0.6rem solid transparent;
+  border-top: 0;
+  border-bottom-color: #fff;
+}
+.mobile .field-status {
+  top: 50%;
+  z-index: 10;
+  margin-top: -1rem;
+}
+.mobile .field-status__text {
+  left: auto;
+  right: 0;
+  top: 100%;
+  margin-top: 1.2rem;
+}
+.mobile .field-status__text:before {
+  left: auto;
+  top: -0.6rem;
+  right: 1rem;
+  border: 0.6rem solid transparent;
+  border-top: 0;
+  border-bottom-color: #fff;
+}
 .animation__top {
   opacity: 0;
   transform: translate(0, 10rem);
@@ -2833,6 +2932,7 @@ h4 {
   height: 4.6rem;
   border-bottom: 0.2rem solid #d0d4d9;
   padding-bottom: 0.4rem;
+  position: relative;
 }
 .subscription__form-block-field.phone-inp {
   position: relative;
@@ -2873,6 +2973,12 @@ h4 {
   letter-spacing: 0;
   padding: 1.5rem 2.3rem;
   transform: translate(-50%, 0);
+}
+.tablet.portrait .field-status__text {
+  width: 27.6rem;
+}
+.mobile .subscription .field-status__text {
+  width: 29.4rem;
 }
 .mobile .subscription .grid__inner {
   padding-left: 2rem;
