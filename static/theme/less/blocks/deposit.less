@@ -13,12 +13,48 @@
 			}
 		}
 	}
-	&__info-img{
+	&__info-banner{
 		height: 40rem;
-		background: none no-repeat center;
-		background-size: cover;
-		//margin-bottom: 4rem;
+		border-radius: 2px;
 		margin-top: -2rem;
+		//margin-bottom: 4rem;
+		position: relative;
+		&._blue{
+			background-image: linear-gradient(138deg, #a9c4cf 0%, #829eb5 100%);
+		}
+		&._brown{
+			background-image: linear-gradient(137deg, #b88e3b 0%, #855b16 100%);
+		}
+		&-in{
+			color: #fff;
+			position: absolute;
+			bottom: 3rem;
+			left: 3rem;
+			right: 3rem;
+			z-index: 2;
+		}
+		&-title{
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+		&-text{
+			font-size: 80px;
+			font-weight: 700;
+			letter-spacing: -0.73px;
+			line-height: 85px;
+		}
+		&-img{
+			background: none no-repeat center;
+			background-size: contain;
+			width: 378/@rem;
+			height: 479/@rem;
+			right: -4.5rem;
+			position: absolute;
+			z-index: 1;
+			//top: -11.5rem;//фильтр
+			top: -7.8rem;//ячайки
+		}
 	}
 	&__payments{
 		&-blocks{
@@ -530,10 +566,16 @@
 }
 .tablet.portrait{
 	.deposit{
-		&__info-img{
+		&__info-banner{
 			height: 17rem;
 			margin-top: -2.4rem;
 			margin-bottom: 3.7rem;
+			&-img{
+				width: 355/@rem;
+				height: 27rem;
+				right: 2rem;
+				top: -5rem;
+			}
 		}
 		&__payments{
 			&-blocks{
@@ -763,10 +805,16 @@
 				}
 			}
 		}
-		&__info-img{
+		&__info-banner{
 			margin-bottom: 3.3rem;
 			margin-top: -3rem;
 			height: 17rem;
+			&-img{
+				width: 170/@rem;
+				height: 27rem;
+				right: -1.3rem;
+				top: -5rem;
+			}
 		}
 		.inner__info{
 			//padding-bottom: 0;

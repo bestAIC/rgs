@@ -1,6 +1,6 @@
 <?include "../includes/header.php"?>
 	<div class="inner deposit">
-		<div class="inner__banner" style="background-image: url('/static/theme/images/inner/banner.jpg');">
+		<div class="inner__banner" style="background-image: url('/static/theme/images/inner/banner3.jpg');">
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
 					<div class="inner__banner-title">Подобрать вклад</div>
@@ -21,7 +21,13 @@
 		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="deposit__info-img" style="background-image: url(/static/theme/images/home/banner/1.jpg);"></div>
+					<div class="deposit__info-banner _blue">
+						<div class="deposit__info-banner-in">
+							<div class="deposit__info-banner-title">процентная ставка до</div>
+							<div class="deposit__info-banner-text">9,50%</div>
+						</div>
+						<div class="deposit__info-banner-img" style="background-image: url(/static/theme/images/deposit/info-img/balloon.png);"></div>
+					</div>
 				</div>
 				<div class="inner__info-benefits">
 					<div class="inner__info-benefits-title">
