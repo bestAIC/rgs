@@ -134,7 +134,7 @@
 							</div>
 						</div>
 						<div class="deposit-card _save">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/1.png');"></div>
+							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/2.png');"></div>
 							<div class="deposit-card__inner">
 								<div class="deposit-card__top">
 									<div class="deposit-card__main">
@@ -166,7 +166,7 @@
 							</div>
 						</div>
 						<div class="deposit-card _universal">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/1.png');"></div>
+							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/3.png');"></div>
 							<div class="deposit-card__inner">
 								<div class="deposit-card__top">
 									<div class="deposit-card__main">
@@ -195,7 +195,7 @@
 							</div>
 						</div>
 						<div class="deposit-card _invest">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/1.png');"></div>
+							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/4.png');"></div>
 							<div class="deposit-card__inner">
 								<div class="deposit-card__top">
 									<div class="deposit-card__main">
@@ -227,7 +227,7 @@
 							</div>
 						</div>
 						<div class="deposit-card _pensoin">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/1.png');"></div>
+							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/5.png');"></div>
 							<div class="deposit-card__inner">
 								<div class="deposit-card__top">
 									<div class="deposit-card__main">

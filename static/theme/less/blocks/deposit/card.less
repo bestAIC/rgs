@@ -6,6 +6,7 @@
 	color: @title-color;
 	padding: 27px 40px;
 	transition: background @animTime,color @animTime;
+	position: relative;
 	.no-touch &:hover{
 		color: #fff;
 		&._gosstrakh{
@@ -60,7 +61,14 @@
 		margin-top: 3rem;
 	}
 	&__ico{
-
+		position: absolute;
+		bottom: 0;
+		right: 2rem;
+		top: -2rem;
+		width: 30rem;
+		background: none no-repeat center;
+		background-size: contain;
+		z-index: 2;
 	}
 	&__inner{
 
@@ -132,7 +140,11 @@
 .tablet.portrait{
 	.deposit-card{
 		&__ico{
-
+			bottom: 0;
+			right: 2rem;
+			top: auto;
+			width: 15rem;
+			height: 15rem;
 		}
 		&__text{
 			margin-top: 11px;
@@ -158,11 +170,16 @@
 	.deposit-card{
 		height: auto;
 		padding: 33px 25px 25px 25px;
+		position: relative;
 		&+.deposit-card{
 			margin-top: 2rem;
 		}
 		&__ico{
-
+			bottom: 9.5rem;
+			right: 3rem;
+			top: auto;
+			width: 15rem;
+			height: 15rem;
 		}
 		&__top{
 			.clearfix;

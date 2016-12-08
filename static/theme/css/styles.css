@@ -4166,6 +4166,7 @@ h4 {
 .tablet.portrait .deposit__info-img {
   height: 17rem;
   margin-top: -2.4rem;
+  margin-bottom: 3.7rem;
 }
 .tablet.portrait .deposit__payments-blocks {
   padding-bottom: 7rem;
@@ -4485,6 +4486,7 @@ h4 {
   color: #3e3e3e;
   padding: 27px 40px;
   transition: background 0.5s, color 0.5s;
+  position: relative;
 }
 .no-touch .deposit-card:hover {
   color: #fff;
@@ -4534,6 +4536,16 @@ h4 {
 }
 .deposit-card + .deposit-card {
   margin-top: 3rem;
+}
+.deposit-card__ico {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  top: -2rem;
+  width: 30rem;
+  background: none no-repeat center;
+  background-size: contain;
+  z-index: 2;
 }
 .deposit-card__top {
   *zoom: 1;
@@ -4625,6 +4637,13 @@ h4 {
   line-height: 30px;
   margin-top: 18px;
 }
+.tablet.portrait .deposit-card__ico {
+  bottom: 0;
+  right: 2rem;
+  top: auto;
+  width: 15rem;
+  height: 15rem;
+}
 .tablet.portrait .deposit-card__text {
   margin-top: 11px;
   min-height: 100px;
@@ -4646,9 +4665,17 @@ h4 {
 .mobile .deposit-card {
   height: auto;
   padding: 33px 25px 25px 25px;
+  position: relative;
 }
 .mobile .deposit-card + .deposit-card {
   margin-top: 2rem;
+}
+.mobile .deposit-card__ico {
+  bottom: 9.5rem;
+  right: 3rem;
+  top: auto;
+  width: 15rem;
+  height: 15rem;
 }
 .mobile .deposit-card__top {
   *zoom: 1;
