@@ -24,7 +24,7 @@
 	right: 0;
 	background: #fff;
 	z-index: 9999;
-	padding-bottom: 78/@rem;
+	padding-bottom: 6.8rem;
 	&__form{
 		position:relative;
 		border-bottom: 1px solid @cBorder;
@@ -57,6 +57,8 @@
 	&__letters{
 		text-align: justify;
 		line-height: 0;
+		margin-left: -0.7rem;
+		margin-right: -0.7rem;
 		&:after{
 			content: '';
 			width: 100%;
@@ -121,20 +123,25 @@
 		&-block{
 			.clearfix;
 			padding-left:55/@rem;
-			max-height: 230/@rem;
+			max-height: 240/@rem;
 			overflow-y: auto;
-			&-col{
+			padding-bottom: 1rem;
+			/*&-col{
 				float: left;
 				width: 20rem;
 				padding-bottom: 2rem;
 				padding-right: 0.5rem;
-			}
+			}*/
 		}
 	}
 	&__item{
-		&+&{
-			margin-top: 1rem;
-		}
+		margin-bottom: 1rem;
+		float: left;
+		width: 20rem;
+		padding-right: 0.5rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 		&._disabled{
 			opacity: 0.3;
 		}
@@ -176,6 +183,9 @@
 				}
 			}
 		}
+		&__item{
+			width: 16.5rem;
+		}
 		&__items{
 			margin-top: 35/@rem;
 			&:after{
@@ -185,9 +195,6 @@
 			&-block{
 				padding-left:0;
 				max-height: calc(100vh - 22rem);
-				&-col{
-					width: 16.5rem;
-				}
 			}
 		}
 	}
@@ -252,16 +259,11 @@
 				.clearfix;
 				padding-left:4/@rem;
 				max-height: calc(100vh - 24rem);
-				&-col{
-					width: 16.2rem;
-					padding-bottom: 2rem;
-				}
 			}
 		}
 		&__item{
-			&+.city__item{
-				margin-top: 2.2rem;
-			}
+			margin-bottom: 2.2rem;
+			width: 16.2rem;
 			&-link{
 				font-size: 16/@rem;
 				//opacity: 0.3;

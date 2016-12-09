@@ -539,146 +539,39 @@
 
 			</div>
 			<div class="city__items">
+				<?
+					$cities=["алават","алехард","альск","амара","анкт-Петербург","аранск","аратов","асово","еверодвинск","евероморск","еверск",
+					"егежа","еленгинск","еменов","емикаракорск","ергиев Посад","лавгород","лавянск-на-Кубани","ланцы","лободской","людянка","моленск","нежинск","нежногорск",
+					"олнечногорский","оль-Илецк","орочинск","ольцы","ортавала","основоборск","основский","основый Бор",
+					"тарый Петергоф","тепное","терлитамак","троитель","трунино","тупино","уворов","уджа"];
+					$cols = 5;
+					$dublirovanieCounter= 2;
+					if($tablePort){
+						$cols = 4;
+						$dublirovanieCounter = 4;
+					}
+					if($mobile){
+						$cols = 2;
+						$dublirovanieCounter = 1;
+					}
+					$rows = ceil(count($cities)/$cols);
+
+				?>
 				<? for ($j=0;$j<count($letters);$j++){?>
 				<div class="city__items-block <?=$j==0 ? ' _active':' hide'  ?>" data-city-items-block="<?=$letters[$j]?>">
-					<?if($desktopAndTableLand){?>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<2;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алават</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алехард</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>альск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>амара</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>анкт-Петербург</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>аранск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>аратов</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>асово</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<2;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еверодвинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>евероморск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еверск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>егежа</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еленгинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еменов</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>емикаракорск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ергиев Посад</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<2;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>лавгород</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>лавянск-на-Кубани</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ланцы</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>лободской</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>людянка</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>моленск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>нежинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>нежногорск</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<2;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>олнечногорский</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>оль-Илецк</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ольцы</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>орочинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ортавала</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>основоборск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>основский</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>основый Бор</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<2;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>тарый Петергоф</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>тепное</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>терлитамак</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>троитель</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>трунино</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>тупино</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>уворов</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>уджа</a></div>
-							<?}?>
-						</div>
-					<?}?>
-					<?if($tablePort){?>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<4;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алават</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алехард</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>альск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>амара</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>анкт-Петербург</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>аранск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>аратов</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>асово</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<4;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еверодвинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>евероморск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еверск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>егежа</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еленгинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еменов</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>емикаракорск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ергиев Посад</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<4;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>лавгород</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>лавянск-на-Кубани</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ланцы</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>лободской</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>людянка</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>моленск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>нежинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>нежногорск</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<4;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>олнечногорский</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>оль-Илецк</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ольцы</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>орочинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ортавала</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>основоборск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>основский</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>основый Бор</a></div>
-							<?}?>
-						</div>
-					<?}?>
-					<?if($mobile){?>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<4;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алават</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алехард</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>альск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>амара</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>анкт-Петербург</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>аранск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>аратов</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>асово</a></div>
-							<?}?>
-						</div>
-						<div class="city__items-block-col">
-							<?for ($i=0;$i<4;$i++){?>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еверодвинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>евероморск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еверск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>егежа</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еленгинск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>еменов</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>емикаракорск</a></div>
-								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>ергиев Посад</a></div>
-							<?}?>
-						</div>
-					<?}?>
+					<?
+						for($dublirovanie=1; $dublirovanie<=$dublirovanieCounter;$dublirovanie++) {
+							for ($k = 1; $k <= $rows; $k++) {
+								for ($l = 1; $l <= $cols; $l++) {
+									?>
+									<div class="city__item" data-city-item>
+										<a href="#" class="city__item-link"><?=$letters[$j] . $cities[$k + $rows * ($l - 1) - 1]?></a>
+									</div>
+								<?
+								}
+							}
+						}
+					?>
 				</div>
 				<?}?>
 			</div>

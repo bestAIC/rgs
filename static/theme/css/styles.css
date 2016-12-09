@@ -1759,7 +1759,7 @@ h4 {
   right: 0;
   background: #fff;
   z-index: 9999;
-  padding-bottom: 7.8rem;
+  padding-bottom: 6.8rem;
 }
 .city__form {
   position: relative;
@@ -1794,6 +1794,8 @@ h4 {
 .city__letters {
   text-align: justify;
   line-height: 0;
+  margin-left: -0.7rem;
+  margin-right: -0.7rem;
 }
 .city__letters:after {
   content: '';
@@ -1858,8 +1860,15 @@ h4 {
 .city__items-block {
   *zoom: 1;
   padding-left: 5.5rem;
-  max-height: 23rem;
+  max-height: 24rem;
   overflow-y: auto;
+  padding-bottom: 1rem;
+  /*&-col{
+				float: left;
+				width: 20rem;
+				padding-bottom: 2rem;
+				padding-right: 0.5rem;
+			}*/
 }
 .city__items-block:before,
 .city__items-block:after {
@@ -1870,14 +1879,14 @@ h4 {
 .city__items-block:after {
   clear: both;
 }
-.city__items-block-col {
+.city__item {
+  margin-bottom: 1rem;
   float: left;
   width: 20rem;
-  padding-bottom: 2rem;
   padding-right: 0.5rem;
-}
-.city__item + .city__item {
-  margin-top: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .city__item._disabled {
   opacity: 0.3;
@@ -1911,6 +1920,9 @@ h4 {
   top: 0;
   bottom: 0;
 }
+.tablet.portrait .city__item {
+  width: 16.5rem;
+}
 .tablet.portrait .city__items {
   margin-top: 3.5rem;
 }
@@ -1921,9 +1933,6 @@ h4 {
 .tablet.portrait .city__items-block {
   padding-left: 0;
   max-height: calc(78vh);
-}
-.tablet.portrait .city__items-block-col {
-  width: 16.5rem;
 }
 .mobile .city {
   bottom: 0;
@@ -1985,12 +1994,9 @@ h4 {
 .mobile .city__items-block:after {
   clear: both;
 }
-.mobile .city__items-block-col {
+.mobile .city__item {
+  margin-bottom: 2.2rem;
   width: 16.2rem;
-  padding-bottom: 2rem;
-}
-.mobile .city__item + .city__item {
-  margin-top: 2.2rem;
 }
 .mobile .city__item-link {
   font-size: 1.6rem;
