@@ -24,13 +24,13 @@
 	right: 0;
 	background: #fff;
 	z-index: 9999;
-	padding-bottom: 78px;
+	padding-bottom: 78/@rem;
 	&__form{
 		position:relative;
 		border-bottom: 1px solid @cBorder;
 		&-in{
-			padding: 25px 0;
-			height: 80px;
+			padding: 25/@rem 0;
+			height: 80/@rem;
 		}
 		&-close{
 			width: 1.6rem;
@@ -52,7 +52,7 @@
 		}
 	}
 	&__block{
-		padding-top: 24px;
+		padding-top: 29/@rem;
 	}
 	&__letters{
 		text-align: justify;
@@ -65,33 +65,49 @@
 	}
 	&__letter{
 		//width: 2rem;
-		height: 4rem;
+		height: 3rem;
+		width: 3rem;
 		border-radius: 50%;
 		text-align: center;
 		display: inline-block;
 		background-color: transparent;
 		vertical-align: top;
 		color: #191919;
-		font-size: 24px;
+		font-size: 24/@rem;
 		font-weight: 600;
-		line-height: 20px;
-		padding: 1rem 0.5rem;
-		&:first-child{
+		span{
+			position: relative;
+			z-index: 2;
+			display: block;
+			line-height: 20/@rem;
+			padding:0.5rem;
+		}
+		/*&:first-child{
 			padding-left: 0;
 			padding-right: 0;
 		}
 		&:last-child{
 			padding-left: 0;
 			padding-right: 0;
-		}
+		}*/
 		&._active{
-			background-color: @cGold;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				top: -5/@rem;
+				left: -5/@rem;
+				right: -5/@rem;
+				bottom: -5/@rem;
+				z-index: 1;
+				background-color: @cGold;
+				border-radius: 50%;
+			}
 			color: #fff;
-			width: 4rem;
 		}
 	}
 	&__items{
-		margin-top: 32px;
+		margin-top: 3.7rem;
 		position: relative;
 		&:after{
 			content: '';
@@ -99,13 +115,13 @@
 			left: 2rem;
 			right: 2rem;
 			bottom: 0;
-			height: 30px;
+			height: 30/@rem;
 			background-image: linear-gradient(to top, white 0%, transparent 100%);
 		}
 		&-block{
 			.clearfix;
-			padding-left:55px;
-			max-height: 230px;
+			padding-left:55/@rem;
+			max-height: 230/@rem;
 			overflow-y: auto;
 			&-col{
 				float: left;
@@ -124,7 +140,7 @@
 		}
 		&-link{
 			color: @text-color;
-			font-size: 14px;
+			font-size: 14/@rem;
 			line-height: 1;
 		}
 	}
@@ -133,7 +149,7 @@
 	.city{
 		bottom: 0;
 		.mCSB_scrollTools .mCSB_draggerContainer{
-			height: 220px;
+			//height: 220/@rem;
 		}
 		&__form{
 			&-in{
@@ -141,34 +157,34 @@
 			}
 		}
 		&__block{
-			padding-top: 31px;
+			padding-top: 31/@rem;
+		}
+		&__letters{
+			margin-left: -0.5rem;
 		}
 		&__letter{
-			//width: 2rem;
+			width: 2rem;
 			height: 3rem;
-			font-size: 18px;
-			padding: 0.5rem 0.2rem;
-			&:first-child{
-				padding-left: 0;
-				padding-right: 0;
-			}
-			&:last-child{
-				padding-left: 0;
-				padding-right: 0;
+			font-size: 18/@rem;
+			span{
+				padding: 0.5rem 0;
 			}
 			&._active{
-				width: 3rem;
+				&:after{
+					top: 0;
+					bottom: 0;
+				}
 			}
 		}
 		&__items{
-			margin-top: 35px;
+			margin-top: 35/@rem;
 			&:after{
 				left: 0;
 				right: 0;
 			}
 			&-block{
 				padding-left:0;
-				max-height: calc(100vh - 24rem);
+				max-height: calc(100vh - 22rem);
 				&-col{
 					width: 16.5rem;
 				}
@@ -179,7 +195,7 @@
 .mobile{
 	.city{
 		.mCSB_scrollTools .mCSB_draggerContainer{
-			height: 220px;
+			//height: 220/@rem;
 		}
 		bottom: 0;
 		.grid__inner{
@@ -188,8 +204,8 @@
 		}
 		&__form{
 			&-in{
-				padding: 23px 0;
-				height: 75px;
+				padding: 23/@rem 0;
+				height: 75/@rem;
 				position: relative;
 			}
 			&-field{
@@ -200,35 +216,41 @@
 			}
 		}
 		&__block{
-			padding-top: 19px;
+			padding-top: 1.3rem;
 		}
 		&__letters{
 			text-align: left;
 			line-height: 0;
+			padding: 0.6rem 2rem;
+			margin-right: -2rem;
+			margin-left: -2rem;
 			&:after{
 				display: none;
 			}
 		}
 		&__letter{
 			height: 3rem;
-			font-size: 18px;
-			padding: 0.5rem 0.2rem;
+			font-size: 18/@rem;
+			//padding: 0.5rem 0.2rem;
 			width: 3rem;
-			&:first-child{
-				padding-left: 0;
-			}
-			&:last-child{
-				padding-right: 0;
+			span{
+
 			}
 			&._active{
-				width: 3rem;
+				&:after{
+					content: '';
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+				}
 			}
 		}
 		&__items{
-			margin-top: 38px;
+			margin-top: 3.2rem;
 			&-block{
 				.clearfix;
-				padding-left:4px;
+				padding-left:4/@rem;
 				max-height: calc(100vh - 24rem);
 				&-col{
 					width: 16.2rem;
@@ -241,7 +263,7 @@
 				margin-top: 2.2rem;
 			}
 			&-link{
-				font-size: 16px;
+				font-size: 16/@rem;
 				//opacity: 0.3;
 			}
 		}

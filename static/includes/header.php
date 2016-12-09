@@ -525,13 +525,15 @@
 		<div class="grid__inner">
 			<div class="city__letters no-mob-block">
 				<? for ($i=0;$i<count($letters);$i++){?>
-						<a href="javascript:void(0);" data-city-letter="<?=$letters[$i]?>" class="city__letter <?=$i==0 ? ' _active':''?>"><?=$letters[$i]?></a>
+						<a href="javascript:void(0);" data-city-letter="<?=$letters[$i]?>" class="city__letter <?=$i==0 ? ' _active':''?>">
+							<span><?=$letters[$i]?></span>
+						</a>
 				<?}?>
 			</div>
 			<div class="city__letters swiper-container is-mob-block" data-city-letters-gall>
 				<div class="swiper-wrapper">
 					<?for ($i=0;$i<count($letters);$i++){?>
-						<a href="javascript:void(0);" data-city-letter="<?=$letters[$i]?>" class="swiper-slide city__letter <?=$i==0 ? ' _active':''?>"><?=$letters[$i]?></a>
+						<a href="javascript:void(0);" data-city-letter="<?=$letters[$i]?>" class="swiper-slide city__letter <?=$i==0 ? ' _active':''?>"><span><?=$letters[$i]?></span></a>
 					<?}?>
 				</div>
 

@@ -127,7 +127,7 @@ app.chooseCity = function () {
 					gаll = new Swiper($gall[0], {
 						slidesPerView: 'auto',
 						simulateTouch: true,
-						spaceBetween:10
+						spaceBetween:5
 					});
 					gallInit = true;
 				}
@@ -180,7 +180,9 @@ app.chooseCity = function () {
 		$itemsBlockActive = $itemsBlock.filter('[data-city-items-block="'+activeLetter+'"]');
 		$cityItemsVisible = $itemsBlockActive.find($cityItems);
 		$cityItemsVisible.removeClass('_disabled');
-		gаll.slideTo($letters.filter('[data-city-letter="'+activeLetter+'"]').index());
+		if(gаll){
+			gаll.slideTo($letters.filter('[data-city-letter="'+activeLetter+'"]').index());
+		}
 		$itemsBlockActive.mCustomScrollbar({
 			axis: "y",
 			theme: "dark"
