@@ -589,7 +589,7 @@ app.info = function () {
 		var $self = $(this);
 		$field.val($self.text());
 		
-		$.post($answer.data('ajaxUrl'), {}, function(data){
+		$.post($answer.data('ajaxUrl'), {id:$self.data('requestsItem')}, function(data){
 			var $content = $(data);
 			$content.find('input[type=checkbox], input[type=radio]').idealRadioCheck();
 			$requests.hide();
