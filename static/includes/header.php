@@ -528,7 +528,7 @@
 						<a href="javascript:void(0);" data-city-letter="<?=$letters[$i]?>" class="city__letter <?=$i==0 ? ' _active':''?>"><?=$letters[$i]?></a>
 				<?}?>
 			</div>
-			<div class="city__letters swiper-container is-mob-block">
+			<div class="city__letters swiper-container is-mob-block" data-city-letters-gall>
 				<div class="swiper-wrapper">
 					<?for ($i=0;$i<count($letters);$i++){?>
 						<a href="javascript:void(0);" data-city-letter="<?=$letters[$i]?>" class="swiper-slide city__letter <?=$i==0 ? ' _active':''?>"><?=$letters[$i]?></a>
@@ -654,7 +654,7 @@
 					<?if($mobile){?>
 						<div class="city__items-block-col">
 							<?for ($i=0;$i<4;$i++){?>
-								<<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алават</a></div>
+								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алават</a></div>
 								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>алехард</a></div>
 								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>альск</a></div>
 								<div class="city__item" data-city-item><a href="#" class="city__item-link"><?=$letters[$j]?>амара</a></div>

@@ -100,6 +100,7 @@ app.initForms = function () {
 app.chooseCity = function () {
 	var $showBtn =  $('[data-choose-city-btn]'),
 			$city =  $('[data-city]'),
+			$gall=  $city.find('[data-city-letters-gall]'),
 			$form =  $city.find('[data-city-form]'),
 			$inp =  $city.find('[data-city-form-field]'),
 			$itemsBlock =  $city.find('[data-city-items-block]'),
@@ -108,12 +109,12 @@ app.chooseCity = function () {
 			$cityItemsVisible = $itemsBlockActive.find($cityItems),
 			$letters =  $city.find('[data-city-letter]'),
 			activeLetter = $letters.filter('._active').data('cityLetter'),
-			$close =  $city.find('[data-city-close]')
+			$close =  $city.find('[data-city-close]'),
+			gаll = false
 		;
 	$.expr[':'].Contains = function(a,i,m){
 		return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())==0;
 	};
-
 
 
 	$showBtn.on('click',function () {
@@ -121,6 +122,17 @@ app.chooseCity = function () {
 		setTimeout(function () {
 			app.dom.$body.addClass('choose-city');
 			$city.fadeIn();
+			setTimeout(function () {
+				if(!gаll && $gall.length){
+					gаll = new Swiper($gall[0], {
+						slidesPerView: 'auto',
+						simulateTouch: true,
+						spaceBetween:10
+					});
+					gallInit = true;
+				}
+			},100);
+
 		},300);
 	});
 
@@ -164,8 +176,11 @@ app.chooseCity = function () {
 	function setLetter(letter) {
 		$letters.removeClass('_active').filter('[data-city-letter="'+activeLetter+'"]').addClass('_active');
 		$itemsBlock.hide();
+
 		$itemsBlockActive = $itemsBlock.filter('[data-city-items-block="'+activeLetter+'"]');
 		$cityItemsVisible = $itemsBlockActive.find($cityItems);
+		$cityItemsVisible.removeClass('_disabled');
+		gаll.slideTo($letters.filter('[data-city-letter="'+activeLetter+'"]').index());
 		$itemsBlockActive.mCustomScrollbar({
 			axis: "y",
 			theme: "dark"
