@@ -43,7 +43,7 @@
 		</div>
 
 		<div class="b-blocks _gray">
-			<div class="b-block deposit-filter">
+			<div class="b-block deposit-filter" data-calc-filter>
 				<div class="grid__inner">
 					<h3 class="deposit-filter__title">Подберите наиболее оптимальный вклад</h3>
 					<div class="deposit-filter__block">

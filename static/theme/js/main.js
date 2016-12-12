@@ -57,6 +57,7 @@ app.init = function () {
 	app.questions();
 	app.initNav();
 	app.calc();
+	app.calcFilter();
 	app.initTabs();
 	app.initBaseCheck();
 	app.chooseCity();
@@ -812,6 +813,79 @@ app.offices = function() {
 app.formatNumber = function (value) {
 	return String(value).replace(/(?=\B(?:\d{3})+\b)/g, ' ');
 };
+app.calcFilter = function(){
+	var self = this,
+			$calcFilter = $('[data-calc-filter]'),
+			$sliderWrap = $('[data-calc-slider-wrap]')
+		;
+	if(!$calcFilter.length){
+		return false;
+	}
+
+	$sliderWrap.each(function(){
+		var $self = $(this),
+				$slider = $self.find('[data-calc-slider]'),
+				$inp = $self.find('[data-calc-slider-inp]'),
+				$select = $self.find('[data-calc-slider-select]'),
+				data = $slider.data('calcSlider'),
+				val = null,
+				val1 = null,
+				startValue = null
+
+			;
+		$slider.slider({
+			range: "min",
+			min: data.min,
+			max: data.max,
+			step: data.step,
+			value: data.value || data.min,
+			slide: function( event, ui ){
+				$inp.val(showSliderVal($inp.data('calcSliderInp'),ui.value));
+			},
+			start: function( event, ui ){
+				startValue = ui.value;
+			},
+			stop: function( event, ui ){
+				if(ui.value != startValue){
+					$inp.val(showSliderVal($inp.data('calcSliderInp'),ui.value));
+				}
+			}
+		});
+		$select.on('change',function () {
+			data = $slider.data($select.val());
+			$slider.slider( "option", "max", data.max);
+			$slider.slider( "option", "min", data.min);
+			$slider.slider( "option", "step", data.step);
+			$inp.change();
+		});
+
+		$inp.val(showSliderVal($inp.data('calcSliderInp'),$slider.slider("value")));
+		$inp.focus(function () {
+			val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10);
+			$inp.val(val1);
+		}).keyup(function () {
+
+		});
+		$inp.on('change',function(){
+			val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10) || data.min;
+			val = Math.min(Math.max(data.min, val1),data.max);
+			$slider.slider("value",val);
+			$inp.val(showSliderVal($inp.data('calcSliderInp'),val));
+		});
+	});
+	function showSliderVal(type,val) {
+		var res = '',
+				years = 0,
+				months = 0
+			;
+		if(type == "date"){
+			res = res + app.formatNumber(val) + ' ' +app.utils.okonchanie(val,"день","дня","дней");
+		}else{
+			res = app.formatNumber(val);
+		}
+		return res;
+	}
+};
 app.calc = function(){
 	var self = this,
 			$calc = $('[data-calc]'),
@@ -831,7 +905,9 @@ app.calc = function(){
 			rate = null,
 			valuta='rub'
 		;
-
+	if(!$calc.length){
+		return false;
+	}
 	$sliderWrap.each(function(){
 		var $self = $(this),
 				$slider = $self.find('[data-calc-slider]'),
