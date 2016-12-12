@@ -814,7 +814,22 @@ app.formatNumber = function (value) {
 };
 app.calc = function(){
 	var self = this,
-			$sliderWrap = $('[data-calc-slider-wrap]')
+			$calc = $('[data-calc]'),
+
+			$sumInp = $calc.find('[data-calc-sum-field]'),
+			$daysInp = $calc.find('[data-calc-days-field]'),
+			$calcRate = $calc.find('[data-calc-rate]'),
+			$calcProfit = $calc.find('[ data-calc-profit]'),
+			$calcTotalSum = $calc.find('[data-calc-total-sum]'),
+			
+			$sliderWrap = $('[data-calc-slider-wrap]'),
+			sum = null,
+			totalSum = null,
+			daysInYear = $calc.data('leapYear') ? 366 : 365,
+			days = null,
+			profit = null,
+			rate = null,
+			valuta='rub'
 		;
 
 	$sliderWrap.each(function(){
@@ -826,7 +841,9 @@ app.calc = function(){
 				val = null,
 				val1 = null,
 				startValue = null
+
 			;
+		rate = data.rate || rate;
 		$slider.slider({
 			range: "min",
 			min: data.min,
@@ -841,16 +858,20 @@ app.calc = function(){
 			},
 			stop: function( event, ui ){
 				if(ui.value != startValue){
+					calculate();
 					$inp.val(showSliderVal($inp.data('calcSliderInp'),ui.value));
 				}
 			}
 		});
 		$select.on('change',function () {
 			data = $slider.data($select.val());
+			valuta = $select.val();
 			$slider.slider( "option", "max", data.max);
 			$slider.slider( "option", "min", data.min);
 			$slider.slider( "option", "step", data.step);
+			rate = data.rate || rate;
 			$inp.change();
+			calculate();
 		});
 		
 		$inp.val(showSliderVal($inp.data('calcSliderInp'),$slider.slider("value")));
@@ -865,6 +886,7 @@ app.calc = function(){
 			val = Math.min(Math.max(data.min, val1),data.max);
 			$slider.slider("value",val);
 			$inp.val(showSliderVal($inp.data('calcSliderInp'),val));
+			calculate();
 		});
 	});
 	function showSliderVal(type,val) {
@@ -879,4 +901,23 @@ app.calc = function(){
 		}
 		return res;
 	}
+	function calculate() {
+		sum = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10);
+		days = parseInt($daysInp.val().replace(new RegExp(" ",'g'),""),10);
+		$calcRate.text(rate.toFixed(2)+'%');
+		profit = Math.floor(sum*days*rate/100/daysInYear);
+
+		$calcProfit.html(app.formatNumber(profit)+' '+ valutaZnak(valuta));
+		$calcTotalSum.html(app.formatNumber(profit+sum)+' '+ valutaZnak(valuta));
+	}
+	function valutaZnak(valuta) {
+		if(valuta =='rub'){
+			return '<span class="rub _medium"></span>'
+		}else if(valuta =='dollar'){
+			return '$'
+		}else{
+			return '€'
+		}
+	}
+	calculate();
 };
