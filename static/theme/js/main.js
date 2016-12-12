@@ -155,6 +155,9 @@ app.chooseCity = function () {
 			$matches = $itemsBlockActive.find('.city__item-link:Contains(' + val + ')').closest($cityItemsVisible);
 			$cityItemsVisible.not($matches).addClass('_disabled');
 			$matches.removeClass('_disabled');
+			$itemsBlockActive.mCustomScrollbar("scrollTo", $matches.first(),{
+				scrollInertia:300
+			});
 
 			if(firstLetter != activeLetter){
 				activeLetter = firstLetter;
