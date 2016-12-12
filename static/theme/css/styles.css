@@ -648,6 +648,26 @@ h4 {
   padding-left: 0;
   list-style: none;
 }
+.b-list .dash-list {
+  margin-top: 2.6rem;
+  margin-bottom: 2.6rem;
+}
+.b-list .dash-list li {
+  padding-left: 4rem;
+}
+.b-list .dash-list li:before {
+  left: 0;
+}
+.b-list__title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-top: 3.4rem;
+  margin-bottom: 2.5rem;
+}
+.b-list__title._bold {
+  font-weight: 600;
+}
 .mobile .b-list {
   font-size: 1.4rem;
   line-height: 2rem;
@@ -674,6 +694,28 @@ h4 {
 }
 .mobile .b-list li:before {
   top: 0.6rem;
+}
+.dash-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.dash-list.items-indent-30 li + li {
+  margin-top: 3rem;
+}
+.dash-list li {
+  position: relative;
+  padding-left: 3rem;
+}
+.dash-list li:before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 1.1rem;
+  width: 1rem;
+  height: 1px;
+  background-color: #cca266;
 }
 .breadcrumbs {
   color: #fff;
@@ -4826,6 +4868,15 @@ h4 {
   list-style: none;
   margin-left: 4.3rem;
 }
+.deposit-doc__content ul.b-list {
+  margin-left: 0;
+}
+.deposit-doc__content ul.b-list li:before {
+  top: 0.8rem;
+  left: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+}
 .deposit-doc__content ul + .questions__items {
   margin-top: 2.1rem;
 }
@@ -5055,6 +5106,21 @@ h4 {
 }
 .deposit-open__steps {
   margin-bottom: -2.6rem;
+}
+.deposit-open__steps .dash-list {
+  margin-left: -3.4rem;
+}
+.deposit-open__steps .dash-list li {
+  padding-left: 3.4rem;
+}
+.deposit-open__steps .dash-list li + li {
+  margin-top: 0.5rem;
+}
+.deposit-open__steps._w100 .deposit-open__step {
+  display: block;
+  margin-bottom: 3rem;
+  width: 100%!important;
+  margin-left: 0!important;
 }
 .deposit-open__step {
   position: relative;

@@ -44,6 +44,23 @@
 	}
 	&__steps{
 		margin-bottom: -26/@rem;
+		.dash-list{
+			margin-left: -3.4rem;
+			li{
+				padding-left: 3.4rem;
+				&+li{
+					margin-top: 5/@rem;
+				}
+			}
+		}
+		&._w100{
+			.deposit-open__step{
+				display: block;
+				margin-bottom: 3rem;
+				width: 100%!important;
+				margin-left: 0!important;
+			}
+		}
 	}
 	&__step{
 		position: relative;

@@ -68,6 +68,18 @@
 		ul{
 			list-style: none;
 			margin-left: 43/@rem;
+			&.b-list{
+				li{
+					&:before{
+						top: 0.8rem;
+						left: 0;
+						width: 0.8rem;
+						height: 0.8rem;
+					}
+				}
+
+				margin-left: 0;
+			}
 			&+.questions__items{
 				margin-top: 21/@rem;
 			}
