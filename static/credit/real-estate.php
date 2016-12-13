@@ -21,12 +21,12 @@
 		<div class="inner__info _small-indent animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="deposit__info-banner _brown">
+					<div class="deposit__info-banner _blue _top-text">
 						<div class="deposit__info-banner-in">
-							<div class="deposit__info-banner-title">скидки при страховании</div>
-							<div class="deposit__info-banner-text">10%</div>
+							<div class="deposit__info-banner-title">процентная ставка от</div>
+							<div class="deposit__info-banner-text">21%</div>
 						</div>
-						<div class="deposit__info-banner-img" style="background-image: url(/static/theme/images/deposit/info-img/diamond.png);"></div>
+						<div class="deposit__info-banner-img" style="background-image: url(/static/theme/images/deposit/info-img/house.png);"></div>
 					</div>
 				</div>
 				<div class="inner__info-benefits">

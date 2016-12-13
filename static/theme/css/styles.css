@@ -4122,6 +4122,10 @@ h4 {
 .deposit__info-banner._brown {
   background-image: linear-gradient(137deg, #b88e3b 0%, #855b16 100%);
 }
+.deposit__info-banner._top-text .deposit__info-banner-in {
+  bottom: auto;
+  top: 2rem;
+}
 .deposit__info-banner-in {
   color: #fff;
   position: absolute;
