@@ -1,37 +1,38 @@
 <div class="swiper-container top-banner" data-banner-gall>
 	<div class="swiper-wrapper">
 		<div class="swiper-slide top-banner__slide">
-			<div class="top-banner__slide-bg" style="background-image: url('theme/images/home/banner/1.jpg');"></div>
+			<div class="top-banner__slide-bg" style="background-image: url('/static/theme/images/home/banner/main_banner1.png');"></div>
 			<div class="top-banner__slide-block grid__inner">
 				<div class="top-banner__slide-block-in">
 					<div class="top-banner__slide-title">
-						Получайте пенсию<br />
-						рядом с домом
+						Пенсионная<br />
+						программа
 					</div>
-					<div class="top-banner__slide-text">Доход 5,5% на остаток к вашей пенсии</div>
-					<a href="#" class="btn _red top-banner__slide-btn">Узнать больше</a>
+					<div class="top-banner__slide-text">Получайте пенсию в Росгосстрах Банке<br />с дополнительным доходом до 5,5% годовых</div>
+					<a href="/static/inner.php" class="btn _red top-banner__slide-btn">Узнать больше</a>
 				</div>
 			</div>
 		</div>
 		<div class="swiper-slide top-banner__slide">
-			<div class="top-banner__slide-bg" style="background-image: url('theme/images/home/banner/2.jpg');"></div>
+			<div class="top-banner__slide-bg" style="background-image: url('/static/theme/images/home/banner/main_banner2.png');"></div>
 			<div class="top-banner__slide-block grid__inner">
 				<div class="top-banner__slide-block-in">
 					<div class="top-banner__slide-title">
-						Слайд 2
+						Вклад «Госстраховский»
 					</div>
-					<div class="top-banner__slide-text">Доход 5,5% на остаток к вашей пенсии</div>
-					<a href="#" class="btn _red top-banner__slide-btn">Узнать больше</a>
+					<div class="top-banner__slide-text">Классический вклад для получения высокого дохода при фиксированных сумме и сроке вклада</div>
+					<a href="/static/deposit/gosstrakh.php" class="btn _red top-banner__slide-btn">Узнать больше</a>
 				</div>
 			</div>
 		</div>
 		<div class="swiper-slide top-banner__slide">
-			<div class="top-banner__slide-bg" style="background-image: url('theme/images/home/banner/3.jpg');"></div>
+			<div class="top-banner__slide-bg" style="background-image: url('/static/theme/images/home/banner/main_banner3.png');"></div>
 			<div class="top-banner__slide-block grid__inner">
 				<div class="top-banner__slide-block-in">
 					<div class="top-banner__slide-title">
-						Слайд 3
+						Отличная<br />карта
 					</div>
+					<div class="top-banner__slide-text">Удобно хранить, платить и зарабатывать</div>
 					<a href="#" class="btn _red top-banner__slide-btn">Узнать больше</a>
 				</div>
 			</div>

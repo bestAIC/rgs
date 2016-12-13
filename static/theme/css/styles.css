@@ -2181,6 +2181,7 @@ h4 {
 .top-banner__slide-block-in {
   display: inline-block;
   vertical-align: middle!important;
+  max-width: 55rem;
 }
 .top-banner__slide-title {
   font-size: 6rem;
