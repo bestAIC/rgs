@@ -2150,7 +2150,7 @@ h4 {
   background-color: #fff;
 }
 .top-banner__slide.swiper-slide-active .top-banner__slide-bg {
-  animation: a 17s linear forwards;
+  animation: a 7s linear forwards;
 }
 .top-banner__slide-bg {
   position: absolute;
