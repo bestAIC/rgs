@@ -3,6 +3,23 @@
 		height: 420/@rem;
 		background: none no-repeat center;
 		background-size: cover;
+		.b-card{
+			position: absolute;
+			right: 10rem;
+			top: 50%;
+			margin-top: -6rem;
+			transform: translate3d(0,0,0);
+			box-shadow: 0 0px 0px -0px rgba(4, 10, 38, .6)
+		}
+		.no-touch &:hover{
+			.b-card{
+				transform: translate3d(0,-5px,0);
+				&._blue{
+					box-shadow: 0 45px 55px -30px rgba(4, 10, 38, .6)
+				}
+
+			}
+		}
 		&-in{
 			height: 100%;
 		}

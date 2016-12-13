@@ -2160,6 +2160,7 @@ h4 {
   height: 100%;
   background: none no-repeat center;
   background-size: cover;
+  opacity: 1;
 }
 .top-banner__slide-block {
   position: relative;
@@ -4358,7 +4359,7 @@ h4 {
   box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
   color: #3e3e3e;
   padding: 2.7rem 4rem;
-  transition: background 0.5s, color 0.5s, transform 0.5s;
+  transition: background 0.5s, color 0.5s, transform 0.5s, box-shadow 0.5s;
   position: relative;
   transform: translate(0, 0);
 }
@@ -4368,27 +4369,32 @@ h4 {
 }
 .no-touch .deposit-card:hover._gosstrakh {
   background: linear-gradient(-46deg, #ad2b3a 0%, #be3343 100%);
+  box-shadow: 0 25px 40px -20px rgba(145, 31, 31, 0.6);
 }
 .no-touch .deposit-card:hover._save {
   background: linear-gradient(-45deg, #c8a779 0%, #bd9762 100%);
+  box-shadow: 0 25px 40px -20px rgba(181, 164, 119, 0.6);
 }
 .no-touch .deposit-card:hover._save .deposit-card__btn {
   color: #5c5028;
 }
 .no-touch .deposit-card:hover._universal {
   background: linear-gradient(-46deg, #406dc2 0%, #385fa8 100%);
+  box-shadow: 0 25px 40px -20px rgba(31, 56, 145, 0.6);
 }
 .no-touch .deposit-card:hover._universal .deposit-card__btn {
   color: #2e49a0;
 }
 .no-touch .deposit-card:hover._invest {
   background: linear-gradient(-46deg, #86c240 0%, #5ba82a 100%);
+  box-shadow: 0 25px 40px -20px rgba(93, 145, 31, 0.6);
 }
 .no-touch .deposit-card:hover._invest .deposit-card__btn {
   color: #61ad2b;
 }
 .no-touch .deposit-card:hover._pensoin {
   background: linear-gradient(-46deg, #a06f4a 0%, #966845 98%);
+  box-shadow: 0 25px 40px -20px rgba(148, 110, 81, 0.6);
 }
 .no-touch .deposit-card:hover._pensoin .deposit-card__btn {
   color: #945325;
@@ -5714,6 +5720,20 @@ h4 {
   background: none no-repeat center;
   background-size: cover;
 }
+.inner__banner .b-card {
+  position: absolute;
+  right: 10rem;
+  top: 50%;
+  margin-top: -6rem;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 0px 0px 0px rgba(4, 10, 38, 0.6);
+}
+.no-touch .inner__banner:hover .b-card {
+  transform: translate3d(0, -5px, 0);
+}
+.no-touch .inner__banner:hover .b-card._blue {
+  box-shadow: 0 45px 55px -30px rgba(4, 10, 38, 0.6);
+}
 .inner__banner-in {
   height: 100%;
 }
@@ -6168,6 +6188,17 @@ h4 {
   font-weight: 700;
   line-height: 3.6rem;
   margin-bottom: 1rem;
+}
+.b-card {
+  width: 270px;
+  height: 169px;
+  background: none no-repeat center;
+  background-size: cover;
+  box-shadow: none;
+  transition: box-shdow 0.5s, transform 0.5s;
+}
+.b-card._blue {
+  background-image: url('../images/cards/blue.png');
 }
 .card {
   width: 47rem;

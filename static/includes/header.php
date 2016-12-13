@@ -246,10 +246,10 @@
 						</div>
 						<div class="menu__block-col _col-3-1">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Отличная карта</a>
+								<a href="/static/cards/best.php" class="b-menu__item-link">Отличная карта</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Пенсионная карта</a>
+								<a href="/static/cards/pension.php" class="b-menu__item-link">Пенсионная карта</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Зарплатная карта</a>
