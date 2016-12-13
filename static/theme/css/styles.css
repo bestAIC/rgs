@@ -4357,10 +4357,12 @@ h4 {
   box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
   color: #3e3e3e;
   padding: 2.7rem 4rem;
-  transition: background 0.5s, color 0.5s;
+  transition: background 0.5s, color 0.5s, transform 0.5s;
   position: relative;
+  transform: translate(0, 0);
 }
 .no-touch .deposit-card:hover {
+  transform: translate(0, -0.4rem);
   color: #fff;
 }
 .no-touch .deposit-card:hover._gosstrakh {
@@ -4393,6 +4395,7 @@ h4 {
 .no-touch .deposit-card:hover .deposit-card__btn {
   background-color: #fff;
   color: #b31b2c;
+  box-shadow: none!important;
 }
 .no-touch .deposit-card:hover .deposit-card__btn:hover {
   box-shadow: none!important;
@@ -4412,9 +4415,9 @@ h4 {
 .deposit-card__ico {
   position: absolute;
   bottom: 0;
-  right: 2rem;
+  right: 3rem;
   top: -2rem;
-  width: 30rem;
+  width: 25rem;
   background: none no-repeat center;
   background-size: contain;
   z-index: 2;

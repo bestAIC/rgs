@@ -5,9 +5,11 @@
 	box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 	color: @title-color;
 	padding: 27/@rem 40/@rem;
-	transition: background @animTime,color @animTime;
+	transition: background @animTime,color @animTime,transform @animTime;
 	position: relative;
+	transform: translate(0,0);
 	.no-touch &:hover{
+		transform: translate(0,-4/@rem);
 		color: #fff;
 		&._gosstrakh{
 			background: linear-gradient(-46deg, #ad2b3a 0%, #be3343 100%);
@@ -40,6 +42,7 @@
 			&__btn{
 				background-color: #fff;
 				color: @cRed;
+				box-shadow: none!important;
 				&:hover{
 					box-shadow:none!important;
 				}
@@ -63,9 +66,11 @@
 	&__ico{
 		position: absolute;
 		bottom: 0;
-		right: 2rem;
+		//right: 2rem;
+		right: 3rem;
 		top: -2rem;
-		width: 30rem;
+		//width: 30rem;
+		width: 25rem;
 		background: none no-repeat center;
 		background-size: contain;
 		z-index: 2;
