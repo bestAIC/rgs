@@ -4395,7 +4395,6 @@ h4 {
 .no-touch .deposit-card:hover .deposit-card__btn {
   background-color: #fff;
   color: #b31b2c;
-  box-shadow: none!important;
 }
 .no-touch .deposit-card:hover .deposit-card__btn:hover {
   box-shadow: none!important;
@@ -4468,6 +4467,7 @@ h4 {
   margin-right: 2rem;
   transition: box-shadow 0.1s;
   letter-spacing: 0;
+  box-shadow: none!important;
 }
 .deposit-card__btn._transparent {
   background-color: transparent;
