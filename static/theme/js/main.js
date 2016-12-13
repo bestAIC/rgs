@@ -535,7 +535,7 @@ app.bannerGall = function () {
 		prevButton:$prev,
 		pagination:$pag,
 		paginationClickable:true,
-		autoplay:7000,
+		autoplay:17000,
 		autoplayDisableOnInteraction:false,
 		effect:'fade',
 		loop:true,
@@ -547,7 +547,7 @@ app.bannerGall = function () {
 					thickness:4,
 					startAngle:-Math.PI/2,
 					animation:{
-						duration:7000,
+						duration:17000,
 						easing:'linear'
 					},
 					emptyFill: '#ffffff',

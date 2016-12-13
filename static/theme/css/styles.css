@@ -2150,7 +2150,7 @@ h4 {
   background-color: #fff;
 }
 .top-banner__slide.swiper-slide-active .top-banner__slide-bg {
-  animation: a 7s linear forwards;
+  animation: a 17s linear forwards;
 }
 .top-banner__slide-bg {
   position: absolute;
@@ -6109,6 +6109,9 @@ h4 {
 }
 .product._red .product__text {
   color: #705569;
+}
+.product._brown .product__text {
+  color: #736d62;
 }
 .product._gray .product__text {
   color: #616572;

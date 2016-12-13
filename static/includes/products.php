@@ -3,26 +3,27 @@
 	<div class="swiper-wrapper">
 		<a href="#" class="product _green swiper-slide" style="background-image: url('theme/images/home/product/1.jpg')">
 			<div class="product__inner">
-				<div class="product__title">Вклады</div>
-				<div class="product__val">до 8,1%</div>
+				<div class="product__title">
+					Инвестиционное<br />
+					страхование жизни
+				</div>
 				<div class="product__bottom">
+					<div class="product__val">100%</div>
 					<div class="product__text">
-						Надежный способ<br />
-						сбережения и накопления<br />
-						денежных средств
+						Гарантия возврата<br />
+						вложенных средств
 					</div>
 				</div>
 			</div>
 		</a>
 		<a href="#" class="product _red swiper-slide" style="background-image: url('theme/images/home/product/2.jpg')">
 			<div class="product__inner">
-				<div class="product__title">Денежные переводы</div>
-				<div class="product__val">до 75 000 Руб.</div>
+				<div class="product__title">Кредит наличными</div>
+				<div class="product__val">под 9%</div>
 				<div class="product__bottom">
 					<div class="product__text">
-						Переводите деньги<br />
-						с карту на карту легко<br />
-						и максимально удобно
+						Без комиссий за выдачу<br />
+						и обслуживание кредита
 					</div>
 				</div>
 			</div>
@@ -35,10 +36,10 @@
 					счет
 				</div>
 				<div class="product__bottom">
-					<div class="product__val">20%</div>
+					<div class="product__val">13%</div>
 					<div class="product__text">
-						Целевая доходность<br />
-						за первый год
+						Гарантированной<br />
+						доходности от государства
 					</div>
 				</div>
 			</div>
@@ -50,26 +51,27 @@
 	<div class="grid__inner">
 		<a href="#" class="product _green" style="background-image: url('theme/images/home/product/1.jpg')">
 			<div class="product__inner">
-				<div class="product__title">Вклады</div>
-				<div class="product__val">до 8,1%</div>
+				<div class="product__title">
+					Инвестиционное<br />
+					страхование жизни
+				</div>
 				<div class="product__bottom">
+					<div class="product__val">100%</div>
 					<div class="product__text">
-						Надежный способ<br />
-						сбережения и накопления<br />
-						денежных средств
+						Гарантия возврата<br />
+						вложенных средств
 					</div>
 				</div>
 			</div>
 		</a>
-		<a href="#" class="product _red" style="background-image: url('theme/images/home/product/2.jpg')">
+		<a href="#" class="product _brown" style="background-image: url('theme/images/home/product/2.jpg')">
 			<div class="product__inner">
-				<div class="product__title">Денежные переводы</div>
-				<div class="product__val">до 75 000 Руб.</div>
+				<div class="product__title">Кредит наличными</div>
+				<div class="product__val">под 9%</div>
 				<div class="product__bottom">
 					<div class="product__text">
-						Переводите деньги<br />
-						с карту на карту легко<br />
-						и максимально удобно
+						Без комиссий за выдачу<br />
+						и обслуживание кредита
 					</div>
 				</div>
 			</div>
@@ -82,10 +84,10 @@
 					счет
 				</div>
 				<div class="product__bottom">
-					<div class="product__val">20%</div>
+					<div class="product__val">13%</div>
 					<div class="product__text">
-						Целевая доходность<br />
-						за первый год
+						Гарантированной<br />
+						доходности от государства
 					</div>
 				</div>
 			</div>
