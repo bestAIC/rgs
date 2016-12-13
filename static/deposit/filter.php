@@ -271,108 +271,132 @@
 			</div>
 			<div class="b-block _white">
 				<div class="grid__inner">
-					<div class="deposit-compare deposit-info__block">
+					<div class="deposit-compare deposit-info__block" data-deposit-compare>
 						<h3>Сравнение вкладов</h3>
 						<div class="deposit-compare__table">
+							<div class="deposit-compare__table-in" data-deposit-compare-scroll>
 								<table>
-									<tr class="deposit-compare__table-titles">
-										<td><div class="asd">ВКЛАД</div></td>
-										<td>СРОК (ДНЕЙ)</td>
-										<td class="left deposit-compare__table-percent">ВЫПЛАТА ПРОЦЕНТОВ</td>
-										<td>ПОПОЛНЕНИЕ</td>
-										<td>
-											ЛЬГОТНОЕ<br />
-											РАСТОРЖЕНИЕ
-										</td>
-										<td>
-											ЧАСТИЧНОЕ<br />
-											СНЯТИЕ
-										</td>
-										<td colspan="3">
-											МАКСИМАЛЬНАЯ<br />
-											ГОДОВАЯ СТАВКА (%)
-										</td>
-										<td>
-											ОТКРЫТИЕ<br />
-											ОНЛАЙН
-										</td>
-									</tr>
-									<tr class="deposit-compare__table-valuta valuta">
-										<td colspan="6"></td>
-										<td><span class="rub"></span></td>
-										<td>$</td>
-										<td>€</td>
-										<td></td>
-									</tr>
-									<tr class="deposit-compare__table-row">
-										<td><div class="asd"><a href="#">1.<span>Госстраховский</span></a></div></td>
-										<td>91 - 732</td>
-										<td class="left">В конце срока</td>
-										<td><div class="status-ico _plus"></div></td>
-										<td><div class="status-ico _minus"></div></td>
-										<td><div class="status-ico _plus"></div></td>
-										<td>8,00</td>
-										<td>2,00</td>
-										<td>0,90</td>
-										<td><div class="status-ico _plus"></div></td>
-									</tr>
-									<tr class="deposit-compare__table-row">
-										<td><a href="#">2.<span>Накопительный</span></a></td>
-										<td>271 - 367</td>
-										<td class="left">
-											Ежемесячно и по окончанию
-											срока вклада
-										</td>
-										<td><div class="status-ico _plus"></div></td>
-										<td><div class="status-ico _minus"></div></td>
-										<td><div class="status-ico _plus"></div></td>
-										<td>7,00</td>
-										<td>1,70</td>
-										<td>0,70</td>
-										<td><div class="status-ico _plus"></div></td>
-									</tr>
-									<tr class="deposit-compare__table-row">
-										<td><a href="#">3.<span>Универсальный</span></a></td>
-										<td>367</td>
-										<td class="left">
-											Ежемесячно % на доп. взносы
-											начисляются по ставке вклада
-										</td>
-										<td><div class="status-ico _plus"></div></td>
-										<td><div class="status-ico _minus"></div></td>
-										<td><div class="status-ico _plus"></div></td>
-										<td>7,20</td>
-										<td>1,30</td>
-										<td>0,50</td>
-										<td><div class="status-ico _plus"></div></td>
-									</tr>
-									<tr class="deposit-compare__table-row">
-										<td><a href="#">4.<span>Инвестиционный</span></a></td>
-										<td>91, 181, 367</td>
-										<td class="left">В конце срока</td>
-										<td><div class="status-ico _plus"></div></td>
-										<td><div class="status-ico _minus"></div></td>
-										<td><div class="status-ico _plus"></div></td>
-										<td>9,50</td>
-										<td>-</td>
-										<td>-</td>
-										<td><div class="status-ico _plus"></div></td>
-									</tr>
-									<tr class="deposit-compare__table-row">
-										<td><a href="#">5.<span>Пенсионный доход</span></a></td>
-										<td>181 - 732</td>
-										<td class="left">Ежемесячная выплата процентов</td>
-										<td><div class="status-ico _plus"></div></td>
-										<td><div class="status-ico _minus"></div></td>
-										<td><div class="status-ico _plus"></div></td>
-										<td>7,30</td>
-										<td>1,60</td>
-										<td>0,80</td>
-										<td><div class="status-ico _plus"></div></td>
-									</tr>
-								</table>
+										<tr class="deposit-compare__table-titles">
+											<td class="_h1">ВКЛАД</td>
+											<td>СРОК (ДНЕЙ)</td>
+											<td class="left deposit-compare__table-percent">ВЫПЛАТА ПРОЦЕНТОВ</td>
+											<td>ПОПОЛНЕНИЕ</td>
+											<td>
+												ЛЬГОТНОЕ<br />
+												РАСТОРЖЕНИЕ
+											</td>
+											<td>
+												ЧАСТИЧНОЕ<br />
+												СНЯТИЕ
+											</td>
+											<td colspan="3">
+												МАКСИМАЛЬНАЯ<br />
+												ГОДОВАЯ СТАВКА (%)
+											</td>
+											<td>
+												ОТКРЫТИЕ<br />
+												ОНЛАЙН
+											</td>
+										</tr>
+										<tr class="deposit-compare__table-valuta valuta">
+											<td colspan="6" class="_h2"></td>
+											<td><span class="rub"></span></td>
+											<td>$</td>
+											<td>€</td>
+											<td></td>
+										</tr>
+										<tr class="deposit-compare__table-row">
+											<td><a href="#">1. Госстраховский</a></td>
+											<td>91 - 732</td>
+											<td class="left">В конце срока</td>
+											<td><div class="status-ico _plus"></div></td>
+											<td><div class="status-ico _minus"></div></td>
+											<td><div class="status-ico _plus"></div></td>
+											<td>8,00</td>
+											<td>2,00</td>
+											<td>0,90</td>
+											<td><div class="status-ico _plus"></div></td>
+										</tr>
+										<tr class="deposit-compare__table-row">
+											<td><a href="#">2. Накопительный</a></td>
+											<td>271 - 367</td>
+											<td class="left">
+												Ежемесячно и по окончанию
+												срока вклада
+											</td>
+											<td><div class="status-ico _plus"></div></td>
+											<td><div class="status-ico _minus"></div></td>
+											<td><div class="status-ico _plus"></div></td>
+											<td>7,00</td>
+											<td>1,70</td>
+											<td>0,70</td>
+											<td><div class="status-ico _plus"></div></td>
+										</tr>
+										<tr class="deposit-compare__table-row">
+											<td><a href="#">3. Универсальный</a></td>
+											<td>367</td>
+											<td class="left">
+												Ежемесячно % на доп. взносы
+												начисляются по ставке вклада
+											</td>
+											<td><div class="status-ico _plus"></div></td>
+											<td><div class="status-ico _minus"></div></td>
+											<td><div class="status-ico _plus"></div></td>
+											<td>7,20</td>
+											<td>1,30</td>
+											<td>0,50</td>
+											<td><div class="status-ico _plus"></div></td>
+										</tr>
+										<tr class="deposit-compare__table-row">
+											<td><a href="#">4. Инвестиционный</a></td>
+											<td>91, 181, 367</td>
+											<td class="left">В конце срока</td>
+											<td><div class="status-ico _plus"></div></td>
+											<td><div class="status-ico _minus"></div></td>
+											<td><div class="status-ico _plus"></div></td>
+											<td>9,50</td>
+											<td>-</td>
+											<td>-</td>
+											<td><div class="status-ico _plus"></div></td>
+										</tr>
+										<tr class="deposit-compare__table-row">
+											<td><a href="#">5. Пенсионный доход</a></td>
+											<td>181 - 732</td>
+											<td class="left">Ежемесячная выплата процентов</td>
+											<td><div class="status-ico _plus"></div></td>
+											<td><div class="status-ico _minus"></div></td>
+											<td><div class="status-ico _plus"></div></td>
+											<td>7,30</td>
+											<td>1,60</td>
+											<td>0,80</td>
+											<td><div class="status-ico _plus"></div></td>
+										</tr>
+									</table>
+							</div>
+							<table class="_fixed" data-deposit-compare-fixed>
+								<tr class="deposit-compare__table-titles">
+									<td class="_h1">ВКЛАД</td>
+								</tr>
+								<tr class="deposit-compare__table-valuta valuta">
+									<td class="_h2"></td>
+								</tr>
+								<tr class="deposit-compare__table-row">
+									<td><a href="#">1.</a></td>
+								</tr>
+								<tr class="deposit-compare__table-row">
+									<td><a href="#">2.</a></td>
+								</tr>
+								<tr class="deposit-compare__table-row">
+									<td><a href="#">3.</a></td>
+								</tr>
+								<tr class="deposit-compare__table-row">
+									<td><a href="#">4.</a></td>
+								</tr>
+								<tr class="deposit-compare__table-row">
+									<td><a href="#">5</a></td>
+								</tr>
+							</table>
 						</div>
-
 					</div>
 					<div class="deposit-compare__bottom deposit-info__block">
 						<div class="inner__info-benefits">

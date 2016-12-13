@@ -1,5 +1,23 @@
 .deposit-compare{
 	padding-top: 1.8rem;
+	.mCSB_draggerContainer{
+		width: 192/@rem;
+		margin: 0 auto;
+		background: #e0e0e0;
+	}
+	.mCSB_horizontal.mCSB_inside>.mCSB_container{
+		margin-bottom: 16/@rem;
+	}
+	.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+		height: 2px;
+	}
+	.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+		margin: 0;
+		height: 2px;
+	}
+	.mCSB_2_dragger_horizontal{
+
+	}
 	&__bottom{
 		.clearfix;
 		.inner__info-benefits{
@@ -18,6 +36,7 @@
 	}
 	&__table{
 		margin-top: 33/@rem;
+		position: relative;
 		.status-ico{
 			display: inline-block;
 			width: 17/@rem;
@@ -36,11 +55,35 @@
 		}
 		table{
 			width: 100%;
+			&._fixed{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 52px!important;
+				background-color: white;
+				border: 1px solid #dedfe0;
+				opacity: 0;
+				z-index: 0;
+				transition: opacity 0.1s;
+				&._active{
+					opacity: 1;
+					z-index: 2;
+				}
+				td{
+					text-align: center;
+				}
+			}
 		}
 		td{
 			text-align: center;
 			padding-left: 1rem;
 			padding-right: 1rem;
+			&._h1{
+				height: 6.9rem;
+			}
+			&._h2{
+				height: 5.9rem;
+			}
 			&:first-child,&.left{
 				text-align: left;
 			}
@@ -99,11 +142,17 @@
 			}
 		}
 		&__table{
-			overflow: auto;
-			margin-left: -2.7rem;
-			margin-right: -2.7rem;
+			&-in{
+				overflow: auto;
+				margin-left: -2.7rem;
+				margin-right: -2.7rem;
+			}
+
 			table{
 				width: 117rem;
+				&._fixed{
+					left: -2.7rem;
+				}
 			}
 			tr{
 				position: relative;
@@ -129,9 +178,12 @@
 		}
 		&__table{
 			margin-top: 20/@rem;
-			overflow: auto;
+
 			margin-left: -2rem;
 			margin-right: -2rem;
+			&-in{
+				overflow: auto;
+			}
 			table{
 				width: 117rem;
 			}

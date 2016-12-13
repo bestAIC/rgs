@@ -5478,6 +5478,21 @@ h4 {
 .deposit-compare {
   padding-top: 1.8rem;
 }
+.deposit-compare .mCSB_draggerContainer {
+  width: 19.2rem;
+  margin: 0 auto;
+  background: #e0e0e0;
+}
+.deposit-compare .mCSB_horizontal.mCSB_inside > .mCSB_container {
+  margin-bottom: 1.6rem;
+}
+.deposit-compare .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  height: 2px;
+}
+.deposit-compare .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  margin: 0;
+  height: 2px;
+}
 .deposit-compare__bottom {
   *zoom: 1;
 }
@@ -5501,6 +5516,7 @@ h4 {
 }
 .deposit-compare__table {
   margin-top: 3.3rem;
+  position: relative;
 }
 .deposit-compare__table .status-ico {
   display: inline-block;
@@ -5521,10 +5537,34 @@ h4 {
 .deposit-compare__table table {
   width: 100%;
 }
+.deposit-compare__table table._fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px!important;
+  background-color: white;
+  border: 1px solid #dedfe0;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.1s;
+}
+.deposit-compare__table table._fixed._active {
+  opacity: 1;
+  z-index: 2;
+}
+.deposit-compare__table table._fixed td {
+  text-align: center;
+}
 .deposit-compare__table td {
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.deposit-compare__table td._h1 {
+  height: 6.9rem;
+}
+.deposit-compare__table td._h2 {
+  height: 5.9rem;
 }
 .deposit-compare__table td:first-child,
 .deposit-compare__table td.left {
@@ -5575,13 +5615,16 @@ h4 {
 .tablet.portrait .deposit-compare__bottom .inner__info-benefits {
   margin-bottom: 4rem;
 }
-.tablet.portrait .deposit-compare__table {
+.tablet.portrait .deposit-compare__table-in {
   overflow: auto;
   margin-left: -2.7rem;
   margin-right: -2.7rem;
 }
 .tablet.portrait .deposit-compare__table table {
   width: 117rem;
+}
+.tablet.portrait .deposit-compare__table table._fixed {
+  left: -2.7rem;
 }
 .tablet.portrait .deposit-compare__table tr {
   position: relative;
@@ -5600,9 +5643,11 @@ h4 {
 }
 .mobile .deposit-compare__table {
   margin-top: 2rem;
-  overflow: auto;
   margin-left: -2rem;
   margin-right: -2rem;
+}
+.mobile .deposit-compare__table-in {
+  overflow: auto;
 }
 .mobile .deposit-compare__table table {
   width: 117rem;

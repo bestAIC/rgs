@@ -69,6 +69,7 @@ app.init = function () {
 	}
 	if(app.utils.isMobile || app.utils.isTabletPort ){
 		app.tabletSliders();
+		app.compare();
 	}
 	if(app.utils.isMobile){
 		app.mobSliders();
@@ -647,6 +648,29 @@ app.questions = function () {
 		}
 		$self.toggleClass('_active');
 	});
+};
+app.compare = function () {
+	var $compare = $('[data-deposit-compare]'),
+			$scroll = $compare.find('[data-deposit-compare-scroll]'),
+			$fixed = $compare.find('[data-deposit-compare-fixed]'),
+			offset = $scroll.find('td').first().innerWidth() - $fixed.width()
+		;
+
+	$scroll.mCustomScrollbar({
+		axis: "x",
+		theme: "dark",
+		callbacks:{
+			onTotalScrollBackOffset: offset,
+			onScroll:function () {
+				$fixed.addClass('_active');
+			},
+			onTotalScrollBack :function(){
+				$fixed.removeClass('_active');
+			}
+		}
+	});
+
+
 };
 
 app.initAnimations = function() {
