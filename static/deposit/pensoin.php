@@ -247,7 +247,7 @@
 									Могут предъявляться следующие<br />
 									виды документов:
 								</div>
-								<div class="deposit-documents__blocks">
+								<div class="deposit-documents__blocks _two-cols">
 									<div class="deposit-documents__block">
 										<div>Удостоверения о назначении пенсии</div>
 										<ul>

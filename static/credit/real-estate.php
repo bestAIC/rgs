@@ -52,7 +52,7 @@
 					<div class="deposit-info__left">
 						<div class="deposit-info__block">
 							<h3>Условия кредитования</h3>
-							<ul class="b-list">
+							<ul class="b-list dash-list-indent">
 								<li><strong>Сумма кредита:</strong> от 800 000 до 10 000 000 рублей</li>
 								<li><strong>Срок кредита:</strong> от 2 до 10 лет</li>
 								<li>
@@ -93,11 +93,10 @@
 								<div class="deposit-documents__title">
 									Требования к Заемщику / Созаемщику
 								</div>
-								<div class="deposit-documents__blocks">
+								<div class="deposit-documents__blocks _one-cols">
 									<div class="deposit-documents__block">
 										Гражданство Российской Федерации<br/><br/>
 										Наличие постоянной регистрации в любом регионе присутствия Банка<br/><br/>
-									</div>
 									</div>
 									<div class="deposit-documents__block">
 										<div>Возраст:</div>

@@ -82,10 +82,30 @@
 		}
 		&__blocks{
 			.clearfix;
+			&._one-cols{
+				.deposit-documents{
+					&__block{
+						&:last-child{
+							ul{
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			&._two-cols{
+				.deposit-documents{
+					&__block{
+						float: left;
+						width: 48%;
+						&:nth-child(2n){
+							margin-left: 4%;
+						}
+					}
+				}
+			}
 		}
 		&__block{
-			float: left;
-			width: 48%;
 			&._contacts{
 				float: none;
 				width: 100%;
@@ -97,9 +117,6 @@
 						}
 					}
 				}
-			}
-			&:nth-child(2n){
-				margin-left: 4%;
 			}
 		}
 		&__title{
@@ -117,10 +134,16 @@
 .mobile{
 	.deposit-documents{
 		&__content{
-			padding: 22/@rem 30/@rem 40/@rem 30/@rem;
+			padding: 22/@rem 20/@rem 40/@rem 30/@rem;
 		}
 		&__passport{
 			padding-right: 0;
+		}
+		&__block{
+			ul{
+				margin-top: 1rem;
+				margin-bottom: 2rem;
+			}
 		}
 		&__block._contacts{
 			ul{

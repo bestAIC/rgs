@@ -187,6 +187,16 @@ h4{
 	line-height: 25/@rem;
 	padding-left: 0;
 	list-style: none;
+	&.dash-list-indent{
+		.dash-list{
+			.mobile &{
+				margin-left: 0;
+				li{
+					padding-left: 2.7rem;
+				}
+			}
+		}
+	}
 	.dash-list{
 		margin-top: 2.6rem;
 		margin-bottom: 2.6rem;

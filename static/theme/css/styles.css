@@ -660,6 +660,12 @@ h4 {
   padding-left: 0;
   list-style: none;
 }
+.mobile .b-list.dash-list-indent .dash-list {
+  margin-left: 0;
+}
+.mobile .b-list.dash-list-indent .dash-list li {
+  padding-left: 2.7rem;
+}
 .b-list .dash-list {
   margin-top: 2.6rem;
   margin-bottom: 2.6rem;
@@ -4126,6 +4132,9 @@ h4 {
   bottom: auto;
   top: 2rem;
 }
+.deposit__info-banner._top-text .deposit__info-banner-in.mobile {
+  top: 3rem;
+}
 .deposit__info-banner-in {
   color: #fff;
   position: absolute;
@@ -5064,9 +5073,15 @@ h4 {
 .tablet.portrait .deposit-documents__blocks:after {
   clear: both;
 }
-.tablet.portrait .deposit-documents__block {
+.tablet.portrait .deposit-documents__blocks._one-cols .deposit-documents__block:last-child ul {
+  margin-bottom: 0;
+}
+.tablet.portrait .deposit-documents__blocks._two-cols .deposit-documents__block {
   float: left;
   width: 48%;
+}
+.tablet.portrait .deposit-documents__blocks._two-cols .deposit-documents__block:nth-child(2n) {
+  margin-left: 4%;
 }
 .tablet.portrait .deposit-documents__block._contacts {
   float: none;
@@ -5078,9 +5093,6 @@ h4 {
 .tablet.portrait .deposit-documents__block._contacts ul li + li {
   margin-top: 2rem;
 }
-.tablet.portrait .deposit-documents__block:nth-child(2n) {
-  margin-left: 4%;
-}
 .tablet.portrait .deposit-documents__title {
   font-size: 1.6rem;
   font-weight: 600;
@@ -5089,10 +5101,14 @@ h4 {
   margin-bottom: 2.8rem;
 }
 .mobile .deposit-documents__content {
-  padding: 2.2rem 3rem 4rem 3rem;
+  padding: 2.2rem 2rem 4rem 3rem;
 }
 .mobile .deposit-documents__passport {
   padding-right: 0;
+}
+.mobile .deposit-documents__block ul {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .mobile .deposit-documents__block._contacts ul {
   margin-top: 0;
