@@ -170,7 +170,7 @@
 						</div>
 						<div class="menu__block-col _col-1-3">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Другие услуги</a>
+								<div class="b-menu__item-link">Другие услуги</div>
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
@@ -298,7 +298,7 @@
 						</div>
 						<div class="menu__block-col _col-4-2">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Под залог недвижимости</a>
+								<a href="/static/credit/real-estate.php" class="b-menu__item-link">Под залог недвижимости</a>
 							</div>
 						</div>
 					</div>
