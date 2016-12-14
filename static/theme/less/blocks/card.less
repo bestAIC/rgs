@@ -12,7 +12,30 @@
 		background-image: url('@{pathToImg}cards/red.png');
 	}
 }
-
+.get-card{
+	.clearfix;
+	.tablet &{
+		.deposit-info__right{
+			margin-top: 2rem;
+		}
+	}
+	.mobile &{
+		p{
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+	}
+	h4{
+		margin-top: 0;
+		margin-bottom: 1.3em;
+	}
+	p{
+		margin-bottom: 0;
+		font-size: 1.6rem;
+		line-height: 2.5rem;
+	}
+}
 .card{
 	width: 470/@rem;
 	height: 290/@rem;

@@ -4,7 +4,8 @@
 		<?include "includes/exchange.php"?>
 		<?include "includes/products.php"?>
 		<?/*include "includes/services.php"*/?>
-		<div class="home__gray">
+		<div class="home__gray b-blocks">
+			<?include "includes/transfer.php"?>
 			<?include "includes/info-center.php"?>
 			<?include "includes/news-gall.php"?>
 		</div>
