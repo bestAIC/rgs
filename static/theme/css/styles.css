@@ -6198,8 +6198,8 @@ h4 {
   margin-bottom: 1rem;
 }
 .b-card {
-  width: 270px;
-  height: 169px;
+  width: 27rem;
+  height: 16.9rem;
   background: none no-repeat center;
   background-size: cover;
   box-shadow: none;
@@ -6211,25 +6211,22 @@ h4 {
 .b-card._red {
   background-image: url('../images/cards/red.png');
 }
-.get-card {
-  *zoom: 1;
-}
-.get-card:before,
-.get-card:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.get-card:after {
-  clear: both;
-}
 .tablet .get-card .deposit-info__right {
   margin-top: 2rem;
 }
+.mobile .get-card .deposit-info__right {
+  margin-top: 1.8rem;
+}
+.mobile .get-card h3 {
+  margin-top: 0;
+}
+.mobile .get-card h4 {
+  margin-bottom: 1rem;
+}
 .mobile .get-card p {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 2rem;
 }
 .get-card h4 {
   margin-top: 0;

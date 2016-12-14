@@ -73,9 +73,9 @@
 		<div class="b-blocks">
 			<div class="b-block animation__top" data-animation>
 				<div class="grid__inner">
-					<div class="deposit-info__block">
+					<div class="deposit-info__block get-card">
 						<h3>Как получить Карту Клиента?</h3>
-						<div class="get-card">
+						<div class="clearfix">
 							<div class="deposit-info__left">
 								<h4>
 									Оформите бесплатно Карту Клиента при покупке любого страхового продукта в компаниях-партнерах РОСГОССТРАХ БАНКА и получайте CashBack до 3%.

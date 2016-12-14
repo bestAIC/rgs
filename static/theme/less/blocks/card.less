@@ -1,6 +1,6 @@
 .b-card{
-	width: 270px;
-	height: 169px;
+	width: 270/@rem;
+	height: 169/@rem;
 	background: none no-repeat center;
 	background-size: cover;
 	box-shadow: none;
@@ -13,17 +13,25 @@
 	}
 }
 .get-card{
-	.clearfix;
 	.tablet &{
 		.deposit-info__right{
 			margin-top: 2rem;
 		}
 	}
 	.mobile &{
+		.deposit-info__right{
+			margin-top: 1.8rem;
+		}
+		h3{
+			margin-top: 0;
+		}
+		h4{
+			margin-bottom: 1rem;
+		}
 		p{
-			font-size: 14px;
+			font-size: 14/@rem;
 			font-weight: 400;
-			line-height: 20px;
+			line-height: 20/@rem;
 		}
 	}
 	h4{
