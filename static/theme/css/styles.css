@@ -5726,13 +5726,16 @@ h4 {
   top: 50%;
   margin-top: -6rem;
   transform: translate3d(0, 0, 0);
-  box-shadow: 0 0px 0px 0px rgba(4, 10, 38, 0.6);
+  box-shadow: 0 0 0 0 rgba(4, 10, 38, 0.6);
 }
 .no-touch .inner__banner:hover .b-card {
   transform: translate3d(0, -5px, 0);
 }
 .no-touch .inner__banner:hover .b-card._blue {
   box-shadow: 0 45px 55px -30px rgba(4, 10, 38, 0.6);
+}
+.no-touch .inner__banner:hover .b-card._red {
+  box-shadow: 0 45px 55px -30px rgba(39, 4, 4, 0.6);
 }
 .inner__banner-in {
   height: 100%;
@@ -6215,6 +6218,9 @@ h4 {
 }
 .b-card._blue {
   background-image: url('../images/cards/blue.png');
+}
+.b-card._red {
+  background-image: url('../images/cards/red.png');
 }
 .card {
   width: 47rem;
