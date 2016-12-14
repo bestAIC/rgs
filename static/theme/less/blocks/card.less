@@ -11,6 +11,9 @@
 	&._red{
 		background-image: url('@{pathToImg}cards/red.png');
 	}
+	&._mc-platinum{
+		background-image: url('@{pathToImg}cards/mc-platinum.png');
+	}
 }
 .get-card{
 	.tablet &{
@@ -42,6 +45,26 @@
 		margin-bottom: 0;
 		font-size: 1.6rem;
 		line-height: 2.5rem;
+	}
+}
+.card-open{
+	&__step{
+		padding-left: 3.6rem;
+		position: relative;
+		&+&{
+			margin-top: 4rem;
+		}
+	}
+	&__steps{
+		.clearfix;
+		&-col{
+			float: left;
+			width: 48%;
+			&:first-child{
+				width: 52%;
+				padding-right: 2rem;
+			}
+		}
 	}
 }
 .card{
@@ -166,6 +189,26 @@
 				&._2{
 					width: 111/@rem;
 					margin-left: 10/@rem;
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.card-open{
+		&__step{
+			&+.card-open__step{
+				margin-top: 2rem;
+			}
+		}
+		&__steps{
+			.clearfix;
+			&-col{
+				float: none;
+				width: 100%;
+				padding-right: 0;
+				&+.card-open__steps-col{
+					margin-top: 2rem;
 				}
 			}
 		}

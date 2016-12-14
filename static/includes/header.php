@@ -252,7 +252,7 @@
 								<a href="/static/cards/pension.php" class="b-menu__item-link">Пенсионная карта</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="/static/cards/selary.php" class="b-menu__item-link">Зарплатная карта</a>
+								<a href="/static/cards/salary.php" class="b-menu__item-link">Зарплатная карта</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="/static/cards/pension.php" class="b-menu__item-link">Visa и MasterCard</a>

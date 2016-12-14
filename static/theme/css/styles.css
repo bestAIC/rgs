@@ -625,6 +625,9 @@ h3 {
   margin-bottom: 2.3rem;
   margin-top: 1.8rem;
 }
+h3 + h4 {
+  margin-top: 0;
+}
 h3 a {
   color: #AAAEB2;
   border-bottom: 0.2rem dotted;
@@ -5726,6 +5729,9 @@ h4 {
 .no-touch .inner__banner:hover .b-card._red {
   box-shadow: 0 45px 55px -30px rgba(39, 4, 4, 0.6);
 }
+.no-touch .inner__banner:hover .b-card_mc-platinum {
+  box-shadow: 0 45px 55px -30px rgba(0, 0, 0, 0.6);
+}
 .inner__banner-in {
   height: 100%;
 }
@@ -6211,6 +6217,9 @@ h4 {
 .b-card._red {
   background-image: url('../images/cards/red.png');
 }
+.b-card._mc-platinum {
+  background-image: url('../images/cards/mc-platinum.png');
+}
 .tablet .get-card .deposit-info__right {
   margin-top: 2rem;
 }
@@ -6236,6 +6245,33 @@ h4 {
   margin-bottom: 0;
   font-size: 1.6rem;
   line-height: 2.5rem;
+}
+.card-open__step {
+  padding-left: 3.6rem;
+  position: relative;
+}
+.card-open__step + .card-open__step {
+  margin-top: 4rem;
+}
+.card-open__steps {
+  *zoom: 1;
+}
+.card-open__steps:before,
+.card-open__steps:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.card-open__steps:after {
+  clear: both;
+}
+.card-open__steps-col {
+  float: left;
+  width: 48%;
+}
+.card-open__steps-col:first-child {
+  width: 52%;
+  padding-right: 2rem;
 }
 .card {
   width: 47rem;
@@ -6391,6 +6427,29 @@ h4 {
 .tablet.portrait .card__fields-col._2 {
   width: 11.1rem;
   margin-left: 1rem;
+}
+.mobile .card-open__step + .card-open__step {
+  margin-top: 2rem;
+}
+.mobile .card-open__steps {
+  *zoom: 1;
+}
+.mobile .card-open__steps:before,
+.mobile .card-open__steps:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .card-open__steps:after {
+  clear: both;
+}
+.mobile .card-open__steps-col {
+  float: none;
+  width: 100%;
+  padding-right: 0;
+}
+.mobile .card-open__steps-col + .card-open__steps-col {
+  margin-top: 2rem;
 }
 .footer a {
   color: #3e3e3e;
