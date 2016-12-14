@@ -104,17 +104,15 @@
 					<div class="deposit-info__right">
 						<div class="deposit-info__block">
 							<h3>Документы для оформления</h3>
-							<div class="deposit-open__methods">
-								<div class="deposit-open__method">
-									<div class="deposit-open__method-title">
-										Пакет документов, необходимый для получения карты:
-									</div>
-									<div class="deposit-open__method-content">
-										Паспорт или иной документ, удостоверяющий личность.<br/><br/>
-										Оригинал трудового договора или хозяйственного договора на выполнение работ, заработная плата
-										по которому будет перечисляться на Зарплатную карту.
-									</div>
+							<div class="deposit-documents__content">
+								<div class="deposit-documents__title">
+									Пакет документов, необходимый для получения карты:
 								</div>
+								<ul class="deposit-documents__list">
+									<li>Паспорт или иной документ, удостоверяющий личность</li>
+									<li>Оригинал трудового договора или хозяйственного договора на выполнение работ, заработная плата
+										по которому будет перечисляться на Зарплатную карту.</li>
+								</ul>
 							</div>
 						</div>
 					</div>

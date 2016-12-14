@@ -258,7 +258,7 @@
 								<a href="/static/cards/pension.php" class="b-menu__item-link">Visa и MasterCard</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="/static/cards/pension.php" class="b-menu__item-link">Расчетная карта</a>
+								<a href="/static/cards/payments.php" class="b-menu__item-link">Расчетная карта</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="/static/cards/client.php" class="b-menu__item-link">Карта Клиента</a>
@@ -293,7 +293,7 @@
 								<a href="#" class="b-menu__item-link">Кредит наличными</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Ипотека</a>
+								<a href="/static/credit/mortgage.php" class="b-menu__item-link">Ипотека</a>
 							</div>
 						</div>
 						<div class="menu__block-col _col-4-2">
