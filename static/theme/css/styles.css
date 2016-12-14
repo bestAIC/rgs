@@ -5844,6 +5844,11 @@ h4 {
   color: #3e3e3e;
   letter-spacing: -0.15rem;
 }
+.numerals__item-val span {
+  font-size: 1.5rem;
+  letter-spacing: -0.075rem;
+  line-height: 2rem;
+}
 .numerals__item-dash {
   width: 7rem;
   height: 0.2rem;
@@ -5856,6 +5861,10 @@ h4 {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.4rem;
+}
+.tablet.portrait .inner__banner .b-card {
+  right: 2.7rem;
+  margin-top: -9rem;
 }
 .tablet.portrait .inner__banner-block {
   padding: 0 2.7rem;
@@ -5950,6 +5959,13 @@ h4 {
   line-height: 8.5rem;
   margin-left: -0.6rem;
   letter-spacing: -0.4rem;
+}
+.mobile .inner__banner .b-card {
+  right: auto;
+  top: 7.6rem;
+  left: 50%;
+  margin-left: -13.5rem;
+  margin-top: 0;
 }
 .mobile .inner__banner-block {
   bottom: 4.1rem;

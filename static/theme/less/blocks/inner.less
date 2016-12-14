@@ -119,6 +119,11 @@
 			line-height: 24/@rem;
 			color:@title-color;
 			letter-spacing: -1.5/@rem;
+			span{
+				font-size: 1.5rem;
+				letter-spacing: -0.75/@rem;
+				line-height: 2rem;
+			}
 		}
 		&-dash{
 			width: 70/@rem;
@@ -138,6 +143,10 @@
 .tablet.portrait{
 	.inner{
 		&__banner{
+			.b-card{
+				right: 2.7rem;
+				margin-top: -9rem;
+			}
 			&-block{
 				padding: 0 2.7rem;
 			}
@@ -245,6 +254,13 @@
 .mobile{
 	.inner{
 		&__banner{
+			.b-card{
+				right: auto;
+				top: 7.6rem;
+				left: 50%;
+				margin-left: -13.5rem;
+				margin-top: 0;
+			}
 			&-block{
 				bottom: 41/@rem;
 				padding: 0 2rem;

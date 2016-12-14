@@ -25,7 +25,7 @@
 					<div class="numerals">
 						<div class="numerals__block">
 							<div class="numerals__item _big">
-								<div class="numerals__item-val">5%</div>
+								<div class="numerals__item-val">5,00%</div>
 								<div class="numerals__item-dash"></div>
 								<div class="numerals__item-text">
 									на остаток средств на карте
@@ -38,7 +38,7 @@
 								<div class="numerals__item-dash"></div>
 								<div class="numerals__item-text">
 									cashback при оплате
-									в продовольственных
+									в&nbsp;продовольственных
 									магазинах
 								</div>
 							</div>
