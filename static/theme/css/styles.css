@@ -7187,6 +7187,8 @@ h4 {
   height: 48.5rem;
   position: relative;
   z-index: 3;
+  width: 100%;
+  overflow: visible!important;
 }
 .offices__map-wrap {
   position: relative;

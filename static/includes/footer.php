@@ -12,10 +12,10 @@
 			</div>
 			<div class="footer__top-col _3">
 				<div class="footer__social">
-					<a href="#" target="_blank" class="footer__social-item _vk"></a>
-					<a href="#" target="_blank" class="footer__social-item _fb"></a>
-					<a href="#" target="_blank" class="footer__social-item _tw"></a>
-					<a href="#" target="_blank" class="footer__social-item _hh"></a>
+					<a href="https://vk.com/rgsbank" target="_blank" class="footer__social-item _vk"></a>
+					<a href="https://www.facebook.com/rgsbank" target="_blank" class="footer__social-item _fb"></a>
+					<a href="https://twitter.com/rgs_bank" target="_blank" class="footer__social-item _tw"></a>
+					<a href="https://hh.ru/employer/3782" target="_blank" class="footer__social-item _hh"></a>
 					<a href="#" target="_blank" class="footer__social-item _rss"></a>
 				</div>
 			</div>
@@ -79,8 +79,8 @@
 				<div class="footer__mob">
 					<div class="footer__mob-title">Мобильный банк:</div>
 					<div class="footer__mob-items">
-						<a href="#" class="footer__mob-item _app"></a>
-						<a href="#" class="footer__mob-item _google"></a>
+						<a href=" http://appsto.re/ru/zrOQ4.i" target="_blank" class="footer__mob-item _app"></a>
+						<a href="https://play.google.com/store/apps/details?id=com.bssys.android.RGS" target="_blank" class="footer__mob-item _google"></a>
 					</div>
 				</div>
 			</div>
