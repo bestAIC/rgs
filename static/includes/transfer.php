@@ -10,13 +10,13 @@
 						<div class="card__fields">
 							<div class="card__fields-col _1">
 								<div class="card__block">
-									<div class="card__block-title">Номер карты отправителя<a href="#" class="help-ico">?</a></div>
+									<div class="card__block-title">Номер карты отправителя</div>
 									<div class="card__block-field">
 										<input type="text" placeholder="0000 0000 0000 0000" data-card-mask>
 									</div>
 								</div>
 								<div class="card__block">
-									<div class="card__block-title">Владелец карты<a href="#" class="help-ico">?</a></div>
+									<div class="card__block-title">Владелец карты</div>
 									<div class="card__block-field">
 										<input type="text" placeholder="NIKOLAY Ivanov">
 									</div>
@@ -24,13 +24,13 @@
 							</div>
 							<div class="card__fields-col _2">
 								<div class="card__block">
-									<div class="card__block-title">cvc2 / cvv2<a href="#" class="help-ico">?</a></div>
+									<div class="card__block-title">cvc2 / cvv2</div>
 									<div class="card__block-field">
 										<input type="password" placeholder="&#8226;&#8226;&#8226;" data-cvv-mask>
 									</div>
 								</div>
 								<div class="card__block">
-									<div class="card__block-title">Срок действия<a href="#" class="help-ico">?</a></div>
+									<div class="card__block-title">Срок действия</div>
 									<div class="card__block-field">
 										<input type="text" data-date-mask placeholder="ММ / ГГ">
 									</div>
@@ -45,13 +45,13 @@
 						<div class="card__fields">
 							<div class="card__fields-col _1">
 								<div class="card__block">
-									<div class="card__block-title">Номер карты получателя<a href="#" class="help-ico">?</a></div>
+									<div class="card__block-title">Номер карты получателя</div>
 									<div class="card__block-field">
 										<input type="text" placeholder="0000 0000 0000 0000" data-card-mask>
 									</div>
 								</div>
 								<div class="card__block">
-									<div class="card__block-title">Владелец карты<a href="#" class="help-ico">?</a></div>
+									<div class="card__block-title">Владелец карты<?/*a href="#" class="help-ico">?</a*/?></div>
 									<div class="card__block-field">
 										<input type="text" placeholder="Ivan PETROV">
 									</div>

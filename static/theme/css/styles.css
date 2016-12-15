@@ -282,7 +282,7 @@ textarea {
   height: 100%;
   position: relative;
   z-index: 1;
-  color: #191919;
+  color: #3e3e3e;
   border-radius: 0.2rem;
   /* Firefox 19+ */
   /* Firefox 18- */
@@ -1320,7 +1320,6 @@ h4 {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
   z-index: 4;
   visibility: hidden;
 }
@@ -1333,6 +1332,7 @@ h4 {
 .header__search-form-field input[type="text"] {
   border: 0;
   padding: 0.5rem 0;
+  background-color: transparent;
 }
 .header__search-form-close {
   width: 1.6rem;
@@ -5877,7 +5877,9 @@ h4 {
 .numerals__item-val span {
   font-size: 1.5rem;
   letter-spacing: -0.075rem;
-  line-height: 2rem;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: bottom;
 }
 .numerals__item-dash {
   width: 7rem;

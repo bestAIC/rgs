@@ -78,7 +78,6 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="more-link offices__item-mark">Оценить отделение</a>
 			</div>
 			<div class="offices__item" data-office-point='{"lat":55.860553,"lan":37.567281,"type":"office"}'>
 				<div class="offices__item-title">ДО «Отделение «Дубнинское»</div>
@@ -129,7 +128,6 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="more-link offices__item-mark">Оценить отделение</a>
 			</div>
 			<div class="offices__item" data-office-point='{"lat":55.699676,"lan":37.845726,"type":"atm"}'>
 				<div class="offices__item-title">ДО «Отделение «Жулебинский бульвар»</div>
@@ -173,7 +171,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="more-link offices__item-mark">Оценить отделение</a>
+				<?/*a href="#" class="more-link offices__item-mark">Оценить отделение</a*/?>
 			</div>
 		</div>
 	</div>
