@@ -89,6 +89,27 @@
 }
 
 .numerals{
+	&._many-numbers{
+		.numerals{
+			&__item{
+				&._big{
+					.numerals__item{
+						&-val{
+							height: auto;
+						}
+					}
+				}
+				&-val{
+					font-size: 40/@rem;
+					height: 4rem;
+					line-height: 4rem;
+					span{
+						line-height: 1.4;
+					}
+				}
+			}
+		}
+	}
 	.clearfix;
 	//margin-bottom: 3rem;
 	&__block{
@@ -116,6 +137,11 @@
 					margin-top: 46/@rem;
 					margin-bottom: 26/@rem;
 				}
+			}
+		}
+		&-el{
+			&+&{
+				margin-top: 4rem;
 			}
 		}
 		&-val{
@@ -190,6 +216,16 @@
 		}
 	}
 	.numerals{
+		&._many-numbers{
+			.numerals {
+				&__block{
+					width: 35%;
+					&+.numerals__block{
+						width: 65%;
+					}
+				}
+			}
+		}
 		&._only-big{
 			margin-bottom: 5.4rem;
 			.numerals{

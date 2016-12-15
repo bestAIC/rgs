@@ -61,6 +61,7 @@ app.init = function () {
 	app.initTabs();
 	app.initBaseCheck();
 	app.chooseCity();
+	app.initGoto();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -74,6 +75,12 @@ app.init = function () {
 	if(app.utils.isMobile){
 		app.mobSliders();
 	}
+};
+app.initGoto = function () {
+	$('html').on('click.Goto', '[data-goto]', function(e){
+		e.preventDefault();
+		$('html, body').animate({'scrollTop': $($(this).data('goto')).offset().top - $('.header').height()}, 500);
+	})
 };
 app.masks = function () {
 	$('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});

@@ -1,8 +1,25 @@
 .mortgage{
 	&__numbers{
-
+		margin-top: 4.8rem;
 	}
 	&__steps{
-		margin-top: 6.3rem;
+		&-block{
+			margin-top: 6.3rem;
+		}
+
+	}
+}
+.tablet.portrait{
+	.mortgage__numbers{
+		margin-top: 0;
+		margin-bottom: 5.4rem;
+		.numerals__item._big .numerals__item-val{
+			font-size: 15rem;
+		}
+	}
+}
+.mobile{
+	.mortgage__numbers{
+		margin-top: 0;
 	}
 }

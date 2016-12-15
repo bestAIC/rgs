@@ -573,6 +573,15 @@ a:focus {
 .rub._medium {
   font-weight: 500;
 }
+.arrs_down {
+  width: 1.2rem;
+  height: 1.4rem;
+  display: inline-block;
+  background: url('../images/icons/arrs_down.svg') no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
 .valuta {
   font-family: 'Roboto', sans-serif !important;
 }
@@ -5233,6 +5242,17 @@ h4 {
   line-height: 2rem;
   color: #b31b2c;
 }
+.deposit-open__step-notice {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3e3e3e;
+  letter-spacing: -0.019rem;
+  margin-top: 2rem;
+}
+.deposit-open__step-notice-title {
+  color: #b31b2c;
+  margin-bottom: 1rem;
+}
 .tablet.portrait .deposit-open__method {
   padding: 3.2rem 3rem 3.5rem;
 }
@@ -5827,6 +5847,17 @@ h4 {
 .numerals {
   *zoom: 1;
 }
+.numerals._many-numbers .numerals__item._big .numerals__item-val {
+  height: auto;
+}
+.numerals._many-numbers .numerals__item-val {
+  font-size: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+}
+.numerals._many-numbers .numerals__item-val span {
+  line-height: 1.4;
+}
 .numerals:before,
 .numerals:after {
   display: table;
@@ -5866,6 +5897,9 @@ h4 {
 .numerals__item._big .numerals__item-dash {
   margin-top: 4.6rem;
   margin-bottom: 2.6rem;
+}
+.numerals__item-el + .numerals__item-el {
+  margin-top: 4rem;
 }
 .numerals__item-val {
   font-size: 3rem;
@@ -5929,6 +5963,12 @@ h4 {
 }
 .tablet.portrait .numerals {
   margin-bottom: 3.2rem;
+}
+.tablet.portrait .numerals._many-numbers .numerals__block {
+  width: 35%;
+}
+.tablet.portrait .numerals._many-numbers .numerals__block + .numerals__block {
+  width: 65%;
 }
 .tablet.portrait .numerals._only-big {
   margin-bottom: 5.4rem;
@@ -7659,6 +7699,22 @@ h4 {
 }
 .mobile .offices .offices__block .offices__item-info-metro .metro {
   margin-top: 0.2rem;
+}
+.mortgage__numbers {
+  margin-top: 4.8rem;
+}
+.mortgage__steps-block {
+  margin-top: 6.3rem;
+}
+.tablet.portrait .mortgage__numbers {
+  margin-top: 0;
+  margin-bottom: 5.4rem;
+}
+.tablet.portrait .mortgage__numbers .numerals__item._big .numerals__item-val {
+  font-size: 15rem;
+}
+.mobile .mortgage__numbers {
+  margin-top: 0;
 }
 .pull-right {
   float: right;

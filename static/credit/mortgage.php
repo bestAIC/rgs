@@ -116,60 +116,101 @@
 						</div>
 					</div>
 				</div>
-				<div class="b-block mortgage">
-					<div class="grid__inner">
-						<div class="deposit-info__right">
-							<div class="mortgage__numbers">
-
-							</div>
-						</div>
-						<div class="deposit-info__left">
-							<div class="deposit-info__block mortgage__steps">
-								<h3>Купить квартиру в кредит просто</h3>
-								<div class="deposit-open__steps mortgage__steps-block">
-									<div class="deposit-open__step">
-										<div class="deposit-open__step-num">01</div>
-										Обратитесь в офис Банка (см.раздел «Офисы банка,
-										где Вы можете оформить кредит») и получите предварительное решение и список документов,
-										необходимых для получения итогового решения в отношении Вас и покупаемой Вами квартиры.
-										<div class="deposit-open__step-notice">
-											<div class="deposit-open__step-notice-title">Не забыть:</div>
-											Паспорт, СНИЛС
-										</div>
-									</div><!--
-								--><div class="deposit-open__step">
-										<div class="deposit-open__step-num">02</div>
-										Соберите и передайте в офис Банка документы о Ваших доходах и занятости и получите решение
-										о возможности предоставления кредита с указанием суммы кредита, которую Банк готов
-										Вам предоставить.
-										<div class="deposit-open__step-notice">
-											<div class="deposit-open__step-notice-title">Не забыть:</div>
-											Паспорт, СНИЛС, документы
-											подтверждающие
-											доходы и занятость
-										</div>
-									</div><!--
-									--><div class="deposit-open__step">
-										<div class="deposit-open__step-num">02</div>
-										Выберите квартиру, передайте
-										в офис Банка документы, необходимые для принятия решения о возможности принятия квартиры в залог,
-										и получите итоговое решение.
-										<div class="deposit-open__step-notice">
-											<div class="deposit-open__step-notice-title">Не забыть:</div>
-											Документы продавца,
-											документы на квартиру
-										</div>
-									</div><!--
-								--><div class="deposit-open__step">
-										<div class="deposit-open__step-num">06</div>
-										Обратитесь в офис Банка
-										с продавцом для оформления договора купли продажи
-										и кредита.
-										<div class="deposit-open__step-notice">
-											<div class="deposit-open__step-notice-title">Не забыть:</div>
-											Паспорт, СНИЛС
+			</div>
+			<div class="b-block animation__top mortgage" data-animation>
+				<div class="grid__inner">
+					<div class="deposit-info__right mortgage__numbers">
+						<div class="inner__info-block">
+							<div class="numerals _many-numbers">
+								<div class="numerals__block">
+									<div class="numerals__item _big">
+										<div class="numerals__item-val">2</div>
+										<div class="numerals__item-dash"></div>
+										<div class="numerals__item-text">
+											документа необходимо,
+											чтобы получить решение
 										</div>
 									</div>
+								</div>
+								<div class="numerals__block">
+									<div class="numerals__item _small">
+										<div class="numerals__item-el">
+											<div class="numerals__item-val">
+												2
+												<span>рабочих<br />дня</span>
+											</div>
+											<div class="numerals__item-dash"></div>
+											<div class="numerals__item-text">
+												принимается решение
+											</div>
+										</div>
+										<div class="numerals__item-el">
+											<div class="numerals__item-val">
+												3
+												<span>месяца</span>
+											</div>
+											<div class="numerals__item-dash"></div>
+											<div class="numerals__item-text">
+												действует решение
+											</div>
+										</div>
+									</div>
+									<div class="numerals__item _small">
+										<div class="numerals__item-val">8 <span>дней</span></div>
+										<div class="numerals__item-dash"></div>
+										<div class="numerals__item-text">
+											максимальный срок<br />
+											принятия решения<br />
+											с момента предоставления всех требуемых документов
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="deposit-info__left">
+						<div class="deposit-info__block mortgage__steps">
+							<h3>Купить квартиру в кредит просто</h3>
+							<div class="deposit-open__steps _two-cols mortgage__steps-block">
+								<div class="deposit-open__step">
+									<div class="deposit-open__step-num">01</div>
+									Обратитесь в офис Банка (см.раздел «Офисы банка,
+									где Вы можете оформить кредит») и получите предварительное решение и список документов,
+									необходимых для получения итогового решения в отношении Вас и покупаемой Вами квартиры.
+									<div class="deposit-open__step-notice">
+										<div class="deposit-open__step-notice-title">Не забыть:</div>
+										Паспорт, СНИЛС
+									</div>
+								</div><!--
+								--><div class="deposit-open__step">
+									<div class="deposit-open__step-num">02</div>
+									Соберите и передайте в офис Банка документы о Ваших доходах и занятости и получите решение
+									о возможности предоставления кредита с указанием суммы кредита, которую Банк готов
+									Вам предоставить.
+									<div class="deposit-open__step-notice">
+										<div class="deposit-open__step-notice-title">Не забыть:</div>
+										Паспорт, СНИЛС, документы
+										подтверждающие
+										доходы и занятость
+									</div>
+								</div><!--
+									--><div class="deposit-open__step">
+									<div class="deposit-open__step-num">03</div>
+									Выберите квартиру, передайте
+									в офис Банка документы, необходимые для принятия решения о возможности принятия квартиры в залог,
+									и получите итоговое решение.
+									<div class="deposit-open__step-notice">
+										<div class="deposit-open__step-notice-title">Не забыть:</div>
+										Документы продавца,<br />
+										документы на квартиру
+										<a href="javascript:void(0);" data-goto="[data-files]" class="arrs_down"></a>
+									</div>
+								</div><!--
+								--><div class="deposit-open__step">
+									<div class="deposit-open__step-num">04</div>
+									Обратитесь в офис Банка
+									с продавцом для оформления договора купли продажи
+									и кредита.
 								</div>
 							</div>
 						</div>
@@ -180,7 +221,7 @@
 		<div class="b-blocks _gray">
 			<?include "../includes/subscription.php"?>
 			<?include "../includes/offices.php"?>
-			<div class="b-block animation__top" data-animation>
+			<div class="b-block animation__top" data-files data-animation>
 				<div class="grid__inner">
 					<h2>Полезные документы</h2>
 					<div class="files _two-cols">
