@@ -199,6 +199,9 @@ h4{
 	line-height: 25/@rem;
 	padding-left: 0;
 	list-style: none;
+	&.no-b-indent{
+		margin-bottom: 0!important;
+	}
 	&.dash-list-indent{
 		.dash-list{
 			.mobile &{
@@ -302,6 +305,17 @@ h4{
 			height: 1px;
 			background-color: @cGold;
 		}
+	}
+}
+.notice{
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: @title-color;
+	letter-spacing: -0.19/@rem;
+	margin-top: 2rem;
+	&__title{
+		color: @cRed;
+		margin-bottom: 1rem;
 	}
 }
 .breadcrumbs{

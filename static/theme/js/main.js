@@ -62,7 +62,7 @@ app.init = function () {
 	app.initBaseCheck();
 	app.chooseCity();
 	app.initGoto();
-
+	app.CardP2P();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -76,6 +76,53 @@ app.init = function () {
 		app.mobSliders();
 	}
 };
+app.CardP2P = function () {
+	var $transferBlock =  $('[data-transfer]'),
+			$form =  $transferBlock.find('form'),
+			$formBtn =  $transferBlock.find('[data-transfer-btn]'),
+			$inputs = $form.find('[data-transfer-inp]'),
+			$mainInputs = $inputs.filter('[data-transfer-inp="main"]'),
+			allValidate = null,
+			mainValidate = null
+		;
+	setMasks();
+	function setMasks() {
+		$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
+		$transferBlock.find('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
+		$transferBlock.find('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
+	}
+	function isValid($inputs) {
+		var valid = true;
+		$inputs.each(function () {
+			if($.trim($(this).val()) == ''){
+				valid = false
+			}
+		});
+		return valid;
+	}
+	$inputs.keyup(function () {
+		allValidate = isValid($inputs);
+		mainValidate = isValid($mainInputs);
+		if(mainValidate){
+			/*$.post($form.attr('action'), $form.serialize(), function(data){
+
+			},'json');*/
+		}
+		if(allValidate){
+			$formBtn.prop('disabled', false);
+		}else{
+			$formBtn.prop('disabled', true);
+		}
+	});
+
+	$form.on('submit',function () {
+		var $self = $(this);
+		$.post($self.attr('action'), $self.serialize(), function(data){
+
+		},'json');
+		return false;
+	});
+};
 app.initGoto = function () {
 	$('html').on('click.Goto', '[data-goto]', function(e){
 		e.preventDefault();
@@ -83,9 +130,7 @@ app.initGoto = function () {
 	})
 };
 app.masks = function () {
-	$('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
-	$('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
-	$('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
+
 	$('[data-phone-mask]').mask("(000) 000-00-00",{clearIfNotMatch: true});
 };
 app.initForms = function () {

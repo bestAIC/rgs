@@ -216,7 +216,7 @@
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">Мгновенные переводы РОСГОССТРАХ&nbsp;БАНКА</a>
+									<a href="/static/transfers/rgs.php" class="b-menu__submenu-link">Мгновенные переводы РОСГОССТРАХ&nbsp;БАНКА</a>
 								</div>
 								<div class="b-menu__submenu-item">
 									<a href="#" class="b-menu__submenu-link">Western Union</a>

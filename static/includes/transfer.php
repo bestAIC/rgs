@@ -1,4 +1,4 @@
-<div class="home__transfer b-block">
+<div class="home__transfer b-block" data-transfer>
 	<div class="grid__inner">
 		<h2>Переводите с карты на карту</h2>
 		<div class="subtitle">Переводы на карту любого российского банка, надежный сервис с выгодными тарифами</div>
@@ -12,13 +12,13 @@
 								<div class="card__block">
 									<div class="card__block-title">Номер карты отправителя</div>
 									<div class="card__block-field">
-										<input type="text" placeholder="0000 0000 0000 0000" data-card-mask>
+										<input type="text" placeholder="0000 0000 0000 0000" data-transfer-inp="main" data-card-mask>
 									</div>
 								</div>
 								<div class="card__block">
 									<div class="card__block-title">Владелец карты</div>
 									<div class="card__block-field">
-										<input type="text" placeholder="NIKOLAY Ivanov">
+										<input type="text" placeholder="NIKOLAY Ivanov" data-transfer-inp>
 									</div>
 								</div>
 							</div>
@@ -26,13 +26,13 @@
 								<div class="card__block">
 									<div class="card__block-title">cvc2 / cvv2</div>
 									<div class="card__block-field">
-										<input type="password" placeholder="&#8226;&#8226;&#8226;" data-cvv-mask>
+										<input type="password" data-transfer-inp placeholder="&#8226;&#8226;&#8226;" data-cvv-mask>
 									</div>
 								</div>
 								<div class="card__block">
 									<div class="card__block-title">Срок действия</div>
 									<div class="card__block-field">
-										<input type="text" data-date-mask placeholder="ММ / ГГ">
+										<input type="text" data-transfer-inp data-date-mask placeholder="ММ / ГГ">
 									</div>
 								</div>
 							</div>
@@ -47,13 +47,13 @@
 								<div class="card__block">
 									<div class="card__block-title">Номер карты получателя</div>
 									<div class="card__block-field">
-										<input type="text" placeholder="0000 0000 0000 0000" data-card-mask>
+										<input type="text" placeholder="0000 0000 0000 0000" data-transfer-inp="main" data-card-mask>
 									</div>
 								</div>
 								<div class="card__block">
 									<div class="card__block-title">Владелец карты<?/*a href="#" class="help-ico">?</a*/?></div>
 									<div class="card__block-field">
-										<input type="text" placeholder="Ivan PETROV">
+										<input type="text" data-transfer-inp placeholder="Ivan PETROV">
 									</div>
 								</div>
 							</div>
@@ -64,13 +64,13 @@
 			<div class="home__transfer-block">
 				<div class="home__transfer-block-in">
 					<div class="home__transfer-sum">
-						<input type="text" placeholder="Сумма перевода">
+						<input type="text" placeholder="Сумма перевода" data-transfer-inp="main">
 					</div>
 					<div class="home__transfer-commission">
 						<div class="home__transfer-commission-title">Комиссия за перевод</div>
 						<div class="home__transfer-commission-val">0 руб.</div>
 					</div>
-					<button type="submit" class="btn _red home__transfer-btn">Отправить деньги</button>
+					<button type="submit" disabled data-transfer-btn class="btn _red home__transfer-btn">Отправить деньги</button>
 				</div>
 			</div>
 		</form>

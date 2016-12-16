@@ -44,6 +44,17 @@
 	}
 	&__steps{
 		margin-bottom: -26/@rem;
+		&._3-cols{
+			.deposit-open__step{
+				width: 30%;
+				margin-left: 0!important;
+				margin-right: 5%;
+				margin-bottom: 3rem;
+				&:nth-child(3n){
+					margin-right: 0;
+				}
+			}
+		}
 		.dash-list{
 			margin-left: -3.4rem;
 			li{
@@ -82,17 +93,6 @@
 			letter-spacing: -0.67/@rem;
 			line-height: 20/@rem;
 			color: @cRed;
-		}
-		&-notice{
-			font-size: 1.4rem;
-			font-weight: 600;
-			color: @title-color;
-			letter-spacing: -0.19/@rem;
-			margin-top: 2rem;
-			&-title{
-				color: @cRed;
-				margin-bottom: 1rem;
-			}
 		}
 	}
 }

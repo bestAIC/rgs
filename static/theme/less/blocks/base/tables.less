@@ -24,6 +24,47 @@
 		}
 	}
 }
+.b-color-table{
+	width: 100%;
+	color: @title-color;
+	border-bottom: 1px solid @cBorder;
+	border-top: 1px solid @cBorder;
+	.b-list{
+		&:first-child{
+			margin-top: 0;
+		}
+		margin-bottom: 0;
+		&+*{
+			margin-top: 1.7rem;
+		}
+	}
+
+	table{
+		width: 100%;
+		color: @title-color;
+	}
+	tr{
+		&:nth-child(2n){
+			background-color: whitesmoke;
+		}
+	}
+	td{
+		font-size: 14/@rem;
+		font-weight: 400;
+		line-height: 25/@rem;
+		padding: 2.3rem 2rem;
+		vertical-align: top;
+		&:first-child{
+			font-weight: 600;
+			padding-left: 6.7rem;
+			padding-right: 2rem;
+			width: 377px;
+		}
+		&:last-child{
+			padding-right: 6rem;
+		}
+	}
+}
 .mobile{
 	.b-table{
 		td{
