@@ -219,13 +219,13 @@
 									<a href="/static/transfers/rgs.php" class="b-menu__submenu-link">Мгновенные переводы РОСГОССТРАХ&nbsp;БАНКА</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">Western Union</a>
+									<a href="/static/transfers/western-union.php" class="b-menu__submenu-link">Western Union</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">MoneyGram</a>
+									<a href="/static/transfers/money-gram.php" class="b-menu__submenu-link">MoneyGram</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">«Золотая корона»</a>
+									<a href="/static/transfers/golden-crown.php" class="b-menu__submenu-link">«Золотая корона»</a>
 								</div>
 							</div>
 						</div>
