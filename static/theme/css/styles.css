@@ -4174,7 +4174,8 @@ h4 {
   width: 100%;
   margin-top: 2rem;
 }
-.deposit__text {
+.deposit__text,
+.deposit .note-text {
   color: #919599;
   font-size: 1.2rem;
   font-weight: 400;
@@ -4182,10 +4183,12 @@ h4 {
   line-height: 2rem;
   padding-top: 2.5rem;
 }
-.deposit__text p {
+.deposit__text p,
+.deposit .note-text p {
   margin: 0;
 }
-.deposit__text p + p {
+.deposit__text p + p,
+.deposit .note-text p + p {
   margin-top: 3rem;
 }
 .deposit__info-banner {
@@ -4340,10 +4343,12 @@ h4 {
   margin-top: 7rem;
   margin-left: 0;
 }
-.tablet.portrait .deposit__text {
+.tablet.portrait .deposit__text,
+.tablet.portrait .note-text {
   padding-top: 2.6rem;
 }
-.tablet.portrait .deposit__text p + p {
+.tablet.portrait .deposit__text p + p,
+.tablet.portrait .note-text p + p {
   margin-top: 2rem;
 }
 .tablet.portrait .deposit-info__left {
@@ -4389,10 +4394,12 @@ h4 {
   padding-bottom: 0.8rem;
   vertical-align: top;
 }
-.mobile .deposit__text {
+.mobile .deposit__text,
+.mobile .deposit .note-text {
   padding-top: 1.8rem;
 }
-.mobile .deposit__text p + p {
+.mobile .deposit__text p + p,
+.mobile .deposit .note-text p + p {
   margin-top: 1.6rem;
 }
 .mobile .deposit__info-banner {
@@ -7792,8 +7799,19 @@ h4 {
 .mobile .mortgage__numbers {
   margin-top: 0;
 }
+.transfers .numerals__item._big .numerals__item-val {
+  font-size: 13rem;
+}
+.tablet.portrait .transfers .numerals__item._big .numerals__item-val {
+  font-size: 10rem;
+}
+.mobile .transfers .numerals__item._big .numerals__item-val {
+  font-size: 10.6rem;
+}
 .transfers__mob-menu {
   position: relative;
+  height: 6.5rem;
+  z-index: 10;
 }
 .transfers__mob-menu._fixed .transfers__mob-menu-in {
   position: fixed;

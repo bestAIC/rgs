@@ -1,6 +1,19 @@
 .transfers{
+	.numerals__item._big{
+		.numerals__item-val{
+			font-size: 13rem;
+			.tablet.portrait &{
+				font-size: 10rem;
+			}
+			.mobile &{
+				font-size: 10.6rem;
+			}
+		}
+	}
 	&__mob-menu{
 		position: relative;
+		height: 6.5rem;
+		z-index: 10;
 		&._fixed{
 			.transfers__mob-menu-in{
 				position: fixed;
