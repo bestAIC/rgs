@@ -63,6 +63,7 @@ app.init = function () {
 	app.chooseCity();
 	app.initGoto();
 	app.CardP2P();
+	app.transfersMenu();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -249,6 +250,24 @@ app.chooseCity = function () {
 	function _closePopup() {
 		app.dom.$body.removeClass('choose-city');
 		$city.fadeOut();
+	}
+};
+app.transfersMenu = function () {
+	var $menu =  $('[data-transfers-menu]'),
+			$mainMenu = $('[data-menu-wrap]')
+		;
+	if(!$menu.length){
+		return false;
+	}
+	var throttled = _.throttle(updateMenu, 10);
+	app.dom.$window.scroll(throttled);
+	updateMenu();
+	function updateMenu(){
+		if(($menu.offset().top - $(document).scrollTop() - $mainMenu.height()) <=0 ){
+			$menu.addClass('_fixed');
+		}else{
+			$menu.removeClass('_fixed');
+		}
 	}
 };
 app.initBaseCheck = function () {
