@@ -256,6 +256,9 @@ app.transfersMenu = function () {
 	var $menu =  $('[data-transfers-menu]'),
 			$mainMenu = $('[data-menu-wrap]')
 		;
+	if(app.utils.isMobile){
+		$menu =  $('[data-transfers-mob-menu]');
+	}
 	if(!$menu.length){
 		return false;
 	}

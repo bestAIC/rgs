@@ -1,4 +1,65 @@
 .transfers{
+	&__mob-menu{
+		position: relative;
+		&._fixed{
+			.transfers__mob-menu-in{
+				position: fixed;
+				top: 5.7rem;
+				left: 0;
+				right: 0;
+				z-index: 999;
+			}
+		}
+		&-in{
+
+		}
+		&-item{
+			display: block;
+			height: 6.5rem;
+			line-height: 2.5rem;
+			padding: 2rem;
+			text-align: center;
+			.color(#fff);
+			font-size: 16px;
+			font-weight: 600;
+			&._title{
+				&:after{
+					content: '';
+					display: inline-block;
+					vertical-align: middle;
+					border: 5/@rem solid transparent;
+					border-bottom: 0;
+					border-top-color: #fff;
+					margin-left: 8px;
+				}
+				&._active{
+					&:after{
+						border-bottom: 5/@rem solid #fff;
+						border-top: 0;
+					}
+				}
+			}
+			&._rgs{
+				background-image: linear-gradient(135deg, #7e1b20 0%, #973534 100%);
+			}
+			&._wu{
+				background-image: linear-gradient(-45deg, #ffeb00 0%, gold 100%);
+			}
+			&._mg{
+				background-image: linear-gradient(135deg, #ed1c2e 0%, #e95555 100%);
+			}
+			&._zk{
+				background-image: linear-gradient(135deg, #c03 0%, #e62958 100%);
+			}
+		}
+		&-items{
+			display: none;
+			.transfers__mob-menu-item{
+				height: 4.5rem;
+				padding: 1rem 2rem;
+			}
+		}
+	}
 	&__menu{
 		background-color: whitesmoke;
 		&+.b-block{
@@ -40,7 +101,7 @@
 			padding-top: 21px;
 			background-color: transparent;
 			transition: height @animTime, background @animTime,color 0.3s;
-			&._active,&:hover{
+			&._active,.no-touch &:hover{
 				color: #fff;
 				box-shadow: 0 45px 55px -30px rgba(164, 164, 164, .6);
 			}
@@ -50,7 +111,7 @@
 						background-image: url('@{pathToImg}transfers/icons/rgs.svg');
 					}
 				}
-				&._active,&:hover{
+				&._active,.no-touch &:hover{
 					background-image: linear-gradient(135deg, #7e1b20 0%, #973534 100%);
 					.transfers__menu-item{
 						&-ico{
@@ -66,7 +127,7 @@
 						background-size: auto 39/@rem;
 					}
 				}
-				&._active,&:hover{
+				&._active,.no-touch &:hover{
 					background-image: linear-gradient(-45deg, #ffeb00 0%, gold 100%);
 					.transfers__menu-item{
 						&-ico{
@@ -81,7 +142,7 @@
 						background-image: url('@{pathToImg}transfers/icons/mg.svg');
 					}
 				}
-				&._active,&:hover{
+				&._active,.no-touch &:hover{
 					background-image: linear-gradient(135deg, #ed1c2e 0%, #e95555 100%);
 					.transfers__menu-item{
 						&-ico{
@@ -96,7 +157,7 @@
 						background-image: url('@{pathToImg}transfers/icons/zk.png');
 					}
 				}
-				&._active,&:hover{
+				&._active,.no-touch &:hover{
 					background-image: linear-gradient(135deg, #c03 0%, #e62958 100%);
 					.transfers__menu-item{
 						&-ico{
@@ -178,6 +239,37 @@
 			&-block{
 				padding-right: 0;
 				margin-top: 32/@rem;
+			}
+		}
+	}
+}
+.mobile{
+	.transfers{
+		.b-color-table{
+			margin-left: -2rem;
+			margin-right: -2rem;
+		}
+		&__menu{
+			display: none;
+			&+.b-block{
+				padding-top: 5rem;
+			}
+		}
+		&__info{
+			.clearfix;
+			&-col{
+				float: none;
+				width: 100%;
+				&+.transfers__info-col{
+					margin-top: 6rem;
+				}
+			}
+			&-block{
+				font-size: 14px;
+				font-weight: 400;
+				letter-spacing: -0.19px;
+				line-height: 20px;
+				padding-right: 0;
 			}
 		}
 	}

@@ -36,6 +36,18 @@
 			</div>
 		</div>
 		<div class="b-blocks">
+			<div class="b-block is-mob-block">
+				<div class="transfers__mob-menu" data-transfers-mob-menu data-nav-block>
+					<div class="transfers__mob-menu-in">
+						<a href="javascript:void(0);" class="transfers__mob-menu-item _rgs _title" data-nav-btn>Росгосстрах</a>
+						<div class="transfers__mob-menu-items"  data-nav-content>
+							<a href="javascript:void(0);" class="transfers__mob-menu-item _wu">Western Union</a>
+							<a href="javascript:void(0);" class="transfers__mob-menu-item _mg">Money Gram</a>
+							<a href="javascript:void(0);" class="transfers__mob-menu-item _zk">Золотая Корона</a>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="b-block transfers__menu" >
 				<div class="grid__inner">
 					<h3>
