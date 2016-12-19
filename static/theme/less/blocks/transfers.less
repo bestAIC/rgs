@@ -212,7 +212,78 @@
 		}
 	}
 }
+.transfers-nav{
+	&__cards{
+		background-color: #cca266;
+		.color(#fff);
+		&-block{
+			margin-top: 46px;
+			position: relative;
+			white-space: nowrap;
+		}
+		&-card{
+			display: inline-block;
+			vertical-align: top;
+			box-shadow: 0 45/@rem 55/@rem -30/@rem rgba(31, 29, 27, .6);
+			&+&{
+				margin-left: 3.1rem;
+			}
+		}
+	}
+	&__methods{
+		position: absolute;
+		right: 6rem;
+		top: 50%;
+		margin-top: -3.5rem;
+	}
+	&__method{
+		float: left;
+		height: 7rem;
+		background: none no-repeat center;
+		background-size: contain;
+		margin-left: 6rem;
+		&._rgs{
+			width: 16.1rem;
+			background-image: url('@{pathToImg}transfers/icons/rgs.svg');
+		}
+		&._wu{
+			width: 12.1rem;
+			background-image: url('@{pathToImg}transfers/icons/wu-logo.png');
+		}
+		&._mg{
+			width: 7rem;
+			background-image: url('@{pathToImg}transfers/icons/mg.svg');
+		}
+		&._zk{
+			width: 14.5rem;
+			background-image: url('@{pathToImg}transfers/icons/zolkorona.png');
+		}
+	}
+}
 .tablet.portrait{
+	.transfers-nav{
+		.page-nav__item-ico._base{
+			display: none;
+		}
+		&__cards{
+			&-block{
+				padding-left: 154px;
+			}
+		}
+		&__methods{
+			margin-top: -7rem;
+			width: 314px;
+		}
+		&__method{
+			height: 5.8rem;
+			margin-left: 24px;
+			width: 133px!important;
+			margin-bottom: 23px;
+			&._wu{
+				background-size: 100px 46px;
+			}
+		}
+	}
 	.transfers{
 		.b-color-table{
 			margin-left: -2.7rem;
@@ -257,6 +328,27 @@
 	}
 }
 .mobile{
+	.transfers-nav{
+		.page-nav__item-ico._base{
+			display: none;
+		}
+		&__cards{
+			padding-right: 95px;
+			&-block{
+				position: absolute;
+				top: 25px;
+				margin-top: 0;
+				left: 290px;
+			}
+			&-card{
+				height: 150px;
+				width: 240px;
+			}
+		}
+		&__methods{
+			display: none;
+		}
+	}
 	.transfers{
 		.b-color-table{
 			margin-left: -2rem;

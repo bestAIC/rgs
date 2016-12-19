@@ -13,15 +13,15 @@
 		}
 		.no-touch &:hover{
 			.b-card{
-				transform: translate3d(0,-5px,0);
+				transform: translate3d(0,-5/@rem,0);
 				&._blue{
-					box-shadow: 0 45px 55px -30px rgba(4, 10, 38, .6)
+					box-shadow: 0 45/@rem 55/@rem -30/@rem rgba(4, 10, 38, .6)
 				}
 				&._red{
-					box-shadow: 0 45px 55px -30px rgba(39, 4, 4, .6);
+					box-shadow: 0 45/@rem 55/@rem -30/@rem rgba(39, 4, 4, .6);
 				}
 				&_mc-platinum{
-					box-shadow: 0 45px 55px -30px rgba(0, 0, 0, .6);
+					box-shadow: 0 45/@rem 55/@rem -30/@rem rgba(0, 0, 0, .6);
 				}
 			}
 		}
@@ -63,10 +63,13 @@
 				margin-top: 3rem;
 			}
 			&-text{
-				font-size: 14px;
+				font-size: 14/@rem;
 				font-weight: 400;
-				letter-spacing: -0.19px;
-				line-height: 25px;
+				letter-spacing: -0.19/@rem;
+				line-height: 25/@rem;
+				&._big{
+					font-size: 1.6rem;
+				}
 			}
 			&-title{
 				font-size: 20/@rem;

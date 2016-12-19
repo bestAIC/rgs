@@ -1,0 +1,110 @@
+.page-nav{
+	&__row{
+		.clearfix;
+		&+&{
+			margin-top: 30px;
+		}
+		&-col{
+			float: left;
+			width: 570px;
+			&+&{
+				margin-left: 30px;
+			}
+		}
+	}
+	&__item{
+		display: block;
+		background-color: #fff;
+		height: 200px;
+		padding: 34px 40px;
+		.color(@title-color);
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		position: relative;
+		&._big{
+			height: 430px;
+			overflow: hidden;
+		}
+		&+&{
+			margin-top: 30px;
+		}
+		&-ico{
+			&._base{
+				position: absolute;
+				z-index: 2;
+				width: 7rem;
+				height: 7rem;
+				top: 3rem;
+				right: 4rem;
+				background: none no-repeat center;
+				background-size: contain;
+			}
+			&._services{
+				background-image: url('@{pathToImg}transfers/icons/services.svg')
+			}
+			&._currency{
+				background-image: url('@{pathToImg}transfers/icons/currency.svg')
+			}
+		}
+		&-title{
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 27px;
+			max-width: 36rem;
+		}
+		&-text{
+			font-size: 16px;
+			line-height: 25px;
+			margin-top: 16px;
+			max-width: 36rem;
+		}
+	}
+}
+.tablet.portrait{
+	.page-nav{
+		&__row{
+			&-col{
+				float: none;
+				width: 100%;
+				&+.page-nav__row-col{
+					margin-left: 0;
+					margin-top: 30px;
+				}
+				&._items{
+					.clearfix;
+					.page-nav__item{
+						float: left;
+						width: 342px;
+						&+.page-nav__item{
+							margin-left: 30px;
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+		&__item{
+			padding: 34px 30px;
+		}
+	}
+}
+.mobile{
+	.page-nav{
+		&__row{
+			&-col{
+				float: none;
+				width: 100%;
+				&+.page-nav__row-col{
+					margin-left: 0;
+					margin-top: 30px;
+				}
+			}
+		}
+		&__item{
+			padding: 34px 30px;
+			&._big{
+				height: 20rem;
+			}
+		}
+	}
+}

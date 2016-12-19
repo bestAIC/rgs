@@ -212,7 +212,7 @@
 						</div>
 						<div class="menu__block-col _col-2-2">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Денежные переводы</a>
+								<a href="/static/transfers/index.php" class="b-menu__item-link">Денежные переводы</a>
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">

@@ -91,11 +91,6 @@
 									<td class="center">ПОКУПКА</td>
 									<td class="center">ПРОДАЖА</td>
 								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
 								<tr class="deposit-table__row">
 									<td class="center bold deposit-table__row-valuta">USD</td>
 									<td class="center bold">60,35</td>
