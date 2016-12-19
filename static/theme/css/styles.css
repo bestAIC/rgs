@@ -562,7 +562,7 @@ a:focus {
   display: none!important;
 }
 .red {
-  color: #b31b2c;
+  color: #b31b2c !important;
 }
 .rub {
   font-family: 'Roboto', sans-serif !important;
@@ -657,6 +657,9 @@ h4 {
   margin-top: 3.5rem;
   margin-bottom: 4rem;
   /*текущие счета, условия*/
+}
+h4.small-bottom-indent {
+  margin-bottom: 2.4rem;
 }
 .subtitle {
   color: #aaaeb3;
@@ -5615,6 +5618,10 @@ h4 {
 }
 .deposit-table__row td.bold {
   font-weight: 600;
+}
+.deposit-table__row td.deposit-table__row-valuta {
+  color: #b31b2c;
+  font-size: 1.4rem;
 }
 .deposit-table__row:nth-child(2n+1) {
   background-color: rgba(216, 216, 216, 0.17);

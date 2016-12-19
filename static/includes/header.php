@@ -204,7 +204,7 @@
 								<a href="#" class="b-menu__item-link">С карты на карту</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">
+								<a href="/static/transfers/currency.php" class="b-menu__item-link">
 									Валютно-обменные<br />
 									операции по льготному курсу
 								</a>
