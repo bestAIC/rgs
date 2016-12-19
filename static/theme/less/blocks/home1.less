@@ -6,6 +6,47 @@
 	&__transfer{
 		/*padding-top: 63/@rem;
 		padding-bottom: 63/@rem;*/
+		&-description{
+			max-width: 77rem;
+			margin: 6rem auto 0;
+			color: @cGray;
+			font-size: 13px;
+			line-height: 20px;
+			&-contacts{
+				color: @text-color;
+			}
+			&-security{
+				font-size: 11px;
+				line-height: 12px;
+				padding-left: 144px;
+				margin-top: 20px;
+				position: relative;
+				&-icons{
+					white-space: nowrap;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				&-icon{
+					display: inline-block;
+					vertical-align: top;
+					background: none no-repeat center;
+					background-size: contain;
+					//height: 35px;
+					height: 28px;
+					&._1{
+						background-image: url('@{pathToImg}transfers/1.jpg');
+						//width: 80px;
+						width: 64px;
+					}
+					&._2{
+						background-image: url('@{pathToImg}transfers/2.jpg');
+						//width: 89px;
+						width: 70px;
+					}
+				}
+			}
+		}
 		&-cards{
 			.clearfix;
 			width: 970/@rem;

@@ -791,6 +791,9 @@ h4.small-bottom-indent {
   letter-spacing: -0.019rem;
   line-height: 2rem;
 }
+.dash-list + .note-text {
+  padding-top: 0!important;
+}
 .dash-list.items-indent-30 li + li {
   margin-top: 3rem;
 }
@@ -1872,6 +1875,44 @@ h4.small-bottom-indent {
 .home__transfer {
   /*padding-top: 63/@rem;
 		padding-bottom: 63/@rem;*/
+}
+.home__transfer-description {
+  max-width: 77rem;
+  margin: 6rem auto 0;
+  color: #AAAEB2;
+  font-size: 13px;
+  line-height: 20px;
+}
+.home__transfer-description-contacts {
+  color: #191919;
+}
+.home__transfer-description-security {
+  font-size: 11px;
+  line-height: 12px;
+  padding-left: 144px;
+  margin-top: 20px;
+  position: relative;
+}
+.home__transfer-description-security-icons {
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.home__transfer-description-security-icon {
+  display: inline-block;
+  vertical-align: top;
+  background: none no-repeat center;
+  background-size: contain;
+  height: 28px;
+}
+.home__transfer-description-security-icon._1 {
+  background-image: url('../images/transfers/1.jpg');
+  width: 64px;
+}
+.home__transfer-description-security-icon._2 {
+  background-image: url('../images/transfers/2.jpg');
+  width: 70px;
 }
 .home__transfer-cards {
   *zoom: 1;
@@ -3955,6 +3996,9 @@ h4.small-bottom-indent {
   padding-top: 1rem;
   *zoom: 1;
 }
+.files._indent {
+  margin-top: 2rem;
+}
 .files:before,
 .files:after {
   display: table;
@@ -4027,6 +4071,9 @@ h4.small-bottom-indent {
 .tablet.portrait .files {
   padding-top: 0;
 }
+.tablet.portrait .files._indent {
+  margin-top: 3rem;
+}
 .tablet.portrait .file {
   width: 34.2rem;
 }
@@ -4038,6 +4085,9 @@ h4.small-bottom-indent {
 }
 .mobile .files {
   padding-top: 0;
+}
+.mobile .files._indent {
+  margin-top: 3rem;
 }
 .mobile .files._two-cols .file {
   width: 100%;
@@ -6208,6 +6258,9 @@ h4.small-bottom-indent {
   margin-top: 4.3rem;
   text-align: center;
 }
+.tablet.portrait .inner__info-benefits + .inner__info-block {
+  margin-top: 8.1rem;
+}
 .tablet.portrait .numerals {
   margin-bottom: 3.2rem;
 }
@@ -6326,6 +6379,9 @@ h4.small-bottom-indent {
 .mobile .inner__info-benefits-btn {
   margin-top: 4.5rem;
   text-align: center;
+}
+.mobile .inner__info-benefits + .inner__info-block {
+  margin-top: 6rem;
 }
 .mobile .numerals {
   margin-bottom: 3.3rem;
@@ -7978,6 +8034,10 @@ h4.small-bottom-indent {
 }
 .mobile .transfers .numerals__item._big .numerals__item-val {
   font-size: 10.6rem;
+}
+.transfers__translation {
+  padding-top: 6px;
+  padding-bottom: 62px;
 }
 .transfers__mob-menu {
   position: relative;

@@ -201,7 +201,7 @@
 								<a href="/static/transfers/services.php" class="b-menu__item-link">Оплата услуг</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">С карты на карту</a>
+								<a href="/static/transfers/card-to-card.php" class="b-menu__item-link">С карты на карту</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="/static/transfers/currency.php" class="b-menu__item-link">

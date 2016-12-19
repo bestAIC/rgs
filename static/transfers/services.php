@@ -45,7 +45,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="files">
+						<div class="files _indent">
 							<a href="#" class="file w100">
 								<div class="file__inner">
 									<div class="file__name">Список пунктов приема платежей</div>
