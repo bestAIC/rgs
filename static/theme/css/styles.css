@@ -665,6 +665,15 @@ h4 {
   line-height: 2.5rem;
   text-align: center;
 }
+.block-indent {
+  margin-top: 7.1rem;
+}
+.tablet .block-indent {
+  margin-top: 8.1rem;
+}
+.mobile .block-indent {
+  margin-top: 6rem;
+}
 .b-list {
   font-size: 1.6rem;
   font-weight: 400;
@@ -684,6 +693,31 @@ h4 {
 .b-list .dash-list {
   margin-top: 2.6rem;
   margin-bottom: 2.6rem;
+}
+.b-list .dash-list._gray {
+  color: #797c80;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 1.6rem;
+}
+.mobile .b-list .dash-list._gray {
+  margin-left: 0;
+  font-size: 1.4rem;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+}
+.mobile .b-list .dash-list._gray li {
+  padding-left: 3.5rem;
+}
+.mobile .b-list .dash-list._gray li + li {
+  margin-top: 1rem;
+}
+.b-list .dash-list._gray li {
+  padding-left: 3rem;
+}
+.b-list .dash-list._gray li + li {
+  margin-top: 1.5rem;
 }
 .mobile .b-list .dash-list {
   margin-top: 1rem;
@@ -3809,6 +3843,9 @@ h4 {
 .files:after {
   clear: both;
 }
+.files .file.w100:first-child {
+  margin-top: 0!important;
+}
 .files._two-cols .file {
   width: 57rem;
 }
@@ -3842,7 +3879,7 @@ h4 {
 .file.w100 {
   float: none;
   display: block;
-  width: 100%;
+  width: 100%!important;
 }
 .file:nth-child(3n) {
   margin-right: 0;
@@ -5149,7 +5186,6 @@ h4 {
 }
 .deposit-documents__block._contacts ul {
   margin-bottom: 0;
-  margin-top: 4.3rem;
 }
 .deposit-documents__block._contacts ul li + li {
   margin-top: 3rem;

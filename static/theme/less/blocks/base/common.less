@@ -193,6 +193,15 @@ h4{
 	line-height: 25/@rem;
 	text-align: center;
 }
+.block-indent{
+	margin-top: 7.1rem;
+	.tablet &{
+		margin-top: 8.1rem;
+	}
+	.mobile &{
+		margin-top: 6rem;
+	}
+}
 .b-list{
 	font-size: 16/@rem;
 	font-weight: 400;
@@ -215,6 +224,31 @@ h4{
 	.dash-list{
 		margin-top: 2.6rem;
 		margin-bottom: 2.6rem;
+		&._gray{
+			color: #797c80;
+			font-size: 1.6rem;
+			line-height: 2.5rem;
+			margin-top: 1.6rem;
+			.mobile &{
+				margin-left: 0;
+				font-size: 1.4rem;
+				letter-spacing: -0.19/@rem;
+				line-height: 2rem;
+				margin-top: 1.5rem;
+				li{
+					padding-left: 3.5rem;
+					&+li{
+						margin-top: 1rem;
+					}
+				}
+			}
+			li{
+				padding-left: 3rem;
+				&+li{
+					margin-top: 1.5rem;
+				}
+			}
+		}
 		.mobile &{
 			margin-top: 1rem;
 			margin-left: -4rem;

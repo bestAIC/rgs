@@ -198,7 +198,7 @@
 						</div>
 						<div class="menu__block-col _col-2-1">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Оплата услуг</a>
+								<a href="/static/transfers/services.php" class="b-menu__item-link">Оплата услуг</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">С карты на карту</a>
