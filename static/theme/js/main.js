@@ -602,14 +602,17 @@ app.bannerGall = function () {
 			$next = $gall.find('[data-banner-gall-next]'),
 			$pag = $gall.find('[data-banner-gall-pag]'),
 			canvas = null,
-			$canvas = null
+			$canvas = null,
+			startTimeout = null,
+			timeout = null
 		;
+
 	var swiper = new Swiper($gall[0], {
 		nextButton:$next,
 		prevButton:$prev,
 		pagination:$pag,
 		paginationClickable:true,
-		autoplay:7000,
+		//autoplay:7000,
 		autoplayDisableOnInteraction:false,
 		effect:'fade',
 		loop:true,
@@ -629,13 +632,20 @@ app.bannerGall = function () {
 				});
 				canvas  = $gall.find('.swiper-pagination-bullet-active').circleProgress('widget');
 			},200);
-
+			startTimeout = setTimeout(function () {
+				swiper.slideNext();
+			},7000);
 		},
 		onSlideChangeStart:function () {
 			if(canvas){
 				$gall.find('.swiper-pagination-bullet-active').append(canvas);
 				$canvas.circleProgress('redraw');
 			}
+			clearTimeout(startTimeout);
+			clearTimeout(timeout);
+			timeout = setTimeout(function () {
+				swiper.slideNext();
+			},7000);
 		},
 		onTouchEnd:function () {
 			if(canvas){

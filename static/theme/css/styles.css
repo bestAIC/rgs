@@ -1556,6 +1556,7 @@ h4.small-bottom-indent {
   top: 0;
   right: 0;
   bottom: 0;
+  background-color: #fff;
   z-index: 4;
   visibility: hidden;
 }
@@ -2370,7 +2371,7 @@ h4.small-bottom-indent {
     opacity: 1;
   }
   to {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(-2.5%);
   }
 }
