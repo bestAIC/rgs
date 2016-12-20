@@ -61,11 +61,14 @@
 					<a href="javascript:void(0);" data-header-search-btn class="header__search-btn no-tablet-block"></a>
 					<div class="header__search-form">
 						<a href="javascript:void(0);" class="header__search-form-close"  data-header-search-close></a>
-						<form action="" data-header-search-form>
+						<form action="/static/ajax/searchRequests.php" data-header-search-form>
 							<div class="header__search-form-field">
-								<input type="text" placeholder="Например: Вклады">
+								<input type="text" data-header-search-form-field placeholder="Например: Вклады">
 							</div>
 						</form>
+						<div class="header__search-form-requests-wrap" data-header-search-form-requests>
+							
+						</div>
 					</div>
 					<div class="header__menu" data-menu>
 						<div class="header__menu-item no-mob-block">

@@ -366,6 +366,8 @@ app.menu = function () {
 			$searchBtn     = $('[data-header-search-btn]'),
 			$searchClose     = $('[data-header-search-close]'),
 			$searchForm     = $('[data-header-search-form]'),
+			$searchFormField     = $('[data-header-search-form-field]'),
+			$searchFormRequests     = $('[data-header-search-form-requests]'),
 			
 			$menuBtn     = $('[data-b-menu-btn]'),
 			menuNum = null,
@@ -394,8 +396,26 @@ app.menu = function () {
 	$searchClose.on('click',function () {
 		$header.removeClass('search-open');
 		$searchBtn.removeClass('_active');
+		$searchFormField.val('');
+		$searchFormRequests.hide();
+	});
+
+	$searchFormField.on('keyup',function () {
+		var val = $(this).val();
+		if(val){
+			$searchForm.trigger('submit');
+		}else{
+			$searchFormRequests.hide();
+		}
 	});
 	$searchForm.on('submit',function () {
+		if(!$searchFormField.val()){
+			return false;
+		}
+		var $self = $(this);
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			$searchFormRequests.html(data).slideDown(500);
+		});
 		return false;
 	});
 	/*конец поиска*/

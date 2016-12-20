@@ -118,6 +118,14 @@
 			background-color: #fff;
 			border-top: 1px solid @cBorder;
 		}
+		.header__menu{
+			opacity: 0;
+			visibility: hidden;
+			&-btn{
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
 		.header__search{
 			&-form{
 				visibility: visible;
@@ -237,9 +245,38 @@
 			top: 0;
 			right: 0;
 			bottom: 0;
-			background-color: #fff;
+			//background-color: #fff;
 			z-index: 4;
 			visibility: hidden;
+			&-requests{
+				margin-left: 4rem;
+				margin-right: 4rem;
+				padding-top: 19px;
+				padding-bottom: 26px;
+				background: #fff;
+				border: 1px solid #e8e8e8;
+				&-wrap{
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 100%;
+					z-index: 1000;
+				}
+			}
+			&-request{
+				display: block;
+				line-height: 2rem;
+				padding: 1rem 3rem;
+				background-color: #fff;
+				transition: background-color @animTime;
+				.color(#666);
+				strong{
+					color: #171717;
+				}
+				.no-touch &:hover{
+					background-color: whitesmoke;
+				}
+			}
 			&-field{
 				margin-left: 7rem;
 				margin-right: 2rem;
@@ -432,6 +469,10 @@
 		&__search{
 			&-form {
 				left: 3rem;
+				&-requests{
+					margin-left: 0;
+					margin-right: 3rem;
+				}
 				&-field {
 					margin-left: 3rem;
 				}
@@ -536,6 +577,13 @@
 				&-field {
 					margin-top: 1.3rem;
 					margin-left: 4rem;
+				}
+				&-requests{
+					margin-left: -2rem;
+					margin-right: -2rem;
+				}
+				&-request{
+					padding: 1rem 2rem;
 				}
 			}
 		}

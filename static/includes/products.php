@@ -1,7 +1,7 @@
 <?/*планшет и мобильная версии*/?>
 <div class="products swiper-container no-desktop-block"  data-tablet-slider>
 	<div class="swiper-wrapper">
-		<a href="#" class="product _green swiper-slide" style="background-image: url('theme/images/home/product/1.jpg')">
+		<a href="#" class="product _green swiper-slide" style="background-image: url('/static/theme/images/home/product/1.jpg')">
 			<div class="product__inner">
 				<div class="product__title">
 					Инвестиционное<br />
@@ -16,7 +16,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="#" class="product _red swiper-slide" style="background-image: url('theme/images/home/product/2.jpg')">
+		<a href="#" class="product _red swiper-slide" style="background-image: url('/static/theme/images/home/product/2.jpg')">
 			<div class="product__inner">
 				<div class="product__title">Кредит наличными</div>
 				<div class="product__val">под 9%</div>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="#" class="product _gray swiper-slide" style="background-image: url('theme/images/home/product/3.jpg')">
+		<a href="#" class="product _gray swiper-slide" style="background-image: url('/static/theme/images/home/product/3.jpg')">
 			<div class="product__inner">
 				<div class="product__title">
 					Индивидуальный<br />
