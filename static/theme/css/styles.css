@@ -4660,6 +4660,10 @@ h4.small-bottom-indent {
   background: linear-gradient(-46deg, #ad2b3a 0%, #be3343 100%);
   box-shadow: 0 25px 40px -20px rgba(145, 31, 31, 0.6);
 }
+.no-touch .deposit-card:hover._gosstrakh-vip {
+  background: linear-gradient(-46deg, #ad2b3a 0%, #be3343 100%);
+  box-shadow: 0 25px 40px -20px rgba(145, 31, 31, 0.6);
+}
 .no-touch .deposit-card:hover._save {
   background: linear-gradient(-45deg, #c8a779 0%, #bd9762 100%);
   box-shadow: 0 25px 40px -20px rgba(181, 164, 119, 0.6);
@@ -4667,11 +4671,13 @@ h4.small-bottom-indent {
 .no-touch .deposit-card:hover._save .deposit-card__btn {
   color: #5c5028;
 }
-.no-touch .deposit-card:hover._universal {
+.no-touch .deposit-card:hover._universal,
+.no-touch .deposit-card:hover._universal-vip {
   background: linear-gradient(-46deg, #406dc2 0%, #385fa8 100%);
   box-shadow: 0 25px 40px -20px rgba(31, 56, 145, 0.6);
 }
-.no-touch .deposit-card:hover._universal .deposit-card__btn {
+.no-touch .deposit-card:hover._universal .deposit-card__btn,
+.no-touch .deposit-card:hover._universal-vip .deposit-card__btn {
   color: #2e49a0;
 }
 .no-touch .deposit-card:hover._invest {
@@ -4681,11 +4687,11 @@ h4.small-bottom-indent {
 .no-touch .deposit-card:hover._invest .deposit-card__btn {
   color: #61ad2b;
 }
-.no-touch .deposit-card:hover._pensoin {
+.no-touch .deposit-card:hover._pension {
   background: linear-gradient(-46deg, #a06f4a 0%, #966845 98%);
   box-shadow: 0 25px 40px -20px rgba(148, 110, 81, 0.6);
 }
-.no-touch .deposit-card:hover._pensoin .deposit-card__btn {
+.no-touch .deposit-card:hover._pension .deposit-card__btn {
   color: #945325;
 }
 .no-touch .deposit-card:hover .deposit-card__btn {
@@ -4893,11 +4899,20 @@ h4.small-bottom-indent {
 .mobile .deposit-card__info-block-text {
   margin-top: 0.4rem;
 }
+.deposit-filter .deposit-calc__option-select {
+  width: 7.3rem;
+}
+.deposit-filter .chosen-container-single .chosen-single {
+  font-size: 2rem;
+}
+.deposit-filter .chosen-container-single .chosen-single div {
+  width: 2.2rem;
+}
 .deposit-filter__block {
   background-color: #fff;
 }
 .deposit-filter__block-top-inner {
-  padding: 4.5rem 4rem 3.9rem;
+  padding: 4rem 4rem 3.9rem;
   *zoom: 1;
 }
 .deposit-filter__block-top-inner:before,
@@ -4931,9 +4946,13 @@ h4.small-bottom-indent {
 .deposit-filter__counter {
   color: #3e3e3e;
   float: left;
+  max-width: 70%;
 }
 .deposit-filter__items {
   margin-top: 6rem;
+}
+.deposit-filter__items-empty {
+  display: none;
 }
 .deposit-filter__reset {
   color: #AAAEB2;
@@ -4957,17 +4976,68 @@ h4.small-bottom-indent {
   margin-right: 1.5rem;
 }
 .deposit-filter__options {
-  width: 73rem;
+  width: 72rem;
   float: left;
 }
 .deposit-filter__options .deposit-calc__option + .deposit-calc__option {
   margin-top: 3rem;
 }
+.deposit-filter__option {
+  *zoom: 1;
+}
+.deposit-filter__option select {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.028rem;
+  border-color: #e8e8e8;
+  padding-right: 1rem;
+  -webkit-appearance: none;
+  background: url('../images/icons/select.svg') no-repeat calc(100% - 1.5rem) center #fff;
+  background-size: 0.7rem 0.4rem;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+.deposit-filter__option select[data-calc-filter-period] {
+  padding-left: 2rem;
+}
+.deposit-filter__option select::-ms-expand {
+  display: none;
+}
+.deposit-filter__option:before,
+.deposit-filter__option:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.deposit-filter__option:after {
+  clear: both;
+}
+.deposit-filter__option + .deposit-filter__option {
+  margin-top: 2.4rem;
+}
+.deposit-filter__option-title {
+  color: #3e3e3e;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.22px;
+  line-height: 28px;
+  padding-top: 10px;
+  float: left;
+  width: 130px;
+}
+.deposit-filter__option-fields {
+  margin-left: 136px;
+  position: relative;
+}
 .deposit-filter__checks {
   float: left;
   width: 33rem;
-  margin-left: 3rem;
-  margin-top: -0.5rem;
+  margin-left: 4rem;
 }
 .deposit-filter__check {
   font-size: 1.6rem;
@@ -5030,7 +5100,7 @@ h4.small-bottom-indent {
 }
 .tablet.portrait .deposit-filter__check + .deposit-filter__check {
   margin-top: 0;
-  margin-left: 3.7rem;
+  margin-left: 3rem;
 }
 .tablet.portrait .deposit-filter__check .ideal-check {
   position: static;
@@ -5044,15 +5114,20 @@ h4.small-bottom-indent {
 }
 .mobile .deposit-filter__counter {
   float: none;
+  max-width: 100%;
+  font-size: 1.5rem;
+}
+.mobile .deposit-filter__counter:empty + .deposit-filter__reset {
+  margin-top: 0;
 }
 .mobile .deposit-filter__items {
   margin-top: 4rem;
 }
 .mobile .deposit-filter__reset {
   float: none;
-  margin-top: 2rem;
   display: inline-block;
   vertical-align: top;
+  margin-top: 2rem;
 }
 .mobile .deposit-filter__options {
   width: 100%;
@@ -5060,6 +5135,30 @@ h4.small-bottom-indent {
 }
 .mobile .deposit-filter__options .deposit-calc__option + .deposit-calc__option {
   margin-top: 2rem;
+}
+.mobile .deposit-filter__option {
+  *zoom: 1;
+}
+.mobile .deposit-filter__option:before,
+.mobile .deposit-filter__option:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .deposit-filter__option:after {
+  clear: both;
+}
+.mobile .deposit-filter__option + .deposit-filter__option {
+  margin-top: 1.4rem;
+}
+.mobile .deposit-filter__option-title {
+  padding-top: 0;
+  float: none;
+  width: 100%;
+}
+.mobile .deposit-filter__option-fields {
+  margin-left: 0;
+  margin-top: 1rem;
 }
 .mobile .deposit-filter__checks {
   float: none;
@@ -5073,6 +5172,7 @@ h4.small-bottom-indent {
   float: left;
   width: 50%;
   margin-bottom: 2rem;
+  white-space: nowrap;
 }
 .mobile .deposit-filter__check:last-child {
   width: 100%;

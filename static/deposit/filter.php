@@ -51,221 +51,61 @@
 							<div class="deposit-filter__block-top">
 								<div class="deposit-filter__block-top-inner">
 									<div class="deposit-filter__options">
-										<div class="deposit-calc__option" data-calc-slider-wrap>
-											<div class="deposit-calc__option-block">
-												<div class="deposit-calc__option-title">Сумма вклада</div>
-												<div class="deposit-calc__option-slider"
-														 data-calc-slider='{"min":1000,"max":200000,"step":1000,"value":50000}'
-														 data-dollar='{"min":100,"max":10000,"step":100,"value":5000}'
-														 data-rub='{"min":1000,"max":200000,"step":1000,"value":50000}'
-														 data-euro='{"min":50,"max":10000,"step":50,"value":5000}'>
-												</div>
-											</div>
-											<div class="deposit-calc__option-fields">
+										<div class="deposit-filter__option">
+											<div class="deposit-filter__option-title">Сумма вклада</div>
+											<div class="deposit-filter__option-fields">
 												<div class="deposit-calc__option-select">
-													<select data-calc-slider-select data-chosen>
-														<option value="rub">₽</option>
-														<option value="dollar">$</option>
-														<option value="euro">€</option>
+													<select data-calc-slider-select data-chosen data-calc-filter-currency>
+														<option value="rur">₽</option>
+														<option value="usd">$</option>
+														<option value="eur">€</option>
 													</select>
 												</div>
 												<div class="deposit-calc__option-field">
-													<input type="text" value="50 000" data-calc-slider-inp>
+													<input type="text" placeholder="Введите сумму" data-calc-filter-sum>
 												</div>
 											</div>
 										</div>
-										<div class="deposit-calc__option" data-calc-slider-wrap>
-											<div class="deposit-calc__option-block">
-												<div class="deposit-calc__option-title">Срок вклада</div>
-												<div class="deposit-calc__option-slider" data-calc-slider='{"min":30,"max":1095,"step":1,"value":365}' ></div>
-											</div>
-											<div class="deposit-calc__option-fields">
-												<div class="deposit-calc__option-field">
-													<input type="text" value="365 дней" data-calc-slider-inp="date">
+										<div class="deposit-filter__option">
+											<div class="deposit-filter__option-title">Срок вклада</div>
+											<div class="deposit-filter__option-fields">
+												<div class="deposit-filter__option-field">
+													<select name="period" data-chosen data-calc-filter-period>
+														<!--<option value="31">31 день</option>-->
+														<option value="91">91 день</option>
+														<option value="181">181 день</option>
+														<option value="271">271 день</option>
+														<option value="367">367 дней</option>
+														<option value="733">733 дня</option>
+														<option value="1080">1080 дней</option>
+													</select>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="deposit-filter__checks">
 										<div class="deposit-filter__check" data-base-check-wrap>
-											<label><input type="checkbox" data-base-check checked>Пополнение</label>
+											<label><input type="checkbox" name="cashin" data-base-check>Пополнение</label>
 										</div>
 										<div class="deposit-filter__check" data-base-check-wrap>
-											<label><input type="checkbox" data-base-check  >Частичное снятие</label>
+											<label><input type="checkbox"  name="cashout" data-base-check>Частичное снятие</label>
 										</div>
 										<div class="deposit-filter__check" data-base-check-wrap>
-											<label><input type="checkbox" data-base-check  >Начисление процентов ежемесячно</label>
+											<label><input type="checkbox" name="monthly" data-base-check>Начисление процентов ежемесячно</label>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="deposit-filter__block-bottom">
 								<div class="deposit-filter__block-bottom-inner">
-									<div class="deposit-filter__counter">Вам подходит 2 вклада</div>
-									<a href="javascript:void(0);" class="deposit-filter__reset">Сбросить фильтр</a>
+									<div class="deposit-filter__counter" data-calc-filter-counter></div>
+									<a href="javascript:void(0);" data-calc-filter-reset class="deposit-filter__reset">Сбросить фильтр</a>
 								</div>
 							</div>
 						</form>
 					</div>
-					<div class="deposit-filter__items">
-						<div class="deposit-card _gosstrakh">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/1.png');"></div>
-							<div class="deposit-card__inner">
-								<div class="deposit-card__top">
-									<div class="deposit-card__main">
-										<div class="deposit-card__title">Вклад «Госстраховский»</div>
-										<div class="deposit-card__text">
-											Классический вклад для получения высокого
-											дохода при фиксированных сумме и сроке вклада
-										</div>
-									</div>
-									<div class="deposit-card__info">
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СРОК ВКЛАДА</div>
-											<div class="deposit-card__info-block-text">
-												от 3 мес<br />
-												до 2 лет
-											</div>
-										</div>
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СТАВКА, ДО</div>
-											<div class="deposit-card__info-block-text">8,00%</div>
-										</div>
-									</div>
-								</div>
-								<div class="deposit-card__btns">
-									<a href="#" class="btn deposit-card__btn">ОТКРЫТЬ ВКЛАД</a>
-									<a href="#" class="btn deposit-card__btn _transparent">УЗНАТЬ ПОДРОБНЕЕ</a>
-								</div>
-							</div>
-						</div>
-						<div class="deposit-card _save">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/2.png');"></div>
-							<div class="deposit-card__inner">
-								<div class="deposit-card__top">
-									<div class="deposit-card__main">
-										<div class="deposit-card__title">Вклад «Накопительный»</div>
-										<div class="deposit-card__text">
-											Вклад с возможностью пополнения<br/>
-											и льготными условиями при досрочном
-											расторжении
-										</div>
-									</div>
-									<div class="deposit-card__info">
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СРОК ВКЛАДА</div>
-											<div class="deposit-card__info-block-text">
-												от 9 мес<br />
-												до 1 года
-											</div>
-										</div>
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СТАВКА, ДО</div>
-											<div class="deposit-card__info-block-text">7,00%</div>
-										</div>
-									</div>
-								</div>
-								<div class="deposit-card__btns">
-									<a href="#" class="btn deposit-card__btn">ОТКРЫТЬ ВКЛАД</a>
-									<a href="#" class="btn deposit-card__btn _transparent">УЗНАТЬ ПОДРОБНЕЕ</a>
-								</div>
-							</div>
-						</div>
-						<div class="deposit-card _universal">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/3.png');"></div>
-							<div class="deposit-card__inner">
-								<div class="deposit-card__top">
-									<div class="deposit-card__main">
-										<div class="deposit-card__title">Вклад «Универсальный»</div>
-										<div class="deposit-card__text">
-											Вклад с возможностью частичного снятия
-											без потери процентов, а так же пополнения
-											по ставке вклада
-										</div>
-									</div>
-									<div class="deposit-card__info">
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СРОК ВКЛАДА</div>
-											<div class="deposit-card__info-block-text">1 год</div>
-										</div>
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СТАВКА, ДО</div>
-											<div class="deposit-card__info-block-text">7,20%</div>
-										</div>
-									</div>
-								</div>
-								<div class="deposit-card__btns">
-									<a href="#" class="btn deposit-card__btn">ОТКРЫТЬ ВКЛАД</a>
-									<a href="#" class="btn deposit-card__btn _transparent">УЗНАТЬ ПОДРОБНЕЕ</a>
-								</div>
-							</div>
-						</div>
-						<div class="deposit-card _invest">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/4.png');"></div>
-							<div class="deposit-card__inner">
-								<div class="deposit-card__top">
-									<div class="deposit-card__main">
-										<div class="deposit-card__title">Вклад «Инвестиционный»</div>
-										<div class="deposit-card__text">
-											Высокодоходный вклад с возможностью
-											получить страховую защиту или дополнительный
-											доход от вложения средств в ПИФы
-										</div>
-									</div>
-									<div class="deposit-card__info">
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СРОК ВКЛАДА</div>
-											<div class="deposit-card__info-block-text">
-												3 мес, 6 мес,<br />
-												1 год
-											</div>
-										</div>
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СТАВКА, ДО</div>
-											<div class="deposit-card__info-block-text">9,50%</div>
-										</div>
-									</div>
-								</div>
-								<div class="deposit-card__btns">
-									<a href="#" class="btn deposit-card__btn">ОТКРЫТЬ ВКЛАД</a>
-									<a href="#" class="btn deposit-card__btn _transparent">УЗНАТЬ ПОДРОБНЕЕ</a>
-								</div>
-							</div>
-						</div>
-						<div class="deposit-card _pensoin">
-							<div class="deposit-card__ico" style="background-image: url('/static/theme/images/deposit/card/5.png');"></div>
-							<div class="deposit-card__inner">
-								<div class="deposit-card__top">
-									<div class="deposit-card__main">
-										<div class="deposit-card__title">Вклад «Пенсионный доход»</div>
-										<div class="deposit-card__text">
-											Разработан специально для пенсионеров:
-											высокий процент при небольших суммах
-											с возможностью пополнения.
-										</div>
-									</div>
-									<div class="deposit-card__info">
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СРОК ВКЛАДА</div>
-											<div class="deposit-card__info-block-text">
-												от 6 мес<br />
-												до 2 лет
-											</div>
-										</div>
-										<div class="deposit-card__info-block">
-											<div class="deposit-card__info-block-title">СТАВКА, ДО</div>
-											<div class="deposit-card__info-block-text">
-												7,30%
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="deposit-card__btns">
-									<a href="#" class="btn deposit-card__btn">ОТКРЫТЬ ВКЛАД</a>
-									<a href="#" class="btn deposit-card__btn _transparent">УЗНАТЬ ПОДРОБНЕЕ</a>
-								</div>
-							</div>
-						</div>
+					<div class="deposit-filter__items hide" data-calc-filter-result>
+						
 					</div>
 				</div>
 			</div>

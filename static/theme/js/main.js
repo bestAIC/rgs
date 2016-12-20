@@ -23,6 +23,35 @@ app.utils.isMobilePort = (device.mobile() && ($(window).width() < $(window).heig
 app.utils.isMobile = device.mobile();
 app.utils.isTablet = device.tablet();
 
+app.utils.parseUrlQuery = function( link ) {
+	var qu		= link && link.indexOf('?'),
+			data	= {},
+			i,
+			param,
+			pair
+		;
+
+	if ( link ) {
+		if ( qu !== -1 ) {
+			link = link.substr(qu + 1);
+		}else{
+			link = null;
+		}
+	} else {
+		link = location.search && location.search.substr(1);
+	}
+
+	if ( link ) {
+		pair = ( link ).split('&');
+		for ( i = 0; i < pair.length; i ++ ) {
+			param = pair[i].split('=');
+			data[param[0]] = param[1];
+		}
+	}
+	return data;
+};
+app.utils.getData = app.utils.parseUrlQuery(window.location.search);
+
 app.utils.okonchanie = function( number, one, two, five ) {
 
 	var poslezpt = parseInt( number ) !== parseFloat( number );
@@ -45,6 +74,9 @@ app.utils.okonchanie = function( number, one, two, five ) {
 };
 
 app.init = function () {
+	if(app.utils.getData['goto']){
+		$('html, body').stop(true, true).animate({'scrollTop': $(app.utils.getData['goto']).offset().top - 100}, 500);
+	}
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
 	app.initFluid();
 	app.newsGall();
@@ -924,13 +956,23 @@ app.formatNumber = function (value) {
 app.calcFilter = function(){
 	var self = this,
 			$calcFilter = $('[data-calc-filter]'),
-			$sliderWrap = $('[data-calc-slider-wrap]')
+			$summ = $calcFilter.find('[data-calc-filter-sum]'),
+			$currency = $calcFilter.find('[data-calc-filter-currency]'),
+			$period = $calcFilter.find('[data-calc-filter-period]'),
+			$result = $calcFilter.find('[data-calc-filter-result]'),
+			$counter = $calcFilter.find('[data-calc-filter-counter]'),
+			$checkWraps = $calcFilter.find('[data-base-check-wrap]'),
+			$checks = $checkWraps.find('[data-base-check]'),
+			$form = $calcFilter.find('form'),
+			$reset = $calcFilter.find('[data-calc-filter-reset]'),
+			arInfo = []
+
 		;
 	if(!$calcFilter.length){
 		return false;
 	}
 
-	$sliderWrap.each(function(){
+	/*$sliderWrap.each(function(){
 		var $self = $(this),
 				$slider = $self.find('[data-calc-slider]'),
 				$inp = $self.find('[data-calc-slider-inp]'),
@@ -980,8 +1022,8 @@ app.calcFilter = function(){
 			$slider.slider("value",val);
 			$inp.val(showSliderVal($inp.data('calcSliderInp'),val));
 		});
-	});
-	function showSliderVal(type,val) {
+	});*/
+	/*function showSliderVal(type,val) {
 		var res = '',
 				years = 0,
 				months = 0
@@ -992,6 +1034,343 @@ app.calcFilter = function(){
 			res = app.formatNumber(val);
 		}
 		return res;
+	}*/
+	arInfo = [
+		{
+			"name": "Госстраховский",
+			"img":"/static/theme/images/deposit/card/1.png",
+			"class":"_gosstrakh",
+			"url": "/static/deposit/gosstrakh.php",
+			"descr": "Классический вклад для получения высокого дохода при фиксированных сумме и сроке вклада",
+			"strahovoi": "",
+			"monthly": "N",
+			"cashin": "N",
+			"cashout": "N",
+			"rur": {
+				"91":{
+					5000: 8.00
+				},
+				"181_366":{
+					5000: 8.00
+				},
+				"367":{
+					5000: 7.00
+				}
+			},
+			"usd": {
+				"91":{
+					100: 0.75
+				},
+				"181_366":{
+					100: 1.80
+				},
+				"367":{
+					100: 1.85
+				}
+			},
+			"eur": {
+				"91":{
+					100: 0.20
+				},
+				"181_366":{
+					100: 0.60
+				},
+				"367":{
+					100: 0.60
+				}
+			}
+		},
+		{
+			"name": "Госстраховский VIP",
+			"url": "/personal/deposits/gosstrakhovskiy-vip/",
+			"descr": "Вклад для состоятельных клиентов с возможностью получения высокого дохода при фиксированных сумме и сроке вклада",
+			"strahovoi": "",
+			"monthly": "N",
+			"img":"/static/theme/images/deposit/card/6.png",
+			"class":"_gosstrakh-vip",
+			"cashin": "N",
+			"cashout": "N",
+			"rur": {
+				"91":{
+					1000000: 8.10
+				},
+				"181_366":{
+					1000000: 8.10
+				},
+				"367":{
+					1000000: 7.10
+				}
+			},
+			"usd": {
+				"91":{
+					15000: 0.85
+				},
+				"181_366":{
+					15000: 1.90
+				},
+				"367":{
+					15000: 1.95
+				}
+			},
+			"eur": {
+				"91":{
+					15000: 0.30
+				},
+				"181_366":{
+					15000: 0.70
+				},
+				"367":{
+					15000: 0.70
+				}
+			}
+		},
+		{
+			"name": "Накопительный",
+			"url": "/static/deposit/save.php",
+			"img":"/static/theme/images/deposit/card/2.png",
+			"class":"_save",
+			"descr": "Вклад с возможностью пополнения и льготными условиями при досрочном расторжении ",
+			"strahovoi": "",
+			"monthly": "Y",
+			"cashin": "Y",
+			"cashout": "N",
+			"rur": {
+				"271":{
+					5000: 7.00
+				},
+				"367":{
+					5000: 7.00
+				}
+			},
+			"usd": {
+				"367":{
+					100: 1.50
+				}
+			},
+			"eur": {
+				"367":{
+					100: 0.40
+				}
+			}
+		},
+		{
+			"name": "Универсальный",
+			"url": "/static/deposit/universal.php",
+			"img":"/static/theme/images/deposit/card/3.png",
+			"class":"_universal",
+			"descr": "Вклад с возможностью частичного снятия без потери процентов, а так же пополнения по ставке вклада",
+			"strahovoi": "",
+			"monthly": "Y",
+			"cashin": "Y",
+			"cashout": "Y",
+			"rur": {
+				"367":{
+					30000: 7.00,
+					300000: 7.20
+				}
+			},
+			"usd": {
+				"367":{
+					500: 1.20,
+					5000: 1.30
+				}
+			},
+			"eur": {
+				"367":{
+					500: 0.20,
+					5000: 0.30
+				}
+			}
+		},
+		{
+			"name": "Универсальный VIP",
+			"url": "/personal/deposits/universalnyy-vip/",
+			"descr": "Вклад для состоятельных клиентов с возможностью пополнения и снятия средств до неснижаемого остатка",
+			"strahovoi": "",
+			"monthly": "Y",
+			"cashin": "Y",
+			"img":"/static/theme/images/deposit/card/7.png",
+			"class":"_universal-vip",
+			"cashout": "Y",
+			"rur": {
+				"367":{
+					1000000: 7.30
+				}
+			},
+			"usd": {
+				"367":{
+					15000: 1.40
+				}
+			},
+			"eur": {
+				"367":{
+					15000: 0.40
+				}
+			}
+		},
+		{
+			"name": "Инвестиционный",
+			"url": "/static/deposit/invest.php",
+			"descr": "Высокодоходный вклад с возможностью получить страховую защиту жизни и здоровья или дополнительный доход от вложения средств в ПИФы",
+			"strahovoi": "",
+			"img":"/static/theme/images/deposit/card/4.png",
+			"class":"_invest",
+			"monthly": "N",
+			"cashin": "N",
+			"cashout": "N",
+			"rur": {
+				"91":{
+					25000: 9.50
+				},
+				"181":{
+					25000: 9.50
+				},
+				"367":{
+					25000: 9.00
+				}
+			}
+		},
+		{
+			"name": "Пенсионный доход",
+			"url": "/static/deposit/pensoin.php",
+			"descr": "Разработан специально для пенсионеров: высокий процент при небольших суммах с возможностью пополнения.",
+			"strahovoi": "",
+			"img":"/static/theme/images/deposit/card/5.png",
+			"class":"_pension",
+			"monthly": "Y",
+			"cashin": "Y",
+			"cashout": "N",
+			"rur": {
+				"181_366":{
+					0: 7.60
+				},
+				"367":{
+					0: 7.00
+				}
+			},
+			"usd": {
+				"181_366":{
+					0: 1.60
+				},
+				"367":{
+					0: 1.60
+				}
+			},
+			"eur": {
+				"181_366":{
+					0: 0.50
+				},
+				"367":{
+					0: 0.50
+				}
+			}
+		}
+	];
+
+	$summ.on('change',function () {
+		var val = parseInt($summ.val().replace(new RegExp(" ",'g'),""));
+		val = val || '';
+		$summ.val(app.formatNumber(val));
+		calculation();
+	});
+	$checks.on('change',calculation);
+	$currency.on('change',calculation);
+	$period.on('change',calculation);
+	$reset.on('click',function () {
+		$form.trigger('reset');
+		$period.trigger("chosen:updated");
+		$currency.trigger("chosen:updated");
+		$checkWraps.removeClass('_active').find('.ideal-check').removeClass('checked');
+		$counter.empty();
+		$result.hide();
+	});
+	function calculation() {
+		var summ = parseInt($summ.val().replace(new RegExp(" ",'g'),""),10) || 0,
+		 	currency = $currency.val(),
+			period = $period.val()
+			;
+		var monthly = $calcFilter.find("input[name=monthly]").is(":checked") ? 'Y' : 'N';
+		var cashin = $calcFilter.find("input[name=cashin]").is(":checked") ? 'Y' : 'N';
+		var cashout = $calcFilter.find("input[name=cashout]").is(":checked") ? 'Y' : 'N';
+		$result.empty().hide();
+		/*$("#js-result").css("display", "none");
+		$("#js-result_super").css("display", "none");
+		$("#js-result .tBody").empty();*/
+		var finded = 0;
+		if (summ > 0) {
+			$summ.removeClass("error");
+			for (var i in arInfo) {
+				var arDeposit = arInfo[i];
+				if (monthly == 'Y' && arDeposit['monthly'] != 'Y') continue;
+				if (cashin == 'Y' && arDeposit['cashin'] != 'Y') continue;
+				if (cashout == 'Y' && arDeposit['cashout'] != 'Y') continue;
+				var result = 0;
+				var percent = 0;
+				if (typeof(arDeposit[currency]) != 'undefined') {
+					if (typeof(arDeposit[currency][period]) != 'undefined') {
+						for (var minVal in arDeposit[currency][period]) {
+							minVal = parseInt(minVal);
+							if (minVal <= summ) {
+								//console.log(arInfo[i]);
+								percent = arDeposit[currency][period][minVal];
+								//console.log(percent);
+								result = (period / 365 * (percent / 100) + 1) * summ;
+							}
+						}
+					}
+				}
+				if (result > 0) {
+					if (finded == 0) {
+						//$("#js-result .tBody").prepend('<div class="tr"><div class="th th1"><strong>' + $("select[name=period] option:selected").text() + '</strong></div></div>');
+					}
+					finded++;
+
+					//var currency_str = ($("select[name=currency]").val() == 'rur' ? 'руб.' : ($("select[name=currency]").val() == 'usd' ? 'долл.' : 'евро'));
+					/*var row = '<div class="tr' + (finded % 2 ? ' selected' : '') + '"><div class="td td1">';
+					row += '<strong class="color4"><a href="' + arDeposit['url'] + '">' + arDeposit['name'] + '</a></strong>';
+					row += arDeposit['descr'] + '</div><div class="td td2"><strong><span class="fs4">' + number_format(percent, 2, ',', ' ') + '</span>%</strong></div>';
+					row += '<div class="td td3"><strong><span class="fs4">' + number_format(result, 2, ',', ' ') + '</span> ' + currency_str;
+					row += '</strong></div><div class="td td4" style="margin-left: 171px; margin-top: -24px;">' + arDeposit['strahovoi'];
+					row += '<a href="' + arDeposit['url'] + '" class="btnSendRequest">Подробнее</a></div></div>';*/
+					var row = '<div class="deposit-card '+arDeposit["class"] +'"> ' +
+						'<div class="deposit-card__ico" style="background-image: url('+arDeposit["img"]+');"></div> ' +
+					'<div class="deposit-card__inner"> ' +
+					'<div class="deposit-card__top"> ' +
+					'<div class="deposit-card__main">' +
+					'<div class="deposit-card__title">'+arDeposit['name']+'</div> ' +
+					'<div class="deposit-card__text">'+arDeposit['descr']+'</div> ' +
+					'</div> ' +
+					'<div class="deposit-card__info"> ' +
+						'<div class="deposit-card__info-block"> ' +
+						'<div class="deposit-card__info-block-title">СРОК ВКЛАДА</div> ' +
+						'<div class="deposit-card__info-block-text">'+$period.find('option:selected').text() +'</div> ' +
+					'</div>' +
+					'<div class="deposit-card__info-block">' +
+					'<div class="deposit-card__info-block-title">СТАВКА, ДО</div>' +
+					'<div class="deposit-card__info-block-text">'+percent.toFixed(2)+' %</div>' +
+					'</div>' +
+					'</div>' +
+					'</div><div class="deposit-card__btns">' +
+						'<a href="'+arDeposit['url']+'?goto=.subscription" class="btn deposit-card__btn">ОТКРЫТЬ ВКЛАД</a>' +
+						'<a href="'+arDeposit['url']+'" class="btn deposit-card__btn _transparent">УЗНАТЬ ПОДРОБНЕЕ</a>' +
+						'</div>' +
+						'</div>' +
+						'</div>';
+					$result.append(row);
+				}
+			}
+		}
+		else{
+			$summ.addClass("error");
+		}
+		if (finded > 0) {
+			$result.show();
+			$counter.text('Вам подходит '+finded+ ' ' +app.utils.okonchanie(finded,'вклад','вклада','вкладов'));
+		}
+		else {
+			$result.hide();
+			$counter.text('Вкладов, по заданным Вами параметрам, не найдено. Рекомендуем воспользоваться сравнительной таблицей для выбора наиболее удобных для Вас вариантов');
+		}
 	}
 };
 app.calc = function(){

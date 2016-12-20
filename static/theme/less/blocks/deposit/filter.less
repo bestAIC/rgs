@@ -1,10 +1,19 @@
 .deposit-filter{
+	.deposit-calc__option-select{
+		width: 7.3rem;
+	}
+	.chosen-container-single .chosen-single{
+		font-size: 2rem;
+		div{
+			width: 2.2rem;
+		}
+	}
 	&__block{
 		background-color: #fff;
 		&-top{
 
 			&-inner{
-				padding: 45/@rem 40/@rem 39/@rem;
+				padding: 40/@rem 40/@rem 39/@rem;
 				.clearfix;
 			}
 		}
@@ -22,9 +31,13 @@
 	&__counter{
 		color: @title-color;
 		float: left;
+		max-width: 70%;
 	}
 	&__items{
 		margin-top: 6rem;
+		&-empty{
+			display: none;
+		}
 	}
 	&__reset{
 		.color(@cGray);
@@ -41,17 +54,59 @@
 		}
 	}
 	&__options{
-		width: 73rem;
+		width: 72rem;
 		float: left;
 		.deposit-calc__option + .deposit-calc__option{
 			margin-top: 3rem;
 		}
 	}
+	&__option{
+		select{
+			font-size: 20/@rem;
+			font-weight: 600;
+			letter-spacing: -0.28/@rem;
+			border-color: #e8e8e8;
+			padding-right: 1rem;
+			-webkit-appearance: none;
+			background: url('@{pathToImg}icons/select.svg') no-repeat calc(~"100% - 1.5rem") center #fff;
+			background-size: 7/@rem 4/@rem;
+			/* for FF */
+			-moz-appearance: none;
+			text-indent: 0.01px;
+			text-overflow: '';
+			/* for IE */
+			-ms-appearance: none;
+			appearance: none!important;
+			&[data-calc-filter-period]{
+				padding-left: 2rem;
+			}
+			&::-ms-expand {
+				display: none;
+			}
+		}
+		.clearfix;
+		&+&{
+			margin-top: 2.4rem;
+		}
+		&-title{
+			color: @title-color;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: -0.22px;
+			line-height: 28px;
+			padding-top: 10px;
+			float: left;
+			width: 130px;
+		}
+		&-fields{
+			margin-left: 136px;
+			position: relative;
+		}
+	}
 	&__checks{
 		float: left;
 		width: 33rem;
-		margin-left: 3rem;
-		margin-top: -5/@rem;
+		margin-left: 4rem;
 	}
 	&__check{
 		font-size: 16/@rem;
@@ -111,7 +166,7 @@
 			}
 			&+.deposit-filter__check{
 				margin-top: 0;
-				margin-left: 3.7rem;
+				margin-left: 3rem;
 			}
 			.ideal-check{
 				position: static;
@@ -136,21 +191,41 @@
 		}
 		&__counter{
 			float: none;
+			max-width: 100%;
+			font-size: 1.5rem;
+			&:empty+.deposit-filter__reset{
+				margin-top: 0;
+			}
 		}
 		&__items{
 			margin-top: 4rem;
 		}
 		&__reset{
 			float: none;
-			margin-top: 20/@rem;
 			display: inline-block;
 			vertical-align: top;
+			margin-top: 2rem;
 		}
 		&__options{
 			width: 100%;
 			float: none;
 			.deposit-calc__option + .deposit-calc__option{
 				margin-top: 2rem;
+			}
+		}
+		&__option{
+			.clearfix;
+			&+.deposit-filter__option{
+				margin-top: 1.4rem;
+			}
+			&-title{
+				padding-top: 0;
+				float: none;
+				width: 100%;
+			}
+			&-fields{
+				margin-left: 0;
+				margin-top: 1rem;
 			}
 		}
 		&__checks{
@@ -165,6 +240,7 @@
 			float: left;
 			width: 50%;
 			margin-bottom: 2rem;
+			white-space: nowrap;
 			&:last-child{
 				width: 100%;
 			}
