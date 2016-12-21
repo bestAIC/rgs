@@ -847,6 +847,7 @@ app.initMaps = function () {
 app.offices = function() {
 	var self = this,
 			$offices = $('[data-offices]'),
+			markerUrl = $offices.data('markerUrl'),
 			$tab = $offices.find('[data-offices-tab]'),
 			$content = $offices.find('[data-offices-content]'),
 			$mapPopup = $offices.find('[data-offices-map-popup]'),
@@ -912,7 +913,7 @@ app.offices = function() {
 	});
 	$mapPopupClose.on('click',function () {
 		$mapPopup.removeClass('_show');
-		$mapPopup.data('marker').setIcon('/static/theme/images/icons/marker.svg');
+		$mapPopup.data('marker').setIcon(markerUrl['static']);
 		setTimeout(function () {
 			$mapPopupContent.empty();
 		},300);
@@ -931,16 +932,16 @@ app.offices = function() {
 			var marker = new google.maps.Marker({
 				position: {lat: data1.lat, lng: data1.lan},
 				map: map,
-				icon: '/static/theme/images/icons/marker.svg',
+				icon: markerUrl['static'],
 				$dom:$self
 			});
 
 			marker.addListener('click', function() {
 				if(activeMarker){
-					activeMarker.setIcon('/static/theme/images/icons/marker.svg');
+					activeMarker.setIcon(markerUrl['static']);
 				}
 				activeMarker = this;
-				marker.setIcon('/static/theme/images/icons/marker-active.png');
+				marker.setIcon(markerUrl['active']);
 				$mapPopupContent.html(marker.$dom.clone());
 				$mapPopup.addClass('_show');
 				$mapPopup.data('marker',marker);
