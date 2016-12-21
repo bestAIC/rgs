@@ -2,31 +2,31 @@
 	&__row{
 		.clearfix;
 		&+&{
-			margin-top: 30px;
+			margin-top: 30/@rem;
 		}
 		&-col{
 			float: left;
-			width: 570px;
+			width: 570/@rem;
 			&+&{
-				margin-left: 30px;
+				margin-left: 30/@rem;
 			}
 		}
 	}
 	&__item{
 		display: block;
 		background-color: #fff;
-		height: 200px;
-		padding: 34px 40px;
+		height: 200/@rem;
+		padding: 34/@rem 40/@rem;
 		.color(@title-color);
-		border-radius: 2px;
-		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 		position: relative;
 		&._big{
-			height: 430px;
+			height: 430/@rem;
 			overflow: hidden;
 		}
 		&+&{
-			margin-top: 30px;
+			margin-top: 30/@rem;
 		}
 		&-ico{
 			&._base{
@@ -47,15 +47,15 @@
 			}
 		}
 		&-title{
-			font-size: 20px;
+			font-size: 20/@rem;
 			font-weight: 700;
-			line-height: 27px;
+			line-height: 27/@rem;
 			max-width: 36rem;
 		}
 		&-text{
-			font-size: 16px;
-			line-height: 25px;
-			margin-top: 16px;
+			font-size: 16/@rem;
+			line-height: 25/@rem;
+			margin-top: 16/@rem;
 			max-width: 36rem;
 		}
 	}
@@ -68,15 +68,15 @@
 				width: 100%;
 				&+.page-nav__row-col{
 					margin-left: 0;
-					margin-top: 30px;
+					margin-top: 30/@rem;
 				}
 				&._items{
 					.clearfix;
 					.page-nav__item{
 						float: left;
-						width: 342px;
+						width: 342/@rem;
 						&+.page-nav__item{
-							margin-left: 30px;
+							margin-left: 30/@rem;
 							margin-top: 0;
 						}
 					}
@@ -84,7 +84,7 @@
 			}
 		}
 		&__item{
-			padding: 34px 30px;
+			padding: 34/@rem 30/@rem;
 		}
 	}
 }
@@ -96,12 +96,12 @@
 				width: 100%;
 				&+.page-nav__row-col{
 					margin-left: 0;
-					margin-top: 30px;
+					margin-top: 30/@rem;
 				}
 			}
 		}
 		&__item{
-			padding: 34px 30px;
+			padding: 34/@rem 30/@rem;
 			&._big{
 				height: 20rem;
 			}

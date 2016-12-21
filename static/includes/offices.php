@@ -28,6 +28,97 @@
 						</div>
 					</div>
 				</div>
+				<?
+					$block1 = '<div class="offices__filter-block">
+											<div class="offices__filter-block-title">Режим работы:</div>
+											<div class="offices__filter-checks">
+												<div class="offices__filter-checks-col _w1">
+													<label class="offices__filter-check"><input type="checkbox">Без выходных</label>
+												</div>
+												<div class="offices__filter-checks-col _w2">
+													<label class="offices__filter-check"><input type="checkbox">Круглосуточно</label>
+												</div>
+											</div>
+										</div>';
+					
+					$block2 = '<div class="offices__filter-block">
+											<div class="offices__filter-block-title">Показывать банкоматы партнеров:</div>
+											<div class="offices__filter-checks">
+												<div class="offices__filter-checks-col _w1">
+													<label class="offices__filter-check"><input type="checkbox">ТАТФОНДБАНК</label>
+												</div>
+												<div class="offices__filter-checks-col _w2">
+													<label class="offices__filter-check"><input type="checkbox">Московский Кредитный Банк</label>
+												</div>
+											</div>
+										</div>';
+					$block3 = '<div class="offices__filter-block">
+											<div class="offices__filter-block-title">Дополнительные услуги:</div>
+											<div class="offices__filter-checks">
+												<div class="offices__filter-checks-col _w3">
+													<label class="offices__filter-check"><input type="checkbox">Обмен валюты</label>
+													<label class="offices__filter-check"><input type="checkbox">ПИФы</label>
+													<label class="offices__filter-check"><input type="checkbox">ОСАГО</label>
+												</div>
+												<div class="offices__filter-checks-col _w4">
+													<label class="offices__filter-check"><input type="checkbox">VIP-обслуживание</label>
+													<label class="offices__filter-check"><input type="checkbox">Аренда сейфовых ячеек</label>
+													<label class="offices__filter-check"><input type="checkbox">Обслуживание юридических лиц</label>
+												</div>
+											</div>
+										</div>';
+				?>
+				<div class="offices__filter-extended">
+					<?if($desktopAndTableLand){?>
+					<div class="offices__filter-cols">
+						<div class="offices__filter-col">
+							<?=$block1?>
+							<?=$block2?>
+						</div>
+						<div class="offices__filter-col">
+							<?=$block3?>
+						</div>
+					</div>
+					<div class="offices__filter-cols">
+						<div class="offices__filter-col">
+							<div class="offices__filter-notice">
+								Внимание! Банки-партнеры взимают комиссию при снятии наличных.<br />
+								О сумме комиссии можно узнать на странице <a href="#">“Тарифы партнерской сети”</a>
+							</div>
+						</div>
+						<div class="offices__filter-col">
+							<div class="offices__filter-metro">
+								<select data-chosen>
+									<option value="">Станция метро</option>
+									<option value="">Станция метро2</option>
+									<option value="">Станция метр3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<?}else{?>
+						<div class="offices__filter-cols">
+							<div class="offices__filter-col _1">
+								<?=$block1?>
+								<?=$block3?>
+							</div>
+							<div class="offices__filter-col _2">
+								<?=$block2?>
+								<div class="offices__filter-notice">
+									Внимание! Банки-партнеры взимают комиссию при снятии наличных.
+									О сумме комиссии можно узнать на странице <a href="#">“Тарифы партнерской сети”</a>
+								</div>
+								<div class="offices__filter-metro">
+									<select data-chosen>
+										<option value="">Станция метро</option>
+										<option value="">Станция метро2</option>
+										<option value="">Станция метр3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					<?}?>
+				</div>
 			</form>
 		</div>
 		<div class="offices__block hide" data-offices-content="list">
