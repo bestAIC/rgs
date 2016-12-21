@@ -396,7 +396,7 @@ app.menu = function () {
 	$searchClose.on('click',function () {
 		$header.removeClass('search-open');
 		$searchBtn.removeClass('_active');
-		$searchFormField.val('');
+		$searchFormField.val('').change();
 		$searchFormRequests.hide();
 	});
 
