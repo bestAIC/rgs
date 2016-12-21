@@ -7721,6 +7721,16 @@ span.pagination__item:focus {
   z-index: 10;
   background-color: #fff;
   padding: 3rem 3.4rem 4rem;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+}
+.offices__filter-extended-close {
+  width: 2rem;
+  height: 2rem;
+  background: url('../images/icons/close_small.svg') no-repeat center;
+  background-size: 1.1rem;
+  right: 1.6rem;
+  top: 1.5rem;
+  position: absolute;
 }
 .offices__filter-extended select {
   border: 1px solid #e8e8e8;
@@ -7855,6 +7865,9 @@ span.pagination__item:focus {
   margin-top: 0.7rem;
   letter-spacing: -0.02rem;
   margin-left: 5.4rem;
+}
+.offices__advanced-search._active {
+  color: #aaaeb2;
 }
 .offices__map {
   height: 48.5rem;

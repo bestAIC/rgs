@@ -98,6 +98,16 @@
 			z-index: 10;
 			background-color: #fff;
 			padding: 30/@rem 34/@rem 40/@rem;
+			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+			&-close{
+				width: 2rem;
+				height: 2rem;
+				background: url('@{pathToImg}icons/close_small.svg') no-repeat center;
+				background-size: 1.1rem;
+				right: 1.6rem;
+				top: 1.5rem;
+				position: absolute;
+			}
 			select{
 				border:1px solid #e8e8e8;
 			}
@@ -191,6 +201,9 @@
 		margin-top: 7/@rem;
 		letter-spacing: -0.2/@rem;
 		margin-left: 54/@rem;
+		&._active{
+			color: #aaaeb2;
+		}
 	}
 	&__map{
 		height: 485/@rem;

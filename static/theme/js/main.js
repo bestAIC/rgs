@@ -856,7 +856,13 @@ app.offices = function() {
 			$points = $offices.find('[data-office-point]'),
 			$plusBtn   = $offices.find('[data-zoom-plus]'),
 			$minusBtn  = $offices.find('[data-zoom-minus]'),
-			$filterCheck  = $offices.find('[data-filter-check]'),
+
+			$filter  = $offices.find('[data-filter]'),
+			$filterExtend  = $filter.find('[data-filter-extend]'),
+			$filterExtendShow  = $filter.find('[data-filter-extend-show]'),
+			$filterExtendClose  = $filter.find('[data-filter-extend-close]'),
+			$filterForm  = $filter.find('form'),
+			$filterFields = $filter.find('input[type="text"],input[type="checkbox"],select'),
 			markers = []
 		;
 
@@ -971,6 +977,31 @@ app.offices = function() {
 		$tab.removeClass('_active');
 		$self.addClass('_active');
 		$content.hide().filter('[data-offices-content="'+$self.data('officesTab')+'"]').fadeIn(300);
+	});
+
+	$filterForm.on('submit',function () {
+		var $self = $(this);
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			var $data = $(data).find('[data-office-point]');
+			$content.filter('[data-offices-content="list"]').html($data);
+			deleteMarkers();
+			addMarkers($data);
+		});
+		return false;
+	});
+
+	$filterFields.on('change',function () {
+		$filterForm.trigger('submit');
+	});
+
+	$filterExtendShow.on('click',function () {
+		$filterExtendShow.addClass('_active');
+		$filterExtend.show();
+	});
+
+	$filterExtendClose.on('click',function () {
+		$filterExtendShow.removeClass('_active');
+		$filterExtend.hide();
 	});
 };
 app.formatNumber = function (value) {

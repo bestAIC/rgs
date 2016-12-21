@@ -5,12 +5,12 @@
 			Обратитесь в любое отделение РОСГОССТРАХ БАНКА,<br />
 			чтобы присоединиться к пенсионной программе
 		</div>
-		<div class="offices__filter">
-			<form action="">
+		<div class="offices__filter" data-filter>
+			<form action="/static/ajax/offices.php">
 				<div class="offices__filter-inner">
 					<div class="offices__filter-types">
-						<label class="offices__filter-type"><input type="checkbox" data-filter-check="office">Отделения</label>
-						<label class="offices__filter-type"><input type="checkbox" data-filter-check="atm">Банкоматы</label>
+						<label class="offices__filter-type"><input type="checkbox" >Отделения</label>
+						<label class="offices__filter-type"><input type="checkbox" >Банкоматы</label>
 					</div>
 					<div class="offices__filter-right">
 						<div class="offices__tabs is-desktop-block">
@@ -20,11 +20,11 @@
 						<div class="offices__filter-city">
 							<input type="text" class="offices__filter-city-field" value="Москва">
 						</div>
-						<a href="#" class="offices__advanced-search is-desktop-block">Расширенный поиск</a>
+						<a href="javascript:void(0);" data-filter-extend-show class="offices__advanced-search is-desktop-block">Расширенный поиск</a>
 						<div class="offices__filter-icons no-desktop-block">
 							<a href="javascript:void(0);"  data-offices-tab="map" class="offices__filter-icon _map _active"></a>
 							<a href="javascript:void(0);" data-offices-tab="list" class="offices__filter-icon _list"></a>
-							<a href="javascript:void(0);" class="offices__filter-icon _settings"></a>
+							<a  href="javascript:void(0);" data-filter-extend-show class="offices__filter-icon _settings"></a>
 						</div>
 					</div>
 				</div>
@@ -68,7 +68,8 @@
 											</div>
 										</div>';
 				?>
-				<div class="offices__filter-extended">
+				<div class="offices__filter-extended hide" data-filter-extend>
+					<a href="javascript:void(0);" class="offices__filter-extended-close" data-filter-extend-close></a>
 					<?if($desktopAndTableLand){?>
 					<div class="offices__filter-cols">
 						<div class="offices__filter-col">
