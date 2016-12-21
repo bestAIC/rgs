@@ -1299,9 +1299,9 @@ h4.small-bottom-indent {
   height: 20rem;
 }
 .pagination {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 2.5rem;
 }
 .pagination__item {
   color: #cca266;
@@ -1334,7 +1334,7 @@ span.pagination__item:focus {
   color: #191919 !important;
 }
 .pagination__btn._right {
-  margin-left: 12px;
+  margin-left: 1.2rem;
 }
 .pagination__btn._right:after {
   content: '';
@@ -1344,11 +1344,11 @@ span.pagination__item:focus {
   height: 1.1rem;
   background: url('../images/icons/arrs_right.svg') no-repeat center;
   background-size: contain;
-  margin-left: 9px;
-  margin-top: 7px;
+  margin-left: 0.9rem;
+  margin-top: 0.7rem;
 }
 .pagination__btn._left {
-  margin-right: 28px;
+  margin-right: 2.8rem;
 }
 .pagination__btn._left:before {
   content: '';
@@ -1358,8 +1358,23 @@ span.pagination__item:focus {
   height: 1.1rem;
   background: url('../images/icons/arrs_left.png') no-repeat center;
   background-size: contain;
-  margin-right: 9px;
-  margin-top: 7px;
+  margin-right: 0.9rem;
+  margin-top: 0.7rem;
+}
+.mobile .pagination__item {
+  margin-right: 0.6rem;
+  min-width: 2rem;
+  text-align: center;
+}
+.mobile .pagination__btn {
+  font-size: 1.4rem;
+}
+.mobile .pagination__btn._right {
+  margin-left: 0;
+  margin-right: 0;
+}
+.mobile .pagination__btn._left {
+  margin-right: 0.6rem;
 }
 .animation__top {
   opacity: 0;
@@ -8625,10 +8640,10 @@ span.pagination__item:focus {
   padding-right: 0;
 }
 .search {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 25px;
-  padding-top: 71px;
+  line-height: 2.5rem;
+  padding-top: 7.1rem;
   color: #797c7f;
   border-bottom: 1px solid #DEDFE0;
 }
@@ -8639,14 +8654,14 @@ span.pagination__item:focus {
   margin: 10rem 0;
 }
 .search__results {
-  max-width: 870px;
-  margin-top: 29px;
+  max-width: 87rem;
+  margin-top: 2.9rem;
 }
 .search__results-item {
   border-bottom: 1px solid #DEDFE0;
-  padding-right: 70px;
-  padding-top: 41px;
-  padding-bottom: 29px;
+  padding-right: 7rem;
+  padding-top: 4.1rem;
+  padding-bottom: 2.9rem;
 }
 .search__results-item-title {
   font-weight: 600;
@@ -8660,7 +8675,20 @@ span.pagination__item:focus {
   color: #191919;
 }
 .search__results-item-text {
-  margin-top: 25px;
+  margin-top: 2.5rem;
+}
+.mobile .search {
+  padding-top: 6rem;
+  color: #797c7f;
+}
+.mobile .search__pagination {
+  margin: 6rem 0;
+}
+.mobile .search__results {
+  margin-top: 0;
+}
+.mobile .search__results-item {
+  padding-right: 0;
 }
 .pull-right {
   float: right;

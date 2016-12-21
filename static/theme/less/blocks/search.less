@@ -1,8 +1,8 @@
 .search{
-	font-size: 16px;
+	font-size: 16/@rem;
 	font-weight: 400;
-	line-height: 25px;
-	padding-top: 71px;
+	line-height: 25/@rem;
+	padding-top: 71/@rem;
 	color: #797c7f;
 	border-bottom: 1px solid @cBorder;
 	&__title{
@@ -14,20 +14,35 @@
 		margin: 10rem 0;
 	}
 	&__results{
-		max-width: 870px;
-		margin-top: 29px;
+		max-width: 870/@rem;
+		margin-top: 29/@rem;
 		&-item{
 			border-bottom: 1px solid @cBorder;
-			padding-right: 70px;
-			padding-top: 41px;
-			padding-bottom: 29px;
+			padding-right: 70/@rem;
+			padding-top: 41/@rem;
+			padding-bottom: 29/@rem;
 			&-title{
 				font-weight: 600;
 				display: block;
 				.color(@text-color);
 			}
 			&-text{
-				margin-top: 25px;
+				margin-top: 25/@rem;
+			}
+		}
+	}
+}
+.mobile{
+	.search{
+		padding-top: 60/@rem;
+		color: #797c7f;
+		&__pagination{
+			margin: 6rem 0;
+		}
+		&__results{
+			margin-top: 0;
+			&-item{
+				padding-right: 0;
 			}
 		}
 	}

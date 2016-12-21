@@ -1,7 +1,7 @@
 .pagination{
-	font-size: 16px;
+	font-size: 16/@rem;
 	font-weight: 400;
-	line-height: 25px;
+	line-height: 25/@rem;
 	&__item{
 		.color(@cGold);
 		margin-right: 1.6rem;
@@ -17,7 +17,7 @@
 	&__btn{
 
 		&._right{
-			margin-left: 12px;
+			margin-left: 12/@rem;
 			&:after{
 				content: '';
 				display: inline-block;
@@ -26,12 +26,12 @@
 				height: 1.1rem;
 				background: url('@{pathToImg}icons/arrs_right.svg') no-repeat center;
 				background-size: contain;
-				margin-left: 9px;
-				margin-top: 7px;
+				margin-left: 9/@rem;
+				margin-top: 7/@rem;
 			}
 		}
 		&._left{
-			margin-right: 28px;
+			margin-right: 28/@rem;
 			&:before{
 				content: '';
 				display: inline-block;
@@ -40,8 +40,27 @@
 				height: 1.1rem;
 				background: url('@{pathToImg}icons/arrs_left.png') no-repeat center;
 				background-size: contain;
-				margin-right: 9px;
-				margin-top: 7px;
+				margin-right: 9/@rem;
+				margin-top: 7/@rem;
+			}
+		}
+	}
+}
+.mobile{
+	.pagination{
+		&__item{
+			margin-right: 0.6rem;
+			min-width: 2rem;
+			text-align: center;
+		}
+		&__btn{
+			font-size: 14/@rem;
+			&._right{
+				margin-left: 0;
+				margin-right: 0;
+			}
+			&._left{
+				margin-right: 0.6rem;
 			}
 		}
 	}
