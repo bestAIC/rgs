@@ -601,6 +601,9 @@ app.newsGall = function () {
 			swiper = null
 
 		;
+	if(!$gall.length){
+		return false;
+	}
 	function initSwiper(data) {
 		if(swiper){
 			$gallItems.removeClass('_show _1 _2 _3 _4 _5 _6').addClass('_hidden');
