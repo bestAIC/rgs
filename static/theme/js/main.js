@@ -75,7 +75,12 @@ app.utils.okonchanie = function( number, one, two, five ) {
 
 app.init = function () {
 	if(app.utils.getData['goto']){
-		$('html, body').stop(true, true).animate({'scrollTop': $(app.utils.getData['goto']).offset().top - 100}, 500);
+		console.log($(app.utils.getData['goto']).offset().top);
+		$('html, body').stop(true, true);
+		setTimeout(function () {
+			console.log($(app.utils.getData['goto']).offset().top);
+			$('html, body').stop(true, true).animate({'scrollTop': $(app.utils.getData['goto']).offset().top - $('[data-menu-wrap]').height()}, 500);
+		},500);
 	}
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
 	app.initFluid();
@@ -1416,7 +1421,7 @@ app.calc = function(){
 		days = parseInt($daysInp.val().replace(new RegExp(" ",'g'),""),10);
 		$calcRate.text(rate.toFixed(2)+'%');
 		profit = Math.floor(sum*days*rate/100/daysInYear);
-		console.log(profit);
+		//console.log(profit);
 		$calcProfit.html(app.formatNumber(profit)+' '+ valutaZnak(valuta));
 		$calcTotalSum.html(app.formatNumber(profit+sum)+' '+ valutaZnak(valuta));
 	}

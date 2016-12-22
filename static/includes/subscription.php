@@ -1,5 +1,5 @@
-<div class="subscription b-block animation__top" id="subscription" data-animation>
-	<div class="grid__inner">
+<div class="subscription b-block" >
+	<div class="grid__inner animation__top" data-animation>
 		<h2>
 			Присоединяйтесь <br/>
 			к Пенсионной программе

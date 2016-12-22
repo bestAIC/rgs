@@ -225,6 +225,12 @@ th {
   text-transform: uppercase;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
+.btn:hover {
+  color: #fff;
+}
+.btn:focus {
+  color: #fff;
+}
 .no-touch .btn:hover {
   background-color: #cc1f33;
   box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
