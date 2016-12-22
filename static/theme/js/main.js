@@ -135,7 +135,12 @@ app.CardP2P = function () {
 		$transferBlock.find('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
 		$transferBlock.find('[data-date-mask]').mask("A0/00",{
 			clearIfNotMatch: true,
-			translation:  {'A': {pattern: /[0-1]/}}
+			translation:  {'A': {pattern: /[0-1]/},'B': {pattern: /[0-2]/},'C': {pattern: /[1-9]/}},
+			onKeyPress: function(cep, e, field, options){
+				var masks = ['AC/00', 'AB/00'];
+				var mask = (cep.charAt(0)==1) ? masks[1] : masks[0];
+				$transferBlock.find('[data-date-mask]').mask(mask, options);
+			}
 		});
 		$transferBlock.find('[data-sum-mask]').mask("# ##0", {reverse: true});
 		$transferBlock.find('[data-name-mask]').mask('S', {translation:  {'S': {pattern: /[a-zA-Z\s]/, recursive: true}}});
