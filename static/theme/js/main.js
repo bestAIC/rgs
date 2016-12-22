@@ -111,36 +111,152 @@ app.init = function () {
 };
 app.CardP2P = function () {
 	var $transferBlock =  $('[data-transfer]'),
+			$loader =  $transferBlock.find('[data-transfer-loader]'),
 			$form =  $transferBlock.find('form'),
 			$formBtn =  $transferBlock.find('[data-transfer-btn]'),
+			$orderId =  $transferBlock.find('[data-transfer-inp="orderId"]'),
+			$pares = $transferBlock.find('[data-transfer-inps="paRes"]'),
+
+			$amount =  $transferBlock.find('[data-transfer-amount]'),
 			$inputs = $form.find('[data-transfer-inp]'),
 			$mainInputs = $inputs.filter('[data-transfer-inp="main"]'),
 			allValidate = null,
-			mainValidate = null
+			mainValidate = null,
+			verify = false,
+			orderId = null,
+			timeout = null,
+			xhr = null,
+			sendLock = false
+
 		;
 	setMasks();
 	function setMasks() {
 		$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
 		$transferBlock.find('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
 		$transferBlock.find('[data-date-mask]').mask("00/00",{clearIfNotMatch: true});
+		$transferBlock.find('[data-sum-mask]').mask("999999999999");
+		$transferBlock.find('[data-name-mask]').mask("SSSSSSSSSSSSSSSSSSSSSSSSSSS");
 	}
 	function isValid($inputs) {
 		var valid = true;
 		$inputs.each(function () {
-			if($.trim($(this).val()) == ''){
+			if($.trim($(this).val()) == '') {
 				valid = false
 			}
 		});
 		return valid;
 	}
-	$inputs.keyup(function () {
-		allValidate = isValid($inputs);
-		mainValidate = isValid($mainInputs);
-		if(mainValidate){
-			/*$.post($form.attr('action'), $form.serialize(), function(data){
 
-			},'json');*/
+	/**
+	 * Регисрация заказа, вернет ID
+	 */
+	function sendRegister(callback) {
+		return $.ajax({
+			url: '/ajax/cards/registration/',
+			dataType: 'JSON',
+			type: 'GET',
+			success: function(res) {
+				if(callback) {
+					callback(res);
+				}
+			},
+			error: function(res) {
+				showError(res);
+			}
+		})
+	}
+
+	/**
+	 * Регисрация заказа, вернет ID
+	 */
+	function sendVerifycation(data) {
+		return $.ajax({
+			url: '/ajax/cards/verifycation/',
+			dataType: 'JSON',
+			type: 'GET',
+			data: data,
+			success: function(res) {
+				$amount.text(res.data.commission);
+				xhr = null;
+			},
+			error: function(res) {
+				showError(res);
+			}
+		})
+	}
+
+	/**
+	 * Отправляет запрос на перевод средств, вернет ссылку для редиректа
+	 * @param data
+	 * @returns {*}
+	 */
+	function sendPerform(data) {
+		if(sendLock == true) return false;
+		//$loader.show();
+		sendLock = true;
+		return $.ajax({
+			url: '/ajax/cards/perform/',
+			dataType: 'JSON',
+			type: 'GET',
+			data: $form.serialize(),
+			success: function(res) {
+				window.location.href = 'https://test.paymentgate.ru/rgsb/acsRedirect.do?orderId=' + $orderId.val();
+				sendLock = false;
+				//$loader.hide()
+			},
+			error: function(res) {
+				showError(res)
+			}
+		})
+	}
+
+	/**
+	 * Вывод ошибок
+	 * @param message
+	 */
+	function showError(data) {
+		if(data.responseJSON._errors !== undefined) {
+			alert(data.responseJSON._errors[0]);
 		}
+	}
+
+	/**
+	 * Сбросим флаг заполнения главных полей
+	 */
+	$mainInputs.on('keyup', function() {
+		verify = false;
+	});
+
+	$inputs.keyup(function () {
+		mainValidate = isValid($mainInputs);
+		allValidate = isValid($inputs);
+
+
+		if(mainValidate && verify == false) {
+			if(timeout !== null) {
+				clearTimeout(timeout);
+			}
+
+			if(xhr !== null) {
+				xhr.abort();
+			}
+
+			timeout = setTimeout(function () {
+				if($orderId.val().length == 0) {
+					sendRegister(function(res) {
+						$orderId.val(res.data.orderId);
+						xhr = sendVerifycation($form.serialize());
+						timeout = null;
+					});
+				} else {
+					xhr = sendVerifycation($form.serialize());
+				}
+
+				verify = true;
+				timeout = null;
+			}, 400);
+		}
+
 		if(allValidate){
 			$formBtn.prop('disabled', false);
 		}else{
@@ -148,13 +264,7 @@ app.CardP2P = function () {
 		}
 	});
 
-	$form.on('submit',function () {
-		var $self = $(this);
-		$.post($self.attr('action'), $self.serialize(), function(data){
-
-		},'json');
-		return false;
-	});
+	$formBtn.on('click', sendPerform);
 };
 app.initGoto = function () {
 	$('html').on('click.Goto', '[data-goto]', function(e){
@@ -1090,237 +1200,9 @@ app.calcFilter = function(){
 		}
 		return res;
 	}*/
-	arInfo = [
-		{
-			"name": "Госстраховский",
-			"img":"/static/theme/images/deposit/card/1.png",
-			"class":"_gosstrakh",
-			"url": "/static/deposit/gosstrakh.php",
-			"descr": "Классический вклад для получения высокого дохода при фиксированных сумме и сроке вклада",
-			"strahovoi": "",
-			"monthly": "N",
-			"cashin": "N",
-			"cashout": "N",
-			"rur": {
-				"91":{
-					5000: 8.00
-				},
-				"181_366":{
-					5000: 8.00
-				},
-				"367":{
-					5000: 7.00
-				}
-			},
-			"usd": {
-				"91":{
-					100: 0.75
-				},
-				"181_366":{
-					100: 1.80
-				},
-				"367":{
-					100: 1.85
-				}
-			},
-			"eur": {
-				"91":{
-					100: 0.20
-				},
-				"181_366":{
-					100: 0.60
-				},
-				"367":{
-					100: 0.60
-				}
-			}
-		},
-		{
-			"name": "Госстраховский VIP",
-			"url": "/personal/deposits/gosstrakhovskiy-vip/",
-			"descr": "Вклад для состоятельных клиентов с возможностью получения высокого дохода при фиксированных сумме и сроке вклада",
-			"strahovoi": "",
-			"monthly": "N",
-			"img":"/static/theme/images/deposit/card/6.png",
-			"class":"_gosstrakh-vip",
-			"cashin": "N",
-			"cashout": "N",
-			"rur": {
-				"91":{
-					1000000: 8.10
-				},
-				"181_366":{
-					1000000: 8.10
-				},
-				"367":{
-					1000000: 7.10
-				}
-			},
-			"usd": {
-				"91":{
-					15000: 0.85
-				},
-				"181_366":{
-					15000: 1.90
-				},
-				"367":{
-					15000: 1.95
-				}
-			},
-			"eur": {
-				"91":{
-					15000: 0.30
-				},
-				"181_366":{
-					15000: 0.70
-				},
-				"367":{
-					15000: 0.70
-				}
-			}
-		},
-		{
-			"name": "Накопительный",
-			"url": "/static/deposit/save.php",
-			"img":"/static/theme/images/deposit/card/2.png",
-			"class":"_save",
-			"descr": "Вклад с возможностью пополнения и льготными условиями при досрочном расторжении ",
-			"strahovoi": "",
-			"monthly": "Y",
-			"cashin": "Y",
-			"cashout": "N",
-			"rur": {
-				"271":{
-					5000: 7.00
-				},
-				"367":{
-					5000: 7.00
-				}
-			},
-			"usd": {
-				"367":{
-					100: 1.50
-				}
-			},
-			"eur": {
-				"367":{
-					100: 0.40
-				}
-			}
-		},
-		{
-			"name": "Универсальный",
-			"url": "/static/deposit/universal.php",
-			"img":"/static/theme/images/deposit/card/3.png",
-			"class":"_universal",
-			"descr": "Вклад с возможностью частичного снятия без потери процентов, а так же пополнения по ставке вклада",
-			"strahovoi": "",
-			"monthly": "Y",
-			"cashin": "Y",
-			"cashout": "Y",
-			"rur": {
-				"367":{
-					30000: 7.00,
-					300000: 7.20
-				}
-			},
-			"usd": {
-				"367":{
-					500: 1.20,
-					5000: 1.30
-				}
-			},
-			"eur": {
-				"367":{
-					500: 0.20,
-					5000: 0.30
-				}
-			}
-		},
-		{
-			"name": "Универсальный VIP",
-			"url": "/personal/deposits/universalnyy-vip/",
-			"descr": "Вклад для состоятельных клиентов с возможностью пополнения и снятия средств до неснижаемого остатка",
-			"strahovoi": "",
-			"monthly": "Y",
-			"cashin": "Y",
-			"img":"/static/theme/images/deposit/card/7.png",
-			"class":"_universal-vip",
-			"cashout": "Y",
-			"rur": {
-				"367":{
-					1000000: 7.30
-				}
-			},
-			"usd": {
-				"367":{
-					15000: 1.40
-				}
-			},
-			"eur": {
-				"367":{
-					15000: 0.40
-				}
-			}
-		},
-		{
-			"name": "Инвестиционный",
-			"url": "/static/deposit/invest.php",
-			"descr": "Высокодоходный вклад с возможностью получить страховую защиту жизни и здоровья или дополнительный доход от вложения средств в ПИФы",
-			"strahovoi": "",
-			"img":"/static/theme/images/deposit/card/4.png",
-			"class":"_invest",
-			"monthly": "N",
-			"cashin": "N",
-			"cashout": "N",
-			"rur": {
-				"91":{
-					25000: 9.50
-				},
-				"181":{
-					25000: 9.50
-				},
-				"367":{
-					25000: 9.00
-				}
-			}
-		},
-		{
-			"name": "Пенсионный доход",
-			"url": "/static/deposit/pensoin.php",
-			"descr": "Разработан специально для пенсионеров: высокий процент при небольших суммах с возможностью пополнения.",
-			"strahovoi": "",
-			"img":"/static/theme/images/deposit/card/5.png",
-			"class":"_pension",
-			"monthly": "Y",
-			"cashin": "Y",
-			"cashout": "N",
-			"rur": {
-				"181_366":{
-					0: 7.60
-				},
-				"367":{
-					0: 7.00
-				}
-			},
-			"usd": {
-				"181_366":{
-					0: 1.60
-				},
-				"367":{
-					0: 1.60
-				}
-			},
-			"eur": {
-				"181_366":{
-					0: 0.50
-				},
-				"367":{
-					0: 0.50
-				}
-			}
-		}
-	];
+	$.post('/static/ajax/deposits.php', {}, function(data){
+		arInfo = $.parseJSON(data);
+	});
 
 	$summ.on('change',function () {
 		var val = parseInt($summ.val().replace(new RegExp(" ",'g'),""));
@@ -1339,6 +1221,7 @@ app.calcFilter = function(){
 		$counter.empty();
 		$result.hide();
 	});
+	
 	function calculation() {
 		var summ = parseInt($summ.val().replace(new RegExp(" ",'g'),""),10) || 0,
 		 	currency = $currency.val(),
@@ -1356,6 +1239,7 @@ app.calcFilter = function(){
 			$summ.removeClass("error");
 			for (var i in arInfo) {
 				var arDeposit = arInfo[i];
+				console.log(arDeposit);
 				if (monthly == 'Y' && arDeposit['monthly'] != 'Y') continue;
 				if (cashin == 'Y' && arDeposit['cashin'] != 'Y') continue;
 				if (cashout == 'Y' && arDeposit['cashout'] != 'Y') continue;
