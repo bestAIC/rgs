@@ -2239,8 +2239,96 @@ span.pagination__item:focus {
 .tablet.portrait .home__transfer-block-in {
   padding: 19.4rem 3.2rem 4rem;
 }
-.mobile .home__transfer {
-  display: none;
+.mobile .home .home__transfer-cards {
+  margin: 4rem auto -67rem;
+}
+.mobile .home__transfer-form {
+  position: relative;
+}
+.mobile .home__transfer-description {
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 0.3px;
+}
+.mobile .home__transfer-description-security {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  padding-left: 0;
+  margin-top: 3rem;
+}
+.mobile .home__transfer-description-security-icons {
+  position: static;
+  text-align: center;
+  padding-right: 5rem;
+  margin-bottom: 0.8rem;
+}
+.mobile .home__transfer-description-security-icon {
+  height: 5.8rem;
+}
+.mobile .home__transfer-description-security-icon._1 {
+  width: 8.4rem;
+  margin-right: 5rem;
+}
+.mobile .home__transfer-description-security-icon._2 {
+  width: 9rem;
+}
+.mobile .home__transfer-cards {
+  width: 100%;
+  margin: 0 auto -67rem;
+  background: none;
+}
+.mobile .home__transfer-cards._active .home__transfer-card {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.mobile .home__transfer-card {
+  float: none;
+}
+.mobile .home__transfer-card._2 {
+  margin-left: auto;
+  margin-top: 2rem;
+  height: 28rem;
+}
+.mobile .home__transfer-block {
+  width: 100%;
+}
+.mobile .home__transfer-block-in {
+  padding: 70rem 4rem 4rem;
+}
+.mobile .home__transfer-sum {
+  float: none;
+  width: 100%;
+}
+.mobile .home__transfer-commission {
+  float: none;
+  margin: 1rem 0;
+  *zoom: 1;
+}
+.mobile .home__transfer-commission:before,
+.mobile .home__transfer-commission:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .home__transfer-commission:after {
+  clear: both;
+}
+.mobile .home__transfer-commission-title {
+  float: left;
+  line-height: 3rem;
+}
+.mobile .home__transfer-commission-val {
+  float: right;
+  line-height: 3rem;
+  margin-top: 0;
+}
+.mobile .home__transfer-btn {
+  float: none;
+  width: 100%;
+}
+.mobile .home__transfer-btn[disabled] {
+  background: #AAAEB2 !important;
+  box-shadow: none!important;
 }
 .choose-city:after {
   content: '';
@@ -7330,6 +7418,59 @@ span.pagination__item:focus {
 .tablet.portrait .card__fields-col._2 {
   width: 11.1rem;
   margin-left: 1rem;
+}
+.mobile .card {
+  width: 33.5rem;
+  height: 45.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.6rem;
+}
+.mobile .card__inner {
+  padding: 3.4rem 4.8rem 0;
+}
+.mobile .card__title {
+  font-size: 1.8rem;
+  letter-spacing: -0.3px;
+}
+.mobile .card__fields {
+  margin-top: 4.6rem;
+  *zoom: 1;
+}
+.mobile .card__fields input[type='text'],
+.mobile .card__fields input[type='password'] {
+  font-size: 2.4rem;
+  letter-spacing: 0;
+}
+.mobile .card__fields:before,
+.mobile .card__fields:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .card__fields:after {
+  clear: both;
+}
+.mobile .card__fields-col {
+  float: none;
+}
+.mobile .card__fields-col._1 {
+  width: 100%;
+}
+.mobile .card__fields-col._2 {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 2.7rem;
+}
+.mobile .card__block + .card__block {
+  margin-top: 2.7rem;
+}
+.mobile .card__block-title {
+  font-size: 1.3rem;
+  letter-spacing: 0.02rem;
+}
+.mobile .card__block-field {
+  height: 4.4rem;
 }
 .mobile .card-open__step + .card-open__step {
   margin-top: 2rem;

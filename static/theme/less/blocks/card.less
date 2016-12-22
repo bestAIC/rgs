@@ -202,6 +202,51 @@
 	}
 }
 .mobile{
+	.card{
+		width: 33.5rem;
+		height: 45.5rem;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 16/@rem;
+		&__inner{
+			padding: 3.4rem 4.8rem 0;
+		}
+		&__title{
+			font-size: 18/@rem;
+			letter-spacing: -0.3px;
+		}
+		&__fields{
+			margin-top: 4.6rem;
+			input[type='text'], input[type='password']{
+				font-size: 2.4rem;
+				letter-spacing: 0;
+			}
+			.clearfix;
+			&-col{
+				float: none;
+				&._1{
+					width: 100%;
+				}
+				&._2{
+					width:  100%;
+					margin-left:0;
+					margin-top: 2.7rem;
+				}
+			}
+		}
+		&__block{
+			&+.card__block{
+				margin-top: 2.7rem;
+			}
+			&-title{
+				font-size: 1.3rem;
+				letter-spacing: 0.2/@rem;
+			}
+			&-field{
+				height: 4.4rem;
+			}
+		}
+	}
 	.card-open{
 		&__step{
 			&+.card-open__step{
