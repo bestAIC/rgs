@@ -1,6 +1,9 @@
 <?include "../includes/header.php"?>
 	<div class="inner deposit">
-		<div class="inner__banner" style="background-image: url('/static/theme/images/inner/banner.jpg');">
+		<div class="inner__banner">
+			<div class="inner__banner-img">
+				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/inner/banner.jpg');"></div>
+			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
 					<div class="inner__banner-title">Вклад «Пенсионный доход»</div>

@@ -6545,6 +6545,7 @@ span.pagination__item:focus {
   height: 42rem;
   background: none no-repeat center;
   background-size: cover;
+  position: relative;
 }
 .inner__banner .b-card {
   position: absolute;
@@ -6566,8 +6567,38 @@ span.pagination__item:focus {
 .no-touch .inner__banner:hover .b-card_mc-platinum {
   box-shadow: 0 4.5rem 5.5rem -3rem rgba(0, 0, 0, 0.6);
 }
+.inner__banner-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.inner__banner-img-in {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  background: none no-repeat center;
+  background-size: cover;
+  filter: blur(2px);
+}
+.inner__banner-img:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .inner__banner-in {
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 .inner__banner-block {
   position: absolute;
