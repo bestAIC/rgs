@@ -6,6 +6,17 @@
 		</h2>
 		<div class="subtitle">Заполните заявку и наши специалисты свяжутся с вами</div>
 		<div class="subscription__form">
+			<div class="subscription__success">
+				<div class="subscription__success-img"></div>
+				<div class="subscription__success-block">
+					<div class="subscription__success-block-in">
+						<div class="subscription__success-title">Спасибо за вашу заявку!</div>
+						<div class="subscription__success-text">
+							Сотрудники РОСГОССТРАХ БАНКА  свяжутся с Вами в&nbsp;ближайшее время для оформления необходимых документов и оказания квалифицированной информационной поддержки.
+						</div>
+					</div>
+				</div>
+			</div>
 			<form action="">
 				<div class="subscription__form-col">
 					<div class="subscription__form-row">
