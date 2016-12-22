@@ -85,6 +85,7 @@
 							<div class="home__transfer-commission-title">Комиссия за перевод</div>
 							<div class="home__transfer-commission-val"><span data-transfer-amount>0</span> руб.</div>
 						</div>
+						<label class="home__transfer-agree"><input type="checkbox">Ознакомлен и согласен с условиями <a href="https://payment.rgsbank.ru/payment/merchants/rgsbank/files/p2p_Oferta.pdf" target="_blank">публичной оферты</a></label>
 						<button type="button" disabled data-transfer-btn class="btn _red home__transfer-btn">Отправить деньги</button>
 					</div>
 				</div>

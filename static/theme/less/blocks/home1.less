@@ -108,12 +108,12 @@
 			margin: 0 auto;
 			&-in{
 				.clearfix;
-				padding: 26rem 4rem 4rem;
+				padding: 26rem 4rem 5.7rem;
 			}
 		}
 		&-sum{
 			float: left;
-			width: 273/@rem;
+			width: 23.3rem;
 			height: 50/@rem;
 			position: relative;
 			input{
@@ -147,8 +147,27 @@
 				margin-top: 5/@rem;
 			}
 		}
-		&-btn{
+		&-agree{
+			display: block;
 			float: right;
+			width: 25.7rem;
+			position: relative;
+			padding-left: 4rem;
+			line-height: 2.5rem;
+			margin-top: -3/@rem;
+			font-weight: 600;
+			letter-spacing: -0.03rem;
+			.ideal-check{
+				position: absolute;
+				left: 0;
+				top: 3/@rem;
+			}
+		}
+		&-btn{
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translate(-50%,50%);
 			&[disabled]{
 				background: @cGray!important;
 				box-shadow: none!important;
@@ -219,7 +238,7 @@
 			&-block{
 				width: 100%;
 				&-in{
-					padding: 19.4rem 3.2rem 4rem;
+					padding: 19.4rem 3.2rem 5.7rem;
 				}
 			}
 		}
@@ -241,6 +260,7 @@
 				padding-left: 20px;
 				padding-right: 20px;
 				letter-spacing: 0.3px;
+				margin-top: 3.3rem;
 				&-security{
 					font-size: 1.3rem;
 					line-height: 1.5rem;
@@ -308,8 +328,16 @@
 					margin-top: 0;
 				}
 			}
+			&-agree{
+				float: none;
+				width: 100%;
+				margin-bottom: 2rem;
+				margin-top: 1rem;
+			}
 			&-btn{
 				float: none;
+				position: static;
+				transform: translate(0,0);
 				width: 100%;
 				&[disabled]{
 					background: @cGray!important;
