@@ -137,7 +137,7 @@ app.CardP2P = function () {
 			clearIfNotMatch: true,
 			translation:  {'A': {pattern: /[0-1]/}}
 		});
-		$transferBlock.find('[data-sum-mask]').mask("#");
+		$transferBlock.find('[data-sum-mask]').mask("# ##0", {reverse: true});
 		$transferBlock.find('[data-name-mask]').mask('S', {translation:  {'S': {pattern: /[a-zA-Z\s]/, recursive: true}}});
 	}
 	function isValid($inputs) {
