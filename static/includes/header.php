@@ -125,7 +125,7 @@
 				<div class="menu__block hide" data-menu-content="1">
 					<div class="menu__block-inner">
 						<div class="menu-banner">
-							<div class="menu-banner__img" style="background-image: url('/static/theme/images/menu-banner.jpg');"></div>
+							<div class="menu-banner__img" style="background-image: url('/static/theme/images/banners/deposit/Pension_Program.jpg');"></div>
 							<div class="menu-banner__inner">
 								<div class="menu-banner__title">Пенсионная программа</div>
 								<div class="menu-banner__text">
@@ -190,7 +190,7 @@
 				<div class="menu__block hide" data-menu-content="2">
 					<div class="menu__block-inner">
 						<div class="menu-banner">
-							<div class="menu-banner__img" style="background-image: url('/static/theme/images/menu-banner.jpg');"></div>
+							<div class="menu-banner__img" style="background-image: url('/static/theme/images/banners/transactions/CardToCard.png');"></div>
 							<div class="menu-banner__inner">
 								<div class="menu-banner__title">Переводы по номеру карты</div>
 								<div class="menu-banner__text">
@@ -238,7 +238,7 @@
 				<div class="menu__block hide" data-menu-content="3">
 					<div class="menu__block-inner">
 						<div class="menu-banner">
-							<div class="menu-banner__img" style="background-image: url('/static/theme/images/menu-banner.jpg');"></div>
+							<div class="menu-banner__img" style="background-image: url('/static/theme/images/banners/card/Card.jpg');"></div>
 							<div class="menu-banner__inner">
 								<div class="menu-banner__title">Пенсионная карта</div>
 								<div class="menu-banner__text">
