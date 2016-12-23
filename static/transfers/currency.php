@@ -31,7 +31,8 @@
 								Валюты, доступные
 								для проведения операций</div>
 						</div>
-						<div class="deposit__info-banner-img"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ?'/static/theme/images/info-banners/transactions/currency_pic.png'
+							:'/static/theme/images/info-banners/transactions/currency_tablet_pic.png'?>)"></div>
 					</div>
 					<div class="deposit-info__block block-indent is-desktop-block">
 						<h4 class="small-bottom-indent">Актуальные курсы валют в Москве</h4>

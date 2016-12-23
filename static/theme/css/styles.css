@@ -5118,12 +5118,12 @@ span.pagination__item:focus {
 .deposit__info-banner-img {
   background: none no-repeat center;
   background-size: contain;
-  width: 37.8rem;
-  height: 47.9rem;
-  right: -4.5rem;
+  left: -3rem;
+  right: -3rem;
+  top: -3rem;
+  bottom: -3rem;
   position: absolute;
   z-index: 1;
-  top: -7.8rem;
 }
 .deposit__payments-blocks {
   padding-bottom: 7rem;
@@ -5185,10 +5185,8 @@ span.pagination__item:focus {
   margin-bottom: 3.7rem;
 }
 .tablet.portrait .deposit__info-banner-img {
-  width: 35.5rem;
-  height: 27rem;
-  right: 2rem;
-  top: -5rem;
+  left: 0;
+  right: 0;
 }
 .tablet.portrait .deposit__payments-blocks {
   padding-bottom: 7rem;
@@ -5294,10 +5292,8 @@ span.pagination__item:focus {
   height: 17rem;
 }
 .mobile .deposit__info-banner-img {
-  width: 17rem;
-  height: 27rem;
-  right: -1.3rem;
-  top: -5rem;
+  left: 0;
+  right: 0;
 }
 .mobile .deposit .grid__inner {
   padding-right: 2rem;
