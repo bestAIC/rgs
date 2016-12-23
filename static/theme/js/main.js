@@ -985,6 +985,7 @@ app.offices = function() {
 			$filterExtend  = $filter.find('[data-filter-extend]'),
 			$filterExtendShow  = $filter.find('[data-filter-extend-show]'),
 			$filterExtendClose  = $filter.find('[data-filter-extend-close]'),
+			$filterMetro  = $filter.find('[data-offices-filter-metro]'),
 			$filterForm  = $filter.find('form'),
 			$filterFields = $filter.find('input[type="text"],input[type="checkbox"],select'),
 			markers = []
@@ -1106,11 +1107,23 @@ app.offices = function() {
 	$filterForm.on('submit',function () {
 		var $self = $(this);
 		$.post($self.attr('action'), $self.serialize(), function(data){
-			var $data = $(data).find('[data-office-point]');
-			$content.filter('[data-offices-content="list"]').html($data);
+
+			var $items = $(data.content).find('[data-office-point]');
+			$content.filter('[data-offices-content="list"]').html($items);
+			if(data.metro){
+				$filterMetro.show().html($(data.metro)).find('[data-chosen]').chosen({
+					disable_search_threshold: 1000,
+					width: "100%"
+				});
+				$filterMetro.find('select').on('change',function () {
+					$filterForm.trigger('submit');
+				});
+			}else{
+				$filterMetro.empty().hide();
+			}
 			deleteMarkers();
-			addMarkers($data);
-		});
+			addMarkers($items);
+		},'json');
 		return false;
 	});
 

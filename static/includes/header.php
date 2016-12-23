@@ -19,6 +19,7 @@
 <?
 	$mobile = isset($_COOKIE['site_viewType']) && $_COOKIE['site_viewType'] == 'isMobile';
 	$tablePort = isset($_COOKIE['site_viewType']) && $_COOKIE['site_viewType'] == 'isTablePort';
+	$desktop =  isset($_COOKIE['site_viewType']) && $_COOKIE['site_viewType'] == 'isDesktop';
 	$desktopAndTableLand = isset($_COOKIE['site_viewType']) && ($_COOKIE['site_viewType'] == 'isDesktop' || $_COOKIE['site_viewType'] == 'isTableLand');
 ?>
 <header class="header">
@@ -81,7 +82,7 @@
 							<a href="javascript:void(0);" data-menu-link="3" class="header__menu-link">Выбрать карту</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
-							<a href="javascript:void(0);" data-menu-link="4" class="header__menu-link">Взять кредит</a>
+							<a href="<?=$desktop ? '/static/credit/index.php' :'javascript:void(0);'?>" data-menu-link="4" class="header__menu-link">Взять кредит</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
 							<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>

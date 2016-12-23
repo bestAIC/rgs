@@ -1,6 +1,4 @@
-<?
-	ob_start();
-?>
+<? ob_start(); ?>
 	<div>
 		<div class="offices__item" data-office-point='{"lat":55.7420428,"lan":37.559213,"type":"office"}'>
 			<div class="offices__item-title">ДО «Отделение «Киевское»</div>
@@ -102,7 +100,20 @@
 		</div>
 	</div>
 
+<? $content = ob_get_clean(); ?>
+
+<? ob_start(); ?>
+	<select data-chosen>
+		<option value="">Новая Станция метро</option>
+		<option value="">Новая Станция метро2</option>
+	</select>
+
+<? $metro = ob_get_clean(); ?>
+
 <?
-	$content = ob_get_clean();
-	echo $content;
+	$arr = array(
+		'content'	=> $content,
+		'metro'	=> $metro
+	);
+	echo json_encode($arr)
 ?>

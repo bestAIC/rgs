@@ -88,7 +88,7 @@
 							</div>
 						</div>
 						<div class="offices__filter-col">
-							<div class="offices__filter-metro">
+							<div class="offices__filter-metro" data-offices-filter-metro>
 								<select data-chosen>
 									<option value="">Станция метро</option>
 									<option value="">Станция метро2</option>
@@ -109,7 +109,7 @@
 									Внимание! Банки-партнеры взимают комиссию при снятии наличных.
 									О сумме комиссии можно узнать на странице <a href="#">“Тарифы партнерской сети”</a>
 								</div>
-								<div class="offices__filter-metro">
+								<div class="offices__filter-metro" data-offices-filter-metro>
 									<select data-chosen>
 										<option value="">Станция метро</option>
 										<option value="">Станция метро2</option>
