@@ -2,7 +2,7 @@
 	<div class="inner deposit transfers">
 		<div class="inner__banner">
 			<div class="inner__banner-img">
-				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/inner/banner/credit/index.jpg');"></div>
+				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/credit/Take_Credit.jpg');"></div>
 			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">

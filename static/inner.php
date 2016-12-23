@@ -1,6 +1,9 @@
 <?include "includes/header.php"?>
 	<div class="inner">
-		<div class="inner__banner" style="background-image: url('theme/images/inner/banner.jpg');">
+		<div class="inner__banner">
+			<div class="inner__banner-img">
+				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/deposit/Pension_Program.jpg');"></div>
+			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
 					<div class="inner__banner-title">Пенсионная программа</div>

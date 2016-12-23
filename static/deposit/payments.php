@@ -2,7 +2,7 @@
 	<div class="inner deposit ">
 		<div class="inner__banner">
 			<div class="inner__banner-img">
-				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/inner/banner.jpg');"></div>
+				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/deposit/Payments.jpg');"></div>
 			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">

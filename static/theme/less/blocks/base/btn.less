@@ -26,6 +26,16 @@
 		box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
 		color: #fff;
 	}
+	&._transparent{
+		background-color: transparent!important;
+		.color(@cRed);
+		border: 2px solid @cRed;
+		padding: 1.3rem 3.2rem;
+		.no-touch &:hover{
+			box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
+			color: @cRed;
+		}
+	}
 	&._gold{
 		background-color:@cGold;
 		.no-touch &:hover{

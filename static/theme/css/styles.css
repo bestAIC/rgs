@@ -236,6 +236,22 @@ th {
   box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
   color: #fff;
 }
+.btn._transparent {
+  background-color: transparent!important;
+  color: #b31b2c;
+  border: 2px solid #b31b2c;
+  padding: 1.3rem 3.2rem;
+}
+.btn._transparent:hover {
+  color: #b31b2c;
+}
+.btn._transparent:focus {
+  color: #b31b2c;
+}
+.no-touch .btn._transparent:hover {
+  box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
+  color: #b31b2c;
+}
 .btn._gold {
   background-color: #cca266;
 }
@@ -6891,6 +6907,7 @@ span.pagination__item:focus {
 .inner__info {
   padding-top: 7.8rem;
   padding-bottom: 7rem;
+  z-index: 2;
 }
 .inner__info._small-indent {
   padding-bottom: 1rem;

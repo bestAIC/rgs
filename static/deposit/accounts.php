@@ -2,7 +2,7 @@
 	<div class="inner deposit ">
 		<div class="inner__banner">
 			<div class="inner__banner-img">
-				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/inner/banner.jpg');"></div>
+				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/deposit/Current_Accounts.jpg');"></div>
 			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
@@ -24,7 +24,7 @@
 		<div class="inner__info _small-indent animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="deposit__info-img" style="background-image: url(/static/theme/images/home/banner/1.jpg);"></div>
+					<div class="deposit__info-img" ></div>
 				</div>
 				<div class="inner__info-benefits">
 					<div class="inner__info-benefits-title">
