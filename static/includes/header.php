@@ -76,7 +76,7 @@
 							<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
-							<a href="javascript:void(0);" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
+							<a href="<?=$desktop ? '/static/transfers/index.php' :'javascript:void(0);'?>" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
 							<a href="javascript:void(0);" data-menu-link="3" class="header__menu-link">Выбрать карту</a>
@@ -216,7 +216,7 @@
 						</div>
 						<div class="menu__block-col _col-2-2">
 							<div class="b-menu__item">
-								<a href="/static/transfers/index.php" class="b-menu__item-link">Денежные переводы</a>
+								<div class="b-menu__item-link">Денежные переводы</div>
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
@@ -268,12 +268,12 @@
 								<a href="/static/cards/client.php" class="b-menu__item-link">Карта Клиента</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="/static/cards/pension.php" class="b-menu__item-link">Премиальная карта</a>
+								<a href="" class="b-menu__item-link">Премиальная карта</a>
 							</div>
 						</div>
 						<div class="menu__block-col _col-3-2">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">
+								<a href="/static/cards/credit.php" class="b-menu__item-link">
 									Кредитные карты для сотрудников
 									группы Росгосстрах
 								</a>

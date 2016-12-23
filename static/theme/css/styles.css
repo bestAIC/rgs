@@ -6903,6 +6903,7 @@ span.pagination__item:focus {
   letter-spacing: -0.04rem;
   line-height: 5rem;
   margin-bottom: 2.1rem;
+  padding-right: 38rem;
 }
 .inner__info {
   padding-top: 7.8rem;
@@ -7042,6 +7043,9 @@ span.pagination__item:focus {
 .tablet.portrait .inner__banner-block {
   padding: 0 2.7rem;
 }
+.tablet.portrait .inner__banner-title {
+  padding-right: 22rem;
+}
 .tablet.portrait .inner__info {
   padding-top: 5.2rem;
   padding-bottom: 3.8rem;
@@ -7155,6 +7159,7 @@ span.pagination__item:focus {
 }
 .mobile .inner__banner-title {
   margin-bottom: 1.4rem;
+  padding-right: 0;
   font-size: 3.4rem;
   font-weight: 700;
   letter-spacing: -0.031rem;
