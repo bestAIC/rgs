@@ -1,0 +1,122 @@
+.status{
+	background-color: whitesmoke;
+	&__block{
+		background-color: #fff;
+		max-width: 970/@rem;
+		margin: 80/@rem auto;
+		color: @title-color;
+		&-in{
+			padding: 46/@rem 100/@rem 23/@rem;
+		}
+	}
+	&__top{
+		position: relative;
+		&-in{
+			padding-left: 85/@rem;
+		}
+	}
+	&__ico{
+		width: 55/@rem;
+		height: 55/@rem;
+		background: url('@{pathToImg}icons/ok.svg') no-repeat center #409a76;
+		background-size: 17/@rem 2rem;
+		position: absolute;
+		left: 0;
+		top: 8/@rem;
+		border-radius: 50%;
+		&._error{
+			background-image: url('@{pathToImg}icons/close-bold.svg');
+			background-color: @cRed;
+			background-size: 18/@rem;
+		}
+	}
+	&__title{
+		font-size: 28/@rem;
+		font-weight: 700;
+		letter-spacing: -0.39/@rem;
+		line-height: 35/@rem;
+	}
+	&__subtitle{
+		font-size: 20/@rem;
+		font-weight: 600;
+		line-height: 30/@rem;
+		margin-top: 11/@rem;
+	}
+	&__sum{
+		font-size: 20/@rem;
+		font-weight: 600;
+		line-height: 30/@rem;
+	}
+	&__table{
+		margin-top: 41/@rem;
+		table{
+			width: 100%;
+			td{
+				border-bottom: 0;
+				border-top: 1px solid @cBorder;
+				&:first-child{
+					font-weight: 600;
+					padding-left: 0;
+					width: 58.5%;
+				}
+			}
+		}
+
+	}
+}
+.tablet.portrait{
+	.status{
+		background-color: #fff;
+		border-bottom: 1px solid @cBorder;
+		&__block{
+			margin: 22/@rem auto 0;
+			&-in{
+				padding: 46/@rem 0 67/@rem;
+			}
+		}
+		&__table{
+			table{
+				td{
+					&:first-child{
+						width: 63%;
+					}
+				}
+			}
+
+		}
+	}
+}
+.mobile{
+	.status{
+		background-color: #fff;
+		border-bottom: 1px solid @cBorder;
+		.grid__inner{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		&__subtitle{
+			font-size: 18/@rem;
+			line-height: 26/@rem;
+		}
+		&__sum{
+			font-size: 18/@rem;
+			line-height: 26/@rem;
+		}
+		&__block{
+			margin: 22/@rem auto 0;
+			&-in{
+				padding: 19/@rem 0 41/@rem;
+			}
+		}
+		&__table{
+			table{
+				td{
+					&:first-child{
+						width: 56%;
+					}
+				}
+			}
+
+		}
+	}
+}
