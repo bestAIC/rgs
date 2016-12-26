@@ -577,6 +577,9 @@ app.menu = function () {
 	}
 	/*прилипание меню*/
 	function _fixedMenu() {
+		if(app.dom.$body.hasClass('b-menu-visible')){
+			return false;
+		}
 		if(app.dom.$document.scrollTop()>=$header.height()){
 			$header.addClass('_fixed');
 		}else{

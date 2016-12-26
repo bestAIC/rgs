@@ -1,12 +1,21 @@
 .b-form{
+	input[type='text'], input[type='password'], input[type='tel'], input[type='date'], input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
+		border: 0;
+		padding: 0;
+		font-size: 20/@rem;
+		font-weight: 400;
+		letter-spacing: -0.28/@rem;
+	}
 	.chosen-container-single .chosen-single{
 		border: 2/@rem solid #d0d4d9;
 		height: 6rem;
 		font-size: 20/@rem;
 		font-weight: 400;
 		letter-spacing: -0.28/@rem;
+		line-height: 3.6rem;
+		padding-top: 1rem;
 		&.chosen-default{
-
+			color: #acb6bf;
 		}
 	}
 	&__row{
@@ -18,6 +27,9 @@
 		margin-top: 4rem;
 	}
 	&__block{
+		&._textarea{
+			height: 24rem;
+		}
 		&-title{
 			font-size: 10/@rem;
 			font-weight: 600;
@@ -47,13 +59,6 @@
 				input[type="text"]{
 					padding-left: 2.7rem;
 				}
-			}
-			input[type='text'], input[type='password'], input[type='tel'], input[type='date'], input[type='number'], input[type='email'], input[type='url'], input[type='search']{
-				border: 0;
-				padding: 0;
-				font-size: 20/@rem;
-				font-weight: 400;
-				letter-spacing: -0.28/@rem;
 			}
 		}
 	}
