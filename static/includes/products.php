@@ -47,7 +47,7 @@
 	</div>
 </div>
 <?/*десктоп*/?>
-<div class="products is-desktop-block" data-animation>
+<?/*div class="products is-desktop-block" data-animation>
 	<div class="grid__inner">
 		<a href="#" class="product _green" style="background-image: url('theme/images/home/product/1.jpg')">
 			<div class="product__inner">
@@ -92,5 +92,67 @@
 				</div>
 			</div>
 		</a>
+	</div>
+</div*/?>
+<div class="products is-desktop-block" data-animation>
+	<div class="products__in">
+		<div class="product _red">
+			<div class="product__inner">
+				<div class="product__title">
+					Инвестиционное<br />
+					страхование жизни
+				</div>
+				<div class="product__bottom">
+					<div class="product__val">100%</div>
+					<div class="product__text">
+						Гарантия возврата<br />
+						вложенных средств
+					</div>
+				</div>
+			</div>
+			<div class="product__hidden middle" style="background-image: url('/static/theme/images/home/product/1.jpg');">
+				<div class="middle__inner">
+					<a href="#" class="btn _red">Узнать больше</a>
+				</div>
+			</div>
+		</div>
+		<div class="product _brown">
+			<div class="product__inner">
+				<div class="product__title">Кредит наличными</div>
+				<div class="product__bottom">
+					<div class="product__val">под 9%</div>
+					<div class="product__text">
+						Без комиссий за выдачу<br />
+						и обслуживание кредита
+					</div>
+				</div>
+			</div>
+			<div class="product__hidden middle" style="background-image: url('/static/theme/images/home/product/2.jpg');">
+				<div class="middle__inner">
+					<a href="#" class="btn _red">Узнать больше</a>
+				</div>
+			</div>
+		</div>
+		<div class="product _gray">
+			<div class="product__inner">
+				<div class="product__title">
+					Индивидуальный<br />
+					инвестиционный<br />
+					счет
+				</div>
+				<div class="product__bottom">
+					<div class="product__val">13%</div>
+					<div class="product__text">
+						Гарантированной<br />
+						доходности от государства
+					</div>
+				</div>
+			</div>
+			<div class="product__hidden middle" style="background-image: url('/static/theme/images/home/product/2.jpg');">
+				<div class="middle__inner">
+					<a href="#" class="btn _red">Узнать больше</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
