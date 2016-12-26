@@ -31,6 +31,33 @@
 		}
 	}
 }
+.menu-sections-visible{
+	&:after{
+		content: '';
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(56, 56, 56, 0.6);
+		z-index: 999;
+		//transition: background-color @animTime 0.5s;
+	}
+	z-index: 1000;
+	background-color: #fff;
+	&__bottom{
+		display: none;
+	}
+	&__search-btn{
+		background-image: url('@{pathToImg}icons/search_black.svg');
+	}
+	&__menu-link{
+		.color(@text-color);
+	}
+	&__menu-btn-bar{
+		background-color: #000;
+	}
+}
 .menu-banner{
 	float: right;
 	margin-top: 3/@rem;
@@ -127,6 +154,15 @@
 	//overflow-x: auto;
 	border-bottom: 1px solid @cBorder;
 	display: none;
+	&__sections{
+		padding-top: 1.5rem;
+	}
+	&__section{
+		display: block;
+		text-align: center;
+		padding-bottom: 1.8rem;
+
+	}
 	.header__menu-item+.header__menu-item{
 		//margin-left: 2.5rem;
 	}
@@ -179,6 +215,11 @@
 	.menu-visible{
 		overflow: hidden;
 		height: 100%;
+		&.menu-sections-visible{
+			.mob-menu{
+				display: none;
+			}
+		}
 		.mob-menu{
 			display: block;
 		}

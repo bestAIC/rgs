@@ -493,6 +493,8 @@ app.menu = function () {
 			$searchFormRequests     = $('[data-header-search-form-requests]'),
 			
 			$menuBtn     = $('[data-b-menu-btn]'),
+			$menuSectionsShow  = $('[ data-b-menu-sections-show]'),
+			$menuSections  = $('[ data-b-menu-sections]'),
 			menuNum = null,
 			offset = null,
 			mobMenuswiper = false
@@ -594,7 +596,19 @@ app.menu = function () {
 		$menuContent.filter('[data-menu-content="'+ data +'"]').show();
 		$self.addClass('_active');
 	});
+	$menuSectionsShow.on('click',function () {
+		/*var $self = $(this);
+		if($self.hasClass('_active')){
+			$menuSections.hide();
+			app.dom.$body.removeClass('menu-sections-visible menu-visible');
+			$self.removeClass('_active');
+		}else{
+			$menuSections.show();
+			$self.addClass('_active');
+			app.dom.$body.addClass('menu-sections-visible ');
+		}*/
 
+	});
 	$menuWrap.hover(
 		function(){
 

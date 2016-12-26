@@ -89,10 +89,15 @@
 							<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
 						</div>
 						<div class="header__menu-item is-mob-block">
-							<a href="javascript:void(0);" data-b-menu-btn class="header__menu-link _menu">Меню</a>
+							<a href="javascript:void(0);" data-b-menu-sections-show class="header__menu-link _menu">Частным лицам</a>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="mob-menu__sections hide"  data-b-menu-sections>
+				<a href="javascript:void(0);" class="header__menu-link mob-menu__section">малому и среднему бизнесу</a>
+				<a href="javascript:void(0);" class="header__menu-link mob-menu__section">корпоративным клиентам</a>
+				<a href="javascript:void(0);" class="header__menu-link mob-menu__section">финансовым институтам</a>
 			</div>
 			<div class="mob-menu is-mob-block swiper-container" data-mob-menu>
 				<div class="swiper-wrapper">
