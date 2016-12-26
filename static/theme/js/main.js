@@ -597,7 +597,7 @@ app.menu = function () {
 		$self.addClass('_active');
 	});
 	$menuSectionsShow.on('click',function () {
-		/*var $self = $(this);
+		var $self = $(this);
 		if($self.hasClass('_active')){
 			$menuSections.hide();
 			app.dom.$body.removeClass('menu-sections-visible menu-visible');
@@ -606,7 +606,7 @@ app.menu = function () {
 			$menuSections.show();
 			$self.addClass('_active');
 			app.dom.$body.addClass('menu-sections-visible ');
-		}*/
+		}
 
 	});
 	$menuWrap.hover(

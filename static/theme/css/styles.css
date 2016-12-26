@@ -7429,16 +7429,16 @@ span.pagination__item:focus {
   color: #191919;
 }
 .product._green .product__text {
-  color: #4d664c;
+  color: #42331d;
 }
 .product._red .product__text {
-  color: #705569;
+  color: #310e11;
 }
 .product._brown .product__text {
-  color: #736d62;
+  color: #4a4a4a;
 }
 .product._gray .product__text {
-  color: #616572;
+  color: #310e11;
 }
 .product__inner {
   height: 100%;
