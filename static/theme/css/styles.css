@@ -1632,6 +1632,19 @@ span.pagination__item:focus {
   float: right;
   margin-right: 3rem;
   margin-top: -1px;
+  position: relative;
+}
+.header__phones-title {
+  text-transform: uppercase;
+  color: #AAAEB2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 .header__phone-link {
   color: #3e3e3e;
@@ -1905,6 +1918,18 @@ span.pagination__item:focus {
 .tablet.portrait .header__phones {
   margin-right: 2.8rem;
   margin-top: 1.1rem;
+  position: relative;
+  padding-left: 3rem;
+}
+.tablet.portrait .header__phones:before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: -0.4rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: url('../images/icons/handset.svg') no-repeat center;
+  background-size: contain;
 }
 .tablet.portrait .header__phone {
   float: left;

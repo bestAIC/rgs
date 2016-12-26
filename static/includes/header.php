@@ -36,8 +36,9 @@
 					</div>
 				</a>
 				<a href="javascript:void(0);" class="header__search-btn is-tablet-block" data-header-search-btn></a>
-				<a href="#" class="btn _gold header__top-btn">ИНТЕРНЕТ-БАНК</a>
+				<a href="#" class="btn _gold header__top-btn">ВХОД В ИНТЕРНЕТ-БАНК</a>
 				<div class="header__phones">
+					<div class="header__phones-title is-desktop-block">Контакт-центр</div>
 					<div class="header__phone">
 						<a href="tel:88007004040" class="header__phone-link">8 800 700 4040</a>
 					</div>
