@@ -120,8 +120,8 @@
 			</div>
 		</div>
 		<div class="header__menu-blocks">
+			<?include "menu/burger/b-menu.php"?>
 			<div class="grid__inner">
-				<?include "menu/burger/b-menu.php"?>
 				<div class="menu__block hide" data-menu-content="1">
 					<div class="menu__block-inner">
 						<div class="menu-banner">

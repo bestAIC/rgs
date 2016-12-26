@@ -4303,7 +4303,6 @@ span.pagination__item:focus {
   opacity: 0;
 }
 .b-menu {
-  padding-top: 5.3rem;
   padding-bottom: 5rem;
   transition: opacity .7s, visivility .7s;
   background-color: #fff;
@@ -4312,6 +4311,39 @@ span.pagination__item:focus {
   top: -9999px;
   visibility: hidden;
   opacity: 0;
+}
+.b-menu__tabs {
+  padding-top: 1.5rem;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 1rem;
+}
+.b-menu__tabs-in {
+  text-align: justify;
+  line-height: 0;
+}
+.b-menu__tabs-in:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.b-menu__content {
+  padding-top: 3.5rem;
+}
+.b-menu__tab {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.b-menu__tab._active {
+  color: #191919;
+  cursor: default;
+}
+.b-menu__tab._active:hover {
+  color: #191919;
+}
+.b-menu__tab._active:focus {
+  color: #191919;
 }
 .b-menu__col {
   float: left;
@@ -4386,8 +4418,10 @@ span.pagination__item:focus {
   display: none;
 }
 .tablet.portrait .b-menu {
-  padding-top: 3.4rem;
   padding-bottom: 3.5rem;
+}
+.tablet.portrait .b-menu__tabs {
+  font-size: 1.2rem;
 }
 .tablet.portrait .b-menu__col {
   width: 100%!important;
