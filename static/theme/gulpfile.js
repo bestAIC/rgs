@@ -72,6 +72,7 @@ gulp.task('jsLibs:concat', function() {
 		options.sourcePathScripts + '/radiocheck.js',
 		options.sourcePathScripts + '/Cookie.js',
 		options.sourcePathScripts + '/helperSiteTypeDetect.js',
+		options.sourcePathScripts + '/fancybox/jquery.fancybox.pack.js',
 		options.sourcePathScripts + '/circle-progress.min.js'
 	])
 		.pipe(concat('libs.js'))

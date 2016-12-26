@@ -1,3 +1,75 @@
+.b-form{
+	.chosen-container-single .chosen-single{
+		border: 2/@rem solid #d0d4d9;
+		height: 6rem;
+		font-size: 20/@rem;
+		font-weight: 400;
+		letter-spacing: -0.28/@rem;
+		&.chosen-default{
+
+		}
+	}
+	&__row{
+		&+&{
+			margin-top: 3rem;
+		}
+	}
+	&__content{
+		margin-top: 4rem;
+	}
+	&__block{
+		&-title{
+			font-size: 10/@rem;
+			font-weight: 600;
+			letter-spacing: 0.5/@rem;
+			line-height: 14/@rem;
+			text-transform: uppercase;
+		}
+		&-field{
+			height: 46/@rem;
+			border-bottom: 2/@rem solid #d0d4d9;
+			padding-bottom: 4/@rem;
+			position: relative;
+			&.phone-inp{
+				position: relative;
+				&:before{
+					content: '+7';
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					font-size: 20/@rem;
+					font-weight: 400;
+					letter-spacing: -0.28/@rem;
+					line-height: 42/@rem;
+					z-index: 3;
+				}
+				input[type="text"]{
+					padding-left: 2.7rem;
+				}
+			}
+			input[type='text'], input[type='password'], input[type='tel'], input[type='date'], input[type='number'], input[type='email'], input[type='url'], input[type='search']{
+				border: 0;
+				padding: 0;
+				font-size: 20/@rem;
+				font-weight: 400;
+				letter-spacing: -0.28/@rem;
+			}
+		}
+	}
+	/*&-btn{
+		position: absolute;
+		bottom: -2.5rem;
+		left: 50%;
+		letter-spacing: 0;
+		padding: 1.5rem 2.3rem;
+		transform: translate(-50%,0);
+	}*/
+}
+.ask-form{
+	width: 570px;
+	padding: 4rem 4rem 6rem;
+}
 .field-status{
 	position: absolute;
 	right: 0;

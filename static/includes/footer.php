@@ -20,12 +20,12 @@
 				</div>
 			</div>
 			<div class="footer__top-col _2">
-				<div class="footer__ask">
+				<div class="footer__ask" data-ask>
 					<form action="">
 						<div class="footer__ask-field">
-							<select data-chosen>
-								<option value="">Задать вопрос</option>
-								<option value="">Оставить отзыв</option>
+							<select data-chosen data-ask-field>
+								<option value="question">Задать вопрос</option>
+								<option value="review">Оставить отзыв</option>
 							</select>
 						</div>
 						<button type="submit" class="footer__ask-btn"></button>
@@ -133,6 +133,54 @@
 			</div>
 		</div>
 	</div*/?>
+	<div class="hide">
+		<div class="b-form ask-form"  data-ask-content="review">
+			<form action="">
+				<h2>Оставить отзыв</h2>
+				<div class="subtitle">Воспользуйтесь данной формой, чтобы оставить отзыв</div>
+				<div class="b-form__content">
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
+							<div class="b-form__block-field">
+								<input type="text" placeholder="Иванов Иван Иванович">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">НОМЕР ТЕЛЕФОНА</div>
+							<div class="b-form__block-field">
+								<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
+							<div class="b-form__block-field">
+								<input type="text" placeholder="Иванов Иван Иванович">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<select data-chosen data-placeholder="Выберите тему">
+								<option value="" >Выберите тему</option>
+								<option value="" >Тема1</option>
+								<option value="" >Тема2</option>
+							</select>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block _textarea">
+							<textarea placeholder="Введите сообщение"></textarea>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 </footer>
 <script src="/static/theme/js/libs.js"></script>
 <script src="/static/theme/js/main.js"></script>

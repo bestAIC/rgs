@@ -101,6 +101,7 @@ app.init = function () {
 	app.initGoto();
 	app.CardP2P();
 	app.transfersMenu();
+	app.askForm();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -113,6 +114,32 @@ app.init = function () {
 	if(app.utils.isMobile){
 		app.mobSliders();
 	}
+};
+app.askForm = function () {
+	var $ask =  $('[data-ask]'),
+			$askForm = $ask.find('form'),
+			$askField = $ask.find('[data-ask-field]'),
+			$askContent = $('[data-ask-content]'),
+			$content = null
+
+		;
+	$askForm.on('submit',function () {
+		$content = $askContent;
+		$.fancybox({
+			wrapCSS 	: 'fc-base _forms',
+			content 	: $content,
+			fitToView	: false,
+			padding:0,
+			helpers : {
+				overlay : {
+					css : {
+						'background' : 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		});
+		return false;
+	});
 };
 app.CardP2P = function () {
 	var $transferBlock =  $('[data-transfer]'),

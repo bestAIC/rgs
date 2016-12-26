@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="/static/theme/js/chosen/chosen.css">
 	<link rel="stylesheet" href="/static/theme/js/jquery-ui/jquery-ui.min.css">
 	<link rel="stylesheet" href="/static/theme/js/scrollbar/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="/static/theme/js/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="/static/theme/css/styles.css">
 
 

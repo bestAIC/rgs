@@ -1092,6 +1092,78 @@ h4.small-bottom-indent {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
 }
+.b-form {
+  /*&-btn{
+		position: absolute;
+		bottom: -2.5rem;
+		left: 50%;
+		letter-spacing: 0;
+		padding: 1.5rem 2.3rem;
+		transform: translate(-50%,0);
+	}*/
+}
+.b-form .chosen-container-single .chosen-single {
+  border: 0.2rem solid #d0d4d9;
+  height: 6rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.028rem;
+}
+.b-form__row + .b-form__row {
+  margin-top: 3rem;
+}
+.b-form__content {
+  margin-top: 4rem;
+}
+.b-form__block-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+.b-form__block-field {
+  height: 4.6rem;
+  border-bottom: 0.2rem solid #d0d4d9;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+.b-form__block-field.phone-inp {
+  position: relative;
+}
+.b-form__block-field.phone-inp:before {
+  content: '+7';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.028rem;
+  line-height: 4.2rem;
+  z-index: 3;
+}
+.b-form__block-field.phone-inp input[type="text"] {
+  padding-left: 2.7rem;
+}
+.b-form__block-field input[type='text'],
+.b-form__block-field input[type='password'],
+.b-form__block-field input[type='tel'],
+.b-form__block-field input[type='date'],
+.b-form__block-field input[type='number'],
+.b-form__block-field input[type='email'],
+.b-form__block-field input[type='url'],
+.b-form__block-field input[type='search'] {
+  border: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.028rem;
+}
+.ask-form {
+  width: 570px;
+  padding: 4rem 4rem 6rem;
+}
 .field-status {
   position: absolute;
   right: 0;
@@ -1453,6 +1525,12 @@ span.pagination__item:focus {
 .mobile .pagination__btn._left {
   margin-right: 0.6rem;
 }
+.fancybox-wrap._forms .fancybox-skin {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-top: 6px solid #b31b2c;
+}
 .animation__top {
   opacity: 0;
   transform: translate(0, 10rem);
@@ -1606,6 +1684,9 @@ span.pagination__item:focus {
   top: 0;
   left: 0;
   right: 0;
+}
+.b-menu-visible .header._fixed .header__bottom {
+  bottom: 0;
 }
 .header._fixed .header__bottom-block {
   border-top: 1px solid whitesmoke;
