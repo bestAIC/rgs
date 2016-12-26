@@ -600,14 +600,20 @@ app.menu = function () {
 		var $self = $(this);
 		if($self.hasClass('_active')){
 			$menuSections.hide();
-			app.dom.$body.removeClass('menu-sections-visible menu-visible');
+			app.dom.$body.removeClass('menu-sections-visible');
 			$self.removeClass('_active');
 		}else{
 			$menuSections.show();
 			$self.addClass('_active');
 			app.dom.$body.addClass('menu-sections-visible ');
 		}
-
+	});
+	app.dom.$window.on('click.CloseRequests',function (e) {
+		if(!($(e.target).closest($menuSections).length || $(e.target).closest($menuSectionsShow).length)){
+			$menuSections.hide();
+			app.dom.$body.removeClass('menu-sections-visible');
+			$menuSectionsShow.removeClass('_active');
+		}
 	});
 	$menuWrap.hover(
 		function(){

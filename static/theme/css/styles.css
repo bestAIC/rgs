@@ -4073,7 +4073,8 @@ span.pagination__item:focus {
 .mobile .subscription__form-check {
   margin-top: 0;
 }
-.menu-visible:after {
+.menu-visible:after,
+.menu-sections-visible:after {
   content: '';
   position: fixed;
   top: 0;
@@ -4083,30 +4084,38 @@ span.pagination__item:focus {
   background-color: rgba(56, 56, 56, 0.6);
   z-index: 999;
 }
-.menu-visible .header {
+.menu-visible .header,
+.menu-sections-visible .header {
   z-index: 1000;
   background-color: #fff;
 }
-.menu-visible .header__bottom {
+.menu-visible .header__bottom,
+.menu-sections-visible .header__bottom {
   background-color: #fff;
 }
-.menu-visible .header__bottom-block {
+.menu-visible .header__bottom-block,
+.menu-sections-visible .header__bottom-block {
   border-top: 1px solid whitesmoke;
   border-bottom: 1px solid whitesmoke;
 }
-.menu-visible .header__search-btn {
+.menu-visible .header__search-btn,
+.menu-sections-visible .header__search-btn {
   background-image: url('../images/icons/search_black.svg');
 }
-.menu-visible .header__menu-link {
+.menu-visible .header__menu-link,
+.menu-sections-visible .header__menu-link {
   color: #191919;
 }
-.menu-visible .header__menu-link:hover {
+.menu-visible .header__menu-link:hover,
+.menu-sections-visible .header__menu-link:hover {
   color: #191919;
 }
-.menu-visible .header__menu-link:focus {
+.menu-visible .header__menu-link:focus,
+.menu-sections-visible .header__menu-link:focus {
   color: #191919;
 }
-.menu-visible .header__menu-btn-bar {
+.menu-visible .header__menu-btn-bar,
+.menu-sections-visible .header__menu-btn-bar {
   background-color: #000;
 }
 .menu-sections-visible {
