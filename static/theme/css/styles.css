@@ -4347,6 +4347,9 @@ span.pagination__item:focus {
 .mobile .menu__block-col + .menu__block-col {
   margin-top: 3rem;
 }
+.b-menu-visible-fixed .header__top {
+  display: none;
+}
 .b-menu-visible .b-menu {
   position: relative;
   left: 0;

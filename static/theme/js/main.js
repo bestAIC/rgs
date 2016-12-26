@@ -577,6 +577,7 @@ app.menu = function () {
 			$menuContent.hide();
 			$menuContent.filter('[data-menu-content="'+ data +'"]').show();
 			app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
+			app.dom.$body.removeClass('b-menu-visible-fixed');
 		});
 	}
 
@@ -592,6 +593,7 @@ app.menu = function () {
 		}
 		$menuContent.hide();
 		app.dom.$body.removeClass('b-menu-visible').addClass('menu-visible');
+		app.dom.$body.removeClass('b-menu-visible-fixed');
 		$menuLink.removeClass('_active');
 		$menuContent.filter('[data-menu-content="'+ data +'"]').show();
 		$self.addClass('_active');
@@ -629,6 +631,9 @@ app.menu = function () {
 	});
 
 	function openMenu() {
+		if(app.dom.$header.hasClass('_fixed')){
+			app.dom.$body.addClass('b-menu-visible-fixed');
+		}
 		$menuBtn.addClass('_active');
 		offset = app.dom.$window.scrollTop();
 		if(app.utils.isMobile){
@@ -645,6 +650,7 @@ app.menu = function () {
 		}
 	}
 	function closeMenu() {
+		app.dom.$body.removeClass('b-menu-visible-fixed');
 		$menuBtn.addClass('_hide-burger');
 		setTimeout(function () {
 			$menuBtn.removeClass('_hide-burger _active');
