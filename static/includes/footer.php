@@ -150,7 +150,7 @@
 					<div class="b-form__row">
 						<div class="b-form__block">
 							<div class="b-form__block-title">НОМЕР ТЕЛЕФОНА</div>
-							<div class="b-form__block-field">
+							<div class="b-form__block-field phone-inp">
 								<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
 							</div>
 						</div>
@@ -176,6 +176,58 @@
 						<div class="b-form__block _textarea">
 							<textarea placeholder="Введите сообщение"></textarea>
 						</div>
+					</div>
+					<div class="b-form__btn-wrap">
+						<button type="submit" class="btn _red b-form__btn">отправить отзыв</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="b-form ask-form"  data-ask-content="question">
+			<form action="">
+				<h2>Задать вопрос</h2>
+				<div class="subtitle">Воспользуйтесь данной формой, чтобы задать вопрос</div>
+				<div class="b-form__content">
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
+							<div class="b-form__block-field">
+								<input type="text" placeholder="Иванов Иван Иванович">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">НОМЕР ТЕЛЕФОНА</div>
+							<div class="b-form__block-field phone-inp">
+								<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
+							<div class="b-form__block-field">
+								<input type="text" placeholder="Иванов Иван Иванович">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<select data-chosen data-placeholder="Выберите тему">
+								<option value="" >Выберите тему</option>
+								<option value="" >Тема1</option>
+								<option value="" >Тема2</option>
+							</select>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block _textarea">
+							<textarea placeholder="Введите сообщение"></textarea>
+						</div>
+					</div>
+					<div class="b-form__btn-wrap">
+						<button type="submit" class="btn _red b-form__btn">Задать вопрос</button>
 					</div>
 				</div>
 			</form>

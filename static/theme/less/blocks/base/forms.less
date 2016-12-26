@@ -1,3 +1,21 @@
+.phone-inp{
+	position: relative;
+	&:before{
+		content: '+7';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		font-size: 20/@rem;
+		font-weight: 400;
+		letter-spacing: -0.28/@rem;
+		line-height: 42/@rem;
+		z-index: 3;
+	}
+	input[type="text"]{
+		padding-left: 2.7rem;
+	}
+}
 .b-form{
 	input[type='text'], input[type='password'], input[type='tel'], input[type='date'], input[type='number'], input[type='email'], input[type='url'], input[type='search'],textarea{
 		border: 0;
@@ -29,6 +47,15 @@
 	&__block{
 		&._textarea{
 			height: 24rem;
+			.mobile &{
+				height: 16rem;
+			}
+			textarea{
+				border: 2px solid #d0d4d9;
+				border-radius: 2px;
+				padding-top: 1.5rem;
+				padding-left: 1.8rem;
+			}
 		}
 		&-title{
 			font-size: 10/@rem;
@@ -62,18 +89,21 @@
 			}
 		}
 	}
-	/*&-btn{
-		position: absolute;
-		bottom: -2.5rem;
-		left: 50%;
-		letter-spacing: 0;
-		padding: 1.5rem 2.3rem;
-		transform: translate(-50%,0);
-	}*/
+	&__btn{
+		padding-right:2.5rem;
+		padding-left: 2.5rem;
+		&-wrap{
+			margin-top: 4rem;
+			text-align: center;
+		}
+	}
 }
 .ask-form{
-	width: 570px;
-	padding: 4rem 4rem 6rem;
+	width: 570/@rem;
+	padding: 4rem;
+	.mobile &{
+		width: 38rem;
+	}
 }
 .field-status{
 	position: absolute;

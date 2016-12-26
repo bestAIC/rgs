@@ -123,8 +123,15 @@ app.askForm = function () {
 			$content = null
 
 		;
+	$askContent.find('form').on('submit',function () {
+		var $self = $(this);
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			$.fancybox.close();
+		});
+		return false;
+	});
 	$askForm.on('submit',function () {
-		$content = $askContent;
+		$content = $askContent.filter('[data-ask-content="'+$askField.val()+'"]');
 		$.fancybox({
 			wrapCSS 	: 'fc-base _forms',
 			content 	: $content,
