@@ -3249,7 +3249,6 @@ span.pagination__item:focus {
   opacity: 1!important;
 }
 .products .product {
-  float: left;
   opacity: 0;
 }
 .touch .products .product {
@@ -3266,26 +3265,6 @@ span.pagination__item:focus {
 }
 .no-touch .products .product:hover {
   box-shadow: 0 1.6rem 6.4rem -1.2rem rgba(9, 9, 10, 0.16), 0 0.8rem 2rem -0.4rem rgba(9, 9, 10, 0.08);
-}
-.tablet.portrait .products {
-  padding-left: 2.7rem;
-}
-.tablet.portrait .products .product {
-  white-space: normal;
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  margin-right: 3rem;
-}
-.mobile .products {
-  padding: 1.5rem 2rem;
-}
-.mobile .products .product {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 0;
-  float: none;
-  width: 36.4rem;
 }
 .info-center {
   margin-bottom: -3rem;
@@ -7573,6 +7552,7 @@ span.pagination__item:focus {
   box-shadow: 0 1px 0.4rem rgba(179, 179, 179, 0.3);
   color: #fff;
   padding: 3.7rem 7.3rem 4.8rem;
+  display: block;
 }
 .product:hover {
   color: #fff;
@@ -7631,32 +7611,66 @@ span.pagination__item:focus {
   bottom: 0;
   width: 100%;
 }
-.tablet.portrait .product__title {
-  font-size: 1.6rem;
+.tablet.portrait .product {
+  float: none;
+  width: 100%;
+  height: 14rem;
+  padding: 2.6rem;
 }
-.tablet.portrait .product__val {
-  font-size: 3.4rem;
+.tablet.portrait .product__title {
+  float: left;
+  width: 52%;
+  height: 8rem;
+  white-space: nowrap;
+}
+.tablet.portrait .product__title > * {
+  white-space: normal;
+}
+.tablet.portrait .product__title:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+.tablet.portrait .product__title span {
+  display: inline-block;
+  vertical-align: middle!important;
+}
+.tablet.portrait .product__bottom {
+  float: left;
+  position: static;
+  width: 48%;
 }
 .mobile .product {
-  width: 36.4rem;
-  padding: 3.2rem 2.9rem 3.5rem;
+  height: 10.4rem;
+  width: 100%;
+  float: none;
+  padding: 1rem 2.7rem;
 }
-.mobile .product__inner {
-  height: 100%;
-  position: relative;
+.mobile .product__bottom {
+  display: none;
 }
 .mobile .product__title {
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 2rem;
   line-height: 2.5rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0;
+  height: 8rem;
+  white-space: nowrap;
 }
-.mobile .product__val {
-  color: white;
-  font-size: 3.6rem;
-  font-weight: 700;
-  line-height: 3.6rem;
-  margin-bottom: 1rem;
+.mobile .product__title > * {
+  white-space: normal;
+}
+.mobile .product__title:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+.mobile .product__title span {
+  display: inline-block;
+  vertical-align: middle!important;
 }
 .b-card {
   width: 27rem;
