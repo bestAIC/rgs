@@ -5320,7 +5320,7 @@ span.pagination__item:focus {
 }
 .deposit__info-banner {
   height: 40rem;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   margin-top: -2rem;
   position: relative;
 }
@@ -5346,15 +5346,21 @@ span.pagination__item:focus {
   z-index: 2;
 }
 .deposit__info-banner-title {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 2.4rem;
 }
 .deposit__info-banner-text {
-  font-size: 80px;
+  font-size: 8rem;
   font-weight: 700;
-  letter-spacing: -0.73px;
-  line-height: 85px;
+  letter-spacing: -0.073rem;
+  line-height: 8.5rem;
+}
+.deposit__info-banner-text._small {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.036rem;
+  line-height: 4.6rem;
 }
 .deposit__info-banner-img {
   background: none no-repeat center;

@@ -1107,13 +1107,15 @@ app.offices = function() {
 	});
 	function addMarkers($items) {
 		var latlngbounds = new google.maps.LatLngBounds(),
-				activeMarker = null
+				activeMarker = null,
+				firstPointData =$items.first().data('officePoint')
 			;
 
 		$items.each(function(){
 			var $self = $(this),
 					data1 = $self.data('officePoint')
 				;
+
 			var myLatLng = new google.maps.LatLng(data1.lat, data1.lan);
 			latlngbounds.extend(myLatLng);
 			var marker = new google.maps.Marker({
@@ -1140,7 +1142,9 @@ app.offices = function() {
 			map.setCenter( latlngbounds.getCenter());
 			map.setZoom(12);
 		}else{
-			map.setCenter( latlngbounds.getCenter(),map.fitBounds(latlngbounds));
+			//map.setCenter( latlngbounds.getCenter(),map.fitBounds(latlngbounds));
+			map.setCenter( {lat: firstPointData.lat, lng: firstPointData.lan},12);
+			map.setZoom(Math.max(map.getZoom(),12));
 		}
 	}
 

@@ -15,7 +15,7 @@
 	}
 	&__info-banner{
 		height: 40rem;
-		border-radius: 2px;
+		border-radius: 2/@rem;
 		margin-top: -2rem;
 		//margin-bottom: 4rem;
 		position: relative;
@@ -43,15 +43,21 @@
 			z-index: 2;
 		}
 		&-title{
-			font-size: 14px;
+			font-size: 14/@rem;
 			font-weight: 400;
-			line-height: 24px;
+			line-height: 24/@rem;
 		}
 		&-text{
-			font-size: 80px;
+			font-size: 80/@rem;
 			font-weight: 700;
-			letter-spacing: -0.73px;
-			line-height: 85px;
+			letter-spacing: -0.73/@rem;
+			line-height: 85/@rem;
+			&._small{
+				font-size: 40/@rem;
+				font-weight: 700;
+				letter-spacing: -0.36/@rem;
+				line-height: 46/@rem;
+			}
 		}
 		&-img{
 			background: none no-repeat center;

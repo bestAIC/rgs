@@ -25,7 +25,15 @@
 		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-
+					<div class="deposit__info-banner deposit-info__block">
+						<div class="deposit__info-banner-in">
+							<div class="deposit__info-banner-title">платежные системы</div>
+							<div class="deposit__info-banner-text _small">Visa и<br/>
+								MasterCard</div>
+						</div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ?'/static/theme/images/info-banners/card/Visa_Mc_pic.png'
+							:'/static/theme/images/info-banners/card/Visa_Mc_tablet_pic.png'?>)"></div>
+					</div>
 				</div>
 				<div class="inner__info-benefits">
 					<div class="inner__info-benefits-title">
