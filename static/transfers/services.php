@@ -29,8 +29,8 @@
 							<div class="deposit__info-banner-text">600</div>
 							<div class="deposit__info-banner-title">Услуг различных операторов</div>
 						</div>
-						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ?'/static/theme/images/info-banners/transactions/service_payments_pic.png'
-							:'/static/theme/images/info-banners/transactions/service_payments_tablet_pic.png'?>)"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/transactions/service_payments_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/transactions/service_payments_tablet_pic.png':'/static/theme/images/info-banners/transactions/Service_Payments_pic_mobile.png') ?>)"></div>
 					</div>
 					<div class="deposit-info__block block-indent is-desktop-block">
 						<h3>Способы оплаты</h3>

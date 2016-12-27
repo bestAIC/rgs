@@ -26,8 +26,8 @@
 							<div class="deposit__info-banner-text">0%</div>
 							<div class="deposit__info-banner-title">Комиссия за внутрибанковские операции</div>
 						</div>
-						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ?'/static/theme/images/info-banners/transactions/pay_and_transact_pic.png'
-							:'/static/theme/images/info-banners/transactions/pay_and_transact_tablet_pic.png'?>)"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/transactions/pay_and_transact_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/transactions/pay_and_transact_tablet_pic.png':'/static/theme/images/info-banners/transactions/Pay_and_Transact_pic_mobile.png') ?>)"></div>
 					</div>
 				</div>
 				<div class="inner__info-benefits">

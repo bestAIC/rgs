@@ -29,8 +29,8 @@
 							<div class="deposit__info-banner-title">Среднее время перевода</div>
 							<div class="deposit__info-banner-text">5 мин</div>
 						</div>
-						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ?'/static/theme/images/info-banners/transactions/transactions_pic.png'
-							:'/static/theme/images/info-banners/transactions/transactions_tablet_pic.png'?>)"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/transactions/transactions_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/transactions/transactions_tablet_pic.png':'/static/theme/images/info-banners/transactions/Transactions_pic_mobile.png') ?>)"></div>
 					</div>
 				</div>
 				<div class="inner__info-benefits">

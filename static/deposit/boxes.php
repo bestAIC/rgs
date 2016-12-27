@@ -24,12 +24,13 @@
 		<div class="inner__info _small-indent animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="deposit__info-banner _brown">
+					<div class="deposit__info-banner">
 						<div class="deposit__info-banner-in">
 							<div class="deposit__info-banner-title">Максимальный срок аренды</div>
 							<div class="deposit__info-banner-text">1 год</div>
 						</div>
-						<div class="deposit__info-banner-img" style="background-image: url(/static/theme/images/deposit/info-img/diamond.png);"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/deposit/deposit_boxes_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/deposit/deposit_boxes_tablet_pic.png':'/static/theme/images/info-banners/deposit/Deposit boxes_pic_mobile.png') ?>)"></div>
 					</div>
 				</div>
 				<div class="inner__info-benefits">
