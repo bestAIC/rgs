@@ -1,8 +1,8 @@
 .visa-card{
 	background-color: #fff;
-	font-size: 14px;
+	font-size: 14/@rem;
 	font-weight: 300;
-	line-height: 25px;
+	line-height: 25/@rem;
 	color: @title-color;
 	position: relative;
 	min-height: 35rem;
@@ -19,6 +19,26 @@
 			top: 6rem;
 			z-index: 2;
 		}
+		&._pos4-1{
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}
+		&._pos4-2{
+			right: 2.5rem;
+			top: 3rem;
+			z-index: 2;
+		}
+		&._pos4-3{
+			right: 10.5rem;
+			top: 9rem;
+			z-index: 3;
+		}
+		&._pos4-4{
+			right: 13rem;
+			top: 12rem;
+			z-index: 4;
+		}
 	}
 	&+&{
 		margin-top: 3rem;
@@ -27,24 +47,27 @@
 		padding: 3.3rem 4rem 5rem;
 	}
 	&__title{
-		font-size: 20px;
+		font-size: 20/@rem;
 		font-weight: 700;
-		line-height: 27px;
-		margin-bottom: 26px;
+		line-height: 27/@rem;
+		margin-bottom: 26/@rem;
 		max-width: 55rem;
 	}
 	&__images{
 		position: absolute;
 		right: 7rem;
 		top: 7rem;
+		&._pos2{
+			top: 4.8rem;
+		}
 	}
 	&__block{
 		width: 60rem;
-		//letter-spacing: -0.35px;
+		//letter-spacing: -0.35/@rem;
 		ul{
 			padding-left: 0;
-			margin-top: 42px;
-			margin-bottom: 10px;
+			margin-top: 42/@rem;
+			margin-bottom: 10/@rem;
 			li{
 				display: inline-block;
 				vertical-align: top;
@@ -59,22 +82,196 @@
 					height: 2px;
 					display: block;
 					background-color: #cca266;
-					margin-bottom: 10px;
+					margin-bottom: 10/@rem;
 				}
 			}
 		}
 	}
 	&__note{
-		font-size: 12px;
+		font-size: 12/@rem;
 		font-weight: 300;
-		letter-spacing: 0.04px;
-		line-height: 20px;
-		margin-top: 50px;
+		letter-spacing: 0.04/@rem;
+		line-height: 20/@rem;
+		margin-top: 50/@rem;
 		p{
 			margin: 0;
 			&+p{
 				margin-top: 1rem;
 			}
+		}
+	}
+}
+.tablet.portrait{
+	.visa-card{
+		.b-card{
+			width: 210/@rem;
+			height: 131/@rem;
+			&._pos2{
+				right: 7rem;
+				top: 4rem;
+			}
+			&._pos4-2{
+				right: 1.5rem;
+				top: 2rem;
+			}
+			&._pos4-3{
+				right: 5.5rem;
+				top: 6rem;
+			}
+			&._pos4-4{
+				right: 7rem;
+				top: 8rem;
+			}
+		}
+		&+&{
+			margin-top: 3rem;
+		}
+		&__inner{
+			padding: 3.3rem 3rem 4rem;
+		}
+		&__title{
+			max-width: 100%;
+		}
+		&__images{
+			right: 3rem;
+			top: 11rem;
+			&._pos2{
+				top: 8rem;
+			}
+			&._pos3{
+				top: 10.7rem;
+			}
+		}
+		&__block{
+			width: 35rem;
+			ul{
+				padding-left: 0;
+				margin-top: 11/@rem;
+				margin-bottom: 0;
+				li{
+					display:block;
+					vertical-align: top;
+					width: 100%;
+					margin-right:0;
+					position: relative;
+					padding-left: 2.8rem;
+					&+li{
+						margin-top: 0.9rem;
+						.mobile &{
+							margin-top: 1rem;
+						}
+					}
+					&:before{
+						content: '';
+						position: absolute;
+						top: 8/@rem;
+						left: 0;
+						width: 8/@rem;
+						height: 8/@rem;
+						border-radius: 50%;
+						background-color: @cGold;
+						margin-bottom: 0;
+						.mobile &{
+							top: 6/@rem;
+						}
+					}
+				}
+			}
+		}
+		&__note{
+			margin-top: 31/@rem;
+		}
+	}
+}
+.mobile{
+	.visa-card{
+		font-size: 14/@rem;
+		line-height: 20/@rem;
+		.b-card{
+			width: 210/@rem;
+			height: 131/@rem;
+			&._pos2{
+				right: 7rem;
+				top: 4rem;
+			}
+			&._pos4-1{
+				right: 0;
+				top: 0;
+				z-index: 1;
+			}
+			&._pos4-2{
+				right: 1.5rem;
+				top: 2rem;
+			}
+			&._pos4-3{
+				right: 5.5rem;
+				top: 6rem;
+			}
+			&._pos4-4{
+				right: 7rem;
+				top: 8rem;
+			}
+		}
+		&+&{
+			margin-top: 3rem;
+		}
+		&__inner{
+			padding: 3.3rem 3rem 4rem;
+		}
+		&__title{
+			margin-bottom: 21/@rem;
+		}
+		&__images{
+			position:relative;
+			width: 280/@rem;
+			height:180/@rem;
+			top:0;
+			left:0;
+			margin: 0 auto 2.1rem;
+			&._pos2{
+				top: 0;
+				height: 22rem;
+			}
+		}
+		&__block{
+			width: 100%;
+			//letter-spacing: -0.35/@rem;
+			ul{
+				padding-left: 0;
+				margin-top: 11/@rem;
+				margin-bottom: 0;
+				li{
+					display:block;
+					vertical-align: top;
+					width: 100%;
+					margin-right:0;
+					position: relative;
+					padding-left: 2.8rem;
+					&+li{
+						margin-top: 0.9rem;
+						.mobile &{
+							margin-top: 1rem;
+						}
+					}
+					&:before{
+						content: '';
+						position: absolute;
+						top: 8/@rem;
+						left: 0;
+						width: 8/@rem;
+						height: 8/@rem;
+						border-radius: 50%;
+						background-color: @cGold;
+						margin-bottom: 0;
+						.mobile &{
+							top: 6/@rem;
+						}
+					}
+				}
+			}
+		}
+		&__note{
+			margin-top: 20/@rem;
 		}
 	}
 }

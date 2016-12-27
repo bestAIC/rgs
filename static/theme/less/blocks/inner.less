@@ -119,6 +119,9 @@
 				margin-top: 55/@rem;
 				.btn{
 					letter-spacing: 0;
+					&+.btn{
+						margin-left: 1.7rem;
+					}
 				}
 			}
 		}
@@ -395,6 +398,14 @@
 				&-btn{
 					margin-top: 45/@rem;
 					text-align: center;
+					white-space: nowrap;
+					.btn{
+						padding: 1.5rem 3rem;
+						&+.btn{
+							padding: 1.5rem 1rem;
+							margin-left: 0.5rem;
+						}
+					}
 				}
 				&+.inner__info-block{
 					margin-top: 60/@rem;

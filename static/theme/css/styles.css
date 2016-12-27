@@ -7194,6 +7194,9 @@ span.pagination__item:focus {
 .inner__info-benefits-btn .btn {
   letter-spacing: 0;
 }
+.inner__info-benefits-btn .btn + .btn {
+  margin-left: 1.7rem;
+}
 .numerals {
   *zoom: 1;
 }
@@ -7436,6 +7439,14 @@ span.pagination__item:focus {
 .mobile .inner__info-benefits-btn {
   margin-top: 4.5rem;
   text-align: center;
+  white-space: nowrap;
+}
+.mobile .inner__info-benefits-btn .btn {
+  padding: 1.5rem 3rem;
+}
+.mobile .inner__info-benefits-btn .btn + .btn {
+  padding: 1.5rem 1rem;
+  margin-left: 0.5rem;
 }
 .mobile .inner__info-benefits + .inner__info-block {
   margin-top: 6rem;
@@ -9897,9 +9908,9 @@ span.pagination__item:focus {
 }
 .visa-card {
   background-color: #fff;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 2.5rem;
   color: #3e3e3e;
   position: relative;
   min-height: 35rem;
@@ -9918,6 +9929,26 @@ span.pagination__item:focus {
   top: 6rem;
   z-index: 2;
 }
+.visa-card .b-card._pos4-1 {
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.visa-card .b-card._pos4-2 {
+  right: 2.5rem;
+  top: 3rem;
+  z-index: 2;
+}
+.visa-card .b-card._pos4-3 {
+  right: 10.5rem;
+  top: 9rem;
+  z-index: 3;
+}
+.visa-card .b-card._pos4-4 {
+  right: 13rem;
+  top: 12rem;
+  z-index: 4;
+}
 .visa-card + .visa-card {
   margin-top: 3rem;
 }
@@ -9925,10 +9956,10 @@ span.pagination__item:focus {
   padding: 3.3rem 4rem 5rem;
 }
 .visa-card__title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 27px;
-  margin-bottom: 26px;
+  line-height: 2.7rem;
+  margin-bottom: 2.6rem;
   max-width: 55rem;
 }
 .visa-card__images {
@@ -9936,13 +9967,16 @@ span.pagination__item:focus {
   right: 7rem;
   top: 7rem;
 }
+.visa-card__images._pos2 {
+  top: 4.8rem;
+}
 .visa-card__block {
   width: 60rem;
 }
 .visa-card__block ul {
   padding-left: 0;
-  margin-top: 42px;
-  margin-bottom: 10px;
+  margin-top: 4.2rem;
+  margin-bottom: 1rem;
 }
 .visa-card__block ul li {
   display: inline-block;
@@ -9959,20 +9993,187 @@ span.pagination__item:focus {
   height: 2px;
   display: block;
   background-color: #cca266;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .visa-card__note {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 300;
-  letter-spacing: 0.04px;
-  line-height: 20px;
-  margin-top: 50px;
+  letter-spacing: 0.004rem;
+  line-height: 2rem;
+  margin-top: 5rem;
 }
 .visa-card__note p {
   margin: 0;
 }
 .visa-card__note p + p {
   margin-top: 1rem;
+}
+.tablet.portrait .visa-card .b-card {
+  width: 21rem;
+  height: 13.1rem;
+}
+.tablet.portrait .visa-card .b-card._pos2 {
+  right: 7rem;
+  top: 4rem;
+}
+.tablet.portrait .visa-card .b-card._pos4-2 {
+  right: 1.5rem;
+  top: 2rem;
+}
+.tablet.portrait .visa-card .b-card._pos4-3 {
+  right: 5.5rem;
+  top: 6rem;
+}
+.tablet.portrait .visa-card .b-card._pos4-4 {
+  right: 7rem;
+  top: 8rem;
+}
+.tablet.portrait .visa-card + .tablet.portrait .visa-card {
+  margin-top: 3rem;
+}
+.tablet.portrait .visa-card__inner {
+  padding: 3.3rem 3rem 4rem;
+}
+.tablet.portrait .visa-card__title {
+  max-width: 100%;
+}
+.tablet.portrait .visa-card__images {
+  right: 3rem;
+  top: 11rem;
+}
+.tablet.portrait .visa-card__images._pos2 {
+  top: 8rem;
+}
+.tablet.portrait .visa-card__images._pos3 {
+  top: 10.7rem;
+}
+.tablet.portrait .visa-card__block {
+  width: 35rem;
+}
+.tablet.portrait .visa-card__block ul {
+  padding-left: 0;
+  margin-top: 1.1rem;
+  margin-bottom: 0;
+}
+.tablet.portrait .visa-card__block ul li {
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  margin-right: 0;
+  position: relative;
+  padding-left: 2.8rem;
+}
+.tablet.portrait .visa-card__block ul li + li {
+  margin-top: 0.9rem;
+}
+.mobile .tablet.portrait .visa-card__block ul li + li {
+  margin-top: 1rem;
+}
+.tablet.portrait .visa-card__block ul li:before {
+  content: '';
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #cca266;
+  margin-bottom: 0;
+}
+.mobile .tablet.portrait .visa-card__block ul li:before {
+  top: 0.6rem;
+}
+.tablet.portrait .visa-card__note {
+  margin-top: 3.1rem;
+}
+.mobile .visa-card {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.mobile .visa-card .b-card {
+  width: 21rem;
+  height: 13.1rem;
+}
+.mobile .visa-card .b-card._pos2 {
+  right: 7rem;
+  top: 4rem;
+}
+.mobile .visa-card .b-card._pos4-1 {
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.mobile .visa-card .b-card._pos4-2 {
+  right: 1.5rem;
+  top: 2rem;
+}
+.mobile .visa-card .b-card._pos4-3 {
+  right: 5.5rem;
+  top: 6rem;
+}
+.mobile .visa-card .b-card._pos4-4 {
+  right: 7rem;
+  top: 8rem;
+}
+.mobile .visa-card + .mobile .visa-card {
+  margin-top: 3rem;
+}
+.mobile .visa-card__inner {
+  padding: 3.3rem 3rem 4rem;
+}
+.mobile .visa-card__title {
+  margin-bottom: 2.1rem;
+}
+.mobile .visa-card__images {
+  position: relative;
+  width: 28rem;
+  height: 18rem;
+  top: 0;
+  left: 0;
+  margin: 0 auto 2.1rem;
+}
+.mobile .visa-card__images._pos2 {
+  top: 0;
+  height: 22rem;
+}
+.mobile .visa-card__block {
+  width: 100%;
+}
+.mobile .visa-card__block ul {
+  padding-left: 0;
+  margin-top: 1.1rem;
+  margin-bottom: 0;
+}
+.mobile .visa-card__block ul li {
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  margin-right: 0;
+  position: relative;
+  padding-left: 2.8rem;
+}
+.mobile .visa-card__block ul li + li {
+  margin-top: 0.9rem;
+}
+.mobile .mobile .visa-card__block ul li + li {
+  margin-top: 1rem;
+}
+.mobile .visa-card__block ul li:before {
+  content: '';
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #cca266;
+  margin-bottom: 0;
+}
+.mobile .mobile .visa-card__block ul li:before {
+  top: 0.6rem;
+}
+.mobile .visa-card__note {
+  margin-top: 2rem;
 }
 .pull-right {
   float: right;

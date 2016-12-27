@@ -89,13 +89,18 @@
 					<div class="visa-card">
 						<div class="visa-card__inner">
 							<div class="visa-card__title">Visa Gold, Platinum / MasterCard Gold, Platinum</div>
-							<div class="visa-card__images"></div>
+							<div class="visa-card__images _pos2">
+								<div class="b-card _mc-platinum _pos4-1"></div>
+								<div class="b-card _mc-gold _pos4-2"></div>
+								<div class="b-card _visa-platinum _pos4-3"></div>
+								<div class="b-card _visa-gold _pos4-4"></div>
+							</div>
 							<div class="visa-card__block">
 								Банковские карты премиум-класса, которые смогут подчеркнуть состоятельность ее владельца и его высокое положение в обществе.
 								<ul>
 									<li>Высокое качество обслуживания</li>
 									<li>Скидки и льготы при оплате товаров и услуг*</li>
-									<li>Покупки, не выходя из дома — через Интернет и по телефону</li>
+									<li>Круглосуточная служба поддержки </li>
 								</ul>
 							</div>
 							<div class="visa-card__note">*Подробности по ссылкам: Visa и MasterCard</div>
@@ -106,7 +111,12 @@
 							<div class="visa-card__title">Премиальные карты Visa Gold, Platinum /
 								MasterCard Gold, Platinum с технологией
 								бесконтактной оплаты</div>
-							<div class="visa-card__images"></div>
+							<div class="visa-card__images _pos2 _pos3">
+								<div class="b-card _mc-platinum-pp _pos4-1"></div>
+								<div class="b-card _mc-gold-pp _pos4-2"></div>
+								<div class="b-card _visa-platinum-pw _pos4-3"></div>
+								<div class="b-card _visa-gold-pw _pos4-4"></div>
+							</div>
 							<div class="visa-card__block">
 								Банковские карты премиум-класса, выпускаемые по предложению Банка
 								<ul>
