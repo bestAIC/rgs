@@ -4,6 +4,22 @@
 	font-weight: 300;
 	line-height: 25px;
 	color: @title-color;
+	position: relative;
+	min-height: 35rem;
+	.b-card{
+		position: absolute;
+		box-shadow: 0 45/@rem 55/@rem -30/@rem rgba(44, 45, 49, .6);
+		&._pos1{
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}
+		&._pos2{
+			right: 13rem;
+			top: 6rem;
+			z-index: 2;
+		}
+	}
 	&+&{
 		margin-top: 3rem;
 	}
@@ -18,7 +34,9 @@
 		max-width: 55rem;
 	}
 	&__images{
-
+		position: absolute;
+		right: 7rem;
+		top: 7rem;
 	}
 	&__block{
 		width: 60rem;

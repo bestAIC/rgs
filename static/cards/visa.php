@@ -54,7 +54,10 @@
 					<div class="visa-card">
 						<div class="visa-card__inner">
 							<div class="visa-card__title">Visa Unembossed / MasterCard Unembossed</div>
-							<div class="visa-card__images"></div>
+							<div class="visa-card__images">
+								<div class="b-card _mc-unembossed _pos1"></div>
+								<div class="b-card _visa-unembossed _pos2"></div>
+							</div>
 							<div class="visa-card__block">
 								Аналог карты классической категории, данные которой (номер, владелец,
 								срок действия) напечатаны, но не эмбоссированы.
@@ -69,7 +72,10 @@
 					<div class="visa-card">
 						<div class="visa-card__inner">
 							<div class="visa-card__title">Visa Classic / MasterCard Standard</div>
-							<div class="visa-card__images"></div>
+							<div class="visa-card__images">
+								<div class="b-card _mc-standart _pos1"></div>
+								<div class="b-card _blue _pos2"></div>
+							</div>
 							<div class="visa-card__block">
 								Самые популярные и распространенные банковские карты в мире. Отличаются оптимальным соотношением стоимости и спектра предоставляемых услуг.
 								<ul>

@@ -7704,6 +7704,33 @@ span.pagination__item:focus {
 .b-card._visa-gold {
   background-image: url('../images/cards/visa-gold.png');
 }
+.b-card._mc-gold {
+  background-image: url('../images/cards/mc-gold.png');
+}
+.b-card._mc-gold-pp {
+  background-image: url('../images/cards/mc-gold-pp.png');
+}
+.b-card._mc-platinum-pp {
+  background-image: url('../images/cards/mc-platinum-pp.png');
+}
+.b-card._mc-standart {
+  background-image: url('../images/cards/mc-standart.png');
+}
+.b-card._mc-unembossed {
+  background-image: url('../images/cards/mc-unembossed.png');
+}
+.b-card._visa-gold-pw {
+  background-image: url('../images/cards/visa-gold-pw.png');
+}
+.b-card._visa-platinum {
+  background-image: url('../images/cards/visa-platinum.png');
+}
+.b-card._visa-platinum-pw {
+  background-image: url('../images/cards/visa-platinum-pw.png');
+}
+.b-card._visa-unembossed {
+  background-image: url('../images/cards/visa-unembossed.png');
+}
 .b-card._other {
   width: 22.7rem;
   background-image: url('../images/cards/other.png');
@@ -9874,6 +9901,22 @@ span.pagination__item:focus {
   font-weight: 300;
   line-height: 25px;
   color: #3e3e3e;
+  position: relative;
+  min-height: 35rem;
+}
+.visa-card .b-card {
+  position: absolute;
+  box-shadow: 0 4.5rem 5.5rem -3rem rgba(44, 45, 49, 0.6);
+}
+.visa-card .b-card._pos1 {
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.visa-card .b-card._pos2 {
+  right: 13rem;
+  top: 6rem;
+  z-index: 2;
 }
 .visa-card + .visa-card {
   margin-top: 3rem;
@@ -9887,6 +9930,11 @@ span.pagination__item:focus {
   line-height: 27px;
   margin-bottom: 26px;
   max-width: 55rem;
+}
+.visa-card__images {
+  position: absolute;
+  right: 7rem;
+  top: 7rem;
 }
 .visa-card__block {
   width: 60rem;
