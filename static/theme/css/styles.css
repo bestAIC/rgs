@@ -846,6 +846,37 @@ h4.small-bottom-indent {
   color: #b31b2c;
   margin-bottom: 1rem;
 }
+.international.deposit-documents__content {
+  padding: 2.2rem 4rem 3rem 3.9rem;
+}
+.international__contacts {
+  margin-top: 26px;
+}
+.international__contacts-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.international__contacts-text {
+  opacity: 0.5;
+  color: #3e3e3e;
+  margin-bottom: 17px;
+}
+.international__contacts-phone {
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 9px;
+  letter-spacing: -0.47px;
+}
+.phone {
+  color: #3e3e3e;
+}
+.phone:hover {
+  color: #3e3e3e;
+}
+.phone:focus {
+  color: #3e3e3e;
+}
 .breadcrumbs {
   color: #fff;
   font-size: 1.4rem;

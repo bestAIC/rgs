@@ -30,8 +30,8 @@
 							<div class="deposit__info-banner-title">типы расчетных карт</div>
 							<div class="deposit__info-banner-text _small">Gold, Platinum</div>
 						</div>
-						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/card/Visa_Mc_pic.png'
-							: ($tablePort ? '/static/theme/images/info-banners/card/Visa_Mc_tablet_pic.png':'') ?>)"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/card/Card_Premium_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/card/Card_Premium_tablet_pic.png':'/static/theme/images/info-banners/card/Premium_Card_pic_mobile.png') ?>)"></div>
 					</div>
 				</div>
 				<div class="inner__info-benefits">
@@ -84,8 +84,18 @@
 					<div class="deposit-info__right">
 						<div class="deposit-info__block">
 							<h3>International SOS</h3>
-							<div class="deposit-documents__content _contacts">
+							<div class="deposit-documents__content international">
 								Услуги консьерж-сервиса предоставлены Международной сервисной компанией International SOS
+								<div class="international__contacts">
+									<div class="international__contacts-title">Координационый Центр в Москве:</div>
+									<div class="international__contacts-phone">
+										<a href="tel:+74959376477" class="phone">+7 495 937 64 77</a>
+									</div>
+									<div class="international__contacts-text">
+										Круглосуточно и без выходных
+									</div>
+									<a href="http://www.internationalsos.ru/">www.internationalsos.ru</a>
+								</div>
 							</div>
 						</div>
 					</div>
