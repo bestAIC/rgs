@@ -105,9 +105,19 @@
 			height:100%;
 			color: #fff;
 			.middle;
+			.b-card{
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
 			&-in{
 				.middle__inner;
-				max-width: 55rem;
+				width: 100%;
+				position: relative;
+				&>*{
+					max-width: 55rem;
+				}
+
 			}
 		}
 		&-title{
@@ -154,6 +164,9 @@
 .mobile{
 	.top-banner{
 		height: 447/@rem;
+		.b-card{
+			display: none;
+		}
 		&__pag{
 			top:0;
 		}

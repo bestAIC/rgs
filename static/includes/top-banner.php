@@ -29,6 +29,7 @@
 			<div class="top-banner__slide-bg" style="background-image: url('/static/theme/images/home/banner/rgs_main_banner3.png');"></div>
 			<div class="top-banner__slide-block grid__inner">
 				<div class="top-banner__slide-block-in">
+					<div class="b-card _blue"></div>
 					<div class="top-banner__slide-title">
 						Отличная<br />карта
 					</div>

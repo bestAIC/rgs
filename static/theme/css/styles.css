@@ -2947,9 +2947,18 @@ span.pagination__item:focus {
   width: 0;
   height: 100%;
 }
+.top-banner__slide-block .b-card {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .top-banner__slide-block-in {
   display: inline-block;
   vertical-align: middle!important;
+  width: 100%;
+  position: relative;
+}
+.top-banner__slide-block-in > * {
   max-width: 55rem;
 }
 .top-banner__slide-title {
@@ -2989,6 +2998,9 @@ span.pagination__item:focus {
 }
 .mobile .top-banner {
   height: 44.7rem;
+}
+.mobile .top-banner .b-card {
+  display: none;
 }
 .mobile .top-banner__pag {
   top: 0;
