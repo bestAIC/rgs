@@ -48,7 +48,80 @@
 				</div>
 			</div>
 		</div>
-		<div class="b-blocks _gray">
+		<div class="b-blocks visa-cards _gray">
+			<div class="b-block animation__top" data-animation>
+				<div class="grid__inner">
+					<div class="visa-card">
+						<div class="visa-card__inner">
+							<div class="visa-card__title">Visa Unembossed / MasterCard Unembossed</div>
+							<div class="visa-card__images"></div>
+							<div class="visa-card__block">
+								Аналог карты классической категории, данные которой (номер, владелец,
+								срок действия) напечатаны, но не эмбоссированы.
+								<ul>
+									<li>Оплата и снятие через электронные терминалы и банкоматы</li>
+									<li>Без обязательной авторизации карты для покупок на сумму менее 50 долларов США</li>
+									<li>Покупки, не выходя из дома — через Интернет и по телефону</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="visa-card">
+						<div class="visa-card__inner">
+							<div class="visa-card__title">Visa Classic / MasterCard Standard</div>
+							<div class="visa-card__images"></div>
+							<div class="visa-card__block">
+								Самые популярные и распространенные банковские карты в мире. Отличаются оптимальным соотношением стоимости и спектра предоставляемых услуг.
+								<ul>
+									<li>Оплата и снятие через банкоматы, терминалы и импринтеры</li>
+									<li>Бронируйте номер в гостинице или арендуйте автомобиль</li>
+									<li>Покупки, не выходя из дома — через Интернет и по телефону</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="visa-card">
+						<div class="visa-card__inner">
+							<div class="visa-card__title">Visa Gold, Platinum / MasterCard Gold, Platinum</div>
+							<div class="visa-card__images"></div>
+							<div class="visa-card__block">
+								Банковские карты премиум-класса, которые смогут подчеркнуть состоятельность ее владельца и его высокое положение в обществе.
+								<ul>
+									<li>Высокое качество обслуживания</li>
+									<li>Скидки и льготы при оплате товаров и услуг*</li>
+									<li>Покупки, не выходя из дома — через Интернет и по телефону</li>
+								</ul>
+							</div>
+							<div class="visa-card__note">*Подробности по ссылкам: Visa и MasterCard</div>
+						</div>
+					</div>
+					<div class="visa-card">
+						<div class="visa-card__inner">
+							<div class="visa-card__title">Премиальные карты Visa Gold, Platinum /
+								MasterCard Gold, Platinum с технологией
+								бесконтактной оплаты</div>
+							<div class="visa-card__images"></div>
+							<div class="visa-card__block">
+								Банковские карты премиум-класса, выпускаемые по предложению Банка
+								<ul>
+									<li>Чип с бесконтактной технологией оплаты Visa payWave / MasterСard PayPass**</li>
+									<li>Скидки и льготы при оплате товаров и услуг*</li>
+									<li>Круглосуточная служба поддержки</li>
+								</ul>
+							</div>
+							<div class="visa-card__note">
+								<p>*Подробности по ссылкам: Visa и MasterCard</p>
+								<p>	**Оснащены чипом с бесконтактной технологией оплаты Visa payWave/MasterСard PayPass<br/>
+									- совмещают обычную магнитную полосу и чип-микропроцессор<br/>
+									- обеспечивают высокий уровень безопасности при осуществлении оплаты картой товаров и услуг (с чипа невозможно считать данные)<br/>
+									- позволяют осуществлять оплату товаров и услуг в одно касание: достаточно на мгновение поднести карту к ридеру на кассе торговой точки<br/>
+									- при сумме покупки до 1000 рублей не требуют введения PIN-кода или подписи на чеке
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<?include "../includes/subscription.php"?>
 			<?include "../includes/offices.php"?>
 			<div class="b-block animation__top" data-animation>

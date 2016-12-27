@@ -1,0 +1,62 @@
+.visa-card{
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25px;
+	color: @title-color;
+	&+&{
+		margin-top: 3rem;
+	}
+	&__inner{
+		padding: 3.3rem 4rem 5rem;
+	}
+	&__title{
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 27px;
+		margin-bottom: 26px;
+		max-width: 55rem;
+	}
+	&__images{
+
+	}
+	&__block{
+		width: 60rem;
+		//letter-spacing: -0.35px;
+		ul{
+			padding-left: 0;
+			margin-top: 42px;
+			margin-bottom: 10px;
+			li{
+				display: inline-block;
+				vertical-align: top;
+				width: 17rem;
+				margin-right: 3.6rem;
+				&:nth-child(3n){
+					margin-right: 0;
+				}
+				&:before{
+					content: '';
+					width: 7rem;
+					height: 2px;
+					display: block;
+					background-color: #cca266;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	&__note{
+		font-size: 12px;
+		font-weight: 300;
+		letter-spacing: 0.04px;
+		line-height: 20px;
+		margin-top: 50px;
+		p{
+			margin: 0;
+			&+p{
+				margin-top: 1rem;
+			}
+		}
+	}
+}

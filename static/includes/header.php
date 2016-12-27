@@ -275,7 +275,7 @@
 								<a href="/static/cards/client.php" class="b-menu__item-link">Карта Клиента</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="" class="b-menu__item-link">Премиальная карта</a>
+								<a href="/static/cards/premium.php" class="b-menu__item-link">Премиальная карта</a>
 							</div>
 						</div>
 						<div class="menu__block-col _col-3-2">
