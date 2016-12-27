@@ -148,7 +148,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="product__hidden middle" style="background-image: url('/static/theme/images/home/product/2.jpg');">
+			<div class="product__hidden middle" style="background-image: url('/static/theme/images/home/product/3.jpg');">
 				<div class="middle__inner">
 					<div class="btn _red">Узнать больше</div>
 				</div>

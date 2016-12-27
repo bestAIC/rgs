@@ -31,8 +31,8 @@
 							<div class="deposit__info-banner-text _small">Visa и<br/>
 								MasterCard</div>
 						</div>
-						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ?'/static/theme/images/info-banners/card/Visa_Mc_pic.png'
-							:'/static/theme/images/info-banners/card/Visa_Mc_tablet_pic.png'?>)"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/card/Visa_Mc_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/card/Visa_Mc_tablet_pic.png':'') ?>)"></div>
 					</div>
 				</div>
 				<div class="inner__info-benefits">
