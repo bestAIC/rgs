@@ -134,6 +134,15 @@
 		</div>
 	</div*/?>
 	<div class="hide">
+		<div class="welcome" data-welcome>
+			<h2>Добро пожаловать!</h2>
+			<div class="subtitle">Вы находитесь на Beta-версии нового сайта ПАО «РГС Банк»</div>
+			<div class="welcome__text">
+				Совсем скоро функционал разрастется, и мы заменим текущий сайт, а пока
+				предлагаем вам оценить новый дизайн и доступный функционал. Ваши
+				пожелания и замечания можно отправить на <a href="mailto:consult@rgsbank.ru">consult@rgsbank.ru</a>
+			</div>
+		</div>
 		<div class="b-form ask-form"  data-ask-content="review">
 			<form action="">
 				<h2>Оставить отзыв</h2>

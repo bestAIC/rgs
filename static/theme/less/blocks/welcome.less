@@ -1,0 +1,28 @@
+.welcome{
+	width: 770/@rem;
+	background-color: white;
+	padding: 6rem 7rem 7rem;
+	text-align: center;
+	.tablet.portrait &{
+		width: 600/@rem;
+		padding: 6rem 3rem 7rem;
+	}
+	.mobile &{
+		width: 38rem;
+		padding: 4rem 3rem 4rem;
+	}
+	h2{
+		margin-bottom: 17/@rem;
+	}
+	&__text{
+		font-size: 16/@rem;
+		font-weight: 400;
+		line-height: 25/@rem;
+		margin-top: 3.2rem;
+		.mobile &{
+			margin-top: 1.2rem;
+			font-size: 1.4rem;
+			line-height: 2rem;
+		}
+	}
+}

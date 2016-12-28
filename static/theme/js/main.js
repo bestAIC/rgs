@@ -102,6 +102,7 @@ app.init = function () {
 	app.CardP2P();
 	app.transfersMenu();
 	app.askForm();
+	app.welcome();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -147,6 +148,28 @@ app.askForm = function () {
 		});
 		return false;
 	});
+};
+app.welcome = function () {
+	var $welcome =  $('[data-welcome]')
+
+		;
+	if(!getCookie('welcomeWasShown')){
+		$.fancybox({
+			wrapCSS 	: 'fc-base _welcome',
+			content 	: $welcome,
+			fitToView	: false,
+			padding:0,
+			helpers : {
+				overlay : {
+					css : {
+						'background' : 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		});
+		setCookie('welcomeWasShown', true, {path: '/'});
+	}
+
 };
 app.CardP2P = function () {
 	var $transferBlock =  $('[data-transfer]'),

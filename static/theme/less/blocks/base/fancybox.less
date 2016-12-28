@@ -1,18 +1,25 @@
 .fancybox-wrap{
 	&._forms{
 		.fancybox-skin{
-			background-color: white;
-			border-radius: 2px;
-			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
 			border-top: 6/@rem solid @cRed;
 		}
-		.fancybox-close{
-			width: 2.5rem;
-			height:2.5rem;
-			background: url('@{pathToImg}icons/close_small.svg') no-repeat center;
-			background-size: 1.1rem;
-			top: 1.2rem;
-			right: 1rem;
+	}
+	&._welcome{
+		.fancybox-skin{
+			border-top: 6/@rem solid @cGold;
 		}
+	}
+	.fancybox-skin{
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+	}
+	.fancybox-close{
+		width: 2.5rem;
+		height:2.5rem;
+		background: url('@{pathToImg}icons/close_small.svg') no-repeat center;
+		background-size: 1.1rem;
+		top: 1.2rem;
+		right: 1rem;
 	}
 }

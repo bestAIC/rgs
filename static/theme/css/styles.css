@@ -1594,12 +1594,17 @@ span.pagination__item:focus {
   margin-right: 0.6rem;
 }
 .fancybox-wrap._forms .fancybox-skin {
+  border-top: 0.6rem solid #b31b2c;
+}
+.fancybox-wrap._welcome .fancybox-skin {
+  border-top: 0.6rem solid #cca266;
+}
+.fancybox-wrap .fancybox-skin {
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
-  border-top: 0.6rem solid #b31b2c;
 }
-.fancybox-wrap._forms .fancybox-close {
+.fancybox-wrap .fancybox-close {
   width: 2.5rem;
   height: 2.5rem;
   background: url('../images/icons/close_small.svg') no-repeat center;
@@ -5464,6 +5469,34 @@ span.pagination__item:focus {
 }
 .mobile .docs .deposit-doc__content ul li {
   padding-left: 4rem;
+}
+.welcome {
+  width: 77rem;
+  background-color: white;
+  padding: 6rem 7rem 7rem;
+  text-align: center;
+}
+.tablet.portrait .welcome {
+  width: 60rem;
+  padding: 6rem 3rem 7rem;
+}
+.mobile .welcome {
+  width: 38rem;
+  padding: 4rem 3rem 4rem;
+}
+.welcome h2 {
+  margin-bottom: 1.7rem;
+}
+.welcome__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-top: 3.2rem;
+}
+.mobile .welcome__text {
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 .deposit__text,
 .deposit .note-text {
