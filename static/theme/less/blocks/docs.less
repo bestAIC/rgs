@@ -1,0 +1,90 @@
+.docs{
+	box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+	.deposit-doc{
+		&+.deposit-doc{
+			box-shadow: none;
+			.deposit-doc__title{
+				border-top: 1px solid @cBorder;
+				padding: 2.8rem 6rem 2.7rem 4rem;
+			}
+		}
+		&__content{
+			background-color: whitesmoke;
+			.top-img{
+				float: right;
+			}
+			p,ul{
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
+			}
+			.note-text{
+				font-size: 13/@rem;
+				line-height: 23/@rem;
+				margin-top: 0;
+				padding-top: 12/@rem;
+			}
+			ul{
+				padding-left: 0;
+				margin-left: 0;
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.docs{
+		.deposit-doc{
+			margin-bottom: 0;
+			.top-img{
+				float: none;
+			}
+			&__content{
+				padding: 5rem 6rem 4.4rem 4rem;
+				.note-text{
+					padding-top: 1.3rem;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+				ul{
+					margin-left: 0;
+					li{
+						padding-left: 4rem;
+					}
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.docs{
+		.deposit-doc{
+			.top-img{
+				float: none;
+				max-width: 14.5rem;
+			}
+			&__content{
+				font-size: 16/@rem;
+				line-height: 25/@rem;
+				h3{
+					font-size: 24/@rem;
+					line-height: 32/@rem;
+				}
+				.note-text{
+					padding-right: 5rem;
+					padding-top: 1rem;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+				ul{
+					margin-left: 0;
+					margin-top: 1.5rem;
+					margin-bottom: 1.5rem;
+					li{
+						padding-left: 4rem;
+					}
+				}
+			}
+		}
+	}
+}

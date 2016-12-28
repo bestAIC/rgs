@@ -1,0 +1,58 @@
+.refill{
+	&__title {
+		.clearfix;
+		font-size: 20/@rem;
+		font-weight: 600;
+		line-height: 30/@rem;
+		color: @title-color;
+		&-col {
+			float: left;
+			width: 50%;
+			&:first-child {
+				padding-right: 2rem;
+			}
+		}
+	}
+	&__docs{
+		margin-top: 42/@rem;
+	}
+}
+.tablet.portrait{
+	.refill{
+		&__title {
+			&-col {
+				float: none;
+				width: 100%;
+				&:first-child {
+					padding-right: 0;
+				}
+				&+.refill__title-col{
+					margin-top: 1.2rem;
+				}
+			}
+		}
+		&__docs{
+			margin-top: 21/@rem;
+		}
+	}
+}
+.mobile{
+	.refill{
+		&__title {
+			font-size: 1.8rem;
+			&-col {
+				float: none;
+				width: 100%;
+				&:first-child {
+					padding-right: 0;
+				}
+				&+.refill__title-col{
+					margin-top: 1.2rem;
+				}
+			}
+		}
+		&__docs{
+			margin-top: 21/@rem;
+		}
+	}
+}

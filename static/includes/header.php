@@ -292,7 +292,7 @@
 								</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Пополнение счета</a>
+								<a href="/static/cards/refill.php" class="b-menu__item-link">Пополнение счета</a>
 							</div>
 						</div>
 					</div>

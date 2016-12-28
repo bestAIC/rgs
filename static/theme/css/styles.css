@@ -850,23 +850,23 @@ h4.small-bottom-indent {
   padding: 2.2rem 4rem 3rem 3.9rem;
 }
 .international__contacts {
-  margin-top: 26px;
+  margin-top: 2.6rem;
 }
 .international__contacts-title {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
 }
 .international__contacts-text {
   opacity: 0.5;
   color: #3e3e3e;
-  margin-bottom: 17px;
+  margin-bottom: 1.7rem;
 }
 .international__contacts-phone {
-  font-size: 34px;
+  font-size: 3.4rem;
   font-weight: 400;
-  margin-top: 9px;
-  letter-spacing: -0.47px;
+  margin-top: 0.9rem;
+  letter-spacing: -0.047rem;
 }
 .phone {
   color: #3e3e3e;
@@ -5330,6 +5330,140 @@ span.pagination__item:focus {
 }
 .mobile .status__table table td:first-child {
   width: 56%;
+}
+.refill__title {
+  *zoom: 1;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #3e3e3e;
+}
+.refill__title:before,
+.refill__title:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.refill__title:after {
+  clear: both;
+}
+.refill__title-col {
+  float: left;
+  width: 50%;
+}
+.refill__title-col:first-child {
+  padding-right: 2rem;
+}
+.refill__docs {
+  margin-top: 4.2rem;
+}
+.tablet.portrait .refill__title-col {
+  float: none;
+  width: 100%;
+}
+.tablet.portrait .refill__title-col:first-child {
+  padding-right: 0;
+}
+.tablet.portrait .refill__title-col + .refill__title-col {
+  margin-top: 1.2rem;
+}
+.tablet.portrait .refill__docs {
+  margin-top: 2.1rem;
+}
+.mobile .refill__title {
+  font-size: 1.8rem;
+}
+.mobile .refill__title-col {
+  float: none;
+  width: 100%;
+}
+.mobile .refill__title-col:first-child {
+  padding-right: 0;
+}
+.mobile .refill__title-col + .refill__title-col {
+  margin-top: 1.2rem;
+}
+.mobile .refill__docs {
+  margin-top: 2.1rem;
+}
+.docs {
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+}
+.docs .deposit-doc + .deposit-doc {
+  box-shadow: none;
+}
+.docs .deposit-doc + .deposit-doc .deposit-doc__title {
+  border-top: 1px solid #DEDFE0;
+  padding: 2.8rem 6rem 2.7rem 4rem;
+}
+.docs .deposit-doc__content {
+  background-color: whitesmoke;
+}
+.docs .deposit-doc__content .top-img {
+  float: right;
+}
+.docs .deposit-doc__content p,
+.docs .deposit-doc__content ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.docs .deposit-doc__content .note-text {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  margin-top: 0;
+  padding-top: 1.2rem;
+}
+.docs .deposit-doc__content ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+.tablet.portrait .docs .deposit-doc {
+  margin-bottom: 0;
+}
+.tablet.portrait .docs .deposit-doc .top-img {
+  float: none;
+}
+.tablet.portrait .docs .deposit-doc__content {
+  padding: 5rem 6rem 4.4rem 4rem;
+}
+.tablet.portrait .docs .deposit-doc__content .note-text {
+  padding-top: 1.3rem;
+}
+.tablet.portrait .docs .deposit-doc__content .note-text:last-child {
+  margin-bottom: 0;
+}
+.tablet.portrait .docs .deposit-doc__content ul {
+  margin-left: 0;
+}
+.tablet.portrait .docs .deposit-doc__content ul li {
+  padding-left: 4rem;
+}
+.mobile .docs .deposit-doc .top-img {
+  float: none;
+  max-width: 14.5rem;
+}
+.mobile .docs .deposit-doc__content {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.mobile .docs .deposit-doc__content h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.mobile .docs .deposit-doc__content .note-text {
+  padding-right: 5rem;
+  padding-top: 1rem;
+}
+.mobile .docs .deposit-doc__content .note-text:last-child {
+  margin-bottom: 0;
+}
+.mobile .docs .deposit-doc__content ul {
+  margin-left: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.mobile .docs .deposit-doc__content ul li {
+  padding-left: 4rem;
 }
 .deposit__text,
 .deposit .note-text {
