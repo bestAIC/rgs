@@ -4785,6 +4785,9 @@ span.pagination__item:focus {
   white-space: normal;
   overflow: visible;
 }
+.deposit-calc {
+  display: none!important;
+}
 .deposit-calc__block {
   *zoom: 1;
   margin-top: 3.3rem;
