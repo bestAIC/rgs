@@ -286,7 +286,7 @@
 								</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">
+								<a href="/static/cards/actions.php" class="b-menu__item-link">
 									Скидки и специальные
 									предложения
 								</a>

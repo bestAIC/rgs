@@ -5501,6 +5501,301 @@ span.pagination__item:focus {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+.actions__info {
+  color: #3e3e3e;
+  padding-bottom: 4.6rem;
+}
+.actions__info-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.actions__info-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.019rem;
+  line-height: 2.5rem;
+  margin-top: 1.9rem;
+}
+.actions__block {
+  z-index: 3;
+  margin-top: -8.9rem;
+}
+.actions__items {
+  margin-top: 2.6rem;
+}
+.actions__item {
+  color: #3e3e3e;
+  width: 57rem;
+  height: 33rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  float: left;
+  margin-top: 3rem;
+}
+.actions__item:nth-child(2n) {
+  margin-left: 3rem;
+}
+.actions__item-top {
+  padding: 2.4rem 4rem;
+}
+.actions__item-top-inner {
+  padding-left: 16rem;
+  position: relative;
+  height: 9.3rem;
+  padding-top: 1.9rem;
+}
+.actions__item-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none no-repeat center;
+  background-size: contain;
+  width: 13rem;
+  height: 9rem;
+}
+.actions__item-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.actions__item-site {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-top: 0.6rem;
+}
+.actions__item-benefits {
+  border-top: 1px solid #DEDFE0;
+  padding: 3.4rem 4rem 0;
+  *zoom: 1;
+}
+.actions__item-benefits:before,
+.actions__item-benefits:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.actions__item-benefits:after {
+  clear: both;
+}
+.actions__item-benefits._1-cols .actions__item-benefit {
+  width: 100%;
+}
+.actions__item-benefits._2-cols .actions__item-benefit {
+  width: 23rem;
+}
+.actions__item-benefits._2-cols .actions__item-benefit + .actions__item-benefit {
+  margin-left: 3rem;
+}
+.actions__item-benefits._3-cols .actions__item-benefit {
+  width: 14rem;
+}
+.actions__item-benefits._3-cols .actions__item-benefit + .actions__item-benefit {
+  margin-left: 3.5rem;
+}
+.actions__item-benefit {
+  float: left;
+}
+.actions__item-benefit-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.15rem;
+  line-height: 2.4rem;
+}
+.actions__item-benefit-title:after {
+  content: '';
+  display: block;
+  width: 7rem;
+  height: 2px;
+  background-color: #cca266;
+  margin-top: 2rem;
+  margin-bottom: 1.6rem;
+}
+.actions__item-benefit-text {
+  color: #8e9499;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.actions__form {
+  *zoom: 1;
+  padding: 1.6rem 2rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-top: 0.6rem solid #cca266;
+}
+.actions__form:before,
+.actions__form:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.actions__form:after {
+  clear: both;
+}
+.actions__form select {
+  border-color: #e8e8e8!important;
+}
+.actions__form-block {
+  float: left;
+  position: relative;
+}
+.actions__form-block + .actions__form-block {
+  margin-left: 2rem;
+}
+.actions__form-block._select {
+  width: 32rem;
+}
+.actions__form-block._inp {
+  width: 45rem;
+}
+.actions__form-btn {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 4.5rem;
+  background: url('../images/icons/loupe.svg') no-repeat center transparent;
+  background-size: 1.1rem;
+  border: 0;
+}
+.actions__form-field {
+  height: 4.8rem;
+}
+.actions__form-field input[type="text"] {
+  background-color: #fafafa;
+  border: 1px solid #dedfe0;
+}
+.tablet.portrait .actions__items {
+  margin-top: 1.3rem;
+}
+.tablet.portrait .actions__item {
+  margin-top: 2rem;
+  width: 100%;
+}
+.tablet.portrait .actions__item:nth-child(2n) {
+  margin-left: 0;
+}
+.tablet.portrait .actions__item-top {
+  padding: 2.4rem 3.2rem;
+}
+.tablet.portrait .actions__item-top-inner {
+  padding-left: 21.6rem;
+  padding-top: 2.1rem;
+}
+.tablet.portrait .actions__item-logo {
+  width: 19rem;
+}
+.tablet.portrait .actions__item-benefits {
+  padding: 3.5rem 3.2rem 0;
+  *zoom: 1;
+}
+.tablet.portrait .actions__item-benefits:before,
+.tablet.portrait .actions__item-benefits:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .actions__item-benefits:after {
+  clear: both;
+}
+.tablet.portrait .actions__item-benefits._2-cols .actions__item-benefit {
+  width: 18rem;
+}
+.tablet.portrait .actions__item-benefits._2-cols .actions__item-benefit + .actions__item-benefit {
+  margin-left: 3.5rem;
+}
+.tablet.portrait .actions__item-benefits._3-cols .actions__item-benefit {
+  width: 18rem;
+}
+.tablet.portrait .actions__item-benefits._3-cols .actions__item-benefit + .actions__item-benefit {
+  margin-left: 3.5rem;
+}
+.tablet.portrait .actions__item-benefit-title:after {
+  width: 9.2rem;
+  margin-top: 1.7rem;
+  margin-bottom: 1.8rem;
+}
+.tablet.portrait .actions__form {
+  padding: 1.6rem 2rem;
+}
+.tablet.portrait .actions__form-block + .actions__form-block {
+  margin-left: 1.4rem;
+}
+.tablet.portrait .actions__form-block._select {
+  width: 33rem;
+}
+.tablet.portrait .actions__form-block._inp {
+  width: 100%;
+  margin-left: 0!important;
+  margin-top: 1.2rem;
+}
+.mobile .actions__info {
+  padding-bottom: 3.2rem;
+}
+.mobile .actions__info-title {
+  padding-right: 2rem;
+}
+.mobile .actions__block {
+  margin-top: -7rem;
+}
+.mobile .actions__items {
+  margin-top: 3rem;
+}
+.mobile .actions__item {
+  width: 100%;
+  height: auto;
+  float: none;
+  margin-top: 2rem;
+}
+.mobile .actions__item:nth-child(2n) {
+  margin-left: 0;
+}
+.mobile .actions__item-top {
+  padding: 2.4rem 4rem 3.4rem;
+}
+.mobile .actions__item-top-inner {
+  padding-left: 0;
+  text-align: center;
+  height: auto;
+  padding-top: 0;
+}
+.mobile .actions__item-logo {
+  position: static;
+  width: 18rem;
+  margin: 0 auto;
+}
+.mobile .actions__item-title {
+  margin-top: 1rem;
+}
+.mobile .actions__item-benefits {
+  padding: 3.7rem 4rem 4.2rem;
+}
+.mobile .actions__item-benefit {
+  float: none;
+  width: 100%!important;
+  text-align: center;
+}
+.mobile .actions__item-benefit + .actions__item-benefit {
+  margin-top: 2.7rem;
+  margin-left: 0!important;
+}
+.mobile .actions__item-benefit-title:after {
+  width: 10rem;
+  margin: 2rem auto;
+}
+.mobile .actions__form-block {
+  float: none;
+  width: 100%!important;
+}
+.mobile .actions__form-block + .actions__form-block {
+  margin-left: 0;
+  margin-top: 2rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;

@@ -103,6 +103,7 @@ app.init = function () {
 	app.transfersMenu();
 	app.askForm();
 	app.welcome();
+	app.actions();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -145,6 +146,24 @@ app.askForm = function () {
 					}
 				}
 			}
+		});
+		return false;
+	});
+};
+app.actions = function () {
+	var $actions =  $('[data-actions]'),
+			$actionsForm = $actions.find('form'),
+			$actionsFields = $actionsForm.find('[data-actions-form-field]'),
+			$actionsItems = $actions.find('[data-actions-items]')
+
+		;
+	$actionsFields.on('change',function () {
+		$actionsForm.trigger('submit');
+	});
+	$actionsForm.on('submit',function () {
+		var $self = $(this);
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			$actionsItems.html(data);
 		});
 		return false;
 	});
