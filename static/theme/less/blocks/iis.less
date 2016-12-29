@@ -1,0 +1,154 @@
+.iis{
+	&__conditions{
+		margin-top: 36/@rem;
+		table{
+			width: 100%;
+			border-bottom: 1px solid @cBorder;
+			margin-bottom: 18/@rem;
+			td{
+				vertical-align: top;
+				font-size: 14/@rem;
+				font-weight: 600;
+				line-height: 25/@rem;
+				color: @title-color;
+				border-top: 1px solid @cBorder;
+				padding-top: 3.7rem;
+				padding-bottom: 3.7rem;
+				&:nth-child(2){
+					color: @text-color;
+					font-size: 2.4rem;
+					padding-left: 1.5rem;
+					width: 50%;
+				}
+			}
+		}
+	}
+	&__options{
+		margin-top: 33/@rem;
+		.clearfix;
+		&-block{
+			float: left;
+			width: 570/@rem;
+			height: 270/@rem;
+			border: 1px solid #dadada;
+			padding: 5rem 8.8rem 1rem 5.8rem;
+			&+&{
+				margin-left: 3rem;
+			}
+			&-title{
+				font-size: 20/@rem;
+				font-weight: 300;
+				line-height: 25/@rem;
+				letter-spacing: -0.5/@rem;
+			}
+		}
+		&-items{
+			margin-top: 17/@rem;
+			.clearfix;
+		}
+	}
+	&__option{
+		float: left;
+		width: 50%;
+		&-val{
+			font-size: 60/@rem;
+			font-weight: 700;
+			letter-spacing: -1/@rem;
+			line-height: 70/@rem;
+			color: @title-color;
+		}
+		&-text{
+			color: #8e9499;
+			font-size: 14/@rem;
+			line-height: 24/@rem;
+			&:before{
+				content: '';
+				display: block;
+				width: 7rem;
+				height:2px;
+				background: @cGold;
+				margin-top: 1.6rem;
+				margin-bottom: 1.8rem;
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.iis{
+		.numerals__block{
+			width: 100%;
+		}
+		&__conditions{
+			table{
+				td{
+					&:nth-child(2){
+						font-size: 2.2rem;
+					}
+				}
+			}
+		}
+		&__options{
+			&-block{
+				width: 342/@rem;
+				height: 240/@rem;
+				padding: 3.2rem 0 1rem 3rem;
+				&-title{
+					font-size: 16/@rem;
+					letter-spacing: -0.4/@rem;
+					padding-right: 1rem;
+				}
+			}
+			&-items{
+				margin-top: 24/@rem;
+			}
+		}
+		&__option{
+			padding-right: 1rem;
+			&-val{
+				font-size: 48/@rem;
+				line-height: 4.4rem;
+				letter-spacing: -0.8/@rem;
+			}
+			&-text{
+				&:before{
+					margin-top: 2.4rem;
+					margin-bottom: 1.8rem;
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.iis{
+		&__conditions{
+			table{
+				td{
+					font-size: 12/@rem;
+					line-height: 18/@rem;
+					padding-top: 2.2rem;
+					padding-bottom: 2.2rem;
+					&:nth-child(2){
+						font-size: 1.4rem;
+						padding-left: 1rem;
+						width: 57%;
+					}
+				}
+			}
+		}
+		&__options{
+			&-block{
+				float: none;
+				width: 100%;
+				height: auto;
+				padding: 2rem;
+				&+.iis__options-block{
+					margin-left: 0;
+					margin-top: 3rem;
+				}
+				&-title{
+					font-size: 16/@rem;
+				}
+			}
+		}
+	}
+}

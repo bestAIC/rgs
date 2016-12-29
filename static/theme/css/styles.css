@@ -5864,6 +5864,152 @@ span.pagination__item:focus {
   height: 36.6rem;
   background-image: url('../images/credit/stairs_mobile.jpg');
 }
+.iis__conditions {
+  margin-top: 3.6rem;
+}
+.iis__conditions table {
+  width: 100%;
+  border-bottom: 1px solid #DEDFE0;
+  margin-bottom: 1.8rem;
+}
+.iis__conditions table td {
+  vertical-align: top;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color: #3e3e3e;
+  border-top: 1px solid #DEDFE0;
+  padding-top: 3.7rem;
+  padding-bottom: 3.7rem;
+}
+.iis__conditions table td:nth-child(2) {
+  color: #191919;
+  font-size: 2.4rem;
+  padding-left: 1.5rem;
+  width: 50%;
+}
+.iis__options {
+  margin-top: 3.3rem;
+  *zoom: 1;
+}
+.iis__options:before,
+.iis__options:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.iis__options:after {
+  clear: both;
+}
+.iis__options-block {
+  float: left;
+  width: 57rem;
+  height: 27rem;
+  border: 1px solid #dadada;
+  padding: 5rem 8.8rem 1rem 5.8rem;
+}
+.iis__options-block + .iis__options-block {
+  margin-left: 3rem;
+}
+.iis__options-block-title {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  letter-spacing: -0.05rem;
+}
+.iis__options-items {
+  margin-top: 1.7rem;
+  *zoom: 1;
+}
+.iis__options-items:before,
+.iis__options-items:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.iis__options-items:after {
+  clear: both;
+}
+.iis__option {
+  float: left;
+  width: 50%;
+}
+.iis__option-val {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  line-height: 7rem;
+  color: #3e3e3e;
+}
+.iis__option-text {
+  color: #8e9499;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.iis__option-text:before {
+  content: '';
+  display: block;
+  width: 7rem;
+  height: 2px;
+  background: #cca266;
+  margin-top: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+.tablet.portrait .iis .numerals__block {
+  width: 100%;
+}
+.tablet.portrait .iis__conditions table td:nth-child(2) {
+  font-size: 2.2rem;
+}
+.tablet.portrait .iis__options-block {
+  width: 34.2rem;
+  height: 24rem;
+  padding: 3.2rem 0 1rem 3rem;
+}
+.tablet.portrait .iis__options-block-title {
+  font-size: 1.6rem;
+  letter-spacing: -0.04rem;
+  padding-right: 1rem;
+}
+.tablet.portrait .iis__options-items {
+  margin-top: 2.4rem;
+}
+.tablet.portrait .iis__option {
+  padding-right: 1rem;
+}
+.tablet.portrait .iis__option-val {
+  font-size: 4.8rem;
+  line-height: 4.4rem;
+  letter-spacing: -0.08rem;
+}
+.tablet.portrait .iis__option-text:before {
+  margin-top: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.mobile .iis__conditions table td {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+}
+.mobile .iis__conditions table td:nth-child(2) {
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  width: 57%;
+}
+.mobile .iis__options-block {
+  float: none;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+.mobile .iis__options-block + .iis__options-block {
+  margin-left: 0;
+  margin-top: 3rem;
+}
+.mobile .iis__options-block-title {
+  font-size: 1.6rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
@@ -7811,6 +7957,13 @@ span.pagination__item:focus {
   letter-spacing: -0.5rem;
   margin-left: -0.5rem;
   white-space: nowrap;
+}
+.numerals__item._big .numerals__item-val span {
+  font-size: 6rem;
+  padding-right: 1.5rem;
+}
+.mobile .numerals__item._big .numerals__item-val span {
+  line-height: 4rem;
 }
 .numerals__item._big .numerals__item-dash {
   margin-top: 4.6rem;

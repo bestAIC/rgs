@@ -172,7 +172,14 @@
 					line-height: 124/@rem;
 					letter-spacing: -5/@rem;
 					margin-left: -5/@rem;
-					white-space: nowrap
+					white-space: nowrap;
+					span{
+						font-size: 6rem;
+						padding-right: 1.5rem;
+						.mobile &{
+							line-height: 4rem;
+						}
+					}
 				}
 				&-dash{
 					margin-top: 46/@rem;

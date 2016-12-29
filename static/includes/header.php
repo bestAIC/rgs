@@ -321,7 +321,7 @@
 					<div class="menu__block-inner">
 						<div class="menu__block-col _col-5-1">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Индивидуальный инвестиционный счет</a>
+								<a href="/static/invest/iis.php" class="b-menu__item-link">Индивидуальный инвестиционный счет</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Инвестиционное страхование жизни</a>
