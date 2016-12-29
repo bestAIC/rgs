@@ -24,7 +24,14 @@
 		<div class="inner__info _small-indent animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="deposit__info-img" style="background-image: url(/static/theme/images/home/banner/1.jpg);"></div>
+					<div class="deposit__info-banner no-mob-block">
+						<div class="deposit__info-banner-in">
+							<div class="deposit__info-banner-title"></div>
+							<div class="deposit__info-banner-text"></div>
+						</div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/deposit/Payments_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/deposit/Payments_tablet_pic.png':'') ?>)"></div>
+					</div>
 				</div>
 				<div class="inner__info-benefits">
 					<div class="inner__info-benefits-title">
