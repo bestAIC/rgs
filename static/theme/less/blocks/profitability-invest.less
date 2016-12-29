@@ -1,0 +1,139 @@
+.profitability-invest{
+	color: @title-color;
+	background-color: white;
+	border-radius: 2/@rem;
+	box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+	position: relative;
+	margin-top: 30/@rem;
+	padding: 45/@rem 60/@rem 51/@rem;
+	&__block{
+		width: 524/@rem;
+		overflow: hidden;
+		padding-right: 5rem;
+	}
+	&__title{
+		font-size: 16/@rem;
+		font-weight: 400;
+		letter-spacing: -0.22/@rem;
+		line-height: 24/@rem;
+	}
+	&__items{
+		margin-top: 27/@rem;
+		&:before{
+			content: '';
+			display: block;
+			width: 7rem;
+			height: 2px;
+			background-color: @cGold;
+			margin-bottom: 54/@rem;
+		}
+	}
+	&__item{
+		&+&{
+			margin-top: 23/@rem;
+		}
+		&-title{
+			font-size: 22/@rem;
+			font-weight: 600;
+			line-height: 30/@rem;
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			&:after{
+				content: '';
+				position: absolute;
+				left: 100%;
+				margin-left: 1.4rem;
+				display: block;
+				width: 50rem;
+				top: 1.7rem;
+				border: 1px dashed #acb6bf;
+			}
+		}
+		&-text{
+			margin-top: 9/@rem;
+			opacity: 0.5;
+			font-size: 16/@rem;
+			letter-spacing: -0.22/@rem;
+			line-height: 24/@rem;
+		}
+	}
+	&__img{
+		width: 519/@rem;
+		height: 312/@rem;
+		background: url('@{pathToImg}invest/profitability.png') no-repeat center;
+		background-size: contain;
+		position: absolute;
+		right: 5rem;
+		top: 5.3rem;
+	}
+}
+.tablet.portrait{
+	.profitability-invest{
+		padding: 35/@rem 30/@rem 65/@rem;
+		&__block{
+			width: 100%;
+			overflow: hidden;
+			padding-right: 0;
+		}
+		&__title{
+			width: 490/@rem;
+		}
+		&__items{
+			&:before{
+				margin-bottom: 44/@rem;
+			}
+		}
+		&__item{
+			float: left;
+			width: 280/@rem;
+			padding-right: 2rem;
+			&+.profitability-invest__item{
+				margin-top: 0;
+				width: 360/@rem;
+			}
+			&-title{
+				&:after{
+					display: none;
+				}
+			}
+		}
+		&__img{
+			position: static;
+			margin-top: 60/@rem;
+			margin-left: 63/@rem;
+		}
+	}
+}
+.mobile{
+	.profitability-invest{
+		padding: 35/@rem 27/@rem 40/@rem;
+		&__block{
+			width: 100%;
+			padding-right: 0;
+		}
+		&__title{
+		}
+		&__items{
+			margin-top: 29/@rem;
+			&:before{
+				margin-bottom: 24/@rem;
+			}
+		}
+		&__item{
+			&-title{
+				&:after{
+					display: none;
+				}
+			}
+		}
+		&__img{
+			width: 328/@rem;
+			height: 322/@rem;
+			background-image: url('@{pathToImg}invest/profitability_mobile.png');
+			position: static;
+			margin-top: 45/@rem;
+			margin-left: 3/@rem;
+		}
+	}
+}
