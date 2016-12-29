@@ -58,20 +58,16 @@ gulp.task('jsMain:min', function() {
 
 gulp.task('jsLibs:concat', function() {
 	return gulp.src([
-		options.sourcePathScripts + '/jquery-2.2.0.min.js',
 		options.sourcePathScripts + '/jquery-ui/jquery-ui.min.js',
 		options.sourcePathScripts + '/jquery.ui.touch-punch.min.js',
 		options.sourcePathScripts + '/swiper/dist/js/swiper.min.js',
 		options.sourcePathScripts + '/chosen/chosen.jquery.js',
 		options.sourcePathScripts + '/underscore-min.js',
 		options.sourcePathScripts + '/modernizr-latest.js',
-		options.sourcePathScripts + '/device.js',
 		options.sourcePathScripts + '/scrollbar/jquery.mCustomScrollbar.concat.min.js',
 		options.sourcePathScripts + '/jquery.mask.min.js',
 		options.sourcePathScripts + '/jquery.touchSwipe.min.js',
 		options.sourcePathScripts + '/radiocheck.js',
-		options.sourcePathScripts + '/Cookie.js',
-		options.sourcePathScripts + '/helperSiteTypeDetect.js',
 		options.sourcePathScripts + '/fancybox/jquery.fancybox.pack.js',
 		options.sourcePathScripts + '/circle-progress.min.js'
 	])

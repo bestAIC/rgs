@@ -31,4 +31,4 @@ $.fn.idealRadioCheck = function() {
       click: function() { $(this).trigger('focus') }
     })
   })
-}
+};
