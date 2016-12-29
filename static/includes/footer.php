@@ -144,7 +144,7 @@
 			</div>
 		</div>
 		<div class="b-form ask-form"  data-ask-content="review">
-			<form action="">
+			<form action="/static/ajax/askForm.php">
 				<h2>Оставить отзыв</h2>
 				<div class="subtitle">Воспользуйтесь данной формой, чтобы оставить отзыв</div>
 				<div class="b-form__content">
@@ -186,6 +186,7 @@
 							<textarea placeholder="Введите сообщение"></textarea>
 						</div>
 					</div>
+					<div class="b-form__errors" data-form-errors></div>
 					<div class="b-form__btn-wrap">
 						<button type="submit" class="btn _red b-form__btn">отправить отзыв</button>
 					</div>
@@ -193,7 +194,7 @@
 			</form>
 		</div>
 		<div class="b-form ask-form"  data-ask-content="question">
-			<form action="">
+			<form action="/static/ajax/askForm.php">
 				<h2>Задать вопрос</h2>
 				<div class="subtitle">Воспользуйтесь данной формой, чтобы задать вопрос</div>
 				<div class="b-form__content">
@@ -235,6 +236,7 @@
 							<textarea placeholder="Введите сообщение"></textarea>
 						</div>
 					</div>
+					<div class="b-form__errors" data-form-errors></div>
 					<div class="b-form__btn-wrap">
 						<button type="submit" class="btn _red b-form__btn">Задать вопрос</button>
 					</div>

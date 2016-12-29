@@ -1171,6 +1171,35 @@ h4.small-bottom-indent {
 .b-form .chosen-container-single .chosen-single.chosen-default {
   color: #acb6bf;
 }
+.b-form__errors ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.004rem;
+  line-height: 2rem;
+  color: #b31b2c;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+}
+.b-form__errors ul li {
+  position: relative;
+  padding-left: 3rem;
+}
+.b-form__errors ul li + li {
+  margin-top: 1rem;
+}
+.b-form__errors ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: url('../images/icons/attention.svg') no-repeat center #b31b2c;
+  background-size: 0.3rem 0.9rem;
+}
 .b-form__row + .b-form__row {
   margin-top: 3rem;
 }
@@ -1184,8 +1213,8 @@ h4.small-bottom-indent {
   height: 16rem;
 }
 .b-form__block._textarea textarea {
-  border: 2px solid #d0d4d9;
-  border-radius: 2px;
+  border: 0.2rem solid #d0d4d9;
+  border-radius: 0.2rem;
   padding-top: 1.5rem;
   padding-left: 1.8rem;
 }

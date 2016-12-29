@@ -126,10 +126,15 @@ app.askForm = function () {
 
 		;
 	$askContent.find('form').on('submit',function () {
-		var $self = $(this);
+		var $self = $(this),
+				$errors = $self.find('[data-form-errors]')
+			;
 		$.post($self.attr('action'), $self.serialize(), function(data){
 			if(!data.errors){
+				$errors.hide();
 				$.fancybox.close();
+			}else{
+				$errors.html(data.errors).show();
 			}
 		},'json');
 		return false;

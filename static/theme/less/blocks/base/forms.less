@@ -36,6 +36,37 @@
 			color: #acb6bf;
 		}
 	}
+	&__errors{
+		ul{
+			list-style: none;
+			padding-left: 0;
+			font-size: 12/@rem;
+			font-weight: 400;
+			letter-spacing: 0.04/@rem;
+			line-height: 20/@rem;
+			color: @cRed;
+			margin-top: 20/@rem;
+			margin-bottom: -10/@rem;
+			li{
+				position: relative;
+				padding-left: 3rem;
+				&+li{
+					margin-top: 1rem;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					left:0;
+					top:2/@rem;
+					width: 16/@rem;
+					height: 16/@rem;
+					border-radius: 50%;
+					background: url('@{pathToImg}icons/attention.svg') no-repeat center @cRed;
+					background-size: 0.3rem 0.9rem;
+				}
+			}
+		}
+	}
 	&__row{
 		&+&{
 			margin-top: 3rem;
@@ -51,8 +82,8 @@
 				height: 16rem;
 			}
 			textarea{
-				border: 2px solid #d0d4d9;
-				border-radius: 2px;
+				border: 2/@rem solid #d0d4d9;
+				border-radius: 2/@rem;
 				padding-top: 1.5rem;
 				padding-left: 1.8rem;
 			}
