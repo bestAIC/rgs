@@ -131,7 +131,7 @@ app.askForm = function () {
 			if(!data.errors){
 				$.fancybox.close();
 			}
-		});
+		},'json');
 		return false;
 	});
 	$askForm.on('submit',function () {
