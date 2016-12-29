@@ -128,7 +128,9 @@ app.askForm = function () {
 	$askContent.find('form').on('submit',function () {
 		var $self = $(this);
 		$.post($self.attr('action'), $self.serialize(), function(data){
-			$.fancybox.close();
+			if(!data.errors){
+				$.fancybox.close();
+			}
 		});
 		return false;
 	});
