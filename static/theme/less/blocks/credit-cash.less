@@ -1,0 +1,54 @@
+.credit-cash{
+	&__stairs{
+		&.b-block{
+			padding-top: 0;
+		}
+
+		h3{
+			text-align: center;
+			margin-top: 0;
+		}
+		&-img{
+			margin: 41/@rem 0 0 87/@rem;
+			width:96rem;
+			height:371/@rem;
+			background: url('@{pathToImg}credit/stairs.jpg') no-repeat center;
+			background-size: contain;
+
+		}
+	}
+}
+.tablet.portrait{
+	.credit-cash{
+		&__stairs{
+			&.b-block{
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			&-img{
+				margin: 41/@rem 0 0 -10/@rem;
+				width:72.4rem;
+				background-image: url('@{pathToImg}credit/stairs_tablet.jpg');
+			}
+		}
+	}
+}
+.mobile{
+	.credit-cash{
+		.deposit-info__right +.deposit-info__left{
+			margin-top: 6rem;
+		}
+		&__stairs{
+			&.b-block{
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			&-img{
+				margin: 41/@rem 0 0 -12/@rem;
+				width:38.8rem;
+				height:36.6rem;
+				background-image: url('@{pathToImg}credit/stairs_mobile.jpg');
+			}
+		}
+	}
+}

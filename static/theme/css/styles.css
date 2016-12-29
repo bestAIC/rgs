@@ -709,6 +709,9 @@ h4.small-bottom-indent {
 .b-list.no-b-indent {
   margin-bottom: 0!important;
 }
+.b-list._small-li-indent li + li {
+  margin-top: 1.5rem;
+}
 .mobile .b-list.dash-list-indent .dash-list {
   margin-left: 0;
 }
@@ -5796,6 +5799,42 @@ span.pagination__item:focus {
   margin-left: 0;
   margin-top: 2rem;
 }
+.credit-cash__stairs.b-block {
+  padding-top: 0;
+}
+.credit-cash__stairs h3 {
+  text-align: center;
+  margin-top: 0;
+}
+.credit-cash__stairs-img {
+  margin: 4.1rem 0 0 8.7rem;
+  width: 96rem;
+  height: 37.1rem;
+  background: url('../images/credit/stairs.jpg') no-repeat center;
+  background-size: contain;
+}
+.tablet.portrait .credit-cash__stairs.b-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.tablet.portrait .credit-cash__stairs-img {
+  margin: 4.1rem 0 0 -1rem;
+  width: 72.4rem;
+  background-image: url('../images/credit/stairs_tablet.jpg');
+}
+.mobile .credit-cash .deposit-info__right + .deposit-info__left {
+  margin-top: 6rem;
+}
+.mobile .credit-cash__stairs.b-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mobile .credit-cash__stairs-img {
+  margin: 4.1rem 0 0 -1.2rem;
+  width: 38.8rem;
+  height: 36.6rem;
+  background-image: url('../images/credit/stairs_mobile.jpg');
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
@@ -7742,6 +7781,7 @@ span.pagination__item:focus {
   line-height: 12.4rem;
   letter-spacing: -0.5rem;
   margin-left: -0.5rem;
+  white-space: nowrap;
 }
 .numerals__item._big .numerals__item-dash {
   margin-top: 4.6rem;

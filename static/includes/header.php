@@ -301,7 +301,7 @@
 					<div class="menu__block-inner">
 						<div class="menu__block-col _col-4-1">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Кредит наличными</a>
+								<a href="/static/credit/cash.php" class="b-menu__item-link">Кредит наличными</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="/static/credit/mortgage.php" class="b-menu__item-link">Ипотека</a>
