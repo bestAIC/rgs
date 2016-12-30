@@ -87,13 +87,13 @@
 							<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
-							<a href="<?=$desktop ? '/static/transfers/index.php' :'javascript:void(0);'?>" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
+							<a href="javascript:void(0);" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
 							<a href="javascript:void(0);" data-menu-link="3" class="header__menu-link">Выбрать карту</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
-							<a href="<?=$desktop ? '/static/credit/index.php' :'javascript:void(0);'?>" data-menu-link="4" class="header__menu-link">Взять кредит</a>
+							<a href="javascript:void(0);" data-menu-link="4" class="header__menu-link">Взять кредит</a>
 						</div>
 						<div class="header__menu-item no-mob-block">
 							<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
@@ -151,6 +151,7 @@
 								<a href="#" class="btn _red menu-banner__btn">Оформить заявку</a>
 							</div>
 						</div>
+						<div class="menu__block-title"><a href="#">Вложить и сохранить</a></div>
 						<div class="menu__block-col _col-1-1">
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Вклады</a>
@@ -222,6 +223,7 @@
 								<a href="#" class="btn _red menu-banner__btn">УЗНАТЬ ПОДРОБНЕЕ</a>
 							</div>
 						</div>
+						<div class="menu__block-title"><a href="/static/transfers/index.php">Оплатить и перевести</a></div>
 						<div class="menu__block-col _col-2-1">
 							<div class="b-menu__item">
 								<a href="/static/transfers/services.php" class="b-menu__item-link">Оплата услуг</a>
@@ -270,6 +272,7 @@
 								<a href="#" class="btn _red menu-banner__btn">УЗНАТЬ ПОДРОБНЕЕ</a>
 							</div>
 						</div>
+						<div class="menu__block-title"><a href="#">Выбрать карту</a></div>
 						<div class="menu__block-col _col-3-1">
 							<div class="b-menu__item">
 								<a href="/static/cards/best.php" class="b-menu__item-link">Отличная карта</a>
@@ -314,6 +317,7 @@
 				</div>
 				<div class="menu__block hide" data-menu-content="4">
 					<div class="menu__block-inner">
+						<div class="menu__block-title"><a href="/static/credit/index.php">Взять кредит</a></div>
 						<div class="menu__block-col _col-4-1">
 							<div class="b-menu__item">
 								<a href="/static/credit/cash.php" class="b-menu__item-link">Кредит наличными</a>
@@ -331,6 +335,7 @@
 				</div>
 				<div class="menu__block hide" data-menu-content="5">
 					<div class="menu__block-inner">
+						<div class="menu__block-title"><a href="#">Инвестировать</a></div>
 						<div class="menu__block-col _col-5-1">
 							<div class="b-menu__item">
 								<a href="/static/invest/iis.php" class="b-menu__item-link">Индивидуальный инвестиционный счет</a>

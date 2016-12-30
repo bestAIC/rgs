@@ -4443,6 +4443,24 @@ span.pagination__item:focus {
 .menu__block .b-menu__submenu {
   margin-top: 3rem;
 }
+.menu__block-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+}
+.mobile .menu__block-title {
+  font-size: 1.6rem;
+}
+.menu__block-title a {
+  color: #191919;
+}
+.menu__block-title a:hover {
+  color: #191919;
+}
+.menu__block-title a:focus {
+  color: #191919;
+}
 .menu__block-inner {
   *zoom: 1;
   padding-top: 4.6rem;
