@@ -529,6 +529,12 @@ body:after {
   background-color: transparent;
   transition: background-color 0.5s 0.05s;
 }
+body.not-found .header {
+  box-shadow: 0px 4px 5px 0px rgba(211, 211, 211, 0.2);
+}
+body.not-found .header__bottom {
+  display: none!important;
+}
 input,
 button,
 select,
@@ -969,6 +975,47 @@ h4.small-bottom-indent {
   top: 0;
   background: url('../images/icons/metro.svg') no-repeat center;
   background-size: 1rem 0.8rem;
+}
+.old-version {
+  border-bottom: 1px solid whitesmoke;
+  letter-spacing: -0.19px;
+  color: #3e3e3e;
+  padding: 1.5rem 0;
+}
+.mobile .old-version {
+  font-size: 1.1rem;
+}
+.old-version__inner {
+  padding-right: 2rem;
+}
+.tablet.portrait .old-version__inner {
+  padding-right: 7rem!important;
+}
+.mobile .old-version__inner {
+  padding-right: 3.5rem!important;
+  padding-left: 2rem!important;
+}
+.old-version__link {
+  padding-right: 2.4rem;
+  background: url('../images/icons/arr_right_long_red.svg') no-repeat right center;
+  background-size: 1.3rem 1.2rem;
+}
+.old-version__close {
+  position: absolute;
+  width: 1.2rem;
+  height: 2rem;
+  background: url('../images/icons/close_small.svg') no-repeat center;
+  background-size: 1.1rem;
+  top: 50%;
+  margin-top: -1rem;
+  right: 0;
+  z-index: 3;
+}
+.tablet.portrait .old-version__close {
+  right: 2rem;
+}
+.mobile .old-version__close {
+  right: 1.5rem;
 }
 .b-block._gray {
   background-color: whitesmoke;
@@ -6139,6 +6186,163 @@ span.pagination__item:focus {
   position: static;
   margin-top: 4.5rem;
   margin-left: 0.3rem;
+}
+.not-found {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.not-found__img {
+  width: 25.2rem;
+  height: 76.1rem;
+  background: url('../images/not-found.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: -1.8rem;
+  right: 18.7rem;
+}
+.not-found__block-inner {
+  width: 57rem;
+  margin-left: 10rem;
+}
+.not-found__block-subtitle {
+  opacity: 0.3;
+  color: #3e3e3e;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.019rem;
+  text-transform: uppercase;
+  line-height: 3.5rem;
+}
+.not-found__block-title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.056rem;
+  line-height: 4.4rem;
+  color: #3e3e3e;
+  margin-top: 0.8rem;
+}
+.not-found__top {
+  padding-top: 10rem;
+  padding-bottom: 8.5rem;
+  position: relative;
+}
+.not-found__top-text {
+  margin-bottom: 3.4rem;
+}
+.not-found__top-text:before {
+  content: '';
+  display: block;
+  width: 7rem;
+  height: 2px;
+  background-color: #cca266;
+  margin-top: 3.9rem;
+  margin-bottom: 3.9rem;
+}
+.not-found__bottom {
+  background-color: whitesmoke;
+  padding-top: 4.7rem;
+  padding-bottom: 7.5rem;
+}
+.not-found__menu {
+  *zoom: 1;
+  margin-top: 4.5rem;
+}
+.not-found__menu:before,
+.not-found__menu:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.not-found__menu:after {
+  clear: both;
+}
+.not-found__menu-col {
+  float: left;
+  width: 25rem;
+}
+.not-found__menu-col + .not-found__menu-col {
+  margin-left: 5rem;
+}
+.not-found__menu-item + .not-found__menu-item {
+  margin-top: 1.5rem;
+}
+.not-found__menu-link {
+  color: #191919;
+}
+.not-found__menu-link:hover {
+  color: #191919;
+}
+.not-found__menu-link:focus {
+  color: #191919;
+}
+.not-found__menu-link:after {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  border: 0.4rem solid transparent;
+  border-right: 0;
+  border-left: 0.5rem solid #cca266;
+  margin-left: 1.1rem;
+  margin-top: 0.8rem;
+}
+.tablet.portrait .not-found {
+  overflow: hidden;
+}
+.tablet.portrait .not-found__block-inner {
+  margin-left: 0;
+}
+.tablet.portrait .not-found__img {
+  height: 68.9rem;
+  top: 1.3rem;
+  right: -4.3rem;
+}
+.tablet.portrait .not-found__top {
+  padding-top: 4.6rem;
+}
+.mobile .not-found {
+  font-size: 1.4rem;
+}
+.mobile .not-found .grid__inner {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.mobile .not-found__img {
+  display: none;
+}
+.mobile .not-found__block-inner {
+  width: 100%;
+  margin-left: 0;
+}
+.mobile .not-found__block-title {
+  font-size: 2.2rem;
+  letter-spacing: -0.031rem;
+  margin-top: 0.4rem;
+}
+.mobile .not-found__top {
+  padding-top: 4rem;
+  padding-bottom: 5.5rem;
+}
+.mobile .not-found__top-text {
+  margin-bottom: 3.9rem;
+}
+.mobile .not-found__top-text:before {
+  margin-top: 2.5rem;
+  margin-bottom: 3.7rem;
+}
+.mobile .not-found__bottom {
+  background-color: whitesmoke;
+  padding-top: 4.1rem;
+  padding-bottom: 6rem;
+}
+.mobile .not-found__menu {
+  margin-top: 3.5rem;
+}
+.mobile .not-found__menu-col {
+  width: 18rem;
+}
+.mobile .not-found__menu-col + .not-found__menu-col {
+  margin-left: 2.6rem;
+  width: 16rem;
 }
 .deposit__text,
 .deposit .note-text {

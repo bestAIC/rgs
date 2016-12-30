@@ -34,6 +34,14 @@ body {
 		background-color: transparent;
 		transition: background-color @animTime 0.05s;
 	}
+	&.not-found{
+		.header{
+			box-shadow: 0px 4px 5px 0px rgba(211, 211, 211, 0.2);
+		}
+		.header__bottom{
+			display: none!important;
+		}
+	}
 }
 
 // Reset fonts for relevant elements
@@ -464,6 +472,47 @@ h4{
 		top: 0;
 		background: url('@{pathToImg}icons/metro.svg') no-repeat center;
 		background-size: 1rem 0.8rem;
+	}
+}
+.old-version{
+	border-bottom: 1px solid whitesmoke;
+	letter-spacing: -0.19px;
+	color: @title-color;
+	padding: 1.5rem 0;
+	.mobile &{
+		font-size: 1.1rem;
+	}
+	&__inner{
+		padding-right: 2rem;
+		.tablet.portrait &{
+			padding-right: 7rem!important;
+		}
+		.mobile &{
+			padding-right: 3.5rem!important;
+			padding-left: 2rem!important;
+		}
+	}
+	&__link{
+		padding-right: 2.4rem;
+		background: url('@{pathToImg}icons/arr_right_long_red.svg') no-repeat right center;
+		background-size: 1.3rem 1.2rem;
+	}
+	&__close{
+		position: absolute;
+		width: 1.2rem;
+		height: 2rem;
+		background: url('@{pathToImg}icons/close_small.svg') no-repeat center;
+		background-size: 1.1rem;
+		top: 50%;
+		margin-top: -1rem;
+		right: 0;
+		z-index: 3;
+		.tablet.portrait &{
+			right: 2rem;
+		}
+		.mobile &{
+			right: 1.5rem;
+		}
 	}
 }
 .b-block{

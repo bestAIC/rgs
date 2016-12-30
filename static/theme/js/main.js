@@ -104,6 +104,7 @@ app.init = function () {
 	app.askForm();
 	app.welcome();
 	app.actions();
+	app.oldVersion();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -115,6 +116,9 @@ app.init = function () {
 	}
 	if(app.utils.isMobile){
 		app.mobSliders();
+	}
+	if($('[data-not-found]').length){
+		app.dom.$body.addClass('not-found');
 	}
 };
 app.askForm = function () {
@@ -195,6 +199,20 @@ app.welcome = function () {
 		});
 		setCookie('welcomeWasShown', true, {path: '/'});
 	}
+
+};
+app.oldVersion = function () {
+	var $oldVersion =  $('[data-old-version]'),
+			$oldVersionClose =  $oldVersion.find('[data-old-version-close]')
+		;
+
+	if(!getCookie('oldVersionClose')){
+		$oldVersion.show();
+	}
+	$oldVersionClose.on('click',function () {
+		$oldVersion.hide();
+		setCookie('oldVersionClose', true, {path: '/'});
+	});
 
 };
 app.CardP2P = function () {
