@@ -160,10 +160,16 @@
 									<a href="/static/deposit/gosstrakh.php" class="b-menu__submenu-link">«Госстраховский»</a>
 								</div>
 								<div class="b-menu__submenu-item">
+									<a href="/static/deposit/gosstrakh-vip.php" class="b-menu__submenu-link">«Госстраховский VIP»</a>
+								</div>
+								<div class="b-menu__submenu-item">
 									<a href="/static/deposit/save.php" class="b-menu__submenu-link">«Накопительный»</a>
 								</div>
 								<div class="b-menu__submenu-item">
 									<a href="/static/deposit/universal.php" class="b-menu__submenu-link">«Универсальный»</a>
+								</div>
+								<div class="b-menu__submenu-item">
+									<a href="/static/deposit/universal-vip.php" class="b-menu__submenu-link">«Универсальный VIP»</a>
 								</div>
 								<div class="b-menu__submenu-item">
 									<a href="/static/deposit/invest.php" class="b-menu__submenu-link">«Инвестиционный»</a>
