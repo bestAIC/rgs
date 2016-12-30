@@ -101,23 +101,23 @@
 									<tr class="deposit-table__row">
 										<td class="center valuta"><span class="rub"></span></td>
 										<td >от 1 000 000</td>
-										<td class="center bold">7,70</td>
-										<td class="center bold">8,00</td>
-										<td class="center bold">7,00</td>
+										<td class="center bold">8,30</td>
+										<td class="center bold">8,30</td>
+										<td class="center bold">7,10</td>
 									</tr>
 									<tr class="deposit-table__row">
 										<td class="center valuta">$</td>
 										<td>от 15 000</td>
-										<td class="center bold">0,75</td>
-										<td class="center bold">1,80</td>
-										<td class="center bold">2,00</td>
+										<td class="center bold">0,85</td>
+										<td class="center bold">1,90</td>
+										<td class="center bold">1,95</td>
 									</tr>
 									<tr class="deposit-table__row">
 										<td class="center valuta">€</td>
 										<td>от 15 000</td>
 										<td class="center bold">0,30</td>
-										<td class="center bold">0,60</td>
-										<td class="center bold">0,90</td>
+										<td class="center bold">0,70</td>
+										<td class="center bold">0,70</td>
 									</tr>
 								</table>
 							</div>
