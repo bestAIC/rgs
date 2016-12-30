@@ -1204,8 +1204,9 @@ app.offices = function() {
 			map.setCenter( latlngbounds.getCenter());
 			map.setZoom(12);
 		}else{
+			map.setCenter( latlngbounds.getCenter(),12);
 			//map.setCenter( latlngbounds.getCenter(),map.fitBounds(latlngbounds));
-			map.setCenter( {lat: firstPointData.lat, lng: firstPointData.lan},12);
+			//map.setCenter( {lat: firstPointData.lat, lng: firstPointData.lan},12);
 			map.setZoom(Math.max(map.getZoom(),12));
 		}
 	}
