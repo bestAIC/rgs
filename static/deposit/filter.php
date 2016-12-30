@@ -50,7 +50,7 @@
 				<div class="grid__inner">
 					<h3 class="deposit-filter__title">Подберите наиболее оптимальный вклад</h3>
 					<div class="deposit-filter__block">
-						<form action="">
+						<form action="/static/ajax/deposits.php">
 							<div class="deposit-filter__block-top">
 								<div class="deposit-filter__block-top-inner">
 									<div class="deposit-filter__options">

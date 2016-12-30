@@ -1355,7 +1355,7 @@ app.calcFilter = function(){
 		}
 		return res;
 	}*/
-	$.post('/static/ajax/deposits.php', {}, function(data){
+	$.post($form.attr('action'), {}, function(data){
 		arInfo = $.parseJSON(data);
 	});
 
