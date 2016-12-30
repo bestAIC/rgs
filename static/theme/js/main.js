@@ -1112,6 +1112,7 @@ app.offices = function() {
 			$filterExtendClose  = $filter.find('[data-filter-extend-close]'),
 			$filterMetro  = $filter.find('[data-offices-filter-metro]'),
 			$filterForm  = $filter.find('form'),
+			$filterFormCity  = $filter.find('.offices__filter-city-field'),
 			$filterFields = $filter.find('input[type="text"],input[type="checkbox"],select'),
 			markers = []
 		;
@@ -1204,9 +1205,14 @@ app.offices = function() {
 			map.setCenter( latlngbounds.getCenter());
 			map.setZoom(12);
 		}else{
-			map.setCenter( latlngbounds.getCenter(),12);
+
 			//map.setCenter( latlngbounds.getCenter(),map.fitBounds(latlngbounds));
 			//map.setCenter( {lat: firstPointData.lat, lng: firstPointData.lan},12);
+			if($filterFormCity.val().toUpperCase()=="МОСКВА"){
+				map.setCenter( {lat: 55.755826, lng: 37.6173},12);
+			}else{
+				map.setCenter( latlngbounds.getCenter(),12);
+			}
 			map.setZoom(Math.max(map.getZoom(),12));
 		}
 	}
