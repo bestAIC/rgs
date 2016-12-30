@@ -1490,6 +1490,12 @@ h4.small-bottom-indent {
 .page-nav__item-ico._currency {
   background-image: url('../images/transfers/icons/currency.svg');
 }
+.page-nav__item-ico._insurance {
+  background-image: url('../images/invest/ico-insurance.svg');
+}
+.page-nav__item-ico._depository {
+  background-image: url('../images/invest/ico-depository.svg');
+}
 .page-nav__item-title {
   font-size: 2rem;
   font-weight: 700;
@@ -1502,9 +1508,41 @@ h4.small-bottom-indent {
   font-size: 1.6rem;
   line-height: 2.5rem;
   margin-top: 1.6rem;
-  max-width: 36rem;
+  max-width: 37rem;
   position: relative;
   z-index: 2;
+}
+.invest-nav {
+  margin-top: 32px;
+}
+.invest-nav__iis {
+  color: #fff;
+  background: url('../images/invest/iis-bg.jpg') no-repeat center #cca266;
+  background-size: cover;
+}
+.invest-nav__iis:hover {
+  color: #fff;
+}
+.invest-nav__iis:focus {
+  color: #fff;
+}
+.invest-nav__pay {
+  position: relative;
+}
+.invest-nav__pay .page-nav__item-title {
+  max-width: 57rem;
+}
+.invest-nav__pay .page-nav__item-text {
+  max-width: 57rem;
+}
+.invest-nav__pay-img {
+  position: absolute;
+  right: 7.7rem;
+  top: 4.6rem;
+  width: 29rem;
+  height: 136px;
+  background: url('../images/invest/2.jpg') no-repeat center;
+  background-size: contain;
 }
 .tablet.portrait .page-nav__row-col {
   float: none;
@@ -1537,6 +1575,18 @@ h4.small-bottom-indent {
 .tablet.portrait .page-nav__item {
   padding: 3.4rem 3rem;
 }
+.tablet.portrait .invest-nav {
+  margin-top: 0;
+}
+.tablet.portrait .invest-nav .page-nav__item-ico {
+  display: none;
+}
+.tablet.portrait .invest-nav__iis {
+  background-image: url('../images/invest/iis-bg-tablet.png');
+}
+.tablet.portrait .invest-nav__pay-img {
+  display: none;
+}
 .mobile .page-nav__row-col {
   float: none;
   width: 100%;
@@ -1550,6 +1600,18 @@ h4.small-bottom-indent {
 }
 .mobile .page-nav__item._big {
   height: 20rem;
+}
+.mobile .invest-nav {
+  margin-top: 0;
+}
+.mobile .invest-nav .page-nav__item-ico {
+  display: none;
+}
+.mobile .invest-nav__iis {
+  background-image: none;
+}
+.mobile .invest-nav__pay-img {
+  display: none;
 }
 .credit-nav__main {
   background-image: linear-gradient(138deg, #95b4c2 0%, #7096ac 100%);

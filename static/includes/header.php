@@ -335,7 +335,7 @@
 				</div>
 				<div class="menu__block hide" data-menu-content="5">
 					<div class="menu__block-inner">
-						<div class="menu__block-title"><a href="#">Инвестировать</a></div>
+						<div class="menu__block-title"><a href="/static/invest/index.php">Инвестировать</a></div>
 						<div class="menu__block-col _col-5-1">
 							<div class="b-menu__item">
 								<a href="/static/invest/iis.php" class="b-menu__item-link">Индивидуальный инвестиционный счет</a>

@@ -34,9 +34,9 @@
 							<div class="not-found__menu-item">
 								<a href="" class="not-found__menu-link">Взять кредит</a>
 							</div>
-							<?/*div class="not-found__menu-item">
+							<div class="not-found__menu-item">
 								<a href="" class="not-found__menu-link">Инвестировать</a>
-							</div*/?>
+							</div>
 						</div>
 					</div>
 				</div>

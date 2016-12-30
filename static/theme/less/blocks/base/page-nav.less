@@ -41,10 +41,16 @@
 				background-size: contain;
 			}
 			&._services{
-				background-image: url('@{pathToImg}transfers/icons/services.svg')
+				background-image: url('@{pathToImg}transfers/icons/services.svg');
 			}
 			&._currency{
-				background-image: url('@{pathToImg}transfers/icons/currency.svg')
+				background-image: url('@{pathToImg}transfers/icons/currency.svg');
+			}
+			&._insurance{
+				background-image: url('@{pathToImg}invest/ico-insurance.svg');
+			}
+			&._depository{
+				background-image: url('@{pathToImg}invest/ico-depository.svg');
 			}
 		}
 		&-title{
@@ -59,13 +65,40 @@
 			font-size: 16/@rem;
 			line-height: 25/@rem;
 			margin-top: 16/@rem;
-			max-width: 36rem;
+			max-width: 37rem;
 			position: relative;
 			z-index: 2;
 		}
 	}
 }
+.invest-nav{
+	margin-top: 32px;
+	&__iis {
+		.color(#fff);
+		background: url('@{pathToImg}invest/iis-bg.jpg') no-repeat center #cca266;
+		background-size: cover;
+	}
+	&__pay{
+		position: relative;
+		.page-nav__item-title{
+			max-width: 57rem;
+		}
+		.page-nav__item-text{
+			max-width: 57rem;
+		}
+		&-img{
+			position: absolute;
+			right: 7.7rem;
+			top: 4.6rem;
+			width: 29rem;
+			height: 136px;
+			background: url('@{pathToImg}invest/2.jpg') no-repeat center;
+			background-size: contain;
+		}
+	}
+}
 .tablet.portrait{
+
 	.page-nav{
 		&__row{
 			&-col{
@@ -92,6 +125,20 @@
 			padding: 34/@rem 30/@rem;
 		}
 	}
+	.invest-nav{
+		.page-nav__item-ico{
+			display: none;
+		}
+		margin-top:0;
+		&__iis {
+			background-image: url('@{pathToImg}invest/iis-bg-tablet.png');
+		}
+		&__pay{
+			&-img{
+				display: none;
+			}
+		}
+	}
 }
 .mobile{
 	.page-nav{
@@ -109,6 +156,20 @@
 			padding: 34/@rem 30/@rem;
 			&._big{
 				height: 20rem;
+			}
+		}
+	}
+	.invest-nav{
+		.page-nav__item-ico{
+			display: none;
+		}
+		margin-top:0;
+		&__iis {
+			background-image: none;
+		}
+		&__pay{
+			&-img{
+				display: none;
 			}
 		}
 	}
