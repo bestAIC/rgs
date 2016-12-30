@@ -20,23 +20,23 @@
 					<div class="not-found__block-title"><a href="tel:8800700-40-40" class="phone">8 (800) 700-40-40</a></div>
 					<div class="not-found__menu">
 						<div class="not-found__menu-col">
-							<div class="not-found__menu-item">
+							<?/*div class="not-found__menu-item">
 								<a href="" class="not-found__menu-link">Вложить и сохранить</a>
-							</div>
+							</div*/?>
 							<div class="not-found__menu-item">
 								<a href="" class="not-found__menu-link">Оплатить и перевести</a>
 							</div>
-							<div class="not-found__menu-item">
+							<?/*div class="not-found__menu-item">
 								<a href="" class="not-found__menu-link">Выбрать карту</a>
-							</div>
+							</div*/?>
 						</div>
 						<div class="not-found__menu-col">
 							<div class="not-found__menu-item">
 								<a href="" class="not-found__menu-link">Взять кредит</a>
 							</div>
-							<div class="not-found__menu-item">
+							<?/*div class="not-found__menu-item">
 								<a href="" class="not-found__menu-link">Инвестировать</a>
-							</div>
+							</div*/?>
 						</div>
 					</div>
 				</div>
