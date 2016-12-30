@@ -27,7 +27,7 @@
 	$desktopAndTableLand = isset($_COOKIE['site_viewType']) && ($_COOKIE['site_viewType'] == 'isDesktop' || $_COOKIE['site_viewType'] == 'isTableLand');
 ?>
 <header class="header">
-	<div class="old-version hide" data-old-version>
+	<div class="old-version" data-old-version>
 		<div class="grid__inner old-version__inner">
 			Добро пожаловать на обновленный сайт ПАО «Росгосстрах Банк»! Если захотите, Вы можете <a href="#" class="old-version__link">вернуться к старой версии сайта</a>
 			<a href="javascript:void(0);" data-old-version-close class="old-version__close"></a>

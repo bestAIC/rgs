@@ -205,13 +205,8 @@ app.oldVersion = function () {
 	var $oldVersion =  $('[data-old-version]'),
 			$oldVersionClose =  $oldVersion.find('[data-old-version-close]')
 		;
-
-	if(!getCookie('oldVersionClose')){
-		$oldVersion.show();
-	}
 	$oldVersionClose.on('click',function () {
 		$oldVersion.hide();
-		setCookie('oldVersionClose', true, {path: '/'});
 	});
 
 };
