@@ -93,7 +93,7 @@ app.init = function () {
 	app.initMaps();
 	app.questions();
 	app.initNav();
-	app.calc();
+	//app.calc();
 	app.calcFilter();
 	app.initTabs();
 	app.initBaseCheck();
