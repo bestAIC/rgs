@@ -1496,6 +1496,18 @@ h4.small-bottom-indent {
 .page-nav__item-ico._depository {
   background-image: url('../images/invest/ico-depository.svg');
 }
+.page-nav__item-ico._payments {
+  background-image: url('../images/deposit/main/payments.svg');
+}
+.page-nav__item-ico._boxes {
+  background-image: url('../images/deposit/main/boxes.svg');
+}
+.page-nav__item-ico._bank {
+  background-image: url('../images/deposit/main/bank.svg');
+}
+.page-nav__item-ico._accounts {
+  background-image: url('../images/deposit/main/accounts.svg');
+}
 .page-nav__item-title {
   font-size: 2rem;
   font-weight: 700;
@@ -1544,6 +1556,50 @@ h4.small-bottom-indent {
   background: url('../images/invest/2.jpg') no-repeat center;
   background-size: contain;
 }
+.deposits-nav__filter {
+  background: url('../images/deposit/main/filter.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.deposits-nav__filter:hover {
+  color: #fff;
+}
+.deposits-nav__filter:focus {
+  color: #fff;
+}
+.deposits-nav__pension-img {
+  width: 232px;
+  height: 195px;
+  background: url('../images/deposit/main/old-man.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 7rem;
+  top: -1.1rem;
+}
+.deposits-nav__pension-blocks {
+  float: right;
+  width: 65.5rem;
+  padding-top: 13px;
+}
+.deposits-nav__pension-block {
+  float: left;
+  width: 17.7rem;
+}
+.deposits-nav__pension-block-title {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  color: #AAAEB2;
+}
+.deposits-nav__pension-block-val {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.33px;
+  line-height: 30px;
+  margin-top: 18px;
+  color: #3e3e3e;
+}
 .tablet.portrait .page-nav__row-col {
   float: none;
   width: 100%;
@@ -1587,6 +1643,30 @@ h4.small-bottom-indent {
 .tablet.portrait .invest-nav__pay-img {
   display: none;
 }
+.tablet.portrait .deposits-nav {
+  padding-bottom: 3rem;
+}
+.tablet.portrait .deposits-nav .page-nav__row-col._items .page-nav__item-ico {
+  display: none;
+}
+.tablet.portrait .deposits-nav__info {
+  margin-top: 4rem!important;
+}
+.tablet.portrait .deposits-nav__filter {
+  background-image: url('../images/deposit/main/filter_tablet.jpg');
+}
+.tablet.portrait .deposits-nav__pension-img {
+  display: none;
+}
+.tablet.portrait .deposits-nav__pension-blocks {
+  width: 23.7rem;
+}
+.tablet.portrait .deposits-nav__pension-block {
+  width: 8rem;
+}
+.tablet.portrait .deposits-nav__pension-block + .deposits-nav__pension-block {
+  margin-left: 6rem;
+}
 .mobile .page-nav__row-col {
   float: none;
   width: 100%;
@@ -1611,6 +1691,24 @@ h4.small-bottom-indent {
   background-image: none;
 }
 .mobile .invest-nav__pay-img {
+  display: none;
+}
+.mobile .deposits-nav {
+  padding-bottom: 3rem;
+}
+.mobile .deposits-nav .page-nav__item-ico {
+  display: none;
+}
+.mobile .deposits-nav__info {
+  margin-top: 4rem!important;
+}
+.mobile .deposits-nav__filter {
+  background-image: linear-gradient(138deg, #583658 0%, #4e385b 98%);
+}
+.mobile .deposits-nav__pension-img {
+  display: none;
+}
+.mobile .deposits-nav__pension-blocks {
   display: none;
 }
 .credit-nav__main {

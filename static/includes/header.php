@@ -151,7 +151,7 @@
 								<a href="#" class="btn _red menu-banner__btn">Оформить заявку</a>
 							</div>
 						</div>
-						<div class="menu__block-title"><a href="#">Вложить и сохранить</a></div>
+						<div class="menu__block-title"><a href="/static/deposit/index.php">Вложить и сохранить</a></div>
 						<div class="menu__block-col _col-1-1">
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Вклады</a>
