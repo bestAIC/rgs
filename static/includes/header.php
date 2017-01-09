@@ -349,7 +349,7 @@
 								<a href="/static/invest/pay-founds.php" class="b-menu__item-link">ПИФы</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Депозитарий</a>
+								<a href="/static/invest/depository.php" class="b-menu__item-link">Депозитарий</a>
 							</div>
 						</div>
 					</div>

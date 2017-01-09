@@ -1,0 +1,113 @@
+.depository{
+	&__info{
+		.clearfix;
+		color: @title-color;
+		padding-bottom: 74px;
+		&-block{
+			float: left;
+			width: 77rem;
+			&-title{
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 30px;
+
+			}
+			&-text{
+				font-size: 14px;
+				font-weight: 400;
+				letter-spacing: -0.19px;
+				line-height: 25px;
+				margin-top: 18px;
+			}
+		}
+		&-contacts{
+			width: 37rem;
+			float: left;
+			margin-left: 3rem;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: -0.19px;
+			line-height: 25px;
+			text-align: right;
+			padding-top: 3px;
+			&-title{
+
+			}
+			&-phone{
+				font-size: 36px;
+				font-weight: 700;
+				line-height: 30px;
+				padding-top: 23px;
+				padding-bottom: 17px;
+			}
+			&-text{
+				opacity: 0.4;
+			}
+		}
+	}
+	&__news{
+		&.b-block{
+			padding-top: 43px
+		};
+		h2{
+			text-align: left;
+		}
+		&-block{
+			margin-top: 3rem;
+			.clearfix;
+			&+.gold-link__wrap{
+				margin-top: 1rem;
+			}
+		}
+		&-item{
+			width: 370px;
+			height: 280px;
+			background-color: white;
+			border-radius: 2px;
+			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+			float: left;
+			margin-right: 3rem;
+			&:nth-child(3n){
+				margin-right: 0;
+				margin-bottom: 3rem;
+			}
+		}
+	}
+	&__form{
+		padding: 1.6rem 2rem;
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		border-top: 6/@rem solid @cGold;
+		margin-top: 39px;
+		select{
+			border-color: #e8e8e8!important;
+		}
+		&-inner{
+			.clearfix;
+		}
+		&-title{
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 30px;
+			float: left;
+			padding-top: 7px;
+			padding-left: 9px;
+		}
+		&-fields{
+			float: right;
+		}
+		&-field{
+			float: left;
+			width: 26rem;
+			height: 4.8rem;
+			margin-right: 2rem;
+		}
+		&-btn{
+			float: left;
+			width: 19rem;
+			height: 4.8rem;
+			line-height: 1.8rem;
+		}
+	}
+}
