@@ -1,7 +1,7 @@
 <?include "../includes/header.php"?>
 	<div class="inner deposit">
 		<div class="inner__banner">
-			<div class="inner__banner-img">
+			<div class="inner__banner-img _blur">
 				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/card/Visa_Mc.jpg');"></div>
 			</div>
 			<div class="inner__banner-in grid__inner">

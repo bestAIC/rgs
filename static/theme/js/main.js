@@ -102,7 +102,7 @@ app.init = function () {
 	app.CardP2P();
 	app.transfersMenu();
 	app.askForm();
-	app.welcome();
+	//app.welcome();
 	app.actions();
 	app.oldVersion();
 	app.payFonds();

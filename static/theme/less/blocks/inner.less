@@ -34,6 +34,11 @@
 			height:100%;
 			z-index: 1;
 			overflow: hidden;
+			&._blur{
+				.inner__banner-img-in{
+					filter: blur(2px);
+				}
+			}
 			&-in{
 				position: absolute;
 				top: -3px;
@@ -42,7 +47,6 @@
 				left: -3px;
 				background: none no-repeat center;
 				background-size: cover;
-				filter: blur(2px);
 			}
 			&:after{
 				content: '';

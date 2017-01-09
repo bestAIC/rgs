@@ -8427,6 +8427,9 @@ span.pagination__item:focus {
   z-index: 1;
   overflow: hidden;
 }
+.inner__banner-img._blur .inner__banner-img-in {
+  filter: blur(2px);
+}
 .inner__banner-img-in {
   position: absolute;
   top: -3px;
@@ -8435,7 +8438,6 @@ span.pagination__item:focus {
   left: -3px;
   background: none no-repeat center;
   background-size: cover;
-  filter: blur(2px);
 }
 .inner__banner-img:after {
   content: '';
@@ -9035,6 +9037,9 @@ span.pagination__item:focus {
 }
 .b-card._red {
   background-image: url('../images/cards/red.png');
+}
+.b-card._client {
+  background-image: url('../images/cards/client.png');
 }
 .b-card._mc-platinum {
   background-image: url('../images/cards/mc-platinum.png');
