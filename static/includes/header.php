@@ -346,7 +346,7 @@
 						</div>
 						<div class="menu__block-col _col-5-2">
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">ПИФы</a>
+								<a href="/static/invest/pay-founds.php" class="b-menu__item-link">ПИФы</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Депозитарий</a>

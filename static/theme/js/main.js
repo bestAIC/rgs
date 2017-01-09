@@ -105,6 +105,7 @@ app.init = function () {
 	app.welcome();
 	app.actions();
 	app.oldVersion();
+	app.payFonds();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -1054,6 +1055,35 @@ app.compare = function () {
 			onTotalScrollBack :function(){
 				$fixed.removeClass('_active');
 			}
+		}
+	});
+
+
+};
+app.payFonds = function () {
+	var $fonds = $('[data-pay-fonds]'),
+			$items = $fonds.find('[data-pay-fonds-items]'),
+			$moreBtn = $fonds.find('[data-pay-fonds-more-btn]'),
+			$hidden = $fonds.find('[data-pay-fonds-hidden]'),
+			$hiddenItem = $hidden.find('[data-pay-fonds-hidden-item]'),
+			counter = 3
+		;
+
+	if(app.utils.isTabletPort){
+		counter = 2;
+	}
+	if(!$hiddenItem.length){
+		$moreBtn.hide();
+	}
+	$moreBtn.on('click',function () {
+		var $elem = $hidden.find('[data-pay-fonds-hidden-item]').slice(0,counter);
+		$elem.each(function(){
+			var $self = $(this);
+			$self.removeAttr('data-pay-fonds-hidden-item').removeClass('hide');
+			$self.appendTo($items);
+		});
+		if(!$hidden.find('[data-pay-fonds-hidden-item]').length){
+			$moreBtn.hide();
 		}
 	});
 

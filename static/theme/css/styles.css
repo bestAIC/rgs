@@ -1026,6 +1026,7 @@ h4.small-bottom-indent {
 .b-blocks {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
+  position: relative;
 }
 .b-blocks._gray {
   background-color: whitesmoke;
@@ -1525,7 +1526,7 @@ h4.small-bottom-indent {
   z-index: 2;
 }
 .invest-nav {
-  margin-top: 32px;
+  margin-top: 3.2rem;
 }
 .invest-nav__iis {
   color: #fff;
@@ -1552,7 +1553,7 @@ h4.small-bottom-indent {
   right: 7.7rem;
   top: 4.6rem;
   width: 29rem;
-  height: 136px;
+  height: 13.6rem;
   background: url('../images/invest/2.jpg') no-repeat center;
   background-size: contain;
 }
@@ -1568,8 +1569,8 @@ h4.small-bottom-indent {
   color: #fff;
 }
 .deposits-nav__pension-img {
-  width: 232px;
-  height: 195px;
+  width: 23.2rem;
+  height: 19.5rem;
   background: url('../images/deposit/main/old-man.png') no-repeat center;
   background-size: contain;
   position: absolute;
@@ -1579,25 +1580,25 @@ h4.small-bottom-indent {
 .deposits-nav__pension-blocks {
   float: right;
   width: 65.5rem;
-  padding-top: 13px;
+  padding-top: 1.3rem;
 }
 .deposits-nav__pension-block {
   float: left;
   width: 17.7rem;
 }
 .deposits-nav__pension-block-title {
-  font-size: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 14px;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   color: #AAAEB2;
 }
 .deposits-nav__pension-block-val {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
-  letter-spacing: -0.33px;
-  line-height: 30px;
-  margin-top: 18px;
+  letter-spacing: -0.033rem;
+  line-height: 3rem;
+  margin-top: 1.8rem;
   color: #3e3e3e;
 }
 .tablet.portrait .page-nav__row-col {
@@ -6521,6 +6522,102 @@ span.pagination__item:focus {
 .mobile .not-found__menu-col + .not-found__menu-col {
   margin-left: 2.6rem;
   width: 16rem;
+}
+.pay-founds__files .files {
+  padding-top: 0;
+}
+.pay-founds__bottom {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: -0.015rem;
+  line-height: 2.4rem;
+  color: #3e3e3e;
+  opacity: 0.4;
+  margin-top: 4rem;
+}
+.pay-founds .b-blocks {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.pay-founds__items {
+  margin-top: -1rem;
+}
+.pay-founds__item {
+  width: 37rem;
+  height: 22rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  display: block;
+  float: left;
+  border-top: 0.6rem solid #cca266;
+  color: #3e3e3e;
+  padding: 2.7rem 3rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+}
+.pay-founds__item:hover {
+  color: #3e3e3e;
+}
+.pay-founds__item:focus {
+  color: #3e3e3e;
+}
+.pay-founds__item:nth-child(3n) {
+  margin-right: 0;
+}
+.pay-founds__item-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.pay-founds__item-text {
+  color: #AAAEB2;
+  margin-top: 1.5rem;
+  line-height: 2.4rem;
+}
+.tablet.portrait .pay-founds__files {
+  padding-top: 2.5rem;
+}
+.tablet.portrait .pay-founds__files h2 {
+  margin-bottom: 0;
+}
+.tablet.portrait .pay-founds__files .files {
+  padding-top: 0;
+}
+.tablet.portrait .pay-founds__bottom {
+  margin-top: 3rem;
+}
+.tablet.portrait .pay-founds .b-blocks {
+  padding-top: 4.5rem;
+}
+.tablet.portrait .pay-founds__item {
+  width: 342px;
+}
+.tablet.portrait .pay-founds__item-title {
+  font-size: 1.8rem;
+}
+.tablet.portrait .pay-founds__item:nth-child(3n) {
+  margin-right: 3rem;
+}
+.tablet.portrait .pay-founds__item:nth-child(2n) {
+  margin-right: 0;
+}
+.mobile .pay-founds__bottom {
+  margin-top: 3rem;
+}
+.mobile .pay-founds__items {
+  margin-top: 0;
+}
+.mobile .pay-founds__files {
+  padding-top: 5rem!important;
+}
+.mobile .pay-founds__item {
+  width: 100%;
+  margin-right: 0;
+  margin-top: 2rem;
+}
+.mobile .pay-founds__item-title {
+  font-size: 1.8rem;
 }
 .deposit__text,
 .deposit .note-text {
