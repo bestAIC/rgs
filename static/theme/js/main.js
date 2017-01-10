@@ -424,7 +424,9 @@ app.chooseCity = function () {
 		return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())==0;
 	};
 
-
+	$form.on('submit',function () {
+		return false;
+	});
 	$showBtn.on('click',function () {
 		$('html, body').animate({'scrollTop': 0}, 300);
 		setTimeout(function () {
