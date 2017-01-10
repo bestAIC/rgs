@@ -886,6 +886,7 @@ h4.small-bottom-indent {
 }
 .phone {
   color: #3e3e3e;
+  white-space: nowrap;
 }
 .phone:hover {
   color: #3e3e3e;
@@ -978,7 +979,7 @@ h4.small-bottom-indent {
 }
 .old-version {
   border-bottom: 1px solid whitesmoke;
-  letter-spacing: -0.19px;
+  letter-spacing: -0.019rem;
   color: #3e3e3e;
   padding: 1.5rem 0;
 }
@@ -1036,9 +1037,9 @@ h4.small-bottom-indent {
   padding-bottom: 6rem;
 }
 .gold-link {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 2.4rem;
   color: #cca266;
 }
 .gold-link:hover,
@@ -1061,21 +1062,21 @@ h4.small-bottom-indent {
   content: '';
   display: inline-block;
   vertical-align: top;
-  border: 4px solid transparent;
+  border: 0.4rem solid transparent;
   border-right: 0;
-  border-left: 6px solid #cca266;
-  margin-left: 12px;
-  margin-top: 9px;
+  border-left: 0.6rem solid #cca266;
+  margin-left: 1.2rem;
+  margin-top: 0.9rem;
 }
 .gold-link._arr-down:after {
   content: '';
   display: inline-block;
   vertical-align: top;
-  border: 4px solid transparent;
+  border: 0.4rem solid transparent;
   border-bottom: 0;
-  border-top: 6px solid #cca266;
-  margin-left: 12px;
-  margin-top: 9px;
+  border-top: 0.6rem solid #cca266;
+  margin-left: 1.2rem;
+  margin-top: 0.9rem;
 }
 .tablet.portrait .grid__inner {
   padding-left: 2.7rem;
@@ -1490,6 +1491,13 @@ h4.small-bottom-indent {
   float: left;
   width: 57rem;
 }
+.page-nav__row-col._right {
+  float: right;
+  margin-left: 3rem;
+}
+.page-nav__row-col._right + .page-nav__row-col {
+  margin-left: 0;
+}
 .page-nav__row-col + .page-nav__row-col {
   margin-left: 3rem;
 }
@@ -1551,6 +1559,9 @@ h4.small-bottom-indent {
 .page-nav__item-ico._accounts {
   background-image: url('../images/deposit/main/accounts.svg');
 }
+.page-nav__item-ico._discounts {
+  background-image: url('../images/icons/discounts.svg');
+}
 .page-nav__item-title {
   font-size: 2rem;
   font-weight: 700;
@@ -1566,6 +1577,58 @@ h4.small-bottom-indent {
   max-width: 37rem;
   position: relative;
   z-index: 2;
+}
+.cards-nav.b-block {
+  padding-top: 80px;
+  padding-bottom: 65px;
+}
+.cards-nav__card .page-nav__item-text,
+.cards-nav__card .page-nav__item-title {
+  max-width: 27rem;
+}
+.cards-nav__card .b-card {
+  width: 21rem;
+  height: 13.1rem;
+  position: absolute;
+  right: 3rem;
+  top: 3.3rem;
+}
+.cards-nav__rgs .page-nav__item-title {
+  max-width: 38rem;
+}
+.cards-nav__rgs .page-nav__item-text {
+  max-width: 32rem;
+}
+.cards-nav__rgs-logo {
+  width: 165px;
+  height: 72px;
+  background: url('../images/cards-nav/logo.svg') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 4rem;
+  top: 7.4rem;
+}
+.cards-nav__payments {
+  color: #fff;
+  background: url('../images/cards-nav/payments.png') no-repeat center;
+  background-size: cover;
+}
+.cards-nav__payments:hover {
+  color: #fff;
+}
+.cards-nav__payments:focus {
+  color: #fff;
+}
+.cards-nav__visa {
+  color: #fff;
+  background: url('../images/cards-nav/visa.png') no-repeat center;
+  background-size: cover;
+}
+.cards-nav__visa:hover {
+  color: #fff;
+}
+.cards-nav__visa:focus {
+  color: #fff;
 }
 .invest-nav {
   margin-top: 3.2rem;
@@ -1646,6 +1709,8 @@ h4.small-bottom-indent {
 .tablet.portrait .page-nav__row-col {
   float: none;
   width: 100%;
+  margin-right: 0;
+  margin-left: 0;
 }
 .tablet.portrait .page-nav__row-col + .page-nav__row-col {
   margin-left: 0;
@@ -1662,6 +1727,16 @@ h4.small-bottom-indent {
 }
 .tablet.portrait .page-nav__row-col._items:after {
   clear: both;
+}
+.tablet.portrait .page-nav__row-col._items._tablet-w-100 .page-nav__item {
+  float: none;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+.tablet.portrait .page-nav__row-col._items._tablet-w-100 .page-nav__item + .page-nav__item {
+  margin-left: 0;
+  margin-top: 3rem;
 }
 .tablet.portrait .page-nav__row-col._items .page-nav__item {
   float: left;
@@ -1710,9 +1785,36 @@ h4.small-bottom-indent {
 .tablet.portrait .deposits-nav__pension-block + .deposits-nav__pension-block {
   margin-left: 6rem;
 }
+.tablet.portrait .cards-nav .page-nav__item-ico {
+  display: none;
+}
+.tablet.portrait .cards-nav.b-block {
+  padding-top: 8px;
+  padding-bottom: 27px;
+}
+.tablet.portrait .cards-nav__card .page-nav__item-text,
+.tablet.portrait .cards-nav__card .page-nav__item-title {
+  max-width: 42rem;
+}
+.tablet.portrait .cards-nav__card .b-card {
+  right: 3.3rem;
+  top: 3.3rem;
+}
+.tablet.portrait .cards-nav__rgs-logo {
+  width: 230px;
+  height: 100px;
+  top: 5rem;
+}
+.tablet.portrait .cards-nav__payments {
+  background-image: url('../images/cards-nav/payments_tablet.png');
+}
+.tablet.portrait .cards-nav__visa {
+  background-image: url('../images/cards-nav/visa_tablet.png');
+}
 .mobile .page-nav__row-col {
   float: none;
   width: 100%;
+  margin-left: 0;
 }
 .mobile .page-nav__row-col + .page-nav__row-col {
   margin-left: 0;
@@ -1753,6 +1855,39 @@ h4.small-bottom-indent {
 }
 .mobile .deposits-nav__pension-blocks {
   display: none;
+}
+.mobile .cards-nav .page-nav__item-ico {
+  display: none;
+}
+.mobile .cards-nav.b-block {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.mobile .cards-nav__card {
+  overflow: hidden;
+}
+.mobile .cards-nav__card .page-nav__item-text,
+.mobile .cards-nav__card .page-nav__item-title {
+  max-width: 23.6rem;
+}
+.mobile .cards-nav__card .page-nav__item-text {
+  letter-spacing: -0.04rem;
+}
+.mobile .cards-nav__card .b-card {
+  right: -10.6rem;
+  top: 3.6rem;
+}
+.mobile .cards-nav__rgs .page-nav__item-text {
+  max-width: 29rem;
+}
+.mobile .cards-nav__rgs-logo {
+  display: none;
+}
+.mobile .cards-nav__payments {
+  background-image: url('../images/cards-nav/payments_mob.png');
+}
+.mobile .cards-nav__visa {
+  background-image: url('../images/cards-nav/visa_mob.png');
 }
 .credit-nav__main {
   background-image: linear-gradient(138deg, #95b4c2 0%, #7096ac 100%);
@@ -9465,6 +9600,21 @@ span.pagination__item:focus {
 .card-open__steps:after {
   clear: both;
 }
+.card-open__steps-wrap {
+  border-radius: 2px;
+  border: 1px solid #DEDFE0;
+  padding: 3rem 3rem 4rem;
+  margin-top: 3.2rem;
+}
+.card-open__steps-wrap .card-open__steps-col {
+  width: 45%;
+}
+.card-open__steps-wrap .card-open__steps-col:first-child {
+  width: 55%;
+}
+.card-open__steps-wrap .card-open__step + .card-open__step {
+  margin-top: 3rem;
+}
 .card-open__steps-col {
   float: left;
   width: 48%;
@@ -9628,6 +9778,15 @@ span.pagination__item:focus {
   width: 11.1rem;
   margin-left: 1rem;
 }
+.tablet.portrait .card-open__steps-wrap .card-open__steps-col {
+  width: 48%;
+}
+.tablet.portrait .card-open__steps-wrap .card-open__steps-col:first-child {
+  width: 52%;
+}
+.tablet.portrait .card-open__steps-wrap .card-open__step + .card-open__step {
+  margin-top: 2rem;
+}
 .mobile .card {
   width: 33.5rem;
   height: 45.5rem;
@@ -9640,7 +9799,7 @@ span.pagination__item:focus {
 }
 .mobile .card__title {
   font-size: 1.8rem;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.03rem;
 }
 .mobile .card__fields {
   margin-top: 4.6rem;
@@ -9698,7 +9857,7 @@ span.pagination__item:focus {
 }
 .mobile .card-open__steps-col {
   float: none;
-  width: 100%;
+  width: 100%!important;
   padding-right: 0;
 }
 .mobile .card-open__steps-col + .card-open__steps-col {

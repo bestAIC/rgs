@@ -7,6 +7,13 @@
 		&-col{
 			float: left;
 			width: 570/@rem;
+			&._right{
+				float: right;
+				margin-left: 3rem;
+				&+.page-nav__row-col{
+					margin-left: 0;
+				}
+			}
 			&+&{
 				margin-left: 30/@rem;
 			}
@@ -64,6 +71,9 @@
 			&._accounts{
 				background-image: url('@{pathToImg}deposit/main/accounts.svg');
 			}
+			&._discounts{
+				background-image: url('@{pathToImg}icons/discounts.svg');
+			}
 		}
 		&-title{
 			font-size: 20/@rem;
@@ -81,6 +91,55 @@
 			position: relative;
 			z-index: 2;
 		}
+	}
+}
+.cards-nav{
+	&.b-block{
+		padding-top: 80/@rem;
+		padding-bottom: 65/@rem;
+	}
+	&__card{
+		.page-nav__item{
+			&-text,&-title{
+				max-width: 27rem;
+			}
+		}
+		.b-card{
+			width: 210/@rem;
+			height: 131/@rem;
+			position: absolute;
+			right: 3rem;
+			top: 3.3rem;
+		}
+	}
+	&__rgs{
+		.page-nav__item{
+			&-title{
+				max-width: 38rem;
+			}
+			&-text{
+				max-width: 32rem;
+			}
+		}
+		&-logo{
+			width: 165/@rem;
+			height: 72/@rem;
+			background: url('@{pathToImg}cards-nav/logo.svg') no-repeat center;
+			background-size: contain;
+			position: absolute;
+			right: 4rem;
+			top: 7.4rem;
+		}
+	}
+	&__payments{
+		.color(#fff);
+		background: url('@{pathToImg}cards-nav/payments.png') no-repeat center;
+		background-size: cover;
+	}
+	&__visa{
+		.color(#fff);
+		background: url('@{pathToImg}cards-nav/visa.png') no-repeat center;
+		background-size: cover;
 	}
 }
 .invest-nav{
@@ -158,12 +217,26 @@
 			&-col{
 				float: none;
 				width: 100%;
+				margin-right: 0;
+				margin-left: 0;
 				&+.page-nav__row-col{
 					margin-left: 0;
 					margin-top: 30/@rem;
 				}
 				&._items{
 					.clearfix;
+					&._tablet-w-100{
+						.page-nav__item{
+							float: none;
+							width: 100%;
+							margin-right: 0;
+							margin-left: 0;
+							&+.page-nav__item{
+								margin-left: 0;
+								margin-top: 3rem;
+							}
+						}
+					}
 					.page-nav__item{
 						float: left;
 						width: 342/@rem;
@@ -221,6 +294,39 @@
 			}
 		}
 	}
+	.cards-nav{
+		.page-nav__item-ico{
+			display: none;
+		}
+		&.b-block{
+			padding-top: 8/@rem;
+			padding-bottom: 27/@rem;
+		}
+		&__card{
+			.page-nav__item{
+				&-text,&-title{
+					max-width: 42rem;
+				}
+			}
+			.b-card{
+				right: 3.3rem;
+				top: 3.3rem;
+			}
+		}
+		&__rgs{
+			&-logo{
+				width: 230/@rem;
+				height: 100/@rem;
+				top: 5rem;
+			}
+		}
+		&__payments{
+			background-image: url('@{pathToImg}cards-nav/payments_tablet.png');
+		}
+		&__visa{
+			background-image: url('@{pathToImg}cards-nav/visa_tablet.png');
+		}
+	}
 }
 .mobile{
 	.page-nav{
@@ -228,6 +334,7 @@
 			&-col{
 				float: none;
 				width: 100%;
+				margin-left: 0;
 				&+.page-nav__row-col{
 					margin-left: 0;
 					margin-top: 30/@rem;
@@ -273,6 +380,46 @@
 			&-blocks{
 				display: none;
 			}
+		}
+	}
+	.cards-nav{
+		.page-nav__item-ico{
+			display: none;
+		}
+		&.b-block{
+			padding-top: 30/@rem;
+			padding-bottom: 16/@rem;
+		}
+		&__card{
+			overflow: hidden;
+			.page-nav__item{
+				&-text,&-title{
+					max-width: 23.6rem;
+				}
+				&-text{
+					letter-spacing: -0.04rem;
+				}
+			}
+			.b-card{
+				right: -10.6rem;
+				top: 3.6rem;
+			}
+		}
+		&__rgs{
+			.page-nav__item{
+				&-text{
+					max-width: 29rem;
+				}
+			}
+			&-logo{
+				display: none;
+			}
+		}
+		&__payments{
+			background-image: url('@{pathToImg}cards-nav/payments_mob.png');
+		}
+		&__visa{
+			background-image: url('@{pathToImg}cards-nav/visa_mob.png');
 		}
 	}
 }
