@@ -106,6 +106,7 @@ app.init = function () {
 	app.actions();
 	app.oldVersion();
 	app.payFonds();
+	app.depository();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -1087,6 +1088,72 @@ app.payFonds = function () {
 		}
 	});
 
+
+};
+
+app.depository = function () {
+	var $depository = $('[data-depository]'),
+			$tab = $depository.find('[data-depository-tab]'),
+			$form = $depository.find('form'),
+			$formToggle = $depository.find('[data-depository-form-toggle]'),
+			$formFields = $depository.find('[data-depository-form-fields]'),
+			$field = $depository.find('[data-depository-field]'),
+			$typeInp = $depository.find('[data-depository-type]'),
+			$block = $depository.find('[data-depository-block]'),
+			$showMore = $depository.find('[data-depository-show-more]'),
+			$hidden = $depository.find('[data-depository-hidden]'),
+			counter = 3
+		;
+	if(app.utils.isTabletPort){
+		counter = 2;
+	}
+	if(!$hidden.find('[data-depository-hidden-item]').length){
+		$showMore.hide();
+	}
+	$formToggle.on('click',function () {
+		$(this).toggleClass('_active');
+		$formFields.slideToggle();
+	});
+	$tab.on('click',function () {
+		var $self = $(this);
+		if(!$self.hasClass('_active')){
+			$tab.removeClass('_active');
+			$self.addClass('_active');
+			$typeInp.val($self.data('depositoryTab'));
+			$field.val('').trigger('chosen:updated');
+			$form.trigger('submit');
+		}
+	});
+
+	$showMore.on('click',function () {
+		var $elem = $hidden.find('[data-depository-hidden-item]').slice(0,counter);
+		$elem.each(function(){
+			var $self = $(this);
+			$self.removeAttr('data-depository-hidden-item');
+			$self.appendTo($block);
+		});
+		if(!$hidden.find('[data-depository-hidden-item]').length){
+			$showMore.hide();
+		}
+	});
+
+	$form.on('submit',function () {
+		var $self = $(this);
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			$block.html(data.content);
+			if(data.hidden){
+				$hidden.html(data.hidden)
+			}else{
+				$hidden.empty();
+			}
+			if($hidden.find('[data-depository-hidden-item]').length){
+				$showMore.show();
+			}else{
+				$showMore.hide();
+			}
+		},'json');
+		return false;
+	});
 
 };
 
