@@ -597,7 +597,8 @@ app.menu = function () {
 			$menuSections  = $('[ data-b-menu-sections]'),
 			menuNum = null,
 			offset = null,
-			mobMenuswiper = false
+			mobMenuswiper = false,
+			timeout = null
 		;
 
 	/*поиск*/
@@ -626,12 +627,23 @@ app.menu = function () {
 	});
 
 	$searchFormField.on('keyup',function () {
-		var val = $(this).val();
-		if(val){
-			$searchForm.trigger('submit');
-		}else{
-			$searchFormRequests.hide();
-		}
+		clearTimeout(timeout);
+		$searchFormRequests.hide();
+		timeout = setTimeout(function () {
+			var val = $searchFormField.val();
+			if(val){
+				$.post($searchFormRequests.data('headerSearchFormRequests'), {val:val}, function(data){
+					if(data){
+						$searchFormRequests.html(data).slideDown(500);
+					}else{
+						$searchFormRequests.hide();
+					}
+				});
+			}else{
+				$searchFormRequests.hide();
+			}
+		},1000);
+
 	});
 	$searchForm.on('submit',function () {
 		if(!$searchFormField.val()){
@@ -639,9 +651,9 @@ app.menu = function () {
 		}
 		var $self = $(this);
 		$.post($self.attr('action'), $self.serialize(), function(data){
-			$searchFormRequests.html(data).slideDown(500);
+			
 		});
-		return false;
+
 	});
 	/*конец поиска*/
 
