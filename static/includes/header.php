@@ -73,7 +73,7 @@
 					<a href="javascript:void(0);" data-header-search-btn class="header__search-btn no-tablet-block"></a>
 					<div class="header__search-form">
 						<a href="javascript:void(0);" class="header__search-form-close"  data-header-search-close></a>
-						<form action="/static/search.php" data- data-header-search-form>
+						<form action="/static/search.php"  data-header-search-form>
 							<div class="header__search-form-field">
 								<input type="text" name="q" data-header-search-form-field placeholder="Например: Вклады">
 							</div>
