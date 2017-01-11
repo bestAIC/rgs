@@ -632,7 +632,7 @@ app.menu = function () {
 		timeout = setTimeout(function () {
 			var val = $searchFormField.val();
 			if(val){
-				$.post($searchFormRequests.data('headerSearchFormRequests'), {val:val}, function(data){
+				$.post($searchFormRequests.data('headerSearchFormRequests'), {q:val}, function(data){
 					if(data){
 						$searchFormRequests.html(data).slideDown(500);
 					}else{
