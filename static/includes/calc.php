@@ -6,6 +6,10 @@
 				<div class="deposit-calc__option" data-calc-sum>
 					<div class="deposit-calc__option-block">
 						<div class="deposit-calc__option-title">Сумма вклада</div>
+						<div class="deposit-calc__option-scale">
+							<div class="deposit-calc__option-scale-item _left" data-calc-sum-min></div>
+							<div class="deposit-calc__option-scale-item _right" data-calc-sum-max></div>
+						</div>
 						<div class="deposit-calc__option-slider" data-calc-sum-slider></div>
 					</div>
 					<div class="deposit-calc__option-fields">
@@ -24,16 +28,17 @@
 				<div class="deposit-calc__option" data-calc-period>
 					<div class="deposit-calc__option-block">
 						<div class="deposit-calc__option-title">Срок вклада</div>
+						<div class="deposit-calc__option-scale" data-calc-period-scale></div>
 						<div class="deposit-calc__option-slider" data-calc-period-slider></div>
 					</div>
 					<div class="deposit-calc__option-fields">
 						<div class="deposit-calc__option-field">
 							<select  data-chosen data-calc-period-select>
-								<option value="91">91</option>
-								<option value="181">181</option>
-								<option value="271">271</option>
-								<option value="367">367</option>
-								<option value="732">732</option>
+								<option value="91">91 день</option>
+								<option value="181">181 день</option>
+								<option value="271">271 день</option>
+								<option value="367">367 дней</option>
+								<option value="732">732 дня</option>
 							</select>
 						</div>
 					</div>

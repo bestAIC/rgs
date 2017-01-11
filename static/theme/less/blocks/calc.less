@@ -5,6 +5,7 @@
 }
 .deposit-calc{
 	display: none!important;
+	z-index: 100;
 	&__block{
 		.clearfix;
 		margin-top: 33/@rem;
@@ -15,17 +16,18 @@
 		background-color: white;
 		border-radius: 2/@rem;
 		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
-		padding: 40/@rem 40/@rem 48/@rem;
+		padding: 60/@rem 40/@rem 48/@rem;
 		min-height: 320/@rem;
 	}
 
 	&__option{
 		position: relative;
 		&+&{
-			margin-top: 50/@rem;
+			margin-top: 7.2rem;
 		}
 		&-fields{
-			width: 173/@rem;
+			//width: 173/@rem;
+			width: 203/@rem;
 			height: 48/@rem;
 			position: absolute;
 			right: 0;
@@ -92,15 +94,88 @@
 				letter-spacing: -0.28/@rem;
 				border-color: #e8e8e8;
 			}
+			.chosen-container-single .chosen-single{
+				font-size: 20/@rem;
+				font-weight: 600;
+				letter-spacing: -0.28/@rem;
+			}
 		}
 		&-block{
-			margin-right: 200/@rem;
+			//margin-right: 200/@rem;
+			margin-right: 230/@rem;
+		}
+		&-scale{
+			position: relative;
+			height: 2.4rem;
+			margin-bottom: 12/@rem;
+			&-item{
+				position: absolute;
+				top: 0;
+				font-size: 14/@rem;
+				font-weight: 400;
+				letter-spacing: -0.19/@rem;
+				line-height: 24/@rem;
+				color: #919599;
+				&:after{
+					content: '';
+					position: absolute;
+					width: 1px;
+					height: 8/@rem;
+					background-color: #dedfe0;
+					top:2.4rem;
+				}
+				&._period{
+					width: 4rem;
+					text-align: center;
+					&:after{
+						left: 50%;
+					}
+				}
+				&._5-1,&._4-1,&._3-1,&._2-1,&._left{
+					left: 0;
+					text-align: left;
+					&:after{
+						left: 0;
+					}
+				}
+				&._5-2{
+					left: 25%;
+					margin-left: -2rem;
+				}
+				&._4-2{
+					left: 33.33%;
+					margin-left: -2rem;
+				}
+				&._4-3{
+					left: 66.66%;
+					margin-left: -2rem;
+				}
+				&._5-3,&._3-2{
+					left: 50%;
+					margin-left: -2rem;
+				}
+				&._5-4{
+					left: 75%;
+					margin-left: -2rem;
+				}
+				&._5-5,&._4-4,&._3-3,&._2-2,&._right{
+					right: 0;
+					text-align: right;
+					&:after{
+						left: auto;
+						right: 0;
+					}
+				}
+			}
 		}
 		&-title{
-			font-size: 16/@rem;
-			font-weight: 400;
-			letter-spacing: -0.22/@rem;
-			margin-bottom: 17/@rem;
+			text-transform: uppercase;
+			font-size: 10/@rem;
+			font-weight: 600;
+			letter-spacing: 0.5/@rem;
+			line-height: 14/@rem;
+			color: @text-color;
+			margin-bottom: 5/@rem;
 		}
 	}
 	&__info{
