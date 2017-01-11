@@ -5227,6 +5227,9 @@ span.pagination__item:focus {
   white-space: normal;
   overflow: visible;
 }
+.calc-test .deposit-calc {
+  display: block!important;
+}
 .deposit-calc {
   display: none!important;
 }
