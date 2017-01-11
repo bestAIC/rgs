@@ -1500,7 +1500,6 @@ app.calcFilter = function(){
 			$summ.removeClass("error");
 			for (var i in arInfo) {
 				var arDeposit = arInfo[i];
-				console.log(arDeposit);
 				if (monthly == 'Y' && arDeposit['monthly'] != 'Y') continue;
 				if (cashin == 'Y' && arDeposit['cashin'] != 'Y') continue;
 				if (cashout == 'Y' && arDeposit['cashout'] != 'Y') continue;
@@ -1573,10 +1572,10 @@ app.calcFilter = function(){
 		}
 	}
 };
-app.calc = function(){
+app.calcOld = function(){
 	var self = this,
 			$calc = $('[data-calc]'),
-
+			
 			$sumInp = $calc.find('[data-calc-sum-field]'),
 			$daysInp = $calc.find('[data-calc-days-field]'),
 			$calcRate = $calc.find('[data-calc-rate]'),
@@ -1595,6 +1594,7 @@ app.calc = function(){
 	if(!$calc.length){
 		return false;
 	}
+
 	$sliderWrap.each(function(){
 		var $self = $(this),
 				$slider = $self.find('[data-calc-slider]'),
@@ -1636,7 +1636,7 @@ app.calc = function(){
 			$inp.change();
 			calculate();
 		});
-		
+
 		$inp.val(showSliderVal($inp.data('calcSliderInp'),$slider.slider("value")));
 		$inp.focus(function () {
 			val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10);
@@ -1682,5 +1682,149 @@ app.calc = function(){
 			return '€'
 		}
 	}
-	calculate();
+
+};
+app.calc = function(){
+	var self = this,
+			$calc = $('[data-calc]'),
+			calcData = null,
+			calcDataValuta = null,
+
+			$sum = $calc.find('[data-calc-sum]'),
+			$sumSlider = $sum.find('[data-calc-sum-slider]'),
+			$sumInp = $sum.find('[data-calc-sum-inp]'),
+			
+			$valutaSelect = $calc.find('[data-calc-valuta-select]'),
+
+			$period = $calc.find('[data-calc-period]'),
+			$periodSlider = $period.find('[data-calc-period-slider]'),
+			$periodField = $period.find('[data-calc-period-select]'),
+			
+			$calcRate = $calc.find('[data-calc-rate]'),
+			$calcProfit = $calc.find('[ data-calc-profit]'),
+			$calcTotalSum = $calc.find('[data-calc-total-sum]'),
+
+			sum = null,
+			totalSum = null,
+			period = null,
+			profit = null,
+			rate = null,
+			valuta = 'rur',
+
+			startSumValue = null,
+			val = null
+		;
+	if(!$calc.length){
+		return false;
+	}
+
+	$.post('/static/ajax/calcData.php', {}, function(data){
+		calcData = $.parseJSON(data);
+		calcData = calcData[$calc.data('calc')];
+		calcDataValuta = calcData[valuta];
+		init();
+	});
+
+	function init() {
+		$valutaSelect.on('change',function () {
+			valuta = $valutaSelect.val();
+			calcDataValuta = calcData[valuta];
+			calculate();
+
+			$sumSlider.slider( "option", "max", calcDataValuta.max);
+			$sumSlider.slider( "option", "min", calcDataValuta.min);
+			$sumSlider.slider( "option", "step", calcDataValuta.step);
+			$sumInp.change();
+
+			$periodField.empty();
+			for (var opt in calcDataValuta['periods']) {
+				opt = parseInt(opt);
+				$periodField.append( $('<option value="'+opt+'">'+opt+'</option>'));
+			}
+			$periodField.trigger("chosen:updated");
+			$periodSlider.slider( "option", "max", calcDataValuta.periodsCounter);
+			$periodField.change();
+
+		});
+		$sumSlider.slider({
+			range: "min",
+			min: calcDataValuta.min,
+			max: calcDataValuta.max,
+			step: calcDataValuta.step,
+			value: calcDataValuta.value || calcDataValuta.min,
+			slide: function( event, ui ){
+				$sumInp.val(app.formatNumber(ui.value));
+			},
+			start: function( event, ui ){
+				startSumValue = ui.value;
+			},
+			stop: function( event, ui ){
+				if(ui.value != startSumValue){
+					calculate();
+					$sumInp.val(app.formatNumber(ui.value));
+				}
+			}
+		});
+		$sumInp.focus(function () {
+			val = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10);
+			$sumInp.val(val);
+		}).keyup(function () {
+
+		});
+		$sumInp.on('change',function(){
+			var val1 = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10) || calcDataValuta.min;
+			val = Math.min(Math.max(calcDataValuta.min, val1),calcDataValuta.max);
+			$sumSlider.slider("value",val);
+			$sumInp.val(app.formatNumber(val));
+			calculate();
+		});
+
+		if($periodSlider.length){
+			initPeriod();
+		}
+		calculate();
+	}
+
+	function initPeriod() {
+		$periodSlider.slider({
+			range: "min",
+			min: 1,
+			max: calcDataValuta.periodsCounter,
+			value: $periodField[0].selectedIndex + 1,
+			slide: function( event, ui ){
+				$periodField[0].selectedIndex = ui.value - 1;
+				$periodField.trigger("chosen:updated");
+				calculate();
+			}
+		});
+
+		$periodField.on( "change", function() {
+			$periodSlider.slider( "value", this.selectedIndex + 1 );
+			calculate();
+		});
+	}
+
+	function calculate() {
+		sum = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10);
+		period = parseInt($periodField.val());
+		for (var minVal in calcDataValuta['periods'][period]) {
+			minVal = parseInt(minVal);
+			if (minVal <= sum) {
+				rate = calcDataValuta['periods'][period][minVal];
+			}
+		}
+		$calcRate.text(rate.toFixed(2)+'%');
+		profit = Math.floor(sum*period*rate/100/365);
+		$calcProfit.html(app.formatNumber(profit)+' '+ valutaZnak(valuta));
+		$calcTotalSum.html(app.formatNumber(profit+sum)+' '+ valutaZnak(valuta));
+	}
+	function valutaZnak(valuta) {
+		if(valuta =='rur'){
+			return '<span class="rub _medium"></span>'
+		}else if(valuta =='usd'){
+			return '$'
+		}else{
+			return '€'
+		}
+	}
 };

@@ -1,50 +1,40 @@
-<div class="b-block _gray animation__top deposit-calc" data-calc data-leap-year="<?=date("L");?>" data-animation>
+<div class="b-block _gray animation__top deposit-calc" data-calc="gosstrakh" data-animation>
 	<div class="grid__inner">
 		<h3>Калькулятор доходности</h3>
 		<div class="deposit-calc__block">
 			<div class="deposit-calc__options">
-				<div class="deposit-calc__option" data-calc-slider-wrap>
+				<div class="deposit-calc__option" data-calc-sum>
 					<div class="deposit-calc__option-block">
 						<div class="deposit-calc__option-title">Сумма вклада</div>
-						<div class="deposit-calc__option-slider"
-								 data-calc-slider='{"min":1000,"max":200000,"step":1000,"value":50000,"rate":7.3}'
-								 data-rub='{"min":1000,"max":200000,"step":1000,"value":50000,"rate":7.3}'
-								 data-dollar='{"min":100,"max":10000,"step":100,"value":5000,"rate":1.3}'
-								 data-euro='{"min":50,"max":10000,"step":50,"value":1000,"rate":1}'>
-						</div>
+						<div class="deposit-calc__option-slider" data-calc-sum-slider></div>
 					</div>
 					<div class="deposit-calc__option-fields">
 						<div class="deposit-calc__option-select">
-							<select data-calc-slider-select data-chosen>
-								<option value="rub">₽</option>
-								<option value="dollar">$</option>
-								<option value="euro">€</option>
+							<select data-calc-valuta-select data-chosen>
+								<option value="rur">₽</option>
+								<option value="usd">$</option>
+								<option value="eur">€</option>
 							</select>
 						</div>
 						<div class="deposit-calc__option-field">
-							<input type="text" value="50 000" data-calc-sum-field data-calc-slider-inp>
+							<input type="text" value="50 000" data-calc-sum-inp>
 						</div>
 					</div>
 				</div>
-				<div class="deposit-calc__option" data-calc-slider-wrap>
+				<div class="deposit-calc__option" data-calc-period>
 					<div class="deposit-calc__option-block">
 						<div class="deposit-calc__option-title">Срок вклада</div>
-						<div class="deposit-calc__option-slider" data-calc-slider='{"min":30,"max":1095,"step":1,"value":365}' ></div>
+						<div class="deposit-calc__option-slider" data-calc-period-slider></div>
 					</div>
 					<div class="deposit-calc__option-fields">
 						<div class="deposit-calc__option-field">
-							<input type="text" value="365 дней" data-calc-days-field data-calc-slider-inp="date">
-						</div>
-					</div>
-				</div>
-				<div class="deposit-calc__option" data-calc-slider-wrap>
-					<div class="deposit-calc__option-block">
-						<div class="deposit-calc__option-title">Ежемесячное пополнение</div>
-						<div class="deposit-calc__option-slider" data-calc-slider='{"min":1000,"max":100000,"step":100,"value":10000}'></div>
-					</div>
-					<div class="deposit-calc__option-fields">
-						<div class="deposit-calc__option-field">
-							<input type="text" value="365 дней" data-calc-slider-inp>
+							<select  data-chosen data-calc-period-select>
+								<option value="91">91</option>
+								<option value="181">181</option>
+								<option value="271">271</option>
+								<option value="367">367</option>
+								<option value="732">732</option>
+							</select>
 						</div>
 					</div>
 				</div>

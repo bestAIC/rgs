@@ -1579,8 +1579,8 @@ h4.small-bottom-indent {
   z-index: 2;
 }
 .cards-nav.b-block {
-  padding-top: 80px;
-  padding-bottom: 65px;
+  padding-top: 8rem;
+  padding-bottom: 6.5rem;
 }
 .cards-nav__card .page-nav__item-text,
 .cards-nav__card .page-nav__item-title {
@@ -1600,8 +1600,8 @@ h4.small-bottom-indent {
   max-width: 32rem;
 }
 .cards-nav__rgs-logo {
-  width: 165px;
-  height: 72px;
+  width: 16.5rem;
+  height: 7.2rem;
   background: url('../images/cards-nav/logo.svg') no-repeat center;
   background-size: contain;
   position: absolute;
@@ -1789,8 +1789,8 @@ h4.small-bottom-indent {
   display: none;
 }
 .tablet.portrait .cards-nav.b-block {
-  padding-top: 8px;
-  padding-bottom: 27px;
+  padding-top: 0.8rem;
+  padding-bottom: 2.7rem;
 }
 .tablet.portrait .cards-nav__card .page-nav__item-text,
 .tablet.portrait .cards-nav__card .page-nav__item-title {
@@ -1801,8 +1801,8 @@ h4.small-bottom-indent {
   top: 3.3rem;
 }
 .tablet.portrait .cards-nav__rgs-logo {
-  width: 230px;
-  height: 100px;
+  width: 23rem;
+  height: 10rem;
   top: 5rem;
 }
 .tablet.portrait .cards-nav__payments {
@@ -1860,8 +1860,8 @@ h4.small-bottom-indent {
   display: none;
 }
 .mobile .cards-nav.b-block {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding-top: 3rem;
+  padding-bottom: 1.6rem;
 }
 .mobile .cards-nav__card {
   overflow: hidden;
