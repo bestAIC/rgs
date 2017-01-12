@@ -23,7 +23,7 @@
 					</a>
 				</div>
 				<div class="b-menu__submenu-item">
-					<a href="#" class="b-menu__submenu-link">
+					<a href="/static/about/disclosure-of-information/shareholders.php" class="b-menu__submenu-link">
 						Информация для акционеров
 						и иных заинтересованных лиц
 					</a>

@@ -23,6 +23,25 @@
 		}
 	}
 }
+.files-list{
+	max-width: 97rem;
+	margin: 0 auto;
+	.file{
+		float: none;
+		width: 100%!important;
+		margin: 0;
+		display: block;
+		&__name{
+			.mobile &{
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		}
+		&+.file{
+			border-top: 0;
+		}
+	}
+}
 .file{
 	.color(@title-color);
 	border: 1px solid @cBorder;
