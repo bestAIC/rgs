@@ -9,19 +9,7 @@
 		<a href="#" class="b-menu__item-link">Контакты</a>
 	</div>
 	<div class="b-menu__item">
-		<a href="#" class="b-menu__item-link">Миссия и ценности</a>
-	</div>
-	<div class="b-menu__item">
-		<a href="#" class="b-menu__item-link">История</a>
-	</div>
-	<div class="b-menu__item">
-		<a href="#" class="b-menu__item-link">Рейтинги</a>
-	</div>
-	<div class="b-menu__item">
 		<a href="#" class="b-menu__item-link">Лицензии</a>
-	</div>
-	<div class="b-menu__item">
-		<a href="#" class="b-menu__item-link">Органы управления</a>
 	</div>
 	<div class="b-menu__item">
 		<a href="#" class="b-menu__item-link">
@@ -33,12 +21,6 @@
 		<a href="#" class="b-menu__item-link">
 			О налогообложении<br />
 			иностранных счетов (FATCA)
-		</a>
-	</div>
-	<div class="b-menu__item">
-		<a href="#" class="b-menu__item-link">
-			Акционеры<br />
-			и аффилированные лица
 		</a>
 	</div>
 	<div class="b-menu__item">
