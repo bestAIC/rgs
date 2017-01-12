@@ -5,7 +5,7 @@
 				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/card/Payments.jpg');"></div>
 			</div>
 			<div class="inner__banner-in grid__inner">
-				<div class="b-card _mc-platinum"></div>
+				<div class="b-card _mc-platinum-pp"></div>
 				<div class="inner__banner-block">
 					<div class="inner__banner-title">Расчетные карты</div>
 					<div class="breadcrumbs">
