@@ -107,6 +107,7 @@ app.init = function () {
 	app.oldVersion();
 	app.payFonds();
 	app.depository();
+	app.faqMobTabs();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -830,6 +831,21 @@ app.mobSliders = function () {
 			breakpoints: {
 				640: {
 					spaceBetween: 10
+				}
+			}
+		});
+	});
+};
+app.faqMobTabs = function () {
+	var $tabs = $('[data-faq-mob-tabs]');
+
+	$tabs.each(function () {
+		var swiper = new Swiper($(this)[0], {
+			slidesPerView: 'auto',
+			simulateTouch: true,
+			breakpoints: {
+				640: {
+					spaceBetween: 25
 				}
 			}
 		});

@@ -4458,6 +4458,40 @@ span.pagination__item:focus {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.questions__item-answer ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.questions__item-answer li {
+  position: relative;
+  padding-left: 3.5rem;
+}
+.mobile .questions__item-answer li:before {
+  top: 1rem;
+}
+.questions__item-answer li + li {
+  margin-top: 1.5rem;
+}
+.mobile .questions__item-answer li + li {
+  margin-top: 1rem;
+}
+.questions__item-answer li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  width: 1rem;
+  height: 1px;
+  background-color: #cca266;
+}
+.questions__item-answer * + ul {
+  margin-top: 2rem;
+}
+.questions__item-answer ul + * {
+  margin-top: 2rem;
+}
 .mobile .questions .grid__inner {
   padding: 0 2rem;
 }
@@ -7208,6 +7242,71 @@ span.pagination__item:focus {
 .mobile .depository__form-btn {
   float: none;
   width: 100%;
+}
+.faq.b-block {
+  padding-top: 5.4rem;
+  padding-bottom: 4.5rem;
+}
+.tablet.portrait .faq.b-block {
+  padding-bottom: 3rem;
+  padding-top: 0.7rem;
+}
+.tablet.portrait .faq.b-block .questions__items {
+  padding-right: 4rem;
+}
+.faq .questions__items {
+  margin-top: 0;
+}
+.faq__tabs {
+  border-bottom: 1px solid #DEDFE0;
+  margin-bottom: 4rem;
+}
+.faq__tab {
+  color: #3e3e3e;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.022rem;
+  line-height: 1.6rem;
+  display: inline-block;
+  vertical-align: top;
+  border-bottom: 0.4rem solid transparent;
+  padding-bottom: 2.6rem;
+  transition: border-color 0.5s;
+}
+.faq__tab:hover {
+  color: #3e3e3e;
+}
+.faq__tab:focus {
+  color: #3e3e3e;
+}
+.faq__tab + .faq__tab {
+  margin-left: 3.6rem;
+}
+.faq__tab._active,
+.no-touch .faq__tab:hover {
+  border-color: #cca266;
+}
+.mobile .faq .grid__inner {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.mobile .faq.b-block {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.mobile .faq__tabs {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+.mobile .faq__tab {
+  font-size: 1.4rem;
+  letter-spacing: -0.019rem;
+  line-height: 1.4rem;
+  padding-bottom: 1.6rem;
+}
+.mobile .faq__sections {
+  padding-top: 1rem;
 }
 .deposit__text,
 .deposit .note-text {

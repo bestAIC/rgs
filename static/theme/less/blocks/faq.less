@@ -1,0 +1,74 @@
+.faq{
+	&.b-block{
+		padding-top: 5.4rem;
+		padding-bottom: 4.5rem;
+		.tablet.portrait &{
+			padding-bottom: 3rem;
+			padding-top: 0.7rem;
+			.questions__items{
+				padding-right: 4rem;
+			}
+		}
+	}
+	.questions__items{
+		margin-top: 0;
+	}
+	&__tabs{
+		border-bottom: 1px solid @cBorder;
+		margin-bottom: 4rem;
+	}
+	&__tab{
+		.color(@title-color);
+		font-size: 16/@rem;
+		font-weight: 700;
+		letter-spacing: -0.22/@rem;
+		line-height: 16/@rem;
+		display: inline-block;
+		vertical-align: top;
+		border-bottom: 4/@rem solid transparent;
+		padding-bottom: 2.6rem;
+		&+&{
+			margin-left: 3.6rem;
+		}
+		transition: border-color @animTime;
+		&._active,.no-touch &:hover{
+			border-color: @cGold;
+		}
+	}
+	&__sections{
+
+	}
+	&__section{
+
+	}
+}
+.mobile{
+	.faq{
+		.grid__inner{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		&.b-block{
+			padding-top: 2rem;
+			padding-bottom: 1.5rem;
+		}
+
+		&__tabs{
+			padding-left: 2rem;
+			margin-bottom: 1rem;
+			padding-right: 2rem;
+		}
+		&__tab{
+			font-size: 14/@rem;
+			letter-spacing: -0.19/@rem;
+			line-height: 14/@rem;
+			padding-bottom: 1.6rem;
+		}
+		&__sections{
+			padding-top: 1rem;
+		}
+		&__section{
+
+		}
+	}
+}

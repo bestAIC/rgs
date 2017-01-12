@@ -10,7 +10,7 @@
 					<a href="#" class="b-menu__submenu-link">Вклады</a>
 				</div>
 				<div class="b-menu__submenu-item">
-					<a href="#" class="b-menu__submenu-link">Карты</a>
+					<a href="/static/about/faq/cards.php" class="b-menu__submenu-link">Карты</a>
 				</div>
 				<div class="b-menu__submenu-item">
 					<a href="#" class="b-menu__submenu-link">Кредиты</a>
