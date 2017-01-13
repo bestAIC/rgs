@@ -18,7 +18,7 @@
 		</a>
 	</div>
 	<div class="b-menu__item">
-		<a href="#" class="b-menu__item-link">
+		<a href="/static/about/fatca.php" class="b-menu__item-link">
 			О налогообложении<br />
 			иностранных счетов (FATCA)
 		</a>
