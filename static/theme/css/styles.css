@@ -5514,6 +5514,8 @@ span.pagination__item:focus {
 .deposit-calc__option-scale-item._period:after {
   left: 50%;
 }
+.deposit-calc__option-scale-item._7-1,
+.deposit-calc__option-scale-item._6-1,
 .deposit-calc__option-scale-item._5-1,
 .deposit-calc__option-scale-item._4-1,
 .deposit-calc__option-scale-item._3-1,
@@ -5522,6 +5524,8 @@ span.pagination__item:focus {
   left: 0;
   text-align: left;
 }
+.deposit-calc__option-scale-item._7-1:after,
+.deposit-calc__option-scale-item._6-1:after,
 .deposit-calc__option-scale-item._5-1:after,
 .deposit-calc__option-scale-item._4-1:after,
 .deposit-calc__option-scale-item._3-1:after,
@@ -5529,20 +5533,47 @@ span.pagination__item:focus {
 .deposit-calc__option-scale-item._left:after {
   left: 0;
 }
+.deposit-calc__option-scale-item._7-2 {
+  left: 16.67%;
+  margin-left: -2rem;
+}
+.deposit-calc__option-scale-item._7-6 {
+  left: 83.33%;
+  margin-left: -2rem;
+}
+.deposit-calc__option-scale-item._6-2 {
+  left: 20%;
+  margin-left: -2rem;
+}
+.deposit-calc__option-scale-item._6-3 {
+  left: 40%;
+  margin-left: -2rem;
+}
+.deposit-calc__option-scale-item._6-4 {
+  left: 60%;
+  margin-left: -2rem;
+}
+.deposit-calc__option-scale-item._6-5 {
+  left: 80%;
+  margin-left: -2rem;
+}
 .deposit-calc__option-scale-item._5-2 {
   left: 25%;
   margin-left: -2rem;
 }
-.deposit-calc__option-scale-item._4-2 {
+.deposit-calc__option-scale-item._4-2,
+.deposit-calc__option-scale-item._7-3 {
   left: 33.33%;
   margin-left: -2rem;
 }
-.deposit-calc__option-scale-item._4-3 {
+.deposit-calc__option-scale-item._4-3,
+.deposit-calc__option-scale-item._7-5 {
   left: 66.66%;
   margin-left: -2rem;
 }
 .deposit-calc__option-scale-item._5-3,
-.deposit-calc__option-scale-item._3-2 {
+.deposit-calc__option-scale-item._3-2,
+.deposit-calc__option-scale-item._7-4 {
   left: 50%;
   margin-left: -2rem;
 }
@@ -5550,6 +5581,8 @@ span.pagination__item:focus {
   left: 75%;
   margin-left: -2rem;
 }
+.deposit-calc__option-scale-item._6-6,
+.deposit-calc__option-scale-item._7-7,
 .deposit-calc__option-scale-item._5-5,
 .deposit-calc__option-scale-item._4-4,
 .deposit-calc__option-scale-item._3-3,
@@ -5558,6 +5591,8 @@ span.pagination__item:focus {
   right: 0;
   text-align: right;
 }
+.deposit-calc__option-scale-item._6-6:after,
+.deposit-calc__option-scale-item._7-7:after,
 .deposit-calc__option-scale-item._5-5:after,
 .deposit-calc__option-scale-item._4-4:after,
 .deposit-calc__option-scale-item._3-3:after,
