@@ -1646,6 +1646,9 @@ app.calc = function(){
 		$sumMax.text(app.formatNumber(calcDataValuta.max));
 
 		$periodField.trigger("chosen:updated");
+		if($periodField.find('option[value="'+period+'"]').length){
+			$periodField.val(period);
+		}
 		$periodSlider.slider( "option", "max", calcDataValuta.periodsCounter);
 		$periodField.change();
 	});
