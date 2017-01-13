@@ -48,7 +48,7 @@
 					<div class="deposit-calc__info-block-text" data-calc-profit></div>
 				</div>
 			</div>
-			<a href="#" class="btn _red deposit-calc__info-btn">ОТКРЫТЬ ВКЛАД</a>
+			<a href="javascript:void(0);" data-goto=".subscription" class="btn _red deposit-calc__info-btn">ОТКРЫТЬ ВКЛАД</a>
 		</div>
 	</div>
 </div>

@@ -381,7 +381,7 @@ app.CardP2P = function () {
 app.initGoto = function () {
 	$('html').on('click.Goto', '[data-goto]', function(e){
 		e.preventDefault();
-		$('html, body').animate({'scrollTop': $($(this).data('goto')).offset().top - $('.header').height()}, 500);
+		$('html, body').animate({'scrollTop': $($(this).data('goto')).offset().top - $('[data-menu-wrap]').height()}, 500);
 	})
 };
 app.masks = function () {

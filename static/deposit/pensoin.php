@@ -67,7 +67,7 @@
 						<li>Срок вклада до 2-х лет</li>
 					</ul>
 					<div class="inner__info-benefits-btn">
-						<a href="#" class="btn _red">Открыть вклад</a>
+						<a href="javascript:void(0);" data-goto=".subscription" class="btn _red">Открыть вклад</a>
 					</div>
 				</div>
 			</div>
