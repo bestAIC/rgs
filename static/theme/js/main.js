@@ -1709,7 +1709,8 @@ app.calc = function(){
 		for (var minVal in calcDataValuta['periods'][period]) {
 			minVal = parseInt(minVal);
 			if (minVal <= sum) {
-				rate = parseInt(calcDataValuta['periods'][period][minVal]);
+				rate = calcDataValuta['periods'][period][minVal];
+				rate=+rate;
 			}
 		}
 		$calcRate.text(rate.toFixed(2)+'%');
