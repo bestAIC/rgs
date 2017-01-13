@@ -5281,12 +5281,17 @@ span.pagination__item:focus {
   white-space: normal;
   overflow: visible;
 }
-.calc-test .deposit-calc {
-  display: block!important;
-}
 .deposit-calc {
-  display: none!important;
   z-index: 100;
+}
+.deposit-calc.hide-periods .deposit-calc__period {
+  display: none!important;
+}
+.deposit-calc.hide-periods .deposit-calc__options {
+  padding-top: 12rem;
+}
+.mobile .deposit-calc.hide-periods .deposit-calc__options {
+  padding-top: 10rem;
 }
 .deposit-calc__block {
   *zoom: 1;
@@ -5313,6 +5318,26 @@ span.pagination__item:focus {
 .deposit-calc__option {
   position: relative;
 }
+.deposit-calc__option select {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.028rem;
+  border-color: #e8e8e8;
+  padding-right: 1rem;
+  -webkit-appearance: none;
+  background: url('../images/icons/select.svg') no-repeat calc(100% - 1.5rem) center #fff;
+  background-size: 0.7rem 0.4rem;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+.deposit-calc__option select::-ms-expand {
+  display: none;
+}
 .deposit-calc__option + .deposit-calc__option {
   margin-top: 7.2rem;
 }
@@ -5335,26 +5360,6 @@ span.pagination__item:focus {
 .deposit-calc__option-select .chosen-container-single .chosen-single {
   font-family: 'Roboto', sans-serif !important;
   font-weight: 500;
-}
-.deposit-calc__option-select select {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: -0.028rem;
-  border-color: #e8e8e8;
-  padding-right: 1rem;
-  -webkit-appearance: none;
-  background: url('../images/icons/select.svg') no-repeat calc(100% - 1.5rem) center #fff;
-  background-size: 0.7rem 0.4rem;
-  /* for FF */
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  /* for IE */
-  -ms-appearance: none;
-  appearance: none!important;
-}
-.deposit-calc__option-select select::-ms-expand {
-  display: none;
 }
 .deposit-calc__option-select .chosen-container {
   z-index: 10;
@@ -5560,7 +5565,6 @@ span.pagination__item:focus {
 }
 .tablet.portrait .deposit-calc__info-blocks {
   padding-left: 0;
-  float: left;
   *zoom: 1;
 }
 .tablet.portrait .deposit-calc__info-blocks:before,
@@ -5584,8 +5588,7 @@ span.pagination__item:focus {
 }
 .tablet.portrait .deposit-calc__info-btn {
   width: auto;
-  margin-top: 0;
-  float: right;
+  float: none;
 }
 .mobile .deposit-calc__block {
   margin-top: 2.5rem;
@@ -5633,21 +5636,12 @@ span.pagination__item:focus {
   clear: both;
 }
 .mobile .deposit-calc__info-block {
-  width: 33%;
-  float: left;
+  width: 100%;
+  float: none;
   padding-right: 1rem;
 }
-.mobile .deposit-calc__info-block:first-child {
-  width: 32%;
-}
-.mobile .deposit-calc__info-block:nth-child(2) {
-  width: 41%;
-}
-.mobile .deposit-calc__info-block:nth-child(3) {
-  width: 27%;
-}
 .mobile .deposit-calc__info-block + .deposit-calc__info-block {
-  margin-top: 0;
+  margin-top: 1.5rem;
 }
 .mobile .deposit-calc__info-block-text {
   font-size: 2.4rem;

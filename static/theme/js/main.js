@@ -1537,118 +1537,7 @@ app.calcFilter = function(){
 		}
 	}
 };
-app.calcOld = function(){
-	var self = this,
-			$calc = $('[data-calc]'),
-			
-			$sumInp = $calc.find('[data-calc-sum-field]'),
-			$daysInp = $calc.find('[data-calc-days-field]'),
-			$calcRate = $calc.find('[data-calc-rate]'),
-			$calcProfit = $calc.find('[ data-calc-profit]'),
-			$calcTotalSum = $calc.find('[data-calc-total-sum]'),
-			
-			$sliderWrap = $('[data-calc-slider-wrap]'),
-			sum = null,
-			totalSum = null,
-			daysInYear = $calc.data('leapYear') ? 366 : 365,
-			days = null,
-			profit = null,
-			rate = null,
-			valuta='rub'
-		;
-	if(!$calc.length){
-		return false;
-	}
 
-	$sliderWrap.each(function(){
-		var $self = $(this),
-				$slider = $self.find('[data-calc-slider]'),
-				$inp = $self.find('[data-calc-slider-inp]'),
-				$select = $self.find('[data-calc-slider-select]'),
-				data = $slider.data('calcSlider'),
-				val = null,
-				val1 = null,
-				startValue = null
-
-			;
-		rate = data.rate || rate;
-		$slider.slider({
-			range: "min",
-			min: data.min,
-			max: data.max,
-			step: data.step,
-			value: data.value || data.min,
-			slide: function( event, ui ){
-				$inp.val(showSliderVal($inp.data('calcSliderInp'),ui.value));
-			},
-			start: function( event, ui ){
-				startValue = ui.value;
-			},
-			stop: function( event, ui ){
-				if(ui.value != startValue){
-					calculate();
-					$inp.val(showSliderVal($inp.data('calcSliderInp'),ui.value));
-				}
-			}
-		});
-		$select.on('change',function () {
-			data = $slider.data($select.val());
-			valuta = $select.val();
-			$slider.slider( "option", "max", data.max);
-			$slider.slider( "option", "min", data.min);
-			$slider.slider( "option", "step", data.step);
-			rate = data.rate || rate;
-			$inp.change();
-			calculate();
-		});
-
-		$inp.val(showSliderVal($inp.data('calcSliderInp'),$slider.slider("value")));
-		$inp.focus(function () {
-			val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10);
-			$inp.val(val1);
-		}).keyup(function () {
-
-		});
-		$inp.on('change',function(){
-			val1 = parseInt($inp.val().replace(new RegExp(" ",'g'),""),10) || data.min;
-			val = Math.min(Math.max(data.min, val1),data.max);
-			$slider.slider("value",val);
-			$inp.val(showSliderVal($inp.data('calcSliderInp'),val));
-			calculate();
-		});
-	});
-	function showSliderVal(type,val) {
-		var res = '',
-				years = 0,
-				months = 0
-			;
-		if(type == "date"){
-			res = res + app.formatNumber(val) + ' ' +app.utils.okonchanie(val,'день','дня','дней');
-		}else{
-			res = app.formatNumber(val);
-		}
-		return res;
-	}
-	function calculate() {
-		sum = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10);
-		days = parseInt($daysInp.val().replace(new RegExp(" ",'g'),""),10);
-		$calcRate.text(rate.toFixed(2)+'%');
-		profit = Math.floor(sum*days*rate/100/daysInYear);
-		//console.log(profit);
-		$calcProfit.html(app.formatNumber(profit)+' '+ valutaZnak(valuta));
-		$calcTotalSum.html(app.formatNumber(profit+sum)+' '+ valutaZnak(valuta));
-	}
-	function valutaZnak(valuta) {
-		if(valuta =='rub'){
-			return '<span class="rub _medium"></span>'
-		}else if(valuta =='dollar'){
-			return '$'
-		}else{
-			return '€'
-		}
-	}
-
-};
 app.calc = function(){
 	var self = this,
 			$calc = $('[data-calc]'),
@@ -1686,7 +1575,7 @@ app.calc = function(){
 		return false;
 	}
 
-	$.post('/static/ajax/calcData.php', {}, function(data){
+	$.post($calc.data('calcInfoUrl'), {}, function(data){
 		calcData = $.parseJSON(data);
 		calcData = calcData[$calc.data('calc')];
 		calcDataValuta = calcData[valuta];
@@ -1694,31 +1583,6 @@ app.calc = function(){
 	});
 
 	function init() {
-
-		$valutaSelect.on('change',function () {
-			valuta = $valutaSelect.val();
-			calcDataValuta = calcData[valuta];
-			calculate();
-
-			$sumSlider.slider( "option", "max", calcDataValuta.max);
-			$sumSlider.slider( "option", "min", calcDataValuta.min);
-			$sumSlider.slider( "option", "step", calcDataValuta.step);
-			$sumInp.change();
-
-			$periodField.empty();
-			for (var opt in calcDataValuta['periods']) {
-				opt = parseInt(opt);
-				$periodField.append( $('<option value="'+opt+'">'+opt+' '+app.utils.okonchanie(opt,"день","дня","дней")+'</option>'));
-			}
-			drawPeriodScale();
-			$sumMin.text(app.formatNumber(calcDataValuta.min));
-			$sumMax.text(app.formatNumber(calcDataValuta.max));
-			
-			$periodField.trigger("chosen:updated");
-			$periodSlider.slider( "option", "max", calcDataValuta.periodsCounter);
-			$periodField.change();
-
-		});
 
 		$sumSlider.slider({
 			range: "min",
@@ -1746,8 +1610,12 @@ app.calc = function(){
 
 		});
 
+		fillValuta();
+
 		$sumMin.text(app.formatNumber(calcDataValuta.min));
 		$sumMax.text(app.formatNumber(calcDataValuta.max));
+
+		$sumInp.val(app.formatNumber(calcDataValuta.value)).change();
 
 		$sumInp.on('change',function(){
 			var val1 = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10) || calcDataValuta.min;
@@ -1762,18 +1630,58 @@ app.calc = function(){
 		}
 		calculate();
 	}
-	
-	function drawPeriodScale() {
-		$periodScale.empty();
-		var i=1;
-		for (var opt in calcDataValuta['periods']) {
-			$periodScale.append( $('<div class="deposit-calc__option-scale-item _period _'+calcDataValuta.periodsCounter+'-'+i+'">'+opt+'</div>'));
+
+	$valutaSelect.on('change',function () {
+		valuta = $valutaSelect.val();
+		calcDataValuta = calcData[valuta];
+		calculate();
+
+		$sumSlider.slider( "option", "max", calcDataValuta.max);
+		$sumSlider.slider( "option", "min", calcDataValuta.min);
+		$sumSlider.slider( "option", "step", calcDataValuta.step);
+		$sumInp.change();
+
+		fillPeriods();
+		$sumMin.text(app.formatNumber(calcDataValuta.min));
+		$sumMax.text(app.formatNumber(calcDataValuta.max));
+
+		$periodField.trigger("chosen:updated");
+		$periodSlider.slider( "option", "max", calcDataValuta.periodsCounter);
+		$periodField.change();
+	});
+
+	function fillValuta() {
+		var i = 0;
+		for (var cur in calcData['currency']) {
+			$valutaSelect.append( $('<option value="'+cur+'">'+calcData['currency'][cur]+'</option>'));
 			i++;
+		}
+		$valutaSelect.trigger("chosen:updated");
+		if(i<2){
+			$valutaSelect.closest('[data-calc-valuta]').hide();
 		}
 	}
 
+	function fillPeriods() {
+		$periodField.empty();
+		$periodScale.empty();
+		if(calcDataValuta.periodsCounter === 1){
+			$calc.addClass('hide-periods');
+		}else{
+			$calc.removeClass('hide-periods');
+		}
+		var i=1;
+		for (var opt in calcDataValuta['periods']) {
+			opt = parseInt(opt);
+			$periodScale.append( $('<div class="deposit-calc__option-scale-item _period _'+calcDataValuta.periodsCounter+'-'+i+'">'+opt+'</div>'));
+			$periodField.append( $('<option value="'+opt+'">'+opt+' '+app.utils.okonchanie(opt,"день","дня","дней")+'</option>'));
+			i++;
+		}
+		$periodField.trigger("chosen:updated");
+	}
+
 	function initPeriod() {
-		drawPeriodScale();
+		fillPeriods();
 		$periodSlider.slider({
 			range: "min",
 			min: 1,

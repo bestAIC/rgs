@@ -71,7 +71,7 @@
 			</div>
 		</div>
 		<div class="b-blocks">
-			<?include "../includes/calc.php"?>
+			<?include "../includes/calcs/gosstrakh.php"?>
 			<div class="b-block animation__top deposit-info" data-animation>
 				<div class="grid__inner">
 					<div class="deposit-info__left">

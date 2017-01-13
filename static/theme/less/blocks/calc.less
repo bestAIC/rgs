@@ -1,11 +1,16 @@
-.calc-test{
-	.deposit-calc{
-		display: block!important;
-	}
-}
 .deposit-calc{
-	display: none!important;
 	z-index: 100;
+	&.hide-periods{
+		.deposit-calc__period{
+			display: none!important;
+		}
+		.deposit-calc__options{
+			padding-top: 12rem;
+			.mobile &{
+				padding-top: 10rem;
+			}
+		}
+	}
 	&__block{
 		.clearfix;
 		margin-top: 33/@rem;
@@ -22,6 +27,26 @@
 
 	&__option{
 		position: relative;
+		select{
+			font-size: 20/@rem;
+			font-weight: 600;
+			letter-spacing: -0.28/@rem;
+			border-color: #e8e8e8;
+			padding-right: 1rem;
+			-webkit-appearance: none;
+			background: url('@{pathToImg}icons/select.svg') no-repeat calc(~"100% - 1.5rem") center #fff;
+			background-size: 7/@rem 4/@rem;
+			/* for FF */
+			-moz-appearance: none;
+			text-indent: 0.01px;
+			text-overflow: '';
+			/* for IE */
+			-ms-appearance: none;
+			appearance: none!important;
+			&::-ms-expand {
+				display: none;
+			}
+		}
 		&+&{
 			margin-top: 7.2rem;
 		}
@@ -46,26 +71,7 @@
 				font-family: @fRoboto!important;
 				font-weight: 500;
 			}
-			select{
-				font-size: 20/@rem;
-				font-weight: 600;
-				letter-spacing: -0.28/@rem;
-				border-color: #e8e8e8;
-				padding-right: 1rem;
-				-webkit-appearance: none;
-				background: url('@{pathToImg}icons/select.svg') no-repeat calc(~"100% - 1.5rem") center #fff;
-				background-size: 7/@rem 4/@rem;
-				/* for FF */
-				-moz-appearance: none;
-				text-indent: 0.01px;
-				text-overflow: '';
-				/* for IE */
-				-ms-appearance: none;
-				appearance: none!important;
-				&::-ms-expand {
-					display: none;
-				}
-			}
+
 			.chosen-container{
 				z-index: 10;
 				background-color: #fff;
@@ -261,7 +267,6 @@
 			.clearfix;
 			&-blocks{
 				padding-left:0;
-				float: left;
 				.clearfix;
 			}
 			&-block{
@@ -276,8 +281,7 @@
 			}
 			&-btn{
 				width: auto;
-				margin-top: 0;
-				float: right;
+				float: none;
 			}
 		}
 	}
@@ -320,20 +324,11 @@
 				.clearfix;
 			}
 			&-block{
-				width: 33%;
-				float: left;
+				width: 100%;
+				float: none;
 				padding-right: 1rem;
-				&:first-child{
-					width: 32%;
-				}
-				&:nth-child(2){
-					width: 41%;
-				}
-				&:nth-child(3){
-					width: 27%;
-				}
 				&+.deposit-calc__info-block{
-					margin-top: 0;
+					margin-top: 1.5rem;
 				}
 				&-text{
 					font-size: 24/@rem;

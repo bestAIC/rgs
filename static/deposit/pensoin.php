@@ -73,7 +73,7 @@
 			</div>
 		</div>
 		<div class="b-blocks">
-			<?include "../includes/calc.php"?>
+			<?include "../includes/calcs/pensoin.php"?>
 			<div class="promo-banner no-desktop-block" style="background-image: url('/static/theme/images/inner/promo-banner.jpg')">
 				<div class="promo-banner__inner">
 					<div class="promo-banner__subtitle">АКЦИЯ</div>
