@@ -7158,6 +7158,7 @@ span.pagination__item:focus {
 }
 .depository__form select {
   border-color: #e8e8e8!important;
+  border-radius: 0!important;
 }
 .depository__form-inner {
   *zoom: 1;
