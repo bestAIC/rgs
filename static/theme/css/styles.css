@@ -7428,6 +7428,79 @@ span.pagination__item:focus {
 .mobile .faq__sections {
   padding-top: 1rem;
 }
+.annual-reports .deposit-doc__content {
+  padding: 2.6rem 8rem 4.4rem;
+}
+.annual-reports .deposit-doc__content .file {
+  float: none;
+  width: 100%;
+  background-color: transparent;
+  display: block;
+  border: 0;
+  margin-top: 3.2rem;
+}
+.annual-reports .deposit-doc__content .file:first-child {
+  margin-top: 0;
+}
+.annual-reports .deposit-doc__content ul {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.annual-reports .deposit-doc__content ul li:before {
+  width: 1rem;
+  height: 1px;
+  left: 2.5rem;
+  top: 1rem;
+}
+.annual-reports .deposit-doc__content ul li + li {
+  margin-top: 0;
+}
+.tablet.portrait .annual-reports .deposit-doc__content {
+  padding: 2.7rem 6rem 4.4rem 2rem;
+}
+.tablet.portrait .annual-reports .deposit-doc__content ul li {
+  padding-left: 5rem;
+}
+.mobile .annual-reports {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.mobile .annual-reports .deposit-doc__title {
+  font-size: 1.6rem;
+  letter-spacing: 0.005rem;
+  line-height: 2.2rem;
+  padding: 3.2rem 6rem 3rem 2.9rem!important;
+}
+.mobile .annual-reports .deposit-doc__title:after {
+  right: 3rem;
+}
+.mobile .annual-reports .deposit-doc__content {
+  padding: 2.7rem 2rem 2.6rem;
+}
+.mobile .annual-reports .deposit-doc__content .file {
+  padding: 1.4rem 0 1.4rem 4.9rem;
+}
+.mobile .annual-reports .deposit-doc__content .file:before {
+  left: 0;
+}
+.mobile .annual-reports .deposit-doc__content ul {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.mobile .annual-reports .deposit-doc__content ul li {
+  padding-left: 3rem;
+}
+.mobile .annual-reports .deposit-doc__content ul li:before {
+  left: 0.4rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;

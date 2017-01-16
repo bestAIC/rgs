@@ -389,7 +389,7 @@
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">Годовые отчеты</a>
+									<a href="/static/about/disclosure-of-information/annual-reports.php" class="b-menu__submenu-link">Годовые отчеты</a>
 								</div>
 								<div class="b-menu__submenu-item">
 									<a href="#" class="b-menu__submenu-link">Ежеквартальные отчеты</a>

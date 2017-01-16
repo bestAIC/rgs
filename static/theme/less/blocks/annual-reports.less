@@ -1,0 +1,85 @@
+.annual-reports{
+	.deposit-doc__content{
+		padding: 2.6rem 8rem 4.4rem;
+		.file{
+			float: none;
+			width: 100%;
+			background-color: transparent;
+			display: block;
+			border: 0;
+			margin-top: 3.2rem;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+		ul{
+			font-size: 14/@rem;
+			font-weight: 400;
+			letter-spacing: -0.19/@rem;
+			line-height: 20/@rem;
+			margin-top: 0.5rem;
+			margin-bottom: 1.5rem;
+			li{
+				&:before{
+					width: 1rem;
+					height: 1px;
+					left: 2.5rem;
+					top: 1rem
+				}
+				&+li{
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.annual-reports{
+		.deposit-doc__content{
+			padding: 2.7rem 6rem 4.4rem 2rem;
+			ul{
+				li{
+					padding-left: 5rem;
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.annual-reports{
+		margin-left: -0.5rem;
+		margin-right: -0.5rem;
+		.deposit-doc__title{
+			font-size: 16/@rem;
+			letter-spacing: 0.05/@rem;
+			line-height: 22/@rem;
+			padding: 3.2rem 6rem 3rem 2.9rem!important;
+			&:after{
+				right: 3rem;
+			}
+		}
+		.deposit-doc__content{
+			padding: 2.7rem 2rem 2.6rem;
+			.file{
+				padding: 1.4rem 0 1.4rem 4.9rem;
+				&:before{
+					left: 0;
+				}
+			}
+			ul{
+				font-size: 14/@rem;
+				font-weight: 400;
+				letter-spacing: -0.19/@rem;
+				line-height: 20/@rem;
+				margin-top: 0.5rem;
+				margin-bottom: 1.5rem;
+				li{
+					padding-left: 3rem;
+					&:before{
+						left: 0.4rem;
+					}
+				}
+			}
+		}
+	}
+}
