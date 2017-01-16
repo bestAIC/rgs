@@ -1,6 +1,17 @@
 .docs-date{
 	max-width: 97rem;
 	margin: 0 auto;
+	&._long-titles{
+		.docs-date__month{
+			&-title{
+				width: 19.8rem;
+			}
+			&-content{
+				border-left: 1px solid @cBorder;
+				margin-left: 19.8rem;
+			}
+		}
+	}
 	&__years{
 		padding: 25/@rem 40/@rem;
 		background-color: white;
@@ -100,6 +111,19 @@
 	.docs-date{
 		margin-left: -0.5rem;
 		margin-right: -0.5rem;
+		&._long-titles{
+			.docs-date__month{
+				&-title{
+					width: 13.8rem;
+					font-size: 1.2rem;
+					padding: 1.6rem 1rem 1.9rem 1.8rem;
+					line-height: 1.6rem;
+				}
+				&-content{
+					margin-left: 13.8rem;
+				}
+			}
+		}
 		&__years{
 			padding: 20/@rem;
 		}

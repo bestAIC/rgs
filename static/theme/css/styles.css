@@ -7518,6 +7518,13 @@ span.pagination__item:focus {
   max-width: 97rem;
   margin: 0 auto;
 }
+.docs-date._long-titles .docs-date__month-title {
+  width: 19.8rem;
+}
+.docs-date._long-titles .docs-date__month-content {
+  border-left: 1px solid #DEDFE0;
+  margin-left: 19.8rem;
+}
 .docs-date__years {
   padding: 2.5rem 4rem;
   background-color: white;
@@ -7642,6 +7649,15 @@ span.pagination__item:focus {
 .mobile .docs-date {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+}
+.mobile .docs-date._long-titles .docs-date__month-title {
+  width: 13.8rem;
+  font-size: 1.2rem;
+  padding: 1.6rem 1rem 1.9rem 1.8rem;
+  line-height: 1.6rem;
+}
+.mobile .docs-date._long-titles .docs-date__month-content {
+  margin-left: 13.8rem;
 }
 .mobile .docs-date__years {
   padding: 2rem;
