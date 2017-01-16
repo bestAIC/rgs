@@ -7501,6 +7501,18 @@ span.pagination__item:focus {
 .mobile .annual-reports .deposit-doc__content ul li:before {
   left: 0.4rem;
 }
+.news-archive {
+  margin-bottom: -3rem;
+}
+.mobile .news-archive {
+  margin-bottom: -2rem;
+}
+.news-archive .gold-link__wrap {
+  margin-top: 0;
+}
+.news-archive .depository__form {
+  margin-top: 0!important;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
