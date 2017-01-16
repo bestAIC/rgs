@@ -361,7 +361,7 @@
 								<a href="#" class="b-menu__item-link">Отделения и банкоматы</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Контакты</a>
+								<a href="/static/about/contact.php" class="b-menu__item-link">Контакты</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Лицензии</a>
