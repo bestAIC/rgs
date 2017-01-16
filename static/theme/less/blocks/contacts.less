@@ -1,0 +1,79 @@
+.contacts{
+	background-color:#fff;
+	max-width: 97rem;
+	margin: 3rem auto 1.5rem;
+	&__inner{
+		padding: 5rem 7rem;
+	}
+	&__block{
+		.clearfix;
+		&+&{
+			border-top: 1px solid @cBorder;
+			margin-top: 30/@rem;
+			padding-top: 30/@rem;
+		}
+		&-title{
+			font-size: 18/@rem;
+			font-weight: 600;
+			line-height: 24/@rem;
+			float: left;
+			width: 40rem;
+			margin-right: 3rem;
+		}
+		&-content{
+			float: left;
+			width: 40rem;
+			font-size: 16/@rem;
+			line-height: 25/@rem;
+			p{
+				margin: 0;
+				&+p{
+					margin-top: 1.5rem;
+				}
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.contacts{
+		margin: 0;
+		&__inner{
+			padding: 5rem;
+		}
+		&__block{
+			&-title{
+				width: 23rem;
+			}
+			&-content{
+				width: 35.3rem;
+			}
+		}
+	}
+}
+.mobile{
+	.contacts{
+		margin: 0;
+		&__inner{
+			padding: 3rem;
+		}
+		&__block{
+			&-title{
+				float: none;
+				width: 100%;
+				margin-right: 0;
+			}
+			&-content{
+				float: none;
+				width: 100%;
+				font-size: 14/@rem;
+				line-height: 23/@rem;
+				margin-top: 18/@rem;
+				p{
+					&+p{
+						margin-top: 1.7rem;
+					}
+				}
+			}
+		}
+	}
+}

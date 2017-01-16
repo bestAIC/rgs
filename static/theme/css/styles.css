@@ -7686,6 +7686,84 @@ span.pagination__item:focus {
 .mobile .docs-date__month-content .file__props {
   display: block;
 }
+.contacts {
+  background-color: #fff;
+  max-width: 97rem;
+  margin: 3rem auto 1.5rem;
+}
+.contacts__inner {
+  padding: 5rem 7rem;
+}
+.contacts__block {
+  *zoom: 1;
+}
+.contacts__block:before,
+.contacts__block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.contacts__block:after {
+  clear: both;
+}
+.contacts__block + .contacts__block {
+  border-top: 1px solid #DEDFE0;
+  margin-top: 3rem;
+  padding-top: 3rem;
+}
+.contacts__block-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  float: left;
+  width: 40rem;
+  margin-right: 3rem;
+}
+.contacts__block-content {
+  float: left;
+  width: 40rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.contacts__block-content p {
+  margin: 0;
+}
+.contacts__block-content p + p {
+  margin-top: 1.5rem;
+}
+.tablet.portrait .contacts {
+  margin: 0;
+}
+.tablet.portrait .contacts__inner {
+  padding: 5rem;
+}
+.tablet.portrait .contacts__block-title {
+  width: 23rem;
+}
+.tablet.portrait .contacts__block-content {
+  width: 35.3rem;
+}
+.mobile .contacts {
+  margin: 0;
+}
+.mobile .contacts__inner {
+  padding: 3rem;
+}
+.mobile .contacts__block-title {
+  float: none;
+  width: 100%;
+  margin-right: 0;
+}
+.mobile .contacts__block-content {
+  float: none;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  margin-top: 1.8rem;
+}
+.mobile .contacts__block-content p + p {
+  margin-top: 1.7rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
