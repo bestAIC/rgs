@@ -401,7 +401,7 @@
 									<a href="#" class="b-menu__submenu-link">Эмиссионные документы</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">
+									<a href="/static/about/disclosure-of-information/info-percent.php" class="b-menu__submenu-link">
 										Информация о максимальных
 										процентных ставках<br />
 										по вкладам физических лиц

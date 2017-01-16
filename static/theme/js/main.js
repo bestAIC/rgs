@@ -108,6 +108,7 @@ app.init = function () {
 	app.payFonds();
 	app.depository();
 	app.faqMobTabs();
+	app.docsDateYears();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -564,7 +565,7 @@ app.initTabs = function () {
 		;
 	$('html').on('click.tabs','[data-tabs-tab]',function(){
 		var $self = $(this);
-		if(!$self.hasClass('_active')){
+		if(!($self.hasClass('_active')|| $self.hasClass('_disabled'))){
 			$closest = $self.closest('[data-tabs]');
 			$tabs = $closest.find('[data-tabs-tab]');
 			$content = $closest.find('[data-tabs-content]');
@@ -865,6 +866,22 @@ app.tabletSliders = function () {
 				640: {
 					slidesPerView: 1,
 					spaceBetween: 10
+				}
+			}
+		});
+	});
+};
+app.docsDateYears = function () {
+	var $galls = $('[docs-date-years-gall]');
+
+	$galls.each(function () {
+		var swiper = new Swiper($(this)[0], {
+			slidesPerView: 'auto',
+			simulateTouch: true,
+			spaceBetween: 60,
+			breakpoints: {
+				640: {
+					spaceBetween: 30
 				}
 			}
 		});

@@ -7513,6 +7513,162 @@ span.pagination__item:focus {
 .news-archive .depository__form {
   margin-top: 0!important;
 }
+.docs-date {
+  max-width: 97rem;
+  margin: 0 auto;
+}
+.docs-date__years {
+  padding: 2.5rem 4rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+}
+.docs-date__year {
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -0.047rem;
+  line-height: 3.4rem;
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  text-align: center;
+}
+.docs-date__year-link {
+  color: #3e3e3e;
+}
+.docs-date__year-link:hover {
+  color: #3e3e3e;
+}
+.docs-date__year-link:focus {
+  color: #3e3e3e;
+}
+.docs-date__year-link._active {
+  color: #cca266;
+}
+.docs-date__year-link._active:hover {
+  color: #cca266;
+}
+.docs-date__year-link._active:focus {
+  color: #cca266;
+}
+.docs-date__year-link._disabled {
+  cursor: default;
+  color: #dedfe0;
+}
+.docs-date__year-link._disabled:hover {
+  color: #dedfe0;
+}
+.docs-date__year-link._disabled:focus {
+  color: #dedfe0;
+}
+.docs-date__content {
+  margin-top: 3rem;
+}
+.docs-date__block {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border: 1px solid #DEDFE0;
+}
+.docs-date__month {
+  *zoom: 1;
+  position: relative;
+}
+.docs-date__month:before,
+.docs-date__month:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.docs-date__month:after {
+  clear: both;
+}
+.docs-date__month + .docs-date__month {
+  border-top: 1px solid #DEDFE0;
+}
+.docs-date__month-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  color: #3e3e3e;
+  padding: 2.3rem 1rem 1.9rem 2.9rem;
+}
+.docs-date__month-content {
+  border-left: 1px solid #DEDFE0;
+  margin-left: 13.8rem;
+}
+.docs-date__month-content .file {
+  float: none!important;
+  border: 0;
+  width: 100%!important;
+  display: block;
+  margin-top: 0;
+}
+.docs-date__month-content .file__date {
+  font-weight: 600;
+}
+.docs-date__month-content .file__name {
+  padding: 1rem 0;
+}
+.tablet.portrait .docs-date__month-content .file__inner {
+  white-space: nowrap;
+  height: 4rem;
+  overflow: hidden;
+}
+.tablet.portrait .docs-date__month-content .file__inner > * {
+  white-space: normal;
+}
+.tablet.portrait .docs-date__month-content .file__inner:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+.tablet.portrait .docs-date__month-content .file__date {
+  font-weight: 600;
+}
+.tablet.portrait .docs-date__month-content .file__name {
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle!important;
+  white-space: normal;
+}
+.mobile .docs-date {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.mobile .docs-date__years {
+  padding: 2rem;
+}
+.mobile .docs-date__year {
+  font-size: 2.4rem;
+  letter-spacing: -0.033rem;
+  line-height: 2.4rem;
+}
+.mobile .docs-date__content {
+  margin-top: 2rem;
+}
+.mobile .docs-date__month-title {
+  width: 10rem;
+  font-size: 1.4rem;
+  padding: 2.4rem 1rem 1.9rem 1.8rem;
+}
+.mobile .docs-date__month-content {
+  margin-left: 10.4rem;
+}
+.mobile .docs-date__month-content .file__name {
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.mobile .docs-date__month-content .file__props {
+  display: block;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
@@ -9513,6 +9669,9 @@ span.pagination__item:focus {
 }
 .tablet.portrait .inner__banner-title {
   padding-right: 22rem;
+}
+.tablet.portrait .inner__banner-title._long {
+  padding-right: 0;
 }
 .tablet.portrait .inner__info {
   padding-top: 5.2rem;
