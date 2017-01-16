@@ -382,7 +382,7 @@
 								<a href="#" class="b-menu__item-link">Реквизиты</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Защита от мошенничества</a>
+								<a href="/static/about/security.php" class="b-menu__item-link">Защита от мошенничества</a>
 							</div>
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Раскрытие информации</a>
