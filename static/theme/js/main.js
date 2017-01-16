@@ -250,11 +250,11 @@ app.CardP2P = function () {
 		$transferBlock.find('[data-sum-mask]').mask("# ##0", {
 			reverse: true
 		});
-		/*$transferBlock.find('[data-sum-mask]').on('change',function () {
+		$transferBlock.find('[data-sum-mask]').on('change',function () {
 			if($(this).val() <50){
 				$(this).val('');
 			}
-		});*/
+		});
 		$transferBlock.find('[data-name-mask]').mask('S', {translation:  {'S': {pattern: /[a-zA-Z\s]/, recursive: true}}});
 	}
 	function isValid($inputs) {
