@@ -1,27 +1,128 @@
 .decree{
-	h2{
-		text-align: left;
+	h3{
+		margin-top: 5.3rem;
+		&:first-child{
+			margin-top: 0;
+		}
 	}
 	&__items{
-
+		color: @title-color;
+		border-top: 1px solid @cBorder;
+		border-bottom: 1px solid @cBorder;
 	}
 	&__item{
 		.clearfix;
+		font-size: 14px;
+		letter-spacing: 0.05px;
+		line-height: 24px;
+		padding: 23px 40px 23px 15px;
 		&.selected{
 			background-color: fade(#d8d8d8,14%);
 		}
 		&-num{
 			float: left;
-			width: 5rem;
+			width: 4rem;
 			text-align: center;
+			font-weight: 600;
 		}
 		&-title{
 			float: left;
 			width:47rem;
+			font-weight: 600;
+			margin-left: 45px;
 		}
 		&-text{
 			float: left;
 			width: 50rem;
+			margin-left: 30px;
+			line-height: 24/@rem;
+		}
+	}
+}
+.tablet.portrait{
+	.decree{
+		h3{
+			margin-top: 7.3rem;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+		&__items{
+			margin-left: -2.7rem;
+			margin-right: -2.7rem;
+			&._size2{
+				.decree__item{
+					padding: 23px 30px 23px 20px;
+					&-num{
+						float: left;
+						width: 4rem;
+						text-align: center;
+						font-weight: 600;
+					}
+					&-title{
+						width: 23rem;
+					}
+					&-text{
+						width: 40rem;
+					}
+				}
+			}
+		}
+		&__item{
+			padding: 23px 40px 23px 20px;
+			&-num{
+				float: left;
+				width: 4rem;
+				text-align: center;
+				font-weight: 600;
+			}
+			&-title{
+				width: 36rem;
+				margin-left: 15px;
+			}
+			&-text{
+				width: 26rem;
+			}
+		}
+	}
+}
+.mobile{
+	.decree{
+		padding-bottom: 1rem;
+		h3{
+			margin-top: 6rem;
+			margin-bottom: 1.4rem;
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+		&__items{
+			margin-left: -2.5rem;
+			margin-right: -2.5rem;
+		}
+		&__item{
+			font-size: 12px;
+			letter-spacing: 0.04px;
+			line-height: 20px;
+			padding: 21px 20px 19px 65px;
+			position: relative;
+			&-num{
+				position: absolute;
+				left: 1.3rem;
+				top: 2.1rem;
+			}
+			&-title{
+				float: none;
+				width:100%;
+				margin-left: 0;
+			}
+			&-text{
+				float: none;
+				width: 100%;
+				margin-top: 10px;
+				margin-left: 0;
+				line-height: 20px;
+			}
 		}
 	}
 }

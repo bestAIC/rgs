@@ -7833,11 +7833,23 @@ span.pagination__item:focus {
 .mobile .contacts__block-content p + p {
   margin-top: 1.7rem;
 }
-.decree h2 {
-  text-align: left;
+.decree h3 {
+  margin-top: 5.3rem;
+}
+.decree h3:first-child {
+  margin-top: 0;
+}
+.decree__items {
+  color: #3e3e3e;
+  border-top: 1px solid #DEDFE0;
+  border-bottom: 1px solid #DEDFE0;
 }
 .decree__item {
   *zoom: 1;
+  font-size: 14px;
+  letter-spacing: 0.05px;
+  line-height: 24px;
+  padding: 23px 40px 23px 15px;
 }
 .decree__item:before,
 .decree__item:after {
@@ -7853,16 +7865,100 @@ span.pagination__item:focus {
 }
 .decree__item-num {
   float: left;
-  width: 5rem;
+  width: 4rem;
   text-align: center;
+  font-weight: 600;
 }
 .decree__item-title {
   float: left;
   width: 47rem;
+  font-weight: 600;
+  margin-left: 45px;
 }
 .decree__item-text {
   float: left;
   width: 50rem;
+  margin-left: 30px;
+  line-height: 2.4rem;
+}
+.tablet.portrait .decree h3 {
+  margin-top: 7.3rem;
+}
+.tablet.portrait .decree h3:first-child {
+  margin-top: 0;
+}
+.tablet.portrait .decree__items {
+  margin-left: -2.7rem;
+  margin-right: -2.7rem;
+}
+.tablet.portrait .decree__items._size2 .decree__item {
+  padding: 23px 30px 23px 20px;
+}
+.tablet.portrait .decree__items._size2 .decree__item-num {
+  float: left;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+}
+.tablet.portrait .decree__items._size2 .decree__item-title {
+  width: 23rem;
+}
+.tablet.portrait .decree__items._size2 .decree__item-text {
+  width: 40rem;
+}
+.tablet.portrait .decree__item {
+  padding: 23px 40px 23px 20px;
+}
+.tablet.portrait .decree__item-num {
+  float: left;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+}
+.tablet.portrait .decree__item-title {
+  width: 36rem;
+  margin-left: 15px;
+}
+.tablet.portrait .decree__item-text {
+  width: 26rem;
+}
+.mobile .decree {
+  padding-bottom: 1rem;
+}
+.mobile .decree h3 {
+  margin-top: 6rem;
+  margin-bottom: 1.4rem;
+}
+.mobile .decree h3:first-child {
+  margin-top: 0;
+}
+.mobile .decree__items {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+}
+.mobile .decree__item {
+  font-size: 12px;
+  letter-spacing: 0.04px;
+  line-height: 20px;
+  padding: 21px 20px 19px 65px;
+  position: relative;
+}
+.mobile .decree__item-num {
+  position: absolute;
+  left: 1.3rem;
+  top: 2.1rem;
+}
+.mobile .decree__item-title {
+  float: none;
+  width: 100%;
+  margin-left: 0;
+}
+.mobile .decree__item-text {
+  float: none;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 0;
+  line-height: 20px;
 }
 .deposit__text,
 .deposit .note-text {
