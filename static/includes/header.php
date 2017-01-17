@@ -385,7 +385,7 @@
 								<a href="/static/about/security.php" class="b-menu__item-link">Защита от мошенничества</a>
 							</div>
 							<div class="b-menu__item">
-								<a href="#" class="b-menu__item-link">Раскрытие информации</a>
+								<a href="/static/about/disclosure-of-information/" class="b-menu__item-link">Раскрытие информации</a>
 							</div>
 							<div class="b-menu__submenu">
 								<div class="b-menu__submenu-item">
