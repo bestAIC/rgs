@@ -2953,6 +2953,14 @@ span.pagination__item:focus {
 .home__transfer-sum input {
   padding-right: 4rem;
 }
+.home__transfer-sum-text {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  text-align: center;
+}
 .home__transfer-sum:after {
   content: '';
   position: absolute;
@@ -3135,7 +3143,7 @@ span.pagination__item:focus {
 }
 .mobile .home__transfer-commission {
   float: none;
-  margin: 1rem 0;
+  margin: 2.5rem 0 1rem;
   *zoom: 1;
 }
 .mobile .home__transfer-commission:before,

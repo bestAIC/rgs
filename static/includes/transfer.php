@@ -80,6 +80,7 @@
 					<div class="home__transfer-block-in">
 						<div class="home__transfer-sum">
 							<input type="text" name="amount" data-sum-mask placeholder="Сумма перевода" data-transfer-inp="main">
+							<div class="home__transfer-sum-text">минимальная сумма перевода 50 руб</div>
 						</div>
 						<div class="home__transfer-commission">
 							<div class="home__transfer-commission-title">Комиссия за перевод</div>
