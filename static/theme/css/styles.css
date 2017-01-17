@@ -7646,12 +7646,47 @@ span.pagination__item:focus {
   border-left: 1px solid #DEDFE0;
   margin-left: 13.8rem;
 }
+.docs-date__month-content h4 {
+  margin-top: 0;
+  padding-top: 2.2rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+.mobile .docs-date__month-content h4,
+.tablet.portrait .docs-date__month-content h4 {
+  margin-bottom: 1rem;
+}
+.docs-date__month-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  white-space: normal;
+}
+.docs-date__month-content ul li {
+  position: relative;
+  padding-left: 3rem;
+}
+.docs-date__month-content ul li:before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 1.1rem;
+  width: 1rem;
+  height: 1px;
+  background-color: #cca266;
+}
 .docs-date__month-content .file {
   float: none!important;
   border: 0;
   width: 100%!important;
   display: block;
   margin-top: 0;
+  min-height: 6rem;
 }
 .docs-date__month-content .file__date {
   font-weight: 600;
@@ -7659,29 +7694,11 @@ span.pagination__item:focus {
 .docs-date__month-content .file__name {
   padding: 1rem 0;
 }
-.tablet.portrait .docs-date__month-content .file__inner {
-  white-space: nowrap;
-  height: 4rem;
-  overflow: hidden;
-}
-.tablet.portrait .docs-date__month-content .file__inner > * {
-  white-space: normal;
-}
-.tablet.portrait .docs-date__month-content .file__inner:after {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 0;
-  height: 100%;
-}
 .tablet.portrait .docs-date__month-content .file__date {
   font-weight: 600;
 }
 .tablet.portrait .docs-date__month-content .file__name {
   padding: 0;
-  display: inline-block;
-  vertical-align: middle!important;
-  white-space: normal;
 }
 .mobile .docs-date {
   margin-left: -0.5rem;
