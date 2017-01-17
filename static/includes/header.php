@@ -420,7 +420,7 @@
 									</a>
 								</div>
 								<div class="b-menu__submenu-item">
-									<a href="#" class="b-menu__submenu-link">
+									<a href="/static/about/disclosure-of-information/decree.php" class="b-menu__submenu-link">
 										Раскрытие информации
 										в соответствии с указанием
 										ЦБ РФ от 28.12.2015 № 3921-У

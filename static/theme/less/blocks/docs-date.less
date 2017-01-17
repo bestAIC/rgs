@@ -1,6 +1,25 @@
 .docs-date{
 	max-width: 97rem;
 	margin: 0 auto;
+	&._issuing-documents{
+		.docs-date__month{
+			.docs-date__month{
+				&-title{
+					width: 19.9rem;
+					position: static;
+					float: left;
+					border-right: 1px solid @cBorder;
+				}
+				&-content{
+					border-left: 1px solid @cBorder;
+					margin-left: 19.8rem;
+					ul{
+						padding-left: 3rem;
+					}
+				}
+			}
+		}
+	}
 	&._long-titles{
 		.docs-date__month{
 			&-title{
@@ -81,8 +100,10 @@
 			ul{
 				list-style: none;
 				padding-left: 0;
-				margin-top: 20/@rem;
-				margin-bottom: 30/@rem;
+				margin-top: 0;
+				padding-top: 2rem;
+				margin-bottom: 0;
+				padding-bottom: 3rem;
 				font-size: 1.4rem;
 				font-weight: 400;
 				letter-spacing: -0.19/@rem;

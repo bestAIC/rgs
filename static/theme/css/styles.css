@@ -7555,6 +7555,19 @@ span.pagination__item:focus {
   max-width: 97rem;
   margin: 0 auto;
 }
+.docs-date._issuing-documents .docs-date__month .docs-date__month-title {
+  width: 19.9rem;
+  position: static;
+  float: left;
+  border-right: 1px solid #DEDFE0;
+}
+.docs-date._issuing-documents .docs-date__month .docs-date__month-content {
+  border-left: 1px solid #DEDFE0;
+  margin-left: 19.8rem;
+}
+.docs-date._issuing-documents .docs-date__month .docs-date__month-content ul {
+  padding-left: 3rem;
+}
 .docs-date._long-titles .docs-date__month-title {
   width: 19.8rem;
 }
@@ -7659,8 +7672,10 @@ span.pagination__item:focus {
 .docs-date__month-content ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 0;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 3rem;
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: -0.019rem;
@@ -7817,6 +7832,37 @@ span.pagination__item:focus {
 }
 .mobile .contacts__block-content p + p {
   margin-top: 1.7rem;
+}
+.decree h2 {
+  text-align: left;
+}
+.decree__item {
+  *zoom: 1;
+}
+.decree__item:before,
+.decree__item:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.decree__item:after {
+  clear: both;
+}
+.decree__item.selected {
+  background-color: rgba(216, 216, 216, 0.14);
+}
+.decree__item-num {
+  float: left;
+  width: 5rem;
+  text-align: center;
+}
+.decree__item-title {
+  float: left;
+  width: 47rem;
+}
+.decree__item-text {
+  float: left;
+  width: 50rem;
 }
 .deposit__text,
 .deposit .note-text {

@@ -46,7 +46,7 @@
 		<div class="b-blocks _gray">
 			<div class="b-block _top-indent animation__top" data-animation>
 				<div class="grid__inner">
-					<div class="docs-date <?/*_long-titles*/?>" data-tabs>
+					<div class="docs-date <?/*_long-titles _issuing-documents*/?>" data-tabs>
 						<div class="swiper-container docs-date__years" docs-date-years-gall>
 							<div class="swiper-wrapper">
 								<div class="swiper-slide docs-date__year">
