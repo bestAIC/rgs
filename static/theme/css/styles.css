@@ -7566,6 +7566,8 @@ span.pagination__item:focus {
   margin-left: 19.8rem;
 }
 .docs-date._issuing-documents .docs-date__month .docs-date__month-content ul {
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
   padding-left: 3rem;
 }
 .docs-date._long-titles .docs-date__month-title {
@@ -7718,6 +7720,18 @@ span.pagination__item:focus {
 .mobile .docs-date {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
+}
+.mobile .docs-date._issuing-documents .docs-date__month .docs-date__month-title {
+  width: 15.1rem;
+}
+.mobile .docs-date._issuing-documents .docs-date__month .docs-date__month-content {
+  margin-left: 15rem;
+}
+.mobile .docs-date._issuing-documents .docs-date__month .docs-date__month-content ul {
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
 }
 .mobile .docs-date._long-titles .docs-date__month-title {
   width: 13.8rem;
