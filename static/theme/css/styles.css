@@ -3904,7 +3904,7 @@ span.pagination__item:focus {
   padding-left: 2.5rem;
   margin-right: -2.5rem;
   padding-right: 2.5rem;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #DEDFE0;
   border-right: 0;
 }
 .products {
