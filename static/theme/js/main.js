@@ -314,8 +314,13 @@ app.CardP2P = function () {
 			reverse: true
 		});
 		$transferBlock.find('[data-sum-mask]').on('change',function () {
-			if($(this).val() <50){
+			console.log($(this).val());
+			var $val = $(this).val().replace(new RegExp(" ",'g'),"");
+			if($val <50){
 				$(this).val('');
+			}
+			if($val > 75000){
+				$(this).val('75 000').change();
 			}
 		});
 		$transferBlock.find('[data-name-mask]').mask('S', {translation:  {'S': {pattern: /[a-zA-Z\s]/, recursive: true}}});
