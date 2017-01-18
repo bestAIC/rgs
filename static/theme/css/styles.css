@@ -3003,7 +3003,8 @@ span.pagination__item:focus {
 }
 .home__transfer-sum-text {
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.2rem;
+  padding-top: 0.3rem;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
@@ -3191,7 +3192,7 @@ span.pagination__item:focus {
 }
 .mobile .home__transfer-commission {
   float: none;
-  margin: 2.5rem 0 1rem;
+  margin: 3.5rem 0 1rem;
   *zoom: 1;
 }
 .mobile .home__transfer-commission:before,
