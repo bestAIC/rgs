@@ -12,10 +12,10 @@
 	}
 	&__item{
 		.clearfix;
-		font-size: 14px;
-		letter-spacing: 0.05px;
-		line-height: 24px;
-		padding: 23px 40px 23px 15px;
+		font-size: 14/@rem;
+		letter-spacing: 0.05/@rem;
+		line-height: 24/@rem;
+		padding: 23/@rem 40/@rem 23/@rem 15/@rem;
 		&.selected{
 			background-color: fade(#d8d8d8,14%);
 		}
@@ -29,13 +29,19 @@
 			float: left;
 			width:47rem;
 			font-weight: 600;
-			margin-left: 45px;
+			margin-left: 45/@rem;
 		}
 		&-text{
 			float: left;
 			width: 50rem;
-			margin-left: 30px;
+			margin-left: 30/@rem;
 			line-height: 24/@rem;
+			p{
+				margin: 0;
+				&+p{
+					margin-top: 1.8rem;
+				}
+			}
 		}
 	}
 }
@@ -52,7 +58,7 @@
 			margin-right: -2.7rem;
 			&._size2{
 				.decree__item{
-					padding: 23px 30px 23px 20px;
+					padding: 23/@rem 30/@rem 23/@rem 20/@rem;
 					&-num{
 						float: left;
 						width: 4rem;
@@ -69,7 +75,7 @@
 			}
 		}
 		&__item{
-			padding: 23px 40px 23px 20px;
+			padding: 23/@rem 40/@rem 23/@rem 20/@rem;
 			&-num{
 				float: left;
 				width: 4rem;
@@ -78,7 +84,7 @@
 			}
 			&-title{
 				width: 36rem;
-				margin-left: 15px;
+				margin-left: 15/@rem;
 			}
 			&-text{
 				width: 26rem;
@@ -101,10 +107,10 @@
 			margin-right: -2.5rem;
 		}
 		&__item{
-			font-size: 12px;
-			letter-spacing: 0.04px;
-			line-height: 20px;
-			padding: 21px 20px 19px 65px;
+			font-size: 12/@rem;
+			letter-spacing: 0.04/@rem;
+			line-height: 20/@rem;
+			padding: 21/@rem 20/@rem 19/@rem 65/@rem;
 			position: relative;
 			&-num{
 				position: absolute;
@@ -119,9 +125,9 @@
 			&-text{
 				float: none;
 				width: 100%;
-				margin-top: 10px;
+				margin-top: 10/@rem;
 				margin-left: 0;
-				line-height: 20px;
+				line-height: 20/@rem;
 			}
 		}
 	}

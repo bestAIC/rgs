@@ -1,0 +1,125 @@
+.press-center{
+	&__about{
+		color: @title-color;
+		padding-top: 54/@rem;
+		padding-bottom: 71/@rem;
+		&-inner{
+			max-width: 77rem;
+		}
+		&-title{
+			font-size: 20/@rem;
+			font-weight: 600;
+			line-height: 30/@rem;
+			margin-bottom: 19/@rem;
+		}
+		&-text{
+			font-size: 14/@rem;
+			letter-spacing: -0.19/@rem;
+			line-height: 25/@rem;
+			p{
+				margin: 0;
+				&+p{
+					margin-top: 2.5rem;
+				}
+			}
+		}
+	}
+	&__info{
+		.clearfix;
+	}
+	&__news{
+		.clearfix;
+		.depository__news-item{
+			margin-bottom: 0;
+			margin-top: 2rem;
+		}
+	}
+	&__contacts{
+		width: 470/@rem;
+		height: 310/@rem;
+		background-color: white;
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		float: left;
+		margin-left: 3rem;
+		border-top: 6/@rem solid @cGold;
+		padding: 2.8rem 4rem;
+		&-title{
+			font-size: 20/@rem;
+			font-weight: 700;
+			line-height: 27/@rem;
+		}
+		&-item{
+			font-size: 16/@rem;
+			line-height: 25/@rem;
+			margin-top: 15/@rem;
+			&-name{
+				font-size: 18/@rem;
+				font-weight: 600;
+				line-height: 25/@rem;
+			}
+			&-position{
+				font-weight: 300;
+				margin-top: 16/@rem;
+
+			}
+			&-phones{
+				font-weight: 600;
+				margin-top: 20/@rem;
+			}
+			&-email{
+				margin-top: 10/@rem;
+			}
+		}
+	}
+	&__expert-profile{
+		width: 670/@rem;
+		height: 310/@rem;
+		background-image: linear-gradient(138deg, #7b6c73 0%, #4c3a47 100%);
+		border-radius: 2/@rem;
+		float: left;
+		display: block;
+		.color(#fff);
+		padding: 3.4rem 4rem;
+		&-inner{
+			max-width: 37rem;
+		}
+		&-title{
+			font-size: 20/@rem;
+			font-weight: 700;
+			line-height: 27/@rem;
+		}
+		&-text{
+			font-size: 16/@rem;
+			font-weight: 300;
+			line-height: 25/@rem;
+			margin-top: 1.6rem;
+			letter-spacing: -0.4/@rem;
+		}
+	}
+}
+.tablet.portrait{
+	.press-center{
+		&__expert-profile,&__contacts{
+			width: 342/@rem;
+		}
+	}
+}
+.mobile{
+	.press-center{
+		&__contacts{
+			width: 100%;
+			float: none;
+			margin-left: 0;
+			margin-top: 3rem;
+			height:auto;
+		}
+		&__expert-profile{
+			width: 100%;
+			float: none;
+			&-inner{
+				max-width: 37rem;
+			}
+		}
+	}
+}

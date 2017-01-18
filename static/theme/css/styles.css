@@ -1032,6 +1032,17 @@ h4.small-bottom-indent {
 .b-blocks._gray {
   background-color: whitesmoke;
 }
+.b-blocks._small-indents {
+  padding-top: 2rem;
+  padding-bottom: 5.2rem;
+}
+.mobile .b-blocks._small-indents {
+  padding-bottom: 3rem;
+}
+.b-blocks._small-indents .b-block {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
 .b-blocks .b-block {
   padding-top: 3.4rem;
   padding-bottom: 6rem;
@@ -4505,6 +4516,15 @@ span.pagination__item:focus {
 .gall__news {
   padding: 3.3rem 4rem 3.1rem;
 }
+.gall__news-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.gall__news-bottom .gall__news-title {
+  position: static;
+}
 .gall__news._flag {
   position: relative;
 }
@@ -4525,6 +4545,20 @@ span.pagination__item:focus {
 .gall__news-date {
   line-height: 2.5rem;
   color: #cca266;
+}
+.gall__news-source {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #3e3e3e;
+  margin-bottom: 1rem;
+}
+.gall__news-source:hover {
+  color: #3e3e3e;
+}
+.gall__news-source:focus {
+  color: #3e3e3e;
 }
 .gall__news-title {
   color: #3e3e3e;
@@ -7868,10 +7902,10 @@ span.pagination__item:focus {
 }
 .decree__item {
   *zoom: 1;
-  font-size: 14px;
-  letter-spacing: 0.05px;
-  line-height: 24px;
-  padding: 23px 40px 23px 15px;
+  font-size: 1.4rem;
+  letter-spacing: 0.005rem;
+  line-height: 2.4rem;
+  padding: 2.3rem 4rem 2.3rem 1.5rem;
 }
 .decree__item:before,
 .decree__item:after {
@@ -7895,13 +7929,19 @@ span.pagination__item:focus {
   float: left;
   width: 47rem;
   font-weight: 600;
-  margin-left: 45px;
+  margin-left: 4.5rem;
 }
 .decree__item-text {
   float: left;
   width: 50rem;
-  margin-left: 30px;
+  margin-left: 3rem;
   line-height: 2.4rem;
+}
+.decree__item-text p {
+  margin: 0;
+}
+.decree__item-text p + p {
+  margin-top: 1.8rem;
 }
 .tablet.portrait .decree h3 {
   margin-top: 7.3rem;
@@ -7914,7 +7954,7 @@ span.pagination__item:focus {
   margin-right: -2.7rem;
 }
 .tablet.portrait .decree__items._size2 .decree__item {
-  padding: 23px 30px 23px 20px;
+  padding: 2.3rem 3rem 2.3rem 2rem;
 }
 .tablet.portrait .decree__items._size2 .decree__item-num {
   float: left;
@@ -7929,7 +7969,7 @@ span.pagination__item:focus {
   width: 40rem;
 }
 .tablet.portrait .decree__item {
-  padding: 23px 40px 23px 20px;
+  padding: 2.3rem 4rem 2.3rem 2rem;
 }
 .tablet.portrait .decree__item-num {
   float: left;
@@ -7939,7 +7979,7 @@ span.pagination__item:focus {
 }
 .tablet.portrait .decree__item-title {
   width: 36rem;
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
 .tablet.portrait .decree__item-text {
   width: 26rem;
@@ -7959,10 +7999,10 @@ span.pagination__item:focus {
   margin-right: -2.5rem;
 }
 .mobile .decree__item {
-  font-size: 12px;
-  letter-spacing: 0.04px;
-  line-height: 20px;
-  padding: 21px 20px 19px 65px;
+  font-size: 1.2rem;
+  letter-spacing: 0.004rem;
+  line-height: 2rem;
+  padding: 2.1rem 2rem 1.9rem 6.5rem;
   position: relative;
 }
 .mobile .decree__item-num {
@@ -7978,9 +8018,148 @@ span.pagination__item:focus {
 .mobile .decree__item-text {
   float: none;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 1rem;
   margin-left: 0;
-  line-height: 20px;
+  line-height: 2rem;
+}
+.press-center__about {
+  color: #3e3e3e;
+  padding-top: 5.4rem;
+  padding-bottom: 7.1rem;
+}
+.press-center__about-inner {
+  max-width: 77rem;
+}
+.press-center__about-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 1.9rem;
+}
+.press-center__about-text {
+  font-size: 1.4rem;
+  letter-spacing: -0.019rem;
+  line-height: 2.5rem;
+}
+.press-center__about-text p {
+  margin: 0;
+}
+.press-center__about-text p + p {
+  margin-top: 2.5rem;
+}
+.press-center__info {
+  *zoom: 1;
+}
+.press-center__info:before,
+.press-center__info:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.press-center__info:after {
+  clear: both;
+}
+.press-center__news {
+  *zoom: 1;
+}
+.press-center__news:before,
+.press-center__news:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.press-center__news:after {
+  clear: both;
+}
+.press-center__news .depository__news-item {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.press-center__contacts {
+  width: 47rem;
+  height: 31rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  float: left;
+  margin-left: 3rem;
+  border-top: 0.6rem solid #cca266;
+  padding: 2.8rem 4rem;
+}
+.press-center__contacts-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+.press-center__contacts-item {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+}
+.press-center__contacts-item-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.press-center__contacts-item-position {
+  font-weight: 300;
+  margin-top: 1.6rem;
+}
+.press-center__contacts-item-phones {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.press-center__contacts-item-email {
+  margin-top: 1rem;
+}
+.press-center__expert-profile {
+  width: 67rem;
+  height: 31rem;
+  background-image: linear-gradient(138deg, #7b6c73 0%, #4c3a47 100%);
+  border-radius: 0.2rem;
+  float: left;
+  display: block;
+  color: #fff;
+  padding: 3.4rem 4rem;
+}
+.press-center__expert-profile:hover {
+  color: #fff;
+}
+.press-center__expert-profile:focus {
+  color: #fff;
+}
+.press-center__expert-profile-inner {
+  max-width: 37rem;
+}
+.press-center__expert-profile-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+.press-center__expert-profile-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-top: 1.6rem;
+  letter-spacing: -0.04rem;
+}
+.tablet.portrait .press-center__expert-profile,
+.tablet.portrait .press-center__contacts {
+  width: 34.2rem;
+}
+.mobile .press-center__contacts {
+  width: 100%;
+  float: none;
+  margin-left: 0;
+  margin-top: 3rem;
+  height: auto;
+}
+.mobile .press-center__expert-profile {
+  width: 100%;
+  float: none;
+}
+.mobile .press-center__expert-profile-inner {
+  max-width: 37rem;
 }
 .deposit__text,
 .deposit .note-text {

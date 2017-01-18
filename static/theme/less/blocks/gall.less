@@ -104,6 +104,15 @@
 
 	&__news{
 		padding: 33/@rem 40/@rem 31/@rem;
+		&-bottom{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			.gall__news-title{
+				position: static;
+			}
+		}
 		&._flag{
 			position: relative;
 			&:after{
@@ -123,6 +132,14 @@
 		&-date{
 			line-height: 25/@rem;
 			color: @cGold;
+		}
+		&-source{
+			display: block;
+			font-size: 14/@rem;
+			font-weight: 700;
+			line-height: 20/@rem;
+			.color(@title-color);
+			margin-bottom: 1rem;
 		}
 		&-title{
 			.color(@title-color);
