@@ -14,6 +14,9 @@
 			</div>
 		</div>
 		<div class="exchange__contacts">
+			<div class="exchange__contacts-block _entities">
+				<a href="https://ib.rgsbank.ru/"  class="exchange__contacts-block-title">Вход для юр лиц</a>
+			</div>
 			<div class="exchange__contacts-block">
 				<a href="javascript:void(0);" data-choose-city-btn class="exchange__contacts-block-title">Москва</a>
 			</div>

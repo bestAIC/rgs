@@ -3767,6 +3767,11 @@ span.pagination__item:focus {
 .exchange__contacts-block {
   float: left;
 }
+.exchange__contacts-block._entities {
+  border-right: 1px solid #ebebeb;
+  padding-right: 2.2rem;
+  margin-right: 2.2rem;
+}
 .exchange__contacts-block._offices {
   border-left: 1px solid #ebebeb;
   padding-left: 2.2rem;
@@ -3876,10 +3881,31 @@ span.pagination__item:focus {
   border-top: 1px solid #DEDFE0;
   padding-top: 0.8rem;
   margin-top: 1.5rem;
+  *zoom: 1;
+}
+.mobile .exchange__contacts:before,
+.mobile .exchange__contacts:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .exchange__contacts:after {
+  clear: both;
 }
 .mobile .exchange__contacts-block._offices {
   border-left: 0;
   float: right;
+}
+.mobile .exchange__contacts-block._entities {
+  float: none;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-left: -2.5rem;
+  padding-left: 2.5rem;
+  margin-right: -2.5rem;
+  padding-right: 2.5rem;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 0;
 }
 .products {
   background-color: #f5f5f5;

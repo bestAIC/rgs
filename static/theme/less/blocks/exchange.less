@@ -68,6 +68,11 @@
 		float: right;
 		&-block{
 			float: left;
+			&._entities{
+				border-right:1px solid #ebebeb;
+				padding-right: 22/@rem;
+				margin-right: 22/@rem;
+			}
 			&._offices{
 				border-left:1px solid #ebebeb;
 				padding-left: 22/@rem;
@@ -181,10 +186,22 @@
 			border-top: 1px solid @cBorder;
 			padding-top: 0.8rem;
 			margin-top: 1.5rem;
+			.clearfix;
 			&-block{
 				&._offices{
 					border-left:0;
 					float: right;
+				}
+				&._entities{
+					float: none;
+					padding-bottom: 0.8rem;
+					margin-bottom: 0.8rem;
+					margin-left: -2.5rem;
+					padding-left: 2.5rem;
+					margin-right: -2.5rem;
+					padding-right: 2.5rem;
+					border-bottom: 1px solid #ebebeb;
+					border-right: 0;
 				}
 			}
 		}
