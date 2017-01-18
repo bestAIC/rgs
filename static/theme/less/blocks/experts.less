@@ -1,0 +1,153 @@
+.experts{
+	padding: 7rem 0;
+	&__titles{
+		background-color: fade(#d8d8d8,14%);
+		font-size: 10px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 18px;
+		color: @cGray;
+		text-transform: uppercase;
+		border-top: 1px solid @cBorder;
+		border-bottom: 1px solid @cBorder;
+		table{
+			width: 100%;
+			td{
+				padding: 2rem 4rem;
+				&:first-child{
+					width: 47.4rem;
+				}
+			}
+		}
+	}
+	&__block{
+
+	}
+	&__subscription{
+		.clearfix;
+		margin-top: 5rem;
+		&-btn{
+			float: right;
+		}
+	}
+	&__item{
+		display: table-row;
+		&-block{
+			border-bottom: 1px solid @cBorder;
+			display: table-cell;
+			padding: 2.4rem 3rem 2.5rem;
+			&._left{
+				vertical-align: top;
+				font-size: 16px;
+				line-height: 30px;
+				width: 47rem;
+			}
+			&._right{
+				vertical-align: middle;
+				ul{
+					margin-top: 1px;
+					margin-bottom: 0;
+					li+li{
+						margin-top: 1.5rem;
+					}
+				}
+			}
+		}
+		&-name{
+			font-weight: 700;
+			.surname{
+				font-size: 24px;
+				margin-bottom: 3px;
+			}
+		}
+		&-btn{
+			margin-top: 2.7rem;
+		}
+	}
+}
+.tablet.portrait{
+	.experts{
+		padding: 0 0 5rem;
+		margin-left: -2.7rem;
+		margin-right: -2.7rem;
+		&__titles{
+			table{
+				td{
+					&:first-child{
+						width: 25.4rem;
+					}
+				}
+			}
+		}
+		&__subscription{
+			text-align: center;
+			&-btn{
+				float: none;
+			}
+		}
+		&__item{
+			&-block{
+				&._left{
+					width: 25rem;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+.mobile{
+	.experts{
+		padding: 0 0 3rem;
+		margin-left: -2rem;
+		margin-right: -2rem;
+		&__titles{
+			display: none;
+		}
+		&__block{
+
+		}
+		&__subscription{
+			margin-top: 3rem;
+			text-align: center;
+			&-btn{
+				float: none;
+			}
+		}
+		&__item{
+			display: block;
+			border-bottom: 1px solid @cBorder;
+			padding: 2.6rem 2rem 2rem;
+			&-block{
+				border-bottom: 0;
+				display: block;
+				padding: 0;
+				&._left{
+					font-size: 12px;
+					line-height: 20px;
+					width: 100%;
+				}
+				&._right{
+					margin-top: 2rem;
+					ul{
+						font-size: 12px;
+						font-weight: 400;
+						line-height: 20px;
+						li+li{
+							margin-top: 1rem;
+						}
+					}
+				}
+			}
+			&-name{
+				.surname{
+					font-size: 12px;
+					display: inline;
+				}
+			}
+			&-btn{
+				text-align: center;
+				margin-top: 1.8rem;
+			}
+		}
+	}
+}

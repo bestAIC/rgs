@@ -109,6 +109,8 @@ app.init = function () {
 	app.depository();
 	app.faqMobTabs();
 	app.docsDateYears();
+	app.experts();
+	app.dataFile();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -152,6 +154,51 @@ app.askForm = function () {
 		$.fancybox({
 			wrapCSS 	: 'fc-base _forms',
 			content 	: $content,
+			fitToView	: false,
+			padding:0,
+			helpers : {
+				overlay : {
+					css : {
+						'background' : 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		});
+		return false;
+	});
+};
+app.experts = function () {
+	var $experts =  $('[data-experts]'),
+			$expertsForm = $experts.find('[data-experts-form]'),
+			$expertsFormTheme = $expertsForm.find('[data-experts-form-theme]'),
+			$expertsItem = $experts.find('[data-experts-item]'),
+			$expertsItemBtn = $expertsItem.find('[data-experts-item-btn]'),
+			$expertsItemTheme = $expertsItem.find('[data-experts-item-theme]'),
+			$errors = $expertsForm.find('[data-form-errors]')
+
+		;
+
+	$expertsForm.find('form').on('submit',function () {
+		var $self = $(this)
+			;
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			if(!data.errors){
+				$errors.hide();
+				$.fancybox.close();
+			}else{
+				$errors.html(data.errors).show();
+			}
+		},'json');
+		return false;
+	});
+	$expertsItemBtn.on('click',function () {
+		var $self = $(this);
+		$errors.hide();
+		$expertsFormTheme.html($self.closest($expertsItem).find($expertsItemTheme).html());
+		$expertsFormTheme.trigger('chosen:updated');
+		$.fancybox({
+			wrapCSS 	: 'fc-base _forms',
+			content 	: $expertsForm,
 			fitToView	: false,
 			padding:0,
 			helpers : {
@@ -211,6 +258,22 @@ app.oldVersion = function () {
 		;
 	$oldVersionClose.on('click',function () {
 		$oldVersion.hide();
+	});
+
+};
+app.dataFile = function () {
+	var $file =  $('[data-file]'),
+			$fileText =  $file.find('[data-file-text]'),
+			$fileInp =  $file.find('[data-file-inp]')
+		;
+	$fileInp.on('change',function () {
+		var $self = $(this),
+				$closest = $self.closest($file),
+				$mes = $self.val().replace("C:\\fakepath\\", "");
+		if ($mes == ""){
+			$mes = $closest.find($fileText).data('fileText');
+		}
+		$closest.find($fileText).text($mes);
 	});
 
 };

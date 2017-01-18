@@ -1365,9 +1365,25 @@ h4.small-bottom-indent {
   padding-right: 2.5rem;
   padding-left: 2.5rem;
 }
+.b-form__btn._right {
+  float: right;
+}
+.mobile .b-form__btn._right {
+  float: none;
+}
 .b-form__btn-wrap {
   margin-top: 4rem;
   text-align: center;
+  *zoom: 1;
+}
+.b-form__btn-wrap:before,
+.b-form__btn-wrap:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.b-form__btn-wrap:after {
+  clear: both;
 }
 .ask-form {
   width: 57rem;
@@ -1375,6 +1391,27 @@ h4.small-bottom-indent {
 }
 .mobile .ask-form {
   width: 38rem;
+}
+.ask-form__file {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  max-width: 22rem;
+  text-overflow: ellipsis;
+}
+.mobile .ask-form__file {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+.ask-form__file input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 .field-status {
   position: absolute;
@@ -8161,6 +8198,146 @@ span.pagination__item:focus {
 .mobile .press-center__expert-profile-inner {
   max-width: 37rem;
 }
+.experts {
+  padding: 7rem 0;
+}
+.experts__titles {
+  background-color: rgba(216, 216, 216, 0.14);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  color: #AAAEB2;
+  text-transform: uppercase;
+  border-top: 1px solid #DEDFE0;
+  border-bottom: 1px solid #DEDFE0;
+}
+.experts__titles table {
+  width: 100%;
+}
+.experts__titles table td {
+  padding: 2rem 4rem;
+}
+.experts__titles table td:first-child {
+  width: 47.4rem;
+}
+.experts__subscription {
+  *zoom: 1;
+  margin-top: 5rem;
+}
+.experts__subscription:before,
+.experts__subscription:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.experts__subscription:after {
+  clear: both;
+}
+.experts__subscription-btn {
+  float: right;
+}
+.experts__item {
+  display: table-row;
+}
+.experts__item-block {
+  border-bottom: 1px solid #DEDFE0;
+  display: table-cell;
+  padding: 2.4rem 3rem 2.5rem;
+}
+.experts__item-block._left {
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 30px;
+  width: 47rem;
+}
+.experts__item-block._right {
+  vertical-align: middle;
+}
+.experts__item-block._right ul {
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+.experts__item-block._right ul li + li {
+  margin-top: 1.5rem;
+}
+.experts__item-name {
+  font-weight: 700;
+}
+.experts__item-name .surname {
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+.experts__item-btn {
+  margin-top: 2.7rem;
+}
+.tablet.portrait .experts {
+  padding: 0 0 5rem;
+  margin-left: -2.7rem;
+  margin-right: -2.7rem;
+}
+.tablet.portrait .experts__titles table td:first-child {
+  width: 25.4rem;
+}
+.tablet.portrait .experts__subscription {
+  text-align: center;
+}
+.tablet.portrait .experts__subscription-btn {
+  float: none;
+}
+.tablet.portrait .experts__item-block._left {
+  width: 25rem;
+  padding-right: 0;
+}
+.mobile .experts {
+  padding: 0 0 3rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.mobile .experts__titles {
+  display: none;
+}
+.mobile .experts__subscription {
+  margin-top: 3rem;
+  text-align: center;
+}
+.mobile .experts__subscription-btn {
+  float: none;
+}
+.mobile .experts__item {
+  display: block;
+  border-bottom: 1px solid #DEDFE0;
+  padding: 2.6rem 2rem 2rem;
+}
+.mobile .experts__item-block {
+  border-bottom: 0;
+  display: block;
+  padding: 0;
+}
+.mobile .experts__item-block._left {
+  font-size: 12px;
+  line-height: 20px;
+  width: 100%;
+}
+.mobile .experts__item-block._right {
+  margin-top: 2rem;
+}
+.mobile .experts__item-block._right ul {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.mobile .experts__item-block._right ul li + li {
+  margin-top: 1rem;
+}
+.mobile .experts__item-name .surname {
+  font-size: 12px;
+  display: inline;
+}
+.mobile .experts__item-btn {
+  text-align: center;
+  margin-top: 1.8rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
@@ -10930,6 +11107,9 @@ span.pagination__item:focus {
 }
 .mobile .card-open__steps-col + .card-open__steps-col {
   margin-top: 2rem;
+}
+.footer {
+  border-top: 1px solid #ebebeb;
 }
 .footer a {
   color: #3e3e3e;
