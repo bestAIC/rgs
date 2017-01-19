@@ -474,6 +474,9 @@ input[type='checkbox'][disabled] + .ideal-check {
   font-size: 1.6rem;
   font-weight: 600;
 }
+.chosen-container-single .chosen-single.chosen-default {
+  color: #AAAEB2;
+}
 .chosen-container-single .chosen-single span {
   margin-right: 2.6rem;
 }
@@ -6301,6 +6304,9 @@ span.pagination__item:focus {
 .tablet.portrait .docs .deposit-doc__content ul li {
   padding-left: 4rem;
 }
+.mobile .docs .deposit-doc + .deposit-doc .deposit-doc__title {
+  padding: 2.7rem 6rem 2.6rem 2.5rem;
+}
 .mobile .docs .deposit-doc .top-img {
   float: none;
   max-width: 14.5rem;
@@ -7336,6 +7342,10 @@ span.pagination__item:focus {
   height: 4.8rem;
   margin-right: 2rem;
 }
+.depository__form-field._long {
+  margin-right: 3rem;
+  width: 43rem;
+}
 .depository__form-btn {
   float: left;
   width: 19rem;
@@ -7394,6 +7404,10 @@ span.pagination__item:focus {
 .tablet.portrait .depository__form-field {
   width: 15rem;
   margin-right: 1rem;
+}
+.tablet.portrait .depository__form-field._long {
+  width: 25rem;
+  margin-right: 1.4rem;
 }
 .tablet.portrait .depository__form-btn {
   width: 14rem;
@@ -8369,6 +8383,81 @@ span.pagination__item:focus {
 .mobile .experts__item-btn {
   text-align: center;
   margin-top: 1.8rem;
+}
+.vacancies {
+  z-index: 2;
+}
+.vacancies__block {
+  padding-top: 4rem;
+  display: none;
+}
+.vacancies__block h2 {
+  text-align: left;
+  padding-left: 4.2rem;
+}
+.vacancies__list {
+  margin-top: 2.9rem;
+}
+.vacancies__list .deposit-doc__content {
+  padding: 2.6rem 4rem 4.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.vacancies__list .deposit-doc__content ul {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.vacancies__list .deposit-doc__content ul li {
+  padding-left: 2.6rem;
+}
+.vacancies__list .deposit-doc__content ul li:before {
+  width: 1rem;
+  height: 1px;
+  left: 0;
+  top: 1rem;
+}
+.vacancies__list .deposit-doc__content ul li + li {
+  margin-top: 1rem;
+}
+.tablet.portrait .vacancies .depository__form {
+  margin-top: 0;
+}
+.tablet.portrait .vacancies .deposit-doc__content {
+  padding: 2.6rem 4rem 4.4rem;
+}
+.mobile .vacancies .depository__form {
+  margin-top: 0;
+}
+.mobile .vacancies__block {
+  padding-top: 4rem;
+  display: none;
+}
+.mobile .vacancies__block h2 {
+  text-align: left;
+  padding-left: 0;
+}
+.mobile .vacancies__list .deposit-doc__content {
+  padding: 2.6rem 2rem 4.4rem;
+}
+.mobile .vacancies__list .deposit-doc__content ul {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.mobile .vacancies__list .deposit-doc__content ul li {
+  padding-left: 2.6rem;
+}
+.mobile .vacancies__list .deposit-doc__content ul li:before {
+  width: 1rem;
+  height: 1px;
+  left: 0;
+  top: 1rem;
+}
+.mobile .vacancies__list .deposit-doc__content ul li + li {
+  margin-top: 1rem;
 }
 .deposit__text,
 .deposit .note-text {

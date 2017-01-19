@@ -111,6 +111,7 @@ app.init = function () {
 	app.docsDateYears();
 	app.experts();
 	app.dataFile();
+	app.vacancies();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -1278,7 +1279,70 @@ app.depository = function () {
 		return false;
 	});
 };
+app.vacancies = function () {
+	var $vacancies = $('[data-vacancies]'),
+			$formBlock = $vacancies.find('[data-vacancies-form-block]'),
+			$form = $formBlock.find('form'),
+			$formToggle = $vacancies.find('[data-vacancies-form-toggle]'),
+			$formFields = $vacancies.find('[data-vacancies-form-fields]'),
+			$block = $vacancies.find('[data-vacancies-block]'),
+			$list = $vacancies.find('[data-vacancies-list]'),
+			$resumeForm =  $('[data-resume-form]'),
+			$errors = $resumeForm.find('[data-form-errors]'),
+			$resumeFormPosition =  $resumeForm.find('[data-resume-form-position]')
+		;
 
+	$formToggle.on('click',function () {
+		$(this).toggleClass('_active');
+		$formFields.slideToggle();
+	});
+
+	$form.on('submit',function () {
+		var $self = $(this);
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			if(data.content){
+				$list.html(data.content);
+				$block.fadeIn(300);
+			}else{
+				$block.hide();
+			}
+		},'json');
+		return false;
+	});
+
+	$resumeForm.find('form').on('submit',function () {
+		var $self = $(this)
+			;
+		$.post($self.attr('action'), $self.serialize(), function(data){
+			if(!data.errors){
+				$errors.hide();
+				$.fancybox.close();
+			}else{
+				$errors.html(data.errors).show();
+			}
+		},'json');
+		return false;
+	});
+	$list.on('click','[data-resume-btn]',function () {
+		var $self = $(this);
+		$errors.hide();
+		$resumeFormPosition.val($self.data('resumeBtn'));
+		$.fancybox({
+			wrapCSS 	: 'fc-base _forms',
+			content 	: $resumeForm,
+			fitToView	: false,
+			padding:0,
+			helpers : {
+				overlay : {
+					css : {
+						'background' : 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		});
+		return false;
+	});
+};
 
 app.initAnimations = function() {
 	var $animation = $('[data-animation]'),

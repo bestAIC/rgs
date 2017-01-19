@@ -41,7 +41,7 @@
 					<a href="#" class="b-menu__submenu-link">Горячие вакансии</a>
 				</div>
 				<div class="b-menu__submenu-item">
-					<a href="#" class="b-menu__submenu-link">Список вакансий</a>
+					<a href="/static/about/vacancy/list.php" class="b-menu__submenu-link">Список вакансий</a>
 				</div>
 				<div class="b-menu__submenu-item">
 					<a href="#" class="b-menu__submenu-link">Студентам и выпускникам</a>
