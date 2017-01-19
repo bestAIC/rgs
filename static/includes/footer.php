@@ -40,10 +40,10 @@
 				<a href="/" class="footer__logo"></a>
 				<div class="footer__license">
 					© 2012-<?=date('Y')?>, Публичное акционерное общество «Росгосстрах Банк». Лицензия ЦБ РФ 3073.<br/><br/>
-					<a href="https://rgsbank.ru/about/disclosure-of-information/3921/" target="_blank">Раскрытие информации в соответствии с Указанием ЦБ РФ
+					<a href="/about/disclosure-of-information/3921/" target="_blank">Раскрытие информации в соответствии с Указанием ЦБ РФ
 						от 28.12.2015 N 3921-У</a> | <a href="http://old.rgsbank.ru/about/disclosure-of-information/shema/" target="_blank">Схема взаимосвязей ПАО «РГС Банк»
 						и лиц, под контролем либо значительным влиянием которых
-						находится банк.</a> | <a href="http://old.rgsbank.ru/upload/content/ins_inf_08122014.pdf">Перечень инсайдерской информации</a> | <a href="https://rgsbank.ru/about/disclosure-of-information/info-percent/">Информация о максимальных процентных ставках
+						находится банк.</a> | <a href="http://old.rgsbank.ru/upload/content/ins_inf_08122014.pdf">Перечень инсайдерской информации</a> | <a href="/about/disclosure-of-information/info-percent/">Информация о максимальных процентных ставках
 						по вкладам физических лиц (№3194-У)</a>
 				</div>
 				<?/*div class="footer__eng">
@@ -95,10 +95,10 @@
 				<a href="/" class="footer__logo"></a>
 				<div class="footer__license">
 					© 2012-<?=date('Y')?>, Публичное акционерное общество «Росгосстрах Банк». Лицензия ЦБ РФ 3073.<br/><br/>
-					<a href="https://rgsbank.ru/about/disclosure-of-information/3921/" target="_blank">Раскрытие информации в соответствии с Указанием ЦБ РФ
+					<a href="/about/disclosure-of-information/3921/" target="_blank">Раскрытие информации в соответствии с Указанием ЦБ РФ
 					от 28.12.2015 N 3921-У</a> | <a href="http://old.rgsbank.ru/about/disclosure-of-information/shema/" target="_blank">Схема взаимосвязей ПАО «РГС Банк»
 					и лиц, под контролем либо значительным влиянием которых
-					находится банк.</a> | <a href="http://old.rgsbank.ru/upload/content/ins_inf_08122014.pdf">Перечень инсайдерской информации</a> | <a href="https://rgsbank.ru/about/disclosure-of-information/info-percent/">Информация о максимальных процентных ставках
+					находится банк.</a> | <a href="http://old.rgsbank.ru/upload/content/ins_inf_08122014.pdf">Перечень инсайдерской информации</a> | <a href="/about/disclosure-of-information/info-percent/">Информация о максимальных процентных ставках
 					по вкладам физических лиц (№3194-У)</a>
 				</div>
 				<?/*div class="footer__eng">
