@@ -11416,6 +11416,15 @@ span.pagination__item:focus {
   line-height: 2rem;
   margin-top: 2.1rem;
 }
+.footer__license a {
+  color: #737b80;
+}
+.footer__license a:hover {
+  color: #737b80;
+}
+.footer__license a:focus {
+  color: #737b80;
+}
 .footer__eng {
   position: relative;
   padding-top: 2.1rem;
