@@ -303,7 +303,7 @@ app.CardP2P = function () {
 	setMasks();
 	function setMasks() {
 		//$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
-		$transferBlock.find('[data-card-mask]').mask("0000000000000999999",{clearIfNotMatch: true});
+		$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0999999",{clearIfNotMatch: true});
 		$transferBlock.find('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
 		$transferBlock.find('[data-date-mask]').mask("A0/00",{
 			clearIfNotMatch: true,
