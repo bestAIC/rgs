@@ -4,7 +4,7 @@
 			</div>
 			<div class="b-menu__submenu">
 				<div class="b-menu__submenu-item">
-					<a href="#" class="b-menu__submenu-link">Интернет-банк</a>
+					<a href="/static/about/remote-services/internet-bank.php" class="b-menu__submenu-link">Интернет-банк</a>
 				</div>
 				<div class="b-menu__submenu-item">
 					<a href="#" class="b-menu__submenu-link">Мобильный банк</a>

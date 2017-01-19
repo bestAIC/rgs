@@ -8459,6 +8459,124 @@ span.pagination__item:focus {
 .mobile .vacancies__list .deposit-doc__content ul li + li {
   margin-top: 1rem;
 }
+.remote-services__about {
+  *zoom: 1;
+}
+.remote-services__about:before,
+.remote-services__about:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.remote-services__about:after {
+  clear: both;
+}
+.remote-services__about-left {
+  float: left;
+  width: 47rem;
+}
+.remote-services__about-right {
+  float: left;
+  width: 57rem;
+  margin-left: 13rem;
+}
+.remote-services__about-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #3e3e3e;
+  margin-bottom: 4rem;
+}
+.remote-services__video {
+  height: 32rem;
+}
+.remote-services__video iframe {
+  width: 100%!important;
+  height: 100%!important;
+}
+.remote-services__tabs {
+  border-bottom: 1px solid #DEDFE0;
+  margin-bottom: 5rem;
+}
+.remote-services__tabs h2 {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: top;
+  line-height: 4rem;
+  margin-right: 4rem;
+  margin-top: -2rem;
+}
+.tablet.portrait .remote-services__about {
+  padding-top: 1.5rem;
+}
+.tablet.portrait .remote-services__about-left {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.tablet.portrait .remote-services__about-right {
+  float: none;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 7rem;
+}
+.tablet.portrait .remote-services__about-title {
+  text-align: left;
+}
+.tablet.portrait .remote-services__video {
+  height: 40rem;
+}
+.tablet.portrait .remote-services__tabs {
+  margin-bottom: 2.5rem;
+}
+.tablet.portrait .remote-services__tabs h2 {
+  display: block;
+  margin-bottom: 3.4rem;
+  line-height: 4rem;
+  margin-right: 0;
+  margin-top: 0;
+}
+.mobile .remote-services .inner__info-benefits-text._big {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.mobile .remote-services__about {
+  padding-top: 0.5rem;
+}
+.mobile .remote-services__about-left {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.mobile .remote-services__about-right {
+  float: none;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 4.5rem;
+}
+.mobile .remote-services__about-title {
+  text-align: left;
+}
+.mobile .remote-services__video {
+  height: 21rem;
+}
+.mobile .remote-services__tabs {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.mobile .remote-services__tabs .swiper-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.mobile .remote-services__tabs h2 {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 4rem;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 1.7rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
@@ -9484,6 +9602,9 @@ span.pagination__item:focus {
   margin-top: 3.3rem;
   padding: 2.2rem 3rem 4.9rem 3.9rem;
 }
+.deposit-documents__content._no-indent {
+  margin-top: 0;
+}
 .deposit-documents__passport {
   position: relative;
   min-height: 7rem;
@@ -10340,6 +10461,12 @@ span.pagination__item:focus {
 }
 .inner__info-benefits-text._big {
   font-size: 1.6rem;
+}
+.inner__info-benefits-text._big + .inner__info-benefits-title {
+  margin-top: 4rem;
+}
+.mobile .inner__info-benefits-text._big + .inner__info-benefits-title {
+  margin-top: 2rem;
 }
 .inner__info-benefits-title {
   font-size: 2rem;
