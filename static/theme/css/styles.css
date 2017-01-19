@@ -1680,9 +1680,12 @@ h4.small-bottom-indent {
 .remote-nav__bank:focus {
   color: #fff;
 }
-.tablet.portrait .remote-nav__bank,
+.tablet.portrait .remote-nav__bank {
+  background-image: url('../images/remote-services/bank_bg_tablet.png');
+}
 .mobile .remote-nav__bank {
-  background-image: linear-gradient(137deg, #c0b777 0%, #abaa60 100%);
+  padding-right: 15rem!important;
+  background-image: url('../images/remote-services/bank_bg_mob.png');
 }
 .cards-nav.b-block {
   padding-top: 8rem;
