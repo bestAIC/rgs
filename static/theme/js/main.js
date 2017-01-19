@@ -172,6 +172,7 @@ app.experts = function () {
 	var $experts =  $('[data-experts]'),
 			$expertsForm = $experts.find('[data-experts-form]'),
 			$expertsFormTheme = $expertsForm.find('[data-experts-form-theme]'),
+			$expertsFormExpert = $expertsForm.find('[data-experts-form-expert]'),
 			$expertsItem = $experts.find('[data-experts-item]'),
 			$expertsItemBtn = $expertsItem.find('[data-experts-item-btn]'),
 			$expertsItemTheme = $expertsItem.find('[data-experts-item-theme]'),
@@ -195,6 +196,7 @@ app.experts = function () {
 	$expertsItemBtn.on('click',function () {
 		var $self = $(this);
 		$errors.hide();
+		$expertsFormExpert.val($self.data('expertsItemBtn'));
 		$expertsFormTheme.html($self.closest($expertsItem).find($expertsItemTheme).html());
 		$expertsFormTheme.trigger('chosen:updated');
 		$.fancybox({

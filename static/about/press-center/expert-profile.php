@@ -48,7 +48,7 @@
 									Алла Александровна
 								</div>
 								<div class="experts__item-position">Председатель Правления</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Масленникова Алла Александровна" >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -60,7 +60,7 @@
 									<li>Законодательное регулирование банковского сектора</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Масленникова Алла Александровна" >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -80,7 +80,7 @@
 									Аскер Джевадович
 								</div>
 								<div class="experts__item-position">Заместитель Председателя Правления</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Еникеев Аскер Джевадович" >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -92,7 +92,7 @@
 									<li>Банковские сети и пр.</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Еникеев Аскер Джевадович" >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -107,14 +107,14 @@
 									Ирина Борисовна
 								</div>
 								<div class="experts__item-position">Главный бухгалтер, член Правления</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Тараканова Ирина Борисовна" >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
 									<li>Финансовая отчетность банка</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Тараканова Ирина Борисовна" >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -129,14 +129,14 @@
 									Дмитрий Евгеньевич
 								</div>
 								<div class="experts__item-position">Директор Департамента информационных технологий</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Горшков Дмитрий Евгеньевич" >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
 									<li>Банковские технологии и инновации</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Горшков Дмитрий Евгеньевич" >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -154,7 +154,7 @@
 									Дмитрий Геннадьевич
 								</div>
 								<div class="experts__item-position">Директор Департамента Казначействай</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Емелин Дмитрий Геннадьевич" >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -164,7 +164,7 @@
 									<li>Макроэкономические запросы</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Емелин Дмитрий Геннадьевич" >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -182,14 +182,14 @@
 									Директор Департамента информационной
 									и экономической защиты бизнеса
 								</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Лапин Сергей Александрович" >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
 									<li>Вопросы экономической и информационной безопасности</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Лапин Сергей Александрович" >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -206,7 +206,7 @@
 									Александр Сергеевич
 								</div>
 								<div class="experts__item-position">Директор Департамента маркетинга</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Наумов Александр Сергеевич" >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -215,7 +215,7 @@
 									<li>Маркетинговые исследования</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Наумов Александр Сергеевич" >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -228,6 +228,7 @@
 							<form action="/static/ajax/askForm.php">
 								<h2>Задать вопрос эксперту</h2>
 								<div class="b-form__content">
+									<input type="hidden" class="mail_to" data-experts-form-expert name="mail_to" value="" />
 									<div class="b-form__row">
 										<div class="b-form__block">
 											<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
