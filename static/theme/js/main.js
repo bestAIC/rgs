@@ -127,6 +127,9 @@ app.init = function () {
 	if($('[data-not-found]').length){
 		app.dom.$body.addClass('not-found');
 	}
+	if($('[data-offices-page]').length){
+		app.dom.$body.addClass('is-offices-page');
+	}
 };
 app.askForm = function () {
 	var $ask =  $('[data-ask]'),

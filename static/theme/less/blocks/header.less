@@ -111,6 +111,29 @@
 		transform: translate(0, 0);
 	}
 }
+.is-offices-page{
+	.header{
+		&__bottom{
+			background-color: #fff;
+			&-block{
+				border-top: 1px solid whitesmoke;
+				border-bottom: 1px solid whitesmoke;
+				background-color: #fff;
+				box-shadow: 0px 1px 3px 0px rgba(211,211,211,0.20);
+			}
+		}
+		&__search-btn{
+			background-image: url('@{pathToImg}icons/search_black.svg');
+		}
+		&__menu-link{
+			.color(@text-color);
+		}
+		&__menu-btn-bar{
+			background-color: #000;
+			//background-image: url('@{pathToImg}icons/burger_black.svg');
+		}
+	}
+}
 .header{
 	position: relative;
 	&.search-open{

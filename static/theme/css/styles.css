@@ -2432,6 +2432,30 @@ span.pagination__item:focus {
     transform: translate(0, 0);
   }
 }
+.is-offices-page .header__bottom {
+  background-color: #fff;
+}
+.is-offices-page .header__bottom-block {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(211, 211, 211, 0.2);
+}
+.is-offices-page .header__search-btn {
+  background-image: url('../images/icons/search_black.svg');
+}
+.is-offices-page .header__menu-link {
+  color: #191919;
+}
+.is-offices-page .header__menu-link:hover {
+  color: #191919;
+}
+.is-offices-page .header__menu-link:focus {
+  color: #191919;
+}
+.is-offices-page .header__menu-btn-bar {
+  background-color: #000;
+}
 .header {
   position: relative;
 }
@@ -12112,8 +12136,106 @@ span.pagination__item:focus {
 .mobile .footer__mob-item._google {
   float: right;
 }
+.offices-page {
+  padding-top: 6rem;
+}
+.offices-page__partners {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.offices-page__partners-title {
+  font-weight: 600;
+}
+.offices-page__partners-items {
+  *zoom: 1;
+  margin-top: 2rem;
+}
+.offices-page__partners-items:before,
+.offices-page__partners-items:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices-page__partners-items:after {
+  clear: both;
+}
+.offices-page__partners-item {
+  position: relative;
+  padding-left: 7rem;
+  float: left;
+}
+.offices-page__partners-item + .offices-page__partners-item {
+  margin-left: 14rem;
+  padding-left: 8rem;
+}
+.offices-page__partners-item-ico {
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  width: 6rem;
+  height: 3rem;
+  background: none no-repeat left center;
+  background-size: contain;
+}
+.offices-page__in {
+  position: relative;
+  background-color: whitesmoke;
+}
+.offices-page__list {
+  margin-bottom: 6rem;
+}
+.offices-page .offices__map {
+  height: 72.7rem;
+}
+.offices-page .offices__map-wrap {
+  margin-top: -10.6rem;
+}
+.offices-page .offices__map-block {
+  height: 72.7rem;
+}
+.offices-page .offices__map-popup {
+  top: 13rem;
+  bottom: auto;
+}
 .offices {
   padding-top: 5rem;
+}
+.offices__metro {
+  *zoom: 1;
+  padding: 0!important;
+  background-color: transparent!important;
+  margin-bottom: 3rem;
+}
+.offices__metro:before,
+.offices__metro:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.offices__metro:after {
+  clear: both;
+}
+.offices__metro-left {
+  width: 44rem;
+  float: left;
+  background-color: #fff;
+  height: 78.4rem;
+}
+.offices__metro-right {
+  width: 70rem;
+  float: left;
+  margin-left: 3rem;
+  background-color: #fff;
+}
+.offices__metro-img {
+  height: 78.4rem;
+  width: 60.6rem;
+  margin: 0 auto;
+  background: url('../images/mapMetro.jpg') no-repeat center;
+  background-size: contain;
 }
 .offices__filter {
   background-color: white;
@@ -12687,6 +12809,13 @@ span.pagination__item:focus {
 .offices__item-info-metro .metro {
   margin-top: 0.2rem;
 }
+.tablet.portrait .offices-page__partners {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.tablet.portrait .offices-page__partners-item + .offices-page__partners-item {
+  margin-left: 8rem;
+}
 .tablet.portrait .offices__map-nav {
   right: 2.7rem;
 }
@@ -13021,6 +13150,62 @@ span.pagination__item:focus {
 }
 .mobile .offices .offices__block .offices__item-info-metro .metro {
   margin-top: 0.2rem;
+}
+.mobile .offices-page {
+  padding-top: 5.5rem;
+}
+.mobile .offices-page__partners {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding-top: 2.3rem;
+  padding-bottom: 2.6rem;
+}
+.mobile .offices-page__partners-items {
+  margin-top: 2.6rem;
+}
+.mobile .offices-page__partners-item {
+  position: relative;
+  padding-left: 8rem;
+  float: none;
+  width: 100%;
+}
+.mobile .offices-page__partners-item + .offices-page__partners-item {
+  margin-left: 0;
+  margin-top: 2rem;
+  padding-left: 8rem;
+}
+.mobile .offices-page__partners-item-ico {
+  top: 0.5rem;
+}
+.mobile .offices-page__in {
+  position: relative;
+  background-color: whitesmoke;
+}
+.mobile .offices-page__in .grid__inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+.mobile .offices-page__list {
+  margin-bottom: 0;
+}
+.mobile .offices-page .offices__map {
+  height: 56rem;
+}
+.mobile .offices-page .offices__map-wrap {
+  margin-top: 0;
+}
+.mobile .offices-page .offices__map-block {
+  height: 56rem;
+}
+.mobile .offices-page .offices__map-popup {
+  top: auto;
+  bottom: 0;
+}
+.mobile .offices-page .offices__map-popup-content {
+  max-height: 40rem;
+}
+.mobile .offices-page .offices__filter {
+  margin-top: 0;
 }
 .mortgage__numbers {
   margin-top: 4.8rem;

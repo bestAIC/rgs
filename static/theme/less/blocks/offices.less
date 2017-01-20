@@ -1,5 +1,97 @@
+.offices-page{
+	padding-top: 6rem;
+	&__partners{
+		font-size: 16/@rem;
+		font-weight: 400;
+		line-height: 25/@rem;
+		padding-top: 30/@rem;
+		padding-bottom: 30/@rem;
+		&-title{
+			font-weight: 600;
+		}
+		&-items{
+			.clearfix;
+			margin-top: 20/@rem;
+		}
+		&-item{
+			position: relative;
+			padding-left: 7rem;
+			float: left;
+			&+&{
+				margin-left: 14rem;
+				padding-left: 8rem;
+			}
+			&-ico{
+				position: absolute;
+				top: 9/@rem;
+				left: 0;
+				width: 6rem;
+				height: 3rem;
+				background: none no-repeat left center;
+				background-size: contain;
+			}
+		}
+	}
+	&__in{
+		position: relative;
+		background-color: whitesmoke;
+	}
+	&__list{
+		margin-bottom: 6rem;
+	}
+	.offices{
+		&__map{
+			height: 727/@rem;
+			&-wrap{
+				margin-top: -10.6rem;
+			}
+			&-block{
+				height: 727/@rem;
+			}
+			&-popup{
+				top: 13rem;
+				bottom: auto;
+			}
+		}
+		&__advanced-search{
+			//margin-left: 3rem;
+		}
+		&__filter{
+			&-city{
+				//margin-left: 1.4rem;
+				//width: 23rem;
+			}
+		}
+	}
+}
+
 .offices{
 	padding-top: 5rem;
+	&__metro{
+		.clearfix;
+		padding: 0!important;
+		background-color: transparent!important;
+		margin-bottom: 3rem;
+		&-left{
+			width: 440/@rem;
+			float: left;
+			background-color: #fff;
+			height: 784/@rem;
+		}
+		&-right{
+			width: 700/@rem;
+			float: left;
+			margin-left: 30/@rem;
+			background-color: #fff;
+		}
+		&-img{
+			height: 784/@rem;
+			width: 606/@rem;
+			margin: 0 auto;
+			background: url('@{pathToImg}mapMetro.jpg') no-repeat center;
+			background-size: contain;
+		}
+	}
 	&__filter{
 		background-color: white;
 		border-radius: 2/@rem;
@@ -468,6 +560,17 @@
 	}
 }
 .tablet.portrait{
+	.offices-page{
+		&__partners{
+			font-size: 14/@rem;
+			line-height: 20/@rem;
+			&-item{
+				&+.offices-page__partners-item{
+					margin-left: 8rem;
+				}
+			}
+		}
+	}
 	.offices{
 		&__map{
 			&-nav{
@@ -794,5 +897,70 @@
 			}
 		}
 
+	}
+	.offices-page{
+		padding-top: 5.5rem;
+		&__partners{
+			font-size: 14/@rem;
+			line-height: 20/@rem;
+			padding-top: 23/@rem;
+			padding-bottom: 26/@rem;
+			&-items{
+				margin-top: 26/@rem;
+			}
+			&-item{
+				position: relative;
+				padding-left: 8rem;
+				float: none;
+				width: 100%;
+				&+.offices-page__partners-item{
+					margin-left: 0;
+					margin-top: 2rem;
+					padding-left: 8rem;
+				}
+				&-ico{
+					top: 5/@rem;
+				}
+			}
+		}
+		&__in{
+			position: relative;
+			background-color: whitesmoke;
+			.grid__inner{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		&__list{
+			margin-bottom: 0;
+		}
+		.offices{
+			&__map{
+				height: 56rem;
+				&-wrap{
+					margin-top: 0;
+				}
+				&-block{
+					height: 56rem;
+				}
+				&-popup{
+					top: auto;
+					bottom:0;
+					&-content{
+						max-height: 40rem;
+					}
+				}
+			}
+			&__advanced-search{
+				//margin-left: 3rem;
+			}
+			&__filter{
+				margin-top: 0;
+				&-city{
+					//margin-left: 1.4rem;
+					//width: 23rem;
+				}
+			}
+		}
 	}
 }
