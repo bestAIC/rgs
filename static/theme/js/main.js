@@ -181,16 +181,25 @@ app.experts = function () {
 		;
 
 	$expertsForm.find('form').on('submit',function () {
-		var $self = $(this)
+		var $self = $(this),
+				formData = new FormData($self.get(0))
 			;
-		$.post($self.attr('action'), $self.serialize(), function(data){
-			if(!data.errors){
-				$errors.hide();
-				$.fancybox.close();
-			}else{
-				$errors.html(data.errors).show();
+		$.ajax({
+			url: $self.attr('action'),
+			type: "POST",
+			contentType: false,
+			processData: false,
+			data: formData,
+			dataType: 'json',
+			success: function(data){
+				if(!data.errors){
+					$errors.hide();
+					$.fancybox.close();
+				}else{
+					$errors.html(data.errors).show();
+				}
 			}
-		},'json');
+		});
 		return false;
 	});
 	$expertsItemBtn.on('click',function () {
@@ -1313,17 +1322,27 @@ app.vacancies = function () {
 		return false;
 	});
 
+
 	$resumeForm.find('form').on('submit',function () {
-		var $self = $(this)
+		var $self = $(this),
+				formData = new FormData($self.get(0))
 			;
-		$.post($self.attr('action'), $self.serialize(), function(data){
-			if(!data.errors){
-				$errors.hide();
-				$.fancybox.close();
-			}else{
-				$errors.html(data.errors).show();
+		$.ajax({
+			url: $self.attr('action'),
+			type: "POST",
+			contentType: false,
+			processData: false,
+			data: formData,
+			dataType: 'json',
+			success: function(data){
+				if(!data.errors){
+					$errors.hide();
+					$.fancybox.close();
+				}else{
+					$errors.html(data.errors).show();
+				}
 			}
-		},'json');
+		});
 		return false;
 	});
 	$list.on('click','[data-resume-btn]',function () {
