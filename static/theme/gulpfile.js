@@ -67,6 +67,8 @@ gulp.task('jsLibs:concat', function() {
 		options.sourcePathScripts + '/scrollbar/jquery.mCustomScrollbar.concat.min.js',
 		options.sourcePathScripts + '/jquery.mask.min.js',
 		options.sourcePathScripts + '/jquery.touchSwipe.min.js',
+		options.sourcePathScripts + '/jes5-shims.min.js',
+		options.sourcePathScripts + '/share.js',
 		options.sourcePathScripts + '/radiocheck.js',
 		options.sourcePathScripts + '/fancybox/jquery.fancybox.pack.js',
 		options.sourcePathScripts + '/circle-progress.min.js'

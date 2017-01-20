@@ -1,0 +1,90 @@
+.ya-share2 .ya-share2__container{
+	.ya-share2{
+		&__item{
+			margin-right: 40/@rem;
+			&_service{
+				&_vkontakte{
+					.ya-share2__icon{
+						background-image: url('@{pathToImg}icons/share/vk.svg');
+					}
+				}
+				&_facebook{
+					.ya-share2__icon{
+						background-image: url('@{pathToImg}icons/share/fb.svg');
+					}
+				}
+				&_gplus{
+					.ya-share2__icon{
+						background-image: url('@{pathToImg}icons/share/google.svg');
+					}
+				}
+				&_twitter{
+					.ya-share2__icon{
+						background-image: url('@{pathToImg}icons/share/tw.svg');
+					}
+				}
+			}
+		}
+		&__badge{
+			background-color: transparent;
+			overflow: visible;
+		}
+		&__counter{
+			min-width:40/@rem;
+			height: 40/@rem;
+			background-color: white;
+			border-radius: 2px;
+			color: #3e3e3e;
+			font-size: 18/@rem;
+			font-weight: 400;
+			letter-spacing: 0.06/@rem;
+			line-height: 20/@rem;
+			padding: 1rem;
+			text-align: center;
+			box-shadow: 0 2px 8/@rem 2px rgba(211, 211, 211, 0.5);
+			position: relative;
+			margin-left: 10/@rem;
+			display: inline-block;
+			&:after{
+				content: '';
+				border: 6/@rem solid transparent;
+				border-left:0;
+				border-right-color:#fff;
+				position: absolute;
+				left: -6/@rem;
+				top: 50%;
+				margin-top: -6/@rem;
+			}
+		}
+		&__icon{
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+			background: none no-repeat center;
+			background-size: contain!important;
+		}
+	}
+}
+.mobile{
+	.ya-share2 .ya-share2__container{
+		.ya-share2{
+			&__item{
+				margin-right: 10px;
+				margin-top: 0!important;
+				margin-bottom: 0.5rem;
+			}
+			&__counter{
+				min-width:30/@rem;
+				height: 30/@rem;
+				font-size: 14/@rem;
+				padding: 0.5rem;
+				margin-left: 10/@rem;
+			}
+			&__icon{
+				width: 3rem;
+				height: 3rem;
+				background-size: contain;
+			}
+		}
+	}
+}
