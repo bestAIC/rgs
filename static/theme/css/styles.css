@@ -8575,6 +8575,9 @@ span.pagination__item:focus {
   color: #3e3e3e;
   margin-bottom: 4rem;
 }
+.remote-services__about-title:last-child {
+  margin-bottom: 0;
+}
 .remote-services__video {
   height: 32rem;
 }
