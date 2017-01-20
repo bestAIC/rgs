@@ -2293,7 +2293,7 @@ span.pagination__item:focus {
   background-size: contain!important;
 }
 .mobile .ya-share2 .ya-share2__container .ya-share2__item {
-  margin-right: 10px;
+  margin-right: 1rem;
   margin-top: 0!important;
   margin-bottom: 0.5rem;
 }
