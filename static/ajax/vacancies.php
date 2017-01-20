@@ -26,7 +26,7 @@
 							<li>Конкурентоспособная заработная плата.</li>
 							<li>Место работы – Кирова, д.87</li>
 						</ul>
-						<a href="javascript:void(0);" data-resume-btn="Руководитель группы по работе с проблемными активами" class="btn _red">Отправить резюме</a>
+						<a href="javascript:void(0);" data-resume-btn='{"title":"Руководитель группы по работе с проблемными активами","email":"email@email.ru"}' class="btn _red">Отправить резюме</a>
 					</div>
 				</div>
 		<?}

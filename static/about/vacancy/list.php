@@ -68,6 +68,7 @@
 				<div class="hide">
 					<div class="b-form ask-form"  data-resume-form>
 						<form action="/static/ajax/askForm.php">
+							<input type="hidden" class="mail_to" name="mail_to" value="" data-resume-form-email />
 							<h2>Oтправить резюме</h2>
 							<div class="b-form__content">
 								<div class="b-form__row">

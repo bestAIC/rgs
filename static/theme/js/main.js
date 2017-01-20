@@ -1291,7 +1291,8 @@ app.vacancies = function () {
 			$list = $vacancies.find('[data-vacancies-list]'),
 			$resumeForm =  $('[data-resume-form]'),
 			$errors = $resumeForm.find('[data-form-errors]'),
-			$resumeFormPosition =  $resumeForm.find('[data-resume-form-position]')
+			$resumeFormPosition =  $resumeForm.find('[data-resume-form-position]'),
+			$resumeFormEmail =  $resumeForm.find('[data-resume-form-email]')
 		;
 
 	$formToggle.on('click',function () {
@@ -1326,9 +1327,12 @@ app.vacancies = function () {
 		return false;
 	});
 	$list.on('click','[data-resume-btn]',function () {
-		var $self = $(this);
+		var $self = $(this),
+				data = $self.data('resumeBtn')
+			;
 		$errors.hide();
-		$resumeFormPosition.val($self.data('resumeBtn'));
+		$resumeFormPosition.val(data['title']);
+		$resumeFormEmail.val(data['email']);
 		$.fancybox({
 			wrapCSS 	: 'fc-base _forms',
 			content 	: $resumeForm,
