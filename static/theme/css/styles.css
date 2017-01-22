@@ -9110,6 +9110,18 @@ span.pagination__item:focus {
 .about__principles-blocks:after {
   clear: both;
 }
+.about__principles-list {
+  *zoom: 1;
+}
+.about__principles-list:before,
+.about__principles-list:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__principles-list:after {
+  clear: both;
+}
 .about__principles-list li {
   margin-top: 1rem;
   float: left;
@@ -9257,6 +9269,136 @@ span.pagination__item:focus {
 }
 .about__affiliated .annual-reports .deposit-doc__content .file {
   margin-top: 0;
+}
+.tablet.portrait .about .numerals__item._big .numerals__item-val span {
+  line-height: 3.7rem;
+}
+.tablet.portrait .about .numerals__block + .numerals__block {
+  padding-left: 0;
+  padding-right: 0;
+}
+.tablet.portrait .about .b-list li + li {
+  margin-top: 1rem;
+}
+.tablet.portrait .about__info-list {
+  margin-top: 3rem;
+}
+.tablet.portrait .about__info-numerals {
+  padding: 4rem 3rem 4rem 3rem;
+  margin-top: 2.9rem;
+}
+.tablet.portrait .about__info-numerals-item-text:before {
+  margin-top: 2rem;
+}
+.tablet.portrait .about__info-numerals-item-val {
+  font-size: 30px;
+  line-height: 24px;
+}
+.tablet.portrait .about__info-numerals-item._1 {
+  width: 11.2rem;
+}
+.tablet.portrait .about__info-numerals-item._2 {
+  width: 13.4rem;
+}
+.tablet.portrait .about__info-numerals-item._3 {
+  width: 14.2rem;
+}
+.tablet.portrait .about__info-numerals-item._4 {
+  width: 14.4rem;
+}
+.tablet.portrait .about__info-numerals-item._5 {
+  width: 12rem;
+}
+.tablet.portrait .about__associations {
+  margin-top: 3.6rem;
+  padding-bottom: 2rem;
+}
+.tablet.portrait .about__associations-title {
+  text-align: center;
+  padding-left: 0;
+}
+.tablet.portrait .about__associations-block {
+  *zoom: 1;
+  margin-top: 5.4rem;
+}
+.tablet.portrait .about__associations-block:before,
+.tablet.portrait .about__associations-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .about__associations-block:after {
+  clear: both;
+}
+.tablet.portrait .about__associations-img {
+  float: none;
+  margin: 0 auto;
+}
+.tablet.portrait .about__associations-text {
+  float: none;
+  margin-top: 5rem;
+  width: auto;
+  margin-left: 8rem;
+}
+.tablet.portrait .about__associations-text:before {
+  left: -8rem;
+  top: 0.3rem;
+}
+.tablet.portrait .about__mission {
+  padding: 3.5rem 4rem 2.3rem;
+}
+.tablet.portrait .about__principles-block {
+  float: none;
+  width: 100%;
+}
+.tablet.portrait .about__principles-block + .about__principles-block {
+  margin-left: 0;
+  margin-top: 3rem;
+}
+.tablet.portrait .about__controls-team {
+  padding-top: 1.6rem;
+}
+.tablet.portrait .about__controls-team-text {
+  margin-bottom: 4.2rem;
+}
+.tablet.portrait .about__controls-team-item {
+  width: 49%;
+  margin-bottom: 4rem;
+}
+.tablet.portrait .about__controls-numerals {
+  padding-top: 1.7rem;
+}
+.tablet.portrait .about__controls-block {
+  *zoom: 1;
+}
+.tablet.portrait .about__controls-block:before,
+.tablet.portrait .about__controls-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .about__controls-block:after {
+  clear: both;
+}
+.tablet.portrait .about__controls-block-content {
+  margin-top: 2.5rem;
+  padding-right: 5rem;
+}
+.tablet.portrait .about__controls-block-right {
+  float: none;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.tablet.portrait .about__controls-block-left {
+  float: none;
+  width: 100%;
+}
+.tablet.portrait .about__controls-block + .about__controls-block {
+  margin-top: 3rem;
+}
+.tablet.portrait .about__shareholders {
+  padding-bottom: 6rem;
+  margin-top: 4.5rem;
 }
 .deposit__text,
 .deposit .note-text {
