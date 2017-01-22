@@ -8953,6 +8953,311 @@ span.pagination__item:focus {
   height: auto;
   padding: 0.5rem 2rem;
 }
+.about .b-list li + li {
+  margin-top: 1rem;
+}
+.about__info-list {
+  margin-top: 5rem;
+}
+.about__info-list ul.b-list {
+  margin-top: 2.5rem;
+}
+.about__info-list-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.about__info-numerals {
+  border: 1px solid #DEDFE0;
+  border-radius: 0.2rem;
+  padding: 6rem 4rem 7rem 7rem;
+  margin-top: 5.9rem;
+}
+.about__info-numerals-inner {
+  *zoom: 1;
+}
+.about__info-numerals-inner:before,
+.about__info-numerals-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__info-numerals-inner:after {
+  clear: both;
+}
+.about__info-numerals-item {
+  float: left;
+}
+.about__info-numerals-item-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #AAAEB2;
+  padding-right: 0.5rem;
+}
+.about__info-numerals-item-text:before {
+  content: '';
+  width: 7rem;
+  height: 2px;
+  background-color: #cca266;
+  margin-top: 1.2rem;
+  margin-bottom: 1.8rem;
+  display: block;
+}
+.about__info-numerals-item-val {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 6rem;
+  color: #3e3e3e;
+}
+.about__info-numerals-item._1 {
+  width: 15rem;
+}
+.about__info-numerals-item._2 {
+  width: 19rem;
+}
+.about__info-numerals-item._3 {
+  width: 24rem;
+}
+.about__info-numerals-item._4 {
+  width: 24.4rem;
+}
+.about__info-numerals-item._5 {
+  width: 23rem;
+}
+.about__associations {
+  margin-top: 9rem;
+}
+.about__associations-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #3e3e3e;
+  padding-left: 9.4rem;
+}
+.about__associations-block {
+  *zoom: 1;
+  margin-top: 5.4rem;
+}
+.about__associations-block:before,
+.about__associations-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__associations-block:after {
+  clear: both;
+}
+.about__associations-img {
+  float: left;
+  width: 67rem;
+  height: 19rem;
+  background: url('../images/about/associations.png') no-repeat center;
+  background-size: contain;
+}
+.about__associations-text {
+  float: left;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  width: 40rem;
+  margin-left: 10rem;
+  margin-top: 1.4rem;
+  position: relative;
+}
+.about__associations-text:before {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #cca266;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 0;
+  top: -8.2rem;
+  background: url('../images/about/info.png') no-repeat center;
+  background-size: 1.2rem 3.1rem;
+}
+.about__mission {
+  margin-top: 3.8rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-top: 0.6rem solid #cca266;
+  padding: 5.5rem 7rem 6rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.about__mission h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-top: 2.9rem;
+  margin-bottom: 2.6rem;
+}
+.about__principles {
+  margin-top: 4.8rem;
+}
+.about__principles-blocks {
+  *zoom: 1;
+  margin-top: 4.3rem;
+}
+.about__principles-blocks:before,
+.about__principles-blocks:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__principles-blocks:after {
+  clear: both;
+}
+.about__principles-list li {
+  margin-top: 1rem;
+  float: left;
+  width: 44%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 1rem;
+}
+.about__principles-block {
+  float: left;
+  width: 50rem;
+}
+.about__principles-block p {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+.about__principles-block + .about__principles-block {
+  margin-left: 3rem;
+}
+.about__controls {
+  padding-top: 6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.about__controls-team {
+  padding-top: 2rem;
+}
+.about__controls-team-text {
+  max-width: 77rem;
+  margin-bottom: 7rem;
+}
+.about__controls-team-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  padding-left: 3.5rem;
+  position: relative;
+  margin-bottom: 7.4rem;
+}
+.about__controls-team-item:before {
+  content: '';
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #cca266;
+}
+.about__controls-team-item-name {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.about__controls-team-item-name .surname {
+  font-size: 2.4rem;
+  margin-bottom: 0.9rem;
+}
+.about__controls-numerals {
+  padding-top: 2.2rem;
+}
+.about__controls-numerals-val {
+  font-size: 6rem;
+  letter-spacing: -0.1rem;
+  color: #3e3e3e;
+  font-weight: 700;
+  line-height: 6rem;
+}
+.about__controls-numerals-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #AAAEB2;
+  padding-right: 0.5rem;
+}
+.about__controls-numerals-text:before {
+  content: '';
+  width: 7rem;
+  height: 0.2rem;
+  background-color: #cca266;
+  margin-top: 2.8rem;
+  margin-bottom: 1.8rem;
+  display: block;
+}
+.about__controls-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #3e3e3e;
+}
+.about__controls-block {
+  *zoom: 1;
+}
+.about__controls-block:before,
+.about__controls-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__controls-block:after {
+  clear: both;
+}
+.about__controls-block-content {
+  margin-top: 2.5rem;
+  padding-right: 5rem;
+}
+.about__controls-block-right {
+  float: right;
+  width: 47rem;
+}
+.about__controls-block-left {
+  float: left;
+  width: 57rem;
+}
+.about__controls-block + .about__controls-block {
+  margin-top: 7rem;
+}
+.about__shareholders {
+  padding-bottom: 6rem;
+  margin-top: 9rem;
+}
+.about__shareholders-table .deposit-table__row td {
+  font-weight: 600;
+}
+.about__shareholders-table .deposit-table__row:nth-of-type(2n) {
+  background-color: rgba(216, 216, 216, 0.17);
+}
+.about__shareholders-table .deposit-table__row:nth-of-type(2n+1) {
+  background-color: transparent;
+}
+.about__affiliated {
+  background-color: whitesmoke;
+  padding-top: 1.7rem;
+  padding-bottom: 5rem;
+  *zoom: 1;
+}
+.about__affiliated:before,
+.about__affiliated:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__affiliated:after {
+  clear: both;
+}
+.about__affiliated .annual-reports .deposit-doc__content .file {
+  margin-top: 0;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
