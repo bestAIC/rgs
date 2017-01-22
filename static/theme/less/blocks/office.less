@@ -1,0 +1,115 @@
+.office{
+	background-color: whitesmoke;
+	padding-top: 9rem;
+	padding-bottom: 5rem;
+	&__services{
+		border-top: 1px solid #eff1f3;
+		margin-top: 1.7rem;
+		padding-top: 1.9rem;
+
+		&-title{
+			font-size: 18/@rem;
+			font-weight: 600;
+			line-height: 24/@rem;
+			margin-bottom: 21/@rem;
+		}
+		.b-list{
+			font-size: 14/@rem;
+			font-weight: 400;
+			line-height: 24/@rem;
+			li{
+				&+li{
+					margin-top: 1rem;
+				}
+			}
+		}
+	}
+	.offices__map-nav{
+		bottom: 3.5rem;
+		right: 3rem;
+	}
+	.desktop &, .tablet.landscape &, .mobile &{
+		.offices__item{
+			&-schedule{
+				float: none;
+				width: 100%;
+				border-top: 1px solid #eff1f3;
+				margin-top: 1.7rem;
+				padding-top: 1.9rem;
+			}
+			&-info{
+				&-block{
+					float: none;
+					.clearfix;
+				}
+				&-address{
+					width: 18rem;
+					padding-bottom: 0;
+				}
+				&-phones{
+					margin-right: 0;
+					width: 14rem;
+				}
+				&-metro{
+					margin-top: 7/@rem;
+					float: none;
+					width: 100%;
+				}
+			}
+		}
+	}
+	.mobile &{
+		.offices__item-info-address{
+			width: 16rem
+		}
+	}
+	&__inner{
+		.clearfix;
+	}
+	&__map{
+		float: right;
+		width: 70rem;
+		height: 693/@rem;
+		position: relative;
+		&-block{
+			height: 100%;
+		}
+	}
+	&__info{
+		float: left;
+		width: 44rem;
+		height: 693/@rem;
+		background-color: #fff;
+		overflow-y: auto;
+		padding: 12/@rem 39/@rem;
+	}
+}
+.tablet.portrait{
+	.office{
+		&__map{
+			float: none;
+			width: 100%;
+			height: 300/@rem;
+		}
+		&__info{
+			float: none;
+			width: 100%;
+			height:auto;
+		}
+	}
+}
+.mobile{
+	.office{
+		&__map{
+			float: none;
+			width: 100%;
+			height: 300/@rem;
+		}
+		&__info{
+			float: none;
+			width: 100%;
+			height:auto;
+			padding: 5/@rem 20/@rem;
+		}
+	}
+}

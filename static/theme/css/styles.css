@@ -8823,6 +8823,136 @@ span.pagination__item:focus {
 .mobile .news-detail__content p {
   margin: 1.8rem 0;
 }
+.office {
+  background-color: whitesmoke;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
+}
+.office__services {
+  border-top: 1px solid #eff1f3;
+  margin-top: 1.7rem;
+  padding-top: 1.9rem;
+}
+.office__services-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-bottom: 2.1rem;
+}
+.office__services .b-list {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.office__services .b-list li + li {
+  margin-top: 1rem;
+}
+.office .offices__map-nav {
+  bottom: 3.5rem;
+  right: 3rem;
+}
+.desktop .office .offices__item-schedule,
+.tablet.landscape .office .offices__item-schedule,
+.mobile .office .offices__item-schedule {
+  float: none;
+  width: 100%;
+  border-top: 1px solid #eff1f3;
+  margin-top: 1.7rem;
+  padding-top: 1.9rem;
+}
+.desktop .office .offices__item-info-block,
+.tablet.landscape .office .offices__item-info-block,
+.mobile .office .offices__item-info-block {
+  float: none;
+  *zoom: 1;
+}
+.desktop .office .offices__item-info-block:before,
+.tablet.landscape .office .offices__item-info-block:before,
+.mobile .office .offices__item-info-block:before,
+.desktop .office .offices__item-info-block:after,
+.tablet.landscape .office .offices__item-info-block:after,
+.mobile .office .offices__item-info-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.desktop .office .offices__item-info-block:after,
+.tablet.landscape .office .offices__item-info-block:after,
+.mobile .office .offices__item-info-block:after {
+  clear: both;
+}
+.desktop .office .offices__item-info-address,
+.tablet.landscape .office .offices__item-info-address,
+.mobile .office .offices__item-info-address {
+  width: 18rem;
+  padding-bottom: 0;
+}
+.desktop .office .offices__item-info-phones,
+.tablet.landscape .office .offices__item-info-phones,
+.mobile .office .offices__item-info-phones {
+  margin-right: 0;
+  width: 14rem;
+}
+.desktop .office .offices__item-info-metro,
+.tablet.landscape .office .offices__item-info-metro,
+.mobile .office .offices__item-info-metro {
+  margin-top: 0.7rem;
+  float: none;
+  width: 100%;
+}
+.mobile .office .offices__item-info-address {
+  width: 16rem;
+}
+.office__inner {
+  *zoom: 1;
+}
+.office__inner:before,
+.office__inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.office__inner:after {
+  clear: both;
+}
+.office__map {
+  float: right;
+  width: 70rem;
+  height: 69.3rem;
+  position: relative;
+}
+.office__map-block {
+  height: 100%;
+}
+.office__info {
+  float: left;
+  width: 44rem;
+  height: 69.3rem;
+  background-color: #fff;
+  overflow-y: auto;
+  padding: 1.2rem 3.9rem;
+}
+.tablet.portrait .office__map {
+  float: none;
+  width: 100%;
+  height: 30rem;
+}
+.tablet.portrait .office__info {
+  float: none;
+  width: 100%;
+  height: auto;
+}
+.mobile .office__map {
+  float: none;
+  width: 100%;
+  height: 30rem;
+}
+.mobile .office__info {
+  float: none;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 2rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;

@@ -1402,6 +1402,7 @@ app.initMaps = function () {
 	document.body.appendChild(script);
 	window.initialize=function(){
 		app.offices();
+		app.office();
 	};
 };
 app.offices = function() {
@@ -1587,6 +1588,67 @@ app.offices = function() {
 	$filterExtendClose.on('click',function () {
 		$filterExtendShow.removeClass('_active');
 		$filterExtend.hide();
+	});
+};
+app.office = function() {
+	var self = this,
+			$office = $('[data-office]'),
+			markerUrl = $office.data('markerUrl'),
+			mapBlock = $office.find('[data-office-map]')[0],
+			$plusBtn   = $office.find('[data-zoom-plus]'),
+			$minusBtn  = $office.find('[data-zoom-minus]'),
+			data = $office.data('office')
+
+		;
+
+	if(!$office.length){
+		return false;
+	}
+	var
+		mapOptions = {
+			zoom:               16,
+			center:             new google.maps.LatLng(data.lat,data.lan),
+			mapTypeControl:     false,
+			streetViewControl:  false,
+			zoomControl:        false,
+			overviewMapControl: false,
+			scrollwheel:        false,
+			cancelable:true
+		},
+		map  = new google.maps.Map(mapBlock, mapOptions),
+		styleArray = [
+			{"featureType":"administrative","stylers":
+				[{"visibility":"off"}]},
+				{"featureType":"poi","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"road","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"water","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"transit","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"landscape","stylers":[{"visibility":"simplified"}]},
+				{"featureType":"road.highway","stylers":[{"visibility":"off"}]},
+				{"featureType":"road.local","stylers":[{"visibility":"on"}]},
+				{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]
+			},
+			{"featureType":"water","stylers":
+				[{"color":"#84afa3"},{"lightness":52}]},
+			{"stylers":[{"saturation":-77}]},{"featureType":"road"}];
+	map.setOptions({styles: styleArray});
+
+	var marker = new google.maps.Marker({
+		position: {lat: data.lat, lng: data.lan},
+		map: map,
+		icon: data.markerUrl
+	});
+
+	marker.setMap(map);
+
+	$plusBtn.click(function(e) {
+		e.preventDefault();
+		map.setZoom(map.getZoom() + 1);
+	});
+
+	$minusBtn.click(function(e) {
+		e.preventDefault();
+		map.setZoom(map.getZoom() - 1);
 	});
 };
 app.formatNumber = function (value) {
