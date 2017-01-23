@@ -408,3 +408,264 @@
 		}
 	}
 }
+.mobile{
+	.about{
+		&__info{
+			&-list{
+				margin-top: 2rem;
+			}
+			&-numerals{
+				padding: 6rem 4rem 7rem 7rem;
+				margin-top: 2.3rem;
+				&-item{
+					float: left;
+					&-text{
+						font-size: 14/@rem;
+						font-weight: 400;
+						line-height: 24/@rem;
+						color: @cGray;
+						padding-right: 0.5rem;
+						&:before{
+							content: '';
+							width: 7rem;
+							height: 2px;
+							background-color: @cGold;
+							margin-top: 1.2rem;
+							margin-bottom: 1.8rem;
+							display: block;
+						}
+					}
+					&-val{
+						font-size: 30px;
+						font-weight: 700;
+						line-height: 24px;
+						span{
+							//font-size: 40/@rem;
+						}
+					}
+					&._1{
+						width: 15rem;
+					}
+					&._2{
+						width: 19rem;
+					}
+					&._3{
+						width: 24rem;
+					}
+					&._4{
+						width: 24.4rem;
+					}
+					&._5{
+						width: 23rem;
+					}
+				}
+			}
+		}
+		&__associations{
+			margin-top: 9rem;
+			&-title{
+				font-size: 20/@rem;
+				font-weight: 600;
+				line-height: 30/@rem;
+				color: @title-color;
+				padding-left: 9.4rem;
+			}
+			&-block{
+				.clearfix;
+				margin-top: 5.4rem;
+			}
+			&-img{
+				float: left;
+				width: 67rem;
+				height: 19rem;
+				background: url('@{pathToImg}about/associations.png') no-repeat center;
+				background-size: contain;
+			}
+			&-text{
+				float: left;
+				font-size: 16/@rem;
+				line-height: 25/@rem;
+				width: 40rem;
+				margin-left: 10rem;
+				margin-top: 1.4rem;
+				position: relative;
+				&:before{
+					content: '';
+					display: block;
+					width: 50/@rem;
+					height: 50/@rem;
+					border: 2px solid #cca266;
+					border-radius: 4/@rem;
+					position: absolute;
+					left: 0;
+					top: -8.2rem;
+					background: url('@{pathToImg}about/info.png') no-repeat center;
+					background-size: 1.2rem 3.1rem;
+				}
+			}
+		}
+		&__mission{
+			margin-top: 3.8rem;
+			background-color: white;
+			border-radius: 2/@rem;
+			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+			border-top: 6/@rem solid @cGold;
+			padding: 5.5rem 7rem 6rem;
+			font-size: 16/@rem;
+			line-height: 25/@rem;
+			h4{
+				font-size: 24/@rem;
+				font-weight: 600;
+				line-height: 30/@rem;
+				margin-top: 2.9rem;
+				margin-bottom: 2.6rem;
+			}
+		}
+		&__principles{
+			margin-top: 4.8rem;
+			&-blocks{
+				.clearfix;
+				margin-top: 4.3rem;
+			}
+			&-list{
+				.clearfix;
+				li{
+					margin-top: 1rem;
+					float: left;
+					width: 44%;
+					white-space: nowrap;
+					overflow: hidden;
+					padding-right: 1rem;
+				}
+			}
+			&-block{
+				float: left;
+				width: 50rem;
+				p{
+					margin-top: 0;
+					margin-bottom: 2.5rem;
+				}
+				&+&{
+					margin-left: 3rem;
+				}
+			}
+		}
+		&__controls{
+			padding-top: 6rem;
+			font-size: 16/@rem;
+			font-weight: 400;
+			line-height: 25/@rem;
+			&-team{
+				padding-top: 2rem;
+				&-text{
+					max-width: 77rem;
+					margin-bottom: 7rem;
+				}
+				&-items{
+
+				}
+				&-item{
+					display: inline-block;
+					vertical-align: top;
+					width: 33%;
+					padding-left: 3.5rem;
+					position: relative;
+					margin-bottom: 7.4rem;
+					&:before{
+						content: '';
+						position: absolute;
+						top: 0.8rem;
+						left: 0;
+						width: 0.8rem;
+						height: 0.8rem;
+						border-radius: 50%;
+						background-color: #cca266;
+					}
+					&-name{
+						font-weight: 700;
+						margin-bottom: 5/@rem;
+						.surname{
+							font-size: 2.4rem;
+							margin-bottom: 9/@rem;
+						}
+					}
+				}
+			}
+			&-numerals{
+				padding-top: 2.2rem;
+				&-val{
+					font-size: 60/@rem;
+					letter-spacing: -1/@rem;
+					color: #3e3e3e;
+					font-weight: 700;
+					line-height: 60/@rem
+				}
+				&-text{
+					font-size: 14/@rem;
+					font-weight: 400;
+					line-height: 24/@rem;
+					color: @cGray;
+					padding-right: 0.5rem;
+					&:before{
+						content: '';
+						width: 7rem;
+						height: 2/@rem;
+						background-color: @cGold;
+						margin-top: 2.8rem;
+						margin-bottom: 1.8rem;
+						display: block;
+					}
+				}
+			}
+			&-title{
+				font-size: 20/@rem;
+				font-weight: 600;
+				line-height: 30/@rem;
+				color: @title-color;
+			}
+			&-block{
+				.clearfix;
+				&-content{
+					margin-top: 25/@rem;
+					padding-right: 5rem;
+				}
+				&-right{
+					float: right;
+					width: 47rem;
+				}
+				&-left{
+					float: left;
+					width: 57rem;
+				}
+				&+&{
+					margin-top: 7rem;
+				}
+			}
+		}
+		&__shareholders{
+			padding-bottom: 6rem;
+			margin-top: 9rem;
+			&-table{
+				.deposit-table__row td{
+					font-weight: 600;
+
+				}
+				.deposit-table__row:nth-of-type(2n){
+					background-color: rgba(216, 216, 216, 0.17);
+				}
+				.deposit-table__row:nth-of-type(2n+1){
+					background-color: transparent;
+				}
+			}
+		}
+		&__affiliated{
+			background-color: whitesmoke;
+			padding-top: 1.7rem;
+			padding-bottom: 5rem;
+			.clearfix;
+			.annual-reports .deposit-doc__content .file{
+				margin-top: 0;
+			}
+		}
+	}
+}

@@ -123,7 +123,7 @@
 						</div>
 						<div class="offices__block offices-page__list hide" data-offices-content="list">
 							<div class="offices__item" data-office-point='{"lat":55.7420428,"lan":37.559213,"type":"office"}'>
-								<div class="offices__item-title">ДО «Отделение «Киевское»</div>
+								<a href="#" class="offices__item-title">ДО «Отделение «Киевское»</a>
 								<div class="offices__item-info">
 									<div class="offices__item-info-block">
 										<div class="offices__item-info-address">
@@ -171,7 +171,7 @@
 								</div>
 							</div>
 							<div class="offices__item" data-office-point='{"lat":55.860553,"lan":37.567281,"type":"office"}'>
-								<div class="offices__item-title">ДО «Отделение «Дубнинское»</div>
+								<a href="#" class="offices__item-title">ДО «Отделение «Дубнинское»</a>
 								<div class="offices__item-info">
 									<div class="offices__item-info-block">
 										<div class="offices__item-info-address">
