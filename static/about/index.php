@@ -202,10 +202,10 @@
 										</div>
 									</div>
 									<div class="about__history-event swiper-slide" data-history-event='<?
-										$date = new DateTime("1-1-2012");
+										$date = new DateTime("01-01-2012");
 										echo $date->format("U");
 									?>'>
-										<div class="about__history-event-date">1.1.2012</div>
+										<div class="about__history-event-date">01.01.2012</div>
 										<div class="about__history-event-text">
 											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
 											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
@@ -231,7 +231,7 @@
 										$date = new DateTime("1-11-2014");
 										echo $date->format("U");
 									?>'>
-										<div class="about__history-event-date">1.11.2014</div>
+										<div class="about__history-event-date">01.11.2014</div>
 										<div class="about__history-event-text">
 											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
 										</div>
