@@ -8956,6 +8956,113 @@ span.pagination__item:focus {
 .about .b-list li + li {
   margin-top: 1rem;
 }
+.about__rating {
+  padding-top: 7.6rem;
+  padding-bottom: 2.4rem;
+}
+.about__rating h2 {
+  text-align: left;
+  margin-bottom: 2.8rem;
+}
+.about__rating h3 {
+  margin-bottom: 3.4rem;
+}
+.about__rating-items {
+  *zoom: 1;
+}
+.about__rating-items:before,
+.about__rating-items:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__rating-items:after {
+  clear: both;
+}
+.about__rating-items._media .about__rating-item {
+  height: 26.6rem;
+}
+.about__rating .b-list {
+  margin-top: 2.7rem;
+  font-size: 1.4rem;
+}
+.about__rating-item {
+  float: left;
+  display: block;
+  color: #3e3e3e;
+  margin-bottom: 3rem;
+  padding: 4.9rem 5.8rem;
+  width: 57rem;
+  height: 33.7rem;
+  border: 1px solid #dadada;
+  border-radius: 2px;
+}
+.about__rating-item:hover {
+  color: #3e3e3e;
+}
+.about__rating-item:focus {
+  color: #3e3e3e;
+}
+.about__rating-item:nth-child(2n) {
+  margin-left: 3rem;
+}
+.about__rating-item p {
+  margin-top: 1.8rem;
+}
+.about__rating-item p.indent {
+  margin-top: 6.7rem;
+}
+.about__rating-item-title {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #191919;
+}
+.about__rating-item-numerals {
+  margin-top: 2.3rem;
+}
+.about__rating-item-numerals-items {
+  *zoom: 1;
+}
+.about__rating-item-numerals-items:before,
+.about__rating-item-numerals-items:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.about__rating-item-numerals-items:after {
+  clear: both;
+}
+.about__rating-item-numerals-item {
+  float: left;
+  width: 50%;
+}
+.about__rating-item-numerals-item._long {
+  width: 70%;
+}
+.about__rating-item-numerals-item-val {
+  font-size: 6rem;
+  letter-spacing: -0.1rem;
+  color: #3e3e3e;
+  font-weight: 700;
+  line-height: 6rem;
+}
+.about__rating-item-numerals-item-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #AAAEB2;
+  padding-right: 0.5rem;
+}
+.about__rating-item-numerals-item-text:before {
+  content: '';
+  width: 7rem;
+  height: 0.2rem;
+  background-color: #cca266;
+  margin-top: 2.1rem;
+  margin-bottom: 1.8rem;
+  display: block;
+}
 .about__info-list {
   margin-top: 5rem;
 }
@@ -9355,6 +9462,9 @@ span.pagination__item:focus {
   margin-left: 0;
   margin-top: 3rem;
 }
+.tablet.portrait .about__controls {
+  padding-top: 2.2rem;
+}
 .tablet.portrait .about__controls-team {
   padding-top: 1.6rem;
 }
@@ -9399,6 +9509,41 @@ span.pagination__item:focus {
 .tablet.portrait .about__shareholders {
   padding-bottom: 6rem;
   margin-top: 4.5rem;
+}
+.tablet.portrait .about__rating {
+  padding-top: 7.6rem;
+  padding-bottom: 2.4rem;
+}
+.tablet.portrait .about__rating .b-list li {
+  padding-left: 2.8rem;
+}
+.tablet.portrait .about__rating-items._media .about__rating-item {
+  height: 26.6rem;
+}
+.tablet.portrait .about__rating-item {
+  padding: 2.9rem 2.4rem;
+  width: 34.2rem;
+}
+.tablet.portrait .about__rating-item p.indent {
+  margin-top: 4.3rem;
+}
+.tablet.portrait .about__rating-item-numerals {
+  margin-top: 3.3rem;
+}
+.tablet.portrait .about__rating-item-numerals-item {
+  float: left;
+  width: 50%;
+}
+.tablet.portrait .about__rating-item-numerals-item._long {
+  width: 70%;
+}
+.tablet.portrait .about__rating-item-numerals-item-val {
+  font-size: 3rem;
+  letter-spacing: 0;
+  line-height: 3rem;
+}
+.tablet.portrait .about__rating-item-numerals-item-text:before {
+  margin-top: 1.6rem;
 }
 .mobile .about__info-list {
   margin-top: 2rem;
@@ -9533,6 +9678,7 @@ span.pagination__item:focus {
 }
 .mobile .about__controls .b-block {
   padding-bottom: 0;
+  padding-top: 1.5rem;
 }
 .mobile .about__controls-team {
   padding-top: 2rem;
@@ -9609,6 +9755,67 @@ span.pagination__item:focus {
 }
 .mobile .about__affiliated .annual-reports .deposit-doc__content .file {
   margin-top: 0;
+}
+.mobile .about__rating {
+  padding-top: 4.2rem;
+  padding-bottom: 0.4rem;
+}
+.mobile .about__rating h2 {
+  text-align: left;
+  margin-bottom: 0.6rem;
+}
+.mobile .about__rating h2 + h3 {
+  margin-top: 0;
+}
+.mobile .about__rating h3 {
+  margin-bottom: 2.4rem;
+  margin-top: 1.1rem;
+}
+.mobile .about__rating-items {
+  *zoom: 1;
+}
+.mobile .about__rating-items:before,
+.mobile .about__rating-items:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .about__rating-items:after {
+  clear: both;
+}
+.mobile .about__rating-items._media .about__rating-item {
+  height: 26.6rem;
+}
+.mobile .about__rating .b-list {
+  margin-top: 3rem;
+}
+.mobile .about__rating .b-list li {
+  padding-left: 3rem;
+}
+.mobile .about__rating-item {
+  padding: 2.9rem 2.4rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.mobile .about__rating-item p.indent {
+  margin-top: 4.3rem;
+}
+.mobile .about__rating-item:nth-child(2n) {
+  margin-left: 0;
+}
+.mobile .about__rating-item-numerals {
+  margin-top: 3.3rem;
+}
+.mobile .about__rating-item-numerals-item._long {
+  width: 70%;
+}
+.mobile .about__rating-item-numerals-item-val {
+  font-size: 3rem;
+  letter-spacing: 0;
+  line-height: 3rem;
+}
+.mobile .about__rating-item-numerals-item-text:before {
+  margin-top: 1.6rem;
 }
 .deposit__text,
 .deposit .note-text {

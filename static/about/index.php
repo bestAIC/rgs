@@ -159,6 +159,80 @@
 				</div>
 			</div>
 		</div>
+		<div class="about__rating">
+			<div class="grid__inner">
+				<h2>Рейтинги</h2>
+				<h3>По оценкам рейтинговых агентств</h3>
+				<div class="about__rating-items">
+					<a href="#" class="about__rating-item">
+						<div class="about__rating-item-title">Moody's Investors Service</div>
+						<div class="about__rating-item-numerals">
+							<div class="about__rating-item-numerals-items">
+								<div class="about__rating-item-numerals-item">
+									<div class="about__rating-item-numerals-item-val">B2</div>
+									<div class="about__rating-item-numerals-item-text">Уровень базовой оценки кредито&shy;способности (BCA)</div>
+								</div>
+								<div class="about__rating-item-numerals-item">
+									<div class="about__rating-item-numerals-item-val">B2/NP</div>
+									<div class="about__rating-item-numerals-item-text">Долгосрочный/краткосрочный рейтинг банковских депозитов по глобальной шкале</div>
+								</div>
+							</div>
+						</div>
+						<p><strong>Прогноз - стабильный</strong></p>
+					</a>
+					<a href="#" class="about__rating-item">
+						<div class="about__rating-item-title">Национальное рейтинговое агентство</div>
+						<div class="about__rating-item-numerals">
+							<div class="about__rating-item-numerals-items">
+								<div class="about__rating-item-numerals-item _long">
+									<div class="about__rating-item-numerals-item-val">AA–</div>
+									<div class="about__rating-item-numerals-item-text">Рейтинг кредито&shy;способности по национальной шкале.</div>
+								</div>
+							</div>
+						</div>
+						<p><strong>Прогноз - стабильный</strong></p>
+					</a>
+					<a href="#" class="about__rating-item">
+						<div class="about__rating-item-title">Интерфакс ЦЭА</div>
+						<p class="indent"><strong>Рэнкинг "Интерфакс-100. Банки России" на 1 октября 2016 г.:</strong></p>
+						<ul class="b-list">
+							<li><strong>37-е</strong> место по средствам частных лиц</li>
+							<li><strong>52-е</strong> место по размеру активов</li>
+							<li><strong>63-е</strong> место по размеру собственного капитала</li>
+						</ul>
+					</a>
+					<a href="#" class="about__rating-item">
+						<div class="about__rating-item-title">Эксперт РА</div>
+						<div class="about__rating-item-numerals">
+							<div class="about__rating-item-numerals-items">
+								<div class="about__rating-item-numerals-item _long">
+									<div class="about__rating-item-numerals-item-val">A</div>
+									<div class="about__rating-item-numerals-item-text">Рейтинг кредито&shy;способности на уровне А (Высокий уровень кредитоспособности)</div>
+								</div>
+							</div>
+						</div>
+						<p><strong>Прогноз - стабильный</strong></p>
+					</a>
+				</div>
+				<h3>По оценкам СМИ</h3>
+				<div class="about__rating-items _media">
+					<a href="#" class="about__rating-item">
+						<div class="about__rating-item-title">Журнал «Коммерсант Деньги»</div>
+						<ul class="b-list">
+							<li><strong>47-е</strong> место по капиталу на 1 июня 2016 г.</li>
+						</ul>
+					</a>
+					<a href="#" class="about__rating-item">
+						<div class="about__rating-item-title">Журнал «Профиль»</div>
+						<p><strong>Рэнкинг 200 крупнейших российских банков по объему чистых активов на 1 сентября 2016 г.:</strong></p>
+						<ul class="b-list">
+							<li><strong>49-е</strong> место по размеру активов</li>
+							<li><strong>47-е</strong> место по капиталу</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+		</div>
 		<div class="about__controls">
 			<div class="b-block animation__top" data-animation data-tabs>
 				<div class="remote-services__tabs no-mob-block">

@@ -6,6 +6,91 @@
 			}
 		}
 	}
+	&__rating{
+		padding-top: 7.6rem;
+		padding-bottom: 2.4rem;
+		h2{
+			text-align: left;
+			margin-bottom: 2.8rem;
+		}
+		h3{
+			margin-bottom: 3.4rem;
+		}
+		&-items{
+			.clearfix;
+			&._media{
+				.about__rating-item{
+					height: 26.6rem;
+				}
+			}
+		}
+		.b-list{
+			margin-top: 2.7rem;
+			font-size: 14/@rem;
+		}
+		&-item{
+			float: left;
+			display: block;
+			.color(@title-color);
+			margin-bottom: 3rem;
+			padding: 4.9rem 5.8rem;
+			&:nth-child(2n){
+				margin-left: 3rem;
+			}
+			p{
+				margin-top: 1.8rem;
+				&.indent{
+					margin-top: 6.7rem;
+				}
+			}
+			width: 570/@rem;
+			height: 337/@rem;
+			border: 1px solid #dadada;
+			border-radius: 2px;
+			&-title{
+				font-size: 20/@rem;
+				font-weight: 300;
+				line-height: 25/@rem;
+				color: @text-color;
+			}
+			&-numerals{
+				margin-top: 23/@rem;
+				&-items{
+					.clearfix;
+				}
+				&-item{
+					float: left;
+					width: 50%;
+					&._long{
+						width: 70%;
+					}
+					&-val{
+						font-size: 60/@rem;
+						letter-spacing: -1/@rem;
+						color: #3e3e3e;
+						font-weight: 700;
+						line-height: 60/@rem
+					}
+					&-text{
+						font-size: 14/@rem;
+						font-weight: 400;
+						line-height: 24/@rem;
+						color: @cGray;
+						padding-right: 0.5rem;
+						&:before{
+							content: '';
+							width: 7rem;
+							height: 2/@rem;
+							background-color: @cGold;
+							margin-top: 2.1rem;
+							margin-bottom: 1.8rem;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
 	&__info{
 		&-list{
 			margin-top: 5rem;
@@ -369,6 +454,7 @@
 			}
 		}
 		&__controls{
+			padding-top: 2.2rem;
 			&-team{
 				padding-top: 1.6rem;
 				&-text{
@@ -405,6 +491,49 @@
 		&__shareholders{
 			padding-bottom: 6rem;
 			margin-top: 4.5rem;
+		}
+		&__rating{
+			padding-top: 7.6rem;
+			padding-bottom: 2.4rem;
+			.b-list li{
+				padding-left: 2.8rem;
+			}
+			&-items{
+				&._media{
+					.about__rating-item{
+						height: 26.6rem;
+					}
+				}
+			}
+			&-item{
+				padding: 2.9rem 2.4rem;
+				p{
+					&.indent{
+						margin-top: 4.3rem;
+					}
+				}
+				width: 342/@rem;
+				&-numerals{
+					margin-top: 33/@rem;
+					&-item{
+						float: left;
+						width: 50%;
+						&._long{
+							width: 70%;
+						}
+						&-val{
+							font-size: 30/@rem;
+							letter-spacing: 0;
+							line-height: 30/@rem;
+						}
+						&-text{
+							&:before{
+								margin-top: 1.6rem;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -540,6 +669,7 @@
 			margin-right: -0.5rem;
 			.b-block{
 				padding-bottom: 0;
+				padding-top: 1.5rem;
 			}
 			&-team{
 				padding-top: 2rem;
@@ -625,6 +755,66 @@
 			padding: 1.5rem -.5rem 4rem;
 			.annual-reports .deposit-doc__content .file{
 				margin-top: 0;
+			}
+		}
+		&__rating{
+			padding-top: 4.2rem;
+			padding-bottom: 0.4rem;
+			h2{
+				text-align: left;
+				margin-bottom: 0.6rem;
+				&+h3{
+					margin-top: 0;
+				}
+			}
+			h3{
+				margin-bottom: 2.4rem;
+				margin-top: 1.1rem;
+			}
+			&-items{
+				.clearfix;
+				&._media{
+					.about__rating-item{
+						height: 26.6rem;
+					}
+				}
+			}
+			.b-list{
+				margin-top: 3rem;
+				li{
+					padding-left: 3rem;
+				}
+			}
+			&-item{
+				padding: 2.9rem 2.4rem;
+				p{
+					&.indent{
+						margin-top: 4.3rem;
+					}
+				}
+				width: 100%;
+				margin-bottom: 2rem;
+				&:nth-child(2n){
+					margin-left: 0;
+				}
+				&-numerals{
+					margin-top: 33/@rem;
+					&-item{
+						&._long{
+							width: 70%;
+						}
+						&-val{
+							font-size: 30/@rem;
+							letter-spacing: 0;
+							line-height: 30/@rem;
+						}
+						&-text{
+							&:before{
+								margin-top: 1.6rem;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
