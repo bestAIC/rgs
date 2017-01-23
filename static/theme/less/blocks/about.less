@@ -91,6 +91,122 @@
 			}
 		}
 	}
+	&__history{
+		overflow: hidden;
+		.nav__btn{
+			position: absolute;
+			top: 7rem;
+			&._prev{
+				left: 0;
+			}
+			&._next{
+				right: 0;
+			}
+		}
+		&-in{
+			padding-top: 10/@rem;
+		}
+		&-events{
+			margin-top: 4.9rem;
+			position: relative;
+			&-gall{
+				margin-left: 10rem;
+				margin-right: 10rem;
+			}
+		}
+		&-event{
+			background-color: #fff;
+			font-size: 16/@rem;
+			line-height: 25/@rem;
+			padding: 4.1rem 7rem 5rem;
+			&-date{
+				font-weight: 700;
+			}
+			&-text{
+				margin-top: 0.8rem;
+			}
+		}
+		&-scale{
+			position: relative;
+			padding-top: 5rem;
+			cursor: move;
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 3;
+				width: 100%;
+				height: 100%;
+			}
+			&-point{
+				width: 25/@rem;
+				height: 25/@rem;
+				background-color: #cca266;
+				border: 6/@rem solid white;
+				box-shadow: 0 2/@rem 10/@rem rgba(23, 24, 26, 0.2);
+				position: absolute;
+				border-radius: 50%;
+				bottom: 0;
+				margin-bottom: -1.2rem;
+				margin-left: -1.2rem;
+				z-index: 5;
+				cursor: pointer;
+				&._active{
+					background-color: @cRed;
+				}
+			}
+			&-block{
+				white-space: nowrap;
+
+			}
+			&-year{
+				display: inline-block;
+				vertical-align: top;
+				width: 121.2rem;
+				border-bottom: 1px solid @cGold;
+				padding-bottom: 10/@rem;
+				position: relative;
+				&-title{
+					font-size: 34/@rem;
+					font-weight: 700;
+					letter-spacing: -0.47/@rem;
+					line-height: 4rem;
+					position: absolute;
+					width: 10rem;
+					left: -5rem;
+					bottom:100%;
+					padding-bottom: 0.9rem;
+					text-align: center;
+				}
+			}
+			&-month{
+				width: 10.1rem;
+				float: left;
+				position: relative;
+				&-title{
+					font-size: 12/@rem;
+					font-weight: 600;
+					letter-spacing: -0.17/@rem;
+					text-transform: uppercase;
+					color: #999;
+					line-height: 2rem;
+					position: absolute;
+					left: -2rem;
+					width: 4rem;
+					bottom:100%;
+					text-align: center;
+					padding-bottom: 0.9rem;
+				}
+				&-scale{
+					height: 1.2rem;
+					background: url('@{pathToImg}about/history-scale.png') no-repeat center;
+					background-size: contain;
+				}
+			}
+		}
+
+	}
 	&__info{
 		&-list{
 			margin-top: 5rem;

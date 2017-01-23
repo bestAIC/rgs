@@ -112,6 +112,7 @@ app.init = function () {
 	app.experts();
 	app.dataFile();
 	app.vacancies();
+	app.history();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -941,6 +942,86 @@ app.faqMobTabs = function () {
 				}
 			}
 		});
+	});
+};
+app.history = function () {
+	var $history = $('[data-history]'),
+			$historyEvents = $history.find('[data-history-events]'),
+			$historyInner = $history.find('[data-history-in]'),
+			$historyEvent = $historyEvents.find('[data-history-event]'),
+			$historyScale = $history.find('[data-history-scale]'),
+			historyScaleData = $historyScale.data('historyScale'),
+			historyPeriod = historyScaleData['end'] - historyScaleData['start'],
+			clicking = false,
+			startMove,
+			positionleftStartMove,
+			positionleft,
+			eventsGall
+
+		;
+	if(!$history.length){
+		return false;
+	}
+
+	$historyScale.width(historyScaleData['years']*121.2+'rem');
+
+	eventsGall = new Swiper($historyEvents[0], {
+		slidesPerView: 1,
+		simulateTouch: true,
+		autoHeight:true,
+		nextButton:$('[data-history-next]'),
+		prevButton:$('[data-history-prev]'),
+		onSlideChangeStart:function () {
+			var $points = $historyScale.find('[data-history-point]'),
+					activeDate = $historyEvents.find('.swiper-slide-active').data('historyEvent')
+				;
+			$points.removeClass('_active').filter('[data-history-point-event="'+activeDate+'"]').addClass('_active');
+
+		}
+	});
+
+
+	$historyEvent.each(function (index,val) {
+		var $self = $(this),
+				data = $self.data('historyEvent'),
+				active = index == 0 ? ' _active':''
+			;
+
+		var $point = $('<div class="about__history-scale-point '+ active +'" data-history-point-event="'+data+'" data-history-point ></div>');
+		$point.css('left',(data - historyScaleData['start'])/historyPeriod*100+'%').appendTo($historyScale);
+		$point.data('historyPoint',$self);
+	});
+
+	$historyScale.on('click','[data-history-point]',function () {
+
+		var $self = $(this),
+				$points = $historyScale.find('[data-history-point]');
+
+		if(!$self.hasClass('_active')){
+			$points.removeClass('_active');
+			$self.addClass('_active');
+			eventsGall.slideTo($self.data('historyPoint').index());
+		}
+
+	});
+
+
+	$historyScale.mousedown(function(e){
+		clicking = true;
+		startMove = e.pageX;
+		positionleftStartMove = parseInt($historyScale.css('left'));
+	});
+
+	$(document).mouseup(function(){
+		clicking = false;
+	});
+
+	$historyScale.mousemove(function(e){
+		if(clicking == false) return false;
+		positionleft = positionleftStartMove+(e.pageX - startMove);
+		var val = positionleftStartMove+(e.pageX - startMove);
+		val = Math.max(Math.min(val,0),-($historyScale.width()-$historyInner.width()));
+		$historyScale.css('left',val+'px');
 	});
 };
 app.tabletSliders = function () {

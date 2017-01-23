@@ -9063,6 +9063,120 @@ span.pagination__item:focus {
   margin-bottom: 1.8rem;
   display: block;
 }
+.about__history {
+  overflow: hidden;
+}
+.about__history .nav__btn {
+  position: absolute;
+  top: 7rem;
+}
+.about__history .nav__btn._prev {
+  left: 0;
+}
+.about__history .nav__btn._next {
+  right: 0;
+}
+.about__history-in {
+  padding-top: 1rem;
+}
+.about__history-events {
+  margin-top: 4.9rem;
+  position: relative;
+}
+.about__history-events-gall {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.about__history-event {
+  background-color: #fff;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding: 4.1rem 7rem 5rem;
+}
+.about__history-event-date {
+  font-weight: 700;
+}
+.about__history-event-text {
+  margin-top: 0.8rem;
+}
+.about__history-scale {
+  position: relative;
+  padding-top: 5rem;
+  cursor: move;
+}
+.about__history-scale:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+.about__history-scale-point {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #cca266;
+  border: 0.6rem solid white;
+  box-shadow: 0 0.2rem 1rem rgba(23, 24, 26, 0.2);
+  position: absolute;
+  border-radius: 50%;
+  bottom: 0;
+  margin-bottom: -1.2rem;
+  margin-left: -1.2rem;
+  z-index: 5;
+  cursor: pointer;
+}
+.about__history-scale-point._active {
+  background-color: #b31b2c;
+}
+.about__history-scale-block {
+  white-space: nowrap;
+}
+.about__history-scale-year {
+  display: inline-block;
+  vertical-align: top;
+  width: 121.2rem;
+  border-bottom: 1px solid #cca266;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.about__history-scale-year-title {
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -0.047rem;
+  line-height: 4rem;
+  position: absolute;
+  width: 10rem;
+  left: -5rem;
+  bottom: 100%;
+  padding-bottom: 0.9rem;
+  text-align: center;
+}
+.about__history-scale-month {
+  width: 10.1rem;
+  float: left;
+  position: relative;
+}
+.about__history-scale-month-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.017rem;
+  text-transform: uppercase;
+  color: #999;
+  line-height: 2rem;
+  position: absolute;
+  left: -2rem;
+  width: 4rem;
+  bottom: 100%;
+  text-align: center;
+  padding-bottom: 0.9rem;
+}
+.about__history-scale-month-scale {
+  height: 1.2rem;
+  background: url('../images/about/history-scale.png') no-repeat center;
+  background-size: contain;
+}
 .about__info-list {
   margin-top: 5rem;
 }

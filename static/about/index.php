@@ -158,6 +158,90 @@
 					</div>
 				</div>
 			</div>
+			<div class="b-block animation__top about__history" data-history data-animation>
+				<div class="grid__inner">
+					<h2>История</h2>
+					<?
+						$years = ["2011","2012","2013","2014","2015","2016"];
+						$months = ["","фев","март","апр","май","июнь","июль","авг","сент","окт","нояб","дек"];
+					?>
+					<div class="about__history-in" data-history-in>
+						<div class="about__history-scale" data-history-scale='{
+							"start":<?$date = new DateTime("2011-01-1");echo $date->format("U");?>,
+							"end":<?$date = new DateTime("2017-01-1");echo $date->format("U");?>,
+							"years":<?=count($years);?>
+						}'>
+							<div class="about__history-scale-block"><!--
+								<? for ($i=0;$i<count($years);$i++){?>
+									--><div class="about__history-scale-year">
+											<div class="about__history-scale-year-title"><?=$years[$i]?></div>
+										<? for ($j=0;$j<count($months);$j++){?>
+											<div class="about__history-scale-month">
+												<div class="about__history-scale-month-title"><?=$months[$j]?></div>
+												<div class="about__history-scale-month-scale"></div>
+											</div>
+										<?}?>
+									</div><!--
+								<?}?>
+							--></div>
+						</div>
+						<div class="about__history-events">
+							<div class="nav__btn _prev" data-history-prev></div>
+							<div class="nav__btn _next" data-history-next></div>
+							<div class="swiper-container about__history-events-gall" data-history-events>
+								<div class="swiper-wrapper">
+									<div class="about__history-event swiper-slide" data-history-event='<?
+										$date = new DateTime("1-1-2012");
+										echo $date->format("U");
+									?>'>
+										<div class="about__history-event-date">1.1.2012</div>
+										<div class="about__history-event-text">
+											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
+											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
+											по глобальной и национальной шкале — B2 и Ваа1. ru. Прогноз по рейтингам — «Стабильный».
+										</div>
+									</div>
+									<div class="about__history-event swiper-slide" data-history-event='<?
+										$date = new DateTime("11-11-2011");
+										echo $date->format("U");
+									?>'>
+										<div class="about__history-event-date">11.11.2011</div>
+										<div class="about__history-event-text">
+											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
+											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
+											по глобальной и национальной шкале — B2 и Ваа1. ru. Прогноз по рейтингам — «Стабильный».
+										</div>
+									</div>
+									<div class="about__history-event swiper-slide" data-history-event='<?
+										$date = new DateTime("11-11-2013");
+										echo $date->format("U");
+									?>'>
+										<div class="about__history-event-date">11.11.2013</div>
+										<div class="about__history-event-text">
+											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
+											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
+											по глобальной и национальной шкале — B2 и Ваа1. ru. Прогноз по рейтингам — «Стабильный».
+											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
+											по глобальной и национальной шкале — B2 и Ваа1. ru. Прогноз по рейтингам — «Стабильный».
+											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
+											по глобальной и национальной шкале — B2 и Ваа1. ru. Прогноз по рейтингам — «Стабильный».
+										</div>
+									</div>
+									<div class="about__history-event swiper-slide" data-history-event='<?
+										$date = new DateTime("1-11-2014");
+										echo $date->format("U");
+									?>'>
+										<div class="about__history-event-date">1.11.2014</div>
+										<div class="about__history-event-text">
+											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="about__rating">
 			<div class="grid__inner">
