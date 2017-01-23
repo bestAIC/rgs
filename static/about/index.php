@@ -191,10 +191,10 @@
 							<div class="swiper-container about__history-events-gall" data-history-events>
 								<div class="swiper-wrapper">
 									<div class="about__history-event swiper-slide" data-history-event='<?
-										$date = new DateTime("1-1-2012");
+										$date = new DateTime("11-11-2011");
 										echo $date->format("U");
 									?>'>
-										<div class="about__history-event-date">1.1.2012</div>
+										<div class="about__history-event-date">11.11.2011</div>
 										<div class="about__history-event-text">
 											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
 											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
@@ -202,10 +202,10 @@
 										</div>
 									</div>
 									<div class="about__history-event swiper-slide" data-history-event='<?
-										$date = new DateTime("11-11-2011");
+										$date = new DateTime("1-1-2012");
 										echo $date->format("U");
 									?>'>
-										<div class="about__history-event-date">11.11.2011</div>
+										<div class="about__history-event-date">1.1.2012</div>
 										<div class="about__history-event-text">
 											Moody’s Investors Service подтвердило ранее присвоенные рейтинги РОСГОССТРАХ БАНКА:
 											уровень финансовой устойчивости банка (BCA) — b2, долгосрочный рейтинг банковских депозитов
