@@ -171,7 +171,7 @@
 				</div>
 				<div class="remote-services__tabs is-mob-block">
 					<div class="grid__inner">
-						<h2 >Пакеты услуг:</h2>
+						<h2 >Органы управления:</h2>
 					</div>
 					<div class="swiper-container" data-faq-mob-tabs>
 						<div class="swiper-wrapper">
@@ -343,48 +343,51 @@
 						</div>
 						<div class="about__shareholders">
 							<h3>Акционеры, владеющие долей свыше 1% акций Банка</h3>
-							<table class="deposit-table about__shareholders-table">
-								<tr class="deposit-table__titles">
-									<td>АКЦИОНЕРЫ БАНКА</td>
-									<td class="center">Процент к общему количеству голосующих (обыкновенных) акций</td>
-									<td  class="center">Процент к общему количеству акций</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td>RGS CAPITAL LIMITED (РГС КАПИТАЛ ЛИМИТЕД)</td>
-									<td class="center">23,8804</td>
-									<td class="center">23,8422</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td>ООО «ИК «Т.А.Р.Г.Е.Т. Капитал»</td>
-									<td class="center">21,1076</td>
-									<td class="center">21,0738</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td>ПАО СК «Росгосстрах»</td>
-									<td class="center">14,6192</td>
-									<td class="center">14,5958</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td>ООО «Финансово-Инвестиционная Компания»</td>
-									<td class="center">13,9191</td>
-									<td class="center">14,0570</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td>ООО «СК «РГС-Жизнь»</td>
-									<td class="center">9,8999</td>
-									<td class="center">9,8840</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td>ООО «РГСН»</td>
-									<td class="center">10,2135</td>
-									<td class="center">1,2973</td>
-								</tr>
-								<tr class="deposit-table__row">
-									<td>ООО «Лингвист»</td>
-									<td class="center">1,2993</td>
-									<td class="center">1,2973</td>
-								</tr>
-							</table>
+							<div class="about__shareholders-table-wrap">
+								<table class="deposit-table about__shareholders-table">
+									<tr class="deposit-table__titles">
+										<td>АКЦИОНЕРЫ БАНКА</td>
+										<td class="center">Процент к общему количеству голосующих (обыкновенных) акций</td>
+										<td  class="center">Процент к общему количеству акций</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td>RGS CAPITAL LIMITED (РГС КАПИТАЛ ЛИМИТЕД)</td>
+										<td class="center">23,8804</td>
+										<td class="center">23,8422</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td>ООО «ИК «Т.А.Р.Г.Е.Т. Капитал»</td>
+										<td class="center">21,1076</td>
+										<td class="center">21,0738</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td>ПАО СК «Росгосстрах»</td>
+										<td class="center">14,6192</td>
+										<td class="center">14,5958</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td>ООО «Финансово-Инвестиционная Компания»</td>
+										<td class="center">13,9191</td>
+										<td class="center">14,0570</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td>ООО «СК «РГС-Жизнь»</td>
+										<td class="center">9,8999</td>
+										<td class="center">9,8840</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td>ООО «РГСН»</td>
+										<td class="center">10,2135</td>
+										<td class="center">1,2973</td>
+									</tr>
+									<tr class="deposit-table__row">
+										<td>ООО «Лингвист»</td>
+										<td class="center">1,2993</td>
+										<td class="center">1,2973</td>
+									</tr>
+								</table>
+							</div>
+
 						</div>
 					</div>
 					<div class="about__affiliated">

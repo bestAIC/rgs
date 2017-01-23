@@ -9291,8 +9291,8 @@ span.pagination__item:focus {
   margin-top: 2rem;
 }
 .tablet.portrait .about__info-numerals-item-val {
-  font-size: 30px;
-  line-height: 24px;
+  font-size: 3rem;
+  line-height: 2.4rem;
 }
 .tablet.portrait .about__info-numerals-item._1 {
   width: 11.2rem;
@@ -9404,132 +9404,94 @@ span.pagination__item:focus {
   margin-top: 2rem;
 }
 .mobile .about__info-numerals {
-  padding: 6rem 4rem 7rem 7rem;
+  padding: 4rem 2rem 0 3rem;
   margin-top: 2.3rem;
 }
 .mobile .about__info-numerals-item {
-  float: left;
-}
-.mobile .about__info-numerals-item-text {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 2.4rem;
-  color: #AAAEB2;
-  padding-right: 0.5rem;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 3.9rem;
 }
 .mobile .about__info-numerals-item-text:before {
-  content: '';
-  width: 7rem;
-  height: 2px;
-  background-color: #cca266;
-  margin-top: 1.2rem;
-  margin-bottom: 1.8rem;
-  display: block;
+  margin-top: 1.9rem;
 }
 .mobile .about__info-numerals-item-val {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: 3rem;
+  line-height: 2.4rem;
 }
 .mobile .about__info-numerals-item._1 {
-  width: 15rem;
+  width: 9.3rem;
 }
 .mobile .about__info-numerals-item._2 {
-  width: 19rem;
+  width: 11.9rem;
 }
 .mobile .about__info-numerals-item._3 {
-  width: 24rem;
+  width: 10rem;
 }
 .mobile .about__info-numerals-item._4 {
-  width: 24.4rem;
+  width: 17rem;
 }
 .mobile .about__info-numerals-item._5 {
-  width: 23rem;
+  width: 14rem;
 }
 .mobile .about__associations {
-  margin-top: 9rem;
+  margin-top: 5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-bottom: 2rem;
 }
 .mobile .about__associations-title {
-  font-size: 2rem;
+  text-align: center;
+  padding-left: 0;
+  font-size: 1.8rem;
   font-weight: 600;
-  line-height: 3rem;
-  color: #3e3e3e;
-  padding-left: 9.4rem;
+  line-height: 2.5rem;
 }
 .mobile .about__associations-block {
-  *zoom: 1;
-  margin-top: 5.4rem;
-}
-.mobile .about__associations-block:before,
-.mobile .about__associations-block:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.mobile .about__associations-block:after {
-  clear: both;
+  margin-top: 2rem;
 }
 .mobile .about__associations-img {
-  float: left;
-  width: 67rem;
-  height: 19rem;
-  background: url('../images/about/associations.png') no-repeat center;
-  background-size: contain;
+  float: none;
+  width: 38rem;
+  height: 27rem;
+  background-image: url('../images/about/associations_mob.png');
 }
 .mobile .about__associations-text {
-  float: left;
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  width: 40rem;
-  margin-left: 10rem;
-  margin-top: 1.4rem;
-  position: relative;
-}
-.mobile .about__associations-text:before {
-  content: '';
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  border: 2px solid #cca266;
-  border-radius: 0.4rem;
-  position: absolute;
-  left: 0;
-  top: -8.2rem;
-  background: url('../images/about/info.png') no-repeat center;
-  background-size: 1.2rem 3.1rem;
-}
-.mobile .about__mission {
-  margin-top: 3.8rem;
-  background-color: white;
-  border-radius: 0.2rem;
-  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
-  border-top: 0.6rem solid #cca266;
-  padding: 5.5rem 7rem 6rem;
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-}
-.mobile .about__mission h4 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 3rem;
-  margin-top: 2.9rem;
-  margin-bottom: 2.6rem;
-}
-.mobile .about__principles {
-  margin-top: 4.8rem;
-}
-.mobile .about__principles-blocks {
-  *zoom: 1;
+  float: none;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  width: auto;
+  margin-left: 5.7rem;
   margin-top: 4.3rem;
 }
-.mobile .about__principles-blocks:before,
-.mobile .about__principles-blocks:after {
-  display: table;
-  content: "";
-  line-height: 0;
+.mobile .about__associations-text:before {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+  left: -5.1rem;
+  border-width: 1px;
+  top: 0.2rem;
+  background-size: 0.7rem 1.8rem;
 }
-.mobile .about__principles-blocks:after {
-  clear: both;
+.mobile .about__mission {
+  margin-top: 2.4rem;
+  padding: 3.7rem 2.5rem 4rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.005rem;
+  line-height: 2.3rem;
+}
+.mobile .about__mission h4 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin-top: 2.7rem;
+  margin-bottom: 2.1rem;
+}
+.mobile .about__principles {
+  margin-top: 2.8rem;
+}
+.mobile .about__principles-blocks {
+  margin-top: 2.8rem;
 }
 .mobile .about__principles-list {
   *zoom: 1;
@@ -9545,148 +9507,105 @@ span.pagination__item:focus {
 }
 .mobile .about__principles-list li {
   margin-top: 1rem;
-  float: left;
-  width: 44%;
-  white-space: nowrap;
-  overflow: hidden;
-  padding-right: 1rem;
+  width: 60%;
+}
+.mobile .about__principles-list li:nth-child(2n) {
+  width: 40%;
+  padding-right: 0;
 }
 .mobile .about__principles-block {
-  float: left;
-  width: 50rem;
+  float: none;
+  width: 100%;
 }
 .mobile .about__principles-block p {
-  margin-top: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
-.mobile .about__principles-block + .mobile .about__principles-block {
-  margin-left: 3rem;
+.mobile .about__principles-block + .about__principles-block {
+  margin-left: 0;
+  margin-top: 3rem;
 }
 .mobile .about__controls {
-  padding-top: 6rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.5rem;
+  padding-top: 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.mobile .about__controls .b-block {
+  padding-bottom: 0;
 }
 .mobile .about__controls-team {
   padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 .mobile .about__controls-team-text {
-  max-width: 77rem;
-  margin-bottom: 7rem;
+  margin-bottom: 1.9rem;
+  line-height: 2.3rem;
 }
 .mobile .about__controls-team-item {
-  display: inline-block;
-  vertical-align: top;
-  width: 33%;
-  padding-left: 3.5rem;
-  position: relative;
-  margin-bottom: 7.4rem;
+  display: block;
+  width: 100%;
+  padding-left: 2.7rem;
+  margin-bottom: 1rem;
 }
 .mobile .about__controls-team-item:before {
-  content: '';
-  position: absolute;
-  top: 0.8rem;
-  left: 0;
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 50%;
-  background-color: #cca266;
+  top: 0.6rem;
 }
 .mobile .about__controls-team-item-name {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 .mobile .about__controls-team-item-name .surname {
-  font-size: 2.4rem;
-  margin-bottom: 0.9rem;
+  font-size: 1.4rem;
+  padding-right: 0;
+  margin-bottom: 0;
 }
 .mobile .about__controls-numerals {
-  padding-top: 2.2rem;
+  padding-top: 1rem;
 }
 .mobile .about__controls-numerals-val {
-  font-size: 6rem;
-  letter-spacing: -0.1rem;
-  color: #3e3e3e;
-  font-weight: 700;
-  line-height: 6rem;
-}
-.mobile .about__controls-numerals-text {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 2.4rem;
-  color: #AAAEB2;
-  padding-right: 0.5rem;
+  font-size: 5rem;
+  letter-spacing: -0.083rem;
 }
 .mobile .about__controls-numerals-text:before {
-  content: '';
-  width: 7rem;
-  height: 0.2rem;
-  background-color: #cca266;
-  margin-top: 2.8rem;
-  margin-bottom: 1.8rem;
-  display: block;
+  margin-top: 1.3rem;
 }
 .mobile .about__controls-title {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 3rem;
-  color: #3e3e3e;
-}
-.mobile .about__controls-block {
-  *zoom: 1;
-}
-.mobile .about__controls-block:before,
-.mobile .about__controls-block:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.mobile .about__controls-block:after {
-  clear: both;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
 }
 .mobile .about__controls-block-content {
-  margin-top: 2.5rem;
-  padding-right: 5rem;
+  margin-top: 2rem;
+  padding-right: 0;
 }
 .mobile .about__controls-block-right {
-  float: right;
-  width: 47rem;
+  float: none;
+  width: 100%;
+  margin-bottom: 3.3rem;
 }
 .mobile .about__controls-block-left {
-  float: left;
-  width: 57rem;
+  float: none;
+  width: 100%;
 }
-.mobile .about__controls-block + .mobile .about__controls-block {
-  margin-top: 7rem;
+.mobile .about__controls-block + .about__controls-block {
+  margin-top: 2rem;
 }
 .mobile .about__shareholders {
-  padding-bottom: 6rem;
-  margin-top: 9rem;
+  padding-bottom: 0;
+  margin-top: 4rem;
+}
+.mobile .about__shareholders-table-wrap {
+  margin-right: -2rem;
+  margin-left: -2rem;
 }
 .mobile .about__shareholders-table .deposit-table__row td {
-  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
-.mobile .about__shareholders-table .deposit-table__row:nth-of-type(2n) {
-  background-color: rgba(216, 216, 216, 0.17);
-}
-.mobile .about__shareholders-table .deposit-table__row:nth-of-type(2n+1) {
-  background-color: transparent;
+.mobile .about__shareholders-table .deposit-table__row td:first-child {
+  width: 45%;
 }
 .mobile .about__affiliated {
-  background-color: whitesmoke;
-  padding-top: 1.7rem;
-  padding-bottom: 5rem;
-  *zoom: 1;
-}
-.mobile .about__affiliated:before,
-.mobile .about__affiliated:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.mobile .about__affiliated:after {
-  clear: both;
+  padding: 1.5rem -0.5rem 4rem;
 }
 .mobile .about__affiliated .annual-reports .deposit-doc__content .file {
   margin-top: 0;

@@ -308,8 +308,8 @@
 						}
 					}
 					&-val{
-						font-size: 30px;
-						line-height: 24px;
+						font-size: 30/@rem;
+						line-height: 24/@rem;
 					}
 					&._1{
 						width: 11.2rem;
@@ -415,254 +415,214 @@
 				margin-top: 2rem;
 			}
 			&-numerals{
-				padding: 6rem 4rem 7rem 7rem;
+				padding: 4rem 2rem 0 3rem;
 				margin-top: 2.3rem;
 				&-item{
-					float: left;
+					float: none;
+					display: inline-block;
+					vertical-align: top;
+					margin-bottom: 39/@rem;
 					&-text{
-						font-size: 14/@rem;
-						font-weight: 400;
-						line-height: 24/@rem;
-						color: @cGray;
-						padding-right: 0.5rem;
 						&:before{
-							content: '';
-							width: 7rem;
-							height: 2px;
-							background-color: @cGold;
-							margin-top: 1.2rem;
-							margin-bottom: 1.8rem;
-							display: block;
+							margin-top: 1.9rem;
 						}
 					}
 					&-val{
-						font-size: 30px;
-						font-weight: 700;
-						line-height: 24px;
+						font-size: 30/@rem;
+						line-height: 24/@rem;
 						span{
 							//font-size: 40/@rem;
 						}
 					}
 					&._1{
-						width: 15rem;
+						width: 9.3rem;
 					}
 					&._2{
-						width: 19rem;
+						width: 11.9rem;
 					}
 					&._3{
-						width: 24rem;
+						width: 10rem;
 					}
 					&._4{
-						width: 24.4rem;
+						width: 17rem;
 					}
 					&._5{
-						width: 23rem;
+						width: 14rem;
 					}
 				}
 			}
 		}
 		&__associations{
-			margin-top: 9rem;
+			margin-top: 5rem;
+			margin-left: -0.5rem;
+			margin-right: -0.5rem;
+			padding-bottom: 2rem;
 			&-title{
-				font-size: 20/@rem;
+				text-align: center;
+				padding-left: 0;
+				font-size: 18/@rem;
 				font-weight: 600;
-				line-height: 30/@rem;
-				color: @title-color;
-				padding-left: 9.4rem;
+				line-height: 25/@rem;
 			}
 			&-block{
-				.clearfix;
-				margin-top: 5.4rem;
+				margin-top: 2rem;
 			}
 			&-img{
-				float: left;
-				width: 67rem;
-				height: 19rem;
-				background: url('@{pathToImg}about/associations.png') no-repeat center;
-				background-size: contain;
+				float: none;
+				width: 38rem;
+				height: 27rem;
+				background-image: url('@{pathToImg}about/associations_mob.png');
 			}
 			&-text{
-				float: left;
-				font-size: 16/@rem;
-				line-height: 25/@rem;
-				width: 40rem;
-				margin-left: 10rem;
-				margin-top: 1.4rem;
-				position: relative;
+				float: none;
+				font-size: 14/@rem;
+				line-height: 20/@rem;
+				width: auto;
+				margin-left: 5.7rem;
+				margin-top: 4.3rem;
 				&:before{
-					content: '';
-					display: block;
-					width: 50/@rem;
-					height: 50/@rem;
-					border: 2px solid #cca266;
-					border-radius: 4/@rem;
-					position: absolute;
-					left: 0;
-					top: -8.2rem;
-					background: url('@{pathToImg}about/info.png') no-repeat center;
-					background-size: 1.2rem 3.1rem;
+					width: 30/@rem;
+					height: 30/@rem;
+					border-radius:2/@rem;
+					left: -5.1rem;
+					border-width: 1px;
+					top: 0.2rem;
+					background-size: 0.7rem 1.8rem;
 				}
 			}
 		}
 		&__mission{
-			margin-top: 3.8rem;
-			background-color: white;
-			border-radius: 2/@rem;
-			box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
-			border-top: 6/@rem solid @cGold;
-			padding: 5.5rem 7rem 6rem;
-			font-size: 16/@rem;
-			line-height: 25/@rem;
+			margin-top: 2.4rem;
+			padding: 3.7rem 2.5rem 4rem;
+			font-size: 14/@rem;
+			letter-spacing: 0.05/@rem;
+			line-height: 23/@rem;
 			h4{
-				font-size: 24/@rem;
-				font-weight: 600;
-				line-height: 30/@rem;
-				margin-top: 2.9rem;
-				margin-bottom: 2.6rem;
+				font-size: 22/@rem;
+				line-height: 28/@rem;
+				margin-top: 2.7rem;
+				margin-bottom: 2.1rem;
 			}
 		}
 		&__principles{
-			margin-top: 4.8rem;
+			margin-top: 2.8rem;
 			&-blocks{
-				.clearfix;
-				margin-top: 4.3rem;
+				margin-top: 2.8rem;
 			}
 			&-list{
 				.clearfix;
 				li{
 					margin-top: 1rem;
-					float: left;
-					width: 44%;
-					white-space: nowrap;
-					overflow: hidden;
-					padding-right: 1rem;
+					width: 60%;
+					&:nth-child(2n){
+						width: 40%;
+						padding-right: 0;
+					}
 				}
 			}
 			&-block{
-				float: left;
-				width: 50rem;
+				float: none;
+				width: 100%;
 				p{
-					margin-top: 0;
-					margin-bottom: 2.5rem;
+					margin-bottom: 2rem;
 				}
-				&+&{
-					margin-left: 3rem;
+				&+.about__principles-block{
+					margin-left: 0;
+					margin-top: 3rem;
 				}
 			}
 		}
 		&__controls{
-			padding-top: 6rem;
-			font-size: 16/@rem;
-			font-weight: 400;
-			line-height: 25/@rem;
+			padding-top: 0;
+			font-size: 14/@rem;
+			line-height: 20/@rem;
+			margin-left: -0.5rem;
+			margin-right: -0.5rem;
+			.b-block{
+				padding-bottom: 0;
+			}
 			&-team{
 				padding-top: 2rem;
+				padding-bottom: 4rem;
 				&-text{
-					max-width: 77rem;
-					margin-bottom: 7rem;
+					margin-bottom: 1.9rem;
+					line-height: 23/@rem;
 				}
 				&-items{
 
 				}
 				&-item{
-					display: inline-block;
-					vertical-align: top;
-					width: 33%;
-					padding-left: 3.5rem;
-					position: relative;
-					margin-bottom: 7.4rem;
+					display: block;
+					width: 100%;
+					padding-left: 2.7rem;
+					margin-bottom: 1rem;
 					&:before{
-						content: '';
-						position: absolute;
-						top: 0.8rem;
-						left: 0;
-						width: 0.8rem;
-						height: 0.8rem;
-						border-radius: 50%;
-						background-color: #cca266;
+						top: 0.6rem;
 					}
 					&-name{
-						font-weight: 700;
-						margin-bottom: 5/@rem;
+						margin-bottom: 0;
 						.surname{
-							font-size: 2.4rem;
-							margin-bottom: 9/@rem;
+							font-size: 1.4rem;
+							padding-right: 0;
+							margin-bottom: 0;
 						}
 					}
 				}
 			}
 			&-numerals{
-				padding-top: 2.2rem;
+				padding-top: 1rem;
 				&-val{
-					font-size: 60/@rem;
-					letter-spacing: -1/@rem;
-					color: #3e3e3e;
-					font-weight: 700;
-					line-height: 60/@rem
+					font-size: 50/@rem;
+					letter-spacing: -0.83/@rem;
 				}
 				&-text{
-					font-size: 14/@rem;
-					font-weight: 400;
-					line-height: 24/@rem;
-					color: @cGray;
-					padding-right: 0.5rem;
 					&:before{
-						content: '';
-						width: 7rem;
-						height: 2/@rem;
-						background-color: @cGold;
-						margin-top: 2.8rem;
-						margin-bottom: 1.8rem;
-						display: block;
+						margin-top: 1.3rem;
 					}
 				}
 			}
 			&-title{
-				font-size: 20/@rem;
-				font-weight: 600;
-				line-height: 30/@rem;
-				color: @title-color;
+				font-size: 18/@rem;
+				line-height: 26/@rem;
 			}
 			&-block{
-				.clearfix;
 				&-content{
-					margin-top: 25/@rem;
-					padding-right: 5rem;
+					margin-top: 2rem;
+					padding-right: 0;
 				}
 				&-right{
-					float: right;
-					width: 47rem;
-				}
+					float: none;
+					width: 100%;
+					margin-bottom: 33/@rem;
+			}
 				&-left{
-					float: left;
-					width: 57rem;
+					float: none;
+					width: 100%;
 				}
-				&+&{
-					margin-top: 7rem;
+				&+.about__controls-block{
+					margin-top: 2rem;
 				}
 			}
 		}
 		&__shareholders{
-			padding-bottom: 6rem;
-			margin-top: 9rem;
+			padding-bottom: 0;
+			margin-top: 4rem;
 			&-table{
+				&-wrap{
+					margin-right: -2rem;
+					margin-left: -2rem;
+				}
 				.deposit-table__row td{
-					font-weight: 600;
-
-				}
-				.deposit-table__row:nth-of-type(2n){
-					background-color: rgba(216, 216, 216, 0.17);
-				}
-				.deposit-table__row:nth-of-type(2n+1){
-					background-color: transparent;
+					font-size: 12/@rem;
+					line-height: 20/@rem;
+					&:first-child{
+						width: 45%;
+					}
 				}
 			}
 		}
 		&__affiliated{
-			background-color: whitesmoke;
-			padding-top: 1.7rem;
-			padding-bottom: 5rem;
-			.clearfix;
+			padding: 1.5rem -.5rem 4rem;
 			.annual-reports .deposit-doc__content .file{
 				margin-top: 0;
 			}
