@@ -973,10 +973,15 @@ app.history = function () {
 		prevButton:$('[data-history-prev]'),
 		onSlideChangeStart:function () {
 			var $points = $historyScale.find('[data-history-point]'),
-					activeDate = $historyEvents.find('.swiper-slide-active').data('historyEvent')
+					activeDate = $historyEvents.find('.swiper-slide-active').data('historyEvent'),
+					$activePoint = $points.filter('[data-history-point-event="'+activeDate+'"]')
 				;
-			$points.removeClass('_active').filter('[data-history-point-event="'+activeDate+'"]').addClass('_active');
-
+			$points.removeClass('_active');
+			$activePoint.addClass('_active');
+			console.log($activePoint.offset().left);
+			var val = -$activePoint.position().left+$historyInner.width()/2;
+			val = Math.max(Math.min(val,0),-($historyScale.width()-$historyInner.width()));
+			$historyScale.css('left',val+'px');
 		}
 	});
 
