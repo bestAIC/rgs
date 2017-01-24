@@ -708,6 +708,44 @@ h4.small-bottom-indent {
 .mobile .block-indent {
   margin-top: 6rem;
 }
+.switch._active .switch__ico-in {
+  left: 2.4rem;
+}
+.switch__item {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.022rem;
+  line-height: 2.4rem;
+  color: #AAAEB2;
+  display: inline-block;
+  vertical-align: top;
+}
+.switch__item._active {
+  color: #3e3e3e;
+}
+.switch__ico {
+  width: 4.8rem;
+  height: 2.4rem;
+  background-color: #ebebeb;
+  border-radius: 1.2rem;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+.switch__ico-in {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #b31b2c;
+  border: 0.6rem solid white;
+  box-shadow: 0 1px 4px rgba(23, 24, 26, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 0.5s;
+}
 .arr_down_long {
   width: 1rem;
   height: 2.3rem;
@@ -13472,7 +13510,7 @@ span.pagination__item:focus {
 .offices__filter-types {
   float: left;
   *zoom: 1;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 .offices__filter-types:before,
 .offices__filter-types:after {

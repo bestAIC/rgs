@@ -3,13 +3,16 @@
 		<div class="offices-page animation__top" data-offices-page  data-offices data-marker-url='{"static":"/static/theme/images/icons/marker.svg","active":"/static/theme/images/icons/marker-active.png"}' data-animation>
 				<div class="offices-page__in">
 					<div class="grid__inner">
-						<div class="offices__filter" data-filter>
+						<div class="offices__filter" data-filter data-switch-wrap>
 							<form action="/static/ajax/offices.php">
 								<div class="offices__filter-inner">
-									<div class="offices__filter-types">
-										<label class="offices__filter-type"><input type="checkbox" >Отделения</label>
-										<label class="offices__filter-type"><input type="checkbox" >Банкоматы</label>
-									</div>
+
+									<a href="javascript:;" class="switch offices__filter-types" data-switch>
+										<span class="switch__item _1 _active" data-switch-tab="branches">Отделения</span>
+										<span class="switch__ico"><span class="switch__ico-in"></span></span>
+										<span class="switch__item _2" data-switch-tab="atm">Банкоматы</span>
+										<input type="hidden" name="type" data-switch-inp value="branches">
+									</a>
 									<div class="offices__filter-right">
 										<div class="offices__tabs is-desktop-block">
 											<a href="javascript:void(0);" class="offices__tab _active" data-offices-tab="map">На карте</a>
@@ -51,7 +54,7 @@
 													</div>
 												</div>
 											</div>';
-									$block3 = '<div class="offices__filter-block">
+									$block3 = '<div class="offices__filter-block" data-switch-content="branches">
 												<div class="offices__filter-block-title">Дополнительные услуги:</div>
 												<div class="offices__filter-checks">
 													<div class="offices__filter-checks-col _w3">

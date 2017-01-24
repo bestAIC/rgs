@@ -113,6 +113,7 @@ app.init = function () {
 	app.dataFile();
 	app.vacancies();
 	app.history();
+	app.initSwitch();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -944,6 +945,26 @@ app.faqMobTabs = function () {
 		});
 	});
 };
+
+app.initSwitch = function () {
+	var $switchWrap = $('[data-switch-wrap]'),
+			$switch = $switchWrap.find('[data-switch]'),
+			$tab = $switch.find('[data-switch-tab]'),
+			$content = $switchWrap.find('[data-switch-content]'),
+			$inp = $switch.find('[data-switch-inp]'),
+			data = null
+		;
+
+	$switch.on('click',function () {
+		$(this).toggleClass('_active');
+		$tab.toggleClass('_active');
+		data = $tab.filter('._active').data('switchTab');
+		$inp.val(data).change();
+		$content.hide().filter('[data-switch-content="'+data+'"]').show();
+
+	});
+};
+
 app.history = function () {
 	var $history = $('[data-history]'),
 			$historyEvents = $history.find('[data-history-events]'),
@@ -951,7 +972,6 @@ app.history = function () {
 			$historyEvent = $historyEvents.find('[data-history-event]'),
 			$historyScale = $history.find('[data-history-scale]'),
 			historyScaleData = $historyScale.data('historyScale'),
-			historyPeriod = historyScaleData['end'] - historyScaleData['start'],
 			clicking = false,
 			startMove,
 			positionleftStartMove,
@@ -964,6 +984,7 @@ app.history = function () {
 	if(!$history.length){
 		return false;
 	}
+	var historyPeriod = historyScaleData['end'] - historyScaleData['start'];
 	if (Modernizr.touch) {
 		eventStart = 'touchstart';
 		eventEnd = 'touchend';
@@ -1034,7 +1055,7 @@ app.history = function () {
 		val = Math.max(Math.min(val,0),-($historyScale.width()-$historyInner.width()));
 		$historyScale.css('left',val+'px');
 	});
-	
+
 	var pointerEventToX = function(e){
 		var out = 0;
 		if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
