@@ -167,9 +167,9 @@
 					?>
 					<div class="about__history-in" data-history-in>
 						<div class="about__history-scale" data-history-scale='{
-							"start":<?$date = new DateTime("2011-01-1");echo $date->format("U");?>,
-							"end":<?$date = new DateTime("2017-01-1");echo $date->format("U");?>,
-							"years":<?=count($years);?>
+							"start":<?$date = new DateTime("2011-01-1");echo $date->format("U");/*год с которого начинается история*/?>,
+							"end":<?$date = new DateTime("2017-01-1");echo $date->format("U")/*сдедующий год после окончания истории*/;?>,
+							"years":<?=count($years);/*кол-во лет истории*/?>
 						}'>
 							<div class="about__history-scale-block"><!--
 								<? for ($i=0;$i<count($years);$i++){?>

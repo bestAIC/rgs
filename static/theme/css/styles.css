@@ -9530,6 +9530,33 @@ span.pagination__item:focus {
 .tablet.portrait .about__info-numerals-item._5 {
   width: 12rem;
 }
+.tablet.portrait .about__history .nav__btn {
+  position: absolute;
+  top: auto;
+  bottom: -24px;
+  z-index: 10;
+}
+.tablet.portrait .about__history .nav__btn._prev {
+  left: auto;
+  right: 50%;
+  margin-right: 0.5rem;
+}
+.tablet.portrait .about__history .nav__btn._next {
+  right: auto;
+  left: 50%;
+  margin-left: 0.5rem;
+}
+.tablet.portrait .about__history-scale-year:first-child .about__history-scale-year-title {
+  left: -1rem;
+  text-align: left;
+}
+.tablet.portrait .about__history-events-gall {
+  margin-left: 0;
+  margin-right: 0;
+}
+.tablet.portrait .about__history-event {
+  padding: 4.1rem 5rem 5rem;
+}
 .tablet.portrait .about__associations {
   margin-top: 3.6rem;
   padding-bottom: 2rem;
@@ -9694,6 +9721,42 @@ span.pagination__item:focus {
 .mobile .about__info-numerals-item._5 {
   width: 14rem;
 }
+.mobile .about__history {
+  padding-bottom: 1rem!important;
+}
+.mobile .about__history .nav__btn {
+  display: none;
+  position: absolute;
+  top: auto;
+  bottom: -24px;
+  z-index: 10;
+}
+.mobile .about__history .nav__btn._prev {
+  left: auto;
+  right: 50%;
+  margin-right: 0.5rem;
+}
+.mobile .about__history .nav__btn._next {
+  right: auto;
+  left: 50%;
+  margin-left: 0.5rem;
+}
+.mobile .about__history-scale-year:first-child .about__history-scale-year-title {
+  left: -1rem;
+  text-align: left;
+}
+.mobile .about__history-event {
+  padding: 3rem;
+}
+.mobile .about__history-event-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.mobile .about__history-events-gall {
+  margin-left: 0;
+  margin-right: 0;
+}
 .mobile .about__associations {
   margin-top: 5rem;
   margin-left: -0.5rem;
@@ -9787,8 +9850,8 @@ span.pagination__item:focus {
   padding-top: 0;
   font-size: 1.4rem;
   line-height: 2rem;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 .mobile .about__controls .b-block {
   padding-bottom: 0;

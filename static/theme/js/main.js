@@ -956,11 +956,18 @@ app.history = function () {
 			startMove,
 			positionleftStartMove,
 			positionleft,
-			eventsGall
-
+			eventsGall,
+			eventStart = 'mousedown',
+			eventEnd = 'mouseup',
+			eventMove = 'mousemove'
 		;
 	if(!$history.length){
 		return false;
+	}
+	if (Modernizr.touch) {
+		eventStart = 'touchstart';
+		eventEnd = 'touchend';
+		eventMove = 'touchmove';
 	}
 
 	$historyScale.width(historyScaleData['years']*121.2+'rem');
@@ -1010,24 +1017,34 @@ app.history = function () {
 
 	});
 
-
-	$historyScale.mousedown(function(e){
+	$historyScale.on(eventStart,function (e) {
 		clicking = true;
-		startMove = e.pageX;
+		startMove = pointerEventToX(e);
 		positionleftStartMove = parseInt($historyScale.css('left'));
 	});
 
-	$(document).mouseup(function(){
+	$(document).on(eventEnd,function (e) {
 		clicking = false;
 	});
 
-	$historyScale.mousemove(function(e){
+	$historyScale.on(eventMove,function (e) {
 		if(clicking == false) return false;
-		positionleft = positionleftStartMove+(e.pageX - startMove);
-		var val = positionleftStartMove+(e.pageX - startMove);
+		positionleft = positionleftStartMove+(pointerEventToX(e) - startMove);
+		var val = positionleftStartMove+(pointerEventToX(e) - startMove);
 		val = Math.max(Math.min(val,0),-($historyScale.width()-$historyInner.width()));
 		$historyScale.css('left',val+'px');
 	});
+	
+	var pointerEventToX = function(e){
+		var out = 0;
+		if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
+			var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+			out = touch.pageX;
+		} else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
+			out = e.pageX;
+		}
+		return out;
+	};
 };
 app.tabletSliders = function () {
 	var $galls = $('[data-tablet-slider]');
