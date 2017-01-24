@@ -356,6 +356,7 @@
 				</div>
 				<div class="menu__block hide" data-menu-content="6">
 					<div class="menu__block-inner">
+						<div class="menu__block-title"><a href="/static/about/">О банке</a></div>
 						<div class="menu__block-col">
 							<div class="b-menu__item">
 								<a href="#" class="b-menu__item-link">Отделения и банкоматы</a>
