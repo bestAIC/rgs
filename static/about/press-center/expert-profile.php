@@ -48,7 +48,7 @@
 									Алла Александровна
 								</div>
 								<div class="experts__item-position">Председатель Правления</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Масленникова Алла Александровна" >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Масленниковой Алле Александровне"}' >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -60,7 +60,7 @@
 									<li>Законодательное регулирование банковского сектора</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Масленникова Алла Александровна" >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Масленниковой Алле Александровне"}' >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -80,7 +80,7 @@
 									Аскер Джевадович
 								</div>
 								<div class="experts__item-position">Заместитель Председателя Правления</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Еникеев Аскер Джевадович" >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Енкееву Аскеру Джевадовичу"}' >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -92,7 +92,7 @@
 									<li>Банковские сети и пр.</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Еникеев Аскер Джевадович" >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Енкееву Аскеру Джевадовичу"}' >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -107,14 +107,14 @@
 									Ирина Борисовна
 								</div>
 								<div class="experts__item-position">Главный бухгалтер, член Правления</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Тараканова Ирина Борисовна" >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Таракановой Ирине Борисовны"}' >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
 									<li>Финансовая отчетность банка</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Тараканова Ирина Борисовна" >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Таракановой Ирине Борисовны"}' >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -129,14 +129,14 @@
 									Дмитрий Евгеньевич
 								</div>
 								<div class="experts__item-position">Директор Департамента информационных технологий</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Горшков Дмитрий Евгеньевич" >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Горшкову Дмитрию Евгеньевичу"}' >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
 									<li>Банковские технологии и инновации</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Горшков Дмитрий Евгеньевич" >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Горшкову Дмитрию Евгеньевичу"}' >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -154,7 +154,7 @@
 									Дмитрий Геннадьевич
 								</div>
 								<div class="experts__item-position">Директор Департамента Казначействай</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Емелин Дмитрий Геннадьевич" >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Емелину Дмитрию Геннадьевичу"}' >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -164,7 +164,7 @@
 									<li>Макроэкономические запросы</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Емелин Дмитрий Геннадьевич" >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Емелину Дмитрию Геннадьевичу"}' >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -182,14 +182,14 @@
 									Директор Департамента информационной
 									и экономической защиты бизнеса
 								</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Лапин Сергей Александрович" >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Лапину Сергею Александровичу"}' >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
 									<li>Вопросы экономической и информационной безопасности</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Лапин Сергей Александрович" >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Лапину Сергею Александровичу"}' >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -206,7 +206,7 @@
 									Александр Сергеевич
 								</div>
 								<div class="experts__item-position">Директор Департамента маркетинга</div>
-								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn="Наумов Александр Сергеевич" >Задать вопрос</a>
+								<a href="javascript:void(0);" class="btn _red experts__item-btn no-mob-block" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Наумову Александру Сергеевичу"}' >Задать вопрос</a>
 							</div>
 							<div class="experts__item-block _right">
 								<ul class="b-list">
@@ -215,7 +215,7 @@
 									<li>Маркетинговые исследования</li>
 								</ul>
 								<div class="experts__item-btn is-mob-block">
-									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn="Наумов Александр Сергеевич" >Задать вопрос</a>
+									<a href="javascript:void(0);" class="btn _red" data-experts-item-btn='{"email":"email@rgsbank.ru","name":"Наумову Александру Сергеевичу"}' >Задать вопрос</a>
 								</div>
 							</div>
 						</div>
@@ -224,73 +224,116 @@
 						<a href="#" class="btn _red experts__subscription-btn">Оформить подписку</a>
 					</div>
 					<div class="hide">
-						<div class="b-form ask-form"  data-experts-form>
+						<div class="b-form big-form"  data-experts-form>
 							<form action="/static/ajax/askForm.php">
 								<h2>Задать вопрос эксперту</h2>
+								<div class="subtitle">
+									Воспользуйтесь данной формой, чтобы задать вопрос<br />
+									<span data-experts-form-expert-name></span>
+								</div>
 								<div class="b-form__content">
-									<input type="hidden" class="mail_to" data-experts-form-expert name="mail_to" value="" />
-									<div class="b-form__row">
-										<div class="b-form__block">
-											<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
-											<div class="b-form__block-field">
-												<input type="text" placeholder="Иванов Иван Иванович">
+									<div class="b-form__content-cols">
+										<div class="b-form__content-col">
+											<div class="b-form__content-title">Информация о Вас</div>
+											<input type="hidden" class="mail_to" data-experts-form-expert name="mail_to" value="" />
+											<div class="b-form__row">
+												<div class="b-form__block">
+													<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
+													<div class="b-form__block-field">
+														<input type="text" placeholder="Иванов Иван Иванович">
+													</div>
+												</div>
+											</div>
+											<div class="b-form__row">
+												<div class="b-form__block">
+													<div class="b-form__block-title">Издание/организация</div>
+													<div class="b-form__block-field">
+														<input type="text" placeholder="Название организации">
+													</div>
+												</div>
+											</div>
+											<div class="b-form__row">
+												<div class="b-form__block">
+													<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
+													<div class="b-form__block-field">
+														<input type="text" placeholder="ivanivanov@mail.ru">
+													</div>
+												</div>
+											</div>
+											<div class="b-form__row">
+												<div class="b-form__block">
+													<div class="b-form__block-title">Телефон для обратной связи</div>
+													<div class="b-form__block-field phone-inp">
+														<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
+													</div>
+												</div>
+											</div>
+											<div class="b-form__row">
+												<div class="b-form__block">
+													<div class="b-form__block-title">Желаемые сроки получения ответа</div>
+													<div class="b-form__block-field">
+														<input type="text" placeholder="5 дней">
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="b-form__row">
-										<div class="b-form__block">
-											<div class="b-form__block-title">Издание/организация</div>
-											<div class="b-form__block-field">
-												<input type="text" placeholder="">
-											</div>
-										</div>
-									</div>
-									<div class="b-form__row">
-										<div class="b-form__block">
-											<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
-											<div class="b-form__block-field">
-												<input type="text" placeholder="ivanivanov@mail.ru">
-											</div>
-										</div>
-									</div>
-									<div class="b-form__row">
-										<div class="b-form__block">
-											<div class="b-form__block-title">Телефон для обратной связи</div>
-											<div class="b-form__block-field phone-inp">
-												<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
-											</div>
-										</div>
-									</div>
-									<div class="b-form__row">
-										<div class="b-form__block">
-											<div class="b-form__block-title">Желаемые сроки получения ответа</div>
-											<div class="b-form__block-field">
-												<input type="text" placeholder="5 дней">
-											</div>
-										</div>
-									</div>
-									<div class="b-form__row">
-										<div class="b-form__block">
-											<select data-chosen data-experts-form-theme data-placeholder="Выберите тему">
+										<div class="b-form__content-col">
+											<div class="b-form__content-title">Ваш вопрос</div>
+											<div class="b-form__row">
+												<div class="b-form__block">
+													<select data-chosen data-experts-form-theme data-placeholder="Выберите тему">
 
-											</select>
+													</select>
+												</div>
+											</div>
+											<div class="b-form__row">
+												<div class="b-form__block _textarea">
+													<textarea placeholder="Введите текст обращения"></textarea>
+												</div>
+											</div>
+											<div class="b-form__file" data-file>
+												<div class="b-form__file-title">Вы можете приложить документ</div>
+												<div class="b-form__file-block">
+													<div class="b-form__file-field">
+														Выберите файл
+														<input type="file" data-file-inp class=" b-form__file-inp">
+													</div>
+													<div class="b-form__file-text" data-file-text="Файл не выбран">Файл не выбран</div>
+												</div>
+											</div>
+											<div class="b-form__captcha">
+												<div class="b-form__captcha-img">
+													<img src="/static/theme/images/captcha.jpg" alt="">
+												</div>
+												<div class="b-form__captcha-block">
+													<div class="b-form__block">
+														<div class="b-form__block-title">Введите символы с картинки</div>
+														<div class="b-form__block-field">
+															<input type="password" placeholder="*****">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="b-form__errors" data-form-errors></div>
 										</div>
 									</div>
-									<div class="b-form__row">
-										<div class="b-form__block _textarea">
-											<textarea placeholder="Текст обращения"></textarea>
-										</div>
-									</div>
-									<div class="b-form__errors" data-form-errors></div>
-									<div class="b-form__btn-wrap">
-										<div class="btn _red b-form__btn ask-form__file" data-file>
-											<span data-file-text="Приложить документ">Приложить документ</span>
-											<input type="file" data-file-inp data-experts-form-file class=" b-form__file">
-										</div>
-										<button type="submit" class="btn _red b-form__btn _right">Отправить</button>
-									</div>
+									
+								</div>
+								<div class="b-form__btn-wrap">
+									<button type="submit" class="btn _red b-form__btn">ЗАДАТЬ ВОПРОС</button>
 								</div>
 							</form>
+							<div class="b-form__success hide" data-success>
+								<div class="b-form__success-in">
+									<div class="b-form__success-ico"></div>
+									<div class="b-form__success-block">
+										<div class="b-form__success-title">Спасибо!</div>
+										<div class="b-form__success-text">
+											Ваш вопрос отправлен эксперту.
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

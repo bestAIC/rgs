@@ -11,7 +11,7 @@
 
 <?
 	$arr = array(
-		'errors'	=> $errors
+		//'errors'	=> $errors
 	);
 	echo json_encode($arr)
 ?>

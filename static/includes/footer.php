@@ -140,7 +140,7 @@
 				пожелания и замечания можно отправить на <a href="mailto:consult@rgsbank.ru">consult@rgsbank.ru</a>
 			</div>
 		</div>
-		<div class="b-form ask-form"  data-ask-content="review">
+		<div class="b-form ask-form"  data-ask-content="review" >
 			<form action="/static/ajax/askForm.php">
 				<h2>Оставить отзыв</h2>
 				<div class="subtitle">Воспользуйтесь данной формой, чтобы оставить отзыв</div>

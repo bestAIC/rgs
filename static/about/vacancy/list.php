@@ -66,66 +66,93 @@
 					</div>
 				</div>
 				<div class="hide">
-					<div class="b-form ask-form"  data-resume-form>
+					<div class="b-form  big-form"  data-resume-form>
 						<form action="/static/ajax/askForm.php">
 							<input type="hidden" class="mail_to" name="mail_to" value="" data-resume-form-email />
 							<h2>Oтправить резюме</h2>
+							<div class="subtitle">
+								Воспользуйтесь данной формой, чтобы отправить резюме.
+							</div>
 							<div class="b-form__content">
-								<div class="b-form__row">
-									<div class="b-form__block">
-										<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
-										<div class="b-form__block-field">
-											<input type="text" placeholder="Иванов Иван Иванович">
+								<div class="b-form__content-cols">
+									<div class="b-form__content-col">
+										<div class="b-form__row">
+											<div class="b-form__block">
+												<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
+												<div class="b-form__block-field">
+													<input type="text" placeholder="Иванов Иван Иванович">
+												</div>
+											</div>
+										</div>
+										<div class="b-form__row">
+											<div class="b-form__block">
+												<div class="b-form__block-title">Мобильный телефон</div>
+												<div class="b-form__block-field phone-inp">
+													<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
+												</div>
+											</div>
+										</div>
+										<div class="b-form__row">
+											<div class="b-form__block">
+												<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
+												<div class="b-form__block-field">
+													<input type="text" placeholder="ivanivanov@mail.ru">
+												</div>
+											</div>
+										</div>
+										<div class="b-form__row">
+											<div class="b-form__block">
+												<select data-chosen  data-placeholder="Регион проживания">
+													<option value="" >Регион проживания</option>
+													<option value="Москва">Москва</option>
+												</select>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="b-form__row">
-									<div class="b-form__block">
-										<div class="b-form__block-title">Мобильный телефон</div>
-										<div class="b-form__block-field phone-inp">
-											<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
+									<div class="b-form__content-col">
+										<div class="b-form__row">
+											<div class="b-form__block">
+												<div class="b-form__block-title">Желаемая позиция</div>
+												<div class="b-form__block-field">
+													<input type="text" data-resume-form-position placeholder="">
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="b-form__row">
-									<div class="b-form__block">
-										<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
-										<div class="b-form__block-field">
-											<input type="text" placeholder="ivanivanov@mail.ru">
+										<div class="b-form__row">
+											<div class="b-form__block _textarea _resume">
+												<textarea placeholder="Сопроводительный текст"></textarea>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="b-form__row">
-									<div class="b-form__block">
-										<select data-chosen  data-placeholder="Регион проживания">
-											<option value="" >Регион проживания</option>
-											<option value="Москва">Москва</option>
-										</select>
-									</div>
-								</div>
-								<div class="b-form__row">
-									<div class="b-form__block">
-										<div class="b-form__block-title">Желаемая позиция</div>
-										<div class="b-form__block-field">
-											<input type="text" data-resume-form-position placeholder="">
+										<div class="b-form__file" data-file>
+											<div class="b-form__file-title">Вы можете приложить документ</div>
+											<div class="b-form__file-block">
+												<div class="b-form__file-field">
+													Выберите файл
+													<input type="file" data-file-inp class=" b-form__file-inp">
+												</div>
+												<div class="b-form__file-text" data-file-text="Файл не выбран">Файл не выбран</div>
+											</div>
 										</div>
+										<div class="b-form__errors" data-form-errors></div>
 									</div>
-								</div>
-								<div class="b-form__row">
-									<div class="b-form__block _textarea">
-										<textarea placeholder="Сопроводительный текст"></textarea>
-									</div>
-								</div>
-								<div class="b-form__errors" data-form-errors></div>
-								<div class="b-form__btn-wrap">
-									<div class="btn _red b-form__btn ask-form__file" data-file>
-										<span data-file-text="Приложить документ">Приложить документ</span>
-										<input type="file" data-file-inp class=" b-form__file">
-									</div>
-									<button type="submit" class="btn _red b-form__btn _right">Отправить</button>
 								</div>
 							</div>
+							<div class="b-form__btn-wrap">
+								<button type="submit" class="btn _red b-form__btn">Отправить</button>
+							</div>
 						</form>
+						<div class="b-form__success hide" data-success>
+							<div class="b-form__success-in">
+								<div class="b-form__success-ico"></div>
+								<div class="b-form__success-block">
+									<div class="b-form__success-title">Спасибо!</div>
+									<div class="b-form__success-text">
+										Ваше резюме отправлено специалистам.<br/>
+										Мы свяжемся с Вами в ближайшее время.
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

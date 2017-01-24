@@ -2,10 +2,10 @@
 	padding: 7rem 0;
 	&__titles{
 		background-color: fade(#d8d8d8,14%);
-		font-size: 10px;
+		font-size: 10/@rem;
 		font-weight: 600;
-		letter-spacing: 0.5px;
-		line-height: 18px;
+		letter-spacing: 0.5/@rem;
+		line-height: 18/@rem;
 		color: @cGray;
 		text-transform: uppercase;
 		border-top: 1px solid @cBorder;
@@ -38,8 +38,8 @@
 			padding: 2.4rem 3rem 2.5rem;
 			&._left{
 				vertical-align: top;
-				font-size: 16px;
-				line-height: 30px;
+				font-size: 16/@rem;
+				line-height: 30/@rem;
 				width: 47rem;
 			}
 			&._right{
@@ -56,8 +56,8 @@
 		&-name{
 			font-weight: 700;
 			.surname{
-				font-size: 24px;
-				margin-bottom: 3px;
+				font-size: 24/@rem;
+				margin-bottom: 3/@rem;
 			}
 		}
 		&-btn{
@@ -68,8 +68,12 @@
 .tablet.portrait{
 	.experts{
 		padding: 0 0 5rem;
-		margin-left: -2.7rem;
-		margin-right: -2.7rem;
+		.grid__inner{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		//margin-left: -2.7rem;
+		//margin-right: -2.7rem;
 		&__titles{
 			table{
 				td{
@@ -124,16 +128,16 @@
 				display: block;
 				padding: 0;
 				&._left{
-					font-size: 12px;
-					line-height: 20px;
+					font-size: 12/@rem;
+					line-height: 20/@rem;
 					width: 100%;
 				}
 				&._right{
 					margin-top: 2rem;
 					ul{
-						font-size: 12px;
+						font-size: 12/@rem;
 						font-weight: 400;
-						line-height: 20px;
+						line-height: 20/@rem;
 						li+li{
 							margin-top: 1rem;
 						}
@@ -142,7 +146,7 @@
 			}
 			&-name{
 				.surname{
-					font-size: 12px;
+					font-size: 12/@rem;
 					display: inline;
 				}
 			}

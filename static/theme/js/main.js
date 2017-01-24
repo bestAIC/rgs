@@ -178,6 +178,7 @@ app.experts = function () {
 			$expertsForm = $experts.find('[data-experts-form]'),
 			$expertsFormTheme = $expertsForm.find('[data-experts-form-theme]'),
 			$expertsFormExpert = $expertsForm.find('[data-experts-form-expert]'),
+			$expertsFormExpertName = $expertsForm.find('[data-experts-form-expert-name]'),
 			$expertsItem = $experts.find('[data-experts-item]'),
 			$expertsItemBtn = $expertsItem.find('[data-experts-item-btn]'),
 			$expertsItemTheme = $expertsItem.find('[data-experts-item-theme]'),
@@ -199,7 +200,8 @@ app.experts = function () {
 			success: function(data){
 				if(!data.errors){
 					$errors.hide();
-					$.fancybox.close();
+					$expertsForm.find('form').hide();
+					$expertsForm.find('[data-success]').show();
 				}else{
 					$errors.html(data.errors).show();
 				}
@@ -209,8 +211,12 @@ app.experts = function () {
 	});
 	$expertsItemBtn.on('click',function () {
 		var $self = $(this);
+		var data = $self.data('expertsItemBtn');
 		$errors.hide();
-		$expertsFormExpert.val($self.data('expertsItemBtn'));
+		$expertsForm.find('form').show();
+		$expertsForm.find('[data-success]').hide();
+		$expertsFormExpert.val(data['email']);
+		$expertsFormExpertName.text(data['name']);
 		$expertsFormTheme.html($self.closest($expertsItem).find($expertsItemTheme).html());
 		$expertsFormTheme.trigger('chosen:updated');
 		$.fancybox({
@@ -1464,7 +1470,10 @@ app.vacancies = function () {
 			success: function(data){
 				if(!data.errors){
 					$errors.hide();
-					$.fancybox.close();
+					//$.fancybox.close();
+					$resumeForm.find('form').hide();
+					$resumeForm.find('[data-success]').show();
+
 				}else{
 					$errors.html(data.errors).show();
 				}
@@ -1477,6 +1486,8 @@ app.vacancies = function () {
 				data = $self.data('resumeBtn')
 			;
 		$errors.hide();
+		$resumeForm.find('form').show();
+		$resumeForm.find('[data-success]').hide();
 		$resumeFormPosition.val(data['title']);
 		$resumeFormEmail.val(data['email']);
 		$.fancybox({
