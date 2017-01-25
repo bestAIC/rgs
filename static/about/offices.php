@@ -275,10 +275,10 @@
 									<form action="/static/ajax/officesMetroMap.php">
 										<div class="offices__metro-form-field">
 											<select data-chosen data-offices-metro-field data-placeholder="Выберите станцию">
-												<option value="">Выберите станцию</option>
-												<option value="">Станция метро1</option>
-												<option value="">Станция метро2</option>
-												<option value="">Станция метр3</option>
+												<option value="" data-metro-id="">Выберите станцию</option>
+												<option value="" data-metro-id="station1" >Станция метро1</option>
+												<option value="" data-metro-id="station2">Станция метро2</option>
+												<option value="" data-metro-id="station3">Станция метр3</option>
 											</select>
 										</div>
 										<div class="offices__metro-form-counter hide" data-offices-metro-counter>
