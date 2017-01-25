@@ -1561,7 +1561,7 @@ app.offices = function() {
 			$filterMetro  = $filter.find('[data-offices-filter-metro]'),
 			$filterForm  = $filter.find('form'),
 			$filterFormCity  = $filter.find('.offices__filter-city-field'),
-			$filterFields = $filter.find('input[type="text"],input[type="checkbox"],select'),
+			$filterFields = $filter.find('input[type="text"],input[type="hidden"],input[type="checkbox"],select'),
 			markers = []
 		;
 
