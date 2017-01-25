@@ -14013,7 +14013,6 @@ span.pagination__item:focus {
   position: relative;
   z-index: 3;
   width: 100%;
-  overflow: visible!important;
 }
 .offices__map-wrap {
   position: relative;
