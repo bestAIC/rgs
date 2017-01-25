@@ -1,5 +1,18 @@
 .offices-page{
 	padding-top: 6rem;
+	&._show-metro{
+		.offices{
+			&__advanced-search{
+				margin-left: 3rem;
+			}
+			&__filter{
+				&-city{
+					margin-left: 1.4rem;
+					width: 23rem;
+				}
+			}
+		}
+	}
 	&__partners{
 		font-size: 16/@rem;
 		font-weight: 400;
@@ -40,6 +53,11 @@
 		margin-bottom: 6rem;
 	}
 	.offices{
+		&__filter{
+			&-types{
+				margin-top: 0.7rem;
+			}
+		}
 		&__map{
 			height: 727/@rem;
 			&-wrap{
@@ -53,15 +71,6 @@
 				bottom: auto;
 			}
 		}
-		&__advanced-search{
-			//margin-left: 3rem;
-		}
-		&__filter{
-			&-city{
-				//margin-left: 1.4rem;
-				//width: 23rem;
-			}
-		}
 	}
 }
 
@@ -69,6 +78,7 @@
 	padding-top: 5rem;
 	&__metro{
 		.clearfix;
+		margin-top: 3rem!important;
 		padding: 0!important;
 		background-color: transparent!important;
 		margin-bottom: 3rem;
@@ -83,13 +93,66 @@
 			float: left;
 			margin-left: 30/@rem;
 			background-color: #fff;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
 		}
 		&-img{
-			height: 784/@rem;
-			width: 606/@rem;
+			height: 74.4rem;
+			width: 64rem;
 			margin: 0 auto;
-			background: url('@{pathToImg}mapMetro.jpg') no-repeat center;
+			background: url('@{pathToImg}metro.png') no-repeat center;
 			background-size: contain;
+		}
+		&-form{
+			padding: 4rem 4rem 2rem;
+			border-bottom: 1px solid #eff1f3;
+			&-field{
+				margin-bottom: 1rem;
+				height: 4.8rem;
+			}
+			&-counter{
+				font-size: 18px;
+				font-weight: 400;
+				letter-spacing: -0.25px;
+				line-height: 25px;
+				margin-top: 3rem;
+			}
+		}
+		&-items{
+			max-height: 62rem;
+			overflow-y: auto;
+			.desktop &, .tablet.landscape &, .mobile &{
+				.offices__item{
+					padding-left: 4rem;
+					padding-right: 4rem;
+					&-schedule{
+						float: none;
+						width: 100%;
+						border-top: 1px solid #eff1f3;
+						margin-top: 1.7rem;
+						padding-top: 1.9rem;
+					}
+					&-info{
+						&-block{
+							float: none;
+							.clearfix;
+						}
+						&-address{
+							width: 18rem;
+							padding-bottom: 0;
+						}
+						&-phones{
+							margin-right: 0;
+							width: 14rem;
+						}
+						&-metro{
+							margin-top: 7/@rem;
+							float: none;
+							width: 100%;
+						}
+					}
+				}
+			}
 		}
 	}
 	&__filter{
@@ -137,7 +200,7 @@
 		&-types{
 			float: left;
 			.clearfix;
-			margin-top: 0.7rem;
+			margin-top: 1rem;
 		}
 		&-type{
 			float: left;

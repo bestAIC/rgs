@@ -13629,6 +13629,13 @@ span.pagination__item:focus {
 .offices-page {
   padding-top: 6rem;
 }
+.offices-page._show-metro .offices__advanced-search {
+  margin-left: 3rem;
+}
+.offices-page._show-metro .offices__filter-city {
+  margin-left: 1.4rem;
+  width: 23rem;
+}
 .offices-page__partners {
   font-size: 1.6rem;
   font-weight: 400;
@@ -13677,6 +13684,9 @@ span.pagination__item:focus {
 .offices-page__list {
   margin-bottom: 6rem;
 }
+.offices-page .offices__filter-types {
+  margin-top: 0.7rem;
+}
 .offices-page .offices__map {
   height: 72.7rem;
 }
@@ -13695,6 +13705,7 @@ span.pagination__item:focus {
 }
 .offices__metro {
   *zoom: 1;
+  margin-top: 3rem!important;
   padding: 0!important;
   background-color: transparent!important;
   margin-bottom: 3rem;
@@ -13719,13 +13730,89 @@ span.pagination__item:focus {
   float: left;
   margin-left: 3rem;
   background-color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .offices__metro-img {
-  height: 78.4rem;
-  width: 60.6rem;
+  height: 74.4rem;
+  width: 64rem;
   margin: 0 auto;
-  background: url('../images/mapMetro.jpg') no-repeat center;
+  background: url('../images/metro.png') no-repeat center;
   background-size: contain;
+}
+.offices__metro-form {
+  padding: 4rem 4rem 2rem;
+  border-bottom: 1px solid #eff1f3;
+}
+.offices__metro-form-field {
+  margin-bottom: 1rem;
+  height: 4.8rem;
+}
+.offices__metro-form-counter {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  line-height: 25px;
+  margin-top: 3rem;
+}
+.offices__metro-items {
+  max-height: 62rem;
+  overflow-y: auto;
+}
+.desktop .offices__metro-items .offices__item,
+.tablet.landscape .offices__metro-items .offices__item,
+.mobile .offices__metro-items .offices__item {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.desktop .offices__metro-items .offices__item-schedule,
+.tablet.landscape .offices__metro-items .offices__item-schedule,
+.mobile .offices__metro-items .offices__item-schedule {
+  float: none;
+  width: 100%;
+  border-top: 1px solid #eff1f3;
+  margin-top: 1.7rem;
+  padding-top: 1.9rem;
+}
+.desktop .offices__metro-items .offices__item-info-block,
+.tablet.landscape .offices__metro-items .offices__item-info-block,
+.mobile .offices__metro-items .offices__item-info-block {
+  float: none;
+  *zoom: 1;
+}
+.desktop .offices__metro-items .offices__item-info-block:before,
+.tablet.landscape .offices__metro-items .offices__item-info-block:before,
+.mobile .offices__metro-items .offices__item-info-block:before,
+.desktop .offices__metro-items .offices__item-info-block:after,
+.tablet.landscape .offices__metro-items .offices__item-info-block:after,
+.mobile .offices__metro-items .offices__item-info-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.desktop .offices__metro-items .offices__item-info-block:after,
+.tablet.landscape .offices__metro-items .offices__item-info-block:after,
+.mobile .offices__metro-items .offices__item-info-block:after {
+  clear: both;
+}
+.desktop .offices__metro-items .offices__item-info-address,
+.tablet.landscape .offices__metro-items .offices__item-info-address,
+.mobile .offices__metro-items .offices__item-info-address {
+  width: 18rem;
+  padding-bottom: 0;
+}
+.desktop .offices__metro-items .offices__item-info-phones,
+.tablet.landscape .offices__metro-items .offices__item-info-phones,
+.mobile .offices__metro-items .offices__item-info-phones {
+  margin-right: 0;
+  width: 14rem;
+}
+.desktop .offices__metro-items .offices__item-info-metro,
+.tablet.landscape .offices__metro-items .offices__item-info-metro,
+.mobile .offices__metro-items .offices__item-info-metro {
+  margin-top: 0.7rem;
+  float: none;
+  width: 100%;
 }
 .offices__filter {
   background-color: white;
@@ -13791,7 +13878,7 @@ span.pagination__item:focus {
 .offices__filter-types {
   float: left;
   *zoom: 1;
-  margin-top: 0.7rem;
+  margin-top: 1rem;
 }
 .offices__filter-types:before,
 .offices__filter-types:after {

@@ -1543,8 +1543,10 @@ app.initMaps = function () {
 app.offices = function() {
 	var self = this,
 			$offices = $('[data-offices]'),
+			$metro = $offices.find('[data-offices-metro]'),
 			markerUrl = $offices.data('markerUrl'),
 			$tab = $offices.find('[data-offices-tab]'),
+			$tabMetro = $offices.find('[data-offices-tab="metro"]'),
 			$content = $offices.find('[data-offices-content]'),
 			$mapPopup = $offices.find('[data-offices-map-popup]'),
 			$mapPopupContent = $mapPopup.find('[data-offices-map-popup-content]'),
@@ -1562,13 +1564,41 @@ app.offices = function() {
 			$filterForm  = $filter.find('form'),
 			$filterFormCity  = $filter.find('.offices__filter-city-field'),
 			$filterFields = $filter.find('input[type="text"],input[type="hidden"],input[type="checkbox"],select'),
-			markers = []
-		;
+			markers = [],
+			$metroForm = null,
+			$metroField = null,
+			$metroItems = null,
+			$metroCounter = null,
+			$metroCounterVal = null
 
+		;
+	
 	if(!$offices.length){
 		return false;
 	}
+	if($metro.length){
+			$metroForm = $metro.find('form');
+			$metroField = $metro.find('[data-offices-metro-field]');
+			$metroItems = $metro.find('[data-offices-metro-items]');
+			$metroCounter = $('[data-offices-metro-counter]');
+			$metroCounterVal = $metro.find('[data-offices-metro-counter-val]');
+			initMetro();
+	}
+	function initMetro() {
+		$metroForm.on('submit',function () {
+			var $self = $(this);
+			$.post($self.attr('action'), $self.serialize(), function(data){
+				$metroItems.html($(data.content).html());
+				$metroCounter.show();
+				$metroCounterVal.text(' '+data.counter+' '+app.utils.okonchanie(data.counter,'отделение','отделения','отделений'));
+			},'json');
+			return false;
+		});
 
+		$metroField.on('change',function () {
+			$metroForm.trigger('submit');
+		})
+	}
 	var
 		mapOptions = {
 			zoom:               11,
@@ -1616,6 +1646,10 @@ app.offices = function() {
 			$mapPopupContent.empty();
 		},300);
 	});
+
+	if($filterFormCity.val().toUpperCase()=="МОСКВА"){
+		$offices.addClass('_show-metro');
+	}
 	function addMarkers($items) {
 		var latlngbounds = new google.maps.LatLngBounds(),
 				activeMarker = null,
@@ -1690,6 +1724,16 @@ app.offices = function() {
 
 	$filterForm.on('submit',function () {
 		var $self = $(this);
+		if($filterFormCity.val().toUpperCase()=="МОСКВА"){
+			$offices.addClass('_show-metro');
+			$tabMetro.show();
+		}else{
+			$offices.removeClass('_show-metro');
+			$tabMetro.hide();
+			if($tabMetro.hasClass('_active')){
+				$tab.filter('[data-offices-tab="map"]').click().addClass('_active');
+			}
+		}
 		$.post($self.attr('action'), $self.serialize(), function(data){
 
 			var $items = $(data.content).find('[data-office-point]');
@@ -1711,6 +1755,7 @@ app.offices = function() {
 		return false;
 	});
 
+
 	$filterFields.on('change',function () {
 		$filterForm.trigger('submit');
 	});
@@ -1724,6 +1769,8 @@ app.offices = function() {
 		$filterExtendShow.removeClass('_active');
 		$filterExtend.hide();
 	});
+
+
 };
 app.office = function() {
 	var self = this,

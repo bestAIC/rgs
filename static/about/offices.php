@@ -17,10 +17,10 @@
 										<div class="offices__tabs is-desktop-block">
 											<a href="javascript:void(0);" class="offices__tab _active" data-offices-tab="map">На карте</a>
 											<a href="javascript:void(0);" class="offices__tab" data-offices-tab="list">Списком</a>
-											<?/*a href="javascript:void(0);" class="offices__tab" data-offices-tab="metro">На карте метро</a*/?>
+											<a href="javascript:void(0);" class="offices__tab" data-offices-tab="metro">На карте метро</a>
 										</div>
 										<div class="offices__filter-city">
-											<input type="text" class="offices__filter-city-field" value="Москва">
+											<input type="text" class="offices__filter-city-field"  value="Москва">
 										</div>
 										<a href="javascript:void(0);" data-filter-extend-show class="offices__advanced-search is-desktop-block">Расширенный поиск</a>
 										<div class="offices__filter-icons no-desktop-block">
@@ -43,7 +43,7 @@
 												</div>
 											</div>';
 
-									$block2 = '<div class="offices__filter-block">
+									$block2 = '<div class="offices__filter-block hide"  data-switch-content="atm">
 												<div class="offices__filter-block-title">Показывать банкоматы партнеров:</div>
 												<div class="offices__filter-checks">
 													<div class="offices__filter-checks-col _w1">
@@ -268,8 +268,27 @@
 								<?/*a href="#" class="more-link offices__item-mark">Оценить отделение</a*/?>
 							</div>
 						</div>
-						<div class="offices__block offices__metro hide" data-offices-content="metro">
-							<div class="offices__metro-left"></div>
+						<div class="offices__block offices__metro hide" data-offices-metro data-offices-content="metro">
+							<div class="offices__metro-left">
+								<div class="offices__metro-form">
+									<form action="/static/ajax/officesMetroMap.php">
+										<div class="offices__metro-form-field">
+											<select data-chosen data-offices-metro-field data-placeholder="Выберите станцию">
+												<option value=""></option>
+												<option value="">Станция метро1</option>
+												<option value="">Станция метро2</option>
+												<option value="">Станция метр3</option>
+											</select>
+										</div>
+										<div class="offices__metro-form-counter hide" data-offices-metro-counter>
+											Найдено : <span data-offices-metro-counter-val></span>
+										</div>
+									</form>
+								</div>
+								<div class="offices__metro-items" data-offices-metro-items>
+
+								</div>
+							</div>
 							<div class="offices__metro-right">
 								<div class="offices__metro-img"></div>
 							</div>
