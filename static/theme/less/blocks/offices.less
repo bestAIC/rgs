@@ -111,10 +111,10 @@
 				height: 4.8rem;
 			}
 			&-counter{
-				font-size: 18px;
+				font-size: 18/@rem;
 				font-weight: 400;
-				letter-spacing: -0.25px;
-				line-height: 25px;
+				letter-spacing: -0.25/@rem;
+				line-height: 25/@rem;
 				margin-top: 3rem;
 			}
 		}
@@ -188,6 +188,12 @@
 				background-image: url('@{pathToImg}icons/list.svg');
 				&._active{
 					background-image: url('@{pathToImg}icons/list_active.svg');
+				}
+			}
+			&._metro{
+				background-image: url('@{pathToImg}icons/metro-tab.svg');
+				&._active{
+					background-image: url('@{pathToImg}icons/metro-tab_active.svg');
 				}
 			}
 			&._settings{
@@ -634,8 +640,58 @@
 				}
 			}
 		}
+		&._show-metro{
+			.offices{
+				&__filter{
+					&-city{
+						width: 22.3rem;
+					}
+				}
+			}
+		}
 	}
 	.offices{
+		&__metro{
+			margin-top: 2rem!important;
+			&-left{
+				width: 100%;
+				float: none;
+				height: auto;
+			}
+			&-right{
+				width: 100%;
+				float: none;
+				margin-left: 0;
+				margin-top: 2rem;
+			}
+			&-form{
+				padding: 2rem 3rem;
+				border-bottom: 1px solid #eff1f3;
+				.clearfix;
+				&-field{
+					margin-bottom: 0;
+					width: 46rem;
+					float: left;
+				}
+				&-counter{
+					float: right;
+					text-align: right;
+					font-size: 16/@rem;
+					font-weight: 400;
+					letter-spacing: -0.22/@rem;
+					line-height: 20/@rem;
+					margin-top: 1.4rem;
+					width: 19rem;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+			&-items{
+				.offices__item{
+					padding: 3rem 4rem 2rem;
+				}
+			}
+		}
 		&__map{
 			&-nav{
 				right: 2.7rem;
@@ -756,7 +812,41 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
-
+		&__metro{
+			margin-top: 0!important;
+			margin-bottom: 2rem;
+			&-left{
+				width: 100%;
+				float: none;
+				height: auto;
+			}
+			&-right{
+				width: 100%;
+				float: none;
+				margin-left: 0;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
+			&-img{
+				height: 74.4rem/2;
+				width: 64rem/2;
+			}
+			&-form{
+				padding: 2rem;
+				&-field{
+					margin-bottom: 0;
+				}
+				&-counter{
+					margin-top: 2rem;
+				}
+			}
+			&-items{
+				.offices__item{
+					padding-left: 2rem;
+					padding-right: 2rem;
+				}
+			}
+		}
 		&__map{
 			height: 410/@rem;
 			&-wrap{
@@ -1023,6 +1113,13 @@
 				&-city{
 					//margin-left: 1.4rem;
 					//width: 23rem;
+				}
+				&-icon{
+					&._settings{
+						position: absolute;
+						top: 3rem;
+						right: 2rem;
+					}
 				}
 			}
 		}

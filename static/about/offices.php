@@ -26,6 +26,7 @@
 										<div class="offices__filter-icons no-desktop-block">
 											<a href="javascript:void(0);"  data-offices-tab="map" class="offices__filter-icon _map _active"></a>
 											<a href="javascript:void(0);" data-offices-tab="list" class="offices__filter-icon _list"></a>
+											<a href="javascript:void(0);" data-offices-tab="metro" class="offices__filter-icon _metro"></a>
 											<a  href="javascript:void(0);" data-filter-extend-show class="offices__filter-icon _settings"></a>
 										</div>
 									</div>
@@ -274,7 +275,7 @@
 									<form action="/static/ajax/officesMetroMap.php">
 										<div class="offices__metro-form-field">
 											<select data-chosen data-offices-metro-field data-placeholder="Выберите станцию">
-												<option value=""></option>
+												<option value="">Выберите станцию</option>
 												<option value="">Станция метро1</option>
 												<option value="">Станция метро2</option>
 												<option value="">Станция метр3</option>

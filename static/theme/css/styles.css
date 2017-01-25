@@ -13749,10 +13749,10 @@ span.pagination__item:focus {
   height: 4.8rem;
 }
 .offices__metro-form-counter {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
-  letter-spacing: -0.25px;
-  line-height: 25px;
+  letter-spacing: -0.025rem;
+  line-height: 2.5rem;
   margin-top: 3rem;
 }
 .offices__metro-items {
@@ -13868,6 +13868,12 @@ span.pagination__item:focus {
 }
 .offices__filter-icon._list._active {
   background-image: url('../images/icons/list_active.svg');
+}
+.offices__filter-icon._metro {
+  background-image: url('../images/icons/metro-tab.svg');
+}
+.offices__filter-icon._metro._active {
+  background-image: url('../images/icons/metro-tab_active.svg');
 }
 .offices__filter-icon._settings {
   background-image: url('../images/icons/settings.svg');
@@ -14405,6 +14411,57 @@ span.pagination__item:focus {
 .tablet.portrait .offices-page__partners-item + .offices-page__partners-item {
   margin-left: 8rem;
 }
+.tablet.portrait .offices-page._show-metro .offices__filter-city {
+  width: 22.3rem;
+}
+.tablet.portrait .offices__metro {
+  margin-top: 2rem!important;
+}
+.tablet.portrait .offices__metro-left {
+  width: 100%;
+  float: none;
+  height: auto;
+}
+.tablet.portrait .offices__metro-right {
+  width: 100%;
+  float: none;
+  margin-left: 0;
+  margin-top: 2rem;
+}
+.tablet.portrait .offices__metro-form {
+  padding: 2rem 3rem;
+  border-bottom: 1px solid #eff1f3;
+  *zoom: 1;
+}
+.tablet.portrait .offices__metro-form:before,
+.tablet.portrait .offices__metro-form:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .offices__metro-form:after {
+  clear: both;
+}
+.tablet.portrait .offices__metro-form-field {
+  margin-bottom: 0;
+  width: 46rem;
+  float: left;
+}
+.tablet.portrait .offices__metro-form-counter {
+  float: right;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: -0.022rem;
+  line-height: 2rem;
+  margin-top: 1.4rem;
+  width: 19rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tablet.portrait .offices__metro-items .offices__item {
+  padding: 3rem 4rem 2rem;
+}
 .tablet.portrait .offices__map-nav {
   right: 2.7rem;
 }
@@ -14517,6 +14574,39 @@ span.pagination__item:focus {
 .mobile .offices .grid__inner {
   padding-left: 0;
   padding-right: 0;
+}
+.mobile .offices__metro {
+  margin-top: 0!important;
+  margin-bottom: 2rem;
+}
+.mobile .offices__metro-left {
+  width: 100%;
+  float: none;
+  height: auto;
+}
+.mobile .offices__metro-right {
+  width: 100%;
+  float: none;
+  margin-left: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.mobile .offices__metro-img {
+  height: 37.2rem;
+  width: 32rem;
+}
+.mobile .offices__metro-form {
+  padding: 2rem;
+}
+.mobile .offices__metro-form-field {
+  margin-bottom: 0;
+}
+.mobile .offices__metro-form-counter {
+  margin-top: 2rem;
+}
+.mobile .offices__metro-items .offices__item {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .mobile .offices__map {
   height: 41rem;
@@ -14795,6 +14885,11 @@ span.pagination__item:focus {
 }
 .mobile .offices-page .offices__filter {
   margin-top: 0;
+}
+.mobile .offices-page .offices__filter-icon._settings {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
 }
 .mortgage__numbers {
   margin-top: 4.8rem;
