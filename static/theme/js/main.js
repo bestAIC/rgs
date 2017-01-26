@@ -132,6 +132,9 @@ app.init = function () {
 	if($('[data-offices-page]').length){
 		app.dom.$body.addClass('is-offices-page');
 	}
+	$('html').on('click','[data-fancy-close]',function () {
+		$.fancybox.close();
+	});
 };
 app.askForm = function () {
 	var $ask =  $('[data-ask]'),
@@ -251,6 +254,24 @@ app.actions = function () {
 			$actionsItems.html(data);
 		});
 		return false;
+	});
+	$actionsItems.on('click','[data-actions-item-more]',function () {
+		var $self = $(this),
+				$content = $self.closest('[data-actions-item]').find('[data-actions-item-content]').html()
+			;
+		$.fancybox({
+			wrapCSS 	: 'fc-base _empty',
+			content 	: $content,
+			fitToView	: false,
+			padding:0,
+			helpers : {
+				overlay : {
+					css : {
+						'background' : 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		});
 	});
 };
 app.welcome = function () {

@@ -291,7 +291,11 @@
 								</div>
 							</div>
 							<div class="offices__metro-right">
-								<div class="offices__metro-img"></div>
+								<div class="offices__metro-img">
+									<?for ($i=1;$i<=190;$i++){?>
+										<div class="offices__metro-img-station <?='_'.$i?>"><?=$i?></div>
+									<?}?>
+								</div>
 							</div>
 						</div>
 					</div>
