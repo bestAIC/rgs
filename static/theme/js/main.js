@@ -112,7 +112,7 @@ app.init = function () {
 	app.experts();
 	app.dataFile();
 	app.vacancies();
-	app.history();
+	//app.history();
 	app.initSwitch();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();

@@ -680,6 +680,16 @@ h3 a:hover {
 h3 a:focus {
   color: #AAAEB2;
 }
+h3 a._active {
+  border-bottom: none;
+  color: #3e3e3e;
+}
+h3 a._active:hover {
+  color: #3e3e3e;
+}
+h3 a._active:focus {
+  color: #3e3e3e;
+}
 h4 {
   color: #3e3e3e;
   font-size: 2rem;

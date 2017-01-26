@@ -89,11 +89,29 @@
 						</div>
 					</div>
 					<div class="deposit-info__right">
-						<div class="deposit-documents deposit-info__block">
+						<div class="deposit-documents deposit-info__block" data-tabs>
 							<h3>Требования к
-								<a href="#">залогодателю</a> /
-								заемщику / созаемщику </h3>
-							<div class="deposit-documents__content">
+								<a href="javascript:void(0);" class="_active" data-tabs-tab="1" >залогодателю</a> /
+								<a href="javascript:void(0);" data-tabs-tab="2" >заемщику / созаемщику </a>
+							</h3>
+							<div class="deposit-documents__content" data-tabs-content="1">
+								<div class="deposit-documents__title">
+									Требования к залогодателю
+								</div>
+								<ul class="deposit-documents__list">
+									<li>Возраст - от 18 лет</li>
+									<li>Гражданство Российской Федерации</li>
+									<li>Наличие постоянной регистрации в любом регионе присутствия Банка</li>
+									<li>
+										Документы
+										<ul>
+											<li>Паспорт гражданина РФ;</li>
+											<li>Документы, необходимые для экспертизы, оценки и оформления залога.</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="deposit-documents__content hide" data-tabs-content="2">
 								<div class="deposit-documents__title">
 									Требования к Заемщику / Созаемщику
 								</div>
