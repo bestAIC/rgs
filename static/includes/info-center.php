@@ -37,11 +37,6 @@
 					<div class="info-center__section-counter">12 статей</div>
 				</a>
 				<a href="#" class="swiper-slide info-center__section">
-					<div class="info-center__section-ico" style="background-image: url('theme/images/home/info/4.svg');"></div>
-					<div class="info-center__section-title">Оплата услуг</div>
-					<div class="info-center__section-counter">12 статей</div>
-				</a>
-				<a href="#" class="swiper-slide info-center__section">
 					<div class="info-center__section-ico _big" style="background-image: url('theme/images/home/info/5.svg');"></div>
 					<div class="info-center__section-title">Денежные переводы</div>
 					<div class="info-center__section-counter">12 статей</div>
@@ -49,6 +44,11 @@
 				<a href="#" class="swiper-slide info-center__section">
 					<div class="info-center__section-ico" style="background-image: url('theme/images/home/info/6.svg');"></div>
 					<div class="info-center__section-title">Интернет-банк</div>
+					<div class="info-center__section-counter">12 статей</div>
+				</a>
+				<a href="#" class="swiper-slide info-center__section">
+					<div class="info-center__section-ico" style="background-image: url('theme/images/home/info/7.svg');"></div>
+					<div class="info-center__section-title">Инвестиции</div>
 					<div class="info-center__section-counter">12 статей</div>
 				</a>
 			</div>
@@ -71,11 +71,6 @@
 				<div class="info-center__section-counter">12 статей</div>
 			</a>
 			<a href="#" class="info-center__section">
-				<div class="info-center__section-ico" style="background-image: url('theme/images/home/info/4.svg');"></div>
-				<div class="info-center__section-title">Оплата услуг</div>
-				<div class="info-center__section-counter">12 статей</div>
-			</a>
-			<a href="#" class="info-center__section">
 				<div class="info-center__section-ico _big" style="background-image: url('theme/images/home/info/5.svg');"></div>
 				<div class="info-center__section-title">Денежные переводы</div>
 				<div class="info-center__section-counter">12 статей</div>
@@ -83,6 +78,11 @@
 			<a href="#" class="info-center__section">
 				<div class="info-center__section-ico" style="background-image: url('theme/images/home/info/6.svg');"></div>
 				<div class="info-center__section-title">Интернет-банк</div>
+				<div class="info-center__section-counter">12 статей</div>
+			</a>
+			<a href="#" class="swiper-slide info-center__section">
+				<div class="info-center__section-ico" style="background-image: url('theme/images/home/info/7.svg');"></div>
+				<div class="info-center__section-title">Инвестиции</div>
 				<div class="info-center__section-counter">12 статей</div>
 			</a>
 			<div data-info-answer data-ajax-url="ajax/info/answer.php" class="info-center__answer-wrap">
