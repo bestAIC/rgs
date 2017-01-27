@@ -1589,6 +1589,7 @@ app.offices = function() {
 			$metroForm = null,
 			$metroField = null,
 			$metroItems = null,
+			$metroImg = null,
 			$metroCounter = null,
 			$metroCounterVal = null
 
@@ -1603,6 +1604,7 @@ app.offices = function() {
 			$metroItems = $metro.find('[data-offices-metro-items]');
 			$metroCounter = $('[data-offices-metro-counter]');
 			$metroCounterVal = $metro.find('[data-offices-metro-counter-val]');
+			$metroImg = $metro.find('[data-offices-metro-img]');
 			initMetro();
 	}
 	function initMetro() {
@@ -1616,8 +1618,28 @@ app.offices = function() {
 			return false;
 		});
 
+		$metroField.find('option').each(function () {
+			var $self = $(this),
+					$point = null;
+			if($self.data('metroId')){
+				$point = $('<div class="offices__metro-img-station _'+$self.data('metroId')+'"></div>');
+				$point.on('click',function () {
+					$self.prop('selected', true);
+					$metroField.change().trigger("chosen:updated");
+				});
+				$metroImg.append($point);
+			}
+		});
+
 		$metroField.on('change',function () {
-			$metroForm.trigger('submit');
+			var metroId = $metroField.find('option:selected').data('metroId');
+			$metroImg.find('.offices__metro-img-station').removeClass('_active').filter('._'+metroId).addClass('_active');
+			if($(this).val()){
+				$metroForm.trigger('submit');
+			}else{
+				$metroItems.empty();
+				$metroCounter.hide();
+			}
 		})
 	}
 	var

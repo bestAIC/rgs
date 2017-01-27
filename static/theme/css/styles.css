@@ -10318,18 +10318,30 @@ span.pagination__item:focus {
   position: absolute;
   width: 6rem;
   height: 1.5rem;
-  border: 1px solid black;
-  font-size: 1.5rem;
-  color: red;
-  font-weight: bold;
-  line-height: 1rem;
+  cursor: pointer;
+}
+.offices__metro-img-station:before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  margin-top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #b31b2c;
+  border-radius: 50%;
+  border: 0.6rem solid white;
+  box-shadow: 0 2px 10px rgba(23, 24, 26, 0.3);
   display: none;
+}
+.offices__metro-img-station._active:before {
+  display: block;
 }
 .offices__metro-img-station._1 {
   left: 2.8rem;
   top: 10.5rem;
 }
-.offices__metro-img-station._2 {
+.offices__metro-img-station._mitino {
   left: 2.8rem;
   top: 12.5rem;
 }
@@ -10341,19 +10353,19 @@ span.pagination__item:focus {
   left: 2.8rem;
   top: 16.1rem;
 }
-.offices__metro-img-station._5 {
+.offices__metro-img-station._strogino {
   left: 2.8rem;
   top: 17.8rem;
 }
-.offices__metro-img-station._6 {
+.offices__metro-img-station._krylatskoe {
   left: 2.8rem;
   top: 19.6rem;
 }
-.offices__metro-img-station._7 {
+.offices__metro-img-station._molodezhnaya {
   left: 2.8rem;
   top: 21.3rem;
 }
-.offices__metro-img-station._8 {
+.offices__metro-img-station._kuntsevskaya {
   left: 2.8rem;
   top: 24.4rem;
 }
@@ -10365,11 +10377,11 @@ span.pagination__item:focus {
   left: 3.5rem;
   top: 28rem;
 }
-.offices__metro-img-station._11 {
+.offices__metro-img-station._bagrationovskaya {
   left: 3.5rem;
   top: 34.3rem;
 }
-.offices__metro-img-station._12 {
+.offices__metro-img-station._fili {
   left: 3.5rem;
   top: 35.7rem;
   width: 2.3rem;
@@ -10378,12 +10390,12 @@ span.pagination__item:focus {
   left: 5.7rem;
   top: 36.6rem;
 }
-.offices__metro-img-station._14 {
+.offices__metro-img-station._slavyanskiy-bulvar {
   left: 0.5rem;
   top: 41rem;
   width: 5rem;
 }
-.offices__metro-img-station._15 {
+.offices__metro-img-station._park-pobedy {
   left: 6.3rem;
   top: 41rem;
   width: 5rem;
@@ -10396,33 +10408,33 @@ span.pagination__item:focus {
   left: 10.1rem;
   top: 33.3rem;
 }
-.offices__metro-img-station._18 {
+.offices__metro-img-station._mezhdunarodnaya {
   left: 4.4rem;
   top: 30.1rem;
 }
-.offices__metro-img-station._19 {
+.offices__metro-img-station._vystavochnaya {
   left: 11.3rem;
   top: 30.1rem;
 }
-.offices__metro-img-station._20 {
+.offices__metro-img-station._smolenskaya {
   left: 20.4rem;
   top: 30.1rem;
   width: 4.5rem;
 }
-.offices__metro-img-station._21 {
+.offices__metro-img-station._planernaya {
   left: 10.9rem;
   top: 3.6rem;
 }
-.offices__metro-img-station._22 {
+.offices__metro-img-station._polezhaevskaya {
   left: 12rem;
   top: 21.2rem;
   width: 4.8rem;
 }
-.offices__metro-img-station._23 {
+.offices__metro-img-station._skhodnenskaya {
   left: 10.9rem;
   top: 5.3rem;
 }
-.offices__metro-img-station._24 {
+.offices__metro-img-station._tushinskaya {
   left: 10.9rem;
   top: 6.9rem;
 }
@@ -10430,71 +10442,71 @@ span.pagination__item:focus {
   left: 10.9rem;
   top: 8.6rem;
 }
-.offices__metro-img-station._26 {
+.offices__metro-img-station._shchukinskaya {
   left: 10.9rem;
   top: 10.3rem;
 }
-.offices__metro-img-station._27 {
+.offices__metro-img-station._oktyabrskoe-pole {
   left: 10.7rem;
   top: 16.6rem;
 }
-.offices__metro-img-station._28 {
+.offices__metro-img-station._rechnoy-vokzal {
   left: 18.7rem;
   top: 3.6rem;
 }
-.offices__metro-img-station._29 {
+.offices__metro-img-station._vodnyy-stadion {
   left: 18.7rem;
   top: 5.5rem;
 }
-.offices__metro-img-station._30 {
+.offices__metro-img-station._voykovskaya {
   left: 18.7rem;
   top: 10.6rem;
 }
-.offices__metro-img-station._31 {
+.offices__metro-img-station._sokol {
   left: 18.7rem;
   top: 13rem;
 }
-.offices__metro-img-station._32 {
+.offices__metro-img-station._aeroport {
   left: 18.7rem;
   top: 14.5rem;
 }
-.offices__metro-img-station._33 {
+.offices__metro-img-station._dinamo {
   left: 18.7rem;
   top: 16rem;
 }
-.offices__metro-img-station._34 {
+.offices__metro-img-station._altufevo {
   left: 30.1rem;
   top: 0.3rem;
 }
-.offices__metro-img-station._35 {
+.offices__metro-img-station._bibirevo {
   left: 30.1rem;
   top: 2.1rem;
 }
-.offices__metro-img-station._36 {
+.offices__metro-img-station._otradnoe {
   left: 30.1rem;
   top: 3.8rem;
 }
-.offices__metro-img-station._37 {
+.offices__metro-img-station._vladykino {
   left: 30.1rem;
   top: 6.2rem;
 }
-.offices__metro-img-station._38 {
+.offices__metro-img-station._medvedkovo {
   left: 40.9rem;
   top: 0.4rem;
 }
-.offices__metro-img-station._39 {
+.offices__metro-img-station._babushkinskaya {
   left: 40.9rem;
   top: 2.3rem;
 }
-.offices__metro-img-station._40 {
+.offices__metro-img-station._sviblovo {
   left: 40.9rem;
   top: 4.3rem;
 }
-.offices__metro-img-station._41 {
+.offices__metro-img-station._botanicheskiy-sad {
   left: 40.9rem;
   top: 6.2rem;
 }
-.offices__metro-img-station._42 {
+.offices__metro-img-station._petrovsko-razumovskaya {
   left: 29rem;
   top: 8.8rem;
   width: 9rem;
@@ -10503,15 +10515,15 @@ span.pagination__item:focus {
   left: 31.8rem;
   top: 10.1rem;
 }
-.offices__metro-img-station._44 {
+.offices__metro-img-station._timiryazevskaya {
   left: 26.3rem;
   top: 11.8rem;
 }
-.offices__metro-img-station._45 {
+.offices__metro-img-station._dmitrovskaya {
   left: 26.3rem;
   top: 13.8rem;
 }
-.offices__metro-img-station._46 {
+.offices__metro-img-station._savelovskaya {
   left: 26.3rem;
   top: 15.2rem;
 }
@@ -10519,47 +10531,47 @@ span.pagination__item:focus {
   left: 33.1rem;
   top: 12.9rem;
 }
-.offices__metro-img-station._48 {
+.offices__metro-img-station._marina-roshcha {
   left: 33.1rem;
   top: 14.2rem;
 }
-.offices__metro-img-station._49 {
+.offices__metro-img-station._dostoevskaya {
   left: 33.1rem;
   top: 15.6rem;
   width: 5rem;
 }
-.offices__metro-img-station._50 {
+.offices__metro-img-station._trubnaya {
   left: 32.7rem;
   top: 21.1rem;
   width: 3.5rem;
 }
-.offices__metro-img-station._51 {
+.offices__metro-img-station._belorusskaya {
   left: 16.9rem;
   top: 21.8rem;
 }
-.offices__metro-img-station._52 {
+.offices__metro-img-station._mayakovskaya {
   left: 23.8rem;
   top: 22.6rem;
   width: 4.4rem;
 }
-.offices__metro-img-station._53 {
+.offices__metro-img-station._tsvetnoy-bulvar {
   left: 28.3rem;
   top: 23.1rem;
   width: 4.4rem;
 }
-.offices__metro-img-station._54 {
+.offices__metro-img-station._vorobevy-gory {
   left: 12.8rem;
   top: 45.8rem;
 }
-.offices__metro-img-station._55 {
+.offices__metro-img-station._universitet {
   left: 12.8rem;
   top: 48.1rem;
 }
-.offices__metro-img-station._56 {
+.offices__metro-img-station._pr-t-vernadskogo {
   left: 12.8rem;
   top: 50.8rem;
 }
-.offices__metro-img-station._57 {
+.offices__metro-img-station._yugo-zapadnaya {
   left: 12.8rem;
   top: 53.4rem;
 }
@@ -10575,12 +10587,12 @@ span.pagination__item:focus {
   left: 12.8rem;
   top: 60.5rem;
 }
-.offices__metro-img-station._61 {
+.offices__metro-img-station._buninskaya-alleya {
   left: 11.4rem;
   top: 72.5rem;
   width: 4rem;
 }
-.offices__metro-img-station._62 {
+.offices__metro-img-station._ulitsa-gorchakova {
   left: 15.8rem;
   top: 72.5rem;
   width: 4rem;
@@ -10591,11 +10603,11 @@ span.pagination__item:focus {
   width: 4rem;
   height: 2rem;
 }
-.offices__metro-img-station._64 {
+.offices__metro-img-station._ulitsa-skobelevskaya {
   left: 24.5rem;
   top: 72.5rem;
 }
-.offices__metro-img-station._65 {
+.offices__metro-img-station._ulitsa-starokachalovskaya {
   left: 19.2rem;
   top: 69.7rem;
   width: 8.5rem;
@@ -10612,46 +10624,46 @@ span.pagination__item:focus {
   left: 21.5rem;
   top: 66.2rem;
 }
-.offices__metro-img-station._69 {
+.offices__metro-img-station._yasenevo {
   left: 20.7rem;
   top: 64.4rem;
 }
-.offices__metro-img-station._70 {
+.offices__metro-img-station._teplyy-stan {
   left: 20.7rem;
   top: 62.7rem;
 }
-.offices__metro-img-station._71 {
+.offices__metro-img-station._konkovo {
   left: 20.7rem;
   top: 61rem;
   width: 3.5rem;
 }
-.offices__metro-img-station._72 {
+.offices__metro-img-station._belyaevo {
   left: 20.7rem;
   top: 59.3rem;
   width: 3.5rem;
 }
-.offices__metro-img-station._73 {
+.offices__metro-img-station._kakhovskaya {
   left: 24.3rem;
   top: 60.3rem;
   width: 3.5rem;
 }
-.offices__metro-img-station._74 {
+.offices__metro-img-station._kaluzhskaya {
   left: 20.7rem;
   top: 57.7rem;
 }
-.offices__metro-img-station._75 {
+.offices__metro-img-station._novye-cheremushki {
   left: 20.7rem;
   top: 55.9rem;
 }
-.offices__metro-img-station._76 {
+.offices__metro-img-station._profsoyuznaya {
   left: 20.7rem;
   top: 54.2rem;
 }
-.offices__metro-img-station._77 {
+.offices__metro-img-station._akademicheskaya {
   left: 20.7rem;
   top: 52.5rem;
 }
-.offices__metro-img-station._78 {
+.offices__metro-img-station._leninskiy-pr-t {
   left: 20.7rem;
   top: 48rem;
 }
@@ -10663,11 +10675,11 @@ span.pagination__item:focus {
   left: 29.2rem;
   top: 44.6rem;
 }
-.offices__metro-img-station._81 {
+.offices__metro-img-station._tulskaya {
   left: 29.4rem;
   top: 47.6rem;
 }
-.offices__metro-img-station._82 {
+.offices__metro-img-station._nagatinskaya {
   left: 29.4rem;
   top: 54.2rem;
 }
@@ -10679,19 +10691,19 @@ span.pagination__item:focus {
   left: 29.4rem;
   top: 57.6rem;
 }
-.offices__metro-img-station._85 {
+.offices__metro-img-station._sevastopolskaya {
   left: 29.4rem;
   top: 61.3rem;
 }
-.offices__metro-img-station._86 {
+.offices__metro-img-station._chertanovskaya {
   left: 29.4rem;
   top: 62.8rem;
 }
-.offices__metro-img-station._87 {
+.offices__metro-img-station._yuzhnaya {
   left: 29.4rem;
   top: 64.1rem;
 }
-.offices__metro-img-station._88 {
+.offices__metro-img-station._prazhskaya {
   left: 29.4rem;
   top: 65.5rem;
 }
@@ -10708,27 +10720,27 @@ span.pagination__item:focus {
   left: 29.4rem;
   top: 70.1rem;
 }
-.offices__metro-img-station._92 {
+.offices__metro-img-station._domodedovskaya {
   left: 38.3rem;
   top: 66.9rem;
 }
-.offices__metro-img-station._93 {
+.offices__metro-img-station._orekhovo {
   left: 38.3rem;
   top: 64.7rem;
 }
-.offices__metro-img-station._94 {
+.offices__metro-img-station._tsaritsyno {
   left: 38.3rem;
   top: 62.6rem;
 }
-.offices__metro-img-station._95 {
+.offices__metro-img-station._kantemirovskaya {
   left: 38.3rem;
   top: 60.4rem;
 }
-.offices__metro-img-station._96 {
+.offices__metro-img-station._kashirskaya {
   left: 38.3rem;
   top: 58.3rem;
 }
-.offices__metro-img-station._97 {
+.offices__metro-img-station._kolomenskaya {
   left: 38.3rem;
   top: 56.1rem;
 }
@@ -10736,23 +10748,23 @@ span.pagination__item:focus {
   left: 38.3rem;
   top: 54.1rem;
 }
-.offices__metro-img-station._99 {
+.offices__metro-img-station._avtozavodskaya {
   left: 38.3rem;
   top: 50.3rem;
 }
-.offices__metro-img-station._100 {
+.offices__metro-img-station._paveletskaya {
   left: 38.3rem;
   top: 43rem;
 }
-.offices__metro-img-station._101 {
+.offices__metro-img-station._novokuznetskaya {
   left: 38.3rem;
   top: 36.7rem;
 }
-.offices__metro-img-station._102 {
+.offices__metro-img-station._krestyanskaya-zastava {
   left: 44.4rem;
   top: 40.1rem;
 }
-.offices__metro-img-station._103 {
+.offices__metro-img-station._dubrovka {
   left: 42.7rem;
   top: 46.8rem;
 }
@@ -10760,7 +10772,7 @@ span.pagination__item:focus {
   left: 47.1rem;
   top: 50.5rem;
 }
-.offices__metro-img-station._105 {
+.offices__metro-img-station._pechatniki {
   left: 47.1rem;
   top: 52.7rem;
 }
@@ -10768,15 +10780,15 @@ span.pagination__item:focus {
   left: 47.1rem;
   top: 54.9rem;
 }
-.offices__metro-img-station._107 {
+.offices__metro-img-station._lyublino {
   left: 47.1rem;
   top: 57.1rem;
 }
-.offices__metro-img-station._108 {
+.offices__metro-img-station._bratislavskaya {
   left: 47.1rem;
   top: 59.3rem;
 }
-.offices__metro-img-station._109 {
+.offices__metro-img-station._marino {
   left: 47.1rem;
   top: 61.4rem;
 }
@@ -10792,7 +10804,7 @@ span.pagination__item:focus {
   left: 47.1rem;
   top: 68.1rem;
 }
-.offices__metro-img-station._113 {
+.offices__metro-img-station._krasnogvardeyskaya {
   left: 40.1rem;
   top: 70.1rem;
   width: 7rem;
@@ -10813,7 +10825,7 @@ span.pagination__item:focus {
   left: 55.8rem;
   top: 54.8rem;
 }
-.offices__metro-img-station._118 {
+.offices__metro-img-station._vykhino {
   left: 55.8rem;
   top: 51.8rem;
 }
@@ -10821,7 +10833,7 @@ span.pagination__item:focus {
   left: 55.8rem;
   top: 48.8rem;
 }
-.offices__metro-img-station._120 {
+.offices__metro-img-station._kuzminki {
   left: 55.8rem;
   top: 45.8rem;
 }
@@ -10829,47 +10841,47 @@ span.pagination__item:focus {
   left: 54.5rem;
   top: 43.1rem;
 }
-.offices__metro-img-station._122 {
+.offices__metro-img-station._volgogradskiy-pr-t {
   left: 52.1rem;
   top: 40.4rem;
   width: 9rem;
 }
-.offices__metro-img-station._123 {
+.offices__metro-img-station._proletarskaya {
   left: 50.3rem;
   top: 39rem;
 }
-.offices__metro-img-station._124 {
+.offices__metro-img-station._marksistskaya {
   left: 44.7rem;
   top: 36.9rem;
 }
-.offices__metro-img-station._125 {
+.offices__metro-img-station._taganskaya {
   left: 41.3rem;
   top: 34.6rem;
 }
-.offices__metro-img-station._126 {
+.offices__metro-img-station._rimskaya {
   left: 46.6rem;
   top: 31.1rem;
   width: 4rem;
 }
-.offices__metro-img-station._127 {
+.offices__metro-img-station._ploshchad-ilicha {
   left: 50.7rem;
   top: 32.2rem;
   width: 4rem;
 }
-.offices__metro-img-station._128 {
+.offices__metro-img-station._aviamotornaya {
   left: 52.7rem;
   top: 30.2rem;
 }
-.offices__metro-img-station._129 {
+.offices__metro-img-station._shosse-entuziastov {
   left: 53rem;
   top: 27.7rem;
   width: 7rem;
 }
-.offices__metro-img-station._130 {
+.offices__metro-img-station._perovo {
   left: 57rem;
   top: 26.2rem;
 }
-.offices__metro-img-station._131 {
+.offices__metro-img-station._novogireevo {
   left: 58.2rem;
   top: 25.1rem;
   height: 1rem;
@@ -10878,49 +10890,49 @@ span.pagination__item:focus {
   left: 59.4rem;
   top: 23.7rem;
 }
-.offices__metro-img-station._133 {
+.offices__metro-img-station._shchelkovskaya {
   left: 55.8rem;
   top: 10.1rem;
 }
-.offices__metro-img-station._134 {
+.offices__metro-img-station._pervomayskaya {
   left: 55.8rem;
   top: 13.1rem;
 }
-.offices__metro-img-station._135 {
+.offices__metro-img-station._izmaylovskaya {
   left: 55.8rem;
   top: 16.1rem;
 }
-.offices__metro-img-station._136 {
+.offices__metro-img-station._partizanskaya {
   left: 54.4rem;
   top: 19.1rem;
 }
-.offices__metro-img-station._137 {
+.offices__metro-img-station._semenovskaya {
   left: 50.4rem;
   top: 23.1rem;
 }
-.offices__metro-img-station._138 {
+.offices__metro-img-station._elektrozavodskaya {
   left: 49.4rem;
   top: 24.7rem;
   height: 1rem;
 }
-.offices__metro-img-station._139 {
+.offices__metro-img-station._baumanskaya {
   left: 48.1rem;
   top: 25.7rem;
 }
-.offices__metro-img-station._140 {
+.offices__metro-img-station._kurskaya {
   left: 46rem;
   top: 26.9rem;
 }
-.offices__metro-img-station._141 {
+.offices__metro-img-station._chkalovskaya {
   left: 39.8rem;
   top: 26.9rem;
   width: 4.5rem;
 }
-.offices__metro-img-station._142 {
+.offices__metro-img-station._chistye-prudy {
   left: 39.8rem;
   top: 24.7rem;
 }
-.offices__metro-img-station._143 {
+.offices__metro-img-station._krasnye-vorota {
   left: 41.3rem;
   top: 23.2rem;
 }
@@ -10940,16 +10952,16 @@ span.pagination__item:focus {
   left: 47.9rem;
   top: 16.7rem;
 }
-.offices__metro-img-station._148 {
+.offices__metro-img-station._ulitsa-podbelskogo {
   left: 47.1rem;
   top: 11.5rem;
   width: 8rem;
 }
-.offices__metro-img-station._149 {
+.offices__metro-img-station._cherkizovskaya {
   left: 43.6rem;
   top: 14.7rem;
 }
-.offices__metro-img-station._150 {
+.offices__metro-img-station._vdnkh {
   left: 40.9rem;
   top: 11.9rem;
   width: 5rem;
@@ -10959,53 +10971,53 @@ span.pagination__item:focus {
   top: 13.2rem;
   width: 5rem;
 }
-.offices__metro-img-station._152 {
+.offices__metro-img-station._rizhskaya {
   left: 40.2rem;
   top: 15rem;
   width: 3rem;
 }
-.offices__metro-img-station._153 {
+.offices__metro-img-station._prospekt-mira {
   left: 38.1rem;
   top: 17.1rem;
 }
-.offices__metro-img-station._154 {
+.offices__metro-img-station._sukharevskaya {
   left: 36.7rem;
   top: 20.3rem;
   width: 5rem;
 }
-.offices__metro-img-station._155 {
+.offices__metro-img-station._sretenskiy-bulvar {
   left: 36.7rem;
   top: 22rem;
   width: 4rem;
 }
-.offices__metro-img-station._156 {
+.offices__metro-img-station._novoslobodskaya {
   left: 28.5rem;
   top: 17.7rem;
 }
-.offices__metro-img-station._157 {
+.offices__metro-img-station._mendeleevskaya {
   left: 26.9rem;
   top: 19.2rem;
 }
-.offices__metro-img-station._158 {
+.offices__metro-img-station._turgenevskaya {
   left: 33rem;
   top: 24.4rem;
   width: 5rem;
 }
-.offices__metro-img-station._159 {
+.offices__metro-img-station._kuznetskiy-most {
   left: 31.5rem;
   top: 25.8rem;
 }
-.offices__metro-img-station._160 {
+.offices__metro-img-station._pushkinskaya {
   left: 26.4rem;
   top: 25.8rem;
   width: 4.5rem;
 }
-.offices__metro-img-station._161 {
+.offices__metro-img-station._barrikadnaya {
   left: 20.2rem;
   top: 25.8rem;
   width: 5rem;
 }
-.offices__metro-img-station._162 {
+.offices__metro-img-station._ulitsa-1905-goda {
   left: 13.7rem;
   top: 26.8rem;
   width: 5rem;
@@ -11015,43 +11027,43 @@ span.pagination__item:focus {
   top: 25.1rem;
   width: 5rem;
 }
-.offices__metro-img-station._164 {
+.offices__metro-img-station._krasnopresnenskaya {
   left: 19.8rem;
   top: 27.8rem;
   height: 1rem;
 }
-.offices__metro-img-station._165 {
+.offices__metro-img-station._tverskaya {
   left: 24.6rem;
   top: 28.6rem;
   height: 1rem;
   width: 4rem;
 }
-.offices__metro-img-station._166 {
+.offices__metro-img-station._chekhovskaya {
   left: 29.6rem;
   top: 27.8rem;
   width: 4rem;
 }
-.offices__metro-img-station._167 {
+.offices__metro-img-station._lubyanka {
   left: 35.6rem;
   top: 28.5rem;
   width: 4rem;
 }
-.offices__metro-img-station._168 {
+.offices__metro-img-station._kitay-gorod {
   left: 36.2rem;
   top: 30.4rem;
   width: 5rem;
 }
-.offices__metro-img-station._169 {
+.offices__metro-img-station._okhotnyy-ryad {
   left: 29.1rem;
   top: 30.5rem;
   width: 4rem;
 }
-.offices__metro-img-station._170 {
+.offices__metro-img-station._arbatskaya {
   left: 25.2rem;
   top: 30.7rem;
   width: 4rem;
 }
-.offices__metro-img-station._171 {
+.offices__metro-img-station._teatralnaya {
   left: 33.4rem;
   top: 31.5rem;
   width: 4.5rem;
@@ -11061,22 +11073,22 @@ span.pagination__item:focus {
   top: 31.9rem;
   width: 4rem;
 }
-.offices__metro-img-station._173 {
+.offices__metro-img-station._sportivnaya {
   left: 14.4rem;
   top: 41.7rem;
   width: 5rem;
 }
-.offices__metro-img-station._174 {
+.offices__metro-img-station._oktyabrskaya {
   left: 20rem;
   top: 41.5rem;
   width: 5rem;
 }
-.offices__metro-img-station._175 {
+.offices__metro-img-station._frunzenskaya {
   left: 16.9rem;
   top: 39.7rem;
   width: 5rem;
 }
-.offices__metro-img-station._176 {
+.offices__metro-img-station._park-kultury {
   left: 17.7rem;
   top: 37.9rem;
   width: 4rem;
@@ -11112,18 +11124,831 @@ span.pagination__item:focus {
   left: 31.7rem;
   top: 38.4rem;
 }
-.offices__metro-img-station._184 {
+.offices__metro-img-station._polyanka {
   left: 29.4rem;
   top: 40.9rem;
   width: 4rem;
 }
-.offices__metro-img-station._185 {
+.offices__metro-img-station._dobryninskaya {
   left: 30.1rem;
   top: 42.3rem;
 }
-.offices__metro-img-station._186 {
+.offices__metro-img-station._varshavskaya {
   left: 31.4rem;
   top: 59.4rem;
+}
+.mobile .offices__metro-img-station {
+  position: absolute;
+  width: 3rem;
+  height: 0.75rem;
+  cursor: pointer;
+}
+.mobile .offices__metro-img-station:before {
+  left: -1rem;
+  margin-top: -0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.3rem solid white;
+}
+.mobile .offices__metro-img-station._1 {
+  left: 1.4rem;
+  top: 5.25rem;
+}
+.mobile .offices__metro-img-station._mitino {
+  left: 1.4rem;
+  top: 6.25rem;
+}
+.mobile .offices__metro-img-station._3 {
+  left: 1.4rem;
+  top: 7.15rem;
+}
+.mobile .offices__metro-img-station._4 {
+  left: 1.4rem;
+  top: 8.05rem;
+}
+.mobile .offices__metro-img-station._strogino {
+  left: 1.4rem;
+  top: 8.9rem;
+}
+.mobile .offices__metro-img-station._krylatskoe {
+  left: 1.4rem;
+  top: 9.8rem;
+}
+.mobile .offices__metro-img-station._molodezhnaya {
+  left: 1.4rem;
+  top: 10.65rem;
+}
+.mobile .offices__metro-img-station._kuntsevskaya {
+  left: 1.4rem;
+  top: 12.2rem;
+}
+.mobile .offices__metro-img-station._9 {
+  left: 1.75rem;
+  top: 13.15rem;
+}
+.mobile .offices__metro-img-station._10 {
+  left: 1.75rem;
+  top: 14rem;
+}
+.mobile .offices__metro-img-station._bagrationovskaya {
+  left: 1.75rem;
+  top: 17.15rem;
+}
+.mobile .offices__metro-img-station._fili {
+  left: 1.75rem;
+  top: 17.85rem;
+  width: 1.15rem;
+}
+.mobile .offices__metro-img-station._13 {
+  left: 2.85rem;
+  top: 18.3rem;
+}
+.mobile .offices__metro-img-station._slavyanskiy-bulvar {
+  left: 0.25rem;
+  top: 20.5rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._park-pobedy {
+  left: 3.15rem;
+  top: 20.5rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._16 {
+  left: 6.05rem;
+  top: 18.15rem;
+}
+.mobile .offices__metro-img-station._17 {
+  left: 5.05rem;
+  top: 16.65rem;
+}
+.mobile .offices__metro-img-station._mezhdunarodnaya {
+  left: 2.2rem;
+  top: 15.05rem;
+}
+.mobile .offices__metro-img-station._vystavochnaya {
+  left: 5.65rem;
+  top: 15.05rem;
+}
+.mobile .offices__metro-img-station._smolenskaya {
+  left: 10.2rem;
+  top: 15.05rem;
+  width: 2.25rem;
+}
+.mobile .offices__metro-img-station._planernaya {
+  left: 5.45rem;
+  top: 1.8rem;
+}
+.mobile .offices__metro-img-station._polezhaevskaya {
+  left: 6rem;
+  top: 10.6rem;
+  width: 2.4rem;
+}
+.mobile .offices__metro-img-station._skhodnenskaya {
+  left: 5.45rem;
+  top: 2.65rem;
+}
+.mobile .offices__metro-img-station._tushinskaya {
+  left: 5.45rem;
+  top: 3.45rem;
+}
+.mobile .offices__metro-img-station._25 {
+  left: 5.45rem;
+  top: 4.3rem;
+}
+.mobile .offices__metro-img-station._shchukinskaya {
+  left: 5.45rem;
+  top: 5.15rem;
+}
+.mobile .offices__metro-img-station._oktyabrskoe-pole {
+  left: 5.35rem;
+  top: 8.3rem;
+}
+.mobile .offices__metro-img-station._rechnoy-vokzal {
+  left: 9.35rem;
+  top: 1.8rem;
+}
+.mobile .offices__metro-img-station._vodnyy-stadion {
+  left: 9.35rem;
+  top: 2.75rem;
+}
+.mobile .offices__metro-img-station._voykovskaya {
+  left: 9.35rem;
+  top: 5.3rem;
+}
+.mobile .offices__metro-img-station._sokol {
+  left: 9.35rem;
+  top: 6.5rem;
+}
+.mobile .offices__metro-img-station._aeroport {
+  left: 9.35rem;
+  top: 7.25rem;
+}
+.mobile .offices__metro-img-station._dinamo {
+  left: 9.35rem;
+  top: 8rem;
+}
+.mobile .offices__metro-img-station._altufevo {
+  left: 15.05rem;
+  top: 0.15rem;
+}
+.mobile .offices__metro-img-station._bibirevo {
+  left: 15.05rem;
+  top: 1.05rem;
+}
+.mobile .offices__metro-img-station._otradnoe {
+  left: 15.05rem;
+  top: 1.9rem;
+}
+.mobile .offices__metro-img-station._vladykino {
+  left: 15.05rem;
+  top: 3.1rem;
+}
+.mobile .offices__metro-img-station._medvedkovo {
+  left: 20.45rem;
+  top: 0.2rem;
+}
+.mobile .offices__metro-img-station._babushkinskaya {
+  left: 20.45rem;
+  top: 1.15rem;
+}
+.mobile .offices__metro-img-station._sviblovo {
+  left: 20.45rem;
+  top: 2.15rem;
+}
+.mobile .offices__metro-img-station._botanicheskiy-sad {
+  left: 20.45rem;
+  top: 3.1rem;
+}
+.mobile .offices__metro-img-station._petrovsko-razumovskaya {
+  left: 14.5rem;
+  top: 4.4rem;
+  width: 4.5rem;
+}
+.mobile .offices__metro-img-station._43 {
+  left: 15.9rem;
+  top: 5.05rem;
+}
+.mobile .offices__metro-img-station._timiryazevskaya {
+  left: 13.15rem;
+  top: 5.9rem;
+}
+.mobile .offices__metro-img-station._dmitrovskaya {
+  left: 13.15rem;
+  top: 6.9rem;
+}
+.mobile .offices__metro-img-station._savelovskaya {
+  left: 13.15rem;
+  top: 7.6rem;
+}
+.mobile .offices__metro-img-station._47 {
+  left: 16.55rem;
+  top: 6.45rem;
+}
+.mobile .offices__metro-img-station._marina-roshcha {
+  left: 16.55rem;
+  top: 7.1rem;
+}
+.mobile .offices__metro-img-station._dostoevskaya {
+  left: 16.55rem;
+  top: 7.8rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._trubnaya {
+  left: 16.35rem;
+  top: 10.55rem;
+  width: 1.75rem;
+}
+.mobile .offices__metro-img-station._belorusskaya {
+  left: 8.45rem;
+  top: 10.9rem;
+}
+.mobile .offices__metro-img-station._mayakovskaya {
+  left: 11.9rem;
+  top: 11.3rem;
+  width: 2.2rem;
+}
+.mobile .offices__metro-img-station._tsvetnoy-bulvar {
+  left: 14.15rem;
+  top: 11.55rem;
+  width: 2.2rem;
+}
+.mobile .offices__metro-img-station._vorobevy-gory {
+  left: 6.4rem;
+  top: 22.9rem;
+}
+.mobile .offices__metro-img-station._universitet {
+  left: 6.4rem;
+  top: 24.05rem;
+}
+.mobile .offices__metro-img-station._pr-t-vernadskogo {
+  left: 6.4rem;
+  top: 25.4rem;
+}
+.mobile .offices__metro-img-station._yugo-zapadnaya {
+  left: 6.4rem;
+  top: 26.7rem;
+}
+.mobile .offices__metro-img-station._58 {
+  left: 6.4rem;
+  top: 27.9rem;
+}
+.mobile .offices__metro-img-station._59 {
+  left: 6.4rem;
+  top: 29.1rem;
+}
+.mobile .offices__metro-img-station._60 {
+  left: 6.4rem;
+  top: 30.25rem;
+}
+.mobile .offices__metro-img-station._buninskaya-alleya {
+  left: 5.7rem;
+  top: 36.25rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._ulitsa-gorchakova {
+  left: 7.9rem;
+  top: 36.25rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._63 {
+  left: 10.15rem;
+  top: 36.25rem;
+  width: 2rem;
+  height: 1rem;
+}
+.mobile .offices__metro-img-station._ulitsa-skobelevskaya {
+  left: 12.25rem;
+  top: 36.25rem;
+}
+.mobile .offices__metro-img-station._ulitsa-starokachalovskaya {
+  left: 9.6rem;
+  top: 34.85rem;
+  width: 4.25rem;
+}
+.mobile .offices__metro-img-station._66 {
+  left: 7.85rem;
+  top: 34rem;
+}
+.mobile .offices__metro-img-station._67 {
+  left: 11.05rem;
+  top: 34rem;
+}
+.mobile .offices__metro-img-station._68 {
+  left: 10.75rem;
+  top: 33.1rem;
+}
+.mobile .offices__metro-img-station._yasenevo {
+  left: 10.35rem;
+  top: 32.2rem;
+}
+.mobile .offices__metro-img-station._teplyy-stan {
+  left: 10.35rem;
+  top: 31.35rem;
+}
+.mobile .offices__metro-img-station._konkovo {
+  left: 10.35rem;
+  top: 30.5rem;
+  width: 1.75rem;
+}
+.mobile .offices__metro-img-station._belyaevo {
+  left: 10.35rem;
+  top: 29.65rem;
+  width: 1.75rem;
+}
+.mobile .offices__metro-img-station._kakhovskaya {
+  left: 12.15rem;
+  top: 30.15rem;
+  width: 1.75rem;
+}
+.mobile .offices__metro-img-station._kaluzhskaya {
+  left: 10.35rem;
+  top: 28.85rem;
+}
+.mobile .offices__metro-img-station._novye-cheremushki {
+  left: 10.35rem;
+  top: 27.95rem;
+}
+.mobile .offices__metro-img-station._profsoyuznaya {
+  left: 10.35rem;
+  top: 27.1rem;
+}
+.mobile .offices__metro-img-station._akademicheskaya {
+  left: 10.35rem;
+  top: 26.25rem;
+}
+.mobile .offices__metro-img-station._leninskiy-pr-t {
+  left: 10.35rem;
+  top: 24rem;
+}
+.mobile .offices__metro-img-station._79 {
+  left: 11.45rem;
+  top: 22.4rem;
+}
+.mobile .offices__metro-img-station._80 {
+  left: 14.6rem;
+  top: 22.3rem;
+}
+.mobile .offices__metro-img-station._tulskaya {
+  left: 14.7rem;
+  top: 23.8rem;
+}
+.mobile .offices__metro-img-station._nagatinskaya {
+  left: 14.7rem;
+  top: 27.1rem;
+}
+.mobile .offices__metro-img-station._83 {
+  left: 14.7rem;
+  top: 27.85rem;
+}
+.mobile .offices__metro-img-station._84 {
+  left: 14.7rem;
+  top: 28.8rem;
+}
+.mobile .offices__metro-img-station._sevastopolskaya {
+  left: 14.7rem;
+  top: 30.65rem;
+}
+.mobile .offices__metro-img-station._chertanovskaya {
+  left: 14.7rem;
+  top: 31.4rem;
+}
+.mobile .offices__metro-img-station._yuzhnaya {
+  left: 14.7rem;
+  top: 32.05rem;
+}
+.mobile .offices__metro-img-station._prazhskaya {
+  left: 14.7rem;
+  top: 32.75rem;
+}
+.mobile .offices__metro-img-station._89 {
+  left: 14.7rem;
+  top: 33.5rem;
+  width: 4rem;
+}
+.mobile .offices__metro-img-station._90 {
+  left: 14.7rem;
+  top: 34.15rem;
+}
+.mobile .offices__metro-img-station._91 {
+  left: 14.7rem;
+  top: 35.05rem;
+}
+.mobile .offices__metro-img-station._domodedovskaya {
+  left: 19.15rem;
+  top: 33.45rem;
+}
+.mobile .offices__metro-img-station._orekhovo {
+  left: 19.15rem;
+  top: 32.35rem;
+}
+.mobile .offices__metro-img-station._tsaritsyno {
+  left: 19.15rem;
+  top: 31.3rem;
+}
+.mobile .offices__metro-img-station._kantemirovskaya {
+  left: 19.15rem;
+  top: 30.2rem;
+}
+.mobile .offices__metro-img-station._kashirskaya {
+  left: 19.15rem;
+  top: 29.15rem;
+}
+.mobile .offices__metro-img-station._kolomenskaya {
+  left: 19.15rem;
+  top: 28.05rem;
+}
+.mobile .offices__metro-img-station._98 {
+  left: 19.15rem;
+  top: 27.05rem;
+}
+.mobile .offices__metro-img-station._avtozavodskaya {
+  left: 19.15rem;
+  top: 25.15rem;
+}
+.mobile .offices__metro-img-station._paveletskaya {
+  left: 19.15rem;
+  top: 21.5rem;
+}
+.mobile .offices__metro-img-station._novokuznetskaya {
+  left: 19.15rem;
+  top: 18.35rem;
+}
+.mobile .offices__metro-img-station._krestyanskaya-zastava {
+  left: 22.2rem;
+  top: 20.05rem;
+}
+.mobile .offices__metro-img-station._dubrovka {
+  left: 21.35rem;
+  top: 23.4rem;
+}
+.mobile .offices__metro-img-station._104 {
+  left: 23.55rem;
+  top: 25.25rem;
+}
+.mobile .offices__metro-img-station._pechatniki {
+  left: 23.55rem;
+  top: 26.35rem;
+}
+.mobile .offices__metro-img-station._106 {
+  left: 23.55rem;
+  top: 27.45rem;
+}
+.mobile .offices__metro-img-station._lyublino {
+  left: 23.55rem;
+  top: 28.55rem;
+}
+.mobile .offices__metro-img-station._bratislavskaya {
+  left: 23.55rem;
+  top: 29.65rem;
+}
+.mobile .offices__metro-img-station._marino {
+  left: 23.55rem;
+  top: 30.7rem;
+}
+.mobile .offices__metro-img-station._110 {
+  left: 23.55rem;
+  top: 31.85rem;
+}
+.mobile .offices__metro-img-station._111 {
+  left: 23.55rem;
+  top: 32.9rem;
+}
+.mobile .offices__metro-img-station._112 {
+  left: 23.55rem;
+  top: 34.05rem;
+}
+.mobile .offices__metro-img-station._krasnogvardeyskaya {
+  left: 20.05rem;
+  top: 35.05rem;
+  width: 3.5rem;
+}
+.mobile .offices__metro-img-station._114 {
+  left: 25.3rem;
+  top: 35.05rem;
+}
+.mobile .offices__metro-img-station._115 {
+  left: 27.9rem;
+  top: 30.25rem;
+}
+.mobile .offices__metro-img-station._116 {
+  left: 27.9rem;
+  top: 28.9rem;
+}
+.mobile .offices__metro-img-station._117 {
+  left: 27.9rem;
+  top: 27.4rem;
+}
+.mobile .offices__metro-img-station._vykhino {
+  left: 27.9rem;
+  top: 25.9rem;
+}
+.mobile .offices__metro-img-station._119 {
+  left: 27.9rem;
+  top: 24.4rem;
+}
+.mobile .offices__metro-img-station._kuzminki {
+  left: 27.9rem;
+  top: 22.9rem;
+}
+.mobile .offices__metro-img-station._121 {
+  left: 27.25rem;
+  top: 21.55rem;
+}
+.mobile .offices__metro-img-station._volgogradskiy-pr-t {
+  left: 26.05rem;
+  top: 20.2rem;
+  width: 4.5rem;
+}
+.mobile .offices__metro-img-station._proletarskaya {
+  left: 25.15rem;
+  top: 19.5rem;
+}
+.mobile .offices__metro-img-station._marksistskaya {
+  left: 22.35rem;
+  top: 18.45rem;
+}
+.mobile .offices__metro-img-station._taganskaya {
+  left: 20.65rem;
+  top: 17.3rem;
+}
+.mobile .offices__metro-img-station._rimskaya {
+  left: 23.3rem;
+  top: 15.55rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._ploshchad-ilicha {
+  left: 25.35rem;
+  top: 16.1rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._aviamotornaya {
+  left: 26.35rem;
+  top: 15.1rem;
+}
+.mobile .offices__metro-img-station._shosse-entuziastov {
+  left: 26.5rem;
+  top: 13.85rem;
+  width: 3.5rem;
+}
+.mobile .offices__metro-img-station._perovo {
+  left: 28.5rem;
+  top: 13.1rem;
+}
+.mobile .offices__metro-img-station._novogireevo {
+  left: 29.1rem;
+  top: 12.55rem;
+  height: 0.5rem;
+}
+.mobile .offices__metro-img-station._132 {
+  left: 29.7rem;
+  top: 11.85rem;
+}
+.mobile .offices__metro-img-station._shchelkovskaya {
+  left: 27.9rem;
+  top: 5.05rem;
+}
+.mobile .offices__metro-img-station._pervomayskaya {
+  left: 27.9rem;
+  top: 6.55rem;
+}
+.mobile .offices__metro-img-station._izmaylovskaya {
+  left: 27.9rem;
+  top: 8.05rem;
+}
+.mobile .offices__metro-img-station._partizanskaya {
+  left: 27.2rem;
+  top: 9.55rem;
+}
+.mobile .offices__metro-img-station._semenovskaya {
+  left: 25.2rem;
+  top: 11.55rem;
+}
+.mobile .offices__metro-img-station._elektrozavodskaya {
+  left: 24.7rem;
+  top: 12.35rem;
+  height: 0.5rem;
+}
+.mobile .offices__metro-img-station._baumanskaya {
+  left: 24.05rem;
+  top: 12.85rem;
+}
+.mobile .offices__metro-img-station._kurskaya {
+  left: 23rem;
+  top: 13.45rem;
+}
+.mobile .offices__metro-img-station._chkalovskaya {
+  left: 19.9rem;
+  top: 13.45rem;
+  width: 2.25rem;
+}
+.mobile .offices__metro-img-station._chistye-prudy {
+  left: 19.9rem;
+  top: 12.35rem;
+}
+.mobile .offices__metro-img-station._krasnye-vorota {
+  left: 20.65rem;
+  top: 11.6rem;
+}
+.mobile .offices__metro-img-station._144 {
+  left: 21.7rem;
+  top: 10.6rem;
+}
+.mobile .offices__metro-img-station._145 {
+  left: 22.6rem;
+  top: 9.7rem;
+}
+.mobile .offices__metro-img-station._146 {
+  left: 23.25rem;
+  top: 9.05rem;
+}
+.mobile .offices__metro-img-station._147 {
+  left: 23.95rem;
+  top: 8.35rem;
+}
+.mobile .offices__metro-img-station._ulitsa-podbelskogo {
+  left: 23.55rem;
+  top: 5.75rem;
+  width: 4rem;
+}
+.mobile .offices__metro-img-station._cherkizovskaya {
+  left: 21.8rem;
+  top: 7.35rem;
+}
+.mobile .offices__metro-img-station._vdnkh {
+  left: 20.45rem;
+  top: 5.95rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._151 {
+  left: 20.45rem;
+  top: 6.6rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._rizhskaya {
+  left: 20.1rem;
+  top: 7.5rem;
+  width: 1.5rem;
+}
+.mobile .offices__metro-img-station._prospekt-mira {
+  left: 19.05rem;
+  top: 8.55rem;
+}
+.mobile .offices__metro-img-station._sukharevskaya {
+  left: 18.35rem;
+  top: 10.15rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._sretenskiy-bulvar {
+  left: 18.35rem;
+  top: 11rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._novoslobodskaya {
+  left: 14.25rem;
+  top: 8.85rem;
+}
+.mobile .offices__metro-img-station._mendeleevskaya {
+  left: 13.45rem;
+  top: 9.6rem;
+}
+.mobile .offices__metro-img-station._turgenevskaya {
+  left: 16.5rem;
+  top: 12.2rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._kuznetskiy-most {
+  left: 15.75rem;
+  top: 12.9rem;
+}
+.mobile .offices__metro-img-station._pushkinskaya {
+  left: 13.2rem;
+  top: 12.9rem;
+  width: 2.25rem;
+}
+.mobile .offices__metro-img-station._barrikadnaya {
+  left: 10.1rem;
+  top: 12.9rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._ulitsa-1905-goda {
+  left: 6.85rem;
+  top: 13.4rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._163 {
+  left: 6.3rem;
+  top: 12.55rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._krasnopresnenskaya {
+  left: 9.9rem;
+  top: 13.9rem;
+  height: 0.5rem;
+}
+.mobile .offices__metro-img-station._tverskaya {
+  left: 12.3rem;
+  top: 14.3rem;
+  height: 0.5rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._chekhovskaya {
+  left: 14.8rem;
+  top: 13.9rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._lubyanka {
+  left: 17.8rem;
+  top: 14.25rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._kitay-gorod {
+  left: 18.1rem;
+  top: 15.2rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._okhotnyy-ryad {
+  left: 14.55rem;
+  top: 15.25rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._arbatskaya {
+  left: 12.6rem;
+  top: 15.35rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._teatralnaya {
+  left: 16.7rem;
+  top: 15.75rem;
+  width: 2.25rem;
+}
+.mobile .offices__metro-img-station._172 {
+  left: 7.75rem;
+  top: 15.95rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._sportivnaya {
+  left: 7.2rem;
+  top: 20.85rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._oktyabrskaya {
+  left: 10rem;
+  top: 20.75rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._frunzenskaya {
+  left: 8.45rem;
+  top: 19.85rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._park-kultury {
+  left: 8.85rem;
+  top: 18.95rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._177 {
+  left: 11.15rem;
+  top: 18.85rem;
+  width: 3rem;
+}
+.mobile .offices__metro-img-station._178 {
+  left: 10.75rem;
+  top: 17.05rem;
+  width: 2.5rem;
+}
+.mobile .offices__metro-img-station._179 {
+  left: 14.05rem;
+  top: 17.05rem;
+}
+.mobile .offices__metro-img-station._180 {
+  left: 16.9rem;
+  top: 16.75rem;
+}
+.mobile .offices__metro-img-station._181 {
+  left: 14.3rem;
+  top: 18.05rem;
+  width: 4rem;
+}
+.mobile .offices__metro-img-station._182 {
+  left: 11.15rem;
+  top: 18.85rem;
+}
+.mobile .offices__metro-img-station._183 {
+  left: 15.85rem;
+  top: 19.2rem;
+}
+.mobile .offices__metro-img-station._polyanka {
+  left: 14.7rem;
+  top: 20.45rem;
+  width: 2rem;
+}
+.mobile .offices__metro-img-station._dobryninskaya {
+  left: 15.05rem;
+  top: 21.15rem;
+}
+.mobile .offices__metro-img-station._varshavskaya {
+  left: 15.7rem;
+  top: 29.7rem;
 }
 .deposit__text,
 .deposit .note-text {

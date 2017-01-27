@@ -2,17 +2,31 @@
 	position: absolute;
 	width: 6rem;
 	height: 1.5rem;
-	border: 1px solid black;
-	font-size: 1.5rem;
-	color: red;
-	font-weight: bold;
-	line-height: 1rem;
-	display: none;
+	cursor: pointer;
+	&:before{
+		content: '';
+		position: absolute;
+		left: -2rem;
+		top: 50%;
+		margin-top: -1rem;
+		width: 2rem;
+		height: 2rem;
+		background-color: #b31b2c;
+		border-radius: 50%;
+		border: 6/@rem solid white;
+		box-shadow: 0 2px 10px rgba(23, 24, 26, 0.3);
+		display: none;
+	}
+	&._active{
+		&:before{
+			display: block;
+		}
+	}
 	&._1{
 		left: 2.8rem;
 		top: 10.5rem;
 	}
-	&._2{
+	&._mitino{
 		left: 2.8rem;
 		top: 12.5rem;
 	}
@@ -24,19 +38,19 @@
 		left: 2.8rem;
 		top: 16.1rem;
 	}
-	&._5{
+	&._strogino{
 		left: 2.8rem;
 		top: 17.8rem;
 	}
-	&._6{
+	&._krylatskoe{
 		left: 2.8rem;
 		top: 19.6rem;
 	}
-	&._7{
+	&._molodezhnaya{
 		left: 2.8rem;
 		top: 21.3rem;
 	}
-	&._8{
+	&._kuntsevskaya{
 		left: 2.8rem;
 		top: 24.4rem;
 	}
@@ -48,11 +62,11 @@
 		left: 3.5rem;
 		top: 28rem;
 	}
-	&._11{
+	&._bagrationovskaya{
 		left: 3.5rem;
 		top: 34.3rem;
 	}
-	&._12{
+	&._fili{
 		left: 3.5rem;
 		top: 35.7rem;
 		width: 2.3rem;
@@ -61,12 +75,12 @@
 		left: 5.7rem;
 		top: 36.6rem;
 	}
-	&._14{
+	&._slavyanskiy-bulvar{
 		left: 0.5rem;
 		top: 41rem;
 		width: 5rem;
 	}
-	&._15{
+	&._park-pobedy{
 		left: 6.3rem;
 		top: 41rem;
 		width: 5rem;
@@ -79,33 +93,33 @@
 		left: 10.1rem;
 		top: 33.3rem;
 	}
-	&._18{
+	&._mezhdunarodnaya{
 		left: 4.4rem;
 		top: 30.1rem;
 	}
-	&._19{
+	&._vystavochnaya{
 		left: 11.3rem;
 		top: 30.1rem;
 	}
-	&._20{
+	&._smolenskaya{
 		left: 20.4rem;
 		top: 30.1rem;
 		width: 4.5rem;
 	}
-	&._21{
+	&._planernaya{
 		left: 10.9rem;
 		top: 3.6rem;
 	}
-	&._22{
+	&._polezhaevskaya{
 		left: 12rem;
 		top: 21.2rem;
 		width: 4.8rem;
 	}
-	&._23{
+	&._skhodnenskaya{
 		left: 10.9rem;
 		top: 5.3rem;
 	}
-	&._24{
+	&._tushinskaya{
 		left: 10.9rem;
 		top: 6.9rem;
 	}
@@ -113,71 +127,71 @@
 		left: 10.9rem;
 		top: 8.6rem;
 	}
-	&._26{
+	&._shchukinskaya{
 		left: 10.9rem;
 		top: 10.3rem;
 	}
-	&._27{
+	&._oktyabrskoe-pole{
 		left: 10.7rem;
 		top: 16.6rem;
 	}
-	&._28{
+	&._rechnoy-vokzal{
 		left: 18.7rem;
 		top: 3.6rem;
 	}
-	&._29{
+	&._vodnyy-stadion{
 		left: 18.7rem;
 		top: 5.5rem;
 	}
-	&._30{
+	&._voykovskaya{
 		left: 18.7rem;
 		top: 10.6rem;
 	}
-	&._31{
+	&._sokol{
 		left: 18.7rem;
 		top: 13rem;
 	}
-	&._32{
+	&._aeroport{
 		left: 18.7rem;
 		top: 14.5rem;
 	}
-	&._33{
+	&._dinamo{
 		left: 18.7rem;
 		top: 16rem;
 	}
-	&._34{
+	&._altufevo{
 		left: 30.1rem;
 		top: 0.3rem;
 	}
-	&._35{
+	&._bibirevo{
 		left: 30.1rem;
 		top: 2.1rem;
 	}
-	&._36{
+	&._otradnoe{
 		left: 30.1rem;
 		top: 3.8rem;
 	}
-	&._37{
+	&._vladykino{
 		left: 30.1rem;
 		top: 6.2rem;
 	}
-	&._38{
+	&._medvedkovo{
 		left: 40.9rem;
 		top: 0.4rem;
 	}
-	&._39{
+	&._babushkinskaya{
 		left: 40.9rem;
 		top: 2.3rem;
 	}
-	&._40{
+	&._sviblovo{
 		left: 40.9rem;
 		top: 4.3rem;
 	}
-	&._41{
+	&._botanicheskiy-sad{
 		left: 40.9rem;
 		top: 6.2rem;
 	}
-	&._42{
+	&._petrovsko-razumovskaya{
 		left: 29rem;
 		top: 8.8rem;
 		width: 9rem;
@@ -186,15 +200,15 @@
 		left: 31.8rem;
 		top: 10.1rem;
 	}
-	&._44{
+	&._timiryazevskaya{
 		left: 26.3rem;
 		top: 11.8rem;
 	}
-	&._45{
+	&._dmitrovskaya{
 		left: 26.3rem;
 		top: 13.8rem;
 	}
-	&._46{
+	&._savelovskaya{
 		left: 26.3rem;
 		top: 15.2rem;
 	}
@@ -202,48 +216,48 @@
 		left: 33.1rem;
 		top: 12.9rem;
 	}
-	&._48{
+	&._marina-roshcha{
 		left: 33.1rem;
 		top: 14.2rem;
 	}
-	&._49{
+	&._dostoevskaya{
 		left: 33.1rem;
 		top: 15.6rem;
 		width: 5rem;
 	}
-	&._50{
+	&._trubnaya{
 		left: 32.7rem;
 		top: 21.1rem;
 		width: 3.5rem;
 	}
-	&._51{
+	&._belorusskaya{
 		left: 16.9rem;
 		top: 21.8rem;
 	}
-	&._52{
+	&._mayakovskaya{
 		left: 23.8rem;
 		top: 22.6rem;
 		width: 4.4rem;
 
 	}
-	&._53{
+	&._tsvetnoy-bulvar{
 		left: 28.3rem;
 		top: 23.1rem;
 		width: 4.4rem;
 	}
-	&._54{
+	&._vorobevy-gory{
 		left: 12.8rem;
 		top: 45.8rem;
 	}
-	&._55{
+	&._universitet{
 		left: 12.8rem;
 		top: 48.1rem;
 	}
-	&._56{
+	&._pr-t-vernadskogo{
 		left: 12.8rem;
 		top: 50.8rem;
 	}
-	&._57{
+	&._yugo-zapadnaya{
 		left: 12.8rem;
 		top: 53.4rem;
 	}
@@ -259,12 +273,12 @@
 		left: 12.8rem;
 		top: 60.5rem;
 	}
-	&._61{
+	&._buninskaya-alleya{
 		left: 11.4rem;
 		top: 72.5rem;
 		width: 4rem;
 	}
-	&._62{
+	&._ulitsa-gorchakova{
 		left: 15.8rem;
 		top: 72.5rem;
 		width: 4rem;
@@ -276,11 +290,11 @@
 		width: 4rem;
 		height: 2rem;
 	}
-	&._64{
+	&._ulitsa-skobelevskaya{
 		left: 24.5rem;
 		top: 72.5rem;
 	}
-	&._65{
+	&._ulitsa-starokachalovskaya{
 		left: 19.2rem;
 		top: 69.7rem;
 		width: 8.5rem;
@@ -297,46 +311,46 @@
 		left: 21.5rem;
 		top: 66.2rem;
 	}
-	&._69{
+	&._yasenevo{
 		left: 20.7rem;
 		top: 64.4rem;
 	}
-	&._70{
+	&._teplyy-stan{
 		left: 20.7rem;
 		top: 62.7rem;
 	}
-	&._71{
+	&._konkovo{
 		left: 20.7rem;
 		top: 61rem;
 		width: 3.5rem;
 	}
-	&._72{
+	&._belyaevo{
 		left: 20.7rem;
 		top: 59.3rem;
 		width: 3.5rem;
 	}
-	&._73{
+	&._kakhovskaya{
 		left: 24.3rem;
 		top: 60.3rem;
 		width: 3.5rem;
 	}
-	&._74{
+	&._kaluzhskaya{
 		left: 20.7rem;
 		top: 57.7rem;
 	}
-	&._75{
+	&._novye-cheremushki{
 		left: 20.7rem;
 		top: 55.9rem;
 	}
-	&._76{
+	&._profsoyuznaya{
 		left: 20.7rem;
 		top: 54.2rem;
 	}
-	&._77{
+	&._akademicheskaya{
 		left: 20.7rem;
 		top: 52.5rem;
 	}
-	&._78{
+	&._leninskiy-pr-t{
 		left: 20.7rem;
 		top: 48rem;
 	}
@@ -348,11 +362,11 @@
 		left: 29.2rem;
 		top: 44.6rem;
 	}
-	&._81{
+	&._tulskaya{
 		left: 29.4rem;
 		top: 47.6rem;
 	}
-	&._82{
+	&._nagatinskaya{
 		left: 29.4rem;
 		top: 54.2rem;
 	}
@@ -364,19 +378,19 @@
 		left: 29.4rem;
 		top: 57.6rem;
 	}
-	&._85{
+	&._sevastopolskaya{
 		left: 29.4rem;
 		top: 61.3rem;
 	}
-	&._86{
+	&._chertanovskaya{
 		left: 29.4rem;
 		top: 62.8rem;
 	}
-	&._87{
+	&._yuzhnaya{
 		left: 29.4rem;
 		top: 64.1rem;
 	}
-	&._88{
+	&._prazhskaya{
 		left: 29.4rem;
 		top: 65.5rem;
 	}
@@ -393,27 +407,27 @@
 		left: 29.4rem;
 		top: 70.1rem;
 	}
-	&._92{
+	&._domodedovskaya{
 		left: 38.3rem;
 		top: 66.9rem;
 	}
-	&._93{
+	&._orekhovo{
 		left: 38.3rem;
 		top: 64.7rem;
 	}
-	&._94{
+	&._tsaritsyno{
 		left: 38.3rem;
 		top: 62.6rem;
 	}
-	&._95{
+	&._kantemirovskaya{
 		left: 38.3rem;
 		top: 60.4rem;
 	}
-	&._96{
+	&._kashirskaya{
 		left: 38.3rem;
 		top: 58.3rem;
 	}
-	&._97{
+	&._kolomenskaya{
 		left: 38.3rem;
 		top: 56.1rem;
 	}
@@ -421,23 +435,23 @@
 		left: 38.3rem;
 		top: 54.1rem;
 	}
-	&._99{
+	&._avtozavodskaya{
 		left: 38.3rem;
 		top: 50.3rem;
 	}
-	&._100{
+	&._paveletskaya{
 		left: 38.3rem;
 		top: 43rem;
 	}
-	&._101{
+	&._novokuznetskaya{
 		left: 38.3rem;
 		top: 36.7rem;
 	}
-	&._102{
+	&._krestyanskaya-zastava{
 		left: 44.4rem;
 		top: 40.1rem;
 	}
-	&._103{
+	&._dubrovka{
 		left: 42.7rem;
 		top: 46.8rem;
 	}
@@ -445,7 +459,7 @@
 		left: 47.1rem;
 		top: 50.5rem;
 	}
-	&._105{
+	&._pechatniki{
 		left: 47.1rem;
 		top: 52.7rem;
 	}
@@ -453,15 +467,15 @@
 		left: 47.1rem;
 		top: 54.9rem;
 	}
-	&._107{
+	&._lyublino{
 		left: 47.1rem;
 		top: 57.1rem;
 	}
-	&._108{
+	&._bratislavskaya{
 		left: 47.1rem;
 		top: 59.3rem;
 	}
-	&._109{
+	&._marino{
 		left: 47.1rem;
 		top: 61.4rem;
 	}
@@ -477,7 +491,7 @@
 		left: 47.1rem;
 		top: 68.1rem;
 	}
-	&._113{
+	&._krasnogvardeyskaya{
 		left: 40.1rem;
 		top: 70.1rem;
 		width: 7rem;
@@ -499,7 +513,7 @@
 		top: 54.8rem;
 
 	}
-	&._118{
+	&._vykhino{
 		left: 55.8rem;
 		top: 51.8rem;
 
@@ -508,7 +522,7 @@
 		left: 55.8rem;
 		top: 48.8rem;
 	}
-	&._120{
+	&._kuzminki{
 		left: 55.8rem;
 		top: 45.8rem;
 	}
@@ -516,47 +530,47 @@
 		left: 54.5rem;
 		top: 43.1rem;
 	}
-	&._122{
+	&._volgogradskiy-pr-t{
 		left: 52.1rem;
 		top: 40.4rem;
 		width: 9rem;
 	}
-	&._123{
+	&._proletarskaya{
 		left: 50.3rem;
 		top: 39rem;
 	}
-	&._124{
+	&._marksistskaya{
 		left: 44.7rem;
 		top: 36.9rem;
 	}
-	&._125{
+	&._taganskaya{
 		left: 41.3rem;
 		top: 34.6rem;
 	}
-	&._126{
+	&._rimskaya{
 		left: 46.6rem;
 		top: 31.1rem;
 		width: 4rem
 	}
-	&._127{
+	&._ploshchad-ilicha{
 		left: 50.7rem;
 		top: 32.2rem;
 		width: 4rem;
 	}
-	&._128{
+	&._aviamotornaya{
 		left: 52.7rem;
 		top: 30.2rem;
 	}
-	&._129{
+	&._shosse-entuziastov{
 		left: 53rem;
 		top: 27.7rem;
 		width: 7rem;
 	}
-	&._130{
+	&._perovo{
 		left: 57rem;
 		top: 26.2rem;
 	}
-	&._131{
+	&._novogireevo{
 		left: 58.2rem;
 		top: 25.1rem;
 		height: 1rem;
@@ -565,51 +579,51 @@
 		left: 59.4rem;
 		top: 23.7rem;
 	}
-	&._133{
+	&._shchelkovskaya{
 		left: 55.8rem;
 		top: 10.1rem;
 	}
-	&._134{
+	&._pervomayskaya{
 		left: 55.8rem;
 		top: 13.1rem;
 
 	}
-	&._135{
+	&._izmaylovskaya{
 		left: 55.8rem;
 		top: 16.1rem;
 
 	}
-	&._136{
+	&._partizanskaya{
 		left: 54.4rem;
 		top: 19.1rem;
 	}
-	&._137{
+	&._semenovskaya{
 		left: 50.4rem;
 		top: 23.1rem;
 	}
-	&._138{
+	&._elektrozavodskaya{
 		left: 49.4rem;
 		top: 24.7rem;
 		height: 1rem;
 	}
-	&._139{
+	&._baumanskaya{
 		left: 48.1rem;
 		top: 25.7rem;
 	}
-	&._140{
+	&._kurskaya{
 		left: 46rem;
 		top: 26.9rem;
 	}
-	&._141{
+	&._chkalovskaya{
 		left: 39.8rem;
 		top: 26.9rem;
 		width: 4.5rem;
 	}
-	&._142{
+	&._chistye-prudy{
 		left: 39.8rem;
 		top: 24.7rem;
 	}
-	&._143{
+	&._krasnye-vorota{
 		left: 41.3rem;
 		top: 23.2rem;
 	}
@@ -630,16 +644,16 @@
 		left: 47.9rem;
 		top: 16.7rem;
 	}
-	&._148{
+	&._ulitsa-podbelskogo{
 		left: 47.1rem;
 		top: 11.5rem;
 		width: 8rem;
 	}
-	&._149{
+	&._cherkizovskaya{
 		left: 43.6rem;
 		top: 14.7rem;
 	}
-	&._150{
+	&._vdnkh{
 		left: 40.9rem;
 		top: 11.9rem;
 		width: 5rem;
@@ -649,54 +663,54 @@
 		top: 13.2rem;
 		width: 5rem;
 	}
-	&._152{
+	&._rizhskaya{
 		left: 40.2rem;
 		top: 15rem;
 		width: 3rem;
 	}
-	&._153{
+	&._prospekt-mira{
 		left: 38.1rem;
 		top: 17.1rem;
 	}
-	&._154{
+	&._sukharevskaya{
 		left: 36.7rem;
 		top: 20.3rem;
 		width: 5rem;
 	}
-	&._155{
+	&._sretenskiy-bulvar{
 		left: 36.7rem;
 		top: 22rem;
 		width: 4rem;
 	}
-	&._156{
+	&._novoslobodskaya{
 		left: 28.5rem;
 		top: 17.7rem;
 	}
-	&._157{
+	&._mendeleevskaya{
 		left: 26.9rem;
 		top: 19.2rem;
 	}
-	&._158{
+	&._turgenevskaya{
 		left: 33rem;
 		top: 24.4rem;
 		width: 5rem;
 	}
-	&._159{
+	&._kuznetskiy-most{
 		left: 31.5rem;
 		top: 25.8rem;
 	}
-	&._160{
+	&._pushkinskaya{
 		left: 26.4rem;
 		top: 25.8rem;
 		width: 4.5rem;
 	}
-	&._161{
+	&._barrikadnaya{
 		left: 20.2rem;
 		top: 25.8rem;
 		width: 5rem;
 
 	}
-	&._162{
+	&._ulitsa-1905-goda{
 		left: 13.7rem;
 		top: 26.8rem;
 		width: 5rem;
@@ -706,44 +720,44 @@
 		top: 25.1rem;
 		width: 5rem;
 	}
-	&._164{
+	&._krasnopresnenskaya{
 		left: 19.8rem;
 		top: 27.8rem;
 		height: 1rem;
 	}
-	&._165{
+	&._tverskaya{
 		left: 24.6rem;
 		top: 28.6rem;
 		height: 1rem;
 		width: 4rem;
 	}
-	&._166{
+	&._chekhovskaya{
 		left: 29.6rem;
 		top: 27.8rem;
 		width: 4rem;
 	}
-	&._167{
+	&._lubyanka{
 		left: 35.6rem;
 		top: 28.5rem;
 		width: 4rem;
 
 	}
-	&._168{
+	&._kitay-gorod{
 		left: 36.2rem;
 		top: 30.4rem;
 		width: 5rem;
 	}
-	&._169{
+	&._okhotnyy-ryad{
 		left: 29.1rem;
 		top: 30.5rem;
 		width: 4rem;
 	}
-	&._170{
+	&._arbatskaya{
 		left: 25.2rem;
 		top: 30.7rem;
 		width: 4rem;
 	}
-	&._171{
+	&._teatralnaya{
 		left: 33.4rem;
 		top: 31.5rem;
 		width: 4.5rem;
@@ -753,23 +767,23 @@
 		top: 31.9rem;
 		width: 4rem;
 	}
-	&._173{
+	&._sportivnaya{
 		left: 14.4rem;
 		top: 41.7rem;
 		width: 5rem;
 
 	}
-	&._174{
+	&._oktyabrskaya{
 		left: 20rem;
 		top: 41.5rem;
 		width: 5rem;
 	}
-	&._175{
+	&._frunzenskaya{
 		left: 16.9rem;
 		top: 39.7rem;
 		width: 5rem;
 	}
-	&._176{
+	&._park-kultury{
 		left: 17.7rem;
 		top: 37.9rem;
 		width: 4rem;
@@ -806,56 +820,843 @@
 		left: 31.7rem;
 		top: 38.4rem;
 	}
-	&._184{
+	&._polyanka{
 		left: 29.4rem;
 		top: 40.9rem;
 		width: 4rem;
 	}
-	&._185{
+	&._dobryninskaya{
 		left: 30.1rem;
 		top: 42.3rem;
 	}
-	&._186{
+	&._varshavskaya{
 		left: 31.4rem;
 		top: 59.4rem;
 	}
-	&._187{
+}
+.mobile{
+	.offices__metro-img-station{
+		position: absolute;
+		width: 3rem;
+		height: 1.5/2rem;
+		cursor: pointer;
+		&:before{
+			left: -1rem;
+			margin-top: -0.5rem;
+			width: 1rem;
+			height: 1rem;
+			border: 3/@rem solid white;
+		}
+		&._1{
+			left: 2.8/2rem;
+			top: 10.5/2rem;
+		}
+		&._mitino{
+			left: 2.8/2rem;
+			top: 12.5/2rem;
+		}
+		&._3{
+			left: 2.8/2rem;
+			top: 14.3/2rem;
+		}
+		&._4{
+			left: 2.8/2rem;
+			top: 16.1/2rem;
+		}
+		&._strogino{
+			left: 2.8/2rem;
+			top: 17.8/2rem;
+		}
+		&._krylatskoe{
+			left: 2.8/2rem;
+			top: 19.6/2rem;
+		}
+		&._molodezhnaya{
+			left: 2.8/2rem;
+			top: 21.3/2rem;
+		}
+		&._kuntsevskaya{
+			left: 2.8/2rem;
+			top: 24.4/2rem;
+		}
+		&._9{
+			left: 3.5/2rem;
+			top: 26.3/2rem;
+		}
+		&._10{
+			left: 3.5/2rem;
+			top: 28/2rem;
+		}
+		&._bagrationovskaya{
+			left: 3.5/2rem;
+			top: 34.3/2rem;
+		}
+		&._fili{
+			left: 3.5/2rem;
+			top: 35.7/2rem;
+			width: 2.3/2rem;
+		}
+		&._13{
+			left: 5.7/2rem;
+			top: 36.6/2rem;
+		}
+		&._slavyanskiy-bulvar{
+			left: 0.5/2rem;
+			top: 41/2rem;
+			width: 5/2rem;
+		}
+		&._park-pobedy{
+			left: 6.3/2rem;
+			top: 41/2rem;
+			width: 5/2rem;
+		}
+		&._16{
+			left: 12.1/2rem;
+			top: 36.3/2rem;
+		}
+		&._17{
+			left: 10.1/2rem;
+			top: 33.3/2rem;
+		}
+		&._mezhdunarodnaya{
+			left: 4.4/2rem;
+			top: 30.1/2rem;
+		}
+		&._vystavochnaya{
+			left: 11.3/2rem;
+			top: 30.1/2rem;
+		}
+		&._smolenskaya{
+			left: 20.4/2rem;
+			top: 30.1/2rem;
+			width: 4.5/2rem;
+		}
+		&._planernaya{
+			left: 10.9/2rem;
+			top: 3.6/2rem;
+		}
+		&._polezhaevskaya{
+			left: 12/2rem;
+			top: 21.2/2rem;
+			width: 4.8/2rem;
+		}
+		&._skhodnenskaya{
+			left: 10.9/2rem;
+			top: 5.3/2rem;
+		}
+		&._tushinskaya{
+			left: 10.9/2rem;
+			top: 6.9/2rem;
+		}
+		&._25{
+			left: 10.9/2rem;
+			top: 8.6/2rem;
+		}
+		&._shchukinskaya{
+			left: 10.9/2rem;
+			top: 10.3/2rem;
+		}
+		&._oktyabrskoe-pole{
+			left: 10.7/2rem;
+			top: 16.6/2rem;
+		}
+		&._rechnoy-vokzal{
+			left: 18.7/2rem;
+			top: 3.6/2rem;
+		}
+		&._vodnyy-stadion{
+			left: 18.7/2rem;
+			top: 5.5/2rem;
+		}
+		&._voykovskaya{
+			left: 18.7/2rem;
+			top: 10.6/2rem;
+		}
+		&._sokol{
+			left: 18.7/2rem;
+			top: 13/2rem;
+		}
+		&._aeroport{
+			left: 18.7/2rem;
+			top: 14.5/2rem;
+		}
+		&._dinamo{
+			left: 18.7/2rem;
+			top: 16/2rem;
+		}
+		&._altufevo{
+			left: 30.1/2rem;
+			top: 0.3/2rem;
+		}
+		&._bibirevo{
+			left: 30.1/2rem;
+			top: 2.1/2rem;
+		}
+		&._otradnoe{
+			left: 30.1/2rem;
+			top: 3.8/2rem;
+		}
+		&._vladykino{
+			left: 30.1/2rem;
+			top: 6.2/2rem;
+		}
+		&._medvedkovo{
+			left: 40.9/2rem;
+			top: 0.4/2rem;
+		}
+		&._babushkinskaya{
+			left: 40.9/2rem;
+			top: 2.3/2rem;
+		}
+		&._sviblovo{
+			left: 40.9/2rem;
+			top: 4.3/2rem;
+		}
+		&._botanicheskiy-sad{
+			left: 40.9/2rem;
+			top: 6.2/2rem;
+		}
+		&._petrovsko-razumovskaya{
+			left: 29/2rem;
+			top: 8.8/2rem;
+			width: 9/2rem;
+		}
+		&._43{
+			left: 31.8/2rem;
+			top: 10.1/2rem;
+		}
+		&._timiryazevskaya{
+			left: 26.3/2rem;
+			top: 11.8/2rem;
+		}
+		&._dmitrovskaya{
+			left: 26.3/2rem;
+			top: 13.8/2rem;
+		}
+		&._savelovskaya{
+			left: 26.3/2rem;
+			top: 15.2/2rem;
+		}
+		&._47{
+			left: 33.1/2rem;
+			top: 12.9/2rem;
+		}
+		&._marina-roshcha{
+			left: 33.1/2rem;
+			top: 14.2/2rem;
+		}
+		&._dostoevskaya{
+			left: 33.1/2rem;
+			top: 15.6/2rem;
+			width: 5/2rem;
+		}
+		&._trubnaya{
+			left: 32.7/2rem;
+			top: 21.1/2rem;
+			width: 3.5/2rem;
+		}
+		&._belorusskaya{
+			left: 16.9/2rem;
+			top: 21.8/2rem;
+		}
+		&._mayakovskaya{
+			left: 23.8/2rem;
+			top: 22.6/2rem;
+			width: 4.4/2rem;
 
-	}
-	&._188{
+		}
+		&._tsvetnoy-bulvar{
+			left: 28.3/2rem;
+			top: 23.1/2rem;
+			width: 4.4/2rem;
+		}
+		&._vorobevy-gory{
+			left: 12.8/2rem;
+			top: 45.8/2rem;
+		}
+		&._universitet{
+			left: 12.8/2rem;
+			top: 48.1/2rem;
+		}
+		&._pr-t-vernadskogo{
+			left: 12.8/2rem;
+			top: 50.8/2rem;
+		}
+		&._yugo-zapadnaya{
+			left: 12.8/2rem;
+			top: 53.4/2rem;
+		}
+		&._58{
+			left: 12.8/2rem;
+			top: 55.8/2rem;
+		}
+		&._59{
+			left: 12.8/2rem;
+			top: 58.2/2rem;
+		}
+		&._60{
+			left: 12.8/2rem;
+			top: 60.5/2rem;
+		}
+		&._buninskaya-alleya{
+			left: 11.4/2rem;
+			top: 72.5/2rem;
+			width: 4/2rem;
+		}
+		&._ulitsa-gorchakova{
+			left: 15.8/2rem;
+			top: 72.5/2rem;
+			width: 4/2rem;
 
-	}
-	&._189{
+		}
+		&._63{
+			left: 20.3/2rem;
+			top: 72.5/2rem;
+			width: 4/2rem;
+			height: 2/2rem;
+		}
+		&._ulitsa-skobelevskaya{
+			left: 24.5/2rem;
+			top: 72.5/2rem;
+		}
+		&._ulitsa-starokachalovskaya{
+			left: 19.2/2rem;
+			top: 69.7/2rem;
+			width: 8.5/2rem;
+		}
+		&._66{
+			left: 15.7/2rem;
+			top: 68/2rem;
+		}
+		&._67{
+			left: 22.1/2rem;
+			top: 68/2rem;
+		}
+		&._68{
+			left: 21.5/2rem;
+			top: 66.2/2rem;
+		}
+		&._yasenevo{
+			left: 20.7/2rem;
+			top: 64.4/2rem;
+		}
+		&._teplyy-stan{
+			left: 20.7/2rem;
+			top: 62.7/2rem;
+		}
+		&._konkovo{
+			left: 20.7/2rem;
+			top: 61/2rem;
+			width: 3.5/2rem;
+		}
+		&._belyaevo{
+			left: 20.7/2rem;
+			top: 59.3/2rem;
+			width: 3.5/2rem;
+		}
+		&._kakhovskaya{
+			left: 24.3/2rem;
+			top: 60.3/2rem;
+			width: 3.5/2rem;
+		}
+		&._kaluzhskaya{
+			left: 20.7/2rem;
+			top: 57.7/2rem;
+		}
+		&._novye-cheremushki{
+			left: 20.7/2rem;
+			top: 55.9/2rem;
+		}
+		&._profsoyuznaya{
+			left: 20.7/2rem;
+			top: 54.2/2rem;
+		}
+		&._akademicheskaya{
+			left: 20.7/2rem;
+			top: 52.5/2rem;
+		}
+		&._leninskiy-pr-t{
+			left: 20.7/2rem;
+			top: 48/2rem;
+		}
+		&._79{
+			left: 22.9/2rem;
+			top: 44.8/2rem;
+		}
+		&._80{
+			left: 29.2/2rem;
+			top: 44.6/2rem;
+		}
+		&._tulskaya{
+			left: 29.4/2rem;
+			top: 47.6/2rem;
+		}
+		&._nagatinskaya{
+			left: 29.4/2rem;
+			top: 54.2/2rem;
+		}
+		&._83{
+			left: 29.4/2rem;
+			top: 55.7/2rem;
+		}
+		&._84{
+			left: 29.4/2rem;
+			top: 57.6/2rem;
+		}
+		&._sevastopolskaya{
+			left: 29.4/2rem;
+			top: 61.3/2rem;
+		}
+		&._chertanovskaya{
+			left: 29.4/2rem;
+			top: 62.8/2rem;
+		}
+		&._yuzhnaya{
+			left: 29.4/2rem;
+			top: 64.1/2rem;
+		}
+		&._prazhskaya{
+			left: 29.4/2rem;
+			top: 65.5/2rem;
+		}
+		&._89{
+			left: 29.4/2rem;
+			top: 67/2rem;
+			width: 8/2rem;
+		}
+		&._90{
+			left: 29.4/2rem;
+			top: 68.3/2rem;
+		}
+		&._91{
+			left: 29.4/2rem;
+			top: 70.1/2rem;
+		}
+		&._domodedovskaya{
+			left: 38.3/2rem;
+			top: 66.9/2rem;
+		}
+		&._orekhovo{
+			left: 38.3/2rem;
+			top: 64.7/2rem;
+		}
+		&._tsaritsyno{
+			left: 38.3/2rem;
+			top: 62.6/2rem;
+		}
+		&._kantemirovskaya{
+			left: 38.3/2rem;
+			top: 60.4/2rem;
+		}
+		&._kashirskaya{
+			left: 38.3/2rem;
+			top: 58.3/2rem;
+		}
+		&._kolomenskaya{
+			left: 38.3/2rem;
+			top: 56.1/2rem;
+		}
+		&._98{
+			left: 38.3/2rem;
+			top: 54.1/2rem;
+		}
+		&._avtozavodskaya{
+			left: 38.3/2rem;
+			top: 50.3/2rem;
+		}
+		&._paveletskaya{
+			left: 38.3/2rem;
+			top: 43/2rem;
+		}
+		&._novokuznetskaya{
+			left: 38.3/2rem;
+			top: 36.7/2rem;
+		}
+		&._krestyanskaya-zastava{
+			left: 44.4/2rem;
+			top: 40.1/2rem;
+		}
+		&._dubrovka{
+			left: 42.7/2rem;
+			top: 46.8/2rem;
+		}
+		&._104{
+			left: 47.1/2rem;
+			top: 50.5/2rem;
+		}
+		&._pechatniki{
+			left: 47.1/2rem;
+			top: 52.7/2rem;
+		}
+		&._106{
+			left: 47.1/2rem;
+			top: 54.9/2rem;
+		}
+		&._lyublino{
+			left: 47.1/2rem;
+			top: 57.1/2rem;
+		}
+		&._bratislavskaya{
+			left: 47.1/2rem;
+			top: 59.3/2rem;
+		}
+		&._marino{
+			left: 47.1/2rem;
+			top: 61.4/2rem;
+		}
+		&._110{
+			left: 47.1/2rem;
+			top: 63.7/2rem;
+		}
+		&._111{
+			left: 47.1/2rem;
+			top: 65.8/2rem;
+		}
+		&._112{
+			left: 47.1/2rem;
+			top: 68.1/2rem;
+		}
+		&._krasnogvardeyskaya{
+			left: 40.1/2rem;
+			top: 70.1/2rem;
+			width: 7/2rem;
+		}
+		&._114{
+			left: 50.6/2rem;
+			top: 70.1/2rem;
+		}
+		&._115{
+			left: 55.8/2rem;
+			top: 60.5/2rem;
+		}
+		&._116{
+			left: 55.8/2rem;
+			top: 57.8/2rem;
+		}
+		&._117{
+			left: 55.8/2rem;
+			top: 54.8/2rem;
 
-	}
-	&._190{
+		}
+		&._vykhino{
+			left: 55.8/2rem;
+			top: 51.8/2rem;
 
-	}
-	&._191{
+		}
+		&._119{
+			left: 55.8/2rem;
+			top: 48.8/2rem;
+		}
+		&._kuzminki{
+			left: 55.8/2rem;
+			top: 45.8/2rem;
+		}
+		&._121{
+			left: 54.5/2rem;
+			top: 43.1/2rem;
+		}
+		&._volgogradskiy-pr-t{
+			left: 52.1/2rem;
+			top: 40.4/2rem;
+			width: 9/2rem;
+		}
+		&._proletarskaya{
+			left: 50.3/2rem;
+			top: 39/2rem;
+		}
+		&._marksistskaya{
+			left: 44.7/2rem;
+			top: 36.9/2rem;
+		}
+		&._taganskaya{
+			left: 41.3/2rem;
+			top: 34.6/2rem;
+		}
+		&._rimskaya{
+			left: 46.6/2rem;
+			top: 31.1/2rem;
+			width: 4/2rem
+		}
+		&._ploshchad-ilicha{
+			left: 50.7/2rem;
+			top: 32.2/2rem;
+			width: 4/2rem;
+		}
+		&._aviamotornaya{
+			left: 52.7/2rem;
+			top: 30.2/2rem;
+		}
+		&._shosse-entuziastov{
+			left: 53/2rem;
+			top: 27.7/2rem;
+			width: 7/2rem;
+		}
+		&._perovo{
+			left: 57/2rem;
+			top: 26.2/2rem;
+		}
+		&._novogireevo{
+			left: 58.2/2rem;
+			top: 25.1/2rem;
+			height: 1/2rem;
+		}
+		&._132{
+			left: 59.4/2rem;
+			top: 23.7/2rem;
+		}
+		&._shchelkovskaya{
+			left: 55.8/2rem;
+			top: 10.1/2rem;
+		}
+		&._pervomayskaya{
+			left: 55.8/2rem;
+			top: 13.1/2rem;
 
-	}
-	&._192{
+		}
+		&._izmaylovskaya{
+			left: 55.8/2rem;
+			top: 16.1/2rem;
 
-	}
-	&._193{
+		}
+		&._partizanskaya{
+			left: 54.4/2rem;
+			top: 19.1/2rem;
+		}
+		&._semenovskaya{
+			left: 50.4/2rem;
+			top: 23.1/2rem;
+		}
+		&._elektrozavodskaya{
+			left: 49.4/2rem;
+			top: 24.7/2rem;
+			height: 1/2rem;
+		}
+		&._baumanskaya{
+			left: 48.1/2rem;
+			top: 25.7/2rem;
+		}
+		&._kurskaya{
+			left: 46/2rem;
+			top: 26.9/2rem;
+		}
+		&._chkalovskaya{
+			left: 39.8/2rem;
+			top: 26.9/2rem;
+			width: 4.5/2rem;
+		}
+		&._chistye-prudy{
+			left: 39.8/2rem;
+			top: 24.7/2rem;
+		}
+		&._krasnye-vorota{
+			left: 41.3/2rem;
+			top: 23.2/2rem;
+		}
+		&._144{
+			left: 43.4/2rem;
+			top: 21.2/2rem;
+		}
+		&._145{
+			left: 45.2/2rem;
+			top: 19.4/2rem;
 
-	}
-	&._194{
+		}
+		&._146{
+			left: 46.5/2rem;
+			top: 18.1/2rem;
+		}
+		&._147{
+			left: 47.9/2rem;
+			top: 16.7/2rem;
+		}
+		&._ulitsa-podbelskogo{
+			left: 47.1/2rem;
+			top: 11.5/2rem;
+			width: 8/2rem;
+		}
+		&._cherkizovskaya{
+			left: 43.6/2rem;
+			top: 14.7/2rem;
+		}
+		&._vdnkh{
+			left: 40.9/2rem;
+			top: 11.9/2rem;
+			width: 5/2rem;
+		}
+		&._151{
+			left: 40.9/2rem;
+			top: 13.2/2rem;
+			width: 5/2rem;
+		}
+		&._rizhskaya{
+			left: 40.2/2rem;
+			top: 15/2rem;
+			width: 3/2rem;
+		}
+		&._prospekt-mira{
+			left: 38.1/2rem;
+			top: 17.1/2rem;
+		}
+		&._sukharevskaya{
+			left: 36.7/2rem;
+			top: 20.3/2rem;
+			width: 5/2rem;
+		}
+		&._sretenskiy-bulvar{
+			left: 36.7/2rem;
+			top: 22/2rem;
+			width: 4/2rem;
+		}
+		&._novoslobodskaya{
+			left: 28.5/2rem;
+			top: 17.7/2rem;
+		}
+		&._mendeleevskaya{
+			left: 26.9/2rem;
+			top: 19.2/2rem;
+		}
+		&._turgenevskaya{
+			left: 33/2rem;
+			top: 24.4/2rem;
+			width: 5/2rem;
+		}
+		&._kuznetskiy-most{
+			left: 31.5/2rem;
+			top: 25.8/2rem;
+		}
+		&._pushkinskaya{
+			left: 26.4/2rem;
+			top: 25.8/2rem;
+			width: 4.5/2rem;
+		}
+		&._barrikadnaya{
+			left: 20.2/2rem;
+			top: 25.8/2rem;
+			width: 5/2rem;
 
-	}
-	&._195{
+		}
+		&._ulitsa-1905-goda{
+			left: 13.7/2rem;
+			top: 26.8/2rem;
+			width: 5/2rem;
+		}
+		&._163{
+			left: 12.6/2rem;
+			top: 25.1/2rem;
+			width: 5/2rem;
+		}
+		&._krasnopresnenskaya{
+			left: 19.8/2rem;
+			top: 27.8/2rem;
+			height: 1/2rem;
+		}
+		&._tverskaya{
+			left: 24.6/2rem;
+			top: 28.6/2rem;
+			height: 1/2rem;
+			width: 4/2rem;
+		}
+		&._chekhovskaya{
+			left: 29.6/2rem;
+			top: 27.8/2rem;
+			width: 4/2rem;
+		}
+		&._lubyanka{
+			left: 35.6/2rem;
+			top: 28.5/2rem;
+			width: 4/2rem;
 
-	}
-	&._196{
+		}
+		&._kitay-gorod{
+			left: 36.2/2rem;
+			top: 30.4/2rem;
+			width: 5/2rem;
+		}
+		&._okhotnyy-ryad{
+			left: 29.1/2rem;
+			top: 30.5/2rem;
+			width: 4/2rem;
+		}
+		&._arbatskaya{
+			left: 25.2/2rem;
+			top: 30.7/2rem;
+			width: 4/2rem;
+		}
+		&._teatralnaya{
+			left: 33.4/2rem;
+			top: 31.5/2rem;
+			width: 4.5/2rem;
+		}
+		&._172{
+			left: 15.5/2rem;
+			top: 31.9/2rem;
+			width: 4/2rem;
+		}
+		&._sportivnaya{
+			left: 14.4/2rem;
+			top: 41.7/2rem;
+			width: 5/2rem;
 
-	}
-	&._197{
+		}
+		&._oktyabrskaya{
+			left: 20/2rem;
+			top: 41.5/2rem;
+			width: 5/2rem;
+		}
+		&._frunzenskaya{
+			left: 16.9/2rem;
+			top: 39.7/2rem;
+			width: 5/2rem;
+		}
+		&._park-kultury{
+			left: 17.7/2rem;
+			top: 37.9/2rem;
+			width: 4/2rem;
+		}
+		&._177{
+			left: 22.3/2rem;
+			top: 37.7/2rem;
+			width: 6/2rem;
 
-	}
-	&._198{
-
-	}
-	&._199{
-
+		}
+		&._178{
+			left: 21.5/2rem;
+			top: 34.1/2rem;
+			width: 5/2rem;
+		}
+		&._179{
+			left: 28.1/2rem;
+			top: 34.1/2rem;
+		}
+		&._180{
+			left: 33.8/2rem;
+			top: 33.5/2rem;
+		}
+		&._181{
+			left: 28.6/2rem;
+			top: 36.1/2rem;
+			width: 8/2rem;
+		}
+		&._182{
+			left: 22.3/2rem;
+			top: 37.7/2rem
+		}
+		&._183{
+			left: 31.7/2rem;
+			top: 38.4/2rem;
+		}
+		&._polyanka{
+			left: 29.4/2rem;
+			top: 40.9/2rem;
+			width: 4/2rem;
+		}
+		&._dobryninskaya{
+			left: 30.1/2rem;
+			top: 42.3/2rem;
+		}
+		&._varshavskaya{
+			left: 31.4/2rem;
+			top: 59.4/2rem;
+		}
 	}
 }
