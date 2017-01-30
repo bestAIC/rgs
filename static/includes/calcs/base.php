@@ -20,6 +20,21 @@
 					</div>
 				</div>
 			</div>
+			<div class="deposit-calc__option deposit-calc__monthly" data-calc-monthly>
+				<div class="deposit-calc__option-block">
+					<div class="deposit-calc__option-title">ЕЖЕМЕСЯЧНОЕ ПОПОЛНЕНИЕ</div>
+					<div class="deposit-calc__option-scale">
+						<div class="deposit-calc__option-scale-item _left" data-calc-monthly-from></div>
+						<div class="deposit-calc__option-scale-item _right" data-calc-monthly-to></div>
+					</div>
+					<div class="deposit-calc__option-slider" data-calc-monthly-slider></div>
+				</div>
+				<div class="deposit-calc__option-fields">
+					<div class="deposit-calc__option-field">
+						<input type="text" data-calc-monthly-inp value="">
+					</div>
+				</div>
+			</div>
 			<div class="deposit-calc__option deposit-calc__period" data-calc-period>
 				<div class="deposit-calc__option-block">
 					<div class="deposit-calc__option-title">Срок вклада</div>

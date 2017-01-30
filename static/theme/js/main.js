@@ -2028,12 +2028,19 @@ app.calc = function(){
 			$periodSlider = $period.find('[data-calc-period-slider]'),
 			$periodField = $period.find('[data-calc-period-select]'),
 			$periodScale = $period.find('[data-calc-period-scale]'),
+
+			$monthly = $calc.find('[data-calc-monthly]'),
+			$monthlySlider = $monthly.find('[data-calc-monthly-slider]'),
+			$monthlyField = $monthly.find('[data-calc-monthly-inp]'),
+			$monthlyFrom = $monthly.find('[data-calc-monthly-from]'),
+			$monthlyTo = $monthly.find('[data-calc-monthly-to]'),
 			
 			$calcRate = $calc.find('[data-calc-rate]'),
 			$calcProfit = $calc.find('[ data-calc-profit]'),
 			$calcTotalSum = $calc.find('[data-calc-total-sum]'),
 
 			sum = null,
+			monthly = null,
 			totalSum = null,
 			period = null,
 			profit = null,
@@ -2041,7 +2048,9 @@ app.calc = function(){
 			valuta = 'rur',
 
 			startSumValue = null,
+			startMonthlyValue = null,
 			val = null
+			
 		;
 	if(!$calc.length){
 		return false;
@@ -2081,7 +2090,7 @@ app.calc = function(){
 		}).keyup(function () {
 
 		});
-
+		initMonthly();
 		fillValuta();
 
 		$sumMin.text(app.formatNumber(calcDataValuta.min));
@@ -2100,6 +2109,7 @@ app.calc = function(){
 		if($periodSlider.length){
 			initPeriod();
 		}
+
 		calculate();
 	}
 
@@ -2114,6 +2124,15 @@ app.calc = function(){
 		$sumInp.change();
 
 		fillPeriods();
+
+		$monthlySlider.slider( "option", "min", calcDataValuta['monthlyMin']);
+		$monthlySlider.slider( "option", "max", calcDataValuta['monthlyMax']);
+		$monthlySlider.slider( "option", "step", calcDataValuta['monthlyStep']);
+
+		$monthlyFrom.text(app.formatNumber(calcDataValuta.monthlyMin));
+		$monthlyTo.text(app.formatNumber(calcDataValuta.monthlyMax));
+		$monthlyField.change();
+
 		$sumMin.text(app.formatNumber(calcDataValuta.min));
 		$sumMax.text(app.formatNumber(calcDataValuta.max));
 
@@ -2174,10 +2193,83 @@ app.calc = function(){
 			calculate();
 		});
 	}
+	function initMonthly() {
+		if(calcData["monthly"]!="Y"){
+			$calc.addClass('hide-monthly');
+			return false;
+		}
+		$monthlyField.val(app.formatNumber(calcDataValuta.monthlyValue)).change();
+		$monthlyFrom.text(app.formatNumber(calcDataValuta.monthlyMin));
+		$monthlyTo.text(app.formatNumber(calcDataValuta.monthlyMax));
+		$monthlySlider.slider({
+			range: "min",
+			min: calcDataValuta.monthlyMin,
+			max: calcDataValuta.monthlyMax,
+			step: calcDataValuta.monthlyStep,
+			value: calcDataValuta.monthlyValue || calcDataValuta.monthlyMin,
+			slide: function( event, ui ){
+				$monthlyField.val(app.formatNumber(ui.value));
+			},
+			start: function( event, ui ){
+				startMonthlyValue = ui.value;
+			},
+			stop: function( event, ui ){
+				if(ui.value != startMonthlyValue){
+					calculate();
+					$monthlyField.val(app.formatNumber(ui.value));
+				}
+			}
+		});
+
+		$monthlyField.on( "change", function() {
+			var val1 = parseInt($monthlyField.val().replace(new RegExp(" ",'g'),""),10);
+			val = Math.min(Math.max(1000, val1),100000);
+			$monthlySlider.slider("value",val);
+			$monthlyField.val(app.formatNumber(val));
+			calculate();
+		});
+
+		$monthlyField.focus(function () {
+			val = parseInt($monthlyField.val().replace(new RegExp(" ",'g'),""),10);
+			$monthlyField.val(val);
+		}).keyup(function () {
+
+		});
+	}
+
+	function getMonthsInPeriod(val) {
+		var res = 1;
+		switch (val) {
+			case 31:
+				res = 1;
+				break;
+			case 91:
+				res = 3;
+				break;
+			case 181:
+				res = 6;
+				break;
+			case 271:
+				res = 9;
+				break;
+			case 367:
+				res = 12;
+				break;
+			case 732:
+				res = 24;
+				break;
+			case 1080:
+				res = 36;
+				break;
+		}
+		return res;
+	}
 
 	function calculate() {
 		sum = parseInt($sumInp.val().replace(new RegExp(" ",'g'),""),10);
+		monthly = parseInt($monthlyField.val().replace(new RegExp(" ",'g'),""),10);
 		period = parseInt($periodField.val());
+		//console.log(calcData["monthly"]=="Y");
 		for (var minVal in calcDataValuta['periods'][period]) {
 			minVal = parseInt(minVal);
 			if (minVal <= sum) {
@@ -2185,11 +2277,31 @@ app.calc = function(){
 				rate=+rate;
 			}
 		}
+
 		$calcRate.text(rate.toFixed(2)+'%');
-		profit = Math.floor(sum*period*rate/100/365);
+		if(calcData["monthly"]=="Y"){
+			profit = parseInt(monthlyCalc(sum,monthly,rate,getMonthsInPeriod(period)));
+			sum = sum + monthly*(getMonthsInPeriod(period)-1);
+		}else{
+			profit = Math.floor(sum*period*rate/100/365);
+		}
+
+
 		$calcProfit.html(app.formatNumber(profit)+' '+ valutaZnak(valuta));
 		$calcTotalSum.html(app.formatNumber(profit+sum)+' '+ valutaZnak(valuta));
 	}
+	function monthlyCalc(sum,monthly,rate,months) {
+		var result = 0,
+				i = 0
+			;
+		for(i = 0; i<months;i++){
+			result = result + sum*rate/100/12;
+			sum = sum+monthly;
+		}
+		return result;
+	}
+
+	//console.log(monthlyCalc(700000, 10000, 10, 3));
 	function valutaZnak(valuta) {
 		if(valuta =='rur'){
 			return '<span class="rub _medium"></span>'

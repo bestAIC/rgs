@@ -5991,11 +5991,32 @@ span.pagination__item:focus {
 .deposit-calc.hide-periods .deposit-calc__period {
   display: none!important;
 }
+.deposit-calc.hide-periods .deposit-calc__option + .deposit-calc__option {
+  margin-top: 7.2rem;
+}
 .deposit-calc.hide-periods .deposit-calc__options {
-  padding-top: 12rem;
+  padding-top: 6rem;
 }
 .mobile .deposit-calc.hide-periods .deposit-calc__options {
+  padding-top: 3.2rem;
+}
+.deposit-calc.hide-periods.hide-monthly .deposit-calc__options {
+  padding-top: 12rem;
+}
+.mobile .deposit-calc.hide-periods.hide-monthly .deposit-calc__options {
   padding-top: 10rem;
+}
+.deposit-calc.hide-monthly .deposit-calc__option + .deposit-calc__option {
+  margin-top: 7.2rem;
+}
+.deposit-calc.hide-monthly .deposit-calc__monthly {
+  display: none!important;
+}
+.deposit-calc.hide-monthly .deposit-calc__options {
+  padding-top: 6rem;
+}
+.mobile .deposit-calc.hide-monthly .deposit-calc__options {
+  padding-top: 3.2rem;
 }
 .deposit-calc__block {
   *zoom: 1;
@@ -6016,8 +6037,8 @@ span.pagination__item:focus {
   background-color: white;
   border-radius: 0.2rem;
   box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
-  padding: 6rem 4rem 4.8rem;
-  min-height: 32rem;
+  padding: 3rem 4rem 3rem;
+  min-height: 32.2rem;
 }
 .deposit-calc__option {
   position: relative;
@@ -6043,7 +6064,7 @@ span.pagination__item:focus {
   display: none;
 }
 .deposit-calc__option + .deposit-calc__option {
-  margin-top: 7.2rem;
+  margin-top: 3.6rem;
 }
 .deposit-calc__option-fields {
   width: 20.3rem;
@@ -6226,7 +6247,7 @@ span.pagination__item:focus {
 .deposit-calc__info {
   float: right;
   width: 27rem;
-  min-height: 32rem;
+  min-height: 32.2rem;
   background-color: white;
   border-radius: 0.2rem;
   box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
@@ -6341,7 +6362,7 @@ span.pagination__item:focus {
   position: relative;
 }
 .mobile .deposit-calc__option + .deposit-calc__option {
-  margin-top: 2.1rem;
+  margin-top: 2.1rem!important;
 }
 .mobile .deposit-calc__option-fields {
   width: 100%;

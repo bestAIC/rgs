@@ -1,5 +1,6 @@
 <? $json = '{
 		"gosstrakh":{
+			"monthly":"Y",
 			"currency":{
 				"rur":"₽",
 				"usd":"$",
@@ -10,6 +11,10 @@
 				"max":1000000,
 				"step":1000,
 				"value":50000,
+				"monthlyMin":5000,
+				"monthlyMax":100000,
+				"monthlyStep":1000,
+				"monthlyValue":10000,
 				"periodsCounter":5,
 				"periods":{
 					"91":{
@@ -34,6 +39,10 @@
 				"max":100000,
 				"step":100,
 				"value":10000,
+				"monthlyMin":100,
+				"monthlyMax":10000,
+				"monthlyStep":100,
+				"monthlyValue":1000,
 				"periodsCounter":5,
 				"periods":{
 					"91":{
@@ -59,6 +68,10 @@
 				"step":100,
 				"value":10000,
 				"periodsCounter":5,
+				"monthlyMin":50,
+				"monthlyMax":10000,
+				"monthlyStep":50,
+				"monthlyValue":1000,
 				"periods":{
 					"91":{
 						"100": 0.20
@@ -79,6 +92,7 @@
 			}
 		},
 		"gosstrakh-vip":{
+			"monthly":"N",
 			"currency":{
 				"rur":"₽",
 				"usd":"$",
@@ -158,6 +172,7 @@
 			}
 		},
 		"save":{
+			"monthly":"Y",
 			"currency":{
 				"rur":"₽",
 				"usd":"$",
@@ -204,6 +219,7 @@
 			}
 		},
 		"universal":{
+			"monthly":"Y",
 			"currency":{
 				"rur":"₽",
 				"usd":"$",
@@ -250,6 +266,7 @@
 			}
 		},
 		"universal-vip":{
+			"monthly":"Y",
 			"currency":{
 				"rur":"₽",
 				"usd":"$",
@@ -293,6 +310,7 @@
 			}
 		},
 		"invest":{
+			"monthly":"N",
 			"currency":{
 				"rur":"₽"
 			},
@@ -316,6 +334,7 @@
 			}
 		},
 		"pensoin":{
+			"monthly":"Y",
 			"currency":{
 				"rur":"₽",
 				"usd":"$",

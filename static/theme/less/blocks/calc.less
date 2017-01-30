@@ -4,10 +4,35 @@
 		.deposit-calc__period{
 			display: none!important;
 		}
+		.deposit-calc__option + .deposit-calc__option{
+			margin-top: 7.2rem;
+		}
 		.deposit-calc__options{
-			padding-top: 12rem;
+			padding-top: 6rem;
 			.mobile &{
-				padding-top: 10rem;
+				padding-top: 3.2rem;
+			}
+		}
+		&.hide-monthly{
+			.deposit-calc__options{
+				padding-top: 12rem;
+				.mobile &{
+					padding-top: 10rem;
+				}
+			}
+		}
+	}
+	&.hide-monthly{
+		.deposit-calc__option + .deposit-calc__option{
+			margin-top: 7.2rem;
+		}
+		.deposit-calc__monthly{
+			display: none!important;
+		}
+		.deposit-calc__options{
+			padding-top: 6rem;
+			.mobile &{
+				padding-top: 3.2rem;
 			}
 		}
 	}
@@ -21,8 +46,8 @@
 		background-color: white;
 		border-radius: 2/@rem;
 		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
-		padding: 60/@rem 40/@rem 48/@rem;
-		min-height: 320/@rem;
+		padding: 30/@rem 40/@rem 30/@rem;
+		min-height: 322/@rem;
 	}
 
 	&__option{
@@ -48,7 +73,7 @@
 			}
 		}
 		&+&{
-			margin-top: 7.2rem;
+			margin-top: 3.6rem;
 		}
 		&-fields{
 			//width: 173/@rem;
@@ -211,7 +236,7 @@
 	&__info{
 		float: right;
 		width: 270/@rem;
-		min-height: 320/@rem;
+		min-height: 322/@rem;
 		background-color: white;
 		border-radius: 2/@rem;
 		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
@@ -323,7 +348,7 @@
 		&__option{
 			position: relative;
 			&+.deposit-calc__option{
-				margin-top: 2.1rem;
+				margin-top: 2.1rem!important;
 			}
 			&-fields{
 				width: 100%;
