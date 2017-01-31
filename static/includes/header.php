@@ -312,6 +312,9 @@
 							<div class="b-menu__item">
 								<a href="/static/cards/refill.php" class="b-menu__item-link">Пополнение счета</a>
 							</div>
+							<div class="b-menu__item">
+								<a href="/static/cards/cashback.php" class="b-menu__item-link">Программа CashBack</a>
+							</div>
 						</div>
 					</div>
 				</div>
