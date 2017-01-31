@@ -2347,7 +2347,8 @@ h4.small-bottom-indent {
   background-image: url('../images/cards-nav/visa_mob.png');
 }
 .credit-nav__main {
-  background-image: linear-gradient(138deg, #95b4c2 0%, #7096ac 100%);
+  background: url('../images/info-banners/credit/take_credit_pic.png') no-repeat center;
+  background-size: cover;
   color: #fff;
 }
 .credit-nav__main:hover {
@@ -2360,26 +2361,20 @@ h4.small-bottom-indent {
   max-width: 30rem;
 }
 .credit-nav__main-img {
-  width: 25.5rem;
-  height: 34.9rem;
-  background: url('../images/credit/img.png') no-repeat center;
-  background-size: contain;
-  position: absolute;
-  top: 8rem;
-  right: 1.6rem;
+  display: none;
 }
 .tablet.portrait .credit-nav .page-nav__item-ico._base {
   display: none;
 }
-.tablet.portrait .credit-nav__main-img {
-  top: 6.6rem;
-  right: 6rem;
+.tablet.portrait .credit-nav__main {
+  background-image: url('../images/info-banners/credit/take_credit_tablet_pic.png');
 }
 .mobile .credit-nav .page-nav__item-ico._base {
   display: none;
 }
 .mobile .credit-nav__main {
   color: #fff;
+  background-image: linear-gradient(138deg, #95b4c2 0%, #7096ac 100%);
 }
 .mobile .credit-nav__main:hover {
   color: #fff;

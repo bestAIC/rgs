@@ -88,7 +88,6 @@
 									платя вовремя вы получаете
 									двойную скидку каждые 6 месяцев
 								</div>
-								<div class="credit-nav__main-img"></div>
 							</a>
 						</div>
 						<div class="page-nav__row-col _items">

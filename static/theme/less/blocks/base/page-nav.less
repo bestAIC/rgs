@@ -473,19 +473,14 @@
 }
 .credit-nav{
 	&__main{
-		background-image: linear-gradient(138deg, #95b4c2 0%, #7096ac 100%);
+		background: url('@{pathToImg}info-banners/credit/take_credit_pic.png') no-repeat center;
+		background-size: cover;
 		.color(#fff);
 		.page-nav__item-text{
 			max-width: 30rem;
 		}
 		&-img{
-			width: 255/@rem;
-			height: 349/@rem;
-			background: url('@{pathToImg}credit/img.png') no-repeat center;
-			background-size: contain;
-			position: absolute;
-			top: 8rem;
-			right: 1.6rem;
+			display: none;
 		}
 	}
 }
@@ -495,10 +490,7 @@
 			display: none;
 		}
 		&__main{
-			&-img{
-				top: 6.6rem;
-				right: 6rem;
-			}
+			background-image: url('@{pathToImg}info-banners/credit/take_credit_tablet_pic.png');
 		}
 	}
 }
@@ -509,6 +501,7 @@
 		}
 		&__main{
 			.color(#fff);
+			background-image: linear-gradient(138deg, #95b4c2 0%, #7096ac 100%);
 			.page-nav__item-text{
 				max-width: 24rem;
 			}
