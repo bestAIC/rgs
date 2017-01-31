@@ -2,7 +2,7 @@
 	<div class="inner deposit">
 		<div class="inner__banner">
 			<div class="inner__banner-img">
-				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/card/Visa_Mc.jpg');"></div>
+				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/card/cashback.jpg');"></div>
 			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
@@ -24,9 +24,9 @@
 		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="deposit__info-banner deposit-info__block">
-						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/card/Visa_Mc_pic.png'
-							: ($tablePort ? '/static/theme/images/info-banners/card/Visa_Mc_tablet_pic.png':'/static/theme/images/info-banners/card/Visa_Mc_pic_mobile.png') ?>)"></div>
+					<div class="deposit__info-banner no-mob-block deposit-info__block">
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/card/cashback_pic.png'
+							:'/static/theme/images/info-banners/card/cashback_tablet_pic.png' ?>)"></div>
 					</div>
 				</div>
 				<div class="inner__info-benefits">
