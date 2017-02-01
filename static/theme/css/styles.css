@@ -6029,6 +6029,24 @@ span.pagination__item:focus {
   padding: 3rem 4rem 3rem;
   min-height: 32.2rem;
 }
+.deposit-calc__monthly._disabled:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.deposit-calc__monthly._disabled .deposit-calc__option-scale,
+.deposit-calc__monthly._disabled .deposit-calc__option-slider,
+.deposit-calc__monthly._disabled .deposit-calc__option-fields {
+  opacity: 0.3;
+}
+.deposit-calc__monthly._disabled .deposit-calc__option-title {
+  position: relative;
+  z-index: 110;
+}
 .deposit-calc__option {
   position: relative;
 }
@@ -6232,6 +6250,10 @@ span.pagination__item:focus {
   line-height: 1.4rem;
   color: #191919;
   margin-bottom: 0.5rem;
+}
+.deposit-calc__option-title .ideal-check {
+  margin-left: 1rem;
+  margin-top: -0.3rem;
 }
 .deposit-calc__info {
   float: right;

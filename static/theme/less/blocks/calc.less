@@ -49,7 +49,28 @@
 		padding: 30/@rem 40/@rem 30/@rem;
 		min-height: 322/@rem;
 	}
-
+	&__monthly{
+		&._disabled{
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 100;
+			}
+			.deposit-calc__option{
+				&-scale,&-slider,&-fields{
+					opacity: 0.3;
+				}
+				&-title{
+					position: relative;
+					z-index: 110;
+				}
+			}
+		}
+	}
 	&__option{
 		position: relative;
 		select{
@@ -231,6 +252,10 @@
 			line-height: 14/@rem;
 			color: @text-color;
 			margin-bottom: 5/@rem;
+			.ideal-check{
+				margin-left: 1rem;
+				margin-top: -0.3rem;
+			}
 		}
 	}
 	&__info{

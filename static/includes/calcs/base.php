@@ -22,7 +22,7 @@
 			</div>
 			<div class="deposit-calc__option deposit-calc__monthly" data-calc-monthly>
 				<div class="deposit-calc__option-block">
-					<div class="deposit-calc__option-title">ЕЖЕМЕСЯЧНОЕ ПОПОЛНЕНИЕ</div>
+					<div class="deposit-calc__option-title"><label>ЕЖЕМЕСЯЧНОЕ ПОПОЛНЕНИЕ <input type="checkbox" checked data-calc-monthly-check> </label></div>
 					<div class="deposit-calc__option-scale">
 						<div class="deposit-calc__option-scale-item _left" data-calc-monthly-from></div>
 						<div class="deposit-calc__option-scale-item _right" data-calc-monthly-to></div>

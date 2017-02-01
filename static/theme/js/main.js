@@ -2030,10 +2030,12 @@ app.calc = function(){
 			$periodScale = $period.find('[data-calc-period-scale]'),
 
 			$monthly = $calc.find('[data-calc-monthly]'),
+			$monthlyCheck = $monthly.find('[data-calc-monthly-check]'),
 			$monthlySlider = $monthly.find('[data-calc-monthly-slider]'),
 			$monthlyField = $monthly.find('[data-calc-monthly-inp]'),
 			$monthlyFrom = $monthly.find('[data-calc-monthly-from]'),
 			$monthlyTo = $monthly.find('[data-calc-monthly-to]'),
+			monthlyCheckActive = true,
 			
 			$calcRate = $calc.find('[data-calc-rate]'),
 			$calcProfit = $calc.find('[ data-calc-profit]'),
@@ -2235,6 +2237,17 @@ app.calc = function(){
 		}).keyup(function () {
 
 		});
+
+		$monthlyCheck.on('change',function () {
+			if($(this).is(':checked')){
+				monthlyCheckActive = true;
+				$monthly.removeClass('_disabled');
+			}else{
+				monthlyCheckActive = false;
+				$monthly.addClass('_disabled');
+			}
+			calculate();
+		});
 	}
 
 	function getMonthsInPeriod(val) {
@@ -2279,7 +2292,7 @@ app.calc = function(){
 		}
 
 		$calcRate.text(rate.toFixed(2)+'%');
-		if(calcData["monthly"]=="Y"){
+		if(calcData["monthly"]=="Y" && monthlyCheckActive){
 			profit = parseInt(monthlyCalc(sum,monthly,rate,getMonthsInPeriod(period)));
 			sum = sum + monthly*(getMonthsInPeriod(period)-1);
 		}else{
