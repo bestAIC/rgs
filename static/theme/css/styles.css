@@ -718,6 +718,13 @@ h4.small-bottom-indent {
 .mobile .block-indent {
   margin-top: 6rem;
 }
+.archive .files-list {
+  margin-top: 2rem;
+}
+.archive .gold-link._active:after {
+  border-top: 0;
+  border-bottom: 0.6rem solid #cca266;
+}
 .switch._active .switch__ico-in {
   left: 2.4rem;
 }
@@ -11965,6 +11972,14 @@ span.pagination__item:focus {
 .mobile .offices__metro-img-station._varshavskaya {
   left: 15.7rem;
   top: 29.7rem;
+}
+.invest-calc {
+  max-width: 97rem;
+  margin: 3rem auto 0;
+  border-top: 6px solid #cca266;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
 }
 .deposit__text,
 .deposit .note-text {
