@@ -2292,7 +2292,7 @@ app.calc = function(){
 		}
 
 		$calcRate.text(rate.toFixed(2)+'%');
-		if(calcData["monthly"]=="Y" && monthlyCheckActive){
+		if(calcData["monthly"]=="Y" && monthlyCheckActive && (sum != 0)){
 			profit = parseInt(monthlyCalc(sum,monthly,rate,getMonthsInPeriod(period)));
 			sum = sum + monthly*(getMonthsInPeriod(period)-1);
 		}else{
