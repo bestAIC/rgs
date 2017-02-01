@@ -6148,6 +6148,9 @@ span.pagination__item:focus {
   background-color: #dedfe0;
   top: 2.4rem;
 }
+.deposit-calc__option-scale-item[data-calc-monthly-to] {
+  display: none!important;
+}
 .deposit-calc__option-scale-item._period {
   width: 4rem;
   text-align: center;
