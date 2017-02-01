@@ -30,32 +30,19 @@ textarea{
 	resize: none;
 }
 
-/*.ideal-radio{
+.ideal-radio{
 	width: 20/@rem;
 	height:20/@rem;
 	border-radius: 50%;
 	background-color: #fff;
 	display: inline-block;
 	vertical-align: top;
-	position: relative;
-	&:after{
-		content: '';
-		position: absolute;
-		left: 4/@rem;
-		top: 4/@rem;
-		width: 12/@rem;
-		height:12/@rem;
-		border-radius: 50%;
-		background-color: transparent;
-		transition: background-color @animTime;
-	}
+	border: 1px solid @cBorder;
+	transition: border 0.3s;
 	&.checked{
-		&:after{
-			background-color: @cGreen;
-		}
-
+		border: 6/@rem solid @cRed;
 	}
-}*/
+}
 label{
 	cursor: pointer;
 }

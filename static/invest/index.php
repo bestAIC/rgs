@@ -71,6 +71,37 @@
 					</div>
 				</div>
 			</div>
+			<div class="b-block animation__top" data-animation>
+				<div class="grid__inner">
+					<h2>Как распорядиться средствами?</h2>
+					<div class="invest-calc">
+						<form action="">
+							<div class="invest-calc__start hide">
+								<div class="invest-calc__start-title">Определите, какая стратегия инвестирования подходит именно Вам!</div>
+								<div class="invest-calc__start-img"></div>
+								<a href="javascript:void(0);" class="invest-calc__start-btn btn">НАЧАТЬ ТЕСТ</a>
+							</div>
+							<div class="invest-calc__question">
+								<div class="invest-calc__question-counter">2 / 5</div>
+								<div class="invest-calc__question-title">
+									Вы потратили 900 рублей, чтобы купить счастливый лотерейный билет.
+									Какой приз вы выберете?
+								</div>
+								<div class="invest-calc__question-answers">
+									<label class="invest-calc__question-answer"><input type="radio" name="question1">Я не буду испытывать нужду во вложенных средствах в ближайшие три года</label>
+									<label class="invest-calc__question-answer"><input type="radio" name="question1">Вложенные средства потребуются мне через один - три года</label>
+									<label class="invest-calc__question-answer"><input type="radio" name="question1">Вложенные средства потребуются мне по истечении одного года</label>
+									<label class="invest-calc__question-answer"><input type="radio" name="question1">Я не буду испытывать нужду во вложенных средствах в ближайшие три года</label>
+								</div>
+								<div class="invest-calc__question-btns">
+									<a href="javascript:void(0);" class="invest-calc__question-btn btn _back">НАЗАД</a>
+									<a href="javascript:void(0);" class="invest-calc__question-btn btn">СЛЕДУЮЩИЙ ВОПРОС</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 			<?include "../includes/news-gall.php"?>
 		</div>
 	</div>

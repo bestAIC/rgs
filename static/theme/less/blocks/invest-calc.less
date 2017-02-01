@@ -1,8 +1,83 @@
 .invest-calc{
 	max-width: 97rem;
-	margin: 3rem auto 0;
+	margin: 4rem auto 0;
 	border-top: 6px solid @cGold;
 	background-color: white;
 	border-radius: 2px;
 	box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+	color: @title-color;
+	&__start{
+		padding: 6.4rem 7rem 7rem;
+		position: relative;
+		&-title{
+			font-size: 26px;
+			font-weight: 300;
+			line-height: 40px;
+			max-width: 60rem;
+			letter-spacing: -0.054rem;
+		}
+		&-btn{
+			margin-top: 7rem;
+			padding: 1.5rem 4rem;
+		}
+		&-img{
+			position: absolute;
+			right: -3.6rem;
+			top: 3.8rem;
+			width: 368px;
+			height: 269px;
+			background: url('@{pathToImg}invest/calc/red-tree.png') no-repeat center;
+			background-size: contain;
+		}
+	}
+	&__question{
+		padding: 4.8rem 5rem;
+		&-counter{
+			font-size: 30px;
+			font-weight: 300;
+			line-height: 41px;
+			opacity: 0.3;
+		}
+		&-title{
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 31px;
+			margin-top: 13px;
+			padding-right: 3rem;
+		}
+		&-answers{
+			margin-top: 42px;
+		}
+		&-answer{
+			display: block;
+			position: relative;
+			padding-left: 4rem;
+			margin-bottom: 2.2rem;
+			.ideal-radio{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+		&-btns{
+			margin-top: 54px;
+			.clearfix;
+		}
+		&-btn{
+			float: left;
+			&._back{
+				width: 12rem;
+				margin-right: 2rem;
+				background-color: white!important;
+				//box-shadow: none!important;
+				box-shadow: 0 1px 3/@rem rgba(222, 223, 224, 0.3);
+				border: 1px solid #dedfe0;
+				.color(#222226);
+				.no-touch &:hover{
+					box-shadow: 0 3px 10px rgba(222, 223, 224, 0.6);
+					color: @cRed;
+				}
+			}
+		}
+	}
 }

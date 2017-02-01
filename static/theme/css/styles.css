@@ -356,32 +356,19 @@ textarea:-ms-input-placeholder {
 textarea {
   resize: none;
 }
-/*.ideal-radio{
-	width: 20/@rem;
-	height:20/@rem;
-	border-radius: 50%;
-	background-color: #fff;
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
-	&:after{
-		content: '';
-		position: absolute;
-		left: 4/@rem;
-		top: 4/@rem;
-		width: 12/@rem;
-		height:12/@rem;
-		border-radius: 50%;
-		background-color: transparent;
-		transition: background-color @animTime;
-	}
-	&.checked{
-		&:after{
-			background-color: @cGreen;
-		}
-
-	}
-}*/
+.ideal-radio {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #DEDFE0;
+  transition: border 0.3s;
+}
+.ideal-radio.checked {
+  border: 0.6rem solid #b31b2c;
+}
 label {
   cursor: pointer;
 }
@@ -8286,6 +8273,7 @@ span.pagination__item:focus {
 }
 .docs-date__month-content .file__name {
   padding: 1rem 0;
+  white-space: normal;
 }
 .tablet.portrait .docs-date__month-content .file__date {
   font-weight: 600;
@@ -11975,11 +11963,100 @@ span.pagination__item:focus {
 }
 .invest-calc {
   max-width: 97rem;
-  margin: 3rem auto 0;
+  margin: 4rem auto 0;
   border-top: 6px solid #cca266;
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  color: #3e3e3e;
+}
+.invest-calc__start {
+  padding: 6.4rem 7rem 7rem;
+  position: relative;
+}
+.invest-calc__start-title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 40px;
+  max-width: 60rem;
+  letter-spacing: -0.054rem;
+}
+.invest-calc__start-btn {
+  margin-top: 7rem;
+  padding: 1.5rem 4rem;
+}
+.invest-calc__start-img {
+  position: absolute;
+  right: -3.6rem;
+  top: 3.8rem;
+  width: 368px;
+  height: 269px;
+  background: url('../images/invest/calc/red-tree.png') no-repeat center;
+  background-size: contain;
+}
+.invest-calc__question {
+  padding: 4.8rem 5rem;
+}
+.invest-calc__question-counter {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 41px;
+  opacity: 0.3;
+}
+.invest-calc__question-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-top: 13px;
+  padding-right: 3rem;
+}
+.invest-calc__question-answers {
+  margin-top: 42px;
+}
+.invest-calc__question-answer {
+  display: block;
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 2.2rem;
+}
+.invest-calc__question-answer .ideal-radio {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.invest-calc__question-btns {
+  margin-top: 54px;
+  *zoom: 1;
+}
+.invest-calc__question-btns:before,
+.invest-calc__question-btns:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.invest-calc__question-btns:after {
+  clear: both;
+}
+.invest-calc__question-btn {
+  float: left;
+}
+.invest-calc__question-btn._back {
+  width: 12rem;
+  margin-right: 2rem;
+  background-color: white!important;
+  box-shadow: 0 1px 0.3rem rgba(222, 223, 224, 0.3);
+  border: 1px solid #dedfe0;
+  color: #222226;
+}
+.invest-calc__question-btn._back:hover {
+  color: #222226;
+}
+.invest-calc__question-btn._back:focus {
+  color: #222226;
+}
+.no-touch .invest-calc__question-btn._back:hover {
+  box-shadow: 0 3px 10px rgba(222, 223, 224, 0.6);
+  color: #b31b2c;
 }
 .deposit__text,
 .deposit .note-text {
