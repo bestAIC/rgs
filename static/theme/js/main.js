@@ -2225,7 +2225,7 @@ app.calc = function(){
 
 		$monthlyField.on( "change", function() {
 			var val1 = parseInt($monthlyField.val().replace(new RegExp(" ",'g'),""),10);
-			val = Math.min(Math.max(1000, val1),100000);
+			val = Math.min(Math.max(calcDataValuta.monthlyMin, val1),calcDataValuta.monthlyMax);
 			$monthlySlider.slider("value",val);
 			$monthlyField.val(app.formatNumber(val));
 			calculate();
