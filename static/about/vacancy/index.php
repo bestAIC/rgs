@@ -29,7 +29,7 @@
 				<a href="javascript:void(0);" data-resume-form-show class="btn _red" data>Отправить резюме</a>
 			</div>
 			<div class="hide">
-				<div class="b-form  big-form"  data-resume-form>
+				<div class="b-form  big-form"  data-resume-form-block>
 					<form action="/static/ajax/askForm.php">
 						<h2>Oтправить резюме</h2>
 						<div class="subtitle">

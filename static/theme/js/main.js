@@ -1586,11 +1586,11 @@ app.depository = function () {
 	});
 };
 app.resumeForm = function () {
-	var $formBlock =  $('[data-resume-form]'),
+	var $formBlock =  $('[data-resume-form-block]'),
 			$formShow =  $('[data-resume-form-show]'),
 			$errors = $formBlock.find('[data-form-errors]')
 		;
-
+	
 	$formShow.on('click',function () {
 		$formBlock.find('form').show();
 		$formBlock.find('[data-success]').hide();
