@@ -1592,6 +1592,8 @@ app.resumeForm = function () {
 		;
 
 	$formShow.on('click',function () {
+		$formBlock.find('form').show();
+		$formBlock.find('[data-success]').hide();
 		$.fancybox({
 			wrapCSS 	: 'fc-base _forms',
 			content 	: $formBlock,
