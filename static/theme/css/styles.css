@@ -708,10 +708,6 @@ h4.small-bottom-indent {
 .archive .files-list {
   margin-top: 2rem;
 }
-.archive .gold-link._active:after {
-  border-top: 0;
-  border-bottom: 0.6rem solid #cca266;
-}
 .switch._active .switch__ico-in {
   left: 2.4rem;
 }
@@ -1112,6 +1108,11 @@ h4.small-bottom-indent {
 .gold-link:hover._arr-down:after,
 .gold-link:focus._arr-down:after {
   border-top-color: #dbae6e !important;
+}
+.gold-link:hover._arr-down._active:after,
+.gold-link:focus._arr-down._active:after {
+  border-top: 0;
+  border-bottom: 0.6rem solid #cca266;
 }
 .gold-link__wrap {
   text-align: center;
@@ -13011,6 +13012,9 @@ span.pagination__item:focus {
 }
 .deposit-conditions {
   border-bottom: 1px solid #DEDFE0;
+}
+.deposit-conditions + .gold-link__wrap {
+  margin-top: 2rem;
 }
 .deposit-conditions__item {
   *zoom: 1;

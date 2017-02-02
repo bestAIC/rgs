@@ -227,7 +227,7 @@ app.investCalc = function () {
 			"depth3D": 100,
 			"angle": 15,
 			"startDuration": 1,
-			"autoMargins": false,
+			//"autoMargins": false,
 			"marginTop": 20,
 			"marginBottom": 40,
 			"marginLeft": 50,
@@ -858,6 +858,7 @@ app.initNav = function () {
 	$('html').on('click.nav','[data-nav-btn]',function(){
 		var $self = $(this);
 		$self.toggleClass('_active').closest('[data-nav-block]').find('[data-nav-content]').slideToggle(500);
+		$self.closest('[data-nav-block]').find('[data-nav-text]').toggle();
 	});
 };
 app.initTabs = function () {

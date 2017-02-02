@@ -221,14 +221,6 @@ h4{
 	.files-list{
 		margin-top: 2rem;
 	}
-	.gold-link{
-		&._active{
-			&:after{
-				border-top: 0;
-				border-bottom: 0.6rem solid #cca266;
-			}
-		}
-	}
 }
 .switch{
 	&._active{
@@ -624,6 +616,12 @@ h4{
 		&._arr-down{
 			&:after{
 				border-top-color: @cGoldHover!important;
+			}
+			&._active{
+				&:after{
+					border-top: 0;
+					border-bottom: 0.6rem solid #cca266;
+				}
 			}
 		}
 	}

@@ -123,7 +123,7 @@
 							</div>
 
 						</div>
-						<div class="deposit-info__block">
+						<div class="deposit-info__block" data-nav-block>
 							<h3>Условия вклада</h3>
 							<div class="deposit-conditions">
 								<div class="deposit-conditions__item">
@@ -148,50 +148,55 @@
 										/ 50 евро
 									</div>
 								</div>
-								<div class="deposit-conditions__item">
-									<div class="deposit-conditions__item-block">Пополнение вклада</div>
-									<div class="deposit-conditions__item-block">
-										предусмотрено, не позднее, чем
-										за 3 месяца до окончания срока вклада
+								<div class="deposit-conditions__hidden hide" data-nav-content>
+									<div class="deposit-conditions__item">
+										<div class="deposit-conditions__item-block">Пополнение вклада</div>
+										<div class="deposit-conditions__item-block">
+											предусмотрено, не позднее, чем
+											за 3 месяца до окончания срока вклада
+										</div>
+									</div>
+									<div class="deposit-conditions__item">
+										<div class="deposit-conditions__item-block">
+											Минимальная сумма
+											дополнительного взноса на вклад
+										</div>
+										<div class="deposit-conditions__item-block">не ограничена</div>
+									</div>
+									<div class="deposit-conditions__item">
+										<div class="deposit-conditions__item-block">Частичное снятие вклада</div>
+										<div class="deposit-conditions__item-block">не предусмотрено</div>
+									</div>
+									<div class="deposit-conditions__item">
+										<div class="deposit-conditions__item-block">Выплата процентов</div>
+										<div class="deposit-conditions__item-block">
+											ежемесячно путем перечисления
+											на текущий счет или
+											на СКС Вкладчика, открытый в Банке
+										</div>
+									</div>
+									<div class="deposit-conditions__item">
+										<div class="deposit-conditions__item-block">Пролонгация</div>
+										<div class="deposit-conditions__item-block">
+											автоматическая пролонгация
+											по окончании срока вклада
+											на тот же срок с учетом ставки
+											по вкладу на момент пролонгации
+										</div>
+									</div>
+									<div class="deposit-conditions__item">
+										<div class="deposit-conditions__item-block">
+											Процентная ставка
+											при досрочном расторжении
+										</div>
+										<div class="deposit-conditions__item-block">
+											0,1%
+										</div>
 									</div>
 								</div>
-								<div class="deposit-conditions__item">
-									<div class="deposit-conditions__item-block">
-										Минимальная сумма
-										дополнительного взноса на вклад
-									</div>
-									<div class="deposit-conditions__item-block">не ограничена</div>
-								</div>
-								<div class="deposit-conditions__item">
-									<div class="deposit-conditions__item-block">Частичное снятие вклада</div>
-									<div class="deposit-conditions__item-block">не предусмотрено</div>
-								</div>
-								<div class="deposit-conditions__item">
-									<div class="deposit-conditions__item-block">Выплата процентов</div>
-									<div class="deposit-conditions__item-block">
-										ежемесячно путем перечисления
-										на текущий счет или
-										на СКС Вкладчика, открытый в Банке
-									</div>
-								</div>
-								<div class="deposit-conditions__item">
-									<div class="deposit-conditions__item-block">Пролонгация</div>
-									<div class="deposit-conditions__item-block">
-										автоматическая пролонгация
-										по окончании срока вклада
-										на тот же срок с учетом ставки
-										по вкладу на момент пролонгации
-									</div>
-								</div>
-								<div class="deposit-conditions__item">
-									<div class="deposit-conditions__item-block">
-										Процентная ставка
-										при досрочном расторжении
-									</div>
-									<div class="deposit-conditions__item-block">
-										0,1%
-									</div>
-								</div>
+							</div>
+							<div class="gold-link__wrap">
+								<a href="javascript:void(0)" data-nav-btn class="gold-link _arr-down"><span  data-nav-text>Развернуть</span><span data-nav-text class="hide">Свернуть</span></a>
 							</div>
 						</div>
 					</div>
