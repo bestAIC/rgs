@@ -11989,7 +11989,7 @@ span.pagination__item:focus {
 .invest-calc {
   max-width: 97rem;
   margin: 4rem auto 0;
-  border-top: 6px solid #cca266;
+  border-top: 0.6rem solid #cca266;
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
@@ -12000,9 +12000,9 @@ span.pagination__item:focus {
   position: relative;
 }
 .invest-calc__start-title {
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 4rem;
   max-width: 60rem;
   letter-spacing: -0.054rem;
 }
@@ -12014,8 +12014,8 @@ span.pagination__item:focus {
   position: absolute;
   right: -3.6rem;
   top: 3.8rem;
-  width: 368px;
-  height: 269px;
+  width: 36.8rem;
+  height: 26.9rem;
   background: url('../images/invest/calc/red-tree.png') no-repeat center;
   background-size: contain;
 }
@@ -12023,20 +12023,20 @@ span.pagination__item:focus {
   padding: 4.8rem 5rem;
 }
 .invest-calc__question-counter {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 300;
-  line-height: 41px;
+  line-height: 4.1rem;
   opacity: 0.3;
 }
 .invest-calc__question-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 31px;
-  margin-top: 13px;
+  line-height: 3.1rem;
+  margin-top: 1.3rem;
   padding-right: 3rem;
 }
 .invest-calc__question-answers {
-  margin-top: 42px;
+  margin-top: 4.2rem;
 }
 .invest-calc__question-answer {
   display: block;
@@ -12050,7 +12050,7 @@ span.pagination__item:focus {
   top: 0;
 }
 .invest-calc__question-btns {
-  margin-top: 54px;
+  margin-top: 5.4rem;
   *zoom: 1;
 }
 .invest-calc__question-btns:before,
@@ -12085,29 +12085,29 @@ span.pagination__item:focus {
   color: #222226;
 }
 .no-touch .invest-calc__question-btn._back:hover {
-  box-shadow: 0 3px 10px rgba(222, 223, 224, 0.6);
+  box-shadow: 0 0.3rem 1rem rgba(222, 223, 224, 0.6);
   color: #b31b2c;
 }
 .invest-calc__result {
   padding: 5.2rem 5rem;
 }
 .invest-calc__result-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 3.1rem;
 }
 .invest-calc__result-text {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 25px;
-  margin-top: 16px;
+  line-height: 2.5rem;
+  margin-top: 1.6rem;
   padding-right: 3rem;
 }
 .invest-calc__result-block {
-  border-top: 2px solid #f2f4f5;
+  border-top: 0.2rem solid #f2f4f5;
   *zoom: 1;
-  margin-top: 41px;
-  padding-top: 44px;
+  margin-top: 4.1rem;
+  padding-top: 4.4rem;
 }
 .invest-calc__result-block:before,
 .invest-calc__result-block:after {
@@ -12121,35 +12121,49 @@ span.pagination__item:focus {
 .invest-calc__result-main {
   float: left;
   width: 50%;
+  padding-bottom: 2rem;
 }
 .invest-calc__result-sum-title {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  letter-spacing: -0.22px;
-  line-height: 24px;
+  letter-spacing: -0.022rem;
+  line-height: 2.4rem;
 }
 .invest-calc__result-sum-field {
-  width: 300px;
-  height: 48px;
-  margin-top: 12px;
+  width: 30rem;
+  height: 4.8rem;
+  margin-top: 1.2rem;
+  position: relative;
 }
 .invest-calc__result-sum-field input[type="text"] {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  letter-spacing: -0.28px;
+  padding-right: 4rem;
+  letter-spacing: -0.028rem;
+}
+.invest-calc__result-sum-field .rub {
+  opacity: 0.3;
+  color: #3e3e3e;
+  font-size: 2rem;
+  font-weight: 500;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.4rem;
+  z-index: 3;
+  line-height: 2rem;
 }
 .invest-calc__result-distribution {
-  margin-top: 37px;
+  margin-top: 3.7rem;
 }
 .invest-calc__result-distribution-title {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  letter-spacing: -0.22px;
-  line-height: 24px;
+  letter-spacing: -0.022rem;
+  line-height: 2.4rem;
 }
 .invest-calc__result-distribution-items {
   *zoom: 1;
-  margin-top: 13px;
+  margin-top: 1.3rem;
 }
 .invest-calc__result-distribution-items:before,
 .invest-calc__result-distribution-items:after {
@@ -12165,17 +12179,17 @@ span.pagination__item:focus {
   width: 10rem;
 }
 .invest-calc__result-distribution-item-val {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 600;
-  letter-spacing: -0.5px;
-  line-height: 42px;
+  letter-spacing: -0.05rem;
+  line-height: 4.2rem;
   color: #cca266;
 }
 .invest-calc__result-distribution-item-title {
-  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: -0.15px;
-  line-height: 24px;
+  letter-spacing: -0.015rem;
+  line-height: 2.4rem;
   text-transform: uppercase;
   opacity: 0.5;
 }

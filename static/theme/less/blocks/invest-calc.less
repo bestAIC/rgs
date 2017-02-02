@@ -1,7 +1,7 @@
 .invest-calc{
 	max-width: 97rem;
 	margin: 4rem auto 0;
-	border-top: 6px solid @cGold;
+	border-top: 6/@rem solid @cGold;
 	background-color: white;
 	border-radius: 2px;
 	box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
@@ -10,9 +10,9 @@
 		padding: 6.4rem 7rem 7rem;
 		position: relative;
 		&-title{
-			font-size: 26px;
+			font-size: 26/@rem;
 			font-weight: 300;
-			line-height: 40px;
+			line-height: 40/@rem;
 			max-width: 60rem;
 			letter-spacing: -0.054rem;
 		}
@@ -24,8 +24,8 @@
 			position: absolute;
 			right: -3.6rem;
 			top: 3.8rem;
-			width: 368px;
-			height: 269px;
+			width: 368/@rem;
+			height: 269/@rem;
 			background: url('@{pathToImg}invest/calc/red-tree.png') no-repeat center;
 			background-size: contain;
 		}
@@ -33,20 +33,20 @@
 	&__question{
 		padding: 4.8rem 5rem;
 		&-counter{
-			font-size: 30px;
+			font-size: 30/@rem;
 			font-weight: 300;
-			line-height: 41px;
+			line-height: 41/@rem;
 			opacity: 0.3;
 		}
 		&-title{
-			font-size: 20px;
+			font-size: 20/@rem;
 			font-weight: 700;
-			line-height: 31px;
-			margin-top: 13px;
+			line-height: 31/@rem;
+			margin-top: 13/@rem;
 			padding-right: 3rem;
 		}
 		&-answers{
-			margin-top: 42px;
+			margin-top: 42/@rem;
 		}
 		&-answer{
 			display: block;
@@ -60,7 +60,7 @@
 			}
 		}
 		&-btns{
-			margin-top: 54px;
+			margin-top: 54/@rem;
 			.clearfix;
 		}
 		&-btn{
@@ -79,7 +79,7 @@
 				border: 1px solid #dedfe0;
 				.color(#222226);
 				.no-touch &:hover{
-					box-shadow: 0 3px 10px rgba(222, 223, 224, 0.6);
+					box-shadow: 0 3/@rem 10/@rem rgba(222, 223, 224, 0.6);
 					color: @cRed;
 				}
 			}
@@ -88,72 +88,86 @@
 	&__result{
 		padding: 5.2rem 5rem;
 		&-title{
-			font-size: 20px;
+			font-size: 20/@rem;
 			font-weight: 700;
-			line-height: 31px;
+			line-height: 31/@rem;
 		}
 		&-text{
-			font-size: 15px;
+			font-size: 15/@rem;
 			font-weight: 400;
-			line-height: 25px;
-			margin-top: 16px;
+			line-height: 25/@rem;
+			margin-top: 16/@rem;
 			padding-right: 3rem
 		}
 		&-block{
-			border-top: 2px solid #f2f4f5;
+			border-top: 2/@rem solid #f2f4f5;
 			.clearfix;
-			margin-top: 41px;
-			padding-top: 44px;
+			margin-top: 41/@rem;
+			padding-top: 44/@rem;
 		}
 		&-main{
 			float: left;
 			width: 50%;
+			padding-bottom: 2rem;
 		}
 		&-sum{
 			&-title{
-				font-size: 16px;
+				font-size: 16/@rem;
 				font-weight: 400;
-				letter-spacing: -0.22px;
-				line-height: 24px;
+				letter-spacing: -0.22/@rem;
+				line-height: 24/@rem;
 			}
 			&-field{
-				width: 300px;
-				height: 48px;
-				margin-top: 12px;
+				width: 300/@rem;
+				height: 48/@rem;
+				margin-top: 12/@rem;
+				position: relative;
 				input[type="text"]{
-					font-size: 20px;
+					font-size: 20/@rem;
 					font-weight: 600;
-					letter-spacing: -0.28px;
+					padding-right: 4rem;
+					letter-spacing: -0.28/@rem;
+				}
+				.rub{
+					opacity: 0.3;
+					color: @title-color;
+					font-size: 20/@rem;
+					font-weight: 500;
+					position: absolute;
+					right: 1.5rem;
+					top: 1.4rem;
+					z-index: 3;
+					line-height: 2rem
 				}
 			}
 		}
 		&-distribution{
-			margin-top: 37px;
+			margin-top: 37/@rem;
 			&-title{
-				font-size: 16px;
+				font-size: 16/@rem;
 				font-weight: 400;
-				letter-spacing: -0.22px;
-				line-height: 24px;
+				letter-spacing: -0.22/@rem;
+				line-height: 24/@rem;
 			}
 			&-items{
 				.clearfix;
-				margin-top: 13px;
+				margin-top: 13/@rem;
 			}
 			&-item{
 				float: left;
 				width: 10rem;
 				&-val{
-					font-size: 36px;
+					font-size: 36/@rem;
 					font-weight: 600;
-					letter-spacing: -0.5px;
-					line-height: 42px;
+					letter-spacing: -0.5/@rem;
+					line-height: 42/@rem;
 					color: @cGold;
 				}
 				&-title{
-					font-size: 11px;
+					font-size: 11/@rem;
 					font-weight: 700;
-					letter-spacing: -0.15px;
-					line-height: 24px;
+					letter-spacing: -0.15/@rem;
+					line-height: 24/@rem;
 					text-transform: uppercase;
 					opacity: 0.5;
 				}

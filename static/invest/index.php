@@ -97,7 +97,7 @@
 								</div>
 								<div class="invest-calc__question-btns">
 									<a href="javascript:void(0);" data-invest-calc-goto="start" class="invest-calc__question-btn btn _back">НАЗАД</a>
-									<a href="javascript:void(0);" data-invest-calc-goto="question2" class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
+									<a href="javascript:void(0);" data-invest-calc-goto="question2"  data-invest-calc-question-btn class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
 								</div>
 							</div>
 							<div class="invest-calc__question hide" data-invest-calc-step="question2">
@@ -112,7 +112,7 @@
 								</div>
 								<div class="invest-calc__question-btns">
 									<a href="javascript:void(0);" data-invest-calc-goto="question1" class="invest-calc__question-btn btn _back">НАЗАД</a>
-									<a href="javascript:void(0);" data-invest-calc-goto="question3" class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
+									<a href="javascript:void(0);" data-invest-calc-goto="question3" data-invest-calc-question-btn class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
 								</div>
 							</div>
 							<div class="invest-calc__question hide" data-invest-calc-step="question3">
@@ -128,7 +128,7 @@
 								</div>
 								<div class="invest-calc__question-btns">
 									<a href="javascript:void(0);" data-invest-calc-goto="question2" class="invest-calc__question-btn btn _back">НАЗАД</a>
-									<a href="javascript:void(0);" data-invest-calc-goto="question4" class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
+									<a href="javascript:void(0);" data-invest-calc-goto="question4" data-invest-calc-question-btn class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
 								</div>
 							</div>
 							<div class="invest-calc__question hide" data-invest-calc-step="question4">
@@ -145,7 +145,7 @@
 								</div>
 								<div class="invest-calc__question-btns">
 									<a href="javascript:void(0);" data-invest-calc-goto="question3" class="invest-calc__question-btn btn _back">НАЗАД</a>
-									<a href="javascript:void(0);" data-invest-calc-goto="question5" class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
+									<a href="javascript:void(0);" data-invest-calc-goto="question5" data-invest-calc-question-btn class="invest-calc__question-btn btn _disabled">СЛЕДУЮЩИЙ ВОПРОС</a>
 								</div>
 							</div>
 							<div class="invest-calc__question hide" data-invest-calc-step="question5">
@@ -159,15 +159,13 @@
 								</div>
 								<div class="invest-calc__question-btns">
 									<a href="javascript:void(0);" data-invest-calc-goto="question4" class="invest-calc__question-btn btn _back">НАЗАД</a>
-									<a href="javascript:void(0);" data-invest-calc-goto="result" class="invest-calc__question-btn btn _disabled">Получить результат</a>
+									<a href="javascript:void(0);" data-invest-calc-goto="result" data-invest-calc-question-btn class="invest-calc__question-btn btn _disabled">Получить результат</a>
 								</div>
 							</div>
-							<div class="invest-calc__result hide" data-invest-calc-step="result">
+							<div class="invest-calc__result hide" data-result data-invest-calc-step="result">
 								<div class="invest-calc__result-title">Результат:</div>
-								<div class="invest-calc__result-text">
-									Вы готовы принять на себя риск чуть выше умеренного. Вам подходят инструменты, приносящие стабильный доход, и инструменты, имеющие больший потенциал роста.
-									Вам рекомендован следующий портфель (60% средств - депозит, 25% средств - ИСЖ, 15% - акции РГС).
-									Это позволит Вам получая стабильный доход, иметь возможность заработать больше чем по депозитам и иметь защиту от непредвиденных ситуаций.
+								<div class="invest-calc__result-text" data-result-text>
+
 								</div>
 								<div class="invest-calc__result-block">
 									<div class="invest-calc__result-main">
@@ -175,33 +173,37 @@
 											<div class="invest-calc__result-sum-title">Сумма взноса</div>
 											<div class="invest-calc__result-sum-field">
 												<input type="text" value="1 440 000" data-invest-calc-sum>
+												<span class="rub"></span>
 											</div>
 										</div>
 										<div class="invest-calc__result-distribution">
 											<div class="invest-calc__result-distribution-title">Рекомендованный портфель:</div>
 											<div class="invest-calc__result-distribution-items">
 												<div class="invest-calc__result-distribution-item">
-													<div class="invest-calc__result-distribution-item-val">60%</div>
+													<div class="invest-calc__result-distribution-item-val" data-result-deposit>60%</div>
 													<div class="invest-calc__result-distribution-item-title">ДЕПОЗИТ</div>
 												</div>
 												<div class="invest-calc__result-distribution-item">
-													<div class="invest-calc__result-distribution-item-val">25%</div>
+													<div class="invest-calc__result-distribution-item-val" data-result-insurance>25%</div>
 													<div class="invest-calc__result-distribution-item-title">ИСЖ</div>
 												</div>
 												<div class="invest-calc__result-distribution-item">
-													<div class="invest-calc__result-distribution-item-val">15%</div>
+													<div class="invest-calc__result-distribution-item-val" data-result-iis></div>
 													<div class="invest-calc__result-distribution-item-title">ИИС</div>
 												</div>
-												<div class="invest-calc__result-distribution-item">
+												<?/*div class="invest-calc__result-distribution-item">
 													<div class="invest-calc__result-distribution-item-val">5%</div>
 													<div class="invest-calc__result-distribution-item-title">НСЖ</div>
-												</div>
+												</div*/?>
 											</div>
 										</div>
 									</div>
-									<div class="invest-calc__result-chart" id="chartdiv" data-invest-calc-chart>
+									<div class="invest-calc__result-chart"  data-invest-calc-chart>
 										
 									</div>
+								</div>
+								<div class="invest-calc__result-bottom">
+									<a href="javascript:void(0);" data-invest-calc-reset data-invest-calc-goto="question1" class="btn">НАЧАТЬ СНАЧАЛА</a>
 								</div>
 							</div>
 						</form>

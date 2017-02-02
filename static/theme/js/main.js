@@ -143,11 +143,20 @@ app.investCalc = function () {
 	var $calc = $('[data-invest-calc]'),
 			$form = $calc.find('form'),
 			$chart = $calc.find('[data-invest-calc-chart]'),
+			$reset = $calc.find('[data-invest-calc-reset]'),
 			$step = $calc.find('[data-invest-calc-step]'),
 			$goto = $calc.find('[data-invest-calc-goto]'),
 			$answer = $calc.find('[data-invest-calc-answer]'),
 			$sum = $calc.find('[data-invest-calc-sum]'),
-			calcData = null
+			$questionBtn = $calc.find('[ data-invest-calc-question-btn]'),
+			calcData = null,
+			answersSum = 0,
+
+			$result = $calc.find('[data-result]'),
+			$resultText = $result.find('[data-result-text]'),
+			$resultDeposit = $result.find('[data-result-deposit]'),
+			$resultInsurance= $result.find('[data-result-insurance]'),
+			$resultIis= $result.find('[data-result-iis]')
 
 		;
 	if(!$calc.length){
@@ -155,29 +164,152 @@ app.investCalc = function () {
 	}
 	$.post($form.attr('action'), {}, function(data){
 		calcData = $.parseJSON(data);
-		console.log(calcData);
 	});
+
+	$reset.on('click',function () {
+		var $activeSnswers = $answer.filter(':checked');
+		$activeSnswers.prop("checked",false).change();
+		$questionBtn.addClass('_disabled');
+	});
+
+	$sum.focus(function () {
+	var	val = parseInt($sum.val().replace(new RegExp(" ",'g'),""),10);
+		$sum.val(val);
+	}).keyup(function () {});
+
+	$sum.on('change',function(){
+		var val = parseInt($sum.val().replace(new RegExp(" ",'g'),""),10);
+		val = Math.max(0, val);
+		if(!val){
+			val=0
+		}
+		$sum.val(app.formatNumber(val));
+		results(getResultsData(answersSum));
+	});
+
+
+
 	$answer.on('change',function () {
 		$(this).closest($step).find($goto).removeClass('_disabled');
 	});
 	$goto.on('click',function () {
 		var $self = $(this),
-				data = $self.data('investCalcGoto'),
-				sum = 0
+				data = $self.data('investCalcGoto')
 			;
 		if($self.hasClass('_disabled')){
 			return false;
 		}
 		if(data =="result"){
+			answersSum = 0;
 			$answer.filter(':checked').each(function () {
-				sum = sum + parseInt($(this).val());
+				answersSum = answersSum + parseInt($(this).val());
 			});
-			var res = finish(8);
-			console.log(res);
+			results(getResultsData(answersSum));
 		}
 		$step.hide().filter('[data-invest-calc-step="'+data+'"]').show();
 	});
-	function finish(num) {
+	function results(data) {
+		$resultText.text(data.text);
+		$resultDeposit.text(data.deposit +'%');
+		$resultInsurance.text(data.insurance +'%');
+		$resultIis.text(data.iis +'%');
+		var sum =  parseInt($sum.val().replace(new RegExp(" ",'g'),""),10);
+
+		var chartData = [ {
+			"category": "",
+			"value1": data.deposit,
+			"value2": data.insurance,
+			"value3": data.iis
+		}];
+		var chart = AmCharts.makeChart( $chart[0], {
+			"theme": "light",
+			"type": "serial",
+			"depth3D": 100,
+			"angle": 15,
+			"startDuration": 1,
+			"autoMargins": false,
+			"marginTop": 20,
+			"marginBottom": 40,
+			"marginLeft": 50,
+			"marginRight": 10,
+			"dataProvider": chartData,
+			"valueAxes": [ {
+				"stackType": "100%",
+				"gridAlpha": 0
+
+			} ],
+			"graphs": [ {
+				"title":"депозит",
+				"type": "column",
+				"topRadius": 1,
+				"columnWidth": 1,
+				"showOnAxis": true,
+				"lineThickness": 0,
+				"lineAlpha": 0.5,
+				"lineColor": "#e6ddd1",
+				"fillColors": "#e6ddd1",
+				"fillAlphas": 1,
+				"valueField": "value1",
+				"labelOffset":0,
+				"labelText": app.formatNumber(parseInt(sum/100*data.deposit))+"P",
+				"balloonText": app.formatNumber(parseInt(sum/100*data.deposit))+"P <b>([[value]]</b>%)"
+			}, {
+				"title":"исж",
+				"type": "column",
+				"topRadius": 1,
+				"columnWidth": 1,
+				"showOnAxis": true,
+				"lineThickness": 2,
+				"lineAlpha": 0.5,
+				"lineColor": "#e6c79d",
+				"fillColors": "#e6c79d",
+				"fillAlphas": 1,
+				"valueField": "value2",
+				"labelText": app.formatNumber(parseInt(sum/100*data.insurance))+"P",
+				"labelOffset":0,
+				"balloonText": app.formatNumber(parseInt(sum/100*data.insurance))+"P <b>([[value]]</b>%)"
+			}, {
+				"title":"иис",
+				"type": "column",
+				"topRadius": 1,
+				"columnWidth": 1,
+				"showOnAxis": true,
+				"lineThickness": 2,
+				"lineAlpha": 0.5,
+				"lineColor": "#cc1f33",
+				"fillColors": "#cc1f33",
+				"fillAlphas": 1,
+				"valueField": "value3",
+				"labelText": app.formatNumber(parseInt(sum/100*data.iis))+"P",
+				"labelOffset":0,
+				"balloonText": app.formatNumber(parseInt(sum/100*data.iis))+"P <b>([[value]]</b>%)"
+			}],
+
+			"categoryField": "category",
+			"categoryAxis": {
+				"axisAlpha": 0,
+				"labelOffset": 0,
+				"position": "right",
+				"gridAlpha": 0
+			},
+			"export": {
+				"enabled": false
+			},
+			"balloon": {
+				"animationDuration": 0.52
+			},
+			"legend": {
+				"enabled": true,
+				"useGraphSettings": true,
+				"labelWidth":50,
+				"maxColumns": 3,
+				"valueWidth": 0
+			}
+		});
+	}
+
+
+	function getResultsData(num) {
 		var data = null;
 		for (var minVal in calcData) {
 			minVal = parseInt(minVal);
@@ -187,95 +319,6 @@ app.investCalc = function () {
 		}
 		return calcData[data];
 	}
-	var chartData = [ {
-		"category": "",
-		"value1": 60,
-		"value2": 25,
-		"value3": 10,
-		"value4": 5
-	} ];
-
-
-	var chart = AmCharts.makeChart( $chart[0], {
-		"theme": "light",
-		"type": "serial",
-		"depth3D": 100,
-		"angle": 30,
-		"autoMargins": false,
-		"marginBottom": 40,
-		"marginLeft": 50,
-		"marginRight": 30,
-		"dataProvider": chartData,
-		"valueAxes": [ {
-			"stackType": "100%",
-			"gridAlpha": 0
-
-		} ],
-		"graphs": [ {
-			"title":"sdf",
-			"type": "column",
-			"topRadius": 1,
-			"columnWidth": 1,
-			"showOnAxis": true,
-			"lineThickness": 0,
-			"lineAlpha": 0.5,
-			"lineColor": "#e6ddd1",
-			"fillColors": "#e6ddd1",
-			"fillAlphas": 1,
-			"valueField": "value1",
-			"labelText": "[[value]]",
-			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
-		}, {
-			"type": "column",
-			"topRadius": 1,
-			"columnWidth": 1,
-			"showOnAxis": true,
-			"lineThickness": 2,
-			"lineAlpha": 0.5,
-			"lineColor": "#e6c79d",
-			"fillColors": "#e6c79d",
-			"fillAlphas": 1,
-			"valueField": "value2",
-			"labelText": "[[value]]",
-			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
-		}, {
-			"type": "column",
-			"topRadius": 1,
-			"columnWidth": 1,
-			"showOnAxis": true,
-			"lineThickness": 2,
-			"lineAlpha": 0.5,
-			"lineColor": "#cc1f33",
-			"fillColors": "#cc1f33",
-			"fillAlphas": 1,
-			"valueField": "value3",
-			"labelText": "[[value]]",
-			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
-		}, {
-			"type": "column",
-			"topRadius": 1,
-			"columnWidth": 1,
-			"showOnAxis": true,
-			"lineThickness": 2,
-			"lineAlpha": 0.5,
-			"lineColor": "#3e3e3e",
-			"fillColors": "#3e3e3e",
-			"fillAlphas": 1,
-			"valueField": "value4",
-			"labelText": "[[value]]",
-			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
-		} ],
-
-		"categoryField": "category",
-		"categoryAxis": {
-			"axisAlpha": 0,
-			"labelOffset": 0,
-			"gridAlpha": 0
-		},
-		"export": {
-			"enabled": true
-		}
-	} );
 };
 app.askForm = function () {
 	var $ask =  $('[data-ask]'),
