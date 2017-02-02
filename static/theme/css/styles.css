@@ -12176,7 +12176,9 @@ span.pagination__item:focus {
 }
 .invest-calc__result-distribution-item {
   float: left;
-  width: 10rem;
+}
+.invest-calc__result-distribution-item + .invest-calc__result-distribution-item {
+  margin-left: 3rem;
 }
 .invest-calc__result-distribution-item-val {
   font-size: 3.6rem;
