@@ -114,7 +114,7 @@
 											<div class="b-form__block">
 												<div class="b-form__block-title">Желаемая позиция</div>
 												<div class="b-form__block-field">
-													<input type="text" data-resume-form-position placeholder="">
+													<input type="text" data-resume-form-position placeholder="Желаемая позиция">
 												</div>
 											</div>
 										</div>

@@ -115,6 +115,7 @@ app.init = function () {
 	//app.history();
 	app.initSwitch();
 	app.investCalc();
+	app.resumeForm();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -1581,6 +1582,54 @@ app.depository = function () {
 				$showMore.hide();
 			}
 		},'json');
+		return false;
+	});
+};
+app.resumeForm = function () {
+	var $formBlock =  $('[data-resume-form]'),
+			$formShow =  $('[data-resume-form-show]'),
+			$errors = $formBlock.find('[data-form-errors]')
+		;
+
+	$formShow.on('click',function () {
+		$.fancybox({
+			wrapCSS 	: 'fc-base _forms',
+			content 	: $formBlock,
+			fitToView	: false,
+			padding:0,
+			helpers : {
+				overlay : {
+					css : {
+						'background' : 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		});
+	});
+
+	$formBlock.find('form').on('submit',function () {
+		var $self = $(this),
+				formData = new FormData($self.get(0))
+			;
+		$.ajax({
+			url: $self.attr('action'),
+			type: "POST",
+			contentType: false,
+			processData: false,
+			data: formData,
+			dataType: 'json',
+			success: function(data){
+				if(!data.errors){
+					$errors.hide();
+					//$.fancybox.close();
+					$formBlock.find('form').hide();
+					$formBlock.find('[data-success]').show();
+
+				}else{
+					$errors.html(data.errors).show();
+				}
+			}
+		});
 		return false;
 	});
 };
