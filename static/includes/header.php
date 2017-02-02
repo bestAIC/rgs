@@ -9,6 +9,12 @@
 	<script src="/static/theme/js/device.js"></script>
 	<script src="/static/theme/js/Cookie.js"></script>
 	<script src="/static/theme/js/helperSiteTypeDetect.js"></script>
+
+	<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+	<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">

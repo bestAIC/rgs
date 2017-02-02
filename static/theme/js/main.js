@@ -114,6 +114,7 @@ app.init = function () {
 	app.vacancies();
 	//app.history();
 	app.initSwitch();
+	app.investCalc();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -135,6 +136,145 @@ app.init = function () {
 	$('html').on('click','[data-fancy-close]',function () {
 		$.fancybox.close();
 	});
+};
+app.investCalc = function () {
+
+	var $calc = $('[data-invest-calc]'),
+			$form = $calc.find('form'),
+			$chart = $calc.find('[data-invest-calc-chart]'),
+			$step = $calc.find('[data-invest-calc-step]'),
+			$goto = $calc.find('[data-invest-calc-goto]'),
+			$answer = $calc.find('[data-invest-calc-answer]'),
+			$sum = $calc.find('[data-invest-calc-sum]'),
+			calcData = null
+
+		;
+	if(!$calc.length){
+		return false;
+	}
+	$.post($form.attr('action'), {}, function(data){
+		calcData = $.parseJSON(data);
+		console.log(calcData);
+	});
+	$answer.on('change',function () {
+		$(this).closest($step).find($goto).removeClass('_disabled');
+	});
+	$goto.on('click',function () {
+		var $self = $(this),
+				data = $self.data('investCalcGoto'),
+				sum = 0
+			;
+		if($self.hasClass('_disabled')){
+			return false;
+		}
+		if(data =="result"){
+			$answer.filter(':checked').each(function () {
+				sum = sum + parseInt($(this).val());
+			});
+			var res = finish(8);
+			console.log(res);
+		}
+		$step.hide().filter('[data-invest-calc-step="'+data+'"]').show();
+	});
+	function finish(num) {
+		var data = null;
+		for (var minVal in calcData) {
+			minVal = parseInt(minVal);
+			if (minVal <= num) {
+				data = minVal;
+			}
+		}
+		return calcData[data];
+	}
+	var chartData = [ {
+		"category": "",
+		"value1": 60,
+		"value2": 25,
+		"value3": 10,
+		"value4": 5
+	} ];
+
+
+	var chart = AmCharts.makeChart( $chart[0], {
+		"theme": "light",
+		"type": "serial",
+		"depth3D": 100,
+		"angle": 30,
+		"autoMargins": false,
+		"marginBottom": 40,
+		"marginLeft": 50,
+		"marginRight": 30,
+		"dataProvider": chartData,
+		"valueAxes": [ {
+			"stackType": "100%",
+			"gridAlpha": 0
+
+		} ],
+		"graphs": [ {
+			"title":"sdf",
+			"type": "column",
+			"topRadius": 1,
+			"columnWidth": 1,
+			"showOnAxis": true,
+			"lineThickness": 0,
+			"lineAlpha": 0.5,
+			"lineColor": "#e6ddd1",
+			"fillColors": "#e6ddd1",
+			"fillAlphas": 1,
+			"valueField": "value1",
+			"labelText": "[[value]]",
+			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
+		}, {
+			"type": "column",
+			"topRadius": 1,
+			"columnWidth": 1,
+			"showOnAxis": true,
+			"lineThickness": 2,
+			"lineAlpha": 0.5,
+			"lineColor": "#e6c79d",
+			"fillColors": "#e6c79d",
+			"fillAlphas": 1,
+			"valueField": "value2",
+			"labelText": "[[value]]",
+			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
+		}, {
+			"type": "column",
+			"topRadius": 1,
+			"columnWidth": 1,
+			"showOnAxis": true,
+			"lineThickness": 2,
+			"lineAlpha": 0.5,
+			"lineColor": "#cc1f33",
+			"fillColors": "#cc1f33",
+			"fillAlphas": 1,
+			"valueField": "value3",
+			"labelText": "[[value]]",
+			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
+		}, {
+			"type": "column",
+			"topRadius": 1,
+			"columnWidth": 1,
+			"showOnAxis": true,
+			"lineThickness": 2,
+			"lineAlpha": 0.5,
+			"lineColor": "#3e3e3e",
+			"fillColors": "#3e3e3e",
+			"fillAlphas": 1,
+			"valueField": "value4",
+			"labelText": "[[value]]",
+			"balloonText": $sum.val()+"P <b>([[value]]</b>%)"
+		} ],
+
+		"categoryField": "category",
+		"categoryAxis": {
+			"axisAlpha": 0,
+			"labelOffset": 0,
+			"gridAlpha": 0
+		},
+		"export": {
+			"enabled": true
+		}
+	} );
 };
 app.askForm = function () {
 	var $ask =  $('[data-ask]'),

@@ -12065,6 +12065,11 @@ span.pagination__item:focus {
 .invest-calc__question-btn {
   float: left;
 }
+.invest-calc__question-btn._disabled {
+  cursor: default;
+  opacity: 0.5;
+  box-shadow: none!important;
+}
 .invest-calc__question-btn._back {
   width: 12rem;
   margin-right: 2rem;
@@ -12082,6 +12087,108 @@ span.pagination__item:focus {
 .no-touch .invest-calc__question-btn._back:hover {
   box-shadow: 0 3px 10px rgba(222, 223, 224, 0.6);
   color: #b31b2c;
+}
+.invest-calc__result {
+  padding: 5.2rem 5rem;
+}
+.invest-calc__result-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+}
+.invest-calc__result-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 16px;
+  padding-right: 3rem;
+}
+.invest-calc__result-block {
+  border-top: 2px solid #f2f4f5;
+  *zoom: 1;
+  margin-top: 41px;
+  padding-top: 44px;
+}
+.invest-calc__result-block:before,
+.invest-calc__result-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.invest-calc__result-block:after {
+  clear: both;
+}
+.invest-calc__result-main {
+  float: left;
+  width: 50%;
+}
+.invest-calc__result-sum-title {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.22px;
+  line-height: 24px;
+}
+.invest-calc__result-sum-field {
+  width: 300px;
+  height: 48px;
+  margin-top: 12px;
+}
+.invest-calc__result-sum-field input[type="text"] {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+}
+.invest-calc__result-distribution {
+  margin-top: 37px;
+}
+.invest-calc__result-distribution-title {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.22px;
+  line-height: 24px;
+}
+.invest-calc__result-distribution-items {
+  *zoom: 1;
+  margin-top: 13px;
+}
+.invest-calc__result-distribution-items:before,
+.invest-calc__result-distribution-items:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.invest-calc__result-distribution-items:after {
+  clear: both;
+}
+.invest-calc__result-distribution-item {
+  float: left;
+  width: 10rem;
+}
+.invest-calc__result-distribution-item-val {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 42px;
+  color: #cca266;
+}
+.invest-calc__result-distribution-item-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: -0.15px;
+  line-height: 24px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.invest-calc__result-chart {
+  float: left;
+  width: 50%;
+  height: 30rem;
+}
+.invest-calc__result-chart .amcharts-export-menu {
+  display: none!important;
+}
+.invest-calc__result-chart .amcharts-chart-div a {
+  display: none!important;
 }
 .deposit__text,
 .deposit .note-text {
