@@ -116,6 +116,7 @@ app.init = function () {
 	app.initSwitch();
 	app.investCalc();
 	app.resumeForm();
+	app.mortgageCalc();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -2256,7 +2257,7 @@ app.calc = function(){
 			$sumInp = $sum.find('[data-calc-sum-inp]'),
 			$sumMin = $sum.find('[data-calc-sum-min]'),
 			$sumMax = $sum.find('[data-calc-sum-max]'),
-			
+
 			$valutaSelect = $calc.find('[data-calc-valuta-select]'),
 
 			$period = $calc.find('[data-calc-period]'),
@@ -2271,7 +2272,7 @@ app.calc = function(){
 			$monthlyFrom = $monthly.find('[data-calc-monthly-from]'),
 			$monthlyTo = $monthly.find('[data-calc-monthly-to]'),
 			monthlyCheckActive = true,
-			
+
 			$calcRate = $calc.find('[data-calc-rate]'),
 			$calcProfit = $calc.find('[ data-calc-profit]'),
 			$calcTotalSum = $calc.find('[data-calc-total-sum]'),
@@ -2287,7 +2288,7 @@ app.calc = function(){
 			startSumValue = null,
 			startMonthlyValue = null,
 			val = null
-			
+
 		;
 	if(!$calc.length){
 		return false;
@@ -2559,4 +2560,139 @@ app.calc = function(){
 			return '€'
 		}
 	}
+};
+app.mortgageCalc = function(){
+	var self = this,
+			$calc = $('[data-mortgage-calc]'),
+			$calcSchedule = $('[data-mortgage-calc-schedule]'),
+
+			$price = $calc.find('[data-mortgage-calc-price]'),
+			$initial = $calc.find('[data-mortgage-calc-initial]'),
+
+			$period = $calc.find('[data-mortgage-calc-period]'),
+			$periodSlider = $period.find('[data-mortgage-calc-period-slider]'),
+			$periodInp = $period.find('[data-mortgage-calc-period-inp]'),
+			
+
+			$calcRate = $calc.find('[data-mortgage-calc-rate]'),
+			$calcSum = $calc.find('[data-mortgage-calc-sum]'),
+			$calcOverpay = $calc.find('[data-mortgage-calc-overpay]'),
+			$calcPayment = $calc.find('[data-mortgage-calc-payment]'),
+
+			price = null,
+			initial = null,
+			sum = null,
+			payment = null,
+			period = null,
+			overpay = null,
+			rate = 0.1295,
+			monthRate = rate/12,
+			val = null,
+			startPeriodValue
+
+		;
+	if(!$calc.length){
+		return false;
+	}
+	init();
+	function init() {
+
+		$periodSlider.slider({
+			range: "min",
+			min: 5,
+			max: 20,
+			step: 1,
+			value: 13,
+			slide: function( event, ui ){
+				$periodInp.val(app.formatNumber(ui.value));
+			},
+			start: function( event, ui ){
+				startPeriodValue = ui.value;
+			},
+			stop: function( event, ui ){
+				if(ui.value != startPeriodValue){
+					$periodInp.val(ui.value+' лет');
+					calculate();
+				}
+			}
+		});
+		$price.focus(function () {
+			var val = parseInt($price.val().replace(new RegExp(" ",'g'),""),10);
+			$price.val(val);
+		}).keyup(function () {
+
+		});
+
+		$price.on('change',function(){
+			var val = parseInt($price.val().replace(new RegExp(" ",'g'),""),10);
+			$price.val(app.formatNumber(val));
+			$initial.val(app.formatNumber(Math.min(val, parseInt($initial.val().replace(new RegExp(" ",'g'),""),10))));
+			calculate();
+		});
+
+		$initial.focus(function () {
+			var val = parseInt($initial.val().replace(new RegExp(" ",'g'),""),10);
+			$initial.val(val);
+		}).keyup(function () {
+
+		});
+
+		$initial.on('change',function(){
+			var val = parseInt($initial.val().replace(new RegExp(" ",'g'),""),10);
+			val = Math.min(val, parseInt($price.val().replace(new RegExp(" ",'g'),""),10));
+			$initial.val(app.formatNumber(val));
+			console.log('sdf');
+			calculate();
+		});
+
+
+
+		$periodInp.focus(function () {
+			var val = parseInt($periodInp.val().replace(new RegExp(" ",'g'),""),10);
+			$periodInp.val(val);
+		}).keyup(function () {});
+
+		$periodInp.on('change',function(){
+			var val1 = parseInt($periodInp.val().replace(new RegExp(" ",'g'),""),10);
+			val = Math.min(Math.max(5, val1),20);
+			$periodSlider.slider("value",val);
+			$periodInp.val(app.formatNumber(val)+" лет");
+			calculate();
+		});
+
+		calculate();
+	}
+
+	function calculate() {
+		$calcSchedule.find('[data-mortgage-calc-schedule-row]').remove();
+		price = parseInt($price.val().replace(new RegExp(" ",'g'),""),10);
+		initial = parseInt($initial.val().replace(new RegExp(" ",'g'),""),10);
+		period = parseInt($periodInp.val())*12;
+
+		sum = price-initial;
+		payment = parseInt(sum*(monthRate+monthRate/(Math.pow(1+monthRate,period)-1)));
+		overpay = parseInt(payment*period-sum);
+
+		$calcRate.text((rate*100).toFixed(2));
+		$calcSum.text(app.formatNumber(sum));
+		$calcPayment.text(app.formatNumber(payment));
+		$calcOverpay.text(app.formatNumber(overpay));
+
+		var sum1 = sum;
+		for(var i = 1;i<=period;i++){
+			var proc = parseInt(sum1*rate/12);
+			var $row = $('<tr class="deposit-table__row" data-mortgage-calc-schedule-row>' +
+				'<td>'+i+'</td>' +
+				'<td>'+app.formatNumber(payment)+'</td>' +
+				'<td>'+app.formatNumber(payment-proc)+'</td>' +
+				'<td>'+app.formatNumber(proc)+'</td>' +
+				'<td>'+app.formatNumber(sum1-(payment-proc))+'</td>' +
+				'</tr>');
+			sum1 = sum1-(payment-proc);
+			$calcSchedule.append($row);
+			
+		}
+		
+	}
+	
 };

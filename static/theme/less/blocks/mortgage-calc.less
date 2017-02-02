@@ -1,0 +1,216 @@
+.mortgage-calc{
+	z-index: 100;
+	&__block{
+		.clearfix;
+		margin-top: 33/@rem;
+	}
+	&__options{
+		float: left;
+		width: 870/@rem;
+		background-color: white;
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
+		padding: 30/@rem 40/@rem 30/@rem;
+		min-height: 322/@rem;
+	}
+	&__top{
+		.clearfix;
+		&-block{
+			float: left;
+			width: 375/@rem;
+			&+&{
+				margin-left: 4rem;
+			}
+		}
+	}
+
+
+	&__option{
+		position: relative;
+		select{
+			font-size: 20/@rem;
+			font-weight: 600;
+			letter-spacing: -0.28/@rem;
+			border-color: #e8e8e8;
+			padding-right: 1rem;
+			-webkit-appearance: none;
+			background: url('@{pathToImg}icons/select.svg') no-repeat calc(~"100% - 1.5rem") center #fff;
+			background-size: 7/@rem 4/@rem;
+			/* for FF */
+			-moz-appearance: none;
+			text-indent: 0.01px;
+			text-overflow: '';
+			/* for IE */
+			-ms-appearance: none;
+			appearance: none!important;
+			&::-ms-expand {
+				display: none;
+			}
+		}
+		&+&{
+			margin-top: 3.6rem;
+		}
+		&-fields{
+			//width: 173/@rem;
+			width: 203/@rem;
+			height: 48/@rem;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			//z-index: 1;
+		}
+		&-select{
+			position: absolute;
+			z-index: 3;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 63/@rem;
+			font-family: @fRoboto!important;
+			.chosen-container-single .chosen-single{
+				font-family: @fRoboto!important;
+				font-weight: 500;
+			}
+
+			.chosen-container{
+				z-index: 10;
+				background-color: #fff;
+				.chosen-drop{
+					z-index: 10;
+					background-color: #fff;
+				}
+				.chosen-single{
+					font-size: 2rem;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			}
+			.chosen-container-single {
+
+			}
+			.chosen-container-single .chosen-single div{
+				width: 2.2rem;
+			}
+		}
+		&-field{
+			height: 48/@rem;
+			input[type="text"]{
+				font-size: 20/@rem;
+				font-weight: 600;
+				letter-spacing: -0.28/@rem;
+				border-color: #e8e8e8;
+			}
+			.chosen-container-single .chosen-single{
+				font-size: 20/@rem;
+				font-weight: 600;
+				letter-spacing: -0.28/@rem;
+			}
+		}
+		&-block{
+			//margin-right: 200/@rem;
+			margin-right: 230/@rem;
+		}
+		&-scale{
+			position: relative;
+			height: 2.4rem;
+			margin-bottom: 12/@rem;
+			&-item{
+				position: absolute;
+				top: 0;
+				font-size: 14/@rem;
+				font-weight: 400;
+				letter-spacing: -0.19/@rem;
+				line-height: 24/@rem;
+				color: #919599;
+				&:after{
+					content: '';
+					position: absolute;
+					width: 1px;
+					height: 8/@rem;
+					background-color: #dedfe0;
+					top:2.4rem;
+				}
+				&._period{
+					width: 6rem;
+					text-align: center;
+					&:after{
+						left: 50%;
+					}
+				}
+				&._1{
+					left: 0;
+					text-align: left;
+					&:after{
+						left: 0;
+					}
+				}
+				&._2{
+					left: 33.33%;
+					margin-left: -3rem;
+				}
+				&._3{
+					left: 66.66%;
+					margin-left: -3rem;
+				}
+				&._4{
+					right: 0;
+					text-align: right;
+					&:after{
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+		&-title{
+			text-transform: uppercase;
+			font-size: 10/@rem;
+			font-weight: 600;
+			letter-spacing: 0.5/@rem;
+			line-height: 14/@rem;
+			color: @text-color;
+			margin-bottom: 5/@rem;
+			.ideal-check{
+				margin-left: 1rem;
+				margin-top: -0.3rem;
+			}
+		}
+	}
+	&__info{
+		float: right;
+		width: 270/@rem;
+		min-height: 322/@rem;
+		background-color: white;
+		border-radius: 2/@rem;
+		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
+		padding: 30/@rem 40/@rem 30/@rem 40/@rem;
+		&-blocks{
+			padding-left: 10/@rem;
+		}
+		&-block{
+			&+&{
+				margin-top: 24/@rem;
+			}
+			font-weight: 600;
+			&-title{
+				color: @cGray;
+				font-size: 10/@rem;
+				letter-spacing: 0.5/@rem;
+				line-height: 14/@rem;
+			}
+			&-text{
+				font-size: 30/@rem;
+				line-height: 30/@rem;
+				letter-spacing: -0.5/@rem;
+				color: @title-color;
+				margin-top: 2/@rem;
+				white-space: nowrap;
+			}
+		}
+		&-btn{
+			width: 100%;
+			margin-top: 24/@rem;
+		}
+	}
+
+}
