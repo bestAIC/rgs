@@ -101,26 +101,6 @@
 	}
 	&__option{
 		position: relative;
-		select{
-			font-size: 20/@rem;
-			font-weight: 600;
-			letter-spacing: -0.28/@rem;
-			border-color: #e8e8e8;
-			padding-right: 1rem;
-			-webkit-appearance: none;
-			background: url('@{pathToImg}icons/select.svg') no-repeat calc(~"100% - 1.5rem") center #fff;
-			background-size: 7/@rem 4/@rem;
-			/* for FF */
-			-moz-appearance: none;
-			text-indent: 0.01px;
-			text-overflow: '';
-			/* for IE */
-			-ms-appearance: none;
-			appearance: none!important;
-			&::-ms-expand {
-				display: none;
-			}
-		}
 		&+&{
 			margin-top: 3.6rem;
 		}
@@ -255,5 +235,151 @@
 			margin-top: 24/@rem;
 		}
 	}
+}
+.tablet.portrait{
+	.mortgage-calc{
+		&__schedule{
+			.deposit-table__row{
+				td{
+					white-space: nowrap;
+				}
+			}
+		}
+		&__options{
+			float: none;
+			width: 100%;
+			padding: 30/@rem 40/@rem;
+			min-height: 0;
+		}
+		&__top{
+			&-block{
+				width: 297/@rem;
+				.mortgage-calc__option-title{
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
 
+		&__period{
+			margin-top: 3rem;
+		}
+		&__info{
+			float: none;
+			width: 100%;
+			min-height: 0;
+			margin-top: 2rem;
+			padding: 30/@rem 40/@rem 30/@rem 40/@rem;
+			position: relative;
+			&-blocks{
+				padding-left: 0;
+				padding-right: 15rem;
+				.clearfix;
+			}
+			&-block{
+				margin-top: 0;
+				float: left;
+				width: 50%;
+				&:nth-child(n+3){
+					margin-top: 3rem;
+				}
+			}
+			&-btn{
+				width: auto;
+				position: absolute;
+				right: 4rem;
+				top: 50%;
+				margin-top: -2.4rem;
+			}
+		}
+	}
+}
+.mobile{
+	.mortgage-calc{
+		&__block{
+			margin-top: 33/@rem;
+		}
+		&__schedule{
+			overflow-x: auto;
+			.deposit-table{
+				width: 60rem;
+			}
+			.deposit-table__row{
+				td{
+					white-space: nowrap;
+				}
+			}
+			&-minimize{
+				top: 5.5rem
+			}
+			&-more{
+				&-btn{
+					&-wrap{
+						width: 40rem;
+					}
+				}
+			}
+		}
+		&__options{
+			float: none;
+			width: 100%;
+			padding: 3rem;
+			min-height: 0;
+		}
+		&__top{
+			&-block{
+				float: none;
+				width: 100%;
+				.mortgage-calc__option-title{
+					margin-bottom: 1.5rem;
+				}
+				&+.mortgage-calc__top-block{
+					margin-left: 0;
+					margin-top: 3rem;
+				}
+			}
+		}
+
+		&__period{
+			margin-top: 3rem;
+		}
+		&__option{
+			&-fields{
+				width: 100%;
+				position: relative;
+				margin-top: 22/@rem;
+			}
+			&-block{
+				margin-right:0;
+			}
+		}
+		&__info{
+			float: none;
+			width: 100%;
+			margin-top: 2rem;
+			padding: 1.9rem 3rem 2rem 3rem;
+			min-height: 0;
+			&-blocks{
+				padding-left:0;
+				.clearfix;
+			}
+			&-block{
+				width: 100%;
+				float: none;
+				padding-right: 1rem;
+				&+.mortgage-calc__info-block{
+					margin-top: 1.5rem;
+				}
+				&-text{
+					font-size: 24/@rem;
+					line-height: 30/@rem;
+					letter-spacing: -0.4/@rem;
+					margin-top: 0.4rem;
+				}
+			}
+			&-btn{
+				width: 100%;
+				margin-top: 2rem;
+			}
+		}
+	}
 }
