@@ -1,4 +1,4 @@
-<div class="b-block _gray animation__top mortgage-calc" data-mortgage-calc  data-animation>
+<div class="b-block _gray animation__top mortgage-calc" data-mortgage-calc data-year="<?=date("Y");?>" data-month="<?=date("n");?>" data-animation>
 	<div class="grid__inner">
 		<h3>Калькулятор ипотеки</h3>
 		<div class="mortgage-calc__block">
@@ -43,7 +43,7 @@
 				<div class="mortgage-calc__info-blocks">
 					<div class="mortgage-calc__info-block">
 						<div class="mortgage-calc__info-block-title">процентная ставка</div>
-						<div class="mortgage-calc__info-block-text"><span data-mortgage-calc-rate></span>%</div>
+						<div class="mortgage-calc__info-block-text _rate"><span data-mortgage-calc-rate></span>%</div>
 					</div>
 					<div class="mortgage-calc__info-block">
 						<div class="mortgage-calc__info-block-title">сумма кредита</div>

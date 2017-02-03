@@ -75,10 +75,8 @@ app.utils.okonchanie = function( number, one, two, five ) {
 
 app.init = function () {
 	if(app.utils.getData['goto']){
-		console.log($(app.utils.getData['goto']).offset().top);
 		$('html, body').stop(true, true);
 		setTimeout(function () {
-			console.log($(app.utils.getData['goto']).offset().top);
 			$('html, body').stop(true, true).animate({'scrollTop': $(app.utils.getData['goto']).offset().top - $('[data-menu-wrap]').height()}, 500);
 		},500);
 	}
@@ -2564,7 +2562,11 @@ app.calc = function(){
 app.mortgageCalc = function(){
 	var self = this,
 			$calc = $('[data-mortgage-calc]'),
-			$calcSchedule = $('[data-mortgage-calc-schedule]'),
+
+			$calcScheduleWrap = $('[data-mortgage-calc-schedule-wrap]'),
+			$calcSchedule = $calcScheduleWrap.find('[data-mortgage-calc-schedule]'),
+			$calcScheduleMinimize = $('[data-mortgage-calc-schedule-minimize]'),
+			$calcScheduleMinimizeBtn = $calcScheduleMinimize.find('[data-mortgage-calc-schedule-minimize-btn]'),
 
 			$price = $calc.find('[data-mortgage-calc-price]'),
 			$initial = $calc.find('[data-mortgage-calc-initial]'),
@@ -2579,6 +2581,11 @@ app.mortgageCalc = function(){
 			$calcOverpay = $calc.find('[data-mortgage-calc-overpay]'),
 			$calcPayment = $calc.find('[data-mortgage-calc-payment]'),
 
+			months=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+			currentMonth = $calc.data('month'),
+			currentYear = $calc.data('year'),
+			month = null,
+			year = null,
 			price = null,
 			initial = null,
 			sum = null,
@@ -2588,7 +2595,9 @@ app.mortgageCalc = function(){
 			rate = 0.1295,
 			monthRate = rate/12,
 			val = null,
-			startPeriodValue
+			startPeriodValue,
+			$moreBtn = null,
+			moreScheduleOpen = false
 
 		;
 	if(!$calc.length){
@@ -2641,7 +2650,6 @@ app.mortgageCalc = function(){
 			var val = parseInt($initial.val().replace(new RegExp(" ",'g'),""),10);
 			val = Math.min(val, parseInt($price.val().replace(new RegExp(" ",'g'),""),10));
 			$initial.val(app.formatNumber(val));
-			console.log('sdf');
 			calculate();
 		});
 
@@ -2663,33 +2671,79 @@ app.mortgageCalc = function(){
 		calculate();
 	}
 
+	$calcSchedule.on('click','[data-mortgage-calc-schedule-more-btn]',function () {
+		$(this).closest('[data-mortgage-calc-schedule-more]').remove();
+		$('[data-mortgage-calc-schedule-row]').filter('._hidden').show();
+		moreScheduleOpen = true;
+		_fixedMinimizeBtn();
+	});
+
+	$calcScheduleMinimizeBtn.on('click',function () {
+		$calcScheduleMinimize.hide();
+		var $hiddenEls = $('[data-mortgage-calc-schedule-row]').filter('._hidden');
+		$hiddenEls.hide();
+		moreScheduleOpen = false;
+		$moreBtn.insertBefore($hiddenEls.first());
+		_fixedMinimizeBtn();
+
+		setTimeout(function () {
+			$('html, body').stop(true, true).animate({'scrollTop': $calcScheduleWrap.offset().top - $('[data-menu-wrap]').height()}, 10);
+		},100);
+	});
+
+	function _fixedMinimizeBtn() {
+		if(moreScheduleOpen && app.dom.$document.scrollTop()>=$calcScheduleWrap.offset().top && app.dom.$document.scrollTop()<($calcScheduleWrap.offset().top + $calcScheduleWrap.height() - 100)){
+			$calcScheduleMinimize.show();
+		}else{
+			$calcScheduleMinimize.hide();
+		}
+	}
+	_fixedMinimizeBtn();
+	app.dom.$window.on('scroll.Schedule',_fixedMinimizeBtn);
+
 	function calculate() {
 		$calcSchedule.find('[data-mortgage-calc-schedule-row]').remove();
+		if($moreBtn){
+			$moreBtn.remove();
+		}
 		price = parseInt($price.val().replace(new RegExp(" ",'g'),""),10);
 		initial = parseInt($initial.val().replace(new RegExp(" ",'g'),""),10);
 		period = parseInt($periodInp.val())*12;
 
 		sum = price-initial;
-		payment = parseInt(sum*(monthRate+monthRate/(Math.pow(1+monthRate,period)-1)));
-		overpay = parseInt(payment*period-sum);
+		payment = (sum*(monthRate+monthRate/(Math.pow(1+monthRate,period)-1))).toFixed(0);
+		overpay = (payment*period-sum).toFixed(0);
 
 		$calcRate.text((rate*100).toFixed(2));
 		$calcSum.text(app.formatNumber(sum));
 		$calcPayment.text(app.formatNumber(payment));
 		$calcOverpay.text(app.formatNumber(overpay));
-
-		var sum1 = sum;
+		var sum1 = sum,
+				hideClass = '',
+				proc = null,
+				balance = null
+			;
+		$moreBtn = $('<tr class="deposit-table__row mortgage-calc__schedule-more" data-mortgage-calc-schedule-more>' +
+			'<td colspan="5"><div class="mortgage-calc__schedule-more-btn-wrap"><a href="javascript:void(0);" data-mortgage-calc-schedule-more-btn class="mortgage-calc__schedule-more-btn">Развернуть</a></div></td>' +
+			'</tr>');
 		for(var i = 1;i<=period;i++){
-			var proc = parseInt(sum1*rate/12);
-			var $row = $('<tr class="deposit-table__row" data-mortgage-calc-schedule-row>' +
-				'<td>'+i+'</td>' +
+			proc = (sum1*rate/12).toFixed(0);
+			hideClass = (i>5 && (period-i)>2) ? "  _hidden"  : " ";
+			month = months[(currentMonth+i-1)%12];
+			year = currentYear + Math.floor((i+1)/12);
+			balance = (i==period) ? 0 : app.formatNumber((sum1-(payment-proc)).toFixed(0));
+			var $row = $('<tr class="deposit-table__row '+hideClass+'" data-mortgage-calc-schedule-row>' +
+				'<td class="_bold">'+month+', '+year+'</td>' +
 				'<td>'+app.formatNumber(payment)+'</td>' +
-				'<td>'+app.formatNumber(payment-proc)+'</td>' +
+				'<td>'+app.formatNumber((payment-proc).toFixed(0))+'</td>' +
 				'<td>'+app.formatNumber(proc)+'</td>' +
-				'<td>'+app.formatNumber(sum1-(payment-proc))+'</td>' +
+				'<td class="_bold">'+balance+'</td>' +
 				'</tr>');
 			sum1 = sum1-(payment-proc);
 			$calcSchedule.append($row);
+			if(i == 5){
+				$calcSchedule.append($moreBtn);
+			}
 			
 		}
 		

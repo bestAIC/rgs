@@ -21,7 +21,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="inner__info _small-indent animation__top"  data-animation>
+		<div class="inner__info  animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
 					<div class="deposit__info-banner deposit-info__block">
@@ -55,11 +55,14 @@
 		</div>
 		<div class="b-blocks">
 			<?include "../includes/calcs/mortgage.php"?>
+			<div class="mortgage-calc__schedule-minimize hide" data-mortgage-calc-schedule-minimize>
+				<a href="javascript:void(0);" data-mortgage-calc-schedule-minimize-btn class="mortgage-calc__schedule-minimize-btn">Свернуть</a>
+			</div>
 			<div class="b-block animation__top" data-animation>
 				<div class="grid__inner">
 					<div class="deposit-info__block" >
 						<h3>График и рассчет платежей</h3>
-						<div class="deposit-table__wrap">
+						<div class="deposit-table__wrap mortgage-calc__schedule" data-mortgage-calc-schedule-wrap>
 							<table class="deposit-table" data-mortgage-calc-schedule>
 								<tr class="deposit-table__titles">
 									<td>ДАТА</td>
