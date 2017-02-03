@@ -6300,6 +6300,7 @@ span.pagination__item:focus {
   height: 4px;
   background-color: #f2f4f5;
   border-radius: 2px;
+  cursor: pointer;
 }
 .ui-widget-header {
   background: #cca266;
@@ -12335,9 +12336,6 @@ span.pagination__item:focus {
 }
 .mortgage-calc__period {
   margin-top: 6rem;
-}
-.mortgage-calc__period .ui-slider {
-  cursor: pointer;
 }
 .mortgage-calc__option {
   position: relative;
