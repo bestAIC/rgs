@@ -12336,6 +12336,9 @@ span.pagination__item:focus {
 .mortgage-calc__period {
   margin-top: 6rem;
 }
+.mortgage-calc__period .ui-slider {
+  cursor: pointer;
+}
 .mortgage-calc__option {
   position: relative;
 }
