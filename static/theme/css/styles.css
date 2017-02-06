@@ -17687,7 +17687,7 @@ span.pagination__item:focus {
 }
 .visa-card .b-card {
   position: absolute;
-  box-shadow: 0 4.5rem 5.5rem -3rem rgba(44, 45, 49, 0.6);
+  box-shadow: 0 2.4rem 4rem -1rem rgba(44, 45, 49, 0.6);
   border-radius: 1rem;
 }
 .visa-card .b-card._pos1 {
