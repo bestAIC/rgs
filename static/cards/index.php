@@ -50,7 +50,7 @@
 					<div class="page-nav__row">
 						<div class="page-nav__row-col">
 							<a href="#" class="page-nav__item cards-nav__card">
-								<div class="b-card _mc-platinum"></div>
+								<div class="b-card _mc-platinum-pp"></div>
 								<div class="page-nav__item-title">
 									Зарплатная карта
 								</div>
