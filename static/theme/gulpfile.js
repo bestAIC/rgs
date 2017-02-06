@@ -71,6 +71,9 @@ gulp.task('jsLibs:concat', function() {
 		options.sourcePathScripts + '/share.js',
 		options.sourcePathScripts + '/radiocheck.js',
 		options.sourcePathScripts + '/fancybox/jquery.fancybox.pack.js',
+		options.sourcePathScripts + '/inputmask/inputmask.min.js',
+		options.sourcePathScripts + '/inputmask/inputmask.extensions.min.js',
+		options.sourcePathScripts + '/inputmask/jquery.inputmask.min.js',
 		options.sourcePathScripts + '/circle-progress.min.js'
 	])
 		.pipe(concat('libs.js'))
