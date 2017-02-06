@@ -133,6 +133,9 @@ app.init = function () {
 	if($('[data-offices-page]').length){
 		app.dom.$body.addClass('is-offices-page');
 	}
+	if($('[data-white-top]').length){
+		app.dom.$body.addClass('white-top');
+	}
 	$('html').on('click','[data-fancy-close]',function () {
 		$.fancybox.close();
 	});
