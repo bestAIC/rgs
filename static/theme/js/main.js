@@ -849,7 +849,8 @@ app.initBaseCheck = function () {
 };
 app.initChosen = function () {
 	$('[data-chosen]').chosen({
-		disable_search_threshold: 1000,
+		disable_search_threshold: 30,
+		no_results_text:"Нет результатов для",
 		width: "100%"
 	});
 };
