@@ -101,7 +101,7 @@
 								</div>
 							</a>
 							<a href="#" class="page-nav__item">
-								<div class="page-nav__item-ico _base _currency"></div>
+								<div class="page-nav__item-ico _base _credit"></div>
 								<div class="page-nav__item-title">
 									Ипотечное кредитование
 									(под залог недвижимости)

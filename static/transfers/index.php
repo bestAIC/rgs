@@ -76,7 +76,7 @@
 								</div>
 							</a>
 							<a href="#" class="page-nav__item">
-								<div class="page-nav__item-ico _base _currency"></div>
+								<div class="page-nav__item-ico _base _currency2"></div>
 								<div class="page-nav__item-title">
 									Валютно-обменные операции
 								</div>

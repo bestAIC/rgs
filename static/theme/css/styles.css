@@ -1951,6 +1951,9 @@ h4.small-bottom-indent {
 .page-nav__item-ico._currency {
   background-image: url('../images/transfers/icons/currency.svg');
 }
+.page-nav__item-ico._currency2 {
+  background-image: url('../images/icons/currency.svg');
+}
 .page-nav__item-ico._insurance {
   background-image: url('../images/invest/ico-insurance.svg');
 }
@@ -1971,6 +1974,9 @@ h4.small-bottom-indent {
 }
 .page-nav__item-ico._discounts {
   background-image: url('../images/icons/discounts.svg');
+}
+.page-nav__item-ico._credit {
+  background-image: url('../images/icons/mortgage_credit.svg');
 }
 .page-nav__item-title {
   font-size: 2rem;
