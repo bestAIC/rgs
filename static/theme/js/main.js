@@ -1885,6 +1885,9 @@ app.offices = function() {
 			$metroImg = $metro.find('[data-offices-metro-img]');
 			initMetro();
 	}
+	$filterFormCity.on('change',function () {
+		$mapPopup.removeClass('_show');
+	});
 	function initMetro() {
 		$metroForm.on('submit',function () {
 			var $self = $(this);
@@ -2042,7 +2045,13 @@ app.offices = function() {
 		$self.addClass('_active');
 		$content.hide().filter('[data-offices-content="'+$self.data('officesTab')+'"]').fadeIn(300);
 	});
-
+	if($filterFormCity.val().toUpperCase()=="МОСКВА"){
+		$offices.addClass('_show-metro');
+		$tabMetro.show();
+	}else{
+		$offices.removeClass('_show-metro');
+		$tabMetro.hide();
+	}
 	$filterForm.on('submit',function () {
 		var $self = $(this);
 		if($filterFormCity.val().toUpperCase()=="МОСКВА"){
