@@ -16281,6 +16281,29 @@ span.pagination__item:focus {
   letter-spacing: 0.005rem;
   padding: 0.8rem 3rem 0.8rem 1.7rem;
 }
+.offices__filter-city-items {
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+  border: 1px solid #DEDFE0;
+  border-top: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-height: 27rem;
+  overflow-y: auto;
+}
+.offices__filter-city-item {
+  padding: 0.3rem 1rem 0.3rem 1.7rem;
+}
+.offices__filter-city-item a {
+  color: #3e3e3e;
+}
+.offices__filter-city-item a:hover {
+  color: #3e3e3e;
+}
+.offices__filter-city-item a:focus {
+  color: #3e3e3e;
+}
 .offices__filter-extended {
   border-top: 1px solid #DEDFE0;
   position: absolute;

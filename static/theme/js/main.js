@@ -115,6 +115,7 @@ app.init = function () {
 	app.investCalc();
 	app.resumeForm();
 	app.mortgageCalc();
+	app.fieldFilter();
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -814,6 +815,45 @@ app.chooseCity = function () {
 		app.dom.$body.removeClass('choose-city');
 		$city.fadeOut();
 	}
+};
+app.fieldFilter = function () {
+	var $filter =  $('[data-field-filter]')
+		;
+	$.expr[':'].Contains = function(a,i,m){
+		return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())==0;
+	};
+	$filter.each(function () {
+		var $self = $(this),
+			$inp =  $self.find('[data-field-filter-input]'),
+			$list =  $self.find('[data-filter-list]'),
+			$items =  $list.find('[data-filter-list-item]'),
+			$itemLink =  $list.find('[data-filter-list-link]')
+		;
+		$list.hide();
+		$inp.keyup( function () {
+			var $self = $(this),
+					val = $self.val(),
+					$matches = null
+				;
+			if(val){
+				$matches = $list.find('[data-filter-list-link]:Contains(' + val + ')').closest($items);
+				if($matches.length){
+					$items.not($matches).hide();
+					$matches.show();
+					$list.show();
+				}else{
+					$list.hide();
+				}
+			}else{
+				$list.hide();
+			}
+		});
+		$itemLink.on('click',function () {
+			$inp.val($(this).text()).change();
+			$list.hide();
+		});
+	});
+	
 };
 app.transfersMenu = function () {
 	var $menu =  $('[data-transfers-menu]'),

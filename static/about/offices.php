@@ -19,8 +19,40 @@
 											<a href="javascript:void(0);" class="offices__tab" data-offices-tab="list">Списком</a>
 											<a href="javascript:void(0);" class="offices__tab" data-offices-tab="metro">На карте метро</a>
 										</div>
-										<div class="offices__filter-city">
-											<input type="text" class="offices__filter-city-field"  value="Москва">
+										<div class="offices__filter-city" data-field-filter>
+											<input type="text" class="offices__filter-city-field" data-field-filter-input value="Москва">
+											<div class="offices__filter-city-items" data-filter-list>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);"  data-filter-list-link class="offices__filter-city-item-link">Магадан</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Магнитогорск</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Макушино</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Малоархангельск</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Малоярославец</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Мамоново</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Махачкала</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Мглин</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Минеральные Воды</a>
+												</div>
+												<div class="offices__filter-city-item" data-filter-list-item>
+													<a href="javascript:void(0);" data-filter-list-link class="offices__filter-city-item-link">Москва</a>
+												</div>
+											</div>
 										</div>
 										<a href="javascript:void(0);" data-filter-extend-show class="offices__advanced-search is-desktop-block">Расширенный поиск</a>
 										<div class="offices__filter-icons no-desktop-block">
