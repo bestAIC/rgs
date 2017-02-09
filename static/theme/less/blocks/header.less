@@ -159,6 +159,13 @@
 }
 .header{
 	position: relative;
+	&._eng{
+		.header{
+			&__phones{
+				margin-right: 0;
+			}
+		}
+	}
 	&.search-open{
 		.header__bottom-block{
 			background-color: #fff;
@@ -215,6 +222,26 @@
 		}
 	}
 	//transition: background-color @animTime;
+	&__rus-link{
+		font-size: 16/@rem;
+		font-weight: 600;
+		letter-spacing: 0.05/@rem;
+		.color(@cRed);
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+		margin-right: 8.7rem;
+		margin-top: 8/@rem;
+		&:after{
+			content: '';
+			display: inline-block;
+			width: 1.4rem;
+			height: 1.2rem;
+			background: url('@{pathToImg}icons/arr_right_long_red.svg') no-repeat center;
+			background-size: contain;
+			margin-left: 7/@rem;
+		}
+	}
 	&__phones{
 		float: right;
 		margin-right: 30/@rem;
@@ -315,8 +342,8 @@
 			&-requests{
 				margin-left: 4rem;
 				margin-right: 4rem;
-				padding-top: 19px;
-				padding-bottom: 26px;
+				padding-top: 19/@rem;
+				padding-bottom: 26/@rem;
 				background: #fff;
 				border: 1px solid #e8e8e8;
 				&-wrap{
@@ -496,6 +523,23 @@
 		}
 	}
 	.header{
+		&._eng{
+			.header{
+				&__phones{
+					margin-right: 0;
+				}
+				&__rus-link{
+					float: left;
+					margin-top: 10/@rem;
+				}
+				&__top{
+					padding-bottom: 4rem;
+				}
+				&__top-right{
+					padding-right: 0;
+				}
+			}
+		}
 		&__phones{
 			margin-right: 28/@rem;
 			margin-top:11/@rem;
@@ -581,6 +625,25 @@
 }
 .mobile{
 	.header{
+		&._eng{
+			.header{
+				&__phones{
+					margin-top: 0.7rem;
+				}
+				&__rus-link{
+					float: none;
+					margin-top: 32/@rem;
+					margin-right: 0;
+				}
+				&__top{
+					padding-bottom: 2.5rem;
+				}
+				&__top-right{
+					padding-right: 0;
+					text-align: center;
+				}
+			}
+		}
 		&__phones{
 			float: none;
 			margin-right: 0;
