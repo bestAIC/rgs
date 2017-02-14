@@ -95,6 +95,9 @@
 							</div>
 						</div>
 					</div>
+					<div class="b-form__captcha b-captcha">
+						<div class="g-recaptcha" data-sitekey="test"></div>
+					</div>
 				</div>
 				<button type="submit" class="btn _red subscription__form-btn">отправить заявку</button>
 			</form>

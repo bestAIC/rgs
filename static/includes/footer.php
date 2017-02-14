@@ -233,6 +233,9 @@
 							<textarea placeholder="Введите сообщение"></textarea>
 						</div>
 					</div>
+					<div class="b-form__captcha b-captcha">
+						<div class="g-recaptcha" data-sitekey="test"></div>
+					</div>
 					<div class="b-form__errors" data-form-errors></div>
 					<div class="b-form__btn-wrap">
 						<button type="submit" class="btn _red b-form__btn">Задать вопрос</button>

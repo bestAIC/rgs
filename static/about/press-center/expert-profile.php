@@ -301,7 +301,7 @@
 													<div class="b-form__file-text" data-file-text="Файл не выбран">Файл не выбран</div>
 												</div>
 											</div>
-											<div class="b-form__captcha">
+											<?/*div class="b-form__captcha">
 												<div class="b-form__captcha-img">
 													<img src="/static/theme/images/captcha.jpg" alt="">
 												</div>
@@ -313,6 +313,9 @@
 														</div>
 													</div>
 												</div>
+											</div*/?>
+											<div class="b-form__captcha b-captcha">
+												<div class="g-recaptcha" data-sitekey="test2"></div>
 											</div>
 											<div class="b-form__errors" data-form-errors></div>
 										</div>
