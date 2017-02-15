@@ -26,6 +26,11 @@
 		box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
 		color: #fff;
 	}
+	&[disabled]{
+		background-color: #a2a5aa!important;
+		box-shadow:none!important;
+		cursor: default;
+	}
 	&._transparent{
 		background-color: transparent!important;
 		.color(@cRed);
@@ -35,12 +40,20 @@
 			box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
 			color: @cRed;
 		}
+		&[disabled]{
+			background-color: transparent!important;
+			.color(#a2a6aa);
+			border-color: #a2a6aa;
+		}
 	}
 	&._gold{
 		background-color:@cGold;
 		.no-touch &:hover{
 			background-color: @cGoldHover;
 			box-shadow: 0 1px 3px rgba(204, 162, 102, 0.3);
+		}
+		&[disabled]{
+			background-color: #ccc!important;
 		}
 	}
 	&,

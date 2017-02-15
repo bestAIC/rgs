@@ -236,6 +236,11 @@ th {
   box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
   color: #fff;
 }
+.btn[disabled] {
+  background-color: #a2a5aa!important;
+  box-shadow: none!important;
+  cursor: default;
+}
 .btn._transparent {
   background-color: transparent!important;
   color: #b31b2c;
@@ -252,12 +257,26 @@ th {
   box-shadow: 0 3px 10px rgba(179, 26, 44, 0.6);
   color: #b31b2c;
 }
+.btn._transparent[disabled] {
+  background-color: transparent!important;
+  color: #a2a6aa;
+  border-color: #a2a6aa;
+}
+.btn._transparent[disabled]:hover {
+  color: #a2a6aa;
+}
+.btn._transparent[disabled]:focus {
+  color: #a2a6aa;
+}
 .btn._gold {
   background-color: #cca266;
 }
 .no-touch .btn._gold:hover {
   background-color: #dbae6e;
   box-shadow: 0 1px 3px rgba(204, 162, 102, 0.3);
+}
+.btn._gold[disabled] {
+  background-color: #ccc!important;
 }
 .btn:focus,
 .btn:active:focus,
