@@ -538,6 +538,22 @@ body.not-found .header {
 body.not-found .header__bottom {
   display: none!important;
 }
+body._old-browser {
+  background-color: whitesmoke;
+}
+body._old-browser .header__bottom,
+body._old-browser .footer,
+body._old-browser .old-version,
+body._old-browser .header__top-btn,
+body._old-browser .header__phones-title {
+  display: none!important;
+}
+body._old-browser .header__phones {
+  margin-right: 0;
+}
+body._old-browser .header {
+  background-color: white;
+}
 input,
 button,
 select,
@@ -18148,6 +18164,86 @@ span.pagination__item:focus {
 }
 .mobile .sitemap__block-items {
   padding-left: 2rem;
+}
+.old-browser__top {
+  background-color: white;
+  padding-top: 10.1rem;
+}
+.old-browser__top-in {
+  padding-bottom: 4.4rem;
+  padding-right: 50rem;
+}
+.old-browser__title {
+  font-size: 3.4rem;
+  font-weight: 700;
+  letter-spacing: -0.031rem;
+  line-height: 5.2rem;
+  color: #3e3e3e;
+}
+.old-browser__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-top: 4.1rem;
+}
+.old-browser__img {
+  width: 37rem;
+  height: 24.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url('../images/old-browser.jpg');
+}
+.old-browser__bottom {
+  padding-top: 5rem;
+}
+.browsers {
+  *zoom: 1;
+}
+.browsers:before,
+.browsers:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.browsers:after {
+  clear: both;
+}
+.browsers__item {
+  float: left;
+  width: 37rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 4.6rem 2rem 2rem 14rem;
+}
+.browsers__item:nth-child(3n) {
+  margin-right: 0;
+}
+.browsers__item-ico {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: 3.5rem;
+  background: none no-repeat center;
+  background-size: contain;
+  left: 3rem;
+}
+.browsers__item-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #3e3e3e;
+}
+.browsers__item-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 1.2rem;
+  line-height: 2rem;
 }
 .pull-right {
   float: right;

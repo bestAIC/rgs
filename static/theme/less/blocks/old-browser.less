@@ -1,0 +1,74 @@
+.old-browser{
+	&__top{
+		background-color: white;
+		padding-top: 10.1rem;
+		&-in{
+			padding-bottom: 44/@rem;
+			padding-right: 50rem;
+		}
+	}
+	&__title{
+		font-size: 34/@rem;
+		font-weight: 700;
+		letter-spacing: -0.31/@rem;
+		line-height: 52/@rem;
+		color: @title-color;
+	}
+	&__text{
+		font-size: 16/@rem;
+		font-weight: 400;
+		line-height: 25/@rem;
+		margin-top: 41/@rem;
+	}
+	&__img{
+		width: 370/@rem;
+		height: 245/@rem;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: url('@{pathToImg}old-browser.jpg');
+	}
+	&__bottom{
+		padding-top: 50/@rem;
+
+	}
+}
+.browsers{
+	.clearfix;
+	&__item{
+		float: left;
+		width: 370/@rem;
+		height: 150/@rem;
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		margin-right: 3rem;
+		margin-bottom: 2rem;
+		position: relative;
+		padding: 4.6rem 2rem 2rem 14rem;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+		&-ico{
+			width: 80/@rem;
+			height: 80/@rem;
+			position: absolute;
+			top: 3.5rem;
+			background: none no-repeat center;
+			background-size: contain;
+			left: 3rem;
+		}
+		&-title{
+			font-size: 24/@rem;
+			font-weight: 700;
+			line-height: 3rem;
+			color: @title-color;
+		}
+		&-text{
+			font-size: 16/@rem;
+			font-weight: 400;
+			margin-top: 12/@rem;
+			line-height: 2rem;
+		}
+	}
+}

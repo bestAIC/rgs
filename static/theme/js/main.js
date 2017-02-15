@@ -137,6 +137,9 @@ app.init = function () {
 	if($('[data-white-top]').length){
 		app.dom.$body.addClass('white-top');
 	}
+	if($('[data-old-browser]').length){
+		app.dom.$body.addClass('_old-browser');
+	}
 	$('html').on('click','[data-fancy-close]',function () {
 		$.fancybox.close();
 	});
