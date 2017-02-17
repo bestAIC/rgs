@@ -1,4 +1,4 @@
-<?include "includes/header.php"?>
+<?include "includes/header-old-browser.php"?>
 	<div class="old-browser" data-old-browser>
 		<div class="old-browser__top">
 			<div class="grid__inner">
@@ -42,5 +42,9 @@
 			</div>
 		</div>
 	</div>
-<?include "includes/empty-footer.php"?>
+<div class="loader js-loader"><div class="loader_box"></div></div>
+</div>
+
+</body>
+</html>
 

@@ -31,6 +31,20 @@ gulp.task('less', function() {
 		.pipe(gulp.dest(options.destinationPathStyles))
 		;
 });
+gulp.task('lessIe', function() {
+	return gulp.src('less/stylesIe.less')
+		.pipe(plumber())
+		.pipe(sourcemaps.init())
+		.pipe(less())
+		.pipe(postcss([
+			autoprefixer({
+				browsers: ['last 2 versions']
+			})
+		]))
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(options.destinationPathStyles))
+		;
+});
 
 gulp.task('styles:min', ['less'], function() {
 	return gulp.src(options.destinationPathStyles + '/*[!(.min)].css')
@@ -90,7 +104,7 @@ gulp.task('watch', function() {
 	gulp.watch(options.sourcePathStyles + '/**/*.less', ['less']);
 });
 
-gulp.task('default', ['less', 'watch','jsLibs:concat']);
+gulp.task('default', ['less','lessIe', 'watch','jsLibs:concat']);
 gulp.task('release', ['styles:min', 'jsMain:min', 'jsLibs:uglify']);
 
 
