@@ -2778,13 +2778,15 @@ span.pagination__item:focus {
 .base-info__text {
   margin-top: 3rem;
 }
+.base-info__block + .base-info__block {
+  margin-top: 2.3rem;
+}
 .base-info__block-title {
   letter-spacing: -0.019rem;
-  line-height: 1.4rem;
   color: #3e3e3e;
 }
 .base-info__block-text {
-  margin-top: 1.1rem;
+  margin-top: 1.4rem;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 2.5rem;
@@ -13127,6 +13129,21 @@ h2 + .docs-date {
 .mobile .mortgage-calc__info-btn {
   width: 100%;
   margin-top: 2rem;
+}
+.stock-market {
+  margin-top: 6.6rem;
+}
+.stock-market__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-top: 3.7rem;
+}
+.tablet.portrait .stock-market {
+  margin-top: 5.6rem;
+}
+.mobile.portrait .stock-market {
+  margin-top: 5.8rem;
 }
 .deposit__text,
 .deposit .note-text {
