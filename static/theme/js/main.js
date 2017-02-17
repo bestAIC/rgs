@@ -116,6 +116,8 @@ app.init = function () {
 	app.resumeForm();
 	app.mortgageCalc();
 	app.fieldFilter();
+	app.shareholdersChart();
+
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
 	}else{
@@ -1358,6 +1360,43 @@ app.docsDateYears = function () {
 				}
 			}
 		});
+	});
+};
+app.shareholdersChart = function () {
+	var $chart = $('[data-shareholders-chart]'),
+			data = $chart.data('shareholdersChart')
+		;
+		if(!$chart.length){
+			return false;
+		}
+
+	var chart = AmCharts.makeChart($chart[0], {
+		"type": "pie",
+		"startDuration": 0,
+		"theme": "none",
+		"addClassNames": true,
+		"labelText": "",
+		"marginTop": 10,
+		"marginBottom": 10,
+		"marginLeft": 10,
+		"marginRight": 10,
+		"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]%</b></span>",
+		"legend":{
+			"position":"left",
+			"valueText":"[[value]]%",
+			"marginRight":10,
+			"autoMargins":false
+		},
+		"innerRadius": "60%",
+		"defs": {
+
+		},
+		"dataProvider": data,
+		"valueField": "litres",
+		"titleField": "company",
+		"export": {
+			"enabled": true
+		}
 	});
 };
 app.newsGall = function () {

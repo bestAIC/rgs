@@ -1,6 +1,12 @@
 .docs-date{
 	max-width: 97rem;
 	margin: 0 auto;
+	h2+&{
+		margin-top: 3.6rem;
+		.mobile &{
+			margin-top: 3rem;
+		}
+	}
 	&._issuing-documents{
 		.docs-date__month{
 			.docs-date__month{
@@ -70,6 +76,10 @@
 		border-radius: 2px;
 		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
 		border: 1px solid @cBorder;
+		&._history{
+			padding: 48/@rem 70/@rem 32/@rem 29/@rem;
+
+		}
 	}
 	&__month{
 		.clearfix;
@@ -146,6 +156,11 @@
 }
 .tablet.portrait{
 	.docs-date{
+		&__block{
+			&._history{
+				padding: 25/@rem 25/@rem 32/@rem;
+			}
+		}
 		&__month{
 			&-content{
 				.file{
@@ -199,6 +214,21 @@
 				}
 				&-content{
 					margin-left: 13.8rem;
+				}
+			}
+		}
+		&__block{
+			&._history{
+				padding: 23/@rem 25/@rem 32/@rem 18/@rem;
+				.b-list{
+					li{
+						padding-left: 2.2rem;
+						font-size: 16/@rem;
+						line-height: 25/@rem;
+						&+li{
+							margin-top: 1.5rem;
+						}
+					}
 				}
 			}
 		}

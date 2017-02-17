@@ -1,3 +1,113 @@
+.about-eng{
+	.inner__info-benefits-text{
+		margin-top: 4rem;
+	}
+	&__shareholders{
+		margin-top: 2rem;
+		&-chart{
+			//float: right;
+			//width: 50rem;
+			height: 40rem;
+			.amcharts-pie-slice {
+				//fill: #ccc!important;
+			}
+			.amcharts-chart-div a{
+				display: none!important;
+			}
+			.amcharts-export-menu{
+				display: none!important;
+			}
+			.amcharts-pie-slice:hover {
+				//fill: #aaa!important;
+			}
+		}
+		.about-eng__shareholders-block{
+			h4{
+				margin-bottom: 3rem;
+			}
+			.note-text{
+				margin-top: 31/@rem;
+				color: @title-color;
+			}
+		}
+		.b-list li + li{
+			margin-top: 1.5rem;
+		}
+		&-cols{
+			.clearfix;
+		}
+		&-col{
+			float: left;
+			width: 50rem;
+			&+&{
+				margin-left: 3rem;
+			}
+		}
+	}
+}
+.mobile{
+	.about-eng{
+		.about__mission{
+			font-size: 1.6rem;
+			line-height: 2.5rem;
+			padding: 3.7rem 2.5rem 3rem;
+			.b-list{
+				font-size: 1.6rem;
+				line-height: 2.5rem;
+				li:before{
+					top: 0.8rem
+				}
+			}
+		}
+		.inner__info-benefits{
+			&-title{
+				margin-top: 72/@rem;
+				font-size: 20/@rem;
+				line-height: 30/@rem
+			}
+			&-text{
+				margin-top: 3rem;
+			}
+		}
+		&__shareholders{
+			padding-bottom: 0;
+			.about-eng__shareholders-block{
+				.note-text{
+					margin-top: 5/@rem;
+				}
+			}
+			&-col{
+				float: none;
+				width: 100%;
+				&+.about-eng__shareholders-col{
+					margin-left:0;
+					margin-top: 4rem;
+				}
+			}
+		}
+	}
+}
+.tablet.portrait{
+	.numerals__item._big .numerals__item-val span:not(.rub){
+		line-height: 0.64;
+	}
+	.about-eng__shareholders{
+		padding-bottom: 1.8rem;
+		.about-eng__shareholders-block{
+			.note-text{
+				margin-top: 5/@rem;
+			}
+		}
+		&-col{
+			float: none;
+			width: 100%;
+			&+.about-eng__shareholders-col{
+				margin-left:0;
+				margin-top: 4rem;
+			}
+		}
+	}
+}
 .about{
 	.b-list{
 		li{
@@ -6,9 +116,64 @@
 			}
 		}
 	}
+
+	&__contacts{
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		border-top: 6/@rem solid @cGold;
+		padding: 27/@rem 41/@rem 54/@rem;
+		&-title{
+			font-size: 20/@rem;
+			font-weight: 700;
+			line-height: 3rem;
+			margin-bottom: 39/@rem;
+		}
+		&-block{
+			font-size: 16/@rem;
+			line-height: 25/@rem;
+			margin-top: 35/@rem;
+			max-width: 28rem;
+			&-title{
+				font-weight: 300;
+				color: @title-color;
+			}
+			&-text{
+				font-weight: 600;
+				margin-top: 10/@rem;
+				a{
+					.color(@text-color);
+				}
+			}
+		}
+	}
 	&__rating{
 		padding-top: 7.6rem;
 		padding-bottom: 2.4rem;
+		&-title{
+			font-size: 60/@rem;
+			font-weight: 700;
+			letter-spacing: -1/@rem;
+			line-height: 60/@rem;
+			&:after{
+				content: '';
+				width: 2.7rem;
+				height: 2rem;
+				background: url('@{pathToImg}icons/rating.svg') no-repeat center;
+				background-size: contain;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 12/@rem;
+				margin-top: 8/@rem;
+			}
+		}
+		&-text{
+			font-size: 28/@rem;
+			font-weight: 300;
+			letter-spacing: -0.39/@rem;
+			line-height: 35/@rem;
+			margin-top: 29/@rem;
+		}
 		h2{
 			text-align: left;
 			margin-bottom: 2.8rem;
@@ -34,6 +199,11 @@
 			.color(@title-color);
 			margin-bottom: 3rem;
 			padding: 4.9rem 5.8rem;
+			&._title{
+				border-color: transparent;
+				padding-top: 97/@rem;
+				padding-left: 49/@rem;
+			}
 			&:nth-child(2n){
 				margin-left: 3rem;
 			}
@@ -46,7 +216,7 @@
 			width: 570/@rem;
 			height: 337/@rem;
 			border: 1px solid #dadada;
-			border-radius: 2px;
+			border-radius: 2/@rem;
 			&-title{
 				font-size: 20/@rem;
 				font-weight: 300;
@@ -495,6 +665,20 @@
 				}
 			}
 		}
+		&__contacts{
+			margin-top: 4rem;
+			padding: 27/@rem 62/@rem 24/@rem;
+			margin-bottom: 32/@rem;
+			&-block{
+				margin-top: 0;
+				margin-right: 4.4rem;
+				max-width: 1000/@rem;
+				margin-bottom: 2.5rem;
+				display: inline-block;
+				vertical-align: top;
+				min-width: 20rem;
+			}
+		}
 		&__info{
 			&-list{
 				margin-top: 3rem;
@@ -534,7 +718,7 @@
 			.nav__btn{
 				position: absolute;
 				top: auto;
-				bottom: -24px;
+				bottom: -24/@rem;
 				z-index: 10;
 				&._prev{
 					left: auto;
@@ -661,6 +845,7 @@
 			}
 			&-item{
 				padding: 2.9rem 2.4rem;
+
 				p{
 					&.indent{
 						margin-top: 4.3rem;
@@ -692,7 +877,92 @@
 	}
 }
 .mobile{
+	.about-eng{
+		.about{
+			&__rating{
+				padding-top: 4.2rem;
+				padding-bottom: 0.4rem;
+				&-title{
+					font-size: 45/@rem;
+					letter-spacing: -0.75/@rem;
+					&:after{
+						margin-left: 15/@rem;
+					}
+				}
+				&-text{
+					font-size: 23/@rem;
+					letter-spacing: -0.33/@rem;
+					margin-top: 21/@rem;
+				}
+				&-item{
+					padding: 3.9rem 2.4rem;
+					margin-bottom: 3rem;
+					&._title{
+						padding: 0.9rem 0 1.8rem;
+						height: auto;
+					}
+					&-numerals{
+						margin-top: 3.7rem;
+						&-item{
+							&-val{
+								font-size: 45/@rem;
+								letter-spacing: 0;
+								line-height: 45/@rem;
+							}
+							&-text{
+								&:before{
+									margin-top: 2.3rem;
+								}
+							}
+						}
+					}
+				}
+			}
+			&__controls{
+				font-size: 16/@rem;
+				line-height: 22/@rem;
+				.faq__tab{
+					font-size: 1.6rem;
+					line-height: 1.6rem;
+				}
+				&-team{
+					padding-top: 2rem;
+					padding-bottom: 0.5rem;
+					&-item{
+						margin-bottom: 4rem;
+						&-name{
+							.surname{
+								font-size: 2.4rem;
+								margin-bottom: 1.1rem;
+							}
+						}
+						&-position{
+							margin-top: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
 	.about{
+		&__contacts{
+			padding: 27/@rem 10/@rem 0 30/@rem;
+			margin-top: 29/@rem;
+			margin-bottom: 8/@rem;
+			&-block{
+				font-size: 16/@rem;
+				line-height: 25/@rem;
+				margin-top: 0;
+				margin-bottom: 2.6rem;
+				max-width: 100rem;
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 2rem;
+				&:last-child{
+					padding-right: 1rem;
+				}
+			}
+		}
 		&__info{
 			&-list{
 				margin-top: 2rem;
@@ -741,7 +1011,7 @@
 				display: none;
 				position: absolute;
 				top: auto;
-				bottom: -24px;
+				bottom: -24/@rem;
 				z-index: 10;
 				&._prev{
 					left: auto;
@@ -767,9 +1037,9 @@
 			&-event{
 				padding: 3rem;
 				&-text{
-					font-size: 14px;
+					font-size: 14/@rem;
 					font-weight: 400;
-					line-height: 23px;
+					line-height: 23/@rem;
 				}
 			}
 			&-events{
@@ -959,6 +1229,18 @@
 		&__rating{
 			padding-top: 4.2rem;
 			padding-bottom: 0.4rem;
+			&-title{
+				font-size: 45/@rem;
+				letter-spacing: -0.75/@rem;
+				&:after{
+					margin-left: 15/@rem;
+				}
+			}
+			&-text{
+				font-size: 23/@rem;
+				letter-spacing: -0.33/@rem;
+				margin-top: 21/@rem;
+			}
 			h2{
 				text-align: left;
 				margin-bottom: 0.6rem;
@@ -986,6 +1268,10 @@
 			}
 			&-item{
 				padding: 2.9rem 2.4rem;
+				&._title{
+					padding: 0.9rem 0 2.8rem;
+					height: auto;
+				}
 				p{
 					&.indent{
 						margin-top: 4.3rem;

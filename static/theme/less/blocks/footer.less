@@ -1,3 +1,52 @@
+.footer-eng{
+	.clearfix;
+	padding-top: 45/@rem;
+	padding-bottom: 45/@rem;
+	.color(#3e3e3e);
+	&__social{
+		margin-top: 1.7rem;
+		.clearfix;
+		.footer__social-item{
+			float: right;
+			margin-left: 1rem;
+		}
+	}
+	&__contacts{
+		float: right;
+		text-align: right;
+		width: 20rem;
+	}
+	&__phone{
+		font-size: 24/@rem;
+		font-weight: 700;
+		letter-spacing: 0.08/@rem;
+		line-height: 26/@rem;
+	}
+	&__main{
+		float: left;
+		width: 80rem;
+	}
+	&__menu{
+		width: 40rem;
+		padding-top: 1rem;
+		float: right;
+		&-col{
+			float: left;
+			width: 20rem;
+			padding-right: 1rem;
+		}
+		&-item{
+			font-weight: 600;
+			&+&{
+				margin-top: 2rem;
+			}
+		}
+	}
+	&__block{
+		float: left;
+		width: 30rem;
+	}
+}
 .footer{
 	border-top: 1px solid #ebebeb;
 	a{
@@ -247,6 +296,56 @@
 	}
 }
 .tablet.portrait{
+	.footer-eng{
+		.footer__license{
+			margin-top: 2.1rem;
+		}
+		padding-top: 32/@rem;
+		padding-bottom: 32/@rem;
+		.grid__inner{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__social{
+			margin-top: 0;
+			float: right;
+		}
+		&__contacts{
+			float: none;
+			text-align: left;
+			width: auto;
+			.clearfix;
+			padding-left: 2.7rem;
+			padding-right: 2.7rem;
+			border-bottom: 1px solid #ebebeb;
+			padding-bottom: 20/@rem;
+			margin-bottom: 21/@rem;
+		}
+		&__phone{
+			float: left;
+			margin-top: 0.7rem;
+		}
+		&__main{
+			float: none;
+			width: auto;
+			padding-left: 2.7rem;
+			padding-right: 2.7rem;
+			.clearfix;
+		}
+		&__menu{
+			width: 34rem;
+			padding-top: 0;
+			&-col{
+				&:first-child{
+					width: 12.3rem;
+				}
+			}
+		}
+		&__block{
+			float: left;
+			width: 30rem;
+		}
+	}
 	.footer{
 		a{
 			color: #3e3e3e;
@@ -461,6 +560,59 @@
 				&._google{
 					float: right;
 				}
+			}
+		}
+	}
+	.footer-eng{
+		padding-top: 32/@rem;
+		padding-bottom: 32/@rem;
+		.grid__inner{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__social{
+			margin-top: 0;
+			float: right;
+		}
+		&__contacts{
+			float: none;
+			text-align: left;
+			width: auto;
+			.clearfix;
+			padding-left: 2rem;
+			padding-right: 2rem;
+			border-bottom: 1px solid #ebebeb;
+			padding-bottom: 20/@rem;
+			margin-bottom: 21/@rem;
+		}
+		&__phone{
+			float: left;
+			margin-top: 0.7rem;
+		}
+		&__main{
+			float: none;
+			width: auto;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		&__menu{
+			width: 100%;
+			padding-top: 1rem;
+			float: none;
+			.clearfix;
+			&-col{
+				width: 15rem;
+				&+.footer-eng__menu-col{
+					margin-left: 5.6rem;
+				}
+			}
+		}
+		&__block{
+			float: none;
+			width: 100%;
+			margin-top: 5rem;
+			.footer__license{
+				padding-right: 9rem;
 			}
 		}
 	}
