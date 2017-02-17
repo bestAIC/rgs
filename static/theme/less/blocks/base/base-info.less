@@ -1,0 +1,46 @@
+.base-info{
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+	border-top: 6/@rem solid @cGold;
+	padding: 28/@rem 40/@rem;
+	.mobile &{
+		padding: 28/@rem 30/@rem;
+	}
+	&__title{
+		font-size: 20/@rem;
+		font-weight: 700;
+		line-height: 2.7rem;
+		color: @title-color;
+	}
+	&__text{
+		margin-top: 3rem;
+	}
+	&__block{
+		&-title{
+			letter-spacing: -0.19/@rem;
+			line-height: 14/@rem;
+			color: @title-color;
+		}
+		&-text{
+			margin-top: 11/@rem;
+			font-size: 16/@rem;
+			font-weight: 600;
+			line-height: 25/@rem;
+		}
+	}
+}
+.tablet.portrait{
+	.inner__info-block{
+		.base-info{
+			margin-bottom: 5rem;
+		}
+	}
+}
+.mobile{
+	.inner__info-block{
+		.base-info{
+			margin-bottom: 6rem;
+		}
+	}
+}

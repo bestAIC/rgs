@@ -80,6 +80,9 @@
 			&._credit{
 				background-image: url('@{pathToImg}icons/mortgage_credit.svg');
 			}
+			&._docs{
+				background-image: url('@{pathToImg}icons/docs.svg');
+			}
 		}
 		&-title{
 			font-size: 20/@rem;
@@ -145,6 +148,32 @@
 			background-image: url('@{pathToImg}remote-services/bank_bg_mob.png');
 		}
 
+	}
+}
+.financial-nav{
+	&__market{
+		.color(#fff);
+		background: url('@{pathToImg}page-nav/financial/market.png') no-repeat center;
+		background-size: cover;
+		.tablet.portrait &{
+			background-image: url('@{pathToImg}page-nav/financial/market_tablet.png');
+		}
+		.mobile &{
+			padding-right: 15rem!important;
+			background-image: url('@{pathToImg}page-nav/financial/market_mob.png');
+		}
+	}
+	&__depository{
+		position: relative;
+		&-ico{
+			position: absolute;
+			right: -3rem;
+			top: 0.5rem;
+			width: 255/@rem;
+			height: 200/@rem;
+			background: url('@{pathToImg}page-nav/financial/box.png') no-repeat center;
+			background-size: contain;
+		}
 	}
 }
 .cards-nav{
@@ -320,6 +349,16 @@
 			}
 		}
 	}
+	.financial-nav{
+		.page-nav__item-ico{
+			display: none;
+		}
+		&__depository{
+			&-ico{
+				right: -2.2rem;
+			}
+		}
+	}
 	.deposits-nav{
 		padding-bottom: 3rem;
 		.page-nav__row-col._items{
@@ -432,6 +471,22 @@
 				display: none;
 			}
 			&-blocks{
+				display: none;
+			}
+		}
+	}
+	.financial-nav{
+		&__market{
+			.page-nav__item-text{
+				height: 7rem;
+				overflow: hidden;
+			}
+		}
+		.page-nav__item-ico{
+			display: none;
+		}
+		&__depository{
+			&-ico{
 				display: none;
 			}
 		}

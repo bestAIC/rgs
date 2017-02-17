@@ -2018,6 +2018,9 @@ h4.small-bottom-indent {
 .page-nav__item-ico._credit {
   background-image: url('../images/icons/mortgage_credit.svg');
 }
+.page-nav__item-ico._docs {
+  background-image: url('../images/icons/docs.svg');
+}
 .page-nav__item-title {
   font-size: 2rem;
   font-weight: 700;
@@ -2088,6 +2091,36 @@ h4.small-bottom-indent {
 .mobile .remote-nav__bank {
   padding-right: 15rem!important;
   background-image: url('../images/remote-services/bank_bg_mob.png');
+}
+.financial-nav__market {
+  color: #fff;
+  background: url('../images/page-nav/financial/market.png') no-repeat center;
+  background-size: cover;
+}
+.financial-nav__market:hover {
+  color: #fff;
+}
+.financial-nav__market:focus {
+  color: #fff;
+}
+.tablet.portrait .financial-nav__market {
+  background-image: url('../images/page-nav/financial/market_tablet.png');
+}
+.mobile .financial-nav__market {
+  padding-right: 15rem!important;
+  background-image: url('../images/page-nav/financial/market_mob.png');
+}
+.financial-nav__depository {
+  position: relative;
+}
+.financial-nav__depository-ico {
+  position: absolute;
+  right: -3rem;
+  top: 0.5rem;
+  width: 25.5rem;
+  height: 20rem;
+  background: url('../images/page-nav/financial/box.png') no-repeat center;
+  background-size: contain;
 }
 .cards-nav.b-block {
   padding-top: 8rem;
@@ -2272,6 +2305,12 @@ h4.small-bottom-indent {
 .tablet.portrait .invest-nav__pay-img {
   display: none;
 }
+.tablet.portrait .financial-nav .page-nav__item-ico {
+  display: none;
+}
+.tablet.portrait .financial-nav__depository-ico {
+  right: -2.2rem;
+}
 .tablet.portrait .deposits-nav {
   padding-bottom: 3rem;
 }
@@ -2365,6 +2404,16 @@ h4.small-bottom-indent {
   display: none;
 }
 .mobile .deposits-nav__pension-blocks {
+  display: none;
+}
+.mobile .financial-nav__market .page-nav__item-text {
+  height: 7rem;
+  overflow: hidden;
+}
+.mobile .financial-nav .page-nav__item-ico {
+  display: none;
+}
+.mobile .financial-nav__depository-ico {
   display: none;
 }
 .mobile .cards-nav .page-nav__item-ico {
@@ -2709,6 +2758,42 @@ span.pagination__item:focus {
   width: 3rem;
   height: 3rem;
   background-size: contain;
+}
+.base-info {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-top: 0.6rem solid #cca266;
+  padding: 2.8rem 4rem;
+}
+.mobile .base-info {
+  padding: 2.8rem 3rem;
+}
+.base-info__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  color: #3e3e3e;
+}
+.base-info__text {
+  margin-top: 3rem;
+}
+.base-info__block-title {
+  letter-spacing: -0.019rem;
+  line-height: 1.4rem;
+  color: #3e3e3e;
+}
+.base-info__block-text {
+  margin-top: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.tablet.portrait .inner__info-block .base-info {
+  margin-bottom: 5rem;
+}
+.mobile .inner__info-block .base-info {
+  margin-bottom: 6rem;
 }
 .animation__top {
   opacity: 0;
