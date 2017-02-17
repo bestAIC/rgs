@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="/static/theme/css/stylesIe.css">
 </head>
-<body>
+<body class="_old-browser">
 <header class="header">
 	<div class="header__top">
 		<div class="grid__inner header__top-inner">
