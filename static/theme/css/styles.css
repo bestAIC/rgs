@@ -559,6 +559,7 @@ body.not-found .header__bottom {
 }
 body._old-browser {
   background-color: whitesmoke;
+  min-width: 990px;
 }
 body._old-browser .header__bottom,
 body._old-browser .footer,
@@ -566,6 +567,10 @@ body._old-browser .old-version,
 body._old-browser .header__top-btn,
 body._old-browser .header__phones-title {
   display: none!important;
+}
+body._old-browser .grid__inner {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 body._old-browser .header__phones {
   margin-right: 0;
@@ -18734,15 +18739,15 @@ h2 + .docs-date {
 }
 .browsers__item {
   float: left;
-  width: 37rem;
+  width: 32%;
   height: 15rem;
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
-  margin-right: 3rem;
+  margin-right: 2%;
   margin-bottom: 2rem;
   position: relative;
-  padding: 4.6rem 2rem 2rem 14rem;
+  padding: 4.6rem 1rem 2rem 12rem;
 }
 .browsers__item:nth-child(3n) {
   margin-right: 0;
@@ -18754,10 +18759,10 @@ h2 + .docs-date {
   top: 3.5rem;
   background: none no-repeat center;
   background-size: contain;
-  left: 3rem;
+  left: 2rem;
 }
 .browsers__item-title {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 3rem;
   color: #3e3e3e;
