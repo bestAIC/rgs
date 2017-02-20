@@ -2,7 +2,7 @@
 	<div class="inner deposit">
 		<div class="inner__banner">
 			<div class="inner__banner-img">
-				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/financial.png');"></div>
+				<div class="inner__banner-img-in" style="background-image: url('/static/theme/images/banners/financial.jpg');"></div>
 			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
@@ -28,8 +28,8 @@
 						<div class="deposit__info-banner-in">
 							<div class="deposit__info-banner-title correspondent__banner-title">Бесплатно предоставим кредитовые и дебетовые авизо по корреспондентским счетам</div>
 						</div>
-						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/credit/Mortgage_pic.png'
-							: ($tablePort ? '/static/theme/images/info-banners/credit/Mortgage_tablet_pic.png':'/static/theme/images/info-banners/credit/Mortgage_mobile.png') ?>)"></div>
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/financial/Correspondent_pic.png'
+							: ($tablePort ? '/static/theme/images/info-banners/financial/Correspondent_tablet_pic.png':'/static/theme/images/info-banners/financial/Correspondent_mobile_pic.png') ?>)"></div>
 					</div>
 					<div class="base-info deposit-info__block correspondent__contacts">
 						<div class="base-info__title">Контакты</div>

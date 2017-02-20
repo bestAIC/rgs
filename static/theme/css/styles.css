@@ -13287,6 +13287,9 @@ h2 + .docs-date {
   margin-top: 2.5rem;
   padding-left: 4rem;
 }
+.tablet.portrait .correspondent__banner-title.deposit__info-banner-title {
+  padding-right: 34rem;
+}
 .tablet.portrait .correspondent__contacts {
   margin-top: 4rem!important;
 }
