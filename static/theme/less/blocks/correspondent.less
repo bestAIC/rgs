@@ -1,0 +1,139 @@
+.correspondent{
+	&__banner-title.deposit__info-banner-title{
+		font-size: 16/@rem;
+		line-height: 25/@rem;
+		padding-top: 19/@rem;
+	}
+	&__service{
+		margin-top: 36/@rem;
+		.clearfix;
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		border-top: 6/@rem solid @cGold;
+		&-block{
+			float: left;
+			width: 50%;
+			padding: 36/@rem 34/@rem 32/@rem 41/@rem;
+			&-title{
+				font-size: 20/@rem;
+				font-weight: 600;
+				line-height: 30/@rem;
+				color: @title-color;
+				margin-bottom: 3rem;
+			}
+		}
+	}
+	&__benefits{
+		&.inner__info-benefits{
+			.b-list{
+				margin-bottom: 0;
+			}
+		}
+		&-title{
+			margin-bottom: 7rem;
+		}
+		&-more{
+			text-align: left;
+			margin-top: 2.5rem;
+			padding-left: 4rem;
+		}
+	}
+}
+.tablet.portrait{
+	.correspondent{
+		&__contacts{
+			margin-top: 4rem!important;
+		}
+		&__service{
+			border-radius: 0;
+			background-color: transparent;
+			box-shadow: none;
+			border: 0;
+			&-block{
+				float: none;
+				width: 100%;
+				padding: 36/@rem 34/@rem 32/@rem 41/@rem;
+				background-color: white;
+				border-radius: 2px;
+				box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+				border-top: 6/@rem solid @cGold;
+				&+.correspondent__service-block{
+					margin-top: 3rem;
+				}
+			}
+		}
+		&__benefits{
+			&.inner__info-benefits{
+				.b-list{
+					margin-bottom: 2rem;
+				}
+			}
+			&-title{
+				margin-bottom: 6rem;
+			}
+		}
+	}
+}
+.mobile{
+	.correspondent{
+		&__banner-title.deposit__info-banner-title{
+			font-size: 14/@rem;
+			line-height: 25/@rem;
+			padding-top: 2.9rem;
+		}
+		&__contacts{
+			margin-top: 4rem!important;
+		}
+		&__service{
+			margin-top: 36/@rem;
+			border-radius: 0;
+			background-color: transparent;
+			box-shadow: none;
+			border: 0;
+			&-block{
+				float: none;
+				width: 100%;
+				padding: 33/@rem 20/@rem;
+				background-color: white;
+				border-radius: 2px;
+				box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+				border-top: 6/@rem solid @cGold;
+				&+.correspondent__service-block{
+					margin-top: 3rem;
+				}
+				.b-list{
+					font-size: 16/@rem;
+					line-height: 25/@rem;
+					.dash-list{
+						margin-left: 0;
+						margin-top: 2rem;
+						margin-bottom: 3.5rem;
+						li{
+							padding-left: 2.5rem;
+						}
+					}
+					&>li{
+						padding-left: 3rem;
+						&+li{
+							margin-top: 2rem;
+						}
+						&:before{
+							top: 0.8rem;
+						}
+					}
+				}
+			}
+		}
+		&__benefits{
+			&.inner__info-benefits{
+				.b-list{
+					margin-bottom: 1.5rem;
+				}
+			}
+			&-title{
+				margin-bottom: 5rem;
+			}
+		}
+	}
+}

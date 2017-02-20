@@ -13242,6 +13242,132 @@ h2 + .docs-date {
 .mobile .money-market p {
   margin: 2.5rem 0;
 }
+.correspondent__banner-title.deposit__info-banner-title {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  padding-top: 1.9rem;
+}
+.correspondent__service {
+  margin-top: 3.6rem;
+  *zoom: 1;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-top: 0.6rem solid #cca266;
+}
+.correspondent__service:before,
+.correspondent__service:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.correspondent__service:after {
+  clear: both;
+}
+.correspondent__service-block {
+  float: left;
+  width: 50%;
+  padding: 3.6rem 3.4rem 3.2rem 4.1rem;
+}
+.correspondent__service-block-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: #3e3e3e;
+  margin-bottom: 3rem;
+}
+.correspondent__benefits.inner__info-benefits .b-list {
+  margin-bottom: 0;
+}
+.correspondent__benefits-title {
+  margin-bottom: 7rem;
+}
+.correspondent__benefits-more {
+  text-align: left;
+  margin-top: 2.5rem;
+  padding-left: 4rem;
+}
+.tablet.portrait .correspondent__contacts {
+  margin-top: 4rem!important;
+}
+.tablet.portrait .correspondent__service {
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+}
+.tablet.portrait .correspondent__service-block {
+  float: none;
+  width: 100%;
+  padding: 3.6rem 3.4rem 3.2rem 4.1rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-top: 0.6rem solid #cca266;
+}
+.tablet.portrait .correspondent__service-block + .correspondent__service-block {
+  margin-top: 3rem;
+}
+.tablet.portrait .correspondent__benefits.inner__info-benefits .b-list {
+  margin-bottom: 2rem;
+}
+.tablet.portrait .correspondent__benefits-title {
+  margin-bottom: 6rem;
+}
+.mobile .correspondent__banner-title.deposit__info-banner-title {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  padding-top: 2.9rem;
+}
+.mobile .correspondent__contacts {
+  margin-top: 4rem!important;
+}
+.mobile .correspondent__service {
+  margin-top: 3.6rem;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+}
+.mobile .correspondent__service-block {
+  float: none;
+  width: 100%;
+  padding: 3.3rem 2rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  border-top: 0.6rem solid #cca266;
+}
+.mobile .correspondent__service-block + .correspondent__service-block {
+  margin-top: 3rem;
+}
+.mobile .correspondent__service-block .b-list {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.mobile .correspondent__service-block .b-list .dash-list {
+  margin-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+.mobile .correspondent__service-block .b-list .dash-list li {
+  padding-left: 2.5rem;
+}
+.mobile .correspondent__service-block .b-list > li {
+  padding-left: 3rem;
+}
+.mobile .correspondent__service-block .b-list > li + li {
+  margin-top: 2rem;
+}
+.mobile .correspondent__service-block .b-list > li:before {
+  top: 0.8rem;
+}
+.mobile .correspondent__benefits.inner__info-benefits .b-list {
+  margin-bottom: 1.5rem;
+}
+.mobile .correspondent__benefits-title {
+  margin-bottom: 5rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
