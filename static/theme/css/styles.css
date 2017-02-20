@@ -13145,6 +13145,103 @@ h2 + .docs-date {
 .mobile.portrait .stock-market {
   margin-top: 5.8rem;
 }
+.money-market {
+  padding-top: 6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding-bottom: 5.4rem;
+}
+.money-market__block {
+  max-width: 77rem;
+}
+.money-market__block + .money-market__block {
+  margin-top: 7rem;
+}
+.money-market .base-info {
+  width: 47rem;
+  float: right;
+  margin-top: 1.8rem;
+  margin-left: 13rem;
+  margin-bottom: 3rem;
+}
+.money-market h3 {
+  line-height: 4.5rem;
+  margin-bottom: 4.1rem;
+}
+.money-market ul p {
+  margin: 2rem 0;
+}
+.money-market h4 {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+.money-market p {
+  margin: 2.5rem 0;
+}
+.tablet.portrait .money-market {
+  padding-top: 7rem;
+}
+.tablet.portrait .money-market .base-info {
+  width: 100%;
+  float: none;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 7rem;
+}
+.tablet.portrait .money-market h3 {
+  margin-bottom: 3.2rem;
+}
+.tablet.portrait .money-market ul p {
+  margin: 1.5rem 0;
+}
+.mobile .money-market {
+  padding-bottom: 4.4rem;
+}
+.mobile .money-market .b-list {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.mobile .money-market .b-list li {
+  padding-left: 2.8rem;
+}
+.mobile .money-market .b-list .dash-list {
+  margin-left: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+.mobile .money-market .b-list .dash-list li {
+  padding-left: 2.7rem;
+}
+.mobile .money-market__block + .money-market__block {
+  margin-top: 6rem;
+}
+.mobile .money-market .base-info {
+  width: 100%;
+  float: none;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 6rem;
+}
+.mobile .money-market h3 {
+  font-size: 2.8rem;
+  letter-spacing: -0.039rem;
+  line-height: 4.5rem;
+  margin-bottom: 2.7rem;
+}
+.mobile .money-market ul p {
+  margin: 2.5rem 0;
+}
+.mobile .money-market h4 {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+.mobile .money-market p {
+  margin: 2.5rem 0;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;

@@ -6,7 +6,7 @@
 			</div>
 			<div class="inner__banner-in grid__inner">
 				<div class="inner__banner-block">
-					<div class="inner__banner-title">Финансовым институтам</div>
+					<div class="inner__banner-title">Операции на денежном рынке</div>
 					<div class="breadcrumbs">
 						<div class="breadcrumbs__item">
 							<a href="#" class="breadcrumbs__link">Главная</a>
