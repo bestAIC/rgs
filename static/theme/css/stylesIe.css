@@ -1219,9 +1219,46 @@ h4.small-bottom-indent {
   height: 4rem;
   padding: 1rem 2.5rem;
   box-shadow: none;
-  float: right;
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
+}
+.header__top-enter {
+  float: right;
+  position: relative;
+}
+.header__top-enter-items {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 100%;
+  margin-top: 11px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 2px 8px rgba(19, 25, 38, 0.1), 0 15px 40px rgba(13, 16, 26, 0.15);
+}
+.header__top-enter-item {
+  display: block;
+  height: 6rem;
+  line-height: 2rem;
+  padding: 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05px;
+  color: #3e3e3e;
+  background-color: #fff;
+  transition: background-color 0.5s;
+}
+.header__top-enter-item:hover {
+  color: #3e3e3e;
+}
+.header__top-enter-item:focus {
+  color: #3e3e3e;
+}
+.no-touch .header__top-enter-item:hover {
+  background-color: whitesmoke;
+}
+.header__top-enter-item + .header__top-enter-item {
+  border-top: 1px solid #e8e8e8;
 }
 .header__logo {
   width: 50.4rem;

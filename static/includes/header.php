@@ -54,7 +54,13 @@
 					</div>
 				</a>
 				<a href="javascript:void(0);" class="header__search-btn is-tablet-block" data-header-search-btn></a>
-				<a href="#" class="btn _gold header__top-btn">ВХОД В ИНТЕРНЕТ-БАНК</a>
+				<div class="header__top-enter" data-nav-block>
+					<a href="javascript:void(0);" class="btn _gold header__top-btn" data-nav-btn="fade">ВХОД В ИНТЕРНЕТ-БАНК</a>
+					<div class="header__top-enter-items hide" data-nav-content>
+						<a href="https://online.rgsbank.ru"  class="header__top-enter-item">Частным лицам</a>
+						<a href="https://ib.rgsbank.ru"  class="header__top-enter-item">Юридическим лицам</a>
+					</div>
+				</div>
 				<div class="header__phones">
 					<div class="header__phones-title is-desktop-block">Контакт-центр</div>
 					<div class="header__phone">

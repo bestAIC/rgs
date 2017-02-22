@@ -283,9 +283,51 @@
 			height: 40/@rem;
 			padding: 1rem 2.5rem;
 			box-shadow: none;
-			float: right;
 			font-size: 14/@rem;
 			letter-spacing: 0.5/@rem;
+		}
+		&-enter{
+			float: right;
+			position: relative;
+			.mobile &{
+				float: none;
+			}
+			&-items{
+				position: absolute;
+				z-index: 100;
+				width: 30rem;
+				right: 0;
+				top: 100%;
+				margin-top: 10/@rem;
+				background-color: white;
+				border: 1px solid #e8e8e8;
+				box-shadow: 0 2/@rem 8/@rem rgba(19, 25, 38, 0.1), 0 15/@rem 40/@rem rgba(13, 16, 26, 0.15);
+				.mobile &{
+					width: 100%;
+					margin-top: 5/@rem;
+				}
+			}
+			&-item{
+				display: block;
+				height: 5.9rem;
+				line-height: 1.9rem;
+				padding: 2rem 3rem;
+				font-size: 16/@rem;
+				font-weight: 600;
+				letter-spacing: 0.05/@rem;
+				.color(@title-color);
+				background-color: #fff;
+				transition:  background-color @animTime;
+				.mobile &{
+					text-align: center;
+				}
+				.no-touch &:hover{
+					background-color: whitesmoke;
+				}
+				&+&{
+					border-top: 1px solid #e8e8e8;
+				}
+			}
 		}
 	}
 	&__logo{
