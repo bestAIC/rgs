@@ -1226,24 +1226,32 @@ h4.small-bottom-indent {
   float: right;
   position: relative;
 }
+.mobile .header__top-enter {
+  float: none;
+}
 .header__top-enter-items {
   position: absolute;
   z-index: 100;
+  width: 30rem;
   right: 0;
   top: 100%;
-  margin-top: 11px;
+  margin-top: 1rem;
   background-color: white;
   border: 1px solid #e8e8e8;
-  box-shadow: 0 2px 8px rgba(19, 25, 38, 0.1), 0 15px 40px rgba(13, 16, 26, 0.15);
+  box-shadow: 0 0.2rem 0.8rem rgba(19, 25, 38, 0.1), 0 1.5rem 4rem rgba(13, 16, 26, 0.15);
+}
+.mobile .header__top-enter-items {
+  width: 100%;
+  margin-top: 0.5rem;
 }
 .header__top-enter-item {
   display: block;
-  height: 6rem;
-  line-height: 2rem;
-  padding: 2rem;
-  font-size: 16px;
+  height: 5.9rem;
+  line-height: 1.9rem;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  letter-spacing: 0.05px;
+  letter-spacing: 0.005rem;
   color: #3e3e3e;
   background-color: #fff;
   transition: background-color 0.5s;
@@ -1253,6 +1261,9 @@ h4.small-bottom-indent {
 }
 .header__top-enter-item:focus {
   color: #3e3e3e;
+}
+.mobile .header__top-enter-item {
+  text-align: center;
 }
 .no-touch .header__top-enter-item:hover {
   background-color: whitesmoke;

@@ -117,6 +117,7 @@ app.init = function () {
 	app.mortgageCalc();
 	app.fieldFilter();
 	app.shareholdersChart();
+	app.dboSystems();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -1600,6 +1601,23 @@ app.questions = function () {
 			$self.closest($question).find($questionAnswer).slideDown(300);
 		}
 		$self.toggleClass('_active');
+	});
+};
+app.dboSystems = function () {
+	var $systems = $('[data-dbo-systems]'),
+			$systemsMoreBtn = $systems.find('[data-dbo-systems-more-btn]'),
+			$system = $systems.find('[data-dbo-system]'),
+			$systemMore = $systems.find('[data-dbo-system-more]'),
+			$systemMoreBtn = $systems.find('[data-dbo-system-more-btn]')
+		;
+	$systemsMoreBtn.on('click',function () {
+		var $self = $(this);
+		$self.toggleClass('_active');
+		$systemMore.slideToggle();
+	});
+	$systemMoreBtn.on('click',function () {
+		var $self = $(this);
+		$self.toggleClass('_active').closest($system).find($systemMore).slideToggle();
 	});
 };
 app.compare = function () {

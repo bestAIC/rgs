@@ -2775,6 +2775,14 @@ span.pagination__item:focus {
   line-height: 2.7rem;
   color: #3e3e3e;
 }
+.base-info__subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.019rem;
+  line-height: 2.4rem;
+  color: #3e3e3e;
+  margin-top: 2rem;
+}
 .base-info__text {
   margin-top: 3rem;
 }
@@ -13418,6 +13426,187 @@ h2 + .docs-date {
 }
 .mobile .correspondent__benefits-title {
   margin-bottom: 5rem;
+}
+.dbo__info .inner__info-benefits .b-list {
+  margin-top: 3.2rem;
+  margin-bottom: 0;
+}
+.dbo__info-title {
+  color: #3e3e3e;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.dbo__info-subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-top: 2.9rem;
+  margin-bottom: 5rem;
+}
+.dbo__systems {
+  background-color: whitesmoke;
+  padding-top: 10rem;
+  padding-bottom: 5.7rem;
+}
+.dbo__system {
+  float: left;
+  width: 57rem;
+}
+.dbo__system + .dbo__system {
+  margin-left: 3rem;
+}
+.dbo__system-block {
+  min-height: 27.3rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  padding: 3.2rem 5rem 3.2rem 4rem;
+}
+.dbo__system-title {
+  color: #3e3e3e;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.dbo__system-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #3e3e3e;
+  margin-top: 0.8rem;
+  letter-spacing: -0.034rem;
+}
+.dbo__system-btns {
+  margin-top: 5rem;
+  *zoom: 1;
+}
+.dbo__system-btns:before,
+.dbo__system-btns:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.dbo__system-btns:after {
+  clear: both;
+}
+.dbo__system-btn {
+  float: left;
+  width: 16.8rem;
+}
+.dbo__system-btn + .dbo__system-btn {
+  margin-left: 2rem;
+}
+.dbo__system-more {
+  padding: 2.5rem 1rem 0 4rem;
+}
+.dbo__system-more-btn .gold-link._arr-down._active:after {
+  border-top: 0;
+  border-bottom: 0.6rem solid #cca266;
+}
+.dbo__system-more .b-list {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-bottom: 0;
+}
+.tablet.portrait .dbo__info.inner__info {
+  padding-bottom: 7rem;
+}
+.tablet.portrait .dbo__contacts {
+  margin-bottom: 4rem!important;
+  padding-bottom: 4.4rem;
+}
+.tablet.portrait .dbo__contacts-note {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #3e3e3e;
+}
+.tablet.portrait .dbo__contacts .base-info__text {
+  margin-top: 5rem;
+  *zoom: 1;
+}
+.tablet.portrait .dbo__contacts .base-info__text:before,
+.tablet.portrait .dbo__contacts .base-info__text:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.tablet.portrait .dbo__contacts .base-info__text:after {
+  clear: both;
+}
+.tablet.portrait .dbo__contacts .base-info__block {
+  float: left;
+  width: 50%;
+  margin-top: 0;
+}
+.tablet.portrait .dbo__systems {
+  padding-top: 4.3rem;
+  padding-bottom: 7rem;
+}
+.tablet.portrait .dbo__system {
+  float: none;
+  width: 100%;
+}
+.tablet.portrait .dbo__system + .dbo__system {
+  margin-left: 0;
+  margin-top: 7rem;
+}
+.tablet.portrait .dbo__system-block {
+  min-height: 0;
+  padding: 3.2rem 5rem 3rem 4rem;
+}
+.tablet.portrait .dbo__system-more {
+  padding: 2.6rem 1rem 0 0;
+}
+.mobile .dbo__contacts {
+  margin-bottom: 3rem!important;
+  padding-bottom: 4.4rem;
+}
+.mobile .dbo__contacts-note {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #3e3e3e;
+  padding-bottom: 2rem;
+}
+.mobile .dbo__systems {
+  padding-top: 4rem;
+  padding-bottom: 4.7rem;
+}
+.mobile .dbo__system {
+  float: none;
+  width: 100%;
+}
+.mobile .dbo__system + .dbo__system {
+  margin-left: 0;
+  margin-top: 6rem;
+}
+.mobile .dbo__system-block {
+  min-height: 0;
+  padding: 3.2rem 3rem 4.1rem 3rem;
+}
+.mobile .dbo__system-btns {
+  margin-top: 6rem;
+}
+.mobile .dbo__system-btn {
+  float: none;
+  width: 100%;
+  height: 4.6rem;
+  line-height: 1.6rem;
+  padding: 1.5rem;
+}
+.mobile .dbo__system-btn + .dbo__system-btn {
+  margin-left: 0;
+  margin-top: 2rem;
+}
+.mobile .dbo__system-more {
+  padding: 1.6rem 0 0 0;
+}
+.mobile .dbo__system-more-btn {
+  display: none!important;
+}
+.mobile .dbo__system-more .b-list li {
+  padding-left: 2.8rem;
 }
 .deposit__text,
 .deposit .note-text {
