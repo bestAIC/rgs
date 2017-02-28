@@ -537,7 +537,9 @@ app.CardP2P = function () {
 	setMasks();
 	function setMasks() {
 		//$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
-		if(device.android()){
+		if(device.android() || device.androidPhone() || device.androidTablet() ||
+			!(device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() || device.ipod()
+			|| device.blackberry() || device.windows() || device.fxos())) {
 			$transferBlock.find('[data-card-mask]').mask("0000000000000999999",{clearIfNotMatch: true});
 		}else{
 			$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0999999",{clearIfNotMatch: true});
