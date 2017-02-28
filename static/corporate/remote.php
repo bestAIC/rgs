@@ -99,7 +99,7 @@
 							</ul>
 						</div>
 						<div class="gold-link__wrap no-desktop-block dbo__system-more-btn">
-							<a href="javascript:void(0);" data-dbo-system-more-btn class="gold-link _arr-down _active">Подробнее</a>
+							<a href="javascript:void(0);" data-dbo-system-more-btn class="gold-link _arr-down">Подробнее</a>
 						</div>
 					</div>
 					<div class="dbo__system" data-dbo-system>
@@ -121,12 +121,12 @@
 							</ul>
 						</div>
 						<div class="gold-link__wrap no-desktop-block dbo__system-more-btn">
-							<a href="javascript:void(0);" class="gold-link _arr-down _active" data-dbo-system-more-btn>Подробнее</a>
+							<a href="javascript:void(0);" class="gold-link _arr-down" data-dbo-system-more-btn>Подробнее</a>
 						</div>
 					</div>
 				</div>
 				<div class="gold-link__wrap is-desktop-block dbo__system-more-btn">
-					<a href="javascript:void(0);" class="gold-link _arr-down _active" data-dbo-systems-more-btn>Подробнее</a>
+					<a href="javascript:void(0);" class="gold-link _arr-down" data-dbo-systems-more-btn>Подробнее</a>
 				</div>
 			</div>
 			
