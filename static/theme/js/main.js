@@ -118,6 +118,7 @@ app.init = function () {
 	app.fieldFilter();
 	app.shareholdersChart();
 	app.dboSystems();
+	app.headerLogin();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -498,6 +499,21 @@ app.oldVersion = function () {
 	});
 
 };
+app.headerLogin = function () {
+	var $login =  $('[data-header-login]'),
+			$btn =  $login.find('[data-header-login-btn]'),
+			$block =  $login.find('[data-header-login-block]')
+		;
+	$btn.on('click',function () {
+		$block.fadeToggle();
+	});
+	$('html').on('click.closeLogin',function(e){
+		if(!($(e.target).closest($login).length)){
+			$block.fadeOut();
+		}
+	});
+
+};
 app.dataFile = function () {
 	var $file =  $('[data-file]'),
 			$fileText =  $file.find('[data-file-text]'),
@@ -720,7 +736,7 @@ app.initForms = function () {
 		return false;
 	});
 	$('html').on('click.closeErrors',function(e){
-		if(!($(e.targer).closest('[data-form-error]').length)){
+		if(!($(e.target).closest('[data-form-error]').length)){
 			$('[data-form-error]').removeClass('_active');
 		}
 	});
