@@ -83,6 +83,12 @@
 			&._docs{
 				background-image: url('@{pathToImg}icons/docs.svg');
 			}
+			&._documentary1{
+				background-image: url('@{pathToImg}page-nav/documentary/ico1.svg');
+			}
+			&._documentary2{
+				background-image: url('@{pathToImg}page-nav/documentary/ico2.svg');
+			}
 		}
 		&-title{
 			font-size: 20/@rem;
@@ -99,6 +105,57 @@
 			max-width: 37rem;
 			position: relative;
 			z-index: 2;
+		}
+	}
+}
+.documentary-nav{
+	background-color: whitesmoke;
+	padding: 7rem 0;
+	&__btn{
+		margin-top: 44/@rem;
+		width: 17rem;
+	}
+	.page-nav{
+		&__item{
+			height: 23rem;
+			padding-top: 29/@rem;
+			&-title{
+				line-height: 3.4rem;
+			}
+		}
+	}
+	.tablet.portrait &{
+		padding: 5rem 0;
+		.documentary-nav__btn{
+			position: absolute;
+			left: 3rem;
+			bottom: 3rem;
+			margin: 0;
+		}
+		.page-nav__item{
+			height: 25rem;
+			padding: 3rem;
+		}
+		.page-nav__item-ico{
+			display: none;
+		}
+		.page-nav__row-col{
+			float: left;
+			width: 342/@rem;
+			&+.page-nav__row-col{
+				margin-left: 30/@rem;
+				margin-top: 0;
+			}
+		}
+	}
+	.mobile &{
+		padding: 4rem 0;
+		.page-nav__item-ico{
+			display: none;
+		}
+		.page-nav__item{
+			height: 22rem;
+			padding: 3rem 2rem;
 		}
 	}
 }
