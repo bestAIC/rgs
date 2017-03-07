@@ -993,7 +993,7 @@ h4.small-bottom-indent {
   height: 18rem;
   background-color: white;
   border-radius: 0.2rem;
-  box-shadow: 0 1rem 1.5rem rgba(98, 98, 98, 0.17);
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
   margin-right: 3rem;
   font-size: 2rem;
   font-weight: 600;
@@ -1001,12 +1001,16 @@ h4.small-bottom-indent {
   color: #3e3e3e;
   padding: 4.1rem 6.2rem 2rem 3.9rem;
   position: relative;
+  transition: box-shadow 0.5s;
 }
 .related-pages__item:hover {
   color: #3e3e3e;
 }
 .related-pages__item:focus {
   color: #3e3e3e;
+}
+.no-touch .related-pages__item:hover {
+  box-shadow: 0 1rem 1.5rem rgba(98, 98, 98, 0.17);
 }
 .no-touch .related-pages__item:hover .related-pages__item-ico {
   background-image: url('../images/icons/right_arrow.svg');
