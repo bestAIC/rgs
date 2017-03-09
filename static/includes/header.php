@@ -41,6 +41,41 @@
 			<a href="javascript:void(0);" data-old-version-close class="old-version__close"></a>
 		</div>
 	</div>
+	<div class="header__sections">
+		<div class="grid__inner">
+			<a href="javascript:void(0);" data-header-search-btn class="header__search-btn no-mob-block"><span class="header__search-btn-text">Найти...</span></a>
+			<div class="header__search-form no-mob-block">
+				<a href="javascript:void(0);" class="header__search-form-close"  data-header-search-close></a>
+				<form action="/static/search.php"  data-header-search-form>
+					<div class="header__search-form-field">
+						<input type="text" name="q" data-header-search-form-field placeholder="Например: Вклады">
+					</div>
+				</form>
+				<div class="header__search-form-requests-wrap" data-header-search-form-requests="/static/ajax/searchRequests.php">
+
+				</div>
+			</div>
+			<div class="header__sections-items no-mob-block">
+				<div class="header__sections-item">
+					<a href="javascript:void(0);" class="header__sections-item-link _active" data-menu-section-btn="personal">Частным клиентам</a>
+				</div>
+				<div class="header__sections-item">
+					<a href="javascript:void(0);" class="header__sections-item-link" data-menu-section-btn="business">Бизнесу</a>
+				</div>
+				<div class="header__sections-item">
+					<a href="javascript:void(0);" class="header__sections-item-link" data-menu-section-btn="financial">Финансовым институтам</a>
+				</div>
+			</div>
+			<div class="mob-menu__sections is-mob-block" data-mob-sections>
+				<a href="javascript:void(0);" class="mob-menu__sections-title" data-mob-sections-title>Частным клиентам</a>
+				<div class="mob-menu__sections-items"  data-mob-sections-items>
+					<a href="javascript:void(0);" data-mob-sections-item="personal" class="mob-menu__sections-item _active">Частным клиентам</a>
+					<a href="javascript:void(0);" data-mob-sections-item="business" class="mob-menu__sections-item">Бизнесу</a>
+					<a href="javascript:void(0);" data-mob-sections-item="financial" class="mob-menu__sections-item">Финансовым институтам</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="header__top">
 		<div class="grid__inner header__top-inner">
 			<a href="/" class="header__logo"></a>
@@ -53,7 +88,6 @@
 						<div class="header__menu-btn-bar"></div>
 					</div>
 				</a>
-				<a href="javascript:void(0);" class="header__search-btn is-tablet-block" data-header-search-btn></a>
 				<div class="header__top-enter" data-header-login>
 					<a href="javascript:void(0);" class="btn _gold header__top-btn" data-header-login-btn>ВХОД В ИНТЕРНЕТ-БАНК</a>
 					<div class="header__top-enter-items hide" data-header-login-block>
@@ -84,8 +118,8 @@
 							<div class="header__menu-btn-bar"></div>
 						</div>
 					</a>
-					<a href="javascript:void(0);" data-header-search-btn class="header__search-btn no-tablet-block"></a>
-					<div class="header__search-form">
+					<a href="javascript:void(0);" data-header-search-btn class="header__search-btn is-mob-block"></a>
+					<div class="header__search-form is-mob-block">
 						<a href="javascript:void(0);" class="header__search-form-close"  data-header-search-close></a>
 						<form action="/static/search.php"  data-header-search-form>
 							<div class="header__search-form-field">
@@ -96,7 +130,8 @@
 							
 						</div>
 					</div>
-					<div class="header__menu" data-menu>
+
+					<div class="header__menu" data-menu="personal">
 						<div class="header__menu-item no-mob-block">
 							<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
 						</div>
@@ -113,44 +148,77 @@
 							<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
 						</div>
 						<div class="header__menu-item is-mob-block">
-							<a href="javascript:void(0);" data-b-menu-sections-show class="header__menu-link _menu">Частным лицам</a>
+							<a href="javascript:void(0);"  class="header__menu-link _menu">Меню</a>
+						</div>
+					</div>
+					<div class="header__menu hide" data-menu="business">
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="business1" class="header__menu-link">Рко</a>
+						</div>
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="business2" class="header__menu-link">Депозиты</a>
+						</div>
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="business3" class="header__menu-link">Зарплатный проект</a>
+						</div>
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="business4" class="header__menu-link">Кредитование</a>
+						</div>
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="business5" class="header__menu-link">Банковские гарантии</a>
+						</div>
+					</div>
+					<div class="header__menu hide" data-menu="financial">
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="financial1" class="header__menu-link">Финансовым институтам</a>
+						</div>
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="financial2" class="header__menu-link">Финансовым институтам</a>
+						</div>
+						<div class="header__menu-item no-mob-block">
+							<a href="javascript:void(0);" data-menu-link="financial3" class="header__menu-link">Финансовым институтам</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="mob-menu__sections hide"  data-b-menu-sections>
-				<a href="javascript:void(0);" class="header__menu-link mob-menu__section">малому и среднему бизнесу</a>
-				<a href="javascript:void(0);" class="header__menu-link mob-menu__section">корпоративным клиентам</a>
-				<a href="javascript:void(0);" class="header__menu-link mob-menu__section">финансовым институтам</a>
-			</div>
 			<div class="mob-menu is-mob-block swiper-container" data-mob-menu>
 				<div class="swiper-wrapper">
-					<div class="header__menu-item swiper-slide">
-						<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="personal">
+						<a href="javascript:void(0);" data-menu-link="1"  class="header__menu-link">Вложить и сохранить</a>
 					</div>
-					<div class="header__menu-item swiper-slide">
-						<a href="javascript:void(0);" data-menu-link="2" class="header__menu-link">Оплатить и перевести</a>
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="personal">
+						<a href="javascript:void(0);" data-menu-link="2"  class="header__menu-link">Оплатить и перевести</a>
 					</div>
-					<div class="header__menu-item swiper-slide">
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="personal">
 						<a href="javascript:void(0);" data-menu-link="3" class="header__menu-link">Выбрать карту</a>
 					</div>
-					<div class="header__menu-item swiper-slide">
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="personal">
 						<a href="javascript:void(0);" data-menu-link="4" class="header__menu-link">Взять кредит</a>
 					</div>
-					<div class="header__menu-item swiper-slide">
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="personal">
 						<a href="javascript:void(0);" data-menu-link="5" class="header__menu-link">Инвестировать</a>
 					</div>
-					<div class="header__menu-item swiper-slide">
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="personal">
 						<a href="javascript:void(0);" data-menu-link="6" class="header__menu-link">О банке</a>
 					</div>
-					<div class="header__menu-item swiper-slide">
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="personal">
 						<a href="javascript:void(0);" data-menu-link="7" class="header__menu-link">Справочный центр</a>
+					</div>
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="business">
+						<a href="javascript:void(0);" data-menu-link="business1" class="header__menu-link">Рко</a>
+					</div>
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="business">
+						<a href="javascript:void(0);" data-menu-link="business2" class="header__menu-link">Депозиты</a>
+					</div>
+					<div class="header__menu-item swiper-slide" data-mob-menu-item="business">
+						<a href="javascript:void(0);" data-menu-link="business3" class="header__menu-link">Зарплатный проект</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="header__menu-blocks">
 			<?include "menu/burger/b-menu.php"?>
+			<?include "menu/burger/b-menu-business.php"?>
 			<div class="grid__inner">
 				<div class="menu__block hide" data-menu-content="1">
 					<div class="menu__block-inner">
@@ -534,6 +602,31 @@
 						</div>
 					</div>
 				</div>
+				<?for ($i=0;$i<5;$i++){
+					$businessMenu=["Рко","Депозиты","Зарплатный проект","Кредитование","Банковские гарантии"];
+					?>
+					<div class="menu__block hide" data-menu-content="business<?=$i+1?>">
+						<div class="menu__block-inner">
+							<div class="menu__block-title"><a href=""><?=$businessMenu[$i]?></a></div>
+							<div class="menu__block-col _col-5-1">
+								<div class="b-menu__item">
+									<a href="/static/invest/iis.php" class="b-menu__item-link">Индивидуальный инвестиционный счет</a>
+								</div>
+								<div class="b-menu__item">
+									<a href="/static/invest/insurance.php" class="b-menu__item-link">Инвестиционное страхование жизни</a>
+								</div>
+							</div>
+							<div class="menu__block-col _col-5-2">
+								<div class="b-menu__item">
+									<a href="/static/invest/pay-founds.php" class="b-menu__item-link">ПИФы</a>
+								</div>
+								<div class="b-menu__item">
+									<a href="/static/invest/depository.php" class="b-menu__item-link">Депозитарий</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?}?>
 			</div>
 		</div>
 	</div>

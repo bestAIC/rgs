@@ -167,13 +167,61 @@
 	border-bottom: 1px solid @cBorder;
 	display: none;
 	&__sections{
-		padding-top: 1.5rem;
-	}
-	&__section{
-		display: block;
 		text-align: center;
-		padding-bottom: 1.8rem;
+		position: relative;
+		letter-spacing: 0.5/@rem;
+		font-size: 14/@rem;
+		&-title{
+			font-weight: 600;
+			line-height: 2rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			display: block;
+			.color(fade(@text-color,50%));
+			&._active{
+				&:after{
+					border-top:0;
+					border-bottom: 6/@rem solid fade(@text-color,50%);
+				}
 
+			}
+			&:after{
+				content: '';
+				display: inline-block;
+				vertical-align: top;
+				border: 5/@rem solid transparent;
+				border-bottom:0;
+				border-top: 6/@rem solid fade(@text-color,50%);
+				margin-top: 8/@rem;
+				margin-left: 16/@rem;
+				&._active{
+					border-top:0;
+					border-bottom: 6/@rem solid fade(@text-color,50%);
+				}
+			}
+
+		}
+		&-items{
+			display: none;
+			margin-top: 1px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 100%;
+			z-index: 100;
+			background-color: #fff;
+		}
+		&-item{
+			display: block;
+			text-align: center;
+			.color(fade(@text-color,50%));
+			line-height: 2rem;
+			padding: 2rem;
+			border-bottom: 1px solid whitesmoke;
+			&._active{
+				display: none;
+			}
+		}
 	}
 	.header__menu-item+.header__menu-item{
 		//margin-left: 2.5rem;

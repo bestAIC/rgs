@@ -963,10 +963,12 @@ app.mobMenu = function () {
 app.menu = function () {
 	var $header       = $('.header'),
 			$menu        = $('[data-menu]'),
+			$menuSectionBtn        = $('[data-menu-section-btn]'),
 			$mobMenu        = $('[data-mob-menu]'),
+			$mobMenuItems        = $('[data-mob-menu-item]'),
 			$menuWrap    = $('[data-menu-wrap]'),
 			$menuIn   = $('[data-menu-in]'),
-			$menuLink    = $menu.find('[data-menu-link]'),
+			$menuLink    = $('[data-menu-link]'),
 			$menuContent = $('[data-menu-content]'),
 			
 			$searchBtn     = $('[data-header-search-btn]'),
@@ -975,15 +977,57 @@ app.menu = function () {
 			$searchFormField     = $('[data-header-search-form-field]'),
 			$searchFormRequests     = $('[data-header-search-form-requests]'),
 			
+			$bMenu    = $('[data-b-menu]'),
 			$menuBtn     = $('[data-b-menu-btn]'),
+
+			$mobSections  = $('[data-mob-sections]'),
+			$mobSectionsTitle  = $mobSections.find('[data-mob-sections-title]'),
+			$mobSectionsItems  = $mobSections.find('[data-mob-sections-items]'),
+			$mobSectionsItem  = $mobSections.find('[data-mob-sections-item]'),
+
 			$menuSectionsShow  = $('[ data-b-menu-sections-show]'),
 			$menuSections  = $('[ data-b-menu-sections]'),
 			menuNum = null,
 			offset = null,
 			mobMenuswiper = false,
-			timeout = null
+			timeout = null,
+			activeSection = 'personal'
 		;
 
+ 	$mobSectionsTitle.on('click',function () {
+		var $self = $(this);
+		 if($self.hasClass('_active')){
+			 $mobSectionsItems.hide();
+		 }else{
+			 $mobSectionsItems.show();
+		 }
+		$self.toggleClass('_active');
+	});
+
+	$mobSectionsItem.on('click',function () {
+		var $self = $(this),
+				data = $self.data('mobSectionsItem')
+			;
+		activeSection = data;
+		$mobSectionsItems.hide();
+		$mobSectionsTitle.text($self.text()).removeClass('_active');
+		$mobSectionsItem.removeClass('_active');
+		$self.addClass('_active');
+	});
+	$menuSectionBtn.on('click',function () {
+		var $self = $(this),
+				data = $self.data('menuSectionBtn')
+			;
+		if($self.hasClass('_active')){
+			return false;
+		}
+		//closeMenu();
+		$menuSectionBtn.removeClass('_active');
+		$self.addClass('_active');
+		$menu.hide().filter('[data-menu="'+data+'"]').show();
+		$bMenu.removeClass('_active').filter('[data-b-menu="'+data+'"]').addClass('_active');
+
+	});
 	/*поиск*/
 	$searchBtn.on('click',function () {
 		var $self = $(this);
@@ -1012,8 +1056,9 @@ app.menu = function () {
 	$searchFormField.on('keyup',function () {
 		clearTimeout(timeout);
 		$searchFormRequests.hide();
+		var $self = $(this);
 		timeout = setTimeout(function () {
-			var val = $searchFormField.val();
+			var val = $self.val();
 			if(val){
 				$.post($searchFormRequests.data('headerSearchFormRequests'), {q:val}, function(data){
 					if(data){
@@ -1029,10 +1074,10 @@ app.menu = function () {
 
 	});
 	$searchForm.on('submit',function () {
-		if(!$searchFormField.val()){
+		var $self = $(this);
+		if(!$self.find($searchFormField).val()){
 			return false;
 		}
-		var $self = $(this);
 		$.post($self.attr('action'), $self.serialize(), function(data){
 			
 		});
@@ -1134,11 +1179,15 @@ app.menu = function () {
 		}
 		$menuBtn.addClass('_active');
 		offset = app.dom.$window.scrollTop();
+		console.log(offset);
 		if(app.utils.isMobile){
-			$menuLink.filter('[data-menu-link="1"]').first().click();
+			$mobMenuItems.filter('[data-mob-menu-item="'+activeSection+'"]').first().find('[data-menu-link]').click();
 			_helper();
 			if(!mobMenuswiper){
 				initMobMenu();
+			}else{
+				$mobMenuItems.show().filter('[data-mob-menu-item!="'+activeSection+'"]').hide();
+				mobMenuswiper.update();
 			}
 			mobMenuswiper.slideTo(0,0);
 		}else{
@@ -1179,6 +1228,8 @@ app.menu = function () {
 			simulateTouch: true,
 			spaceBetween:25
 		});
+		$mobMenuItems.filter('[data-mob-menu-item!="'+activeSection+'"]').hide();
+		mobMenuswiper.update();
 	}
 };
 app.initFluid = function () {
