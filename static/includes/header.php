@@ -91,8 +91,8 @@
 				<div class="header__top-enter" data-header-login>
 					<a href="javascript:void(0);" class="btn _gold header__top-btn" data-header-login-btn>ВХОД В ИНТЕРНЕТ-БАНК</a>
 					<div class="header__top-enter-items hide" data-header-login-block>
-						<a href="https://online.rgsbank.ru"  class="header__top-enter-item">Частным лицам</a>
-						<a href="https://ib.rgsbank.ru"  class="header__top-enter-item">Юридическим лицам</a>
+						<a href="https://online.rgsbank.ru" target="_blank" class="header__top-enter-item">Частным лицам</a>
+						<a href="https://ib.rgsbank.ru" target="_blank" class="header__top-enter-item">Юридическим лицам</a>
 					</div>
 				</div>
 				<div class="header__phones">

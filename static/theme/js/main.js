@@ -508,7 +508,7 @@ app.headerLogin = function () {
 		$block.fadeToggle();
 	});
 	$('html').on('click.closeLogin',function(e){
-		if(!($(e.target).closest($login).length)){
+		if(!($(e.target).closest($btn).length)){
 			$block.fadeOut();
 		}
 	});
