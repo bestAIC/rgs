@@ -639,6 +639,11 @@ h4.small-bottom-indent {
   height: 1px;
   background-color: #cca266;
 }
+.ui-tooltip {
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
+}
 .notice {
   font-size: 1.4rem;
   font-weight: 600;
@@ -1285,7 +1290,7 @@ h4.small-bottom-indent {
 }
 .header__sections {
   border-bottom: 1px solid whitesmoke;
-  height: 59px;
+  height: 5.9rem;
   *zoom: 1;
 }
 .mobile .header__sections {
@@ -1306,7 +1311,7 @@ h4.small-bottom-indent {
 .header__sections-items {
   float: left;
   *zoom: 1;
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 .header__sections-items:before,
 .header__sections-items:after {
@@ -1319,15 +1324,15 @@ h4.small-bottom-indent {
 }
 .header__sections-item {
   float: left;
-  margin-right: 61px;
+  margin-right: 6.1rem;
 }
 .header__sections-item-link {
   opacity: 0.5;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
   border-bottom: 2px solid transparent;
   color: #191919;
   display: block;
-  padding-bottom: 16px;
+  padding-bottom: 1.6rem;
 }
 .header__sections-item-link:hover {
   color: #191919;

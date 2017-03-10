@@ -147,6 +147,15 @@ app.init = function () {
 	$('html').on('click','[data-fancy-close]',function () {
 		$.fancybox.close();
 	});
+
+	$( document ).tooltip({
+		items: "[data-title]",
+		content: function() {
+			var element = $( this );
+			
+			return element.data('title');
+		}
+	});
 };
 app.investCalc = function () {
 
