@@ -963,13 +963,19 @@ h4.small-bottom-indent {
   height: 1px;
   background-color: #cca266;
 }
-.ui-tooltip {
+.ui-tooltip,
+.fancy-tooltip {
   background: white;
   border-radius: 0.2rem;
   box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   border: 1px solid #DEDFE0;
+  padding: 1rem;
+}
+.fancy-tooltip {
+  width: 32rem;
+  padding: 2rem;
 }
 .notice {
   font-size: 1.4rem;

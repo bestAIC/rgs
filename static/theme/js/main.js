@@ -119,6 +119,7 @@ app.init = function () {
 	app.shareholdersChart();
 	app.dboSystems();
 	app.headerLogin();
+	app.tooltips();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -148,14 +149,35 @@ app.init = function () {
 		$.fancybox.close();
 	});
 
-	$( document ).tooltip({
-		items: "[data-title]",
-		content: function() {
-			var element = $( this );
-			
-			return element.data('title');
-		}
-	});
+
+};
+app.tooltips = function () {
+	if(app.utils.isMobile || app.utils.isTablet) {
+		$('[data-title]').on('click',function () {
+			$.fancybox({
+				wrapCSS 	: 'fc-base',
+				content 	: '<div class="fancy-tooltip">'+$(this).data('title')+'</div>',
+				fitToView	: false,
+				padding:0,
+				helpers : {
+					overlay : {
+						css : {
+							'background' : 'rgba(0, 0, 0, 0.5)'
+						}
+					}
+				}
+			});
+		});
+	}else{
+		$( document ).tooltip({
+			items: "[data-title]",
+			content: function() {
+				var element = $( this );
+
+				return element.data('title');
+			}
+		});
+	}
 };
 app.investCalc = function () {
 
