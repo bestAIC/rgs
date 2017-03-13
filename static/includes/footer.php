@@ -150,45 +150,125 @@
 				<div class="b-form__content">
 					<div class="b-form__row">
 						<div class="b-form__block">
-							<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
-							<div class="b-form__block-field">
-								<input type="text" placeholder="Иванов Иван Иванович">
-							</div>
-						</div>
-					</div>
-					<div class="b-form__row">
-						<div class="b-form__block">
-							<div class="b-form__block-title">НОМЕР ТЕЛЕФОНА</div>
-							<div class="b-form__block-field phone-inp">
-								<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
-							</div>
-						</div>
-					</div>
-					<div class="b-form__row">
-						<div class="b-form__block">
-							<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
-							<div class="b-form__block-field">
-								<input type="text" placeholder="Иванов Иван Иванович">
-							</div>
-						</div>
-					</div>
-					<div class="b-form__row">
-						<div class="b-form__block">
-							<select data-chosen data-placeholder="Выберите тему">
-								<option value="" >Выберите тему</option>
-								<option value="" >Тема1</option>
-								<option value="" >Тема2</option>
+							<select data-chosen="" data-reviews-select data-placeholder="Выберите точку обслуживания" name="form_dropdown_place" id="form_dropdown_place">
+								<option value="322"> </option>
+								<option value="138">Отделение</option>
+								<option value="139">Банкомат</option>
+								<option value="140">Call-центр</option>
+								<option value="320">ДБО</option>
+								<option value="321">Сайт Банка</option>
 							</select>
 						</div>
 					</div>
+					<div class="b-form__row hide" data-reviews-block="138">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Регион</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Регион" name="form_text_141" >
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row hide" data-reviews-block="138">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Город</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Город" name="form_text_142">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row hide" data-reviews-block="138">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Отделение</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Отделение" name="form_text_143">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row hide" data-reviews-block="139">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Регион</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Регион" name="form_text_144">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row hide" data-reviews-block="139">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Город</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Город" name="form_text_145">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row hide" data-reviews-block="139">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Адрес банкомата</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Адрес банкомата" name="form_text_146">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row hide" data-reviews-block="140">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Оператор</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Оператор" name="form_text_147">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row hide" data-reviews-block="140">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Когда обращались в Call-центр?</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="Когда обращались в Call-центр?" name="form_text_323">
+							</div>
+						</div>
+					</div>
 					<div class="b-form__row">
-						<div class="b-form__block _textarea">
-							<textarea placeholder="Введите сообщение"></textarea>
+						<div class="b-form__block">
+							<div class="b-form__block-title">Представьтесь (ФИО)</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox long" placeholder="Иванов Иван Иванович" data-required="Y" data-fio="Y" name="form_text_148">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">Мобильный телефон (номер)</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox short" data-phone-mask placeholder="(495) 078-98-98 " data-required="Y" data-phone="Y" name="form_text_150">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block-title">E-mail</div>
+							<div class="b-form__block-field">
+								<input type="text" class="textbox" placeholder="ivanivanov@mail.ru" data-required="Y" data-email="Y" name="form_email_151">
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block _textarea">
+								<textarea name="form_textarea_152" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__block">
+							<div class="b-form__block ">
+								<input type="checkbox" id="325" name="form_checkbox_repeat[]" value="325" ><label for="325">Я уже обращался по этому вопросу</label></div>
+						</div>
+					</div>
+					<div class="b-form__row">
+						<div class="b-form__captcha b-captcha">
+							<div id="g-recaptcha-form-response" data-recaptcha-valid="true"></div>
 						</div>
 					</div>
 					<div class="b-form__errors" data-form-errors></div>
 					<div class="b-form__btn-wrap">
-						<button type="submit" class="btn _red b-form__btn">отправить отзыв</button>
+						<button type="submit" class="btn _red b-form__btn">Оставить отзыв</button>
 					</div>
 				</div>
 			</form>

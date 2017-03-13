@@ -366,9 +366,15 @@ app.askForm = function () {
 			$askForm = $ask.find('form'),
 			$askField = $ask.find('[data-ask-field]'),
 			$askContent = $('[data-ask-content]'),
-			$content = null
+			$content = null,
 
+			$reviewsSelect = $('[data-reviews-select]'),
+			$reviewsBlock = $('[data-reviews-block]')
 		;
+	$reviewsSelect.on('change',function () {
+		var $self = $(this);
+		$reviewsBlock.hide().filter('[data-reviews-block="'+$self.val()+'"]').show();
+	});
 	$askContent.find('form').on('submit',function () {
 		var $self = $(this),
 				$errors = $self.find('[data-form-errors]')
