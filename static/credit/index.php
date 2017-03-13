@@ -79,18 +79,6 @@
 				<div class="grid__inner">
 					<div class="page-nav__row">
 						<div class="page-nav__row-col">
-							<a href="#" class="page-nav__item _big credit-nav__main">
-								<div class="page-nav__item-title">
-									Кредит наличными
-								</div>
-								<div class="page-nav__item-text">
-									Кредит для надежных клиентов:
-									платя вовремя вы получаете
-									двойную скидку каждые 6 месяцев
-								</div>
-							</a>
-						</div>
-						<div class="page-nav__row-col _items">
 							<a href="#" class="page-nav__item">
 								<div class="page-nav__item-ico _base _services"></div>
 								<div class="page-nav__item-title">
@@ -100,6 +88,8 @@
 									Кредитование на покупку квартиры
 								</div>
 							</a>
+						</div>
+						<div class="page-nav__row-col">
 							<a href="#" class="page-nav__item">
 								<div class="page-nav__item-ico _base _credit"></div>
 								<div class="page-nav__item-title">
@@ -108,6 +98,19 @@
 								</div>
 								<div class="page-nav__item-text">
 									Ипотечный кредит на потребительские цели
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="page-nav__row">
+						<div class="page-nav__row-col">
+							<a href="#" class="page-nav__item">
+								<div class="page-nav__item-ico _base _credit-for-loyal"></div>
+								<div class="page-nav__item-title">
+									Кредит надежным работникам
+								</div>
+								<div class="page-nav__item-text">
+									Льготные условия кредитования для работников компании
 								</div>
 							</a>
 						</div>

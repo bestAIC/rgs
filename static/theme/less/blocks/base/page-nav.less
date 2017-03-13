@@ -1,6 +1,33 @@
 .page-nav{
 	&__row{
 		.clearfix;
+		&._long-cols{
+			.desktop &,.tablet.landscape &{
+				.page-nav__row-col._items{
+					.page-nav__item{
+						height: 15rem;
+						padding: 2.4rem 4rem;
+						&+.page-nav__item{
+							margin-top: 1rem;
+						}
+					}
+				}
+				.page-nav__item._big{
+					height: 47rem;
+				}
+			}
+			.tablet.portrait &{
+				.page-nav__row-col._items{
+					.page-nav__item{
+						&:nth-child(3){
+							width: 100%;
+							margin-left: 0;
+							margin-top: 3rem;
+						}
+					}
+				}
+			}
+		}
 		&+&{
 			margin-top: 30/@rem;
 		}
@@ -50,11 +77,20 @@
 			&._services{
 				background-image: url('@{pathToImg}transfers/icons/services.svg');
 			}
+			&._credit-for-loyal{
+				background-image: url('@{pathToImg}icons/credit-for-loyal.svg');
+			}
+			&._transfers{
+				background-image: url('@{pathToImg}transfers/icon_transfer.svg');
+			}
 			&._currency{
 				background-image: url('@{pathToImg}transfers/icons/currency.svg');
 			}
 			&._currency2{
 				background-image: url('@{pathToImg}icons/currency.svg');
+			}
+			&._precious{
+				background-image: url('@{pathToImg}icons/precious.svg');
 			}
 			&._insurance{
 				background-image: url('@{pathToImg}invest/ico-insurance.svg');

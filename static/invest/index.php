@@ -21,7 +21,7 @@
 		<div class="b-blocks _gray">
 			<div class="b-block animation__top invest-nav page-nav" data-animation>
 				<div class="grid__inner">
-					<div class="page-nav__row">
+					<div class="page-nav__row _long-cols">
 						<div class="page-nav__row-col">
 							<a href="#" class="page-nav__item _big invest-nav__iis">
 								<div class="page-nav__item-title">
@@ -53,6 +53,15 @@
 									Готовые инвестиционные решения на основе Российских и Зарубежных ценных бумаг
 								</div>
 							</a>
+							<a href="#" class="page-nav__item">
+								<div class="page-nav__item-ico _base _precious"></div>
+								<div class="page-nav__item-title">
+									Драгметаллы
+								</div>
+								<div class="page-nav__item-text">
+									Услуги по операциям с драгоценными металлами
+								</div>
+							</a>
 						</div>
 					</div>
 					<div class="page-nav__row">
@@ -78,7 +87,7 @@
 						<form action="/static/ajax/investCalcData.php">
 							<div class="invest-calc__start" data-invest-calc-step="start">
 								<div class="invest-calc__start-title">Определите, какая стратегия инвестирования подходит именно Вам!</div>
-								<div class="invest-calc__start-img"></div>
+								<div class="invest-calc__start-img is-desktop-block"></div>
 								<a href="javascript:void(0);" class="invest-calc__start-btn btn" data-invest-calc-goto="question1">НАЧАТЬ ТЕСТ</a>
 							</div>
 

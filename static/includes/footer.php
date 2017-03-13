@@ -65,6 +65,9 @@
 						<div class="footer__menu-item">
 							<a href="#" class="footer__menu-link">Пресс-центр</a>
 						</div>
+						<div class="footer__menu-item">
+							<a href="#" class="footer__menu-link">English version</a>
+						</div>
 					</div>
 					<div class="footer__menu-col _2">
 						<div class="footer__menu-item">

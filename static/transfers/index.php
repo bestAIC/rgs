@@ -48,7 +48,7 @@
 		<div class="b-blocks _gray">
 			<div class="b-block animation__top transfers-nav page-nav" data-animation>
 				<div class="grid__inner">
-					<div class="page-nav__row">
+					<div class="page-nav__row _long-cols">
 						<div class="page-nav__row-col">
 							<a href="#" class="page-nav__item _big transfers-nav__cards">
 								<div class="page-nav__item-title">
@@ -83,6 +83,15 @@
 								<div class="page-nav__item-text">
 									Актуальная и полезная информация
 									о курсе обмена валют в разных городах России.
+								</div>
+							</a>
+							<a href="#" class="page-nav__item">
+								<div class="page-nav__item-ico _base _transfers"></div>
+								<div class="page-nav__item-title">
+									Переводы с текущего счета
+								</div>
+								<div class="page-nav__item-text">
+									Классический банковский перевод со счета
 								</div>
 							</a>
 						</div>
