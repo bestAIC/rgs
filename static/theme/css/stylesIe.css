@@ -924,11 +924,6 @@ h4.small-bottom-indent {
 .gold-link:focus._arr-down:after {
   border-top-color: #dbae6e !important;
 }
-.gold-link:hover._arr-down._active:after,
-.gold-link:focus._arr-down._active:after {
-  border-top: 0;
-  border-bottom: 0.6rem solid #cca266;
-}
 .gold-link__wrap {
   text-align: center;
   margin-top: 4rem;
@@ -952,6 +947,10 @@ h4.small-bottom-indent {
   border-top: 0.6rem solid #cca266;
   margin-left: 1.2rem;
   margin-top: 0.9rem;
+}
+.gold-link._arr-down._active:after {
+  border-top: 0;
+  border-bottom: 0.6rem solid #cca266;
 }
 .tablet.portrait .grid__inner {
   padding-left: 2.7rem;
@@ -1529,7 +1528,7 @@ h4.small-bottom-indent {
   right: 0;
   bottom: 0;
   background-color: #fff;
-  z-index: 4;
+  z-index: 11;
   visibility: hidden;
 }
 .header__search-form-requests {

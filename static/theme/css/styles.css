@@ -1248,11 +1248,6 @@ h4.small-bottom-indent {
 .gold-link:focus._arr-down:after {
   border-top-color: #dbae6e !important;
 }
-.gold-link:hover._arr-down._active:after,
-.gold-link:focus._arr-down._active:after {
-  border-top: 0;
-  border-bottom: 0.6rem solid #cca266;
-}
 .gold-link__wrap {
   text-align: center;
   margin-top: 4rem;
@@ -1276,6 +1271,10 @@ h4.small-bottom-indent {
   border-top: 0.6rem solid #cca266;
   margin-left: 1.2rem;
   margin-top: 0.9rem;
+}
+.gold-link._arr-down._active:after {
+  border-top: 0;
+  border-bottom: 0.6rem solid #cca266;
 }
 .tablet.portrait .grid__inner {
   padding-left: 2.7rem;
@@ -14081,6 +14080,379 @@ h2 + .docs-date {
 .mobile .corporate__credits-block-title {
   margin-bottom: 3.9rem;
 }
+.rko__info .inner__info-benefits .b-list {
+  margin-top: 3.2rem;
+  margin-bottom: 0;
+}
+.rko__info-title {
+  color: #3e3e3e;
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: -0.039rem;
+  line-height: 3.5rem;
+}
+.rko__info-subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.rko__info-btn {
+  margin-bottom: 6.5rem;
+}
+.rko__info-btn .btn {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  letter-spacing: 0;
+}
+.rko__reserve h4 {
+  margin-bottom: 0;
+}
+.rko__reserve .dash-list {
+  margin: 0;
+}
+.rko__reserve .dash-list li + li {
+  margin-top: 2rem;
+}
+.rko__files {
+  max-width: 97rem;
+  margin: 0 auto;
+}
+.rko__packages-top {
+  max-width: 70rem;
+}
+.rko__packages-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 4.1rem;
+}
+.rko__packages-table {
+  margin-top: 6.5rem;
+}
+.rko__packages-table .deposit-table td {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.rko__packages-table .deposit-table td:first-child {
+  padding-left: 4rem;
+}
+.rko__packages-table .deposit-table__titles td {
+  padding-top: 2.1rem;
+  padding-bottom: 1.5rem;
+}
+.rko__packages-table-period td {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 22rem;
+}
+.rko__packages-salary {
+  padding-left: 4rem;
+  margin-top: 5.1rem;
+}
+.rko__packages-salary-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.rko__packages-salary-block {
+  *zoom: 1;
+  margin-top: 3.4rem;
+}
+.rko__packages-salary-block:before,
+.rko__packages-salary-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.rko__packages-salary-block:after {
+  clear: both;
+}
+.rko__packages-salary-benefits {
+  float: left;
+  width: 53rem;
+}
+.rko__packages-salary-benefits .b-list {
+  margin: 0;
+}
+.rko__packages-salary-numerals {
+  float: right;
+  width: 47rem;
+}
+.rko__packages-partner-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-top: 0.7rem;
+}
+.rko__packages-partner-text p {
+  margin: 0;
+}
+.rko__packages-partner-text p + p {
+  margin-top: 2rem;
+}
+.rko__packages-partner-conditions h4 {
+  margin-top: 0.5rem;
+}
+.rko__packages-partner-conditions .deposit-open__method-title {
+  font-size: 1.4rem;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+.rko__packages-partner-conditions .dash-list {
+  margin: 0;
+}
+.rko__packages-partner-conditions .dash-list li + li {
+  margin-top: 1rem;
+}
+.rko__package.deposit-table__row td {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+.rko__package.deposit-table__row td.rko__package-price {
+  font-weight: 600!important;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 6.8rem;
+  line-height: 3rem;
+}
+.rko__package-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.rko__package-text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-top: 0.8rem;
+  max-width: 43rem;
+}
+.tablet.portrait .rko__info .deposit__info-banner-in {
+  top: 3rem;
+  bottom: auto;
+}
+.tablet.portrait .rko__info .deposit__info-banner-title {
+  max-width: 40rem;
+}
+.tablet.portrait .rko__info .inner__info-benefits .b-list {
+  margin-top: 3rem!important;
+}
+.tablet.portrait .rko__info-title {
+  margin-top: 7rem;
+}
+.tablet.portrait .rko__info-btn {
+  margin-bottom: 4.7rem;
+}
+.tablet.portrait .rko__reserve {
+  margin-top: 4.7rem;
+}
+.tablet.portrait .rko__packages-table {
+  margin-top: 3.9rem;
+  margin-left: -2.7rem;
+  margin-right: -2.7rem;
+}
+.tablet.portrait .rko__packages-table .deposit-table td {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.tablet.portrait .rko__packages-table .deposit-table td:first-child {
+  padding-left: 2.7rem;
+}
+.tablet.portrait .rko__packages-table .deposit-table td:last-child {
+  padding-right: 2.7rem;
+}
+.tablet.portrait .rko__packages-table-period td {
+  min-width: 10rem;
+}
+.tablet.portrait .rko__packages-salary {
+  padding-left: 0;
+  margin-top: 7.1rem;
+}
+.tablet.portrait .rko__packages-salary-block {
+  margin-top: 3.6rem;
+}
+.tablet.portrait .rko__packages-salary-benefits {
+  float: none;
+  width: 100%;
+}
+.tablet.portrait .rko__packages-salary-numerals.numerals__block {
+  float: none;
+  width: 49rem;
+  margin-top: 5rem;
+}
+.tablet.portrait .rko__packages-partner-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-top: 0.7rem;
+}
+.tablet.portrait .rko__packages-partner-text p {
+  margin: 0;
+}
+.tablet.portrait .rko__packages-partner-text p + p {
+  margin-top: 2rem;
+}
+.tablet.portrait .rko__packages-partner-conditions h4 {
+  margin-top: 0.5rem;
+}
+.tablet.portrait .rko__packages-partner-conditions .deposit-open__method-title {
+  font-size: 1.4rem;
+  letter-spacing: -0.019rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+.tablet.portrait .rko__packages-partner-conditions .dash-list {
+  margin: 0;
+}
+.tablet.portrait .rko__packages-partner-conditions .dash-list li + li {
+  margin-top: 1rem;
+}
+.mobile .rko .b-list {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 3.2rem;
+}
+.mobile .rko .b-list li {
+  padding-left: 2.7rem;
+}
+.mobile .rko .b-list li:before {
+  top: 0.8rem;
+}
+.mobile .rko .b-list li + li {
+  margin-top: 2rem;
+}
+.mobile .rko__info .deposit__info-banner-in {
+  top: 3rem;
+  bottom: auto;
+}
+.mobile .rko__info-title {
+  margin-top: 6.1rem;
+  font-size: 2.6rem;
+}
+.mobile .rko__info-subtitle {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.mobile .rko__reserve {
+  margin-top: 3.9rem;
+}
+.mobile .rko__reserve h4 {
+  margin-bottom: 3.1rem;
+}
+.mobile .rko__reserve .deposit-open__method {
+  padding: 3rem 2rem 3.8rem 1.3rem;
+}
+.mobile .rko__mob-packages {
+  border: 1px solid #dadada;
+  margin-top: 4rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.mobile .rko__mob-package {
+  padding: 2.7rem 2rem 3rem;
+  color: #3e3e3e;
+}
+.mobile .rko__mob-package:nth-child(2n+1) {
+  background-color: whitesmoke;
+}
+.mobile .rko__mob-package-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.mobile .rko__mob-package-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-top: 0.9rem;
+}
+.mobile .rko__mob-package-price {
+  margin-top: 3.9rem;
+}
+.mobile .rko__mob-package-price-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  color: #AAAEB2;
+  text-transform: uppercase;
+}
+.mobile .rko__mob-package-price-periods {
+  border-top: 1px solid #dadada;
+  *zoom: 1;
+  margin-top: 1rem;
+  padding-top: 1.2rem;
+}
+.mobile .rko__mob-package-price-periods:before,
+.mobile .rko__mob-package-price-periods:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .rko__mob-package-price-periods:after {
+  clear: both;
+}
+.mobile .rko__mob-package-price-period {
+  float: left;
+  width: 10rem;
+}
+.mobile .rko__mob-package-price-period + .rko__mob-package-price-period {
+  margin-left: 3.3rem;
+}
+.mobile .rko__mob-package-price-period-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+.mobile .rko__mob-package-price-period-val {
+  margin-top: 1.1rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.mobile .rko__packages-top {
+  max-width: 70rem;
+}
+.mobile .rko__packages-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 4.1rem;
+}
+.mobile .rko__packages-salary {
+  padding-left: 0;
+  margin-top: 5.1rem;
+}
+.mobile .rko__packages-salary-block {
+  *zoom: 1;
+  margin-top: 3.4rem;
+}
+.mobile .rko__packages-salary-block:before,
+.mobile .rko__packages-salary-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .rko__packages-salary-block:after {
+  clear: both;
+}
+.mobile .rko__packages-salary-benefits {
+  float: none;
+  width: 100%;
+}
+.mobile .rko__packages-salary-benefits .b-list {
+  margin: 0;
+}
+.mobile .rko__packages-salary-numerals {
+  margin-top: 4rem;
+  float: none;
+  width: 100%;
+}
+.mobile .rko__packages-salary-numerals .numerals__item {
+  padding-right: 0;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
@@ -14129,6 +14501,10 @@ h2 + .docs-date {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.4rem;
+}
+.deposit__info-banner-title._big {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
 .deposit__info-banner-text {
   font-size: 8rem;

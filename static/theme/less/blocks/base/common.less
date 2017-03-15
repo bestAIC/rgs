@@ -710,12 +710,6 @@ h4{
 			&:after{
 				border-top-color: @cGoldHover!important;
 			}
-			&._active{
-				&:after{
-					border-top: 0;
-					border-bottom: 0.6rem solid #cca266;
-				}
-			}
 		}
 	}
 	&__wrap{
@@ -745,6 +739,12 @@ h4{
 			border-top: 6/@rem solid @cGold;
 			margin-left: 12/@rem;
 			margin-top: 9/@rem;
+		}
+		&._active{
+			&:after{
+				border-top: 0;
+				border-bottom: 0.6rem solid #cca266;
+			}
 		}
 	}
 }
