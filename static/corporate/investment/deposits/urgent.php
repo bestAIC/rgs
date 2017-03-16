@@ -354,7 +354,7 @@
 					<div class="deposit-scale">
 						<h3>Процентные ставки</h3>
 						<div class="deposit-table__wrap">
-							<table class="deposit-table _rowspan-table">
+							<table class="deposit-table _rowspan-table  _reverse-indents">
 								<tr class="deposit-table__titles">
 									<td >ВАЛЮТА ВКЛАДА</td>
 									<td>СУММА депозита</td>
@@ -449,6 +449,7 @@
 									<td class="center bold">0,65</td>
 									<td class="center bold">0,50</td>
 									<td class="center bold">0,50</td>
+								</tr>
 								<tr class="deposit-table__row _grey">
 									<td></td>
 									<td >от 3 501 <nobr>до 15 000</nobr></td>

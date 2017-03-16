@@ -15977,6 +15977,18 @@ h2 + .docs-date {
 .deposit-table._rowspan-table .deposit-table__row._cut th:first-child {
   padding-left: 1rem;
 }
+.deposit-table._reverse-indents th {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.deposit-scale .deposit-table._reverse-indents th {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.deposit-table._reverse-indents .deposit-table__titles td {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
 .deposit-table__title {
   color: #3e3e3e;
   font-size: 2rem;
