@@ -663,6 +663,9 @@ a:focus {
   margin-top: 7rem;
   padding: 2.9rem 3.9rem 3.9rem;
 }
+.frame-text._no-indent {
+  margin-top: 0;
+}
 .mobile .frame-text {
   margin-top: 6rem;
   padding: 1.9rem 3rem 4.9rem;
@@ -2111,6 +2114,14 @@ h4.small-bottom-indent {
 .page-nav__item + .page-nav__item {
   margin-top: 3rem;
 }
+.page-nav__item-bottom {
+  position: absolute;
+  bottom: 5.8rem;
+  left: 4rem;
+}
+.mobile .page-nav__item-bottom {
+  position: static;
+}
 .page-nav__item-ico._base {
   position: absolute;
   z-index: 2;
@@ -2321,6 +2332,42 @@ h4.small-bottom-indent {
   height: 20rem;
   background: url('../images/page-nav/financial/box.png') no-repeat center;
   background-size: contain;
+}
+.corporate-invest-nav.b-block {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+.corporate-invest-nav__bottom.b-block {
+  padding-top: 7rem;
+}
+.tablet.portrait .corporate-invest-nav__bottom.b-block {
+  padding-top: 5rem;
+}
+.mobile .corporate-invest-nav__bottom.b-block {
+  padding-top: 3rem;
+}
+.corporate-invest-nav__deposits {
+  background-image: linear-gradient(137deg, #878579 0%, #5c5c54 100%);
+  color: #fff;
+  overflow: visible!important;
+}
+.corporate-invest-nav__deposits:hover {
+  color: #fff;
+}
+.corporate-invest-nav__deposits:focus {
+  color: #fff;
+}
+.corporate-invest-nav__deposits-img {
+  width: 29rem;
+  height: 23.5rem;
+  background: url('../images/corporate/safe-box.png') no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 3rem;
+  top: -1.4rem;
+}
+.mobile .corporate-invest-nav__deposits-img {
+  display: none;
 }
 .cards-nav.b-block {
   padding-top: 8rem;
@@ -15984,6 +16031,9 @@ h2 + .docs-date {
   line-height: 2rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.deposit-table th._left {
+  text-align: left;
 }
 .deposit-table .center {
   text-align: center;
