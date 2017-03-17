@@ -14104,6 +14104,108 @@ h2 + .docs-date {
   line-height: 3rem;
   margin-bottom: 3.9rem;
 }
+.corporate__deposits {
+  *zoom: 1;
+}
+.corporate__deposits:before,
+.corporate__deposits:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.corporate__deposits:after {
+  clear: both;
+}
+.corporate__deposits.b-block {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+.corporate__deposits-open h3 {
+  margin-top: 0!important;
+}
+.corporate__deposits-open-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.corporate__deposit {
+  width: 57rem;
+  height: 25.2rem;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  padding: 3.3rem 4rem 3rem;
+  float: left;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+.tablet.portrait .corporate__deposit,
+.mobile .corporate__deposit {
+  width: 100%;
+  margin-right: 0;
+}
+.corporate__deposit:nth-child(2n) {
+  margin-right: 0;
+}
+.corporate__deposit-in {
+  height: 100%;
+  position: relative;
+  *zoom: 1;
+  padding-right: 15rem;
+}
+.corporate__deposit-in:before,
+.corporate__deposit-in:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.corporate__deposit-in:after {
+  clear: both;
+}
+.corporate__deposit-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+.corporate__deposit-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-top: 1.1rem;
+  letter-spacing: -0.025rem;
+  padding-right: 6rem;
+}
+.corporate__deposit-date {
+  position: absolute;
+  right: 0;
+  top: 0.7rem;
+  width: 11rem;
+}
+.corporate__deposit-date-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: #AAAEB2;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+.corporate__deposit-date-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: #3e3e3e;
+  margin-top: 1.1rem;
+}
+.corporate__deposit-date-text span {
+  display: block;
+}
+.corporate__deposit-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-weight: 700;
+  padding: 1.3rem 2rem;
+  letter-spacing: -0.01rem;
+}
 .tablet.portrait .corporate__credits-block {
   padding: 3.3rem 4rem 2.3rem;
 }
@@ -14126,6 +14228,49 @@ h2 + .docs-date {
 }
 .mobile .corporate__credits-block-title {
   margin-bottom: 3.9rem;
+}
+.mobile .corporate__deposit {
+  height: auto;
+  padding: 2.7rem 2rem 3rem;
+  float: none;
+  margin-right: 0;
+}
+.mobile .corporate__deposit-in {
+  padding-right: 0;
+  *zoom: 1;
+}
+.mobile .corporate__deposit-in:before,
+.mobile .corporate__deposit-in:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mobile .corporate__deposit-in:after {
+  clear: both;
+}
+.mobile .corporate__deposit-text {
+  margin-bottom: 2rem;
+  padding-right: 4rem;
+}
+.mobile .corporate__deposit-date {
+  position: static;
+  width: 16rem;
+  float: left;
+  padding-top: 0.3rem;
+}
+.mobile .corporate__deposit-date-text {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-top: 0.6rem;
+}
+.mobile .corporate__deposit-date-text span {
+  display: inline;
+  white-space: nowrap;
+}
+.mobile .corporate__deposit-btn {
+  position: static;
+  float: right;
+  padding: 1.3rem 2rem;
 }
 .rko__info .inner__info-benefits .b-list {
   margin-top: 3.2rem;
@@ -16173,9 +16318,16 @@ h2 + .docs-date {
   border-bottom: 1px solid #DEDFE0;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  text-transform: uppercase;
 }
 .deposit-compare__table-percent {
   width: 25rem;
+}
+.deposit-compare td.deposit-compare__table-currency {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  opacity: 0.5;
 }
 .deposit-compare__table-valuta {
   font-weight: 500;

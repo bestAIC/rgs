@@ -32,6 +32,91 @@
 			}
 		}
 	}
+	&__deposits{
+		.clearfix;
+		&.b-block{
+			padding-top: 6rem;
+			padding-bottom: 2rem;
+		}
+		&-open{
+			h3{
+				margin-top: 0!important;
+			}
+			&-text{
+				font-size: 16/@rem;
+				line-height: 25/@rem;
+			}
+		}
+	}
+	&__deposit{
+		.tablet.portrait &, .mobile & {
+			width: 100%;
+			margin-right: 0;
+		}
+		width: 570/@rem;
+		height: 252/@rem;
+		background-color: white;
+		border-radius: 2px;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		padding: 33/@rem 40/@rem 30/@rem;
+		float: left;
+		margin-right: 3rem;
+		margin-bottom: 3rem;
+		&:nth-child(2n){
+			margin-right: 0;
+		}
+		&-in{
+			height: 100%;
+			position: relative;
+			.clearfix;
+			padding-right: 150/@rem;
+		}
+		&-title{
+			font-size: 20/@rem;
+			font-weight: 700;
+			line-height: 2.7rem;
+		}
+		&-text{
+			font-size: 14/@rem;
+			font-weight: 300;
+			line-height: 25/@rem;
+			margin-top: 11/@rem;
+			letter-spacing: -0.25/@rem;
+			padding-right: 6rem;
+		}
+		&-date{
+			position: absolute;
+			right: 0;
+			top: 7/@rem;
+			width: 110/@rem;
+			&-title{
+				font-size: 10/@rem;
+				font-weight: 600;
+				letter-spacing: 0.5/@rem;
+				color: @cGray;
+				line-height: 1.5rem;
+				text-transform: uppercase;
+			}
+			&-text{
+				font-size: 18/@rem;
+				font-weight: 400;
+				line-height: 26/@rem;
+				color: @title-color;
+				margin-top: 11/@rem;
+				span{
+					display: block;
+				}
+			}
+		}
+		&-btn{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			font-weight: 700;
+			padding: 1.3rem 2rem;
+			letter-spacing: -0.1/@rem;
+		}
+	}
 }
 .tablet.portrait{
 	.corporate{
@@ -64,6 +149,40 @@
 				&-title{
 					margin-bottom: 39/@rem;
 				}
+			}
+		}
+		&__deposit{
+			height: auto;
+			padding: 27/@rem 20/@rem 30/@rem;
+			float: none;
+			margin-right: 0;
+			&-in{
+				padding-right: 0;
+				.clearfix;
+			}
+			&-text{
+				margin-bottom: 2rem;
+				padding-right: 4rem;
+			}
+			&-date{
+				position: static;
+				width: 16rem;
+				float: left;
+				padding-top: 3/@rem;
+				&-text{
+					font-size: 16/@rem;
+					line-height: 20/@rem;
+					margin-top: 6/@rem;
+					span{
+						display: inline;
+						white-space: nowrap;
+					}
+				}
+			}
+			&-btn{
+				position: static;
+				float: right;
+				padding: 1.3rem 2rem;
 			}
 		}
 	}
