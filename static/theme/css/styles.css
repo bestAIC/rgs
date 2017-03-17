@@ -16081,6 +16081,11 @@ h2 + .docs-date {
 .deposit-scale__table-row {
   background-color: whitesmoke;
 }
+.deposit-scale__table-row._titles td {
+  border-bottom: 1px solid #DEDFE0;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
 .deposit-scale__table-row td {
   font-size: 1.6rem;
   line-height: 3rem;

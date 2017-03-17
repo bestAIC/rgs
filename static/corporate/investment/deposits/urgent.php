@@ -155,6 +155,10 @@
 													<td>от 1 млн <br/>до 50 млн</td>
 													<td>от 50 млн</td>
 												</tr>
+												<tr class="deposit-scale__table-row _titles">
+													<td class="red">Срок вклада<br/>(дней)</td>
+													<td colspan="3">Максимальная ставка</td>
+												</tr>
 												<tr class="deposit-scale__table-row">
 													<td class="red">31-60</td>
 													<td>7,65%</td>
@@ -218,6 +222,10 @@
 													<td>от 10 000<br/>до 1 000 000</td>
 													<td>свыше<br/>1 000 000</td>
 												</tr>
+												<tr class="deposit-scale__table-row _titles">
+													<td class="red">Срок вклада<br/>(дней)</td>
+													<td colspan="2">Максимальная ставка</td>
+												</tr>
 												<tr class="deposit-scale__table-row">
 													<td  class="red">31-60</td>
 													<td>0,30%</td>
@@ -271,6 +279,10 @@
 													<td>СУММА<br/>ВКЛАДА</td>
 													<td>от 10 000<br/>до 1 000 000</td>
 													<td>свыше<br/>1 000 000</td>
+												</tr>
+												<tr class="deposit-scale__table-row _titles">
+													<td class="red">Срок вклада<br/>(дней)</td>
+													<td colspan="2">Максимальная ставка</td>
 												</tr>
 												<tr class="deposit-scale__table-row">
 													<td  class="red">31-60</td>

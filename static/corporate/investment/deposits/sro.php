@@ -104,6 +104,10 @@
 													<td>от 500 000<br/>до 50 000 000</td>
 													<td>от 50 000 000</td>
 												</tr>
+												<tr class="deposit-scale__table-row _titles">
+													<td class="red">Срок вклада<br/>(дней)</td>
+													<td colspan="2">Максимальная ставка</td>
+												</tr>
 												<tr class="deposit-scale__table-row">
 													<td class="red">31-60</td>
 													<td>6,75%</td>
