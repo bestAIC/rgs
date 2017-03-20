@@ -150,7 +150,7 @@
 			</div>
 			<div class="b-block animation__top " data-animation>
 				<div class="grid__inner">
-					<div class="deposit-scale _no-indent">
+					<div class="deposit-scale _no-indent is-mob-block">
 						<h3>Процентные ставки</h3>
 						<div class="deposit-scale__block" data-tabs>
 							<div class="deposit-scale__tabs">
