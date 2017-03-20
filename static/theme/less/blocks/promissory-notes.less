@@ -1,0 +1,24 @@
+.promissory-notes{
+	&__conditions{
+		margin-top: 8.6rem;
+		.tablet.portrait &{
+			margin-top: 7rem;
+		}
+		.mobile &{
+			margin-top: 6rem;
+		}
+	}
+	&__block{
+		h4{
+			margin-bottom: 3rem;
+		}
+		&+&{
+			margin-top: 7rem;
+		}
+	}
+}
+.mobile{
+	.promissory-notes__block+.promissory-notes__block{
+		margin-top: 6rem;
+	}
+}

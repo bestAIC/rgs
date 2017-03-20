@@ -367,11 +367,6 @@
 						<h3>Процентные ставки</h3>
 						<div class="deposit-table__wrap">
 							<table class="deposit-table _rowspan-table  _reverse-indents">
-								<tr class="deposit-table__titles">
-									<td >ВАЛЮТА ВКЛАДА</td>
-									<td>СУММА депозита</td>
-									<td colspan="9" class="center">максимальная ставка привлечения, %</td>
-								</tr>
 								<tr>
 									<th colspan="2" class="_left">Срок привлечения (дней)</th>
 									<th>31-60</th>
@@ -383,6 +378,11 @@
 									<th>271 - 366</th>
 									<th>367 - 545</th>
 									<th>546 - 732</th>
+								</tr>
+								<tr class="deposit-table__titles">
+									<td >ВАЛЮТА ВКЛАДА</td>
+									<td>СУММА депозита</td>
+									<td colspan="9" class="center">максимальная ставка привлечения, %</td>
 								</tr>
 								<tr class="deposit-table__row _grey">
 									<td class="bold valuta center"><span class="is-desktop-block"></span><span class="rub"></span></td>

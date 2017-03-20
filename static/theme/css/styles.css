@@ -14645,6 +14645,40 @@ h2 + .docs-date {
 .mobile .rko__packages-salary-numerals .numerals__item {
   padding-right: 0;
 }
+.minimum-balance h4 {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.minimum-balance__block {
+  max-width: 77rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.minimum-balance__block .deposit-conditions {
+  max-width: 57rem;
+}
+.tablet.portrait .minimum-balance__block .deposit-conditions {
+  max-width: 100%;
+}
+.promissory-notes__conditions {
+  margin-top: 8.6rem;
+}
+.tablet.portrait .promissory-notes__conditions {
+  margin-top: 7rem;
+}
+.mobile .promissory-notes__conditions {
+  margin-top: 6rem;
+}
+.promissory-notes__block h4 {
+  margin-bottom: 3rem;
+}
+.promissory-notes__block + .promissory-notes__block {
+  margin-top: 7rem;
+}
+.mobile .promissory-notes__block + .promissory-notes__block {
+  margin-top: 6rem;
+}
 .deposit__text,
 .deposit .note-text {
   color: #919599;
@@ -15863,6 +15897,12 @@ h2 + .docs-date {
 .deposit-open__method-content {
   letter-spacing: -0.019rem;
 }
+.deposit-open__method-content._only-dash-list .dash-list {
+  margin: 0;
+}
+.deposit-open__method-content._only-dash-list .dash-list li + li {
+  margin-top: 2rem;
+}
 .deposit-open__steps {
   margin-bottom: -2.6rem;
 }
@@ -15967,6 +16007,9 @@ h2 + .docs-date {
 }
 .deposit-scale {
   margin-top: 7.3rem;
+}
+.deposit-scale._no-indent {
+  margin-top: 0;
 }
 .deposit-scale th {
   border-bottom: 1px solid #DEDFE0;
@@ -16583,6 +16626,9 @@ h2 + .docs-date {
   line-height: 3rem;
   color: #3e3e3e;
   margin-bottom: 2rem;
+}
+.inner__info-benefits-title p {
+  margin-top: 0;
 }
 .inner__info-benefits .b-list {
   margin: 4rem 0 3rem;
