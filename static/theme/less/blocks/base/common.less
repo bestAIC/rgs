@@ -314,6 +314,10 @@ h4{
 	line-height: 25/@rem;
 	padding-left: 0;
 	list-style: none;
+	&__hidden{
+		list-style: none;
+		padding-left: 0;
+	}
 	&.no-b-indent{
 		margin-bottom: 0!important;
 	}
@@ -742,6 +746,9 @@ h4{
 			border-top: 6/@rem solid @cGold;
 			margin-left: 12/@rem;
 			margin-top: 9/@rem;
+			span._active{
+				display: none;
+			}
 		}
 		&._active{
 			&:after{

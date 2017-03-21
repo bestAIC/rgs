@@ -830,6 +830,10 @@ h4.small-bottom-indent {
   padding-left: 0;
   list-style: none;
 }
+.b-list__hidden {
+  list-style: none;
+  padding-left: 0;
+}
 .b-list.no-b-indent {
   margin-bottom: 0!important;
 }
@@ -1274,6 +1278,9 @@ h4.small-bottom-indent {
   border-top: 0.6rem solid #cca266;
   margin-left: 1.2rem;
   margin-top: 0.9rem;
+}
+.gold-link._arr-down:after span._active {
+  display: none;
 }
 .gold-link._arr-down._active:after {
   border-top: 0;
@@ -14678,6 +14685,187 @@ h2 + .docs-date {
 }
 .mobile .promissory-notes__block + .promissory-notes__block {
   margin-top: 6rem;
+}
+.salary-project .frame-text {
+  margin-top: 4rem;
+  color: #3e3e3e;
+}
+.salary-project .deposit-open__steps._w100 {
+  margin-top: 4rem;
+}
+.salary-project .deposit-open__steps._w100 .deposit-open__step {
+  margin-bottom: 2rem;
+}
+.salary-project__conditions-text {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #3e3e3e;
+}
+.salary-project__benefits h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.salary-project__info-benefits ul.b-list {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.salary-project__info-benefits ul.b-list li + li {
+  margin-top: 2rem;
+}
+.salary-project__info-cards {
+  margin-top: 4rem;
+}
+.salary-project__info-contacts {
+  margin-top: 7rem;
+}
+.salary-project__products h3 {
+  text-align: center;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+.salary-project__products-block {
+  *zoom: 1;
+}
+.salary-project__products-block:before,
+.salary-project__products-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.salary-project__products-block:after {
+  clear: both;
+}
+.salary-project__product {
+  float: left;
+  width: 57rem;
+  height: 45rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  margin-top: 3rem;
+  padding: 4.1rem 3rem 2.3rem;
+}
+.salary-project__product .gold-link__wrap {
+  display: none;
+}
+.salary-project__product:nth-child(2n) {
+  margin-left: 3rem;
+}
+.salary-project__product strong {
+  white-space: nowrap;
+}
+.salary-project__product .b-list li + li {
+  margin-top: 2rem;
+}
+.salary-project__product-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #3e3e3e;
+}
+.salary-project__product-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #3e3e3e;
+  margin-top: 2rem;
+  margin-bottom: 3.9rem;
+}
+.tablet.portrait .salary-project__conditions {
+  padding-top: 4rem!important;
+}
+.tablet.portrait .salary-project__conditions-text {
+  margin-top: 4.2rem;
+}
+.tablet.portrait .salary-project__benefits h3 {
+  margin-top: 4rem;
+}
+.tablet.portrait .salary-project__info-cards {
+  margin-bottom: 7rem;
+}
+.tablet.portrait .salary-project__info-contacts {
+  margin-top: 8.2rem;
+}
+.tablet.portrait .salary-project__product {
+  float: none;
+  width: 100%;
+  height: auto;
+}
+.tablet.portrait .salary-project__product:nth-child(2n) {
+  margin-left: 0;
+}
+.mobile .salary-project .frame-text {
+  margin-top: 4rem;
+  color: #3e3e3e;
+}
+.mobile .salary-project .deposit-open__steps._w100 {
+  margin-top: 4rem;
+}
+.mobile .salary-project .deposit-open__steps._w100 .deposit-open__step {
+  margin-bottom: 2rem;
+}
+.mobile .salary-project__conditions-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.mobile .salary-project__benefits h3 {
+  margin-bottom: 4rem;
+}
+.mobile .salary-project__benefits .b-list__hidden {
+  display: none;
+  margin-top: 2rem;
+}
+.mobile .salary-project__benefits .corporate__credits-block {
+  padding-bottom: 3.1rem;
+}
+.mobile .salary-project__info-benefits ul.b-list {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+}
+.mobile .salary-project__info-benefits ul.b-list li {
+  padding-left: 3rem;
+}
+.mobile .salary-project__info-benefits ul.b-list li:before {
+  top: 0.8rem;
+}
+.mobile .salary-project__info-cards {
+  margin-bottom: 6rem;
+}
+.mobile .salary-project__info-contacts {
+  margin-top: 8rem;
+}
+.mobile .salary-project__product {
+  float: none;
+  width: 100%;
+  height: auto;
+  padding: 3.5rem 2rem 2.9rem;
+}
+.mobile .salary-project__product:nth-child(2n) {
+  margin-left: 0;
+}
+.mobile .salary-project__product .gold-link__wrap {
+  display: block;
+}
+.mobile .salary-project__product .b-list {
+  display: none;
+}
+.mobile .salary-project__product .b-list li {
+  padding-left: 2.8rem;
+  line-height: 2.5rem;
+}
+.mobile .salary-project__product .b-list li:before {
+  top: 0.8rem;
+}
+.mobile .salary-project__product .b-list li + li {
+  margin-top: 1.5rem;
+}
+.mobile .salary-project__product-title {
+  line-height: 3rem;
+}
+.mobile .salary-project__product-text {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 .deposit__text,
 .deposit .note-text {

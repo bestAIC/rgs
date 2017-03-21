@@ -27,7 +27,7 @@
 		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="deposit__info-banner _blue">
+					<div class="deposit__info-banner">
 						<div class="deposit__info-banner-in">
 							<div class="deposit__info-banner-title">процентная ставка до</div>
 							<div class="deposit__info-banner-text">8,4%</div>
