@@ -506,6 +506,10 @@ h4.small-bottom-indent {
   padding-left: 0;
   list-style: none;
 }
+.b-list__hidden {
+  list-style: none;
+  padding-left: 0;
+}
 .b-list.no-b-indent {
   margin-bottom: 0!important;
 }
@@ -950,6 +954,9 @@ h4.small-bottom-indent {
   border-top: 0.6rem solid #cca266;
   margin-left: 1.2rem;
   margin-top: 0.9rem;
+}
+.gold-link._arr-down:after span._active {
+  display: none;
 }
 .gold-link._arr-down._active:after {
   border-top: 0;

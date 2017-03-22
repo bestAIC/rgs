@@ -14696,6 +14696,20 @@ h2 + .docs-date {
 .salary-project .deposit-open__steps._w100 .deposit-open__step {
   margin-bottom: 2rem;
 }
+.salary-project__open-card.deposit-open__method {
+  padding-top: 4rem;
+  padding-bottom: 3.5rem;
+}
+.mobile .salary-project__open-card.deposit-open__method {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+.salary-project__open-card.deposit-open__method .deposit-open__steps._w100 {
+  margin-top: 0!important;
+}
+.salary-project__open-card.deposit-open__method .deposit-open__steps._w100 .deposit-open__step {
+  margin-bottom: 3rem;
+}
 .salary-project__conditions-text {
   font-size: 2rem;
   line-height: 3rem;
