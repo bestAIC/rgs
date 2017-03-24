@@ -590,8 +590,8 @@ a {
   color: #b31b2c;
   text-decoration: none;
 }
-a:hover,
-a:focus {
+.no-touch a:hover,
+.no-touch a:focus {
   color: #cc1f33;
 }
 .middle {
@@ -2376,6 +2376,100 @@ h4.small-bottom-indent {
 .mobile .corporate-invest-nav__deposits-img {
   display: none;
 }
+.corporate-nav {
+  *zoom: 1;
+  margin-bottom: -3rem;
+}
+.corporate-nav:before,
+.corporate-nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.corporate-nav:after {
+  clear: both;
+}
+.corporate-nav__items {
+  margin-right: -3rem;
+  padding-top: 2.6rem;
+}
+.corporate-nav__item {
+  display: block;
+  float: left;
+  width: 37rem;
+  height: 30rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+  color: #3e3e3e;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  padding: 4rem;
+}
+.corporate-nav__item._base {
+  transition: color 0.3s, background-color 0.3s;
+}
+.no-touch .corporate-nav__item._base:hover {
+  color: #fff;
+  background-color: #cca266;
+}
+.corporate-nav__item._img {
+  color: #fff!important;
+  background: none no-repeat center;
+  background-size: cover;
+}
+.corporate-nav__item._w2 {
+  width: 77rem;
+}
+.corporate-nav__item._long {
+  width: 117rem;
+}
+.corporate-nav__item-in {
+  height: 100%;
+  position: relative;
+}
+.corporate-nav__item-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+}
+.corporate-nav__item-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.corporate-nav__item-bottom-title {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  line-height: 4.2rem;
+  margin-bottom: 1.2rem;
+}
+.corporate-nav__item-bottom-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.3rem;
+}
+.corporate-nav__salary {
+  padding: 5rem 6.9rem 6rem;
+  overflow: hidden;
+}
+.corporate-nav__salary .corporate-nav__item-bottom-title {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: -0.037rem;
+  line-height: 3.6rem;
+}
+.corporate-nav__salary-img {
+  position: absolute;
+  right: -3.4rem;
+  top: -2rem;
+  width: 33rem;
+  height: 22.1rem;
+  background: url('../images/corporate/main/cards.png') no-repeat center;
+  background-size: contain;
+}
 .cards-nav.b-block {
   padding-top: 8rem;
   padding-bottom: 6.5rem;
@@ -2504,6 +2598,28 @@ h4.small-bottom-indent {
   margin-top: 1.8rem;
   color: #3e3e3e;
 }
+.tablet.portrait .corporate-nav__items {
+  padding-top: 0;
+}
+.tablet.portrait .corporate-nav__item {
+  width: 34.2rem;
+  height: 30rem;
+  padding: 4rem 3rem;
+}
+.tablet.portrait .corporate-nav__item._w2 {
+  width: 71.4rem;
+  padding: 4rem 4rem 5rem;
+}
+.tablet.portrait .corporate-nav__item._long {
+  width: 71.4rem;
+}
+.tablet.portrait .corporate-nav__salary {
+  padding: 5rem 3rem 6rem;
+}
+.tablet.portrait .corporate-nav__salary-img {
+  right: -17.2rem;
+  top: -1rem;
+}
 .tablet.portrait .page-nav__row-col {
   float: none;
   width: 100%;
@@ -2629,6 +2745,53 @@ h4.small-bottom-indent {
 }
 .mobile .page-nav__item._big {
   height: 20rem;
+}
+.mobile .corporate-nav {
+  margin-bottom: -1rem;
+}
+.mobile .corporate-nav__items {
+  margin-right: 0;
+  padding-top: 1rem;
+}
+.mobile .corporate-nav__item {
+  float: none;
+  width: 100%;
+  height: 25rem;
+  margin-right: 0;
+  padding: 4rem 3rem;
+  margin-bottom: 2rem;
+}
+.mobile .corporate-nav__item._w2 {
+  width: 100%;
+}
+.mobile .corporate-nav__item._long {
+  width: 100%;
+}
+.mobile .corporate-nav__item-title {
+  font-size: 2rem;
+  line-height: 2.7rem;
+}
+.mobile .corporate-nav__item-bottom-title {
+  font-size: 3rem;
+  letter-spacing: -0.037rem;
+  line-height: 3.6rem;
+  margin-bottom: 1rem;
+}
+.mobile .corporate-nav__item-bottom-text {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
+.mobile .corporate-nav__salary {
+  padding: 4rem 3rem;
+}
+.mobile .corporate-nav__salary .corporate-nav__item-bottom-title {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: -0.037rem;
+  line-height: 3.6rem;
+}
+.mobile .corporate-nav__salary-img {
+  display: none;
 }
 .mobile .invest-nav {
   margin-top: 0;

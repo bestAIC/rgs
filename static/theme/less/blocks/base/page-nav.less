@@ -309,6 +309,91 @@
 		}
 	}
 }
+.corporate-nav{
+	.clearfix;
+	margin-bottom: -3rem;
+	&__items{
+		margin-right: -3rem;
+		padding-top: 26/@rem;
+	}
+	&__item{
+		display: block;
+		float: left;
+		width: 370/@rem;
+		height: 300/@rem;
+		background-color: white;
+		border-radius: 3/@rem;
+		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		color: @title-color;
+		margin-right: 3rem;
+		margin-bottom: 3rem;
+		padding: 40/@rem;
+		&._base{
+			transition: color 0.3s,background-color 0.3s;
+			.no-touch &:hover{
+				color: #fff;
+				background-color: @cGold;
+			}
+		}
+		&._img{
+			color: #fff!important;
+			background: none no-repeat center;
+			background-size: cover;
+		}
+		&._w2{
+			width: 770/@rem;
+		}
+		&._long{
+			width: 117rem;
+		}
+		&-in{
+			height: 100%;
+			position: relative;
+		}
+		&-title{
+			font-size: 24/@rem;
+			font-weight: 700;
+			line-height: 34/@rem;
+		}
+		&-bottom{
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			&-title{
+				font-size: 40/@rem;
+				font-weight: 300;
+				letter-spacing: -0.5/@rem;
+				line-height: 42/@rem;
+				margin-bottom: 12/@rem;
+			}
+			&-text{
+				font-size: 16/@rem;
+				font-weight: 300;
+				line-height: 23/@rem;
+			}
+		}
+	}
+	&__salary{
+		padding: 50/@rem 69/@rem 60/@rem;
+		overflow: hidden;
+		.corporate-nav__item-bottom-title{
+			font-size: 30/@rem;
+			font-weight: 300;
+			letter-spacing: -0.37/@rem;
+			line-height: 36/@rem;
+		}
+		&-img{
+			position: absolute;
+			right: -34/@rem;
+			top: -20/@rem;
+			width: 330/@rem;
+			height: 221/@rem;
+			background: url('@{pathToImg}corporate/main/cards.png') no-repeat center;
+			background-size: contain;
+		}
+	}
+}
 .cards-nav{
 	&.b-block{
 		padding-top: 80/@rem;
@@ -427,7 +512,30 @@
 	}
 }
 .tablet.portrait{
-
+	.corporate-nav{
+		&__items{
+			padding-top: 0;
+		}
+		&__item{
+			width: 342/@rem;
+			height: 300/@rem;
+			padding: 40/@rem 30/@rem;
+			&._w2{
+				width: 714/@rem;
+				padding: 40/@rem 40/@rem 50/@rem;
+			}
+			&._long{
+				width: 714/@rem;
+			}
+		}
+		&__salary{
+			padding: 50/@rem 30/@rem 60/@rem;
+			&-img{
+				right: -172/@rem;
+				top: -10/@rem;
+			}
+		}
+	}
 	.page-nav{
 		&__row{
 			&-col{
@@ -571,6 +679,55 @@
 			padding: 34/@rem 30/@rem;
 			&._big{
 				height: 20rem;
+			}
+		}
+	}
+	.corporate-nav{
+		margin-bottom: -1rem;
+		&__items{
+			margin-right: 0;
+			padding-top: 10/@rem;
+		}
+		&__item{
+			float: none;
+			width: 100%;
+			height: 250/@rem;
+			margin-right: 0;
+			padding: 40/@rem 30/@rem;
+			margin-bottom: 2rem;
+			&._w2{
+				width: 100%;
+			}
+			&._long{
+				width: 100%;
+			}
+			&-title{
+				font-size: 20/@rem;
+				line-height: 27/@rem;
+			}
+			&-bottom{
+				&-title{
+					font-size: 30/@rem;
+					letter-spacing: -0.37/@rem;
+					line-height: 36/@rem;
+					margin-bottom: 10/@rem;
+				}
+				&-text{
+					font-size: 14/@rem;
+					line-height: 23/@rem;
+				}
+			}
+		}
+		&__salary{
+			padding: 40/@rem 30/@rem;
+			.corporate-nav__item-bottom-title{
+				font-size: 30/@rem;
+				font-weight: 300;
+				letter-spacing: -0.37/@rem;
+				line-height: 36/@rem;
+			}
+			&-img{
+				display: none;
 			}
 		}
 	}
