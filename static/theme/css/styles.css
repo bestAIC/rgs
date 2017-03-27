@@ -14575,11 +14575,12 @@ h2 + .docs-date {
   padding-bottom: 6rem;
 }
 .rko__package.deposit-table__row td.rko__package-price {
-  font-weight: 600!important;
+  font-weight: 700!important;
   text-align: center;
   vertical-align: top;
   padding-top: 6.8rem;
   line-height: 3rem;
+  opacity: 0.8;
 }
 .rko__package-title {
   font-size: 2rem;
