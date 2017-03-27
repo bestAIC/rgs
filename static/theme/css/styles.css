@@ -15852,11 +15852,10 @@ h2 + .docs-date {
   position: static;
   margin-right: 1.6rem;
 }
-.deposit-conditions {
-  border-bottom: 1px solid #DEDFE0;
-}
 .deposit-conditions + .gold-link__wrap {
-  margin-top: 2rem;
+  border-top: 1px solid #DEDFE0;
+  padding-top: 2rem;
+  margin-top: 0;
 }
 .deposit-conditions__item {
   *zoom: 1;
