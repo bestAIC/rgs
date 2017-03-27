@@ -266,8 +266,8 @@ a {
   color: #b31b2c;
   text-decoration: none;
 }
-a:hover,
-a:focus {
+.no-touch a:hover,
+.no-touch a:focus {
   color: #cc1f33;
 }
 .middle {
