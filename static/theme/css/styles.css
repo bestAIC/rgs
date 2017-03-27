@@ -2346,12 +2346,15 @@ h4.small-bottom-indent {
 }
 .corporate-invest-nav__bottom.b-block {
   padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .tablet.portrait .corporate-invest-nav__bottom.b-block {
   padding-top: 5rem;
+  padding-bottom: 6rem;
 }
 .mobile .corporate-invest-nav__bottom.b-block {
   padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 .corporate-invest-nav__deposits {
   background-image: linear-gradient(137deg, #878579 0%, #5c5c54 100%);
@@ -14835,11 +14838,18 @@ h2 + .docs-date {
 .promissory-notes__conditions {
   margin-top: 8.6rem;
 }
+.desktop .promissory-notes__conditions,
+.tablet.landscape .promissory-notes__conditions {
+  margin-bottom: -1rem;
+}
 .tablet.portrait .promissory-notes__conditions {
   margin-top: 7rem;
 }
 .mobile .promissory-notes__conditions {
   margin-top: 6rem;
+}
+.promissory-notes__conditions .b-list {
+  margin-bottom: 0!important;
 }
 .promissory-notes__block h4 {
   margin-bottom: 3rem;
