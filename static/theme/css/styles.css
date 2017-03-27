@@ -16233,6 +16233,34 @@ h2 + .docs-date {
   border: 1px solid #DEDFE0;
   border-radius: 0.2rem;
   padding: 2.5rem 3rem 3rem;
+  display: block;
+  color: #191919;
+}
+.deposit-open__method:hover {
+  color: #191919 !important;
+}
+.deposit-open__method:focus {
+  color: #191919 !important;
+}
+.no-touch .deposit-open__method:hover .deposit-open__method-title a,
+.no-touch .deposit-open__method:hover .deposit-open__method-title .pseudo-link {
+  color: #cc1f33;
+}
+.no-touch .deposit-open__method:hover .deposit-open__method-title a:after,
+.no-touch .deposit-open__method:hover .deposit-open__method-title .pseudo-link:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -0.5rem;
+  width: 1.2rem;
+  height: 1rem;
+  background: url('../images/icons/arr_right_long_gold.svg') no-repeat center;
+  background-size: contain;
+  transform: translate(0.5rem, 0);
+}
+.deposit-open__method .pseudo-link {
+  color: #b31b2c;
 }
 .deposit-open__method + .deposit-open__method {
   margin-top: 2rem;
@@ -16243,12 +16271,15 @@ h2 + .docs-date {
   line-height: 2.5rem;
   margin-bottom: 1.9rem;
 }
-.deposit-open__method-title a {
+.deposit-open__method-title a,
+.deposit-open__method-title .pseudo-link {
   display: block;
   position: relative;
   padding-right: 4rem;
+  transition: color 0.5s;
 }
-.deposit-open__method-title a:after {
+.deposit-open__method-title a:after,
+.deposit-open__method-title .pseudo-link:after {
   content: '';
   position: absolute;
   right: 0;
@@ -16256,6 +16287,7 @@ h2 + .docs-date {
   margin-top: -0.5rem;
   width: 1.2rem;
   height: 1rem;
+  transition: transform 0.5s;
   background: url('../images/icons/arr_right_long_gold.svg') no-repeat center;
   background-size: contain;
 }

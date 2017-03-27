@@ -408,20 +408,20 @@ h3 a {
   line-height: 1;
 }
 h3 a:hover {
-  color: #AAAEB2;
+  color: #AAAEB2 !important;
 }
 h3 a:focus {
-  color: #AAAEB2;
+  color: #AAAEB2 !important;
 }
 h3 a._active {
   border-bottom: none;
   color: #3e3e3e;
 }
 h3 a._active:hover {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 h3 a._active:focus {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 h4 {
   color: #3e3e3e;
@@ -701,10 +701,10 @@ h4.small-bottom-indent {
   transition: box-shadow 0.5s;
 }
 .related-pages__item:hover {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .related-pages__item:focus {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .no-touch .related-pages__item:hover {
   box-shadow: 0 1rem 1.5rem rgba(98, 98, 98, 0.17);
@@ -752,10 +752,10 @@ h4.small-bottom-indent {
   white-space: nowrap;
 }
 .phone:hover {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .phone:focus {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .breadcrumbs {
   color: #fff;
@@ -790,10 +790,10 @@ h4.small-bottom-indent {
   vertical-align: top;
 }
 .breadcrumbs__link:hover {
-  color: #fff;
+  color: #fff !important;
 }
 .breadcrumbs__link:focus {
-  color: #fff;
+  color: #fff !important;
 }
 .breadcrumbs__link:after {
   content: '/';
@@ -1178,10 +1178,10 @@ h4.small-bottom-indent {
   color: #191919;
 }
 .is-offices-page .header__menu-link:hover {
-  color: #191919;
+  color: #191919 !important;
 }
 .is-offices-page .header__menu-link:focus {
-  color: #191919;
+  color: #191919 !important;
 }
 .is-offices-page .header__menu-btn-bar {
   background-color: #000;
@@ -1202,10 +1202,10 @@ h4.small-bottom-indent {
   color: #191919;
 }
 .white-top .header__menu-link:hover {
-  color: #191919;
+  color: #191919 !important;
 }
 .white-top .header__menu-link:focus {
-  color: #191919;
+  color: #191919 !important;
 }
 .white-top .header__menu-btn-bar {
   background-color: #000;
@@ -1272,10 +1272,10 @@ h4.small-bottom-indent {
   color: #191919;
 }
 .header._fixed .header__menu-link:hover {
-  color: #191919;
+  color: #191919 !important;
 }
 .header._fixed .header__menu-link:focus {
-  color: #191919;
+  color: #191919 !important;
 }
 .header._fixed .header__menu-btn-bar {
   background-color: #000;
@@ -1292,10 +1292,10 @@ h4.small-bottom-indent {
   margin-top: 0.8rem;
 }
 .header__rus-link:hover {
-  color: #b31b2c;
+  color: #b31b2c !important;
 }
 .header__rus-link:focus {
-  color: #b31b2c;
+  color: #b31b2c !important;
 }
 .header__rus-link:after {
   content: '';
@@ -1353,10 +1353,10 @@ h4.small-bottom-indent {
   padding-bottom: 1.6rem;
 }
 .header__sections-item-link:hover {
-  color: #191919;
+  color: #191919 !important;
 }
 .header__sections-item-link:focus {
-  color: #191919;
+  color: #191919 !important;
 }
 .header__sections-item-link._active {
   color: #b31b2c;
@@ -1364,10 +1364,10 @@ h4.small-bottom-indent {
   opacity: 1;
 }
 .header__sections-item-link._active:hover {
-  color: #b31b2c;
+  color: #b31b2c !important;
 }
 .header__sections-item-link._active:focus {
-  color: #b31b2c;
+  color: #b31b2c !important;
 }
 .header__phones {
   float: right;
@@ -1395,10 +1395,10 @@ h4.small-bottom-indent {
   text-decoration: none;
 }
 .header__phone-link:hover {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .header__phone-link:focus {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .header__top {
   padding-top: 3.5rem;
@@ -1459,10 +1459,10 @@ h4.small-bottom-indent {
   transition: background-color 0.5s;
 }
 .header__top-enter-item:hover {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .header__top-enter-item:focus {
-  color: #3e3e3e;
+  color: #3e3e3e !important;
 }
 .mobile .header__top-enter-item {
   text-align: center;
@@ -1526,10 +1526,10 @@ h4.small-bottom-indent {
   letter-spacing: 0.5px;
 }
 .header__search-btn-text:hover {
-  color: #191919;
+  color: #191919 !important;
 }
 .header__search-btn-text:focus {
-  color: #191919;
+  color: #191919 !important;
 }
 .header__search-form {
   position: absolute;
@@ -1565,10 +1565,10 @@ h4.small-bottom-indent {
   color: #666;
 }
 .header__search-form-request:hover {
-  color: #666;
+  color: #666 !important;
 }
 .header__search-form-request:focus {
-  color: #666;
+  color: #666 !important;
 }
 .header__search-form-request strong {
   color: #171717;
@@ -1706,10 +1706,10 @@ h4.small-bottom-indent {
   vertical-align: top;
 }
 .header__menu-link:hover {
-  color: #fff;
+  color: #fff !important;
 }
 .header__menu-link:focus {
-  color: #fff;
+  color: #fff !important;
 }
 .header__menu-link._menu {
   border-color: transparent!important;

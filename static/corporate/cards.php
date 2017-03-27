@@ -41,13 +41,13 @@
 					</div>
 				</div>
 				<div class="inner__info-block">
-					<div class="deposit-open__method deposit-info__block">
-						<div class="deposit-open__method-title"><a href="#">Карты</a></div>
+					<a href="#" class="deposit-open__method deposit-info__block">
+						<div class="deposit-open__method-title"><span class="pseudo-link">Карты</span></div>
 						<div class="deposit-open__method-content">
 							Посмотрите виды карт, предлагаемых
 							РОСГОССТРАХ&nbsp;БАНКОМ
 						</div>
-					</div>
+					</a>
 					<div class="deposit-info__block">
 						<h3>Как оформить корпоративную
 							карту РОСГОССТРАХ БАНКА?</h3>

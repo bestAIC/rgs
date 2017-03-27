@@ -13,6 +13,29 @@
 		border: 1px solid @cBorder;
 		border-radius: 2/@rem;
 		padding: 2.5rem 3rem 3rem;
+		display: block;
+		.color(@text-color);
+		.no-touch &:hover{
+			.deposit-open__method-title{
+				a,.pseudo-link{
+					color: @cRedHover;
+					&:after{
+						content: '';
+						position: absolute;
+						right: 0;
+						top: 50%;
+						margin-top: -5/@rem;
+						width: 1.2rem;
+						height: 1rem;
+						.background('@{pathToImg}icons/arr_right_long_gold.svg');
+						transform: translate(5/@rem,0);
+					}
+				}
+			}
+		}
+		.pseudo-link{
+			color: @cRed;
+		}
 		&+&{
 			margin-top: 2rem;
 		}
@@ -21,10 +44,11 @@
 			font-weight: 600;
 			line-height: 25/@rem;
 			margin-bottom: 19/@rem;
-			a{
+			a,.pseudo-link{
 				display: block;
 				position: relative;
 				padding-right: 4rem;
+				transition: color @animTime;
 				&:after{
 					content: '';
 					position: absolute;
@@ -33,6 +57,7 @@
 					margin-top: -5/@rem;
 					width: 1.2rem;
 					height: 1rem;
+					transition: transform @animTime;
 					.background('@{pathToImg}icons/arr_right_long_gold.svg');
 				}
 			}
