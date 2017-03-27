@@ -5232,6 +5232,7 @@ span.pagination__item:focus {
 }
 .info-center__answer {
   position: absolute;
+  min-height: 44rem;
   z-index: 20;
   background-color: #fff;
   top: 0;
@@ -5383,6 +5384,7 @@ span.pagination__item:focus {
   height: 100%;
   background-color: transparent;
   z-index: 1;
+  border: 0;
 }
 .info-center__answer-form-btn .ideal-radio.checked {
   background-color: #cca266;
@@ -5481,6 +5483,9 @@ span.pagination__item:focus {
 .tablet.portrait .info-center__search {
   width: 100%;
 }
+.tablet.portrait .info-center__answer {
+  min-height: 32rem;
+}
 .tablet.portrait .info-center__section {
   width: 21.8rem;
   height: 14.4rem;
@@ -5491,6 +5496,9 @@ span.pagination__item:focus {
 }
 .tablet.portrait .info-center__section-counter {
   display: none;
+}
+.mobile .info-center__answer {
+  min-height: 20rem;
 }
 .mobile .info-center__answer-close {
   right: 1.3rem;

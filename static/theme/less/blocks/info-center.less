@@ -8,6 +8,7 @@
 	}
 	&__answer{
 		position: absolute;
+		min-height: 44rem;
 		z-index: 20;
 		background-color: #fff;
 		top: 0;
@@ -135,6 +136,7 @@
 					height: 100%;
 					background-color: transparent;
 					z-index: 1;
+					border: 0;
 					&.checked{
 						background-color: @cGold;
 					}
@@ -227,6 +229,9 @@
 		&__search{
 			width: 100%;
 		}
+		&__answer{
+			min-height: 32rem;
+		}
 		&__section{
 			width: 218/@rem;
 			height: 144/@rem;
@@ -245,6 +250,7 @@
 		//margin-bottom: 2.3rem;
 		//padding-top: 5rem;
 		&__answer{
+			min-height: 20rem;
 			&-close{
 				right: 1.3rem;
 				top: 0.4rem;
