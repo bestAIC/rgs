@@ -55,6 +55,11 @@
 		border-radius: 2/@rem;
 		box-shadow: 0 1px 3/@rem rgba(211, 211, 211, 0.8);
 		position: relative;
+		transition: box-shadow @animTime,transform @animTime;
+		&:hover{
+			transform: translate(0,-0.3rem);
+			box-shadow: 0 16/@rem 64/@rem -12/@rem rgba(9,9,10,0.16), 0 8/@rem 20/@rem -4/@rem rgba(9,9,10,0.08);
+		}
 		&._big{
 			height: 430/@rem;
 			overflow: hidden;

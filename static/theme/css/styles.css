@@ -2106,12 +2106,17 @@ h4.small-bottom-indent {
   border-radius: 0.2rem;
   box-shadow: 0 1px 0.3rem rgba(211, 211, 211, 0.8);
   position: relative;
+  transition: box-shadow 0.5s, transform 0.5s;
 }
 .page-nav__item:hover {
   color: #3e3e3e !important;
 }
 .page-nav__item:focus {
   color: #3e3e3e !important;
+}
+.page-nav__item:hover {
+  transform: translate(0, -0.3rem);
+  box-shadow: 0 1.6rem 6.4rem -1.2rem rgba(9, 9, 10, 0.16), 0 0.8rem 2rem -0.4rem rgba(9, 9, 10, 0.08);
 }
 .page-nav__item._big {
   height: 43rem;
