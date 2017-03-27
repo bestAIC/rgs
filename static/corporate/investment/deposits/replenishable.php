@@ -44,7 +44,7 @@
 				</div>
 				<div class="inner__info-benefits">
 					<div class="inner__info-benefits-title">
-						Пополняемый депозит с выплатой процентов в конце срока
+						Пополняемый депозит с выплатой процентов в&nbsp;конце&nbsp;срока
 					</div>
 					<ul class="b-list">
 						<li>Только в рублях</li>

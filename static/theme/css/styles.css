@@ -223,7 +223,7 @@ th {
   user-select: none;
   box-shadow: 0 1px 0.3rem rgba(158, 9, 24, 0.3);
   text-transform: uppercase;
-  transition: background-color 0.5s, box-shadow 0.5s;
+  transition: background-color 0.2s, box-shadow 0.15s;
 }
 .btn:hover {
   color: #fff !important;
@@ -16276,7 +16276,7 @@ h2 + .docs-date {
   display: block;
   position: relative;
   padding-right: 4rem;
-  transition: color 0.5s;
+  transition: color 0.2s;
 }
 .deposit-open__method-title a:after,
 .deposit-open__method-title .pseudo-link:after {
@@ -16287,7 +16287,7 @@ h2 + .docs-date {
   margin-top: -0.5rem;
   width: 1.2rem;
   height: 1rem;
-  transition: transform 0.5s;
+  transition: transform 0.2s;
   background: url('../images/icons/arr_right_long_gold.svg') no-repeat center;
   background-size: contain;
 }
