@@ -235,12 +235,12 @@
 										</div>
 									</div>
 								</div>
-								<div class="deposit-open__method">
-									<div class="deposit-open__method-title"><a href="#">В Интернет-банке</a></div>
+								<a href="#" class="deposit-open__method">
+									<div class="deposit-open__method-title"><span class="pseudo-link">В Интернет-банке</span></div>
 									<div class="deposit-open__method-content">
 										Вы можете открыть вклад в системе «Интернет-банк», если&nbsp;у Вас оформлен доступ в систему
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>

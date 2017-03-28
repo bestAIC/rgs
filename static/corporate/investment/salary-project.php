@@ -35,13 +35,13 @@
 						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/corporate/salary-project.png'
 							: ($tablePort ? '/static/theme/images/info-banners/corporate/salary-project_tablet.png':'/static/theme/images/info-banners/corporate/salary-project_mobile.png') ?>)"></div>
 					</div>
-					<div class="deposit-open__method salary-project__info-cards">
-						<div class="deposit-open__method-title"><a href="#">Карты</a></div>
+					<a href="#" class="deposit-open__method salary-project__info-cards">
+						<div class="deposit-open__method-title"><span class="pseudo-link">Карты</span></div>
 						<div class="deposit-open__method-content">
 							Посмотрите виды карт, предлагаемых
 							РОСГОССТРАХ&nbsp;БАНКОМ
 						</div>
-					</div>
+					</a>
 					<div class="base-info salary-project__info-contacts is-desktop-block">
 						<div class="base-info__title">Контакты</div>
 						<div class="base-info__text">
