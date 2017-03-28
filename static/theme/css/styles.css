@@ -14260,11 +14260,7 @@ h2 + .docs-date {
   margin-bottom: 5.1rem;
 }
 .tablet.portrait .ito__main {
-  margin-top: -5rem;
   width: 100%;
-}
-.mobile .ito__main {
-  margin-top: -5rem;
 }
 .mobile .ito__tools h2 {
   text-align: left;
