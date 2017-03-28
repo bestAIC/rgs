@@ -33,7 +33,7 @@
 							<div class="base-info__block">
 								<div class="base-info__block-title">Департамент корпоративного бизнеса</div>
 								<div class="base-info__block-text">
-									(495) 925 80 80 &nbsp;&nbsp;доб. 077-1609
+									<a class="phone _dark" href="tel:+74959258080">(495) 925 80 80</a> &nbsp;&nbsp;доб. 077-1609
 								</div>
 							</div>
 						</div>

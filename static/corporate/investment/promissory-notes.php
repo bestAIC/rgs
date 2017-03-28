@@ -63,7 +63,7 @@
 						<div class="base-info__text">
 							<div class="base-info__block">
 								<div class="base-info__block-text">
-									+7 (495) 925 80 79
+									<a class="phone _dark" href="tel:84959258079">(495) 925 80 79</a>
 								</div>
 							</div>
 						</div>
@@ -121,7 +121,7 @@
 					<div class="base-info__text">
 						<div class="base-info__block">
 							<div class="base-info__block-text">
-								+7 (495) 925 80 79
+								<a class="phone _dark" href="tel:84959258079">(495) 925 80 79</a>
 							</div>
 						</div>
 					</div>

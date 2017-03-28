@@ -30,13 +30,13 @@
 							<div class="base-info__block">
 								<div class="base-info__block-title">Управление межбанковских отношений:</div>
 								<div class="base-info__block-text">
-									(495) 925 80 60, доб. 0771747, 0771760
+									<a class="phone _dark" href="tel:84959258060">(495) 925 80 60</a>, доб. 0771747, 0771760
 								</div>
 							</div>
 							<div class="base-info__block">
 								<div class="base-info__block-title">Управление операций на финансовых рынках:</div>
 								<div class="base-info__block-text">
-									(495) 925 80 68, доб. 0771786
+									<a class="phone _dark" href="tel:84959258068">(495) 925 80 68</a>, доб. 0771786
 								</div>
 							</div>
 						</div>

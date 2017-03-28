@@ -36,13 +36,13 @@
 							<div class="base-info__block">
 								<div class="base-info__block-title">для Москвы:</div>
 								<div class="base-info__block-text">
-									(495) 925 80 60
+									<a class="phone _dark" href="tel:84959258060">(495) 925 80 60</a>
 								</div>
 							</div>
 							<div class="base-info__block">
 								<div class="base-info__block-title">для звонка из регионов:</div>
 								<div class="base-info__block-text">
-									(495) 925 80 60
+									<a class="phone _dark" href="tel:84959258060">(495) 925 80 60</a>
 								</div>
 							</div>
 						</div>

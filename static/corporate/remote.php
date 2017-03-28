@@ -51,13 +51,13 @@
 							<div class="base-info__block">
 								<div class="base-info__block-title">Для Москвы:</div>
 								<div class="base-info__block-text">
-									+7 (495) 925 80 80
+									<a class="phone _dark" href="tel:+74959258080">+7 (495) 925 80 80</a>
 								</div>
 							</div>
 							<div class="base-info__block">
 								<div class="base-info__block-title">Бесплатно для регионов:</div>
 								<div class="base-info__block-text">
-									8 800 700 40 40
+									<a class="phone _dark" href="tel:88007004040">8 800 700 40 40</a>
 								</div>
 							</div>
 						</div>

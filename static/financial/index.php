@@ -27,7 +27,7 @@
 							<div class="base-info__block">
 								<div class="base-info__block-title">Управление межбанковских отношений</div>
 								<div class="base-info__block-text">
-									(495) 925 80 60 &nbsp;&nbsp;доб. 077 1286
+									<a class="phone _dark" href="tel:84959258060">(495) 925 80 60</a> &nbsp;&nbsp;доб. 077 1286
 								</div>
 							</div>
 						</div>
