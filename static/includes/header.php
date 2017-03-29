@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Сайт</title>
-	<script src="/static/theme/js/jquery-2.2.0.min.js"></script>
+	<script src="/static/theme/js/jquery-2.1.1.min.js"></script>
 	<script src="/static/theme/js/device.js"></script>
 	<script src="/static/theme/js/Cookie.js"></script>
 	<script src="/static/theme/js/helperSiteTypeDetect.js"></script>
