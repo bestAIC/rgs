@@ -2426,7 +2426,8 @@ h4.small-bottom-indent {
 .corporate-nav__item._base {
   transition: color 0.3s, background-color 0.3s;
 }
-.no-touch .corporate-nav__item._base:hover {
+.no-touch .corporate-nav__item._base:hover,
+.no-touch .corporate-nav__item._base:focus {
   color: #fff;
   background-color: #cca266;
 }

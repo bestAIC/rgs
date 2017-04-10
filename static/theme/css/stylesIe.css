@@ -757,6 +757,15 @@ h4.small-bottom-indent {
 .phone:focus {
   color: #3e3e3e !important;
 }
+.phone._dark {
+  color: #191919;
+}
+.phone._dark:hover {
+  color: #191919 !important;
+}
+.phone._dark:focus {
+  color: #191919 !important;
+}
 .breadcrumbs {
   color: #fff;
   font-size: 1.4rem;
