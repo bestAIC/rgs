@@ -970,6 +970,49 @@ h4.small-bottom-indent {
   height: 1px;
   background-color: #cca266;
 }
+.b-list .circle-list {
+  margin-bottom: 0;
+}
+.circle-list {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #595959;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 2rem;
+}
+.mobile .circle-list {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.circle-list li {
+  position: relative;
+  padding-left: 3.8rem;
+}
+.mobile .circle-list li {
+  padding-left: 2.8rem;
+}
+.circle-list li + li {
+  margin-top: 2rem;
+}
+.mobile .circle-list li + li {
+  margin-top: 1rem;
+}
+.circle-list li:before {
+  content: '';
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid #cca266;
+  background-color: transparent;
+}
+.mobile .circle-list li:before {
+  top: 0.6rem;
+}
 .ui-tooltip,
 .fancy-tooltip {
   background: white;
@@ -14044,8 +14087,18 @@ h2 + .docs-date {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.5rem;
-  margin-top: 2.9rem;
   margin-bottom: 5rem;
+}
+.dbo__h4 {
+  margin-top: 2rem;
+  font-weight: 700;
+}
+.dbo__h4._small-bottom-indent {
+  margin-bottom: 2.8rem;
+}
+.dbo__sms {
+  font-size: inherit;
+  line-height: inherit;
 }
 .dbo__systems {
   background-color: whitesmoke;
