@@ -37,14 +37,18 @@
 					</div>
 				</div>
 				<div class="inner__info-benefits">
-					<div class="inner__info-benefits-subtitle">РОСГОССТРАХ БАНК предоставляет своим контрагентам комплекс услуг по проведению различных документарных операций.</div>
+					<div class="inner__info-benefits-subtitle _small-indent">
+						Воспользуйтесь услугами РОСГОССТРАХ БАНКА  по проведению документарных операций на территории РФ и при осуществлении внешнеторговых сделок
+					</div>
 					<div class="inner__info-benefits-title">
 						Преимущества РОСГОССТРАХ БАНКА
 					</div>
 					<ul class="b-list only-devices-b-indent">
-						<li>Тендерные гарантии;</li>
-						<li>Компетентный и профессиональный персонал, имеющий многолетний опыт работы в области документарного бизнеса;</li>
-						<li>Высокое качество обслуживания клиентов.</li>
+						<li>Широкий спектр предлагаемых банковских продуктов</li>
+						<li>Компетентный и профессиональный персонал, имеющий многолетний опыт работы в области документарного бизнеса</li>
+						<li>Полная консультационная поддержка на любой стадии проведения операции</li>
+						<li>Партнерские отношения с ведущими мировыми банками</li>
+						<li>Налаженные связи с ведущими европейскими экспортными агентствами</li>
 					</ul>
 				</div>
 			</div>
@@ -53,24 +57,61 @@
 			<div class="grid__inner">
 				<div class="page-nav__row">
 					<div class="page-nav__row-col">
-						<div class="page-nav__item">
+						<a href="#" class="page-nav__item _big documentary-nav__guarantees">
+							<div class="documentary-nav__guarantees-img"></div>
+							<div class="page-nav__item-bottom">
+								<div class="page-nav__item-title">
+									Банковские гарантии
+								</div>
+								<div class="page-nav__item-text">
+									Один из наиболее доступных, эффективных и&nbsp;в&nbsp;то же время надежных инструментов обеспечения сделок
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="page-nav__row-col _items">
+						<a href="#" class="page-nav__item">
 							<div class="page-nav__item-ico _base _documentary1"></div>
 							<div class="page-nav__item-title">
-								Аккредитивы при расчетах
-								на территории РФ
+								Внутрироссийские аккредитивы
 							</div>
-							<a href="#" class="btn documentary-nav__btn">Подробнее</a>
-						</div>
-					</div>
-					<div class="page-nav__row-col">
-						<div class="page-nav__item">
+							<div class="page-nav__item-text">
+								Проведение расчетов по внутрироссийским контрактам
+							</div>
+						</a>
+						<a href="#" class="page-nav__item">
 							<div class="page-nav__item-ico _base _documentary2"></div>
 							<div class="page-nav__item-title">
-								Международные торговые
-								операции
+								Международные аккредитивы
 							</div>
-							<a href="#" class="btn documentary-nav__btn">Подробнее</a>
-						</div>
+							<div class="page-nav__item-text">
+								Проведение расчетов по внешнеторговым контрактам
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="page-nav__row _tablet-w-50">
+					<div class="page-nav__row-col">
+						<a href="#" class="page-nav__item">
+							<div class="page-nav__item-ico _base _documentary3"></div>
+							<div class="page-nav__item-title">
+								Предэкспортное финансирование
+							</div>
+							<div class="page-nav__item-text">
+								Привлечение денежных ресурсов зарубежных&nbsp;банков
+							</div>
+						</a>
+					</div>
+					<div class="page-nav__row-col">
+						<a href="#" class="page-nav__item">
+							<div class="page-nav__item-ico _base _documentary4"></div>
+							<div class="page-nav__item-title">
+								Международные гарантии
+							</div>
+							<div class="page-nav__item-text">
+								Надежный инструмент обеспечения международных сделок
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
