@@ -154,6 +154,7 @@ app.init = function () {
 
 
 };
+app.mobActiveSection = 'personal';
 app.tooltips = function () {
 	if(app.utils.isMobile || app.utils.isTablet) {
 		$('[data-title]').on('click',function () {
@@ -1015,6 +1016,44 @@ app.initTabs = function () {
 app.mobMenu = function () {
 	var $mobMenu     = $('[data-mob-menu]');
 };
+app.setMenuSection = function (section) {
+	var $menu        = $('[data-menu]'),
+			$bMenu    = $('[data-b-menu]'),
+			$menuSectionBtn        =  $('[data-menu-section-btn]'),
+			$activeSection = $menuSectionBtn.filter('[data-menu-section-btn="'+section+'"]'),
+
+			$mobSections  = $('[data-mob-sections]'),
+			$mobSectionsTitle  = $mobSections.find('[data-mob-sections-title]'),
+			$mobSectionsItems  = $mobSections.find('[data-mob-sections-items]'),
+			$mobSectionsItem  = $mobSections.find('[data-mob-sections-item]'),
+			$mobSectionsItemActive = $mobSectionsItem.filter('[data-mob-sections-item="'+section+'"]')
+		;
+
+	if(app.utils.isMobile){
+		setForMobile(section);
+	}else{
+		setForDesktop(section);
+	}
+
+	function setForDesktop(section) {
+		if($activeSection.hasClass('_active')){
+			return false;
+		}
+		$menuSectionBtn.removeClass('_active');
+		$activeSection.addClass('_active');
+		$menu.hide().filter('[data-menu="'+section+'"]').show();
+		$bMenu.removeClass('_active').filter('[data-b-menu="'+section+'"]').addClass('_active');
+	}
+
+	function setForMobile(section) {
+		app.mobActiveSection = section;
+		$mobSectionsItems.hide();
+		$mobSectionsTitle.text($mobSectionsItemActive.text()).removeClass('_active');
+		$mobSectionsItem.removeClass('_active');
+		$mobSectionsItemActive.addClass('_active');
+	}
+};
+
 app.menu = function () {
 	var $header       = $('.header'),
 			$menu        = $('[data-menu]'),
@@ -1045,8 +1084,7 @@ app.menu = function () {
 			menuNum = null,
 			offset = null,
 			mobMenuswiper = false,
-			timeout = null,
-			activeSection = 'personal'
+			timeout = null
 		;
 
  	$mobSectionsTitle.on('click',function () {
@@ -1063,7 +1101,7 @@ app.menu = function () {
 		var $self = $(this),
 				data = $self.data('mobSectionsItem')
 			;
-		activeSection = data;
+		app.mobActiveSection = data;
 		$mobSectionsItems.hide();
 		$mobSectionsTitle.text($self.text()).removeClass('_active');
 		$mobSectionsItem.removeClass('_active');
@@ -1073,14 +1111,7 @@ app.menu = function () {
 		var $self = $(this),
 				data = $self.data('menuSectionBtn')
 			;
-		if($self.hasClass('_active')){
-			return false;
-		}
-		//closeMenu();
-		$menuSectionBtn.removeClass('_active');
-		$self.addClass('_active');
-		$menu.hide().filter('[data-menu="'+data+'"]').show();
-		$bMenu.removeClass('_active').filter('[data-b-menu="'+data+'"]').addClass('_active');
+		app.setMenuSection(data);
 
 	});
 	/*поиск*/
@@ -1236,12 +1267,12 @@ app.menu = function () {
 		offset = app.dom.$window.scrollTop();
 		console.log(offset);
 		if(app.utils.isMobile){
-			$mobMenuItems.filter('[data-mob-menu-item="'+activeSection+'"]').first().find('[data-menu-link]').click();
+			$mobMenuItems.filter('[data-mob-menu-item="'+app.mobActiveSection+'"]').first().find('[data-menu-link]').click();
 			_helper();
 			if(!mobMenuswiper){
 				initMobMenu();
 			}else{
-				$mobMenuItems.show().filter('[data-mob-menu-item!="'+activeSection+'"]').hide();
+				$mobMenuItems.show().filter('[data-mob-menu-item!="'+app.mobActiveSection+'"]').hide();
 				mobMenuswiper.update();
 			}
 			mobMenuswiper.slideTo(0,0);
@@ -1283,7 +1314,7 @@ app.menu = function () {
 			simulateTouch: true,
 			spaceBetween:25
 		});
-		$mobMenuItems.filter('[data-mob-menu-item!="'+activeSection+'"]').hide();
+		$mobMenuItems.filter('[data-mob-menu-item!="'+app.mobActiveSection+'"]').hide();
 		mobMenuswiper.update();
 	}
 };
