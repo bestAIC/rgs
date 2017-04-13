@@ -151,7 +151,7 @@
 												</div><!--
 												--><div class="deposit-open__step">
 													<div class="deposit-open__step-num">02</div>
-													Предоставьте заявление на аккредитив и копию контракта/договора
+													Предоставьте заявление на аккредитив и копию контракта/договора 
 												</div><!--
 												--><div class="deposit-open__step">
 													<div class="deposit-open__step-num">03</div>
