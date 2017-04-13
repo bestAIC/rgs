@@ -82,6 +82,7 @@ app.init = function () {
 	}
 	$('input[type=checkbox], input[type=radio]').idealRadioCheck();
 	app.initFluid();
+	app.popups();
 	app.newsGall();
 	app.menu();
 	app.masks();
@@ -120,6 +121,8 @@ app.init = function () {
 	app.dboSystems();
 	app.headerLogin();
 	app.tooltips();
+	app.radioButtons();
+	app.baseForm();
 
 	if(!(app.utils.isMobile || app.utils.isTablet)){
 		app.initChosen();
@@ -950,6 +953,21 @@ app.initBaseCheck = function () {
 	});
 	$check.on('change',function () {
 		$(this).closest($checkWrap).toggleClass('_active');
+	});
+};
+app.radioButtons = function() {
+	var self = this,
+			$buttons = $('[data-radio-buttons]'),
+			$buttonsItem = $buttons.find('[data-radio-buttons-item]'),
+			$buttonsItemInput = $buttons.find('[data-radio-buttons-input]')
+		;
+	$buttonsItemInput.filter(':checked').closest($buttonsItem).addClass('_active');
+	$buttonsItemInput.on({
+		change: function() {
+			var $self = $(this);
+			$self.closest($buttons).find($buttonsItem).removeClass('_active');
+			$self.closest($buttonsItem).addClass('_active');
+		}
 	});
 };
 app.initChosen = function () {
@@ -1847,6 +1865,29 @@ app.depository = function () {
 		return false;
 	});
 };
+app.popups = function () {
+	var $popups = $('[data-popup]'),
+			$popupShowBtn = $('[data-popup-show]'),
+			popupId = null,
+			$content = null
+		;
+	$popupShowBtn.on('click', function () {
+		var $self = $(this),
+				data = $self.data('popupShow');
+
+		$content = $popups.filter('[data-popup="' + data + '"]');
+
+		$.fancybox({
+			wrapCSS: 'fc-base _popups',
+			content: $content,
+			fitToView: false,
+			autoWidth: true,
+			autoResize: true,
+			padding: 0
+		});
+	});
+
+};
 app.resumeForm = function () {
 	var $formBlock =  $('[data-resume-form-block]'),
 			$formShow =  $('[data-resume-form-show]'),
@@ -1869,6 +1910,43 @@ app.resumeForm = function () {
 				}
 			}
 		});
+	});
+
+	$formBlock.find('form').on('submit',function () {
+		var $self = $(this),
+				formData = new FormData($self.get(0))
+			;
+		$.ajax({
+			url: $self.attr('action'),
+			type: "POST",
+			contentType: false,
+			processData: false,
+			data: formData,
+			dataType: 'json',
+			success: function(data){
+				if(!data.errors){
+					$errors.hide();
+					//$.fancybox.close();
+					$formBlock.find('form').hide();
+					$formBlock.find('[data-success]').show();
+
+				}else{
+					$errors.html(data.errors).show();
+				}
+			}
+		});
+		return false;
+	});
+};
+app.baseForm = function () {
+	var $formBlock =  $('[data-base-form-wrap]'),
+			$formShow =  $('[data-base-form-show]'),
+			$errors = $formBlock.find('[data-form-errors]')
+		;
+	
+	$formShow.on('click',function () {
+		$formBlock.find('[data-success]').hide();
+		$formBlock.find('form').show();
 	});
 
 	$formBlock.find('form').on('submit',function () {

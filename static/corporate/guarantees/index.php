@@ -41,23 +41,55 @@
 					</div>
 				</div>
 				<div class="inner__info-benefits">
-					<div class="inner__info-benefits-subtitle">
-						<strong>
-							РОСГОССТРАХ БАНК предоставляет банковские гарантии, которые являются одним из наиболее доступных,
-							эффективных и в то же время надежных инструментов обеспечения сделок.
-						</strong>
+					<div class="rko__info-subtitle _no-top-indent">
+						Воспользуйтесь одним из наиболее доступных, эффективных и в то же время надежных инструментов обеспечения
+						сделок – банковской гарантией РОСГОССТРАХ БАНКА. Заполните заявку на сайте и получите ответ в течение 48 часов!
 					</div>
-					<div class="inner__info-benefits-title">
-						Виды предоставляемых банковских гарантий
+					<div class="rko__info-btn">
+						<a href="javascript:void(0);" data-base-form-show data-popup-show="guarantee" class="btn _red">Заполнить заявку</a>
 					</div>
-					<ul class="b-list only-devices-b-indent">
-						<li>Тендерные гарантии;</li>
-						<li>Гарантия исполнения обязательств по контракту (в т. ч. возврата авансового платежа)</li>
-						<li>Гарантии в пользу Федеральной налоговой службы</li>
-						<li>Гарантии в пользу Федеральной таможенной службы</li>
-						<li>Гарантия в пользу Федеральной службы по регулированию алкогольного рынка</li>
-						<li>Гарантии в пользу IATA и др. </li>
-					</ul>
+					<div class="deposit-info__block">
+						<div class="inner__info-benefits-title">
+							Преимущества банковских гарантий
+						</div>
+						<ul class="b-list only-devices-b-indent">
+							<li>Одна из наиболее защищенных форм расчетов на территории РФ</li>
+							<li>Привлекательный инструмент финансирования сделки</li>
+							<li>Устранение риска неплатежеспособности</li>
+							<li>Устранение риска неправильного направления денежных средств</li>
+							<li>Устранение риска одностороннего изменения согласованных условий сделки после заключения договора и выставления аккредитива</li>
+							<li>Правовая и документальная защищенность сторон</li>
+						</ul>
+					</div>
+					<div class="deposit-info__block">
+						<h4>Как оформить банковскую гарантию?</h4>
+						<div class="deposit-open__steps _w100">
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">01</div>
+								Обратитесь за консультацией в ближайшее отделение Банка, обслуживающее юридических лиц,
+								позвоните в Департамент корпоративного бизнеса по телефону <a href="tel:+74959258080" class="phone _dark">+7 495 925–80–80</a>, доб. 077 − 1609 или оставьте заявку
+								на сайте Банка
+							</div>
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">02</div>
+								Получите консультацию по перечню необходимых документов для рассмотрения заявки
+								(в случае заполнения формы на сайте дождитесь обратного звонка от специалиста Банка)
+							</div>
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">03</div>
+								Предоставьте в отделение Банка необходимый пакет документов
+							</div>
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">04</div>
+								Дождитесь решения кредитного комитета по предоставлению гарантии
+								(максимальный срок — 2 недели с момента предоставления полного комплекта документов)
+							</div>
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">05</div>
+								В случае положительного решения выполните все отлагательные условия, оформите договор и получите банковскую гарантию
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="frame-text no-desktop-block">
 					Стоимость гарантий определяется индивидуально, зависит от вида банковской гарантии,
@@ -71,18 +103,164 @@
 					<h2>Также вас может заинтересовать:</h2>
 					<div class="related-pages">
 						<a href="#" class="related-pages__item">
-							Банковские гарантии
+							Внутрироссийские аккредитивы
 							<div class="related-pages__item-ico"></div>
 						</a>
 						<a href="#" class="related-pages__item">
-							Документарные операции
+							Предэкспортное финансирование
 							<div class="related-pages__item-ico"></div>
 						</a>
 						<a href="#" class="related-pages__item">
 							Международные
-							торговые операции
+							аккредитивы
 							<div class="related-pages__item-ico"></div>
 						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hide">
+			<div class="b-form big-form" data-popup="guarantee" data-base-form-wrap>
+				<form action="/static/ajax/askForm.php">
+					<h2>Заявка на банковскую гарантию</h2>
+					<div class="subtitle">
+						Воспользуйтесь данной формой, чтобы оставить заявку на банковскую гарантию.
+					</div>
+					<div class="b-form__content">
+						<div class="b-form__content-cols">
+							<div class="b-form__content-col">
+								<div class="b-form__content-title">Информация о Вас</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
+										<div class="b-form__block-field">
+											<input type="text" placeholder="Иванов Иван Иванович">
+										</div>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<div class="b-form__block-title">Издание/организация</div>
+										<div class="b-form__block-field">
+											<input type="text" placeholder="Название организации">
+										</div>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
+										<div class="b-form__block-field">
+											<input type="text" placeholder="ivanivanov@mail.ru">
+										</div>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<div class="b-form__block-title">Телефон для обратной связи</div>
+										<div class="b-form__block-field phone-inp">
+											<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
+										</div>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<select data-chosen data-placeholder="Ваш регион">
+											<option value="">Ваш регион</option>
+											<option value="Москва">Москва</option>
+											<option value="Москва">Москва</option>
+											<option value="Москва">Москва</option>
+										</select>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<div class="b-form__block-field _full-border">
+											<input type="text" placeholder="Наименование предприятия">
+										</div>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block _textarea">
+										<textarea placeholder="Основной вид деятельности"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="b-form__content-col">
+								<div class="b-form__content-title">Информация по гарантии</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<select data-chosen data-placeholder="Срок гарантии">
+											<option value="">Срок гарантии</option>
+											<option value="месяц">месяц</option>
+											<option value="месяц">месяц</option>
+											<option value="месяц">месяц</option>
+										</select>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<select data-chosen data-placeholder="Вид гарантии">
+											<option value="">Вид гарантии</option>
+											<option value="вид1">вид1</option>
+											<option value="вид1">вид1</option>
+											<option value="вид1">вид1</option>
+										</select>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<div class="b-form__block-field _full-border _rub">
+											<span class="rub"></span>
+											<input type="text" placeholder="Сумма гарантии">
+										</div>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__block">
+										<div class="b-form__block-title">предполагаемое обеспечение по гарантии</div>
+										<div class="b-form__radio-btns" data-radio-buttons>
+											<label class="b-form__radio-btn _w50" data-radio-buttons-item><input type="radio" name="deposit" data-radio-buttons-input checked>С залогом</label>
+											<label class="b-form__radio-btn _w50" data-radio-buttons-item><input type="radio" name="deposit" data-radio-buttons-input>Без залога</label>
+										</div>
+									</div>
+								</div>
+								<div class="b-form__row">
+									<div class="b-form__checks">
+										<div class="b-form__check" data-base-check-wrap>
+											<label><input data-base-check type="checkbox">Недвижимость</label>
+										</div>
+										<div class="b-form__check" data-base-check-wrap>
+											<label><input data-base-check type="checkbox" checked>Ликвидное оборудование (наличие устойчивого рынка сбыта и возможность демонтажа)</label>
+										</div>
+										<div class="b-form__check" data-base-check-wrap>
+											<label><input data-base-check type="checkbox">Ликвидные товары в обороте</label>
+										</div>
+										<div class="b-form__check" data-base-check-wrap>
+											<label><input data-base-check type="checkbox">Векселя банка или иных платежеспособных эмитентов по согласованию с банком</label>
+										</div>
+									</div>
+								</div>
+								<div class="b-form__captcha b-captcha">
+									<div class="g-recaptcha" data-sitekey="test2"></div>
+								</div>
+								<div class="b-form__errors" data-form-errors></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="b-form__btn-wrap">
+						<button type="submit" class="btn _red b-form__btn">отправить</button>
+					</div>
+				</form>
+				<div class="b-form__success hide" data-success>
+					<div class="b-form__success-in">
+						<div class="b-form__success-ico"></div>
+						<div class="b-form__success-block">
+							<div class="b-form__success-title">Спасибо!</div>
+							<div class="b-form__success-text">
+								Ваш заявка отправлена.
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
