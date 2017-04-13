@@ -197,6 +197,13 @@
 	&__block{
 		&._textarea{
 			height: 24rem;
+			&._small{
+				height: 12rem;
+				textarea{
+					font-size: 1.6rem;
+				}
+
+			}
 			.mobile &{
 				height: 16rem;
 			}
@@ -207,12 +214,25 @@
 				padding-left: 1.8rem;
 			}
 		}
+		&._small-select{
+			.b-form__block-title{
+				margin-bottom: 1rem;
+			}
+			.chosen-container-single .chosen-single{
+				height: 4.5rem;
+				line-height: 2rem;
+				font-size: 1.6rem;
+			}
+		}
 		&-title{
 			font-size: 10/@rem;
 			font-weight: 600;
 			letter-spacing: 0.5/@rem;
 			line-height: 14/@rem;
 			text-transform: uppercase;
+			&+.b-form__block._textarea{
+				margin-top: 1rem;
+			}
 		}
 		&-field{
 			height: 46/@rem;
@@ -220,10 +240,14 @@
 			padding-bottom: 4/@rem;
 			position: relative;
 			&._full-border{
-				line-height: 3rem;
-				height: 6rem;
-				padding: 1.3rem 1.9rem;
+				line-height: 3.2rem;
+				padding: 0.5rem 1.9rem;
 				border: 2/@rem solid #d0d4d9;
+				margin-top: 1rem;
+				input[type="text"]{
+					font-size: 1.6rem;
+				}
+
 			}
 			&._rub{
 				position: relative;

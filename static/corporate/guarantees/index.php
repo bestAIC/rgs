@@ -124,7 +124,8 @@
 				<form action="/static/ajax/askForm.php">
 					<h2>Заявка на банковскую гарантию</h2>
 					<div class="subtitle">
-						Воспользуйтесь данной формой, чтобы оставить заявку на банковскую гарантию.
+						Воспользуйтесь данной формой, чтобы оставить заявку на банковскую гарантию. <span class="is-desktop-block"><br /></span>
+						Если вы хотите задать вопрос – воспользуйтесь формой <a href="javascript:void(0);" data-ask-form-show="question">«Задать вопрос»</a>
 					</div>
 					<div class="b-form__content">
 						<div class="b-form__content-cols">
@@ -163,9 +164,10 @@
 									</div>
 								</div>
 								<div class="b-form__row">
-									<div class="b-form__block">
-										<select data-chosen data-placeholder="Ваш регион *">
-											<option value="">Ваш регион *</option>
+									<div class="b-form__block _small-select">
+										<div class="b-form__block-title">регион <span class="required">*</span></div>
+										<select data-chosen data-placeholder="Ваш регион">
+											<option value="">Ваш регион</option>
 											<option value="Москва">Москва</option>
 											<option value="Москва">Москва</option>
 											<option value="Москва">Москва</option>
@@ -174,13 +176,15 @@
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
+										<div class="b-form__block-title">Название <span class="required">*</span></div>
 										<div class="b-form__block-field _full-border">
-											<input type="text" placeholder="Наименование предприятия">
+											<input type="text" placeholder="ООО «Ромашка»">
 										</div>
 									</div>
 								</div>
 								<div class="b-form__row">
-									<div class="b-form__block _textarea">
+									<div class="b-form__block-title">вид деятельности></div>
+									<div class="b-form__block _textarea _small">
 										<textarea placeholder="Основной вид деятельности"></textarea>
 									</div>
 								</div>
@@ -188,9 +192,10 @@
 							<div class="b-form__content-col">
 								<div class="b-form__content-title">Информация по гарантии</div>
 								<div class="b-form__row">
-									<div class="b-form__block">
-										<select data-chosen data-placeholder="Срок гарантии *">
-											<option value="">Срок гарантии *</option>
+									<div class="b-form__block _small-select">
+										<div class="b-form__block-title">срок гарантии <span class="required">*</span></div>
+										<select data-chosen data-placeholder="Выберите срок">
+											<option value="">Выберите срок</option>
 											<option value="месяц">месяц</option>
 											<option value="месяц">месяц</option>
 											<option value="месяц">месяц</option>
@@ -198,9 +203,10 @@
 									</div>
 								</div>
 								<div class="b-form__row">
-									<div class="b-form__block">
-										<select data-chosen data-placeholder="Вид гарантии *">
-											<option value="">Вид гарантии *</option>
+									<div class="b-form__block _small-select">
+										<div class="b-form__block-title">вид гарантии <span class="required">*</span></div>
+										<select data-chosen data-placeholder="Выберите вид гарантии">
+											<option value="">Выберите вид гарантии</option>
 											<option value="вид1">вид1</option>
 											<option value="вид1">вид1</option>
 											<option value="вид1">вид1</option>
@@ -209,9 +215,10 @@
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
+										<div class="b-form__block-title">сумма гарантии <span class="required">*</span></div>
 										<div class="b-form__block-field _full-border _rub">
 											<span class="rub"></span>
-											<input type="text" class="_required" placeholder="Сумма гарантии *">
+											<input type="text" class="_required" placeholder="Введите сумму гарантии">
 										</div>
 									</div>
 								</div>

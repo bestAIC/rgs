@@ -1766,6 +1766,12 @@ h4.small-bottom-indent {
 .b-form__block._textarea {
   height: 24rem;
 }
+.b-form__block._textarea._small {
+  height: 12rem;
+}
+.b-form__block._textarea._small textarea {
+  font-size: 1.6rem;
+}
 .mobile .b-form__block._textarea {
   height: 16rem;
 }
@@ -1775,12 +1781,23 @@ h4.small-bottom-indent {
   padding-top: 1.5rem;
   padding-left: 1.8rem;
 }
+.b-form__block._small-select .b-form__block-title {
+  margin-bottom: 1rem;
+}
+.b-form__block._small-select .chosen-container-single .chosen-single {
+  height: 4.5rem;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
 .b-form__block-title {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
   line-height: 1.4rem;
   text-transform: uppercase;
+}
+.b-form__block-title + .b-form__block._textarea {
+  margin-top: 1rem;
 }
 .b-form__block-field {
   height: 4.6rem;
@@ -1789,10 +1806,13 @@ h4.small-bottom-indent {
   position: relative;
 }
 .b-form__block-field._full-border {
-  line-height: 3rem;
-  height: 6rem;
-  padding: 1.3rem 1.9rem;
+  line-height: 3.2rem;
+  padding: 0.5rem 1.9rem;
   border: 0.2rem solid #d0d4d9;
+  margin-top: 1rem;
+}
+.b-form__block-field._full-border input[type="text"] {
+  font-size: 1.6rem;
 }
 .b-form__block-field._rub {
   position: relative;

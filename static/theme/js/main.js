@@ -370,6 +370,8 @@ app.askForm = function () {
 			$askForm = $ask.find('form'),
 			$askField = $ask.find('[data-ask-field]'),
 			$askContent = $('[data-ask-content]'),
+			$showBtn = $('[data-ask-form-show]'),
+
 			$content = null,
 
 			$reviewsSelect = $('[data-reviews-select]'),
@@ -392,6 +394,22 @@ app.askForm = function () {
 			}
 		},'json');
 		return false;
+	});
+	$showBtn.on('click',function () {
+		$content = $askContent.filter('[data-ask-content="'+$(this).data('askFormShow')+'"]');
+		$.fancybox({
+			wrapCSS 	: 'fc-base _forms',
+			content 	: $content,
+			fitToView	: false,
+			padding:0,
+			helpers : {
+				overlay : {
+					css : {
+						'background' : 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			}
+		});
 	});
 	$askForm.on('submit',function () {
 		$content = $askContent.filter('[data-ask-content="'+$askField.val()+'"]');
