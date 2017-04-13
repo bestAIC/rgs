@@ -682,6 +682,9 @@ a {
   margin-top: 6rem;
   padding: 1.9rem 3rem 4.9rem;
 }
+.mobile .frame-text._no-indent {
+  margin-top: 0;
+}
 .valuta {
   font-family: 'Roboto', sans-serif !important;
 }
