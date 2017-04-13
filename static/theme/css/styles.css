@@ -1568,6 +1568,12 @@ h4.small-bottom-indent {
 .phone-inp input[type="text"] {
   padding-left: 2.7rem;
 }
+.required {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: #b31b2c;
+}
 .b-form input[type='text'],
 .b-form input[type='password'],
 .b-form input[type='tel'],
@@ -1970,6 +1976,13 @@ h4.small-bottom-indent {
 }
 .big-form .b-form__block._textarea._resume {
   height: 13.4rem;
+}
+.guarantee-form {
+  border-top: 0.6rem solid #b31b2c;
+}
+.guarantee-form__btn {
+  width: 17rem;
+  text-align: center;
 }
 .desktop .big-form .b-form__success,
 .tablet.landscape .big-form .b-form__success {

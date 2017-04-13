@@ -120,7 +120,7 @@
 			</div>
 		</div>
 		<div class="hide">
-			<div class="b-form big-form" data-popup="guarantee" data-base-form-wrap>
+			<div class="b-form big-form guarantee-form" data-popup="guarantee" data-base-form-wrap>
 				<form action="/static/ajax/askForm.php">
 					<h2>Заявка на банковскую гарантию</h2>
 					<div class="subtitle">
@@ -132,7 +132,7 @@
 								<div class="b-form__content-title">Информация о Вас</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<div class="b-form__block-title">ФАМИЛИЯ имя отчество</div>
+										<div class="b-form__block-title">ФАМИЛИЯ имя отчество <span class="required">*</span></div>
 										<div class="b-form__block-field">
 											<input type="text" placeholder="Иванов Иван Иванович">
 										</div>
@@ -140,7 +140,7 @@
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<div class="b-form__block-title">Издание/организация</div>
+										<div class="b-form__block-title">Издание/организация <span class="required">*</span></div>
 										<div class="b-form__block-field">
 											<input type="text" placeholder="Название организации">
 										</div>
@@ -148,7 +148,7 @@
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА</div>
+										<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА <span class="required">*</span></div>
 										<div class="b-form__block-field">
 											<input type="text" placeholder="ivanivanov@mail.ru">
 										</div>
@@ -156,7 +156,7 @@
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<div class="b-form__block-title">Телефон для обратной связи</div>
+										<div class="b-form__block-title">Телефон для обратной связи <span class="required">*</span></div>
 										<div class="b-form__block-field phone-inp">
 											<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
 										</div>
@@ -164,8 +164,8 @@
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<select data-chosen data-placeholder="Ваш регион">
-											<option value="">Ваш регион</option>
+										<select data-chosen data-placeholder="Ваш регион *">
+											<option value="">Ваш регион *</option>
 											<option value="Москва">Москва</option>
 											<option value="Москва">Москва</option>
 											<option value="Москва">Москва</option>
@@ -189,8 +189,8 @@
 								<div class="b-form__content-title">Информация по гарантии</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<select data-chosen data-placeholder="Срок гарантии">
-											<option value="">Срок гарантии</option>
+										<select data-chosen data-placeholder="Срок гарантии *">
+											<option value="">Срок гарантии *</option>
 											<option value="месяц">месяц</option>
 											<option value="месяц">месяц</option>
 											<option value="месяц">месяц</option>
@@ -199,8 +199,8 @@
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<select data-chosen data-placeholder="Вид гарантии">
-											<option value="">Вид гарантии</option>
+										<select data-chosen data-placeholder="Вид гарантии *">
+											<option value="">Вид гарантии *</option>
 											<option value="вид1">вид1</option>
 											<option value="вид1">вид1</option>
 											<option value="вид1">вид1</option>
@@ -211,13 +211,13 @@
 									<div class="b-form__block">
 										<div class="b-form__block-field _full-border _rub">
 											<span class="rub"></span>
-											<input type="text" placeholder="Сумма гарантии">
+											<input type="text" class="_required" placeholder="Сумма гарантии *">
 										</div>
 									</div>
 								</div>
 								<div class="b-form__row">
 									<div class="b-form__block">
-										<div class="b-form__block-title">предполагаемое обеспечение по гарантии</div>
+										<div class="b-form__block-title">предполагаемое обеспечение по гарантии <span class="required">*</span></div>
 										<div class="b-form__radio-btns" data-radio-buttons>
 											<label class="b-form__radio-btn _w50" data-radio-buttons-item><input type="radio" name="deposit" data-radio-buttons-input checked>С залогом</label>
 											<label class="b-form__radio-btn _w50" data-radio-buttons-item><input type="radio" name="deposit" data-radio-buttons-input>Без залога</label>
@@ -249,7 +249,7 @@
 
 					</div>
 					<div class="b-form__btn-wrap">
-						<button type="submit" class="btn _red b-form__btn">отправить</button>
+						<button type="submit" class="btn _red b-form__btn guarantee-form__btn">отправить</button>
 					</div>
 				</form>
 				<div class="b-form__success hide" data-success>
