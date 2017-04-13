@@ -14456,6 +14456,21 @@ h2 + .docs-date {
   line-height: 3rem;
   margin-bottom: 3.9rem;
 }
+.desktop .corporate__credits-rus,
+.tablet.landscape .corporate__credits-rus {
+  padding-top: 5rem;
+  padding-bottom: 4.5rem;
+}
+.tablet.portrait .corporate__credits-rus {
+  padding-top: 3.6rem!important;
+}
+.corporate__credits-rus-open h4 {
+  margin-top: 1.7rem;
+  margin-bottom: 3.8rem;
+}
+.corporate__credits-rus-services h3 {
+  margin-bottom: 4rem;
+}
 .corporate__deposits {
   *zoom: 1;
 }
