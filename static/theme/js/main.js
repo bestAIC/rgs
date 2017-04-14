@@ -1003,11 +1003,12 @@ app.initNav = function () {
 	$('html').on('click.nav','[data-nav-btn]',function(){
 		var $self = $(this);
 		if($self.data('navBtn') == 'fade'){
-			$self.toggleClass('_active').closest('[data-nav-block]').find('[data-nav-content]').fadeToggle(500);
+			$self.closest('[data-nav-block]').find('[data-nav-content]').fadeToggle(500);
 		}else{
-			$self.toggleClass('_active').closest('[data-nav-block]').find('[data-nav-content]').slideToggle(500);
+			$self.closest('[data-nav-block]').find('[data-nav-content]').slideToggle(500);
 		}
 
+		$self.closest('[data-nav-block]').find('[data-nav-btn]').toggleClass('_active');
 		$self.closest('[data-nav-block]').find('[data-nav-text]').toggle();
 	});
 };

@@ -15166,20 +15166,21 @@ h2 + .docs-date {
 .salary-project__conditions-title {
   color: #cca266;
   font-weight: 600;
+  cursor: pointer;
 }
 .salary-project__conditions-list {
-  border-bottom: 1px solid #DEDFE0;
   font-size: inherit!important;
   line-height: inherit!important;
   margin-bottom: 0;
-  padding-bottom: 2.7rem;
   display: none;
 }
 .salary-project__conditions-list li:before {
   top: 1.3rem;
 }
 .salary-project__conditions-btn {
+  border-top: 1px solid #DEDFE0;
   margin-top: 2.7rem;
+  padding-top: 2rem;
 }
 .salary-project__conditions-text {
   font-size: 2rem;

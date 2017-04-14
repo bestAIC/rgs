@@ -78,7 +78,7 @@
 							<li>Возможность оформления карт премиальных категорий для топ-менеджмента компании (Gold, Platinum и выше)</li>
 							<li>Возможность установки банкомата на территории организации</li>
 							<li data-nav-block class="salary-project__conditions">
-								<div class="salary-project__conditions-title">Специальные условия по зарплатным картам для сотрудников</div>
+								<div class="salary-project__conditions-title" data-nav-btn>Специальные условия по зарплатным картам для сотрудников</div>
 								<ul class="dash-list salary-project__conditions-list" data-nav-content>
 									<li><strong>СashBack до 3%</strong>  при оплате покупок зарплатной картой в торговых точках по всему миру и в Интернете</li>
 									<li>доход до 3,5% годовых на среднемесячный остаток средств на карте свыше 20 000 рублей</li>
