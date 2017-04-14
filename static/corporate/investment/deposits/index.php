@@ -38,13 +38,19 @@
 				</div>
 				<div class="inner__info-benefits">
 					<div class="inner__info-benefits-title">
-						РОСГОССТРАХ БАНК предлагает юридическим лицам
-						и предпринимателям различные варианты банковских вкладов (депозитов),
-						позволяющих разместить временно свободные денежные средства в российских рублях на выгодных условиях
+						<p>
+							Разместите временно свободные денежные средства в депозиты РОСГОССТРАХ БАНКА и заставьте  деньги работать без перерыва
+						</p>
+						<p class="_top-indent"><strong>Преимущества депозитов:</strong></p>
 					</div>
-					<div class="inner__info-benefits-btn">
-						<a href="#" class="btn _red">Открыть депозит</a>
-					</div>
+					<ul class="b-list no-b-indent">
+						<li>Конкурентоспособные процентные ставки</li>
+						<li>Простая процедура оформления</li>
+						<li>Гарантия сохранности средств</li>
+						<li>Возможность установления индивидуальных условий по сроку и ставке</li>
+						<li>Выплата процентов по взаимной договоренности сторон ежемесячно или в день возврата вклада</li>
+						<li>Возможность пролонгации вклада по желанию клиента</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -95,7 +101,7 @@
 						<div class="corporate__deposit">
 							<div class="corporate__deposit-in">
 								<div class="corporate__deposit-title">Пополняемый депозит для СРО</div>
-								<div class="corporate__deposit-text">Для саморегулируемых организаций с правом досрочного востребования части размещенной суммы</div>
+								<div class="corporate__deposit-text">С правом досрочного востребования части размещенной суммы и выплатой процентов в конце срока</div>
 								<div class="corporate__deposit-date">
 									<div class="corporate__deposit-date-title">СРОК депозита</div>
 									<div class="corporate__deposit-date-text">
@@ -218,7 +224,22 @@
 					<div class="deposit-compare__bottom deposit-info__block">
 						<div class="inner__info-benefits corporate__deposits-open">
 							<h3>Как оформить депозит?</h3>
-							<div class="corporate__deposits-open-text">Депозитный вклад оформляется путем заключения Договора депозита в любом из офисов Банка, в котором производится обслуживание юридических лиц.</div>
+							<div class="deposit-open__methods">
+								<div class="deposit-open__steps _w100">
+									<div class="deposit-open__step">
+										<div class="deposit-open__step-num">01</div>
+										Посетите отделение Банка, в котором производится обслуживание юридических лиц
+									</div>
+									<div class="deposit-open__step">
+										<div class="deposit-open__step-num">02</div>
+										При необходимости получите  консультацию специалиста Банка
+									</div>
+									<div class="deposit-open__step">
+										<div class="deposit-open__step-num">03</div>
+										Предоставьте необходимый пакет документов и заключите договор депозита
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="inner__info-block">
 							<div class="inner__info-benefits-title">Пакет документов для открытия депозита</div>
