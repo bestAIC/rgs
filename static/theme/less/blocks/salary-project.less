@@ -6,7 +6,7 @@
 	.deposit-open__steps._w100{
 		margin-top: 4rem;
 		.deposit-open__step{
-			margin-bottom: 2rem;
+			margin-bottom: 2.5rem;
 		}
 	}
 	&__open-card.deposit-open__method{
@@ -23,7 +23,57 @@
 			}
 		}
 	}
+	&__banner{
+		.clearfix;
+		padding: 0 0 10/@rem 10/@rem;
+		&-numeral{
+			color: #fff;
+			float: left;
+			width: 50%;
+			padding-right: 3rem;
+			.tablet.portrait &{
+				width: auto;
+			}
+			&-val{
+				font-size: 30/@rem;
+				font-weight: 700;
+				letter-spacing: -1.5/@rem;
+				line-height: 24/@rem;
+			}
+			&-text{
+				font-size: 14/@rem;
+				font-weight: 400;
+				line-height: 24/@rem;
+			}
+			&-dash{
+				width: 45/@rem;
+				height: 2/@rem;
+				background-color: white;
+				margin: 22/@rem 0 7/@rem;
+			}
+		}
+	}
 	&__conditions{
+		&-title{
+			color: @cGold;
+			font-weight: 600;
+		}
+		&-list{
+			border-bottom: 1px solid @cBorder;
+			font-size: inherit!important;
+			line-height: inherit!important;
+			margin-bottom: 0;
+			padding-bottom: 2.7rem;
+			display: none;
+			li{
+				&:before{
+					top: 1.3rem;
+				}
+			}
+		}
+		&-btn{
+			margin-top: 2.7rem;
+		}
 		&-text{
 			font-size: 20/@rem;
 			line-height: 30/@rem;
@@ -103,7 +153,7 @@
 .tablet.portrait{
 	.salary-project{
 		&__conditions{
-			padding-top: 4rem!important;
+			//padding-top: 4rem!important;
 			&-text{
 				margin-top: 42/@rem;
 			}

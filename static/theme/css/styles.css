@@ -1330,6 +1330,9 @@ h4.small-bottom-indent {
   text-align: center;
   margin-top: 4rem;
 }
+.gold-link__wrap._right {
+  text-align: right;
+}
 .gold-link._arr-right:after {
   content: '';
   display: inline-block;
@@ -15105,7 +15108,7 @@ h2 + .docs-date {
   margin-top: 4rem;
 }
 .salary-project .deposit-open__steps._w100 .deposit-open__step {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .salary-project__open-card.deposit-open__method {
   padding-top: 4rem;
@@ -15120,6 +15123,63 @@ h2 + .docs-date {
 }
 .salary-project__open-card.deposit-open__method .deposit-open__steps._w100 .deposit-open__step {
   margin-bottom: 3rem;
+}
+.salary-project__banner {
+  *zoom: 1;
+  padding: 0 0 1rem 1rem;
+}
+.salary-project__banner:before,
+.salary-project__banner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.salary-project__banner:after {
+  clear: both;
+}
+.salary-project__banner-numeral {
+  color: #fff;
+  float: left;
+  width: 50%;
+  padding-right: 3rem;
+}
+.tablet.portrait .salary-project__banner-numeral {
+  width: auto;
+}
+.salary-project__banner-numeral-val {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.15rem;
+  line-height: 2.4rem;
+}
+.salary-project__banner-numeral-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.salary-project__banner-numeral-dash {
+  width: 4.5rem;
+  height: 0.2rem;
+  background-color: white;
+  margin: 2.2rem 0 0.7rem;
+}
+.salary-project__conditions-title {
+  color: #cca266;
+  font-weight: 600;
+}
+.salary-project__conditions-list {
+  border-bottom: 1px solid #DEDFE0;
+  font-size: inherit!important;
+  line-height: inherit!important;
+  margin-bottom: 0;
+  padding-bottom: 2.7rem;
+  display: none;
+}
+.salary-project__conditions-list li:before {
+  top: 1.3rem;
+}
+.salary-project__conditions-btn {
+  margin-top: 2.7rem;
 }
 .salary-project__conditions-text {
   font-size: 2rem;
@@ -15195,9 +15255,6 @@ h2 + .docs-date {
   color: #3e3e3e;
   margin-top: 2rem;
   margin-bottom: 3.9rem;
-}
-.tablet.portrait .salary-project__conditions {
-  padding-top: 4rem!important;
 }
 .tablet.portrait .salary-project__conditions-text {
   margin-top: 4.2rem;
