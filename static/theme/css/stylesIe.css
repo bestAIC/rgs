@@ -401,6 +401,9 @@ h3 {
   margin-bottom: 2.3rem;
   margin-top: 1.8rem;
 }
+h3._no-top-indent {
+  margin-top: 0;
+}
 h3 + h4 {
   margin-top: 0;
 }
@@ -571,6 +574,10 @@ h4.small-bottom-indent {
 }
 .mobile .b-list .dash-list li:before {
   top: 1.1rem;
+}
+.b-list__item-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 .b-list__title {
   font-size: 1.6rem;
@@ -989,6 +996,9 @@ h4.small-bottom-indent {
 .gold-link__wrap {
   text-align: center;
   margin-top: 4rem;
+}
+.gold-link__wrap._right {
+  text-align: right;
 }
 .gold-link._arr-right:after {
   content: '';
