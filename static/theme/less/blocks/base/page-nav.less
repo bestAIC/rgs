@@ -146,6 +146,12 @@
 				background-image: url('@{pathToImg}page-nav/documentary/ico4.png');
 				width: 6.8rem;
 			}
+			&._investment1{
+				background-image: url('@{pathToImg}page-nav/investment/ico1.svg');
+			}
+			&._investment2{
+				background-image: url('@{pathToImg}page-nav/investment/ico2.svg');
+			}
 		}
 		&-title{
 			font-size: 20/@rem;
@@ -272,8 +278,15 @@
 	}
 }
 .corporate-invest-nav{
-	&.b-block{
-		padding-top: 6rem;
+	padding-top: 7rem;
+	padding-bottom: 5rem;
+	.tablet.portrait &,.mobile &{
+		.page-nav__item-ico{
+			display: none;
+		}
+	}
+	.mobile &{
+		padding-top: 5rem;
 		padding-bottom: 5rem;
 	}
 	&__bottom.b-block{

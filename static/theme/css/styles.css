@@ -2402,6 +2402,12 @@ h4.small-bottom-indent {
   background-image: url('../images/page-nav/documentary/ico4.png');
   width: 6.8rem;
 }
+.page-nav__item-ico._investment1 {
+  background-image: url('../images/page-nav/investment/ico1.svg');
+}
+.page-nav__item-ico._investment2 {
+  background-image: url('../images/page-nav/investment/ico2.svg');
+}
 .page-nav__item-title {
   font-size: 2rem;
   font-weight: 700;
@@ -2539,8 +2545,16 @@ h4.small-bottom-indent {
   background: url('../images/page-nav/financial/box.png') no-repeat center;
   background-size: contain;
 }
-.corporate-invest-nav.b-block {
-  padding-top: 6rem;
+.corporate-invest-nav {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+.tablet.portrait .corporate-invest-nav .page-nav__item-ico,
+.mobile .corporate-invest-nav .page-nav__item-ico {
+  display: none;
+}
+.mobile .corporate-invest-nav {
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 .corporate-invest-nav__bottom.b-block {
