@@ -17369,6 +17369,9 @@ h2 + .docs-date {
 .inner__info-benefits-title p {
   margin-top: 0;
 }
+.inner__info-benefits-title p._top-indent {
+  margin-top: 4rem;
+}
 .inner__info-benefits .b-list {
   margin: 4rem 0 3rem;
 }
