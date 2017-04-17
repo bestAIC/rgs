@@ -2,6 +2,32 @@
 	<div class="home">
 		<?include "../includes/top-banner-corporate.php"?>
 		<?include "../includes/exchange.php"?>
+		<div class="inner__info animation__top"  data-animation>
+			<div class="grid__inner">
+				<div class="inner__info-block no-mob-block">
+					<div class="deposit__info-banner">
+						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/corporate/main.png'
+							: ($tablePort ? '/static/theme/images/info-banners/corporate/main_tablet.png':'') ?>)"></div>
+					</div>
+				</div>
+				<div class="inner__info-benefits">
+					<div class="inner__info-benefits-title">
+						<p>
+							РОСГОССТРАХ БАНК предлагает комплексные решения любого уровня сложности благодаря присутствию в различных сегментах бизнеса.
+						</p>
+						<p>
+							Мы рады компаниям, зарекомендовавшим себя в своей отрасли, но готовы эффективно сотрудничать и с динамично набирающими вес предприятиями
+						</p>
+						<p class="_top-indent"><strong>Преимущества обслуживания в РОСГОССТРАХ БАНКЕ</strong></p>
+					</div>
+					<ul class="b-list no-b-indent">
+						<li>Индивидуальный подход к каждому клиенту и внимательное отношение ко всем Вашим пожеланиям</li>
+						<li>Гибкие условия по широкой линейке продуктов</li>
+						<li>Высокая степень надежности проводимых операций</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="home__gray b-blocks">
 			<div class="b-block animation__top corporate-nav" data-animation>
 				<div class="grid__inner">
