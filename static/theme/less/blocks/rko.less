@@ -33,6 +33,10 @@
 		}
 	}
 	&__reserve{
+		margin-top: 5rem;
+		.deposit-open__methods{
+			margin-top: 2.8rem;
+		}
 		h4{
 			margin-bottom: 0;
 		}
@@ -54,10 +58,37 @@
 		&-title{
 
 		}
+		&-tabs{
+			margin-top: 6rem;
+			margin-bottom: 4rem!important;
+			white-space: nowrap;
+			overflow-x: auto;
+			.tablet.portrait &,.mobile &{
+				margin-top: 4rem;
+			}
+		}
+		&-more{
+			margin-top: 12rem;
+			.tablet.portrait &,.mobile &{
+				margin-top: 0;
+			}
+			.file__name{
+				white-space: normal;
+			}
+			.frame-text{
+				margin-top: 4rem;
+				line-height: 2rem;
+				padding-left: 3rem;
+				padding-right: 2rem;
+			}
+		}
 		&-text{
 			font-size: 16/@rem;
 			line-height: 25/@rem;
 			margin-top: 41/@rem;
+			.tablet.portrait &{
+				margin-top: 3.1rem;
+			}
 		}
 		&-table{
 			margin-top: 65/@rem;
@@ -113,16 +144,40 @@
 			}
 		}
 		&-partner{
-			&-text{
-				font-size: 16/@rem;
-				font-weight: 400;
-				line-height: 30/@rem;
-				margin-top: 7/@rem;
-				p{
-					margin: 0;
-					&+p{
+			&-connect{
+				h4{
+					margin-top: 1.7rem;
+				}
+				.deposit-open__steps .dash-list{
+					margin-left: 0;
+					margin-top: 3rem;
+					li+li{
 						margin-top: 2rem;
 					}
+				}
+			}
+			&-open{
+				h3{
+					margin-top: 0;
+				}
+				&-text{
+					font-size: 1.6rem;
+					line-height: 3rem;
+					margin-top: 7rem;
+					p{
+						margin: 0;
+						&+p{
+							margin-top: 3rem;
+						}
+					}
+				}
+			}
+			&-docs{
+				h4{
+					margin-top: 0;
+				}
+				.frame-text{
+					margin-top: 4rem;
 				}
 			}
 			&-conditions{
@@ -140,6 +195,73 @@
 					li+li{
 						margin-top: 1rem;
 					}
+				}
+			}
+		}
+	}
+	&__pack{
+		&-title{
+			font-size: 16/@rem;
+			font-weight: 400;
+			line-height: 25/@rem;
+			margin-bottom: 7rem;
+			.tablet.portrait &{
+				margin-bottom: 4rem;
+			}
+		}
+		&-table{
+			.mobile &{
+				margin-left: -2rem;
+				margin-right: -2rem;
+			}
+			table{
+				width: 100%;
+				td{
+					color: @title-color;
+					font-size: 14/@rem;
+					font-weight: 600;
+					line-height: 25/@rem;
+					padding: 2.3rem 0;
+					border-top: 1px solid @cBorder;
+					.mobile &{
+						padding-left: 2rem;
+						padding-right: 2rem;
+					}
+					&:first-child{
+						width: 25rem;
+						.mobile &{
+							width: 23rem;
+						}
+					}
+					&:last-child{
+						font-size: 16/@rem;
+						text-align: right;
+					}
+				}
+			}
+			&-period{
+				text-align: left;
+				font-size: 14/@rem;
+				padding-left: 11rem;
+				position: relative;
+				&-block{
+					.mobile &{
+						margin-right: -2rem;
+						padding-right: 2rem;
+					}
+					&+&{
+						border-top: 1px solid @cBorder;
+						margin-top: 1.5rem;
+						padding-top: 1.5rem;
+					}
+				}
+				.pull-right{
+					font-size: 16/@rem;
+				}
+				&-title{
+					position: absolute;
+					left: 0;
+					top: 0;
 				}
 			}
 		}

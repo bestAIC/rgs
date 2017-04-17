@@ -6980,12 +6980,21 @@ span.pagination__item:focus {
 .mobile .files__block + .files__block {
   margin-top: 4rem;
 }
+.files__block .gold-link__wrap {
+  margin-top: 3rem;
+}
 .files__block-title {
   text-align: center;
   color: rgba(107, 107, 107, 0.8);
   font-weight: 600;
   margin-bottom: 1rem;
   margin-top: 4.7rem;
+}
+.files__block-title._light-color {
+  color: rgba(147, 151, 155, 0.8);
+}
+.files__block-title ._dark {
+  color: rgba(47, 47, 47, 0.8);
 }
 .tablet.portrait .files__block-title,
 .mobile .files__block-title {
@@ -14745,6 +14754,12 @@ h2 + .docs-date {
   padding-right: 5rem;
   letter-spacing: 0;
 }
+.rko__reserve {
+  margin-top: 5rem;
+}
+.rko__reserve .deposit-open__methods {
+  margin-top: 2.8rem;
+}
 .rko__reserve h4 {
   margin-bottom: 0;
 }
@@ -14761,10 +14776,39 @@ h2 + .docs-date {
 .rko__packages-top {
   max-width: 70rem;
 }
+.rko__packages-tabs {
+  margin-top: 6rem;
+  margin-bottom: 4rem!important;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.tablet.portrait .rko__packages-tabs,
+.mobile .rko__packages-tabs {
+  margin-top: 4rem;
+}
+.rko__packages-more {
+  margin-top: 12rem;
+}
+.tablet.portrait .rko__packages-more,
+.mobile .rko__packages-more {
+  margin-top: 0;
+}
+.rko__packages-more .file__name {
+  white-space: normal;
+}
+.rko__packages-more .frame-text {
+  margin-top: 4rem;
+  line-height: 2rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
 .rko__packages-text {
   font-size: 1.6rem;
   line-height: 2.5rem;
   margin-top: 4.1rem;
+}
+.tablet.portrait .rko__packages-text {
+  margin-top: 3.1rem;
 }
 .rko__packages-table {
   margin-top: 6.5rem;
@@ -14820,17 +14864,35 @@ h2 + .docs-date {
   float: right;
   width: 47rem;
 }
-.rko__packages-partner-text {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 3rem;
-  margin-top: 0.7rem;
+.rko__packages-partner-connect h4 {
+  margin-top: 1.7rem;
 }
-.rko__packages-partner-text p {
+.rko__packages-partner-connect .deposit-open__steps .dash-list {
+  margin-left: 0;
+  margin-top: 3rem;
+}
+.rko__packages-partner-connect .deposit-open__steps .dash-list li + li {
+  margin-top: 2rem;
+}
+.rko__packages-partner-open h3 {
+  margin-top: 0;
+}
+.rko__packages-partner-open-text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-top: 7rem;
+}
+.rko__packages-partner-open-text p {
   margin: 0;
 }
-.rko__packages-partner-text p + p {
-  margin-top: 2rem;
+.rko__packages-partner-open-text p + p {
+  margin-top: 3rem;
+}
+.rko__packages-partner-docs h4 {
+  margin-top: 0;
+}
+.rko__packages-partner-docs .frame-text {
+  margin-top: 4rem;
 }
 .rko__packages-partner-conditions h4 {
   margin-top: 0.5rem;
@@ -14846,6 +14908,67 @@ h2 + .docs-date {
 }
 .rko__packages-partner-conditions .dash-list li + li {
   margin-top: 1rem;
+}
+.rko__pack-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 7rem;
+}
+.tablet.portrait .rko__pack-title {
+  margin-bottom: 4rem;
+}
+.mobile .rko__pack-table {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+.rko__pack-table table {
+  width: 100%;
+}
+.rko__pack-table table td {
+  color: #3e3e3e;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding: 2.3rem 0;
+  border-top: 1px solid #DEDFE0;
+}
+.mobile .rko__pack-table table td {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.rko__pack-table table td:first-child {
+  width: 25rem;
+}
+.mobile .rko__pack-table table td:first-child {
+  width: 23rem;
+}
+.rko__pack-table table td:last-child {
+  font-size: 1.6rem;
+  text-align: right;
+}
+.rko__pack-table-period {
+  text-align: left;
+  font-size: 1.4rem;
+  padding-left: 11rem;
+  position: relative;
+}
+.mobile .rko__pack-table-period-block {
+  margin-right: -2rem;
+  padding-right: 2rem;
+}
+.rko__pack-table-period-block + .rko__pack-table-period-block {
+  border-top: 1px solid #DEDFE0;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+.rko__pack-table-period .pull-right {
+  font-size: 1.6rem;
+}
+.rko__pack-table-period-title {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .rko__package.deposit-table__row td {
   padding-top: 3rem;
@@ -17358,6 +17481,9 @@ h2 + .docs-date {
 }
 .inner__info-benefits-subtitle._small-indent {
   margin-bottom: 4rem;
+}
+.inner__info-benefits-subtitle._small-indent30 {
+  margin-bottom: 3rem;
 }
 .inner__info-benefits-title {
   font-size: 2rem;
