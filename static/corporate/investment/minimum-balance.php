@@ -42,7 +42,7 @@
 							<div class="base-info__block">
 								<div class="base-info__block-title">для звонка из регионов:</div>
 								<div class="base-info__block-text">
-									<a class="phone _dark" href="tel:84959258060">(495) 925 80 60</a>
+									<a class="phone _dark" href="tel:88007004040">800 700 40 40</a>
 								</div>
 							</div>
 						</div>
@@ -50,11 +50,27 @@
 				</div>
 				<div class="inner__info-benefits">
 					<div class="inner__info-benefits-title">
-						<p>Неснижаемый остаток – аналог депозита, размещенного на расчетном счете.</p>
-						<p style="font-weight: 400;">
-							Клиенты– юридические лица и индивидуальные предприниматели могут заключить дополнительное соглашение к договору
-							расчетно-кассового обслуживания о начислении процентов на срочные неснижаемые остатки и среднедневные остатки по счетам, открытым в РОСГОССТРАХ БАНКЕ.
+						<p>
+							Получайте доход от временно свободных денежных средств, заключив  соглашение о начислении процентов на остатки по Вашим расчетным счетам
 						</p>
+						<p class="_top-indent"><strong>Как получить доход по остаткам на счете?</strong></p>
+					</div>
+					<div class="deposit-open__methods">
+						<div class="deposit-open__steps _w100">
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">01</div>
+								Посетите отделение Банка, в котором производится обслуживание юридических лиц
+							</div>
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">02</div>
+								При необходимости получите  консультацию специалиста Банка
+							</div>
+							<div class="deposit-open__step">
+								<div class="deposit-open__step-num">03</div>
+								Заключите дополнительное соглашение к договору банковского счета о начислении процентов
+								на срочные неснижаемые остатки и среднедневные остатки по счетам, открытым в РОСГОССТРАХ БАНКЕ
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -66,10 +82,10 @@
 						<div class="corporate__credits-block">
 							<div class="corporate__credits-block-title">Преимущества неснижаемых остатков:</div>
 							<ul class="b-list">
-								<li>Получение дохода от временно свободных денежных средств, находящихся непосредственно на расчетном счете;</li>
-								<li>Не требуется открытие специального счета и предоставление дополнительных документов: необходимо лишь заключить дополнительное соглашение к Договору банковского счета;</li>
-								<li>Возможность получения дохода на средства, которые не могу быть размещены в другие финансовые инструменты в связи с определенными ограничениями;</li>
-								<li>В течение всего срока размещения средства на расчетном счете доступны для экстренного использования.</li>
+								<li>
+									Возможность получения дохода на средства, которые не могу быть размещены из-за ряда ограничений в другие финансовые инструменты
+								</li>
+								<li>Возможность экстренного использования средств на счете при необходимости</li>
 							</ul>
 						</div>
 					</div>
@@ -120,12 +136,20 @@
 									<div class="deposit-conditions__item-block">100 000<span class="rub"></span></div>
 								</div>
 								<div class="deposit-conditions__item">
+									<div class="deposit-conditions__item-block">Расходование средств</div>
+									<div class="deposit-conditions__item-block">
+										не ниже минимально допустимой суммы размещения - в противном случае проценты будут снижены
+									</div>
+								</div>
+								<div class="deposit-conditions__item">
 									<div class="deposit-conditions__item-block">Максимальная сумма размещения</div>
 									<div class="deposit-conditions__item-block">не ограничена</div>
 								</div>
 								<div class="deposit-conditions__item">
 									<div class="deposit-conditions__item-block">Процентная ставка</div>
-									<div class="deposit-conditions__item-block">зависит от суммы неснижаемого остатка и периода размещения денежных средств</div>
+									<div class="deposit-conditions__item-block">
+										зависит от суммы неснижаемого остатка и периода размещения денежных средств
+									</div>
 								</div>
 								<div class="deposit-conditions__item">
 									<div class="deposit-conditions__item-block">Выплата процентов</div>
@@ -283,6 +307,13 @@
 									<div class="deposit-conditions__item-block">1 000 001<span class="rub"></span></div>
 								</div>
 								<div class="deposit-conditions__item">
+									<div class="deposit-conditions__item-block">Расходование средств</div>
+									<div class="deposit-conditions__item-block">
+										использование денежных средств, находящихся на расчетном счете, в течение дня без ограничений
+										(с учетом минимальной суммы среднедневного остатка)
+									</div>
+								</div>
+								<div class="deposit-conditions__item">
 									<div class="deposit-conditions__item-block">Максимальная сумма размещения</div>
 									<div class="deposit-conditions__item-block">не ограничена</div>
 								</div>
@@ -312,19 +343,19 @@
 											</tr>
 											<tr class="deposit-scale__table-row">
 												<td class="red">1 000 001 - 10 млн</td>
-												<td>6,75</td>
+												<td>4,00</td>
 											</tr>
 											<tr class="deposit-scale__table-row">
 												<td class="red">10 000 001 - 50 млн</td>
-												<td>7,00</td>
+												<td>4,50</td>
 											</tr>
 											<tr class="deposit-scale__table-row">
 												<td  class="red">50 000 001 - 100 млн</td>
-												<td>6,50</td>
+												<td>5,00</td>
 											</tr>
 											<tr class="deposit-scale__table-row">
 												<td  class="red">от 100 000 000</td>
-												<td>6,00</td>
+												<td>5,50</td>
 											</tr>
 										</table>
 									</div>
@@ -344,10 +375,10 @@
 									</tr>
 									<tr class="deposit-table__row">
 										<td >Процентная ставка, % годовых</td>
-										<td class="center bold">6,75</td>
-										<td class="center bold">7,00</td>
-										<td class="center bold">6,50</td>
-										<td class="center bold">6,00</td>
+										<td class="center bold">4,00</td>
+										<td class="center bold">4,50</td>
+										<td class="center bold">5,00</td>
+										<td class="center bold">5,50</td>
 									</tr>
 								</table>
 							</div>
