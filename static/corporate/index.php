@@ -5,7 +5,7 @@
 		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block no-mob-block">
-					<div class="deposit__info-banner">
+					<div class="deposit__info-banner _no-indent">
 						<div class="deposit__info-banner-img"  style="background-image: url(<?=$desktopAndTableLand ? '/static/theme/images/info-banners/corporate/main.png'
 							: ($tablePort ? '/static/theme/images/info-banners/corporate/main_tablet.png':'') ?>)"></div>
 					</div>

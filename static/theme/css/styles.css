@@ -15530,6 +15530,9 @@ h2 + .docs-date {
   margin-top: -2rem;
   position: relative;
 }
+.deposit__info-banner._no-indent {
+  margin-top: 0;
+}
 .deposit__info-banner._blue {
   background-image: linear-gradient(138deg, #a9c4cf 0%, #829eb5 100%);
 }
