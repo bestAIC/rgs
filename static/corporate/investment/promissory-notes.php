@@ -27,33 +27,6 @@
 		<div class="inner__info animation__top"  data-animation>
 			<div class="grid__inner">
 				<div class="inner__info-block">
-					<div class="numerals promissory-notes__block">
-						<div class="numerals__block">
-							<div class="numerals__item _big">
-								<div class="numerals__item-val">8,15%</div>
-								<div class="numerals__item-dash"></div>
-								<div class="numerals__item-text">
-									Максимальная ставка привлечения
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="promissory-notes__block is-desktop-block">
-						<h4>Операции, проводимые банком с собственными векселями:</h4>
-						<div class="deposit-open__methods">
-							<div class="deposit-open__method">
-								<div class="deposit-open__method-content _only-dash-list">
-									<ul class="dash-list">
-										<li>Выпуск и оплата (погашение)</li>
-										<li>Хранение и досрочный учет</li>
-										<li>Новация и размен</li>
-										<li>Кредитование под залог векселей</li>
-										<li>Подтверждение факта выдачи векселей банком</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="base-info promissory-notes__block is-desktop-block">
 						<div class="base-info__title">Контакты</div>
 						<div class="base-info__subtitle">
@@ -63,54 +36,27 @@
 						<div class="base-info__text">
 							<div class="base-info__block">
 								<div class="base-info__block-text">
-									<a class="phone _dark" href="tel:84959258079">(495) 925 80 79</a>
+									<a class="phone _dark" href="tel:+74959258079">+7 (495) 925 80 79</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="inner__info-benefits">
+				<div class="inner__info-benefits promissory-notes__block">
 					<div class="inner__info-benefits-title">
-						<p>Вексель — это безусловное обязательство Банка выплатить денежные средства в размере номинальной суммы при наступлении срока платежа, указанного в нем.</p>
-						<p style="font-weight: 400;">
-							РОСГОССТРАХ БАНК предоставляет широкие возможности приобретения и погашения собственных векселей Банка (плательщиком по которым выступает сам Банк), номинированных как в российских рублях, так и в иностранной валюте.
+						<p>
+							Вложите свободные денежные средства в собственные векселя РОСГОССТРАХ БАНКА
+							и получите высоколиквидный инструмент для расчетов с контрагентами
 						</p>
-						<p style="font-weight: 400;">
-							Векселя Банка обращаются на вторичном рынке, котируются в Российской внебиржевой сети как на покупку, так и продажу широким кругом участников вексельного рынка.
-						</p>
+						<p class="_top-indent"><strong>Операции, проводимые Банком с собственными векселями </strong></p>
 					</div>
-					<div class="promissory-notes__conditions">
-						<h3>Условия по операциям с векселями</h3>
-						<ul class="b-list">
-							<li>Виды валют: рубли, доллары США, евро</li>
-							<li>Минимальный номинал: <strong>100 000<span class="rub"></span> / 10 000$/€</strong></li>
-							<li>
-								По желанию векселеприобретателя при покупке векселей, номинированных в любой мировой валюте,
-								можно провести расчеты как в выбранной валюте, так и в рублях РФ по курсу Банка России, действующему на дату приобретения.
-								А при погашении векселей — по курсу Банка России, действующему на дату погашения.
-							</li>
-							<li>Во втором случае покупатель векселей получает валютный инструмент с привлекательной фиксированной доходностью без 
-								необходимости открывать валютный счет и конвертировать средства.
-							</li>
-							<li>Цены векселей: определяются в зависимости от их сроков и утвержденных в Банке процентных ставок.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="promissory-notes__block no-desktop-block">
-					<h4>Операции, проводимые банком с собственными векселями:</h4>
-					<div class="deposit-open__methods">
-						<div class="deposit-open__method">
-							<div class="deposit-open__method-content _only-dash-list">
-								<ul class="dash-list">
-									<li>Выпуск и оплата (погашение)</li>
-									<li>Хранение и досрочный учет</li>
-									<li>Новация и размен</li>
-									<li>Кредитование под залог векселей</li>
-									<li>Подтверждение факта выдачи векселей банком</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					<ul class="b-list no-b-indent">
+						<li>Выпуск и оплата (погашение) векселей</li>
+						<li>Досрочный учет векселей</li>
+						<li>Хранение векселей</li>
+						<li>Кредитование под залог векселей</li>
+						<li>Подтверждение факта выдачи векселей банком</li>
+					</ul>
 				</div>
 				<div class="base-info promissory-notes__block no-desktop-block">
 					<div class="base-info__title">Контакты</div>
@@ -121,34 +67,32 @@
 					<div class="base-info__text">
 						<div class="base-info__block">
 							<div class="base-info__block-text">
-								<a class="phone _dark" href="tel:84959258079">(495) 925 80 79</a>
+								<a class="phone _dark" href="tel:+74959258079">+7 (495) 925 80 79</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="b-blocks">
-			<div class="b-block _gray animation__top " data-animation>
+		<div class="b-blocks _gray">
+			<div class="b-block animation__top " data-animation>
 				<div class="grid__inner">
 					<div class="corporate__credits">
 						<div class="corporate__credits-block">
-							<div class="corporate__credits-block-title">Преимущества вложений средств в векселя:</div>
+							<div class="corporate__credits-block-title">Преимущества вложений в векселя:</div>
 							<ul class="b-list">
 								<li>Выгодное и надежное размещение свободных средств</li>
-								<li>Получение фиксированного дохода в установленный срок на гибких и конкурентных условиях</li>
-								<li>Приобретение высоколиквидного инструмента для расчетов с контрагентами</li>
-								<li>Возможность получения банковских гарантий и кредитов под заклад векселей банка</li>
+								<li>Возможность получения банковских гарантий и кредитов под заклад векселей Банка</li>
 								<li>Простота оформления</li>
 								<li>Отсутствие требования об уведомлении налоговых органов при приобретении векселей</li>
-								<li>Высокая скорость проведения операций по выдаче и погашению (в течение)</li>
-								<li>Предъявление векселей к погашению в любом филиале РОСГОССТРАХ БАНКА вне зависимости от указанного места платежа в векселе</li>
+								<li>Высокая скорость проведения операций по выдаче и погашению</li>
+								<li>Предъявление векселей к погашению в любом офисе РОСГОССТРАХ БАНКА вне зависимости от указанного места выдачи</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="b-block animation__top " data-animation>
+			<div class="b-block animation__top _white" data-animation>
 				<div class="grid__inner">
 					<div class="deposit-scale _no-indent is-mob-block">
 						<h3>Процентные ставки</h3>
@@ -446,6 +390,7 @@
 					</div>
 				</div>
 			</div>
+			<?include "../../includes/news-gall.php"?>
 		</div>
 	</div>
 <?include "../../includes/footer.php"?>
