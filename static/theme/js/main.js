@@ -1061,7 +1061,7 @@ app.setMenuSection = function (section) {
 		$menuSectionBtn.removeClass('_active');
 		$activeSection.addClass('_active');
 		$menu.hide().filter('[data-menu="'+section+'"]').show();
-		$bMenu.removeClass('_active').filter('[data-b-menu="'+section+'"]').addClass('_active');
+		//$bMenu.removeClass('_active').filter('[data-b-menu="'+section+'"]').addClass('_active');
 	}
 
 	function setForMobile(section) {
