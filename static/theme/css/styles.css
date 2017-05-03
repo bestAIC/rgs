@@ -1987,6 +1987,37 @@ h4.small-bottom-indent {
 .b-form__btn-wrap:after {
   clear: both;
 }
+.reserve-form {
+  border-top: 0.6rem solid #b31b2c;
+  padding-top: 2.9rem;
+}
+.reserve-form h2 {
+  line-height: 3.6rem;
+  margin-bottom: 1.5rem;
+}
+.reserve-form__check {
+  padding-left: 3.5rem;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+}
+.reserve-form__check .ideal-check {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.reserve-form__company-type-text {
+  color: #919599;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.025rem;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.reserve-form__company-type .b-form__radio-btns {
+  margin-bottom: 2rem;
+}
 .big-form {
   width: 97rem;
   padding: 4rem;
@@ -2240,6 +2271,9 @@ h4.small-bottom-indent {
   border: 0.6rem solid transparent;
   border-top: 0;
   border-bottom-color: #fff;
+}
+.mobile .reserve-form__company-type-corporate {
+  padding: 0.9rem 1rem;
 }
 .mCSB_scrollTools {
   width: 3px;

@@ -76,7 +76,7 @@
 							<li>Валютный контроль и др.</li>
 						</ul>
 						<div class="inner__info-benefits-btn">
-							<a href="#" class="btn _red">зарезервировать</a>
+							<a href="javascript:void(0);" data-base-form-show data-popup-show="reserve" class="btn _red">зарезервировать</a>
 						</div>
 					</div>
 					<div class="deposit-info__block">
@@ -630,6 +630,124 @@
 						</div>
 						<div class="gold-link__wrap">
 							<a href="javascript:void(0);" data-nav-btn="fade" class="gold-link _arr-down">Все документы (10)</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hide">
+			<div class="b-form ask-form reserve-form"  data-popup="reserve" data-base-form-wrap>
+				<form action="/static/ajax/askForm.php">
+					<h2>Заявка<br/>на резервирование счета</h2>
+					<div class="subtitle">
+						Воспользуйтесь данной формой, чтобы оставить заявку на резервирование счета.
+						Если вы хотите задать вопрос – воспользуйтесь формой  <a href="javascript:void(0);" data-ask-form-show="question">«Задать вопрос»</a>
+					</div>
+					<div class="b-form__content" data-tabs>
+						<div class="b-form__row">
+							<div class="b-form__block reserve-form__company-type">
+								<div class="b-form__radio-btns" data-radio-buttons>
+									<label class="b-form__radio-btn _w50" data-tabs-tab="1" data-radio-buttons-item><input type="radio" name="company-type" data-radio-buttons-input checked>ИП</label>
+									<label class="b-form__radio-btn _w50 reserve-form__company-type-corporate" data-tabs-tab="2" data-radio-buttons-item><input type="radio" name="company-type" data-radio-buttons-input>Юридическое лицо</label>
+								</div>
+								<div class="reserve-form__company-type-text">
+									<span data-tabs-content="1">Гражданин РФ</span>
+									<span data-tabs-content="2" class="hide">Резидент РФ</span>
+								</div>
+							</div>
+						</div>
+						<div data-tabs-content="1" class="b-form__row">
+							<div class="b-form__row">
+								<div class="b-form__block">
+									<div class="b-form__block-title">ФАМИЛИЯ имя отчество <span class="required">*</span></div>
+									<div class="b-form__block-field">
+										<input type="text" placeholder="Иванов Иван Иванович">
+									</div>
+								</div>
+							</div>
+							<div class="b-form__row">
+								<div class="b-form__block">
+									<div class="b-form__block-title">Краткое наименование ИП <span class="required">*</span></div>
+									<div class="b-form__block-field">
+										<input type="text" placeholder="Наименование ИП">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-tabs-content="2" class="b-form__row hide">
+							<div class="b-form__row">
+								<div class="b-form__block">
+									<div class="b-form__block-title">Полное наименование юридического лица <span class="required">*</span></div>
+									<div class="b-form__block-field">
+										<input type="text" placeholder="Полное наименование">
+									</div>
+								</div>
+							</div>
+							<div class="b-form__row">
+								<div class="b-form__block">
+									<div class="b-form__block-title">Краткое наименование юридического лица <span class="required">*</span></div>
+									<div class="b-form__block-field">
+										<input type="text" placeholder="Краткое наименование">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block">
+								<div class="b-form__block-title">ИНН <span class="required">*</span></div>
+								<div class="b-form__block-field">
+									<input type="text" placeholder="не менее 12 цифр">
+								</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block">
+								<div class="b-form__block-title">ЭЛЕКТРОННАЯ ПОЧТА <span class="required">*</span></div>
+								<div class="b-form__block-field">
+									<input type="email" placeholder="ivanivanov@mail.ru">
+								</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block">
+								<div class="b-form__block-title">Телефон для обратной связи <span class="required">*</span></div>
+								<div class="b-form__block-field phone-inp">
+									<input type="text" data-phone-mask placeholder="(495) 078-98-98 ">
+								</div>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block _small-select">
+								<div class="b-form__block-title">регион <span class="required">*</span></div>
+								<select data-chosen data-placeholder="Укажите свой регион">
+									<option value="">Укажите свой регион</option>
+									<option value="москва" >москва</option>
+									<option value="москва2" >москва2</option>
+								</select>
+							</div>
+						</div>
+						<div class="b-form__row">
+							<div class="b-form__block">
+								<label class="reserve-form__check"><input type="checkbox" >Я согласен с <a href="#" target="_blank">условиями обработки данных</a></label>
+							</div>
+						</div>
+						<div class="b-form__captcha b-captcha">
+							<div class="g-recaptcha" data-sitekey="test"></div>
+						</div>
+						<div class="b-form__errors" data-form-errors></div>
+						<div class="b-form__btn-wrap">
+							<button type="submit" class="btn _red b-form__btn">отправить</button>
+						</div>
+					</div>
+				</form>
+				<div class="b-form__success hide" data-success>
+					<div class="b-form__success-in">
+						<div class="b-form__success-ico"></div>
+						<div class="b-form__success-block">
+							<div class="b-form__success-title">Спасибо!</div>
+							<div class="b-form__success-text">
+								Ваш заявка отправлена.
+							</div>
 						</div>
 					</div>
 				</div>
