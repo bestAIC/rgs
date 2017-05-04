@@ -1,4 +1,4 @@
-<div class="b-menu__col _4">
+<div class="b-menu__col _4 no-business-block">
 			<div class="b-menu__item _section">
 				<a href="#" class="b-menu__item-link">Акции и спецпредложения</a>
 			</div>

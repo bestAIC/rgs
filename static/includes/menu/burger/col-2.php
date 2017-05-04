@@ -1,8 +1,8 @@
 <div class="b-menu__col _2">
-			<div class="b-menu__item">
+			<div class="b-menu__item no-business-block">
 				<a href="#" class="b-menu__item-link">Дистанционные сервисы</a>
 			</div>
-			<div class="b-menu__submenu">
+			<div class="b-menu__submenu no-business-block">
 				<div class="b-menu__submenu-item">
 					<a href="/static/about/remote-services/internet-bank.php" class="b-menu__submenu-link">Интернет-банк</a>
 				</div>

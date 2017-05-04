@@ -1038,6 +1038,8 @@ app.mobMenu = function () {
 app.setMenuSection = function (section) {
 	var $menu        = $('[data-menu]'),
 			$bMenu    = $('[data-b-menu]'),
+			$menuBtn     = $('[data-b-menu-btn]'),
+			$menuWrap    = $('[data-menu-wrap]'),
 			$menuSectionBtn        =  $('[data-menu-section-btn]'),
 			$activeSection = $menuSectionBtn.filter('[data-menu-section-btn="'+section+'"]'),
 
@@ -1060,6 +1062,8 @@ app.setMenuSection = function (section) {
 		}
 		$menuSectionBtn.removeClass('_active');
 		$activeSection.addClass('_active');
+		$menuBtn.removeClass('_personal _business _financial').addClass('_'+section);
+		$menuWrap.removeClass('_personal _business _financial').addClass('_'+section);
 		$menu.hide().filter('[data-menu="'+section+'"]').show();
 		//$bMenu.removeClass('_active').filter('[data-b-menu="'+section+'"]').addClass('_active');
 	}
@@ -1070,6 +1074,7 @@ app.setMenuSection = function (section) {
 		$mobSectionsTitle.text($mobSectionsItemActive.text()).removeClass('_active');
 		$mobSectionsItem.removeClass('_active');
 		$mobSectionsItemActive.addClass('_active');
+		$menuWrap.removeClass('_mob-personal _mob-business _mob-financial').addClass('_mob-'+section);
 	}
 };
 
@@ -1120,11 +1125,7 @@ app.menu = function () {
 		var $self = $(this),
 				data = $self.data('mobSectionsItem')
 			;
-		app.mobActiveSection = data;
-		$mobSectionsItems.hide();
-		$mobSectionsTitle.text($self.text()).removeClass('_active');
-		$mobSectionsItem.removeClass('_active');
-		$self.addClass('_active');
+		app.setMenuSection(data);
 	});
 	$menuSectionBtn.on('click',function () {
 		var $self = $(this),

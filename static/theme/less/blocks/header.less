@@ -398,6 +398,19 @@
 		border-bottom: 1px solid fade(white,20%);
 		transition: background-color 0.2s;
 		background-color: transparent;
+		&._financial{
+			display: none!important;
+		}
+		&._mob-financial{
+			.header__menu-btn{
+				display: none!important;
+			}
+		}
+		&._business{
+			.no-business-block{
+				display: none!important;
+			}
+		}
 		&-block{
 			//padding-top: 21/@rem;
 			transition: background-color 0.2s;
@@ -502,6 +515,9 @@
 			left: 0;
 			top: 50%;
 			margin-top: -2rem;
+			&._financial{
+				display: none!important;
+			}
 			.no-touch &:hover{
 				.header__menu-btn-bar {
 					background-color: #000;
