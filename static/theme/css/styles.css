@@ -4057,13 +4057,24 @@ span.pagination__item:focus {
   padding-left: 7rem;
   padding-top: 2rem;
 }
+.mobile .header__menu[data-menu="personal"] {
+  display: block;
+}
 .header__menu-btn {
+  display: none;
   width: 20px;
   height: 4rem;
   position: absolute;
   left: 0;
   top: 50%;
   margin-top: -2rem;
+}
+.mobile .header__menu-btn {
+  display: block;
+}
+.header__menu-btn._business,
+.header__menu-btn._personal {
+  display: block;
 }
 .header__menu-btn._financial {
   display: none!important;

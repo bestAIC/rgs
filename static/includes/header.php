@@ -57,13 +57,13 @@
 			</div>
 			<div class="header__sections-items no-mob-block">
 				<div class="header__sections-item">
-					<a href="javascript:void(0);" class="header__sections-item-link _active" data-menu-section-btn="personal">Частным клиентам</a>
+					<a href="javascript:void(0);" class="header__sections-item-link" data-menu-section-btn="personal">Частным клиентам</a>
 				</div>
 				<div class="header__sections-item">
-					<a href="javascript:void(0);" class="header__sections-item-link" data-menu-section-btn="business">Бизнесу</a>
+					<a href="javascript:void(0);" class="header__sections-item-link no-switch-menu" data-menu-section-btn="business">Бизнесу</a>
 				</div>
 				<div class="header__sections-item">
-					<a href="javascript:void(0);" class="header__sections-item-link" data-menu-section-btn="financial">Финансовым институтам</a>
+					<a href="javascript:void(0);" class="header__sections-item-link no-switch-menu" data-menu-section-btn="financial">Финансовым институтам</a>
 				</div>
 			</div>
 			<div class="mob-menu__sections is-mob-block" data-mob-sections>
@@ -131,7 +131,7 @@
 						</div>
 					</div>
 
-					<div class="header__menu" data-menu="personal">
+					<div class="header__menu hide" data-menu="personal">
 						<div class="header__menu-item no-mob-block">
 							<a href="javascript:void(0);" data-menu-link="1" class="header__menu-link">Вложить и сохранить</a>
 						</div>

@@ -507,7 +507,13 @@
 		padding-left: 70/@rem;
 		//padding-right: 70/@rem;
 		padding-top: 20/@rem;
+		.mobile &{
+			&[data-menu="personal"]{
+				display: block;
+			}
+		}
 		&-btn{
+			display: none;
 			width: 20px;
 			//height: 16/@rem;
 			height: 40/@rem;
@@ -515,6 +521,12 @@
 			left: 0;
 			top: 50%;
 			margin-top: -2rem;
+			.mobile &{
+				display: block;
+			}
+			&._business,&._personal{
+				display: block;
+			}
 			&._financial{
 				display: none!important;
 			}

@@ -1564,6 +1564,15 @@ h4.small-bottom-indent {
   transition: background-color 0.2s;
   background-color: transparent;
 }
+.header__bottom._financial {
+  display: none!important;
+}
+.header__bottom._mob-financial .header__menu-btn {
+  display: none!important;
+}
+.header__bottom._business .no-business-block {
+  display: none!important;
+}
 .header__bottom-block {
   transition: background-color 0.2s;
   background-color: transparent;
@@ -1669,12 +1678,16 @@ h4.small-bottom-indent {
   padding-top: 2rem;
 }
 .header__menu-btn {
+  display: none;
   width: 20px;
   height: 4rem;
   position: absolute;
   left: 0;
   top: 50%;
   margin-top: -2rem;
+}
+.header__menu-btn._financial {
+  display: none!important;
 }
 .no-touch .header__menu-btn:hover .header__menu-btn-bar {
   background-color: #000;
