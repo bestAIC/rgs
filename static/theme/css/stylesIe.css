@@ -1560,9 +1560,13 @@ h4.small-bottom-indent {
   top: 100%;
   left: 0;
   right: 0;
+  min-height: 6.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: background-color 0.2s;
   background-color: transparent;
+}
+.mobile .header__bottom {
+  min-height: 5rem;
 }
 .header__bottom._financial {
   display: none!important;
