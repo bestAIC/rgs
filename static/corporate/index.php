@@ -99,6 +99,33 @@
 								</div>
 							</div>
 						</a>
+						<a href="#" class="corporate-nav__item _base">
+							<div class="corporate-nav__item-in">
+								<div class="corporate-nav__item-title">Валютный контроль</div>
+								<div class="corporate-nav__item-bottom">
+									<div class="corporate-nav__item-bottom-title">Без комиссии</div>
+									<div class="corporate-nav__item-bottom-text">за покупку и продажу валюты</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="corporate-nav__item _base">
+							<div class="corporate-nav__item-in">
+								<div class="corporate-nav__item-title">Корпоративные карты</div>
+								<div class="corporate-nav__item-bottom">
+									<div class="corporate-nav__item-bottom-title">765 000 карт</div>
+									<div class="corporate-nav__item-bottom-text">сегодня находятся в обращении</div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="corporate-nav__item _base _tablet-w-100">
+							<div class="corporate-nav__item-in">
+								<div class="corporate-nav__item-title">Документарные операции</div>
+								<div class="corporate-nav__item-bottom">
+									<div class="corporate-nav__item-bottom-title">Полная поддержка</div>
+									<div class="corporate-nav__item-bottom-text">на любой стадии операции</div>
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

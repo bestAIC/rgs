@@ -2867,6 +2867,10 @@ h4.small-bottom-indent {
   height: 30rem;
   padding: 4rem 3rem;
 }
+.tablet.portrait .corporate-nav__item._tablet-w-100 {
+  width: 71.4rem;
+  margin-right: 0;
+}
 .tablet.portrait .corporate-nav__item._w2 {
   width: 71.4rem;
   padding: 4rem 4rem 5rem;
