@@ -6801,8 +6801,10 @@ span.pagination__item:focus {
   width: 43rem;
 }
 .mobile .menu-visible {
-  overflow: hidden;
   height: 100%;
+}
+.mobile .menu-visible .grid {
+  display: none;
 }
 .mobile .menu-visible.menu-sections-visible .mob-menu {
   display: none;
