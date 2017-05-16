@@ -74,19 +74,19 @@
 					<div class="offices__filter-cols">
 						<div class="offices__filter-col">
 							<?=$block1?>
-							<?=$block2?>
+							<?/*=$block2*/?>
 						</div>
 						<div class="offices__filter-col">
 							<?=$block3?>
 						</div>
 					</div>
 					<div class="offices__filter-cols">
-						<div class="offices__filter-col">
+						<?/*div class="offices__filter-col">
 							<div class="offices__filter-notice">
 								Внимание! Банки-партнеры взимают комиссию при снятии наличных.<br />
 								О сумме комиссии можно узнать на странице <a href="#">“Тарифы партнерской сети”</a>
 							</div>
-						</div>
+						</div*/?>
 						<div class="offices__filter-col">
 							<div class="offices__filter-metro" data-offices-filter-metro>
 								<select data-chosen>
@@ -104,11 +104,11 @@
 								<?=$block3?>
 							</div>
 							<div class="offices__filter-col _2">
-								<?=$block2?>
-								<div class="offices__filter-notice">
+								<?/*=$block2*/?>
+								<?/*div class="offices__filter-notice">
 									Внимание! Банки-партнеры взимают комиссию при снятии наличных.
 									О сумме комиссии можно узнать на странице <a href="#">“Тарифы партнерской сети”</a>
-								</div>
+								</div*/?>
 								<div class="offices__filter-metro" data-offices-filter-metro>
 									<select data-chosen>
 										<option value="">Станция метро</option>
