@@ -1291,8 +1291,12 @@ app.menu = function () {
 		offset = app.dom.$window.scrollTop();
 		console.log(offset);
 		if(app.utils.isMobile){
+			if(offset < app.dom.$header.height()){
+				$('html, body').stop(true, true).animate({'scrollTop': app.dom.$header.height()}, 200);
+			}
 			$mobMenuItems.filter('[data-mob-menu-item="'+app.mobActiveSection+'"]').first().find('[data-menu-link]').click();
 			_helper();
+
 			if(!mobMenuswiper){
 				initMobMenu();
 			}else{
