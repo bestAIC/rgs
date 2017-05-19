@@ -20169,6 +20169,9 @@ h2 + .docs-date {
 .mobile .offices {
   z-index: 2;
 }
+.mobile .offices._show-metro .offices__filter-city {
+  width: 22.3rem;
+}
 .mobile .offices .grid__inner {
   padding-left: 0;
   padding-right: 0;
