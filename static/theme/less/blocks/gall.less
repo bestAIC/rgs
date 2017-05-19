@@ -28,6 +28,21 @@
 		opacity: 0;
 		transform: translate(130rem, 0);
 		transition: opacity 1s;
+		&-all{
+			&.gall__item{
+				padding: 4rem;
+				border: 1px solid @cBorder;
+				box-shadow: none;
+				background: none;
+			}
+			&-title{
+				font-size: 2.4rem;
+				font-weight: 700;
+			}
+			&-btn{
+				padding: 1.5rem 5rem;
+			}
+		}
 		&._hidden{
 			transform: translate(0, 0);
 		}

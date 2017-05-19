@@ -6076,6 +6076,19 @@ span.pagination__item:focus {
   transform: translate(130rem, 0);
   transition: opacity 1s;
 }
+.gall__item-all.gall__item {
+  padding: 4rem;
+  border: 1px solid #DEDFE0;
+  box-shadow: none;
+  background: none;
+}
+.gall__item-all-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.gall__item-all-btn {
+  padding: 1.5rem 5rem;
+}
 .gall__item._hidden {
   transform: translate(0, 0);
 }
