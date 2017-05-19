@@ -3088,7 +3088,7 @@ h4.small-bottom-indent {
   margin-top: 4rem!important;
 }
 .mobile .deposits-nav__filter {
-  background-image: linear-gradient(138deg, #583658 0%, #4e385b 98%);
+  background: #BF914D;
 }
 .mobile .deposits-nav__pension-img {
   display: none;
