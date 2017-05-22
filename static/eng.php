@@ -236,7 +236,7 @@
 					<div class="about__rating-title">Ratings</div>
 					<div class="about__rating-text">from the leading international and national rating agencies</div>
 				</div>
-				<a href="#" class="about__rating-item">
+				<a href="https://www.moodys.com/pages/default_ee.aspx" target="_blank" class="about__rating-item">
 					<div class="about__rating-item-title">Moody's Investors Service</div>
 					<div class="about__rating-item-numerals">
 						<div class="about__rating-item-numerals-items">
@@ -252,7 +252,7 @@
 					</div>
 					<p><strong>Outlook — stable</strong></p>
 				</a>
-				<a href="#" class="about__rating-item">
+				<a href="http://www.ra-national.ru/" target="_blank" class="about__rating-item">
 					<div class="about__rating-item-title">National Rating Agency</div>
 					<div class="about__rating-item-numerals">
 						<div class="about__rating-item-numerals-items">
@@ -263,7 +263,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="#" class="about__rating-item">
+				<a href="http://raexpert.ru/database/companies/rus-bank/" class="about__rating-item" target="_blank">
 					<div class="about__rating-item-title">Rating Agency “Expert RA”</div>
 					<div class="about__rating-item-numerals">
 						<div class="about__rating-item-numerals-items">

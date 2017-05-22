@@ -3,7 +3,7 @@
 <footer class="footer footer-eng">
 	<div class="grid__inner">
 		<div class="footer-eng__contacts">
-			<a href="tel:8 495 925 8060" class="footer-eng__phone">8 495 925 8060</a>
+			<a href="tel:+74959258060" class="footer-eng__phone">+7 495 925 8060</a>
 			<div class="footer-eng__social">
 				<a href="https://twitter.com/rgs_bank" target="_blank" class="footer__social-item _tw"></a>
 				<a href="https://www.facebook.com/rgsbank" target="_blank" class="footer__social-item _fb"></a>
@@ -13,18 +13,18 @@
 			<div class="footer-eng__menu">
 				<div class="footer-eng__menu-col">
 					<div class="footer-eng__menu-item">
-						<a href="#">Careers</a>
+						<a href="/about/vacancy/">Careers</a>
 					</div>
 					<div class="footer-eng__menu-item">
-						<a href="#">Sitemap</a>
+						<a href="/sitemap/">Sitemap</a>
 					</div>
 				</div>
 				<div class="footer-eng__menu-col">
 					<div class="footer-eng__menu-item">
-						<a href="#">Contacts</a>
+						<a href="/about/contact/">Contacts</a>
 					</div>
 					<div class="footer-eng__menu-item">
-						<a href="#">Inside information</a>
+						<a href="/about/disclosure-of-information/">Inside information</a>
 					</div>
 				</div>
 			</div>
