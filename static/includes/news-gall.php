@@ -78,7 +78,7 @@
 					<div class="gall__news-inner">
 						<div class="gall__item-all-title">Актуальные новости закончились</div>
 
-						<div class="gall__news-title">
+						<div class="gall__news-title _center">
 							<a href="#" class="btn _red gall__item-all-btn">Перейти в архив</a>
 						</div>
 					</div>

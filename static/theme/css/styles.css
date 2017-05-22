@@ -6223,6 +6223,9 @@ span.pagination__item:focus {
 .gall__news-title:focus {
   color: #3e3e3e !important;
 }
+.gall__news-title._center {
+  text-align: center;
+}
 .mobile .gall {
   margin-top: 2rem;
 }
