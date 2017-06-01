@@ -2343,7 +2343,6 @@ app.offices = function() {
 		$offices.removeClass('_show-metro');
 		$tabMetro.hide();
 	}
-	$filterForm.trigger('submit');
 	$filterForm.on('submit',function () {
 		var $self = $(this);
 		if($filterFormCity.val().toUpperCase()=="МОСКВА"){
