@@ -2177,6 +2177,7 @@ app.offices = function() {
 			$filterFields = $filter.find('input[type="text"],input[type="hidden"],input[type="checkbox"],select'),
 			markers = [],
 			$metroForm = null,
+			$metroFieldWrap = null,
 			$metroField = null,
 			$metroItems = null,
 			$metroImg = null,
@@ -2190,6 +2191,7 @@ app.offices = function() {
 	}
 	if($metro.length){
 			$metroForm = $metro.find('form');
+			$metroFieldWrap = $metro.find('[data-offices-metro-field-wrap]');
 			$metroField = $metro.find('[data-offices-metro-field]');
 			$metroItems = $metro.find('[data-offices-metro-items]');
 			$metroCounter = $('[data-offices-metro-counter]');
@@ -2211,29 +2213,6 @@ app.offices = function() {
 			return false;
 		});
 
-		$metroField.find('option').each(function () {
-			var $self = $(this),
-					$point = null;
-			if($self.data('metroId')){
-				$point = $('<div class="offices__metro-img-station _'+$self.data('metroId')+'"></div>');
-				$point.on('click',function () {
-					$self.prop('selected', true);
-					$metroField.change().trigger("chosen:updated");
-				});
-				$metroImg.append($point);
-			}
-		});
-
-		$metroField.on('change',function () {
-			var metroId = $metroField.find('option:selected').data('metroId');
-			$metroImg.find('.offices__metro-img-station').removeClass('_active').filter('._'+metroId).addClass('_active');
-			if($(this).val()){
-				$metroForm.trigger('submit');
-			}else{
-				$metroItems.empty();
-				$metroCounter.hide();
-			}
-		})
 	}
 	var
 		mapOptions = {
@@ -2364,6 +2343,7 @@ app.offices = function() {
 		$offices.removeClass('_show-metro');
 		$tabMetro.hide();
 	}
+	$filterForm.trigger('submit');
 	$filterForm.on('submit',function () {
 		var $self = $(this);
 		if($filterFormCity.val().toUpperCase()=="МОСКВА"){
@@ -2388,6 +2368,35 @@ app.offices = function() {
 				$filterMetro.find('select').on('change',function () {
 					$filterForm.trigger('submit');
 				});
+				$metroFieldWrap.show().html($(data.metro)).find('[data-chosen]').chosen({
+					disable_search_threshold: 1000,
+					width: "100%"
+				});
+				var $metroField = $metroFieldWrap.find('select');
+				$metroField.find('option').each(function () {
+					var $self = $(this),
+							$point = null;
+					if($self.data('metroId')){
+						$point = $('<div class="offices__metro-img-station _'+$self.data('metroId')+'"></div>');
+						$point.on('click',function () {
+							$self.prop('selected', true);
+							$metroField.change().trigger("chosen:updated");
+						});
+						$metroImg.append($point);
+					}
+				});
+
+				$metroField.on('change',function () {
+					var metroId = $metroField.find('option:selected').data('metroId');
+					$metroImg.find('.offices__metro-img-station').removeClass('_active').filter('._'+metroId).addClass('_active');
+					if($(this).val()){
+						$metroForm.trigger('submit');
+					}else{
+						$metroItems.empty();
+						$metroCounter.hide();
+					}
+				})
+
 			}else{
 				$filterMetro.empty().hide();
 			}
