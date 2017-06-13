@@ -104,8 +104,8 @@
 
 <? ob_start(); ?>
 	<select data-chosen>
-		<option value="">Новая Станция метро</option>
-		<option value="">Новая Станция метро2</option>
+		<option value="asd">Новая Станция метро</option>
+		<option value="asd2">Новая Станция метро2</option>
 	</select>
 
 <? $metro = ob_get_clean(); ?>

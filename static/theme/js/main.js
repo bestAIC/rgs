@@ -2205,7 +2205,7 @@ app.offices = function() {
 	function initMetro() {
 		$metroForm.on('submit',function () {
 			var $self = $(this);
-			$.post($self.attr('action'), $self.serialize(), function(data){
+			$.post($self.attr('action'), {'type':$filter.find('[data-switch-inp]').val(),'sity':$filterFormCity.val(),'metro':$metroFieldWrap.find('select').val()}, function(data){
 				$metroItems.html($(data.content).html());
 				$metroCounter.show();
 				$metroCounterVal.text(' '+data.counter+' '+app.utils.okonchanie(data.counter,'отделение','отделения','отделений'));
