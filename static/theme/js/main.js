@@ -2203,6 +2203,30 @@ app.offices = function() {
 		$mapPopup.removeClass('_show');
 	});
 	function initMetro() {
+
+		$metroField.find('option').each(function () {
+			var $self = $(this),
+					$point = null;
+			if($self.data('metroId')){
+				$point = $('<div class="offices__metro-img-station _'+$self.data('metroId')+'"></div>');
+				$point.on('click',function () {
+					$self.prop('selected', true);
+					$metroField.change().trigger("chosen:updated");
+				});
+				$metroImg.append($point);
+			}
+		});
+
+		$metroField.on('change',function () {
+			var metroId = $metroField.find('option:selected').data('metroId');
+			$metroImg.find('.offices__metro-img-station').removeClass('_active').filter('._'+metroId).addClass('_active');
+			if($(this).val()){
+				$metroForm.trigger('submit');
+			}else{
+				$metroItems.empty();
+				$metroCounter.hide();
+			}
+		});
 		$metroForm.on('submit',function () {
 			var $self = $(this);
 			$.post($self.attr('action'), {'type':$filter.find('[data-switch-inp]').val(),'sity':$filterFormCity.val(),'metro':$metroFieldWrap.find('select').val()}, function(data){
@@ -2372,6 +2396,7 @@ app.offices = function() {
 					width: "100%"
 				});
 				var $metroField = $metroFieldWrap.find('select');
+				$metroImg.empty();
 				$metroField.find('option').each(function () {
 					var $self = $(this),
 							$point = null;
