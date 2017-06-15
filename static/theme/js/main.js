@@ -936,6 +936,11 @@ app.fieldFilter = function () {
 			}
 		});
 		$itemLink.on('click',function () {
+			var data = $(this).data('filterListId');
+			if(data!='undefined'){
+				$('[data-filter-city-id]').val(data);
+			}
+
 			$inp.val($(this).text()).change();
 			$list.hide();
 		});

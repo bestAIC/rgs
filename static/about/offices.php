@@ -21,6 +21,7 @@
 										</div>
 										<div class="offices__filter-city" data-field-filter>
 											<input type="text" class="offices__filter-city-field" data-field-filter-input value="Москва">
+											<input type="hidden" data-filter-city-id value="">
 											<div class="offices__filter-city-items" data-filter-list>
 												<div class="offices__filter-city-item" data-filter-list-item>
 													<a href="javascript:void(0);"  data-filter-list-link class="offices__filter-city-item-link">Магадан</a>
