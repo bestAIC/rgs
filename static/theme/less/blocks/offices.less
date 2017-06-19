@@ -1,5 +1,16 @@
 .offices-page{
 	padding-top: 6rem;
+	&._empty{
+		[data-offices-content]{
+			display: none!important;
+		}
+		.offices__tab{
+			visibility: hidden;
+		}
+		.offices__empty{
+			display: block;
+		}
+	}
 	&._show-metro{
 		.offices{
 			&__advanced-search{
@@ -76,6 +87,14 @@
 
 .offices{
 	padding-top: 5rem;
+
+	&__empty{
+		font-size: 2.2rem;
+		font-weight: 600;
+		padding-bottom: 4rem;
+		padding-top: 3rem;
+		display: none;
+	}
 	&__metro{
 		.clearfix;
 		margin-top: 3rem!important;

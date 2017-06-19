@@ -2385,8 +2385,13 @@ app.offices = function() {
 			}
 		}
 		$.post($self.attr('action'), $self.serialize(), function(data){
-
 			var $items = $(data.content).find('[data-office-point]');
+			if(!$items.length){
+				$offices.addClass('_empty');
+				return false;
+			}else{
+				$offices.removeClass('_empty');
+			}
 			$content.filter('[data-offices-content="list"]').html($items);
 			if(data.metro){
 				$filterMetro.show().html($(data.metro)).find('[data-chosen]').chosen({

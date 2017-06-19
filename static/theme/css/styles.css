@@ -19219,6 +19219,15 @@ h2 + .docs-date {
 .offices-page {
   padding-top: 6rem;
 }
+.offices-page._empty [data-offices-content] {
+  display: none!important;
+}
+.offices-page._empty .offices__tab {
+  visibility: hidden;
+}
+.offices-page._empty .offices__empty {
+  display: block;
+}
 .offices-page._show-metro .offices__advanced-search {
   margin-left: 3rem;
 }
@@ -19292,6 +19301,13 @@ h2 + .docs-date {
 }
 .offices {
   padding-top: 5rem;
+}
+.offices__empty {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  display: none;
 }
 .offices__metro {
   *zoom: 1;

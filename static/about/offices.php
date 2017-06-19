@@ -342,6 +342,12 @@
 							</div>
 						</div>
 					</div>
+					<div class="offices__empty">
+						<div class="grid__inner">
+							В этом городе ничего не найдено
+						</div>
+
+					</div>
 				</div>
 				<div class="offices-page__partners">
 					<div class="grid__inner">
