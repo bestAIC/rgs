@@ -9399,6 +9399,21 @@ h2 + .docs-date {
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
 }
+.docs-date__years-wrap {
+  position: relative;
+}
+.docs-date__years-wrap .nav__btn {
+  position: absolute;
+  background-size: 0.9rem 1.5rem;
+  top: 50%;
+  margin-top: -2.4rem;
+}
+.docs-date__years-wrap .nav__btn._prev {
+  left: -6rem;
+}
+.docs-date__years-wrap .nav__btn._next {
+  right: -6rem;
+}
 .docs-date__year {
   font-size: 3.4rem;
   font-weight: 700;

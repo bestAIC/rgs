@@ -1545,13 +1545,22 @@ app.tabletSliders = function () {
 	});
 };
 app.docsDateYears = function () {
-	var $galls = $('[docs-date-years-gall]');
+	var $galls = $('[data-docs-date-years-gall]');
 
 	$galls.each(function () {
+		var $self = $(this),
+				$wrap = $self.closest('[data-docs-date-years-gall-wrap]'),
+				$prev = ($wrap.length && $wrap.find('[data-docs-date-years-gall-prev]').length) ? $wrap.find('[data-docs-date-years-gall-prev]'):'',
+				$next = ($wrap.length && $wrap.find('[data-docs-date-years-gall-next]').length) ? $wrap.find('[data-docs-date-years-gall-next]'):''
+			;
+
+
 		var swiper = new Swiper($(this)[0], {
 			slidesPerView: 'auto',
 			simulateTouch: true,
 			spaceBetween: 60,
+			prevButton:$prev,
+			nextButton:$next,
 			breakpoints: {
 				640: {
 					spaceBetween: 30

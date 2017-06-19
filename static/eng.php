@@ -197,15 +197,18 @@
 							"2008"
 						];
 					?>
-
-					<div class="swiper-container docs-date__years" docs-date-years-gall>
-						<div class="swiper-wrapper">
-							<?for ($i=0;$i<count($years);$i++){?>
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="<?=$years[$i]?>" class="docs-date__year-link <?=$i==0 ? ' _active':''?>"><?=$years[$i]?></a>
-								</div>
-							<?}?>
+					<div class="docs-date__years-wrap" data-docs-date-years-gall-wrap>
+						<div class="swiper-container docs-date__years" data-docs-date-years-gall>
+							<div class="swiper-wrapper">
+								<?for ($i=0;$i<count($years);$i++){?>
+									<div class="swiper-slide docs-date__year">
+										<a href="javascript:void(0);" data-tabs-tab="<?=$years[$i]?>" class="docs-date__year-link <?=$i==0 ? ' _active':''?>"><?=$years[$i]?></a>
+									</div>
+								<?}?>
+							</div>
 						</div>
+						<div class="nav__btn _prev" data-docs-date-years-gall-prev></div>
+						<div class="nav__btn _next" data-docs-date-years-gall-next></div>
 					</div>
 					<div class="docs-date__content">
 						<?for ($i=0;$i<count($years);$i++){?>

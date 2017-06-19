@@ -45,6 +45,21 @@
 		background-color: white;
 		border-radius: 2px;
 		box-shadow: 0 1px 3px rgba(211, 211, 211, 0.8);
+		&-wrap{
+			position: relative;
+			.nav__btn{
+				position: absolute;
+				background-size: 0.9rem 1.5rem;
+				top: 50%;
+				margin-top: -2.4rem;
+				&._prev{
+					left: -6rem;
+				}
+				&._next{
+					right: -6rem;
+				}
+			}
+		}
 	}
 	&__year{
 		font-size: 34/@rem;
