@@ -1855,12 +1855,14 @@ h4.small-bottom-indent {
   position: absolute;
   left: 0;
   top: 0;
+  padding-top: 2rem;
   bottom: 0;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.028rem;
-  line-height: 4.2rem;
+  line-height: 0.2rem;
   z-index: 3;
+  display: block;
 }
 .b-form__block-field.phone-inp input[type="text"] {
   padding-left: 2.7rem;
