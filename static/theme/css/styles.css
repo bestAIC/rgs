@@ -19235,6 +19235,7 @@ h2 + .docs-date {
 }
 .offices-page {
   padding-top: 6rem;
+  background-color: whitesmoke;
 }
 .offices-page._empty [data-offices-content] {
   display: none!important;
@@ -19295,7 +19296,6 @@ h2 + .docs-date {
 }
 .offices-page__in {
   position: relative;
-  background-color: whitesmoke;
 }
 .offices-page__list {
   margin-bottom: 6rem;
@@ -19305,9 +19305,6 @@ h2 + .docs-date {
 }
 .offices-page .offices__map {
   height: 72.7rem;
-}
-.offices-page .offices__map-wrap {
-  margin-top: -10.6rem;
 }
 .offices-page .offices__map-block {
   height: 72.7rem;
