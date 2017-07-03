@@ -1572,11 +1572,13 @@ h4.small-bottom-indent {
   left: 0;
   top: 0;
   bottom: 0;
+  padding-top: 2rem;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.028rem;
-  line-height: 4.2rem;
+  line-height: 0.2rem;
   z-index: 3;
+  display: block;
 }
 .phone-inp input[type="text"] {
   padding-left: 2.7rem;
@@ -6441,11 +6443,13 @@ span.pagination__item:focus {
   left: 0;
   top: 0;
   bottom: 0;
+  padding-top: 2rem;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: -0.028rem;
-  line-height: 4.2rem;
+  line-height: 0.2rem;
   z-index: 3;
+  display: block;
 }
 .subscription__form-block-field.phone-inp input[type="text"] {
   padding-left: 2.7rem;
