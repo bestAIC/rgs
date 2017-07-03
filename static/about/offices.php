@@ -1,6 +1,6 @@
 <?include "../includes/header.php"?>
 	<div class="inner deposit">
-		<div class="offices-page animation__top" data-offices-page  data-offices data-marker-url='{"static":"/static/theme/images/icons/marker.svg","active":"/static/theme/images/icons/marker-active.png"}' data-animation>
+		<div class="offices-page animation__top" data-offices-page  data-offices data-marker-url='{"static":"/static/theme/images/icons/marker.png","active":"/static/theme/images/icons/marker-active.png"}' data-animation>
 				<div class="offices-page__in">
 					<div class="grid__inner">
 						<div class="offices__filter" data-filter data-switch-wrap>

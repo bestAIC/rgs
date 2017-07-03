@@ -1,4 +1,4 @@
-<div class="offices b-block animation__top" data-offices data-marker-url='{"static":"/static/theme/images/icons/marker.svg","active":"/static/theme/images/icons/marker-active.png"}' data-animation>
+<div class="offices b-block animation__top" data-offices data-marker-url='{"static":"/static/theme/images/icons/marker.png","active":"/static/theme/images/icons/marker-active.png"}' data-animation>
 	<div class="grid__inner">
 		<h2>Отделения и банкоматы</h2>
 		<div class="subtitle">
