@@ -41,10 +41,10 @@
 			<div class="header__top-right">
 				<div class="header__phones">
 					<div class="header__phone">
-						<a href="tel:88007004040" class="header__phone-link">8 800 700 4040</a>
+						<a href="tel:88007004040" class="header__phone-link">8 (800) 700-40-40</a>
 					</div>
 					<div class="header__phone">
-						<a href="tel:84959258060" class="header__phone-link">8 495 925 8060</a>
+						<a href="tel:84959258060" class="header__phone-link">8 (495) 925-80-60</a>
 					</div>
 				</div>
 				<a href="#" class="header__rus-link">Русская версия сайта</a>

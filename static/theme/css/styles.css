@@ -3850,7 +3850,6 @@ span.pagination__item:focus {
 .header__phone-link {
   color: #3e3e3e;
   font-size: 1.6rem;
-  font-weight: 600;
   line-height: 2rem;
   text-decoration: none;
 }
