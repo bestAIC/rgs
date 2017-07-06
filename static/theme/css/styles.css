@@ -18705,37 +18705,30 @@ h2 + .docs-date {
   float: left;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
   background: none no-repeat center;
 }
 .footer__social-item + .footer__social-item {
   margin-left: 1rem;
 }
 .footer__social-item._vk {
-  background-color: #537ca6;
-  background-image: url('../images/icons/social/vk.svg');
-  background-size: 2.1rem 1.2rem;
+  background-image: url('../images/icons/social/footer/vk.svg');
+  background-size: 3rem 1.7rem;
 }
 .footer__social-item._fb {
-  background-color: #385a97;
-  background-image: url('../images/icons/social/fb.svg');
-  background-size: 1.4rem 1.4rem;
+  background-image: url('../images/icons/social/footer/fb.svg');
+  background-size: 1.4rem 3rem;
 }
 .footer__social-item._tw {
-  background-color: #3aacd1;
-  background-image: url('../images/icons/social/tw.svg');
-  background-size: 1.7rem 1.3rem;
+  background-image: url('../images/icons/social/footer/twitter.svg');
+  background-size: 3rem 2.5rem;
 }
 .footer__social-item._hh {
-  background-color: #dd1903;
-  background-image: url('../images/icons/social/hh.svg');
-  background-size: 1.8rem 1.3rem;
+  background-image: url('../images/icons/social/footer/hh.svg');
+  background-size: 3rem 2.3rem;
 }
 .footer__social-item._rss {
-  background-color: #ff9b05;
-  background-image: url('../images/icons/social/rss.svg');
-  background-size: 1.4rem 1.4rem;
-  background-position: 55% 48%;
+  background-image: url('../images/icons/social/footer/rss.svg');
+  background-size: 2.5rem 2.5rem;
 }
 .footer__logo {
   width: 25.2rem;
