@@ -4314,7 +4314,7 @@ span.pagination__item:focus {
   float: none;
   margin-right: 0;
   margin-top: 1.7rem;
-  padding-left: 6.8rem;
+  padding-left: 5.8rem;
   position: relative;
   *zoom: 1;
 }
@@ -4341,7 +4341,7 @@ span.pagination__item:focus {
   float: left;
 }
 .mobile .header__phone + .header__phone {
-  margin-left: 2.6rem;
+  margin-left: 1.6rem;
 }
 .mobile .header__phone-link {
   font-size: 1.8rem;
