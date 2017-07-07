@@ -834,7 +834,7 @@ app.CardP2P = function() {
 			}, 400);
 		}
 
-		if (allValidate && $agree.is(':checked')) {
+		if (allValidate && $agree.is(':checked') && isValidName()) {
 			$formBtn.prop('disabled', false);
 		} else {
 			$formBtn.prop('disabled', true);
