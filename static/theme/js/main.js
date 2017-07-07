@@ -590,7 +590,6 @@ app.dataFile = function () {
 
 };
 app.CardP2P = function() {
-	console.info('Метод временно переопределен в transfer.p2p.js');
 	var $transferBlock = $('[data-transfer]'),
 			$loader = $transferBlock.find('[data-transfer-loader]'),
 			$form = $transferBlock.find('form'),
@@ -758,11 +757,11 @@ app.CardP2P = function() {
 			data: $form.serialize(),
 			success: function(res) {
 				if (res.data.paReq) {
-					console.log('переход');
+					//console.log('переход');
 					// window.location.href = 'https://test.paymentgate.ru/rgsb/acsRedirect.do?orderId=' + $orderId.val();
 					window.location.href = 'https://payment.rgsbank.ru/payment/acsRedirect.do?orderId=' + $orderId.val();
 				} else {
-					console.log('Без перехода');
+				//	console.log('Без перехода');
 					window.location.href = '/personal/transfers/p2p/status/?orderId=' + $orderId.val();
 				}
 
@@ -820,7 +819,6 @@ app.CardP2P = function() {
 			timeout = setTimeout(function() {
 				if ($orderId.val().length == 0) {
 					sendRegister(function(res) {
-						console.log(res.data.orderId);
 						$orderId.val(res.data.orderId);
 						xhr = sendVerifycation($form.serialize());
 						timeout = null;
@@ -1368,7 +1366,6 @@ app.menu = function () {
 		}
 		$menuBtn.addClass('_active');
 		offset = app.dom.$window.scrollTop();
-		console.log(offset);
 		if(app.utils.isMobile){
 			if(offset < app.dom.$header.height()){
 				$('html, body').stop(true, true).animate({'scrollTop': app.dom.$header.height()}, 200);
@@ -1538,7 +1535,6 @@ app.history = function () {
 				;
 			$points.removeClass('_active');
 			$activePoint.addClass('_active');
-			console.log($activePoint.offset().left);
 			var val = -$activePoint.position().left+$historyInner.width()/2;
 			val = Math.max(Math.min(val,0),-($historyScale.width()-$historyInner.width()));
 			$historyScale.css('left',val+'px');
