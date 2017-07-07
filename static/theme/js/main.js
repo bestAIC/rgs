@@ -622,7 +622,13 @@ app.CardP2P = function() {
 			$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0999999", {clearIfNotMatch: true});
 		}
 		$transferBlock.find('[data-cvv-mask]').mask("000", {clearIfNotMatch: true});
-		$transferBlock.find('[data-date-mask]').mask("A0/00", {
+
+		var dateMask = "A0/00";
+		if (device.android() || !(device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() || device.ipod()
+			|| device.blackberry() || device.windows() || device.fxos())) {
+			dateMask = "A000";
+		}
+		$transferBlock.find('[data-date-mask]').mask(dateMask, {
 			clearIfNotMatch: true,
 			translation: {'A': {pattern: /[0-1]/}, 'B': {pattern: /[0-2]/}, 'C': {pattern: /[1-9]/}},
 			onKeyPress: function(cep, e, field, options) {
@@ -630,6 +636,13 @@ app.CardP2P = function() {
 					'AC/00',
 					'AB/00'
 				];
+				if (device.android() || !(device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() || device.ipod()
+					|| device.blackberry() || device.windows() || device.fxos())) {
+					masks = [
+						'AC00',
+						'AB00'
+					];
+				}
 				var mask = (cep.charAt(0) == 1) ? masks[1] : masks[0];
 				$transferBlock.find('[data-date-mask]').mask(mask, options);
 			}
