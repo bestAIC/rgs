@@ -65,12 +65,12 @@
 											<input type="text" name="panTo" placeholder="0000 0000 0000 0000" data-transfer-inp="main" data-card-mask value="">
 										</div>
 									</div>
-									<?/*div class="card__block">
+									<div class="card__block">
 										<div class="card__block-title">Владелец карты</div>
 										<div class="card__block-field">
-											<input type="text"  data-name-mask name="cardholderNameTo" data-transfer-inp placeholder="Ivan PETROV">
+											<input type="text"  data-name-mask name="cardholderNameTo" data-owner-name placeholder="Ivan PETROV">
 										</div>
-									</div*/?>
+									</div>
 								</div>
 							</div>
 						</div>

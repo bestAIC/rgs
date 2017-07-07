@@ -600,6 +600,7 @@ app.CardP2P = function() {
 
 			$amount = $transferBlock.find('[data-transfer-amount]'),
 			$inputs = $form.find('[data-transfer-inp]'),
+			$ownerName = $form.find('[data-owner-name]'),
 			$mainInputs = $inputs.filter('[data-transfer-inp="main"]'),
 			$agree = $form.find('[data-transfer-inp="check"]'),
 			allValidate = null,
@@ -668,12 +669,14 @@ app.CardP2P = function() {
 		});
 	}
 	function isValidName() {
+		var res = true;
 		$transferBlock.find('[data-name-mask]').each(function () {
-			if (!$.trim($(this).val()).match('^[A-Za-z]*\s{1}[A-Za-z]*$')) {
-				return false
+			var reg =/^[A-Za-z]*\s{1}[A-Za-z]*$/;
+			if ($.trim($(this).val())!='' && !$.trim($(this).val()).match(reg)) {
+				res =  false;
 			}
 		});
-		return true;
+		return res;
 	}
 	function isValid($inputs) {
 		var valid = true;
@@ -803,10 +806,10 @@ app.CardP2P = function() {
 		verify = false;
 	});
 
-	$inputs.keyup(function() {
+	$inputs.add($ownerName).keyup(function() {
 		mainValidate = isValid($mainInputs);
 		allValidate = isValid($inputs);
-
+		console.log(isValidName());
 		if (mainValidate && verify == false) {
 			if (timeout !== null) {
 				clearTimeout(timeout);
