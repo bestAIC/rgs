@@ -668,12 +668,19 @@ app.CardP2P = function() {
 			}
 		});
 	}
-
+	function isValidName() {
+		$transferBlock.find('[data-name-mask]').each(function () {
+			if (!$.trim($(this).val()).match('^[A-Za-z]*\s{1}[A-Za-z]*$')) {
+				return false
+			}
+		});
+		return true;
+	}
 	function isValid($inputs) {
 		var valid = true;
 		$inputs.each(function() {
 			if ($.trim($(this).val()) == '') {
-				valid = false
+				valid = false;
 			}
 		});
 		return valid;
