@@ -589,17 +589,20 @@ app.dataFile = function () {
 	});
 
 };
-app.CardP2P = function () {
-	var $transferBlock =  $('[data-transfer]'),
-			$loader =  $transferBlock.find('[data-transfer-loader]'),
-			$form =  $transferBlock.find('form'),
-			$formBtn =  $transferBlock.find('[data-transfer-btn]'),
-			$orderId =  $transferBlock.find('[data-transfer-inp="orderId"]'),
+app.CardP2P = function() {
+	console.info('Метод временно переопределен в transfer.p2p.js');
+	var $transferBlock = $('[data-transfer]'),
+			$loader = $transferBlock.find('[data-transfer-loader]'),
+			$form = $transferBlock.find('form'),
+			$formBtn = $transferBlock.find('[data-transfer-btn]'),
+			$orderId = $transferBlock.find('[data-transfer-inp="orderId"]'),
 			$pares = $transferBlock.find('[data-transfer-inps="paRes"]'),
+			$ip = $transferBlock.find('[data-transfer-inps="ip"]'),
 
-			$amount =  $transferBlock.find('[data-transfer-amount]'),
+			$amount = $transferBlock.find('[data-transfer-amount]'),
 			$inputs = $form.find('[data-transfer-inp]'),
 			$mainInputs = $inputs.filter('[data-transfer-inp="main"]'),
+			$agree = $form.find('[data-transfer-inp="check"]'),
 			allValidate = null,
 			mainValidate = null,
 			verify = false,
@@ -607,47 +610,56 @@ app.CardP2P = function () {
 			timeout = null,
 			xhr = null,
 			sendLock = false
-
 		;
+
 	setMasks();
 	function setMasks() {
-		//$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0000",{clearIfNotMatch: true});
-		if(device.android() || !(device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() || device.ipod()
+		// $transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0000", {clearIfNotMatch: true});
+		if (device.android() || !(device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() || device.ipod()
 			|| device.blackberry() || device.windows() || device.fxos())) {
-			$transferBlock.find('[data-card-mask]').mask("0000000000000999999",{clearIfNotMatch: true});
-		}else{
-			$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0999999",{clearIfNotMatch: true});
+			$transferBlock.find('[data-card-mask]').mask("0000000000000999999", {clearIfNotMatch: true});
+		} else {
+			$transferBlock.find('[data-card-mask]').mask("0000 0000 0000 0999999", {clearIfNotMatch: true});
 		}
-
-		$transferBlock.find('[data-cvv-mask]').mask("000",{clearIfNotMatch: true});
-		$transferBlock.find('[data-date-mask]').mask("A0/00",{
+		$transferBlock.find('[data-cvv-mask]').mask("000", {clearIfNotMatch: true});
+		$transferBlock.find('[data-date-mask]').mask("A0/00", {
 			clearIfNotMatch: true,
-			translation:  {'A': {pattern: /[0-1]/},'B': {pattern: /[0-2]/},'C': {pattern: /[1-9]/}},
-			onKeyPress: function(cep, e, field, options){
-				var masks = ['AC/00', 'AB/00'];
-				var mask = (cep.charAt(0)==1) ? masks[1] : masks[0];
+			translation: {'A': {pattern: /[0-1]/}, 'B': {pattern: /[0-2]/}, 'C': {pattern: /[1-9]/}},
+			onKeyPress: function(cep, e, field, options) {
+				var masks = [
+					'AC/00',
+					'AB/00'
+				];
+				var mask = (cep.charAt(0) == 1) ? masks[1] : masks[0];
 				$transferBlock.find('[data-date-mask]').mask(mask, options);
 			}
 		});
 		$transferBlock.find('[data-sum-mask]').mask("# ##0", {
 			reverse: true
 		});
-		$transferBlock.find('[data-sum-mask]').on('change',function () {
-			console.log($(this).val());
-			var $val = $(this).val().replace(new RegExp(" ",'g'),"");
-			if($val <50){
+		$transferBlock.find('[data-sum-mask]').on('change', function() {
+			var $val = $(this).val().replace(new RegExp(" ", 'g'), "");
+			if ($val < 50) {
 				$(this).val('');
 			}
-			if($val > 75000){
+			if ($val > 75000) {
 				$(this).val('75 000').change();
 			}
 		});
-		$transferBlock.find('[data-name-mask]').mask('S', {translation:  {'S': {pattern: /[a-zA-Z\s]/, recursive: true}}});
+		$transferBlock.find('[data-name-mask]').mask('S', {
+			translation: {
+				'S': {
+					pattern: /[a-zA-Z\s]/,
+					recursive: true
+				}
+			}
+		});
 	}
+
 	function isValid($inputs) {
 		var valid = true;
-		$inputs.each(function () {
-			if($.trim($(this).val()) == '') {
+		$inputs.each(function() {
+			if ($.trim($(this).val()) == '') {
 				valid = false
 			}
 		});
@@ -658,17 +670,20 @@ app.CardP2P = function () {
 	 * Регисрация заказа, вернет ID
 	 */
 	function sendRegister(callback) {
+		$loader.show();
+
 		return $.ajax({
 			url: '/ajax/cards/registration/',
-			dataType: 'JSON',
-			type: 'GET',
+			dataType: 'json',
+			type: 'get',
 			success: function(res) {
-				if(callback) {
+				if (callback) {
 					callback(res);
 				}
 			},
 			error: function(res) {
 				showError(res);
+				$loader.hide();
 			}
 		})
 	}
@@ -677,17 +692,29 @@ app.CardP2P = function () {
 	 * Регисрация заказа, вернет ID
 	 */
 	function sendVerifycation(data) {
+		$loader.show();
+
 		return $.ajax({
 			url: '/ajax/cards/verifycation/',
 			dataType: 'JSON',
 			type: 'GET',
 			data: data,
 			success: function(res) {
-				$amount.text(res.data.commission);
+				if (res.hasOwnProperty('data')) {
+					if (res.data.hasOwnProperty('commission')) {
+						$amount.text(res.data.commission);
+					} else {
+						showError(res);
+					}
+				} else {
+					showError(res);
+				}
 				xhr = null;
+				$loader.hide();
 			},
 			error: function(res) {
 				showError(res);
+				$loader.hide();
 			}
 		})
 	}
@@ -698,32 +725,55 @@ app.CardP2P = function () {
 	 * @returns {*}
 	 */
 	function sendPerform(data) {
-		if(sendLock == true) return false;
-		//$loader.show();
+		if (sendLock == true) {
+			return false;
+		}
+		$loader.show();
 		sendLock = true;
+
 		return $.ajax({
 			url: '/ajax/cards/perform/',
 			dataType: 'JSON',
 			type: 'GET',
 			data: $form.serialize(),
 			success: function(res) {
-				window.location.href = 'https://test.paymentgate.ru/rgsb/acsRedirect.do?orderId=' + $orderId.val();
+				if (res.data.paReq) {
+					console.log('переход');
+					// window.location.href = 'https://test.paymentgate.ru/rgsb/acsRedirect.do?orderId=' + $orderId.val();
+					window.location.href = 'https://payment.rgsbank.ru/payment/acsRedirect.do?orderId=' + $orderId.val();
+				} else {
+					console.log('Без перехода');
+					window.location.href = '/personal/transfers/p2p/status/?orderId=' + $orderId.val();
+				}
+
 				sendLock = false;
-				//$loader.hide()
+				$loader.hide();
 			},
 			error: function(res) {
-				showError(res)
+				showError(res);
+				sendLock = false;
+				$loader.hide();
 			}
 		})
 	}
 
 	/**
 	 * Вывод ошибок
-	 * @param message
+	 * @param data
 	 */
 	function showError(data) {
-		if(data.responseJSON._errors !== undefined) {
-			alert(data.responseJSON._errors[0]);
+		//TODO:: переделать на нормальный вывод ошибок
+		if (data.hasOwnProperty('responseJSON')) {
+			if (data.responseJSON !== undefined && data.responseJSON.hasOwnProperty('_errors')) {
+				if (data.responseJSON._errors !== undefined) {
+					alert(data.responseJSON._errors[0]);
+				}
+			} else if (data.statusText == 'abort') {
+			} else {
+				alert('Ошибка в получении ответа от сервиса.');
+			}
+		} else {
+			alert('Ошибка в получении ответа от сервиса.');
 		}
 	}
 
@@ -734,23 +784,23 @@ app.CardP2P = function () {
 		verify = false;
 	});
 
-	$inputs.keyup(function () {
+	$inputs.keyup(function() {
 		mainValidate = isValid($mainInputs);
 		allValidate = isValid($inputs);
 
-
-		if(mainValidate && verify == false) {
-			if(timeout !== null) {
+		if (mainValidate && verify == false) {
+			if (timeout !== null) {
 				clearTimeout(timeout);
 			}
 
-			if(xhr !== null) {
+			if (xhr !== null) {
 				xhr.abort();
 			}
 
-			timeout = setTimeout(function () {
-				if($orderId.val().length == 0) {
+			timeout = setTimeout(function() {
+				if ($orderId.val().length == 0) {
 					sendRegister(function(res) {
+						console.log(res.data.orderId);
 						$orderId.val(res.data.orderId);
 						xhr = sendVerifycation($form.serialize());
 						timeout = null;
@@ -764,11 +814,15 @@ app.CardP2P = function () {
 			}, 400);
 		}
 
-		if(allValidate){
+		if (allValidate && $agree.is(':checked')) {
 			$formBtn.prop('disabled', false);
-		}else{
+		} else {
 			$formBtn.prop('disabled', true);
 		}
+	});
+
+	$agree.change(function() {
+		$inputs.trigger('keyup');
 	});
 
 	$formBtn.on('click', sendPerform);
