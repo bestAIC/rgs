@@ -40,38 +40,32 @@
 			$years = [
 				"2016",
 				"2015",
-				"2014"
+				"2014",
+				"2013",
+				"2012",
+				"2011",
+				"2010",
+				"2009"
 			];
 		?>
 		<div class="b-blocks _gray">
 			<div class="b-block _top-indent animation__top" data-animation>
 				<div class="grid__inner">
 					<div class="docs-date <?/*_long-titles _issuing-documents*/?>" data-tabs>
-						<div class="swiper-container docs-date__years" docs-date-years-gall>
-							<div class="swiper-wrapper">
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="2016" class="docs-date__year-link _active">2016</a>
-								</div>
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="2015" class="docs-date__year-link">2015</a>
-								</div>
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="2014" class="docs-date__year-link">2014</a>
-								</div>
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="2013" class="docs-date__year-link _disabled">2013</a>
-								</div>
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="2012" class="docs-date__year-link _disabled">2012</a>
-								</div>
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="2011" class="docs-date__year-link _disabled">2011</a>
-								</div>
-								<div class="swiper-slide docs-date__year">
-									<a href="javascript:void(0);" data-tabs-tab="2010" class="docs-date__year-link _disabled">2010</a>
+						<div class="docs-date__years-wrap" data-docs-date-years-gall-wrap>
+							<div class="swiper-container docs-date__years" data-docs-date-years-gall>
+								<div class="swiper-wrapper">
+									<?for ($i=0;$i<count($years);$i++){?>
+										<div class="swiper-slide docs-date__year">
+											<a href="javascript:void(0);" data-tabs-tab="<?=$years[$i]?>" class="docs-date__year-link <?=$i==0 ? ' _active':''?>"><?=$years[$i]?></a>
+										</div>
+									<?}?>
 								</div>
 							</div>
+							<div class="nav__btn _prev" data-docs-date-years-gall-prev></div>
+							<div class="nav__btn _next" data-docs-date-years-gall-next></div>
 						</div>
+
 						<div class="docs-date__content">
 							<?for ($j=0;$j<count($years);$j++){?>
 								<div class="docs-date__block <?=$j == 0 ? '':' hide' ?>" data-tabs-content="<?=$years[$j]?>">
