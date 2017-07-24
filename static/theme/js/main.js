@@ -636,13 +636,13 @@ app.CardP2P = function() {
 					'AC/00',
 					'AB/00'
 				];
-				if (device.android() || !(device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() || device.ipod()
+				/*if (device.android() || !(device.mobile() || device.tablet() || device.ios() || device.ipad() || device.iphone() || device.ipod()
 					|| device.blackberry() || device.windows() || device.fxos())) {
 					masks = [
 						'AC00',
 						'AB00'
 					];
-				}
+				}*/
 				var mask = (cep.charAt(0) == 1) ? masks[1] : masks[0];
 				$transferBlock.find('[data-date-mask]').mask(mask, options);
 			}
