@@ -18,7 +18,7 @@
 							<a href="javascript:void(0);" class="offices__tab" data-offices-tab="list">Списком</a>
 						</div>
 						<div class="offices__filter-city">
-							<input type="text" class="offices__filter-city-field" value="Москва">
+							<input type="text" class="offices__filter-city-field" autocomplete="off" value="Москва">
 						</div>
 						<a href="javascript:void(0);" data-filter-extend-show class="offices__advanced-search is-desktop-block">Расширенный поиск</a>
 						<div class="offices__filter-icons no-desktop-block">

@@ -20,7 +20,7 @@
 											<a href="javascript:void(0);" class="offices__tab" data-offices-tab="metro">На карте метро</a>
 										</div>
 										<div class="offices__filter-city" data-field-filter>
-											<input type="text" class="offices__filter-city-field" data-field-filter-input value="Москва">
+											<input type="text" class="offices__filter-city-field" autocomplete="off" data-field-filter-input value="Москва">
 											<input type="hidden" data-filter-city-id value="">
 											<div class="offices__filter-city-items" data-filter-list>
 												<div class="offices__filter-city-item" data-filter-list-item>
