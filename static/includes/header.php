@@ -10,8 +10,12 @@
 	<script src="/static/theme/js/Cookie.js"></script>
 	<script src="/static/theme/js/helperSiteTypeDetect.js"></script>
 
+	<?
+		$browserIE = (strpos($_SERVER["HTTP_USER_AGENT"], "MSIE") != false);
+		if(!$browserIE){?>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<?}?>
 
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 	<script src="https://www.amcharts.com/lib/3/serial.js"></script>
 	<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
