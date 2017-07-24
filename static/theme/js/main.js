@@ -1193,7 +1193,9 @@ app.menu = function () {
 			mobMenuswiper = false,
 			timeout = null
 		;
-
+	if(!$('[data-banner-gall]').length){
+		app.dom.$body.addClass('is-offices-page');
+	}
  	$mobSectionsTitle.on('click',function () {
 		var $self = $(this);
 		 if($self.hasClass('_active')){
