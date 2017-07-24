@@ -21,7 +21,7 @@
 		<div class="b-blocks _gray">
 			<div class="b-block animation__top invest-nav page-nav" data-animation>
 				<div class="grid__inner">
-					<div class="page-nav__row _long-cols">
+					<div class="page-nav__row">
 						<div class="page-nav__row-col">
 							<a href="#" class="page-nav__item _big invest-nav__iis">
 								<div class="page-nav__item-title">
@@ -53,6 +53,22 @@
 									Готовые инвестиционные решения на основе Российских и Зарубежных ценных бумаг
 								</div>
 							</a>
+						</div>
+					</div>
+					<div class="page-nav__row">
+						<div class="page-nav__row-col">
+							<a href="#" class="page-nav__item">
+								<div class="page-nav__item-ico _base _invest-metal"></div>
+								<div class="page-nav__item-title">
+									Обезличенные металлические
+									счета
+								</div>
+								<div class="page-nav__item-text">
+									Возможность получения дохода от роста цен на драгоценные металлы на мировом рынке.
+								</div>
+							</a>
+						</div>
+						<div class="page-nav__row-col">
 							<a href="#" class="page-nav__item">
 								<div class="page-nav__item-ico _base _precious"></div>
 								<div class="page-nav__item-title">

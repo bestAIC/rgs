@@ -2456,6 +2456,9 @@ h4.small-bottom-indent {
 .page-nav__item-ico._investment2 {
   background-image: url('../images/page-nav/investment/ico2.svg');
 }
+.page-nav__item-ico._invest-metal {
+  background-image: url('../images/page-nav/investment/ico3.svg');
+}
 .page-nav__item-title {
   font-size: 2rem;
   font-weight: 700;
