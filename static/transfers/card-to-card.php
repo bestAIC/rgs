@@ -67,8 +67,12 @@
 											</div>
 											<div class="card__block">
 												<div class="card__block-title">Срок действия</div>
-												<div class="card__block-field">
-													<input name="dateFrom" type="text" data-transfer-inp data-date-mask placeholder="ММ / ГГ" value="">
+												<div class="card__block-field _date">
+													<input name="" type="text" data-transfer-inp data-card-month-mask placeholder="ММ" value="">
+												</div>
+												<div class="card__block-field-sep">/</div>
+												<div class="card__block-field _date">
+													<input name="" type="text" data-transfer-inp data-card-year-mask placeholder="ГГ" value="">
 												</div>
 											</div>
 										</div>

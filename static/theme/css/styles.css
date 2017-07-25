@@ -18414,6 +18414,19 @@ h2 + .docs-date {
 .card__block-field {
   height: 3.7rem;
 }
+.card__block-field._date {
+  width: 35%;
+  float: left;
+}
+.card__block-field-sep {
+  float: left;
+  width: 30%;
+  text-align: center;
+  color: rgba(227, 227, 229, 0.5);
+  font-size: 2rem;
+  line-height: 2.1rem;
+  padding: 0.8rem;
+}
 .tablet.portrait .card {
   width: 34.3rem;
   height: 22.4rem;
