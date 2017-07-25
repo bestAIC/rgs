@@ -17479,6 +17479,27 @@ h2 + .docs-date {
   background-size: cover;
   position: relative;
 }
+.inner__banner.inner__banner-simple {
+  height: 29rem;
+}
+.inner__banner.inner__banner-simple .inner__banner-img:after {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.inner__banner.inner__banner-simple .inner__banner-img-in {
+  background-image: none;
+}
+.inner__banner.inner__banner-simple .inner__banner-title {
+  color: #191919;
+}
+.inner__banner.inner__banner-simple .breadcrumbs {
+  color: #191919;
+}
+.inner__banner.inner__banner-simple .breadcrumbs__link {
+  color: #191919;
+}
+.inner__banner.inner__banner-simple .breadcrumbs__link:hover {
+  color: #191919 !important;
+}
 .inner__banner .b-card {
   position: absolute;
   right: 10rem;

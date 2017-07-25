@@ -4,6 +4,31 @@
 		background: none no-repeat center;
 		background-size: cover;
 		position: relative;
+		&.inner__banner-simple{
+			height: 29rem;
+			.inner__banner{
+				&-img{
+					&:after{
+						background-color: rgba(0, 0, 0, 0.04);
+					}
+					&-in{
+						background-image: none;
+					}
+				}
+				&-title{
+					color: #191919;
+				}
+			}
+			.breadcrumbs{
+				color: #191919;
+				&__link{
+					color: #191919;
+					&:hover{
+						color: #191919 !important;
+					}
+				}
+			}
+		}
 		.b-card{
 			position: absolute;
 			right: 10rem;
