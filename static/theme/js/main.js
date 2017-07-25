@@ -1018,6 +1018,9 @@ app.fieldFilter = function () {
 
 			$inp.val($(this).text()).change();
 			$list.hide();
+			setTimeout(function () {
+				$list.hide();
+			},150);
 		});
 	});
 	
