@@ -17482,6 +17482,9 @@ h2 + .docs-date {
 .inner__banner.inner__banner-simple {
   height: 29rem;
 }
+.mobile .inner__banner.inner__banner-simple {
+  height: 22rem;
+}
 .inner__banner.inner__banner-simple .inner__banner-img:after {
   background-color: rgba(0, 0, 0, 0.04);
 }
